@@ -83,7 +83,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  0: 
  0: FMTIN
  0: 
- 0: GRID      =========================================================
+ 0: GRID      ===================================================
  0: DEBUG
  0: 
  0: INIT
@@ -258,7 +258,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
 1                             **********************************************************************   1
   DX       AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
@@ -266,7 +266,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  75.0000        FEET                                                                                           
 1                             **********************************************************************   2
   DY       AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
@@ -274,7 +274,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  75.0000        FEET                                                                                           
 1                             **********************************************************************   3
   DZ       AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
@@ -282,7 +282,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  30.0000        FEET                                                                                           
 1                             **********************************************************************   4
   PERMX    AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS  MDARCY         
@@ -290,7 +290,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  50.0000       MDARCY                                                                                          
 1                             **********************************************************************   5
   PERMY    AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS  MDARCY         
@@ -321,7 +321,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     39 READING SUMMARY 
 1                             **********************************************************************   6
   PRESSURE AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -329,7 +329,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  4005.65        PSIA                                                                                           
 1                             **********************************************************************   7
   SWAT     AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -353,7 +353,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     51 READING TSTEP   
 1                             **********************************************************************   8
   SIMULATE AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  STEP    1 TIME=    1.00  DAYS (  +1.0  DAYS INIT  4 ITS) (2-JAN-1983)           
@@ -384,7 +384,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  4216.1  PSIA   WCT=0.499 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************   9
   PRESSURE AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -400,7 +400,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  4230.26 4219.04 4195.48 4155.05 4083*67
 1                             **********************************************************************  10
   SWAT     AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -418,29 +418,29 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME      200.0   DAYS    (20-JLY-1983):
  @           FAIL-SAFE RESTART FILE WRITTEN   REPORT     1                   
  =======================================================
- TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     0 SECS
+ TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     1 SECS
  =======================================================
- ZZSS    1  0  0
+ ZZSS    1 87100
                 RR      1  0  0
  SR      1  0  0
- TS      1  0  0
-                NX      9  0  0
+ TS      1 13  0
+                NX      9 13  0
                                WC     37  0  0
                                LMRS   37  0  0
                                CONV   37  0  0
                                LMJC   28  0  0
-                               LXX    28  0  0
+                               LXX    28 13  0
                                               WGIN   28  0  0
                                               RGIN   28  0  0
                                               GINV   28  0  0
                                                              GINV   28  0  0
                                               WRES   28  0  0
                                               RRES   28  0  0
-                                              ITER   28  0  0
+                                              ITER   28 13  0
                                                              NORM  105  0  0
                                                              SRCH   77  0  0
                                                              WADX  154  0  0
-                                                             ORTH   77  0  0
+                                                             ORTH   77 13  0
                                                              UPDA   77  0  0
                                               WSOL   28  0  0
                                XUIT   28  0  0
@@ -449,7 +449,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  YW      1  0  0
 1                             **********************************************************************  11
   SIMULATE AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  STEP   10 TIME=  300.00  DAYS (+100.0  DAYS HALF  3 ITS) (28-OCT-1983)          
@@ -459,7 +459,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  4163.1  PSIA   WCT=0.709 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************  12
   PRESSURE AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -475,7 +475,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  4173.66 4165.18 4147.45 4117.17 4063*94
 1                             **********************************************************************  13
   SWAT     AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -493,29 +493,29 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME      400.0   DAYS    ( 5-FEB-1984):
  @           FAIL-SAFE RESTART FILE WRITTEN   REPORT     2                   
  =======================================================
- TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     0 SECS
+ TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     1 SECS
  =======================================================
- ZZSS    1  0  0
+ ZZSS    1 87100
                 RR      1  0  0
  SR      1  0  0
- TS      2  0  0
-                NX     11  0  0
+ TS      2 13  0
+                NX     11 13  0
                                WC     45  0  0
                                LMRS   45  0  0
                                CONV   45  0  0
                                LMJC   34  0  0
-                               LXX    34  0  0
+                               LXX    34 13  0
                                               WGIN   34  0  0
                                               RGIN   34  0  0
                                               GINV   34  0  0
                                                              GINV   34  0  0
                                               WRES   34  0  0
                                               RRES   34  0  0
-                                              ITER   34  0  0
+                                              ITER   34 13  0
                                                              NORM  133  0  0
                                                              SRCH   99  0  0
                                                              WADX  198  0  0
-                                                             ORTH   99  0  0
+                                                             ORTH   99 13  0
                                                              UPDA   99  0  0
                                               WSOL   34  0  0
                                XUIT   34  0  0
@@ -524,14 +524,14 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  YW      2  0  0
 1                             **********************************************************************  14
   SIMULATE AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  STEP   12 TIME=  600.00  DAYS (+200.0  DAYS REPT  3 ITS) (23-AUG-1984)          
   PAV=  4140.4  PSIA   WCT=0.804 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************  15
   PRESSURE AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -547,7 +547,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  4148.72 4141.38 4126.14 4100.30 4055*10
 1                             **********************************************************************  16
   SWAT     AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -565,45 +565,45 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME      600.0   DAYS    (23-AUG-1984):
  @           FAIL-SAFE RESTART FILE WRITTEN   REPORT     3                   
  =======================================================
- TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     0 SECS
+ TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     1 SECS
  =======================================================
- ZZSS    1  0  0
+ ZZSS    1 78100
                 RR      1  0  0
  SR      1  0  0
- TS      3  0  0
-                NX     12  0  0
+ TS      3 11  0
+                NX     12 11  0
                                WC     49  0  0
                                LMRS   49  0  0
                                CONV   49  0  0
                                LMJC   37  0  0
-                               LXX    37  0  0
+                               LXX    37 11  0
                                               WGIN   37  0  0
                                               RGIN   37  0  0
                                               GINV   37  0  0
                                                              GINV   37  0  0
                                               WRES   37  0  0
                                               RRES   37  0  0
-                                              ITER   37  0  0
+                                              ITER   37 11  0
                                                              NORM  148  0  0
                                                              SRCH  111  0  0
                                                              WADX  222  0  0
-                                                             ORTH  111  0  0
+                                                             ORTH  111 11  0
                                                              UPDA  111  0  0
                                               WSOL   37  0  0
                                XUIT   37  0  0
                                LC     37  0  0
  XW      3  0  0
- YW      3  0  0
+ YW      3 11  0
 1                             **********************************************************************  17
   SIMULATE AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  STEP   13 TIME=  800.00  DAYS (+200.0  DAYS REPT  3 ITS) (11-MAR-1985)          
   PAV=  4127.3  PSIA   WCT=0.861 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************  18
   PRESSURE AT   800.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -619,7 +619,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  4133.93 4127.26 4113.48 4090.26 4049*86
 1                             **********************************************************************  19
   SWAT     AT   800.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 15:55 ON 01 JLY 2015 
+  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 14:30 ON 02 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -637,35 +637,35 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME      800.0   DAYS    (11-MAR-1985):
  @           FAIL-SAFE RESTART FILE WRITTEN   REPORT     4                   
  =======================================================
- TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     0 SECS
+ TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     1 SECS
  =======================================================
- ZZSS    1  0  0
+ ZZSS    1 78100
                 RR      1  0  0
  SR      1  0  0
- TS      4  0  0
-                NX     13  0  0
+ TS      4 11  0
+                NX     13 11  0
                                WC     53  0  0
                                LMRS   53  0  0
                                CONV   53  0  0
                                LMJC   40  0  0
-                               LXX    40  0  0
+                               LXX    40 11  0
                                               WGIN   40  0  0
                                               RGIN   40  0  0
                                               GINV   40  0  0
                                                              GINV   40  0  0
                                               WRES   40  0  0
                                               RRES   40  0  0
-                                              ITER   40  0  0
+                                              ITER   40 11  0
                                                              NORM  161  0  0
                                                              SRCH  121  0  0
                                                              WADX  242  0  0
-                                                             ORTH  121  0  0
+                                                             ORTH  121 11  0
                                                              UPDA  121  0  0
                                               WSOL   40  0  0
                                XUIT   40  0  0
                                LC     40  0  0
  XW      4  0  0
- YW      4  0  0
+ YW      4 11  0
     52 READING END     
 
  Error summary 
@@ -674,4 +674,4 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Problems               0
  Errors                 0
  Bugs                   0
- Final cpu       0.00 elapsed       0.00
+ Final cpu       0.14 elapsed       1.00
