@@ -1,0 +1,1158 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN THERM8
+
+ 0: -------------------------------------------------------------------------------
+ 0: --                                                                           --
+ 0: -- SPE 78131 case study 4                                                    --
+ 0: --                                                                           --
+ 0: -- Single Horizontal well with steam cyclic injection & production           --
+ 0: --                                                                           --
+ 0: -- oil viscosity from Al-Hadrami                                             --
+ 0: -- rel perm from Al-Hadrami                                                  --
+ 0: --                                                                           --
+ 0: --                                                                           --
+ 0: -- Last modified April 2003                                                  --
+ 0: --                                                                           --
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Modification date: 	January 2007
+ 0: -- Changes:			TSCRIT out
+ 0: -- Result:			Speed-up ~1.18
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: TITLE
+ 0: Single well Huff and Puff Midway Sunset for SPE paper
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: THERMAL
+ 0: 
+ 0: COMPS
+ 0: 2 /             2 hydrocarbon components, dead oil + solution gas
+ 0: 
+ 0: WATER
+ 0: 
+ 0: HWELLS
+ 0: 
+ 0: DIMENS
+ 0: 11 24 21 /      Grid dimensions
+ 0: 
+ 0: ROCKDIMS
+ 0: 2  /            Base and cap rock connections
+ 0: 
+ 0: WELLDIMS	
+ 0: 1* 25 /         Max number of completions / well
+ 0: 
+ 0: WSEGDIMS
+ 0:  2 18 1 /       Multi-segment well dimensions
+ 0: 
+ 0: START
+ 0:  01 JAN 1996 /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: GRID
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: TOPS
+ 0: 264*980.0 /
+ 0: 
+ 0: DXV
+ 0:  11*33.3 /                             x-length = 366.63 feet
+ 0: 
+ 0: DYV
+ 0:  3*11.1 21*33.3 /                     y-length = 733.26 feet
+ 0: 
+ 0: DZV
+ 0:  8*64 7*40 4*10 40 100 /                z-height = 1052 feet
+ 0: 
+ 0: -- Properties with uniform values:
+ 0: 
+ 0: EQUALS
+ 0: PORO   0.30 /                           porosity
+ 0: PERMX  300.0  /                         kx, mD
+ 0: PERMY  300.0  /                         ky, mD,  ky = kx
+ 0: PERMZ  200.0  /                         kz, mD,  kv/kh = 0.66
+ 0: HEATCR 35 /                             rock heat capacity Btu/ft**3/deg F
+ 0: THCONR  30 /                            rock conductivity Btu/ft/Day/deg F
+ 0: /
+ 0: 
+ 0: 
+ 0: ROCKCON
+ 0: --# I1 I2 J1 J2 K1 K2 Dir
+ 0:   1  1 11  1 24  1  1 K- /                   overburden  connections
+ 0:   2  1 11  1 24 21 21 K+ /                   underburden connections
+ 0: /
+ 0: 
+ 0: ROCKPROP
+ 0: --# Temp (F) Cond (Btu/ft/Day/F) Heat capacity (kJ/m3/K)
+ 0:   1 225      30                  35  1* N /     overburden  properties
+ 0:   2 110      30                  35  1* N /     underburden properties
+ 0: /
+ 0: 
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: PROPS
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: SWFN
+ 0:   0.250000     0.000000     0.000000
+ 0:   0.300000     6.00000e-005 0.000000
+ 0:   0.350000     0.000170000  0.000000
+ 0:   0.400000     0.00158000   0.000000
+ 0:   0.450000     0.00363000   0.000000
+ 0:   0.500000     0.00637000   0.000000
+ 0:   0.550000     0.0101400    0.000000
+ 0:   0.600000     0.0146600    0.000000
+ 0:   0.650000     0.0201600    0.000000
+ 0:   0.700000     0.0256500    0.000000
+ 0:   0.800000     0.0256500    0.000000
+ 0:   1.00000      1.00000      0.000000
+ 0:  /
+ 0: --
+ 0: SGFN
+ 0:   0.000000     0.000000     0.000000
+ 0:   0.0380000    0.0249707    0.000000
+ 0:   0.0500000    0.0333603    0.000000
+ 0:   0.100000     0.0753083    0.000000
+ 0:   0.150000     0.114710     0.000000
+ 0:   0.200000     0.158820     0.000000
+ 0:   0.250000     0.212338     0.000000
+ 0:   0.300000     0.271065     0.000000
+ 0:   0.350000     0.332589     0.000000
+ 0:   0.400000     0.394113     0.000000
+ 0:   0.450000     0.458433     0.000000
+ 0:   0.550000     0.500381     0.000000
+ 0:  /
+ 0: --
+ 0: SOF3
+ 0:   0.200000     0.000000     0.000000
+ 0:   0.300000     0.000000     0.0193777
+ 0:   0.350000     0.00501000   0.0277673
+ 0:   0.400000     0.0246800    0.0361568
+ 0:   0.450000     0.0627200    0.0585291
+ 0:   0.500000     0.121550     0.0976805
+ 0:   0.550000     0.287470     0.159204
+ 0:   0.600000     0.502200     0.234710
+ 0:   0.650000     0.757030     0.326996
+ 0:   0.700000     0.871560     0.539532
+ 0:   0.712000     0.883243     0.606649
+ 0:   0.750000     0.920240     0.916670
+ 0:  /
+ 0: 
+ 0: 
+ 0: 
+ 0: -- Stone 3-phase oil rel perm
+ 0: STONE
+ 0: 
+ 0: -- Component gas viscosities
+ 0: GASVISCT
+ 0: 100  .0112  1
+ 0: 200  .0128  1
+ 0: 300  .0145  1
+ 0: 400  .016   1
+ 0: /
+ 0: 
+ 0: -- Relative permeability endpoints vs temperature (deg F)
+ 0: ENKRVT
+ 0: -- temp Krwmax Krgmax Kromax Krwro  Krgro Krorg Krorw
+ 0:    105  1*     1*     1*     0.004  1*    1*    1*
+ 0:    450  1*     1*     1*     0.12   1*    1*    1*     /
+ 0: 
+ 0: -- Saturation endpoints vs temperature (deg F)
+ 0: ENPTVT
+ 0: -- temp  Swc  Swir  Swmax  Sgc  Sgr  Sgmax  Sorw  Sorg
+ 0:    105   0.20 0.20  1*     1*   1*   1*     0.3   0.2
+ 0:    450   0.45 0.45  1*     1*   1*   1*     0.1   0.05 /
+ 0: 
+ 0: -- Component oil phase viscosities cp
+ 0: OILVISCT
+ 0:  90 6000  6000
+ 0: 100 3500  3500
+ 0: 120 1050  1050
+ 0: 140  470   470
+ 0: 160  200   200
+ 0: 180  118   118
+ 0: 200   62    62
+ 0: 240   23    23
+ 0: 280   11    11
+ 0: 300   10    10
+ 0: 400    5     5
+ 0: 500    2     2
+ 0: /
+ 0: 
+ 0: -- Crookston K-value coefficients
+ 0: -- Propane
+ 0: 
+ 0: KVCR
+ 0: --    SGAS  HEAVY
+ 0:       3.167  1*
+ 0:    170447    1*
+ 0:       0      1*
+ 0:     3062     1*
+ 0:       0      1*
+ 0: /
+ 0: 
+ 0: -- Heats of vapourisation Btu/lb
+ 0: HEATVAP
+ 0: 350  0.0 /
+ 0: 
+ 0: -- Critical temperatures deg R
+ 0: TCRIT
+ 0: 358 10000 /
+ 0: 
+ 0: -- Critical pressures psia
+ 0: PCRIT
+ 0: 666.37  1* /
+ 0: 
+ 0: -- Component reference densities in oil phase lb/ft**3
+ 0: DREF
+ 0: 60.975 60.975 /
+ 0: 
+ 0: -- Component compressibilities in oil phase 1/psi
+ 0: CREF
+ 0: 0.00002  0.0000126 /
+ 0: 
+ 0: -- Component specific heats Btu/lb/deg R
+ 0: SPECHA
+ 0: 0.52 0.432 /
+ 0: 
+ 0: CNAMES
+ 0: SGAS HEAVY /
+ 0: 
+ 0: MW
+ 0: 30.07 600 /
+ 0: 
+ 0: -- Thermal expansion coefficients 1/deg R
+ 0: THERMEX1
+ 0: .00035 .000315 /
+ 0: 
+ 0: -- oil component gas phase compressibilities 1/psi
+ 0: ZFACTOR
+ 0: 0.95 /
+ 0: 
+ 0: -- Surface density of oil phase - lb/ft**3
+ 0: DENSITY
+ 0: 61.0 /
+ 0: 
+ 0: -- Water properties
+ 0: PVTW
+ 0: --  Pref       Bw        Cw          Vw        Cvw
+ 0: --  PSIA       RB/STB    1/PSI       CPOISE    1/PSI
+ 0:     75.000     1.0       3.E-08      .3        7.E-09
+ 0:  /
+ 0: 
+ 0: -- Ref press  rock compressibility
+ 0: -- psia       1/psi
+ 0: ROCK
+ 0: 100  5.0E-05  /
+ 0: 
+ 0: -- global mole fraction vs depth
+ 0: ZMFVD
+ 0: 624 0.05 0.95 /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: SOLUTION
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: PRESSURE
+ 0: 5544*20 /                                    initial pressure (psi)
+ 0: 
+ 0: SOIL
+ 0: -- 8 layers of 0.1, 264 grids/layer
+ 0: 2112*0.10
+ 0: -- 11 layers of 0.8
+ 0: 2904*0.8
+ 0: -- 1 layer of 0.4
+ 0: 264*0.4
+ 0: -- 1 layer of 0.04
+ 0: 264*0.02 /
+ 0: 
+ 0: SWAT
+ 0: 2112*0.45
+ 0: 2904*0.20
+ 0: 264*0.60
+ 0: 264*0.98 /
+ 0: 
+ 0: TEMPI
+ 0: 2112*225
+ 0: 264*190
+ 0: 264*165
+ 0: 264*120
+ 0: 2640*110 /
+ 0: 
+ 0: NEI
+ 0: 0.05 0.95     /                              non-equilibrium initialization
+ 0: 
+ 0: 
+ 0: -- Output to print file
+ 0: RPTSOL
+ 0: PRES SOIL SGAS SWAT TEMP YMF XMF /
+ 0: 
+ 0: -- Output to restart file
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC YMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: RPTRST
+ 0: PRES SOIL SGAS SWAT TEMP /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: SUMMARY
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: -- Field vectors
+ 0: FWIR
+ 0: FWIT
+ 0: FHLT
+ 0: FOPR
+ 0: 
+ 0: COPR
+ 0:  SCYCI  1 1 16 /
+ 0:  SCYCI  2 1 17 /
+ 0:  SCYCI  3 1 17 /
+ 0:  SCYCI  4 1 18 /
+ 0:  SCYCI  5 1 18 /
+ 0:  SCYCI  6 1 19 /
+ 0:  SCYCI  7 1 19 /
+ 0:  SCYCI  8 1 20 /
+ 0:  SCYCI  9 1 20 /
+ 0:  SCYCI 10 1 20 /
+ 0: --
+ 0:  SCYCP  1 1 16 /
+ 0:  SCYCP  2 1 17 /
+ 0:  SCYCP  3 1 17 /
+ 0:  SCYCP  4 1 18 /
+ 0:  SCYCP  5 1 18 /
+ 0:  SCYCP  6 1 19 /
+ 0:  SCYCP  7 1 19 /
+ 0:  SCYCP  8 1 20 /
+ 0:  SCYCP  9 1 20 /
+ 0:  SCYCP 10 1 20 /
+ 0: /
+ 0: 
+ 0: CWPR
+ 0:  SCYCI  1 1 16 /
+ 0:  SCYCI  2 1 17 /
+ 0:  SCYCI  3 1 17 /
+ 0:  SCYCI  4 1 18 /
+ 0:  SCYCI  5 1 18 /
+ 0:  SCYCI  6 1 19 /
+ 0:  SCYCI  7 1 19 /
+ 0:  SCYCI  8 1 20 /
+ 0:  SCYCI  9 1 20 /
+ 0:  SCYCI 10 1 20 /
+ 0: --
+ 0:  SCYCP  1 1 16 /
+ 0:  SCYCP  2 1 17 /
+ 0:  SCYCP  3 1 17 /
+ 0:  SCYCP  4 1 18 /
+ 0:  SCYCP  5 1 18 /
+ 0:  SCYCP  6 1 19 /
+ 0:  SCYCP  7 1 19 /
+ 0:  SCYCP  8 1 20 /
+ 0:  SCYCP  9 1 20 /
+ 0:  SCYCP 10 1 20 /
+ 0: /
+ 0: 
+ 0: CGPR
+ 0:  SCYCI  1 1 16 /
+ 0:  SCYCI  2 1 17 /
+ 0:  SCYCI  3 1 17 /
+ 0:  SCYCI  4 1 18 /
+ 0:  SCYCI  5 1 18 /
+ 0:  SCYCI  6 1 19 /
+ 0:  SCYCI  7 1 19 /
+ 0:  SCYCI  8 1 20 /
+ 0:  SCYCI  9 1 20 /
+ 0:  SCYCI 10 1 20 /
+ 0: --
+ 0:  SCYCP  1 1 16 /
+ 0:  SCYCP  2 1 17 /
+ 0:  SCYCP  3 1 17 /
+ 0:  SCYCP  4 1 18 /
+ 0:  SCYCP  5 1 18 /
+ 0:  SCYCP  6 1 19 /
+ 0:  SCYCP  7 1 19 /
+ 0:  SCYCP  8 1 20 /
+ 0:  SCYCP  9 1 20 /
+ 0:  SCYCP 10 1 20 /
+ 0: /
+ 0: 
+ 0: CWIR
+ 0:  SCYCI  1 1 16 /
+ 0:  SCYCI  2 1 17 /
+ 0:  SCYCI  3 1 17 /
+ 0:  SCYCI  4 1 18 /
+ 0:  SCYCI  5 1 18 /
+ 0:  SCYCI  6 1 19 /
+ 0:  SCYCI  7 1 19 /
+ 0:  SCYCI  8 1 20 /
+ 0:  SCYCI  9 1 20 /
+ 0:  SCYCI 10 1 20 /
+ 0: --
+ 0:  SCYCP  1 1 16 /
+ 0:  SCYCP  2 1 17 /
+ 0:  SCYCP  3 1 17 /
+ 0:  SCYCP  4 1 18 /
+ 0:  SCYCP  5 1 18 /
+ 0:  SCYCP  6 1 19 /
+ 0:  SCYCP  7 1 19 /
+ 0:  SCYCP  8 1 20 /
+ 0:  SCYCP  9 1 20 /
+ 0:  SCYCP 10 1 20 /
+ 0: /
+ 0: 
+ 0: CGIR
+ 0:  SCYCI  1 1 16 /
+ 0:  SCYCI  2 1 17 /
+ 0:  SCYCI  3 1 17 /
+ 0:  SCYCI  4 1 18 /
+ 0:  SCYCI  5 1 18 /
+ 0:  SCYCI  6 1 19 /
+ 0:  SCYCI  7 1 19 /
+ 0:  SCYCI  8 1 20 /
+ 0:  SCYCI  9 1 20 /
+ 0:  SCYCI 10 1 20 /
+ 0: --
+ 0:  SCYCP  1 1 16 /
+ 0:  SCYCP  2 1 17 /
+ 0:  SCYCP  3 1 17 /
+ 0:  SCYCP  4 1 18 /
+ 0:  SCYCP  5 1 18 /
+ 0:  SCYCP  6 1 19 /
+ 0:  SCYCP  7 1 19 /
+ 0:  SCYCP  8 1 20 /
+ 0:  SCYCP  9 1 20 /
+ 0:  SCYCP 10 1 20 /
+ 0: /
+ 0: 
+ 0: -- Segment data
+ 0: 
+ 0: SSQU
+ 0: SCYCI /
+ 0: SCYCP /
+ 0: /
+ 0: 
+ 0: SOFR
+ 0: SCYCI /
+ 0: SCYCP /
+ 0: /
+ 0: 
+ 0: SGFR
+ 0: SCYCI /
+ 0: SCYCP /
+ 0: /
+ 0: 
+ 0: SWFR
+ 0: SCYCI /
+ 0: SCYCP /
+ 0: /
+ 0: 
+ 0: SHFR
+ 0: SCYCI /
+ 0: SCYCP /
+ 0: /
+ 0: 
+ 0: -- Performance data
+ 0: 
+ 0: PERFORMANCE
+ 0: 
+ 0: -- Run summary file
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: RPTONLY
+ 0: SCHEDULE
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: CVCRIT
+ 0:  1* 15 6* 2 /
+ 0: 
+ 0: --RPTPRINT
+ 0: --  1 1 0 0 0   1 1 1 0 0 /
+ 0: RPTSCHED
+ 0:   TEMP  PRES  SOIL  SWAT  SGAS VOIL VGAS VWAT /
+ 0: RPTRST
+ 0: PRES TEMP SOIL SGAS SWAT VOIL VGAS VWAT /
+ 0: 
+ 0: WELSPECS
+ 0:  SCYCI FIELD 1 1 1* LIQ /
+ 0:  SCYCP FIELD 1 1 1* LIQ /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: -- 4 1/2 " diameter from Carpenter
+ 0: --      I J K1 K2 ...  ... T   Diam   K  Skin D  Dir Ro
+ 0:  SCYCI  1 1 16 16 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI  2 1 17 17 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI  3 1 17 17 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI  4 1 18 18 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI  5 1 18 18 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI  6 1 19 19 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI  7 1 19 19 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI  8 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI  9 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCI 10 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0: --
+ 0:  SCYCP  1 1 16 16 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP  2 1 17 17 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP  3 1 17 17 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP  4 1 18 18 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP  5 1 18 18 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP  6 1 19 19 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP  7 1 19 19 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP  8 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP  9 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0:  SCYCP 10 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ 0: /
+ 0: 
+ 0: -- Use 1/2 the connection transmissibility factor
+ 0: 
+ 0: WPIMULT
+ 0:  SCYCI 0.5 /
+ 0:  SCYCP 0.5 /
+ 0: /
+ 0: 
+ 0: -- Inner Tubing Diameter = .295 ft - from Prats
+ 0: -- Inner Liner  Diameter = .375 ft - from Carpenter
+ 0: -- Areas * 1/2 because of symmetry
+ 0: -- Diameters unaltered for homogeneous flow Reynold's number
+ 0: 
+ 0: WELSEGS
+ 0: --Name  Node   Length  Vol Data Pres   Flow
+ 0: --      Depth  to Node     Type Drop   Model
+ 0:  SCYCI   0      1       1  ABS 'HFA'  'HO' /
+ 0: --Start End  Branch Conn Length  Depth Diam  Rough  Area
+ 0: --Seg   Seg         Seg  from 0
+ 0:    2    5      1     1    981     980   .295  1.0E-3 .034 /
+ 0:    6    7      1     5   1735    1734   .375  1.0E-3 .055 /
+ 0:    8    8      1     7   1795.8  1777   .375  1.0E-3 .055 /
+ 0:    9    9      1     8   1812.6  1779.5 .375  1.0E-3 .055 /
+ 0:   10   18      1     9   2115.7  1824.5 .375  1.0E-3 .055 /
+ 0: /
+ 0: 
+ 0: COMPSEGS
+ 0: --Name
+ 0:   SCYCI /
+ 0: -- I of  J of  K of  Branch  Length  Length Dir End of Depth Thermal
+ 0: -- conn  conn  conn          to strt to end     range  Conn  Length
+ 0:     1     1     16      1     1795.8  1829.5 X    2*         33.7 /
+ 0:     2     1     17      1     1829.5  1863.1 X    2*         33.7 /
+ 0:     3     1     17      1     1863.1  1896.8 X    2*         33.7 /
+ 0:     4     1     18      1     1896.8  1930.5 X    2*         33.7 /
+ 0:     5     1     18      1     1930.5  1964.2 X    2*         33.7 /
+ 0:     6     1     19      1     1964.2  1997.8 X    2*         33.7 /
+ 0:     7     1     19      1     1997.8  2031.5 X    2*         33.7 /
+ 0:     8     1     20      1     2031.5  2065.2 X    2*         33.7 /
+ 0:     9     1     20      1     2065.2  2098.9 X    2*         33.7 /
+ 0:    10     1     20      1     2098.9  2115.7 X    2*         16.8 /
+ 0: /
+ 0: 
+ 0: -- Inner Tubing Diameter = .295 ft - from Prats
+ 0: -- Inner Liner  Diameter = .375 ft - from Carpenter
+ 0: -- Areas * 1/2 because of symmetry
+ 0: -- Diameters unaltered for homogeneous flow Reynold's number
+ 0: -- because the producers are pumped off (Al-Hadrami), the
+ 0: -- BHP depth is defined right at the start of completions
+ 0: 
+ 0: WELSEGS
+ 0: --Name  Node   Length  Vol Data Pres   Flow
+ 0: --      Depth  to Node     Type Drop   Model
+ 0:  SCYCP   1777    1       1  ABS 'HFA'  'HO' /
+ 0: --Start End  Branch Conn Length  Depth  Diam  Rough  Area
+ 0: --Seg   Seg         Seg  from 0
+ 0:    2     2     1     1    17.8   1779.5 .375  1.0E-3 .055 /
+ 0:    3    11     1     2   320.8   1824.5 .375  1.0E-3 .055 /
+ 0: /
+ 0: 
+ 0: COMPSEGS
+ 0: --Name
+ 0:  SCYCP /
+ 0: -- I of  J of  K of  Branch  Length  Length Dir End of Depth Thermal
+ 0: -- conn  conn  conn          to strt to end     range  Conn  Length
+ 0:     1     1     16      1      1      1*     X    2*         33.7  /
+ 0:     2     1     17      1      34.7   1*     X    2*         33.7 /
+ 0:     3     1     17      1      68.3   1*     X    2*         33.7 /
+ 0:     4     1     18      1     102.0   1*     X    2*         33.7 /
+ 0:     5     1     18      1     135.7   1*     X    2*         33.7 /
+ 0:     6     1     19      1     169.4   1*     X    2*         33.7 /
+ 0:     7     1     19      1     203.0   1*     X    2*         33.7 /
+ 0:     8     1     20      1     236.7   1*     X    2*         33.7 /
+ 0:     9     1     20      1     270.4   1*     X    2*         33.7 /
+ 0:    10     1     20      1     304.1   1*     X    2*         16.8 /
+ 0: /
+ 0: 
+ 0: -- Heat Transfer Coefficients
+ 0: -- .11 (BTU/ft-D-degF)**-1 ~ .02 (KJ/m-D-degC)**-1
+ 0: -- from Prats, "Heat Loss from an Injection Well", page 130
+ 0: -- HTC from liner is higher because no cement or annulus with stagnant gas
+ 0: 
+ 0: WSEGHEAT
+ 0: -- Name Start End  Type Resist
+ 0: --      Seg   Seg
+ 0:   SCYCI  2     5   TEMP .112 1* 75  / 1* 250 /
+ 0:   SCYCI  6     7   TEMP .112 1* 225 / 1* 140 /
+ 0:   SCYCI  8     8   TEMP .112 1* 110 /
+ 0:   SCYCI  9    18   COMP .05 /
+ 0:   SCYCP  2    11   COMP .05 /
+ 0: /
+ 0: 
+ 0: --TSCRIT
+ 0: --initT minT   maxT maxInc/Dec targTTE maxTTE TTPT MTPT TSCT MxWT
+ 0: --   .1   0.0001  20   1.5   1*      1*     1*     1*  1*  1*  0.2 /
+ 0: 
+ 0: -- Cycle 1
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 10 days
+ 0: TSTEP
+ 0: 15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 18 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 108 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: END
+ 0: 
+ 0: -- Cycle 2
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 123 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 126 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 216 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: -- Cycle 3
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 231 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 234 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 324 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: -- Cycle 4
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 339 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 342 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 432 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: -- Cycle 5
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 447 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 450 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 540 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: -- Cycle 6
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 555 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 558 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 648 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: -- Cycle 7
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 663 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 666 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 756 days - 2 years, 26 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: -- Cycle 8
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 771 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 774 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 864 days - 2 years, 134 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: -- Cycle 9
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 879 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 882 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 972 days - 2 years, 242 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: -- Cycle 10
+ 0: 
+ 0: WCONINJE
+ 0: --Well  Type  ...   Init Rate  Res BHP
+ 0:   SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   T(F)
+ 0:   SCYCI 0.7  450.0  /
+ 0: /
+ 0: 
+ 0: -- 987 days
+ 0: TSTEP
+ 0:  15 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCI  SHUT /
+ 0: /
+ 0: 
+ 0: -- 990 days
+ 0: TSTEP
+ 0:  3 /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP
+ 0:   SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+ 0: /
+ 0: 
+ 0: -- 1080 days - 3 years, 350 days
+ 0: TSTEP
+ 0:  90 /
+ 0: 
+ 0: WELOPEN
+ 0:  SCYCP  SHUT /
+ 0: /
+ 0: 
+ 0: END
+ 0: -------------------------------------------------------------------------------
+ 0: 
+
+ ******** END OF INPUT DATA FOR RUN THERM8
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING FIELD   
+     4 READING THERMAL 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                   
+     5 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE WATER    KEYWORD                           
+ @           2 /             2 hydrocarbon components, dead oil + solution ga
+     6 READING WATER   
+     7 READING HWELLS  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            HWELLS IS NOT REQUIRED IN ECLIPSE 100                          
+     8 READING DIMENS  
+     9 READING ROCKDIMS
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD ROCKDIMS IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE WELLDIMS KEYWORD                           
+ @           2  /            Base and cap rock connections                   
+    10 READING WELLDIMS
+    11 READING WSEGDIMS
+    12 READING START   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+    13 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                 2098 KBYTES                                               
+    15 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @             5280 VALUES NOT DEFINED IN BOX (  1- 11,  1- 24,  1- 21)      
+ @           OF KEYWORD TOPS                                                 
+    16 READING DXV     
+    17 READING DYV     
+    18 READING DZV     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           SPURIOUS DATA BEFORE EQUALS   KEYWORD                           
+ @            8*64 7*40 4*10 40 100 /                z-height = 1052 feet    
+    19 READING EQUALS  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           INVALID GRID ARRAY NAME HEATCR                                  
+ @           ON RECORD    5 FOLLOWING EQUALS   KEYWORD                       
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+    20 READING ROCKCON 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           UNRECOGNISED KEYWORD ROCKCON  IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           SPURIOUS DATA BEFORE ROCKPROP KEYWORD                           
+ @             1  1 11  1 24  1  1 K- /                   overburden  connect
+ @             2  1 11  1 24 21 21 K+ /                   underburden connect
+ @           /                                                               
+    21 READING ROCKPROP
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           SPURIOUS DATA BEFORE PROPS    KEYWORD                           
+ @             1 225      30                  35  1* N /     overburden  prop
+ @             2 110      30                  35  1* N /     underburden prop
+ @           /                                                               
+    22 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
+ @           PORE VOLUMES WILL BE SET TO ZERO                                
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               0
+ Warnings               6
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

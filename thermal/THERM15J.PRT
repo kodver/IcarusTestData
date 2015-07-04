@@ -1,0 +1,470 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN THERM15J
+
+ 0: ------------------------------------------------------------------------
+ 0: --                                                                    --
+ 0: -- Thermal example of gas production                                  --
+ 0: --    * radial grid                                                   --
+ 0: --    * dual porosity                                                 --
+ 0: --    * single phase, single component                                --
+ 0: --    * Joule-Thomson effect                                          --
+ 0: --    * multi-segment well                                            --
+ 0: --                                                                    --
+ 0: -- A dual porosity model has been used to allow different             --
+ 0: -- temperatures in the rock and fluid.  The pore volume in the        --
+ 0: -- matrix and the heat capacity of the fracture rock have both been   --
+ 0: -- set to zero. (A simpler alternative is to use a single porosity    --
+ 0: -- model and ignore the energy stored in the rock by setting the      --
+ 0: -- rock heat capacity to zero, as we do here in the fracture cells.)  --
+ 0: --                                                                    --
+ 0: -- In THERM15  the Joule Thomson coefficient is  0.0 K/bar            --
+ 0: -- In THERM15J the Joule Thomson coefficient is +0.1 K/bar            --
+ 0: --                                                                    --
+ 0: --                                                                    --
+ 0: -- Last modified August 2004                                          --
+ 0: --                                                                    --
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Modification date: 	January 2007
+ 0: -- Changes:			-
+ 0: -- Result:			-
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC   ========================================
+ 0: 
+ 0: METRIC
+ 0: 
+ 0: THERMAL
+ 0: 
+ 0: COMPS
+ 0: 1     /
+ 0: 
+ 0: FULLIMP
+ 0: 
+ 0: RADIAL
+ 0: 
+ 0: DUALPORO
+ 0: 
+ 0: DIMENS
+ 0: 10 1 20 /
+ 0: 
+ 0: WSEGDIMS
+ 0:  1 15 1 /
+ 0: 
+ 0: GRID      ========================================
+ 0: 
+ 0: INRAD
+ 0:  0.1  /
+ 0: 
+ 0: DRV
+ 0:  1 2 4 8 16 32 64 128 256 512   /
+ 0: 
+ 0: DTHETAV
+ 0: 360.0                           /
+ 0: 
+ 0: DZV
+ 0:  10*10.0
+ 0:  10*10.0      / Matrix and fracture
+ 0: 
+ 0: TOPS
+ 0:  10*500.0 90*
+ 0:  10*500.0 90* / Matrix and fracture
+ 0: 
+ 0: PORO
+ 0:  100*0.0
+ 0:  100*0.3      / Matrix and fracture
+ 0: 
+ 0: PERMR
+ 0:  100*20.0
+ 0:  100*20.0   /  Matrix and fracture
+ 0: 
+ 0: PERMTHT
+ 0:  100*20.0
+ 0:  100*20.0   /  Matrix and fracture
+ 0: 
+ 0: PERMZ
+ 0:  100*1.0
+ 0:  100*1.0    /  Matrix and fracture
+ 0: 
+ 0: THCONR
+ 0:  100*200.0
+ 0:  100*200.0    /  Matrix and fracture
+ 0: 
+ 0: HEATCR
+ 0:  100*800.0
+ 0:  100*0.0      /  Matrix and fracture
+ 0: 
+ 0: SIGMA
+ 0:  0.12 /
+ 0: 
+ 0: SIGMATH
+ 0:  100*0.1      /
+ 0: 
+ 0: INIT
+ 0: 
+ 0: PROPS     ========================================
+ 0: 
+ 0: --Component data
+ 0: 
+ 0: --
+ 0: -- Specific heat                 Cp = 2         KJ/Kg/K
+ 0: -- Molecular weight              MW = 40        Kg/KgMole
+ 0: -- Joule-Thomson coefficient of  Mu = 0.1       K/bar
+ 0: -- Gas constant                  R  = 8.3145    KJ/KgMole/K
+ 0: --                                  = 8.3145e-2 bar.m3/KgMole/K
+ 0: --
+ 0: -- Z-factor Z = Z0 - Z1 x P/(RT)
+ 0: --          Z1 = Cp x MW x Mu
+ 0: --                               Z0 = 1
+ 0: --                               Z1 = 8         KJ/KgMole/bar
+ 0: --                                  = 0.08      m3/KgMole
+ 0: --
+ 0: -- At reservoir conditions
+ 0: -- Pressure                      P  =  50       bars
+ 0: -- Temperature                   T  =  30       C
+ 0: --                                  =  303      K
+ 0: -- Avearge Z-factor              Z  =  1-0.16
+ 0: --                                  =  0.84
+ 0: --
+ 0: 
+ 0: CNAMES
+ 0:           GAS /
+ 0: CVTYPE
+ 0:           GAS /
+ 0: MW
+ 0:           40.0 /
+ 0: ZFACTOR
+ 0:           1.0 /
+ 0: ZFACT1
+ 0:           0.08 /
+ 0: SPECHG
+ 0:           2.0 /
+ 0: GASVISCT
+ 0:      25   0.0143
+ 0:      50   0.0149
+ 0:      75   0.0161
+ 0:     100   0.0172
+ 0:     125   0.0184
+ 0:     150   0.0196
+ 0:     200   0.0207
+ 0:     250   0.0241 /
+ 0: 
+ 0: -- Dummy K-value, crits and oil-phase properties
+ 0: 
+ 0: KVCR
+ 0:           1.0 /
+ 0: TCRIT
+ 0:           1.0 /
+ 0: PCRIT
+ 0:           1.0 /
+ 0: DREF
+ 0:         900.0 /
+ 0: SPECHA
+ 0:           0.1 /
+ 0: OILVISCT
+ 0:      25   2.3
+ 0:     250   0.3 /
+ 0: 
+ 0: -- Water properties
+ 0: 
+ 0: PVTW
+ 0: --  Pref       Bw        Cw          Vw        Cvw
+ 0:     1*         1*        1*          1*         1*
+ 0:  /
+ 0: 
+ 0: -- Rock compressibility
+ 0: 
+ 0: ROCK
+ 0: 50.0  5.0E-04  /
+ 0: 
+ 0: 
+ 0: --Initial Reservoir and surface conditions
+ 0: 
+ 0: RTEMP
+ 0:   30.0 /
+ 0: 
+ 0: ZMFVD
+ 0: 500.0 1.0 /
+ 0: 
+ 0: STCOND
+ 0: 20.0 1.0 /
+ 0: 
+ 0: 
+ 0: -- Rel perm tables
+ 0: 
+ 0: SWFN
+ 0:    .0000   .0000   0.0
+ 0:   1.0000   1.000   0.0
+ 0:  /
+ 0: SGFN
+ 0:    .0000   .0000   0.0
+ 0:   1.0000  1.0000   0.0
+ 0:  /
+ 0: SOF3
+ 0:    .0000   .0000   .0000
+ 0:   1.0000  1.0000  1.0000
+ 0:  /
+ 0: 
+ 0: 
+ 0: 
+ 0: SOLUTION  ========================================
+ 0: 
+ 0: EQUIL
+ 0: --  Ddat    Pdat     Dwoc    Pcog    Dgoc    Pgoc  It1  It2  Iac Iin
+ 0:  500.0      50.      1000.0  0.0     1000.0  0.0   1     1    0   1  /
+ 0: 
+ 0: RPTRST
+ 0: RESTART /
+ 0: 
+ 0: RPTSOL
+ 0: PRES TEMP /
+ 0: 
+ 0: SUMMARY   ========================================
+ 0: 
+ 0: ALL
+ 0: PERFORMANCE
+ 0: 
+ 0: STEM
+ 0: 'PROD' /
+ 0: /
+ 0: 
+ 0: SPR
+ 0: 'PROD' /
+ 0: /
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE  ========================================
+ 0: 
+ 0: RPTSCHED
+ 0: PRES TEMP /
+ 0: 
+ 0: WELSPECS
+ 0:  PROD   FIELD   1    1  1* GAS /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: -- well    - location -   open   satn  trans   well  kh    S    D    direct
+ 0: -- name    i  j  k1 k2   shut   tab   factor  diam
+ 0:  PROD      1  1  11 14  'OPEN'   1     1*     0.2    3*              Z    /
+ 0: /
+ 0: 
+ 0: WELSEGS
+ 0: -- Name    Dep 1   Tlen 1  Vol 1
+ 0: 'PROD'     5       1       1    'INC' /
+ 0: 
+ 0: -- First   Last   Branch   Outlet  Length   Depth  Diam  Ruff  Area  Vol
+ 0: -- Seg     Seg    Num      Seg              Chang
+ 0: -- Main Stem
+ 0:    2       11     1        1       500      500    0.2   1.E-3 1*    1* /
+ 0:    12      14     1        11      30        30    0.2   1.E-3 1*    1* /
+ 0:  /
+ 0: 
+ 0: COMPSEGS
+ 0: -- Name
+ 0: 'PROD' /
+ 0: -- I  J  K  Brn  Start   End     Dirn   End
+ 0: --          No   Length  Length  Penet  Range
+ 0:    1  1 11  1    500     510      'Z'    /
+ 0:    1  1 12  1    510     520      'Z'    /
+ 0:    1  1 13  1    520     530      'Z'    /
+ 0:    1  1 14  1    530     540      'Z'    /
+ 0: /
+ 0: 
+ 0: 
+ 0: WCONPROD
+ 0: -- Well O/S Control O  W  G     L  RV BHP
+ 0:  PROD OPEN  GRAT    1* 1* 1.0E5 1* 1* 25 /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 31 28 31 30 31 30 31 31 30 31 30 31 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN THERM15J
+     1 READING RUNSPEC 
+     2 READING METRIC  
+     3 READING THERMAL 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                   
+     4 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE FULLIMP  KEYWORD                           
+ @           1     /                                                         
+     5 READING FULLIMP 
+     6 READING RADIAL  
+     7 READING DUALPORO
+     8 READING DIMENS  
+     9 READING WSEGDIMS
+    10 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THERE ARE NO PHASES PRESENT. SPECIFY KEYWORDS                   
+ @           OIL/WATER/GAS IN THE RUNSPEC SECTION                            
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NO PHASES SPECIFIED AS BEING PRESENT IN RESERVOIR               
+ @           THERE MUST BE AT LEAST ONE ( OF OIL, WATER AND GAS )            
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                89616 BYTES                                                
+    11 READING INRAD   
+    12 READING DRV     
+    13 READING DTHETAV 
+    14 READING DZV     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE TOPS     KEYWORD                           
+ @            10*10.0                                                        
+ @            10*10.0      / Matrix and fracture                             
+    15 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @              180 VALUES NOT DEFINED IN BOX (  1- 10,  1-  1,  1- 20)      
+ @           OF KEYWORD TOPS                                                 
+    16 READING PORO    
+    17 READING PERMR   
+    18 READING PERMTHT 
+    19 READING PERMZ   
+    20 READING THCONR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE HEATCR   KEYWORD                           
+ @            100*200.0                                                      
+ @            100*200.0    /  Matrix and fracture                            
+    21 READING HEATCR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD HEATCR   IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE SIGMA    KEYWORD                           
+ @            100*800.0                                                      
+ @            100*0.0      /  Matrix and fracture                            
+    22 READING SIGMA   
+    23 READING SIGMATH 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD SIGMATH  IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE INIT     KEYWORD                           
+ @            100*0.1      /                                                 
+    24 READING INIT    
+    25 READING PROPS   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           IN ORDER TO COMPLETE THE CIRCLE FOR THE GLOBAL RADIAL GRID,     
+ @           IT IS NECESSARY TO SET ITEM 3 OF THE COORDSYS KEYWORD TO COMP   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
+ @           PORE VOLUMES WILL BE SET TO ZERO                                
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               0
+ Warnings               8
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

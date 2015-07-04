@@ -1,0 +1,167 @@
+<eclipse>
+<message date="1/1/1994" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+     525028 BYTES                                                        
+</message>
+<warning date="1/1/1994" time="0.00000000000000">
+    800 VALUES NOT DEFINED IN BOX (  1- 20,  1- 20,  1-  3)              
+ OF KEYWORD TOPS                                                         
+</warning>
+<message date="1/1/1994" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 1200                                          
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+       2039 KBYTES                                                       
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+    58535 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="1/1/1994" time="0.00000000000000">
+ INCONSISTENT END POINTS IN SATURATION TABLE   1                         
+ THE MAXIMUM GAS SATURATION (1.0000)                                     
+ PLUS THE CONNATE WATER SATURATION (0.1200)                              
+ MUST NOT EXCEED 1.0                                                     
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   6531.94138 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.01230                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   6842.28621 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.07111                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   7152.63103 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.12539                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   7462.97586 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.17567                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   7773.32069 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.22244                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   8083.66552 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.26608                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   8394.01034 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.30695                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   8704.35517 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.34534                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   9014.70000 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.38150                              
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD BTEMP    IN SUMMARY FILE SPECIFICATION             
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE RUNSUM   KEYWORD                                   
+  1  1 1 /                                                               
+  1  1 2 /                                                               
+  1  1 3 /                                                               
+ 20 20 1 /                                                               
+ 20 20 2 /                                                               
+ 20 20 3 /                                                               
+ /                                                                       
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC TEMP             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SOIL             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SGAS             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SWAT             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD WINJTEMP IN SCHEDULING DATA                        
+</error>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD I1 1* 80 IN SCHEDULING DATA                        
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE TSTEP    KEYWORD                                   
+ /                                                                       
+</warning>
+<warning date="1/1/1994" time="0.00000000000000">
+ WELL I1       HAS BEEN DEFINED AS AN INJECTOR                           
+ BUT THE TEMPERATURE OF THE INJECTION STREAM HAS                         
+ NOT BEEN DEFINED. IT DEFAULTS TO 0.0   DEG F                            
+</warning>
+<message date="1/1/1994" time="0.00000000000000">
+ DRSDT KEYWORD HAS NOT BEEN ENTERED, SO THE                              
+ MAXIMUM GAS RE-SOLUTION RATE IS DEFAULTED TO INFINITY.                  
+</message>
+</eclipse>

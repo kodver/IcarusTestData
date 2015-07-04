@@ -146,3 +146,46 @@
  YOU MAY NEED TO INCREASE THE CURRENT VALUE OF    4                      
  USING THE NUPCOL KEYWORD.                                               
 </warning>
+<warning date="5/4/1994" time="94.69701783508614">
+ LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER                
+ IF YOU INCREASE LITMAX (= 25 - TUNING KEYWORD)                          
+</warning>
+<message date="22/4/1994" time="111.00000000000000">
+ RESTART FILE WRITTEN   REPORT     3                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<warning date="22/4/1994" time="111.00000000000000">
+ LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER                
+ IF YOU INCREASE LITMAX (= 25 - TUNING KEYWORD)                          
+</warning>
+<warning date="14/5/1994" time="133.57128908399318">
+ LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER                
+ IF YOU INCREASE LITMAX (= 25 - TUNING KEYWORD)                          
+</warning>
+<warning date="14/5/1994" time="133.57128908399318">
+ LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER                
+ IF YOU INCREASE LITMAX (= 25 - TUNING KEYWORD)                          
+</warning>
+<warning date="14/5/1994" time="133.57128908399318">
+ LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER                
+ IF YOU INCREASE LITMAX (= 25 - TUNING KEYWORD)                          
+</warning>
+<warning date="14/5/1994" time="133.57128908399318">
+ LINEAR CONVERGENCE FAILURE ON LAST NUPCOL ITERATION.                    
+ GROUP TARGETS AND LIMITS MAY NOT BE ACCURATELY HONORED.                 
+ YOU MAY NEED TO INCREASE THE CURRENT VALUE OF    4                      
+ USING THE NUPCOL KEYWORD.                                               
+</warning>
+<warning date="14/5/1994" time="133.57128908399318">
+ LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER                
+ IF YOU INCREASE LITMAX (= 25 - TUNING KEYWORD)                          
+</warning>
+<warning date="14/6/1994" time="164.45264003475722">
+ LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER                
+ IF YOU INCREASE LITMAX (= 25 - TUNING KEYWORD)                          
+</warning>
+<message date="16/1/1997" time="1111.00000000000000">
+ RESTART FILE WRITTEN   REPORT     4                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+</eclipse>

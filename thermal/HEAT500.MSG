@@ -1,0 +1,111 @@
+<eclipse>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                           
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                           
+</error>
+<warning date="1/1/0" time="0.00000000000000">
+ SPURIOUS DATA BEFORE EQLDIMS  KEYWORD                                   
+ 2 /                                                                     
+</warning>
+<message date="1/1/1994" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+     486588 BYTES                                                        
+</message>
+<warning date="1/1/1994" time="0.00000000000000">
+    800 VALUES NOT DEFINED IN BOX (  1- 20,  1- 20,  1-  3)              
+ OF KEYWORD TOPS                                                         
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                            
+ RUNSPEC OPTIONS. SEE KEYWORD TEMP                                       
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE HEATCR   KEYWORD                                   
+  1200*24.0  /                                                           
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD HEATCR   IN GRID DATA                              
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE RPTGRID  KEYWORD                                   
+   1200*35.0 /                                                           
+</warning>
+<message date="1/1/1994" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 1200                                          
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ ADDITIONAL     1.876 MEGABYTES REQUIRED FOR SIMULATION                  
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+       1805 KBYTES                                                       
+</message>
+<message date="1/1/1994" time="0.00000000000000">
+    58535 CHARACTER VARIABLES USED                                       
+</message>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE PVTW     KEYWORD                                   
+ 60 14.965 /                                                             
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE MW       KEYWORD                                   
+    'OIL'   'GAS' /                                                      
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE CVTYPE   KEYWORD                                   
+     120     25   /                                                      
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD CVTYPE   IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE CVTYPES  KEYWORD                                   
+     'DEAD' 'LIVE' /                                                     
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD CVTYPES  IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE DREF     KEYWORD                                   
+     'DEAD' 'GAS' /                                                      
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD DREF     IN PROPERTY DATA                          
+ Stop limit reached on error      outputs
+</error>
+<warning date="1/1/1994" time="0.00000000000000">
+ SPURIOUS DATA BEFORE CREF     KEYWORD                                   
+      43.0  25.0 /                                                       
+</warning>
+<error date="1/1/1994" time="0.00000000000000">
+ UNRECOGNISED KEYWORD CREF     IN PROPERTY DATA                          
+</error>
+<error date="1/1/1994" time="0.00000000000000">
+ RUN STOPPED BECAUSE NUMBER OF   ERRORS                                  
+ EXCEEDS MAXIMUM PERMITTED VALUE (    10).                               
+ SEE MESSAGES KEYWORD                                                    
+</error>
+</eclipse>

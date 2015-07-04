@@ -1,0 +1,935 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN THERM6
+
+ 0: ------------------------------------------------------------------------------
+ 0: --                                                                          --
+ 0: -- SPE 78131 case study 2                                                   --
+ 0: --                                                                          --
+ 0: -- Single Horizontal well with steam injection & production                 --
+ 0: -- injection through inner tubing, production and injection through         --
+ 0: -- inner tubing and outer annulus                                           --
+ 0: --                                                                          --
+ 0: -- Changes from original eclhws.data                                        --
+ 0: --                                                                          --
+ 0: -- grid now 30 X 20 X 15                                                    --
+ 0: -- use Kisman's layers and permeability barriers                            --
+ 0: -- viscosity from Kisman                                                    --
+ 0: -- k-values from Kisman's Burnt Lake paper - intermediate volatility oil    --
+ 0: -- rel perms from Kisman, "realistic" unmodified set, Figure 6              --
+ 0: -- initial mole% of solution gas is 10%, from Oballa                        --
+ 0: --                                                                          --
+ 0: --                                                                          --
+ 0: -- Last modified April 2003                                                 --
+ 0: --                                                                          --
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Modification date: 	January 2007
+ 0: -- Changes:			-
+ 0: -- Result:			-
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: TITLE
+ 0: Single well SAGD for SPE paper
+ 0: 
+ 0: METRIC
+ 0: 
+ 0: THERMAL
+ 0: 
+ 0: COMPS
+ 0: 2 /             2 hydrocarbon components, volatile oil & gas
+ 0: 
+ 0: WATER
+ 0: 
+ 0: HWELLS
+ 0: 
+ 0: DIMENS
+ 0: 30 20 15 /      Grid dimensions
+ 0: 
+ 0: ROCKDIMS
+ 0: 2   /           Base and cap rock connections
+ 0: 
+ 0: WELLDIMS	
+ 0: 1* 26 /         Max number of completions / well
+ 0: 
+ 0: WSEGDIMS
+ 0:  1 52 1 /       Multi-segment well dimensions
+ 0: 
+ 0: START
+ 0:  01 JAN 1996 /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: GRID
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: TOPS
+ 0: 600*396 /                                    top depth
+ 0: 
+ 0: DXV
+ 0: 250.0 50.0 26*32.0 50.0 250.0 /              x-length = 1400 meters
+ 0: 
+ 0: DYV
+ 0:  20*2.0/                                y-length = 40 meters
+ 0: 
+ 0: DZV
+ 0:  15*2.0  /                              z-height = 30 meters
+ 0: 
+ 0: -- Properties with uniform values:
+ 0: 
+ 0: EQUALS
+ 0: --PORO      0.33 /                             porosity
+ 0: --PERMX  3400.0  /                             kx, mD
+ 0: --PERMY  3400.0  /                             ky, mD,  ky = kx
+ 0: --PERMZ   680.0  /                             kz, mD,  kv/kh = 0.2
+ 0: PORO    0.32                       /                     layer 6 porosity
+ 0: PORO    0.05   1  30  1   4  6   6 /                     layer 5 porosity
+ 0: PORO    0.32   1  30  5   7  6   6 /                     layer 5 porosity
+ 0: PORO    0.05   1  30  8  12  6   6 /                     layer 5 porosity
+ 0: PORO    0.32   1  30  13 15  6   6 /                     layer 5 porosity
+ 0: PORO    0.05   1  30  16 18  6   6 /                     layer 5 porosity
+ 0: PORO    0.32   1  30  19 20  6   6 /                     layer 5 porosity
+ 0: PORO    0.33   1  30  1  20  7   9 /                     layer 4 porosity
+ 0: PORO    0.29   1  30  1  20  8  11 /                     layer 3 porosity
+ 0: PORO    0.30   1  30  1  20  12 14 /                     layer 2 porosity
+ 0: PORO    0.22   1  30  1  20  15 15 /                     layer 1 porosity
+ 0: PERMX  2500.0  1  30  1  20  1   5 /                     layer 6 kx, mD
+ 0: PERMX    0.05  1  30  1   4  6   6 /                     layer 5 kx, mD
+ 0: PERMX  2500.0  1  30  5   7  6   6 /                     layer 5 kx, mD
+ 0: PERMX    0.05  1  30  8  12  6   6 /                     layer 5 kx, mD
+ 0: PERMX  2500.0  1  30  13 15  6   6 /                     layer 5 kx, mD
+ 0: PERMX    0.05  1  30  16 18  6   6 /                     layer 5 kx, mD
+ 0: PERMX  2500.0  1  30  19 20  6   6 /                     layer 5 kx, mD
+ 0: PERMX  2500.0  1  30  1  20  7   9 /                     layer 4 kx, mD
+ 0: PERMX  3000.0  1  30  1  20  8  11 /                     layer 3 kx, mD
+ 0: PERMX  1700.0  1  30  1  20  12 14 /                     layer 2 kx, mD
+ 0: PERMX  1500.0  1  30  1  20  15 15 /                     layer 1 kx, mD
+ 0: PERMY  2500.0  1  30  1  20  1   5 /                     layer 6 ky, mD
+ 0: PERMY    0.05  1  30  1   4  6   6 /                     layer 5 ky, mD
+ 0: PERMY  2500.0  1  30  5   7  6   6 /                     layer 5 ky, mD
+ 0: PERMY    0.05  1  30  8  12  6   6 /                     layer 5 ky, mD
+ 0: PERMY  2500.0  1  30  13 15  6   6 /                     layer 5 ky, mD
+ 0: PERMY    0.05  1  30  16 18  6   6 /                     layer 5 ky, mD
+ 0: PERMY  2500.0  1  30  19 20  6   6 /                     layer 5 ky, mD
+ 0: PERMY  2500.0  1  30  1  20  7   9 /                     layer 4 ky, mD
+ 0: PERMY  3000.0  1  30  1  20  8  11 /                     layer 3 ky, mD
+ 0: PERMY  1700.0  1  30  1  20  12 14 /                     layer 2 ky, mD
+ 0: PERMY  1500.0  1  30  1  20  15 15 /                     layer 1 ky, mD
+ 0: PERMZ  1500.0  1  30  1  20  1   5 /                     layer 6 ky, mD
+ 0: PERMZ    0.05  1  30  1   4  6   6 /                     layer 5 ky, mD
+ 0: PERMZ  1500.0  1  30  5   7  6   6 /                     layer 5 ky, mD
+ 0: PERMZ    0.05  1  30  8  12  6   6 /                     layer 5 ky, mD
+ 0: PERMZ  1500.0  1  30  13 15  6   6 /                     layer 5 ky, mD
+ 0: PERMZ    0.05  1  30  16 18  6   6 /                     layer 5 ky, mD
+ 0: PERMZ  1500.0  1  30  19 20  6   6 /                     layer 5 ky, mD
+ 0: PERMZ  1500.0  1  30  1  20  7   9 /                     layer 4 ky, mD
+ 0: PERMZ  1500.0  1  30  1  20  8  11 /                     layer 3 ky, mD
+ 0: PERMZ   500.0  1  30  1  20  12 14 /                     layer 2 ky, mD
+ 0: PERMZ   100.0  1  30  1  20  15 15 /                     layer 1 ky, mD
+ 0: HEATCR 2350.0  1 30 1 20 1 15 /                  rock heat capacity kJ/m3/K
+ 0: THCONR  133.1  1 30 1 20 1 15 /                  rock conductivity kJ/m/Day/K
+ 0: /
+ 0: 
+ 0: 
+ 0: ROCKCON
+ 0: --# I1 I2 J1 J2 K1 K2 Dir
+ 0:   1  1 30  1 20  1  1 K- /                   overburden  connections
+ 0:   2  1 30  1 20 15 15 K+ /                   underburden connections
+ 0: /
+ 0: 
+ 0: ROCKPROP
+ 0: --# Temp (C) Cond (kJ/m/Day/K) Heat capacity (kJ/m3/K)
+ 0:   1 16.0     74.9              1169.0  /     overburden  properties
+ 0:   2 16.0     74.9              1169.0  /     underburden properties
+ 0: /
+ 0: 
+ 0: RPTGRID
+ 0:  PORO /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: PROPS
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: -- Rock properties:
+ 0: 
+ 0: ROCK
+ 0: -- Pref (bar)  Compressibility (/bar)
+ 0:    26.54       9.6e-4 /
+ 0: 
+ 0: 
+ 0: -- Hydrocarbon properties:
+ 0: 
+ 0: CNAMES
+ 0:          OIL      GAS        /               component names
+ 0: MW
+ 0:          508.0    16.04      /               molecular weights (/mole)
+ 0: DREF
+ 0:          995.98   680.27     /               reference density (kg/m3)
+ 0: CREF
+ 0:          5.63e-5  9.48e-3    /               compressibility (/bar)
+ 0: THERMEX1
+ 0:          8.48e-4  2.30e-2    /               thermal expansion (/K)
+ 0: PCRIT
+ 0:          13.6     46.4       /               critical pressure (bar)
+ 0: TCRIT
+ 0:          10000.0  190.66     /               critical temperatire (K)
+ 0: SPECHA
+ 0:          2.224    0.80       /               oil specific heat kJ/kg/K
+ 0: SPECHG
+ 0:          1.656    2.19       /               gas specific heat kJ/kg/K
+ 0: GASVISCF
+ 0:          1.0      2.80E-4
+ 0:          1.0      0.6670     /               gas viscosity
+ 0: 
+ 0: OILVISCC
+ 0: ANDRADE FORMULA
+ 0: --        -5.759    -3.721
+ 0: --        2706.84   1486.77    /               oil viscosity
+ 0:           -6.1672   -3.721
+ 0:           3035.229  1486.77  /
+ 0: /
+ 0: 
+ 0: KVCR
+ 0: --         0        1.97
+ 0: --         0        0.4391e3
+ 0: --         0        0.0
+ 0: --         0        0.19589e3
+ 0: --         0       -0.01       /
+ 0:            0        0
+ 0:            0        319.0
+ 0:            0        0
+ 0:            0        33.1
+ 0:            0        245.45 /
+ 0: 
+ 0: 
+ 0: -- Reference conditions & standard conditions
+ 0: 
+ 0: PREF
+ 0:  1.013 /                                     (bar)
+ 0: 
+ 0: TREF
+ 0:  294.15 /                                    (K)
+ 0: 
+ 0: STCOND
+ 0: -- TEMP (C) PRES(Bars)
+ 0:    15.6     1.013 /
+ 0: 
+ 0: 
+ 0: 
+ 0: -- Relative permeabilities based on Figure 6 of SPE 30276
+ 0: 
+ 0: SWOF
+ 0: --Sw           Krw          Kro          Pc
+ 0:   0.450000     0.000000     0.280000     0.000000
+ 0:   0.496818     0.0145071    0.214592     0.000000
+ 0:   0.547594     0.0322924    0.147897     0.000000
+ 0:   0.600250     0.0545241    0.0945410    0.000000
+ 0:   0.647264     0.0766442    0.0465316    0.000000
+ 0:   0.700000     0.100000     0.000000     0.000000
+ 0:   1.00000      1.00000      0.000000     0.000000
+ 0: /
+ 0: 
+ 0: 
+ 0: SLGOF
+ 0: --Sliq         Krg          Kro          Pc
+ 0:   0.500000     0.486224     0.000000     0.000000
+ 0:   0.550000     0.398335     0.0165331    0.000000
+ 0:   0.600000     0.331450     0.0387712    0.000000
+ 0:   0.650000     0.270139     0.0561535    0.000000
+ 0:   0.700000     0.218389     0.0831927    0.000000
+ 0:   0.750000     0.176778     0.104438     0.000000
+ 0:   0.800000     0.134975     0.135340     0.000000
+ 0:   0.850000     0.0987459    0.173967     0.000000
+ 0:   0.900000     0.0625165    0.214526     0.000000
+ 0:   0.950000     0.0318609    0.278261     0.000000
+ 0:   1.00000      0.000000     0.350000     0.000000
+ 0: /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: SOLUTION
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: PRESSURE
+ 0: 9000*26.54 /                                 initial pressure (bar)
+ 0: 
+ 0: SWAT
+ 0: 9000*0.15 /                                  initial SWAT
+ 0: 
+ 0: SOIL
+ 0: 9000*0.85 /                                  initial SOIL
+ 0: 
+ 0: TEMPI
+ 0: 9000*16.0 /                                  initial temperature (C)
+ 0: 
+ 0: NEI
+ 0: 0.9 0.1     /                                non-equilibrium initialization
+ 0: 
+ 0: 
+ 0: -- Output to print file
+ 0: RPTSOL
+ 0: PRES SOIL SGAS SWAT TEMP /
+ 0: 
+ 0: -- Output to restart file
+ 0: RPTRST
+ 0: PRES SOIL SGAS SWAT TEMP /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: SUMMARY
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: -- Field vectors
+ 0: FWIR
+ 0: FWIT
+ 0: FHLT
+ 0: 
+ 0: COPR
+ 0:  SSAGD  3 1 14  /
+ 0:  SSAGD  4 1 14  /
+ 0:  SSAGD  5 1 14  /
+ 0:  SSAGD  6 1 14  /
+ 0:  SSAGD  7 1 14  /
+ 0:  SSAGD  8 1 14  /
+ 0:  SSAGD  9 1 14  /
+ 0:  SSAGD 10 1 14  /
+ 0:  SSAGD 11 1 14  /
+ 0:  SSAGD 12 1 14  /
+ 0:  SSAGD 13 1 14  /
+ 0:  SSAGD 14 1 14  /
+ 0:  SSAGD 15 1 14  /
+ 0:  SSAGD 16 1 14  /
+ 0:  SSAGD 17 1 14  /
+ 0:  SSAGD 18 1 14  /
+ 0:  SSAGD 19 1 14  /
+ 0:  SSAGD 20 1 14  /
+ 0:  SSAGD 21 1 14  /
+ 0:  SSAGD 22 1 14  /
+ 0:  SSAGD 23 1 14  /
+ 0:  SSAGD 24 1 14  /
+ 0:  SSAGD 25 1 14  /
+ 0:  SSAGD 26 1 14  /
+ 0:  SSAGD 27 1 14  /
+ 0:  SSAGD 28 1 14  /
+ 0: /
+ 0: 
+ 0: CWPR
+ 0:  SSAGD  3 1 14  /
+ 0:  SSAGD  4 1 14  /
+ 0:  SSAGD  5 1 14  /
+ 0:  SSAGD  6 1 14  /
+ 0:  SSAGD  7 1 14  /
+ 0:  SSAGD  8 1 14  /
+ 0:  SSAGD  9 1 14  /
+ 0:  SSAGD 10 1 14  /
+ 0:  SSAGD 11 1 14  /
+ 0:  SSAGD 12 1 14  /
+ 0:  SSAGD 13 1 14  /
+ 0:  SSAGD 14 1 14  /
+ 0:  SSAGD 15 1 14  /
+ 0:  SSAGD 16 1 14  /
+ 0:  SSAGD 17 1 14  /
+ 0:  SSAGD 18 1 14  /
+ 0:  SSAGD 19 1 14  /
+ 0:  SSAGD 20 1 14  /
+ 0:  SSAGD 21 1 14  /
+ 0:  SSAGD 22 1 14  /
+ 0:  SSAGD 23 1 14  /
+ 0:  SSAGD 24 1 14  /
+ 0:  SSAGD 25 1 14  /
+ 0:  SSAGD 26 1 14  /
+ 0:  SSAGD 27 1 14  /
+ 0:  SSAGD 28 1 14  /
+ 0: /
+ 0: 
+ 0: CGPR
+ 0:  SSAGD  3 1 14  /
+ 0:  SSAGD  4 1 14  /
+ 0:  SSAGD  5 1 14  /
+ 0:  SSAGD  6 1 14  /
+ 0:  SSAGD  7 1 14  /
+ 0:  SSAGD  8 1 14  /
+ 0:  SSAGD  9 1 14  /
+ 0:  SSAGD 10 1 14  /
+ 0:  SSAGD 11 1 14  /
+ 0:  SSAGD 12 1 14  /
+ 0:  SSAGD 13 1 14  /
+ 0:  SSAGD 14 1 14  /
+ 0:  SSAGD 15 1 14  /
+ 0:  SSAGD 16 1 14  /
+ 0:  SSAGD 17 1 14  /
+ 0:  SSAGD 18 1 14  /
+ 0:  SSAGD 19 1 14  /
+ 0:  SSAGD 20 1 14  /
+ 0:  SSAGD 21 1 14  /
+ 0:  SSAGD 22 1 14  /
+ 0:  SSAGD 23 1 14  /
+ 0:  SSAGD 24 1 14  /
+ 0:  SSAGD 25 1 14  /
+ 0:  SSAGD 26 1 14  /
+ 0:  SSAGD 27 1 14  /
+ 0:  SSAGD 28 1 14  /
+ 0: /
+ 0: 
+ 0: CWIR
+ 0:  SSAGD  3 1 14  /
+ 0:  SSAGD  4 1 14  /
+ 0:  SSAGD  5 1 14  /
+ 0:  SSAGD  6 1 14  /
+ 0:  SSAGD  7 1 14  /
+ 0:  SSAGD  8 1 14  /
+ 0:  SSAGD  9 1 14  /
+ 0:  SSAGD 10 1 14  /
+ 0:  SSAGD 11 1 14  /
+ 0:  SSAGD 12 1 14  /
+ 0:  SSAGD 13 1 14  /
+ 0:  SSAGD 14 1 14  /
+ 0:  SSAGD 15 1 14  /
+ 0:  SSAGD 16 1 14  /
+ 0:  SSAGD 17 1 14  /
+ 0:  SSAGD 18 1 14  /
+ 0:  SSAGD 19 1 14  /
+ 0:  SSAGD 20 1 14  /
+ 0:  SSAGD 21 1 14  /
+ 0:  SSAGD 22 1 14  /
+ 0:  SSAGD 23 1 14  /
+ 0:  SSAGD 24 1 14  /
+ 0:  SSAGD 25 1 14  /
+ 0:  SSAGD 26 1 14  /
+ 0:  SSAGD 27 1 14  /
+ 0:  SSAGD 28 1 14  /
+ 0: /
+ 0: 
+ 0: CGIR
+ 0:  SSAGD  3 1 14  /
+ 0:  SSAGD  4 1 14  /
+ 0:  SSAGD  5 1 14  /
+ 0:  SSAGD  6 1 14  /
+ 0:  SSAGD  7 1 14  /
+ 0:  SSAGD  8 1 14  /
+ 0:  SSAGD  9 1 14  /
+ 0:  SSAGD 10 1 14  /
+ 0:  SSAGD 11 1 14  /
+ 0:  SSAGD 12 1 14  /
+ 0:  SSAGD 13 1 14  /
+ 0:  SSAGD 14 1 14  /
+ 0:  SSAGD 15 1 14  /
+ 0:  SSAGD 16 1 14  /
+ 0:  SSAGD 17 1 14  /
+ 0:  SSAGD 18 1 14  /
+ 0:  SSAGD 19 1 14  /
+ 0:  SSAGD 20 1 14  /
+ 0:  SSAGD 21 1 14  /
+ 0:  SSAGD 22 1 14  /
+ 0:  SSAGD 23 1 14  /
+ 0:  SSAGD 24 1 14  /
+ 0:  SSAGD 25 1 14  /
+ 0:  SSAGD 26 1 14  /
+ 0:  SSAGD 27 1 14  /
+ 0:  SSAGD 28 1 14  /
+ 0: /
+ 0: 
+ 0: -- Segment vectors
+ 0: 
+ 0: SORMR
+ 0:  SSAGD 52 / oil removal rate
+ 0: /
+ 0: 
+ 0: SWRMR
+ 0:  SSAGD 52 / water removal rate
+ 0: /
+ 0: 
+ 0: SGRMR
+ 0:  SSAGD 52 / gas removal rate
+ 0: /
+ 0: 
+ 0: SORMT
+ 0:  SSAGD 52 / oil removal total
+ 0: /
+ 0: 
+ 0: SWRMT
+ 0:  SSAGD 52 / water removal total
+ 0: /
+ 0: 
+ 0: SGRMT
+ 0:  SSAGD 52 / gas removal total
+ 0: /
+ 0: 
+ 0: SPR
+ 0:  SSAGD / pressure (all segments)
+ 0: /
+ 0: 
+ 0: STEM
+ 0:  SSAGD / temperature (all segments)
+ 0: /
+ 0: 
+ 0: SSQU
+ 0:  SSAGD / steam quality (all segments)
+ 0: /
+ 0: 
+ 0: SENE
+ 0:  SSAGD / energy (all segments)
+ 0: /
+ 0: 
+ 0: --SPSAT
+ 0: -- SSAGD / saturation pressure
+ 0: --/
+ 0: SOFR
+ 0: SSAGD /
+ 0: /
+ 0: 
+ 0: SGFR
+ 0: SSAGD /
+ 0: /
+ 0: 
+ 0: SWFR
+ 0: SSAGD /
+ 0: /
+ 0: 
+ 0: SHFR
+ 0: SSAGD /
+ 0: /
+ 0: 
+ 0: -- Performance data
+ 0: 
+ 0: PERFORMANCE
+ 0: 
+ 0: -- Run Summary file
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: RPTONLY
+ 0: SCHEDULE
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: CVCRIT
+ 0:  1* 10 /
+ 0: 
+ 0: --RPTPRINT
+ 0: --  1 1 0 0 0   1 1 1 0 0 /
+ 0: RPTSCHED
+ 0:   TEMP  PRES  SOIL  SWAT  SGAS VOIL VGAS VWAT /
+ 0: RPTRST
+ 0: PRES TEMP SOIL SGAS SWAT VOIL VGAS VWAT /
+ 0: 
+ 0: WELSPECS
+ 0:  SSAGD FIELD 3 1 1* LIQ /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: --      I J K1 K2 ...  ... T   Diam   K  Skin D  Dir Ro
+ 0:  SSAGD  3 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD  4 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD  5 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD  6 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD  7 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD  8 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD  9 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 10 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 11 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 12 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 13 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 14 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 15 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 16 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 17 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 18 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 19 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 20 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 21 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 22 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 23 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 24 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 25 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 26 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 27 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0:  SSAGD 28 1 14 14 OPEN 1*  1*  0.1189 1* 1*   1* X   1* /
+ 0: /
+ 0: 
+ 0: COMPMOBI
+ 0: --      I J K1 K2 Mob
+ 0:  SSAGD  3 1 14 14 0.1 /
+ 0:  SSAGD  4 1 14 14 0.1 /
+ 0:  SSAGD  5 1 14 14 0.1 /
+ 0:  SSAGD  6 1 14 14 0.1 /
+ 0:  SSAGD  7 1 14 14 0.1 /
+ 0:  SSAGD  8 1 14 14 0.1 /
+ 0:  SSAGD  9 1 14 14 0.1 /
+ 0:  SSAGD 10 1 14 14 0.1 /
+ 0:  SSAGD 11 1 14 14 0.1 /
+ 0:  SSAGD 12 1 14 14 0.1 /
+ 0:  SSAGD 13 1 14 14 0.1 /
+ 0:  SSAGD 14 1 14 14 0.1 /
+ 0:  SSAGD 15 1 14 14 0.1 /
+ 0:  SSAGD 16 1 14 14 0.1 /
+ 0:  SSAGD 17 1 14 14 0.1 /
+ 0:  SSAGD 18 1 14 14 0.1 /
+ 0:  SSAGD 19 1 14 14 0.1 /
+ 0:  SSAGD 20 1 14 14 0.1 /
+ 0:  SSAGD 21 1 14 14 0.1 /
+ 0:  SSAGD 22 1 14 14 0.1 /
+ 0:  SSAGD 23 1 14 14 0.1 /
+ 0:  SSAGD 24 1 14 14 0.1 /
+ 0:  SSAGD 25 1 14 14 0.1 /
+ 0:  SSAGD 26 1 14 14 0.1 /
+ 0:  SSAGD 27 1 14 14 0.1 /
+ 0:  SSAGD 28 1 14 14 0.1 /
+ 0: /
+ 0: 
+ 0: -- Use 1/2 the connection transmissibility factor
+ 0: 
+ 0: WPIMULT
+ 0:  SSAGD 0.5 /
+ 0: /
+ 0: 
+ 0: -- Outer Annulus Diameter = .138 m
+ 0: -- Inner Annulus Diameter = .125 m
+ 0: -- Inner Tubing Diameter = .0901 m
+ 0: -- Outer Tubing Diameter = .1016 m
+ 0: -- Areas * 1/2 because of symmetry
+ 0: -- Diameters unaltered for homogeneous flow Reynold's number
+ 0: --
+ 0: -- Use 1/2 areas for 1/2 grid
+ 0: --
+ 0: -- Volumetric heat of tubing / casing       300 kJ/m3/K
+ 0: -- Thermal conductivity of tubing / casing 1000 kJ/m/day/K
+ 0: --
+ 0: 
+ 0: WELSEGS
+ 0: --Name  Node   Length  Vol Data   Flow  Tubing  Tubing  Tubing
+ 0: --      Depth  to Node     Type   Model Area    Cp      K
+ 0:  SSAGD  423.0    1      1   ABS 1* HO   0.0008  300     1000  /
+ 0: --Start End  Branch Conn Length  Depth Diam  Rough  Area
+ 0: --Seg   Seg         Seg  from 0
+ 0:    2    26     1     1    801    423.0 .0901 1.0E-3 .0032 /
+ 0:   27    27     1    26    801.1  423.0 .125  1.0E-3 .0061 /
+ 0:   28    52     1    27   1601.1  423.0 .0117 1.0E-3 .0021 /
+ 0: /
+ 0: 
+ 0: COMPSEGS
+ 0: --Name
+ 0:   SSAGD /
+ 0: -- I of  J of  K of  Branch  Length  Length Dir End of
+ 0: -- conn  conn  conn          to strt to end     range
+ 0:     3     1     14      1     1585.2  1601.1 X        /
+ 0:     4     1     14      1     1553.2  1585.1 X        /
+ 0:     5     1     14      1     1521.2  1553.1 X        /
+ 0:     6     1     14      1     1489.2  1521.1 X        /
+ 0:     7     1     14      1     1457.2  1489.1 X        /
+ 0:     8     1     14      1     1425.2  1457.1 X        /
+ 0:     9     1     14      1     1393.2  1425.1 X        /
+ 0:    10     1     14      1     1361.2  1393.1 X        /
+ 0:    11     1     14      1     1329.2  1361.1 X        /
+ 0:    12     1     14      1     1297.2  1329.1 X        /
+ 0:    13     1     14      1     1265.2  1297.1 X        /
+ 0:    14     1     14      1     1233.2  1265.1 X        /
+ 0:    15     1     14      1     1201.2  1233.1 X        /
+ 0:    16     1     14      1     1169.2  1201.1 X        /
+ 0:    17     1     14      1     1137.2  1169.1 X        /
+ 0:    18     1     14      1     1105.2  1137.1 X        /
+ 0:    19     1     14      1     1073.2  1105.1 X        /
+ 0:    20     1     14      1     1041.2  1073.1 X        /
+ 0:    21     1     14      1     1009.2  1041.1 X        /
+ 0:    22     1     14      1      977.2  1009.1 X        /
+ 0:    23     1     14      1      945.2   977.1 X        /
+ 0:    24     1     14      1      913.2   945.1 X        /
+ 0:    25     1     14      1      881.2   913.1 X        /
+ 0:    26     1     14      1      849.2   881.1 X        /
+ 0:    27     1     14      1      817.2   849.1 X        /
+ 0:    28     1     14      1      801.2   817.1 X        /
+ 0: /
+ 0: -- Remove fluid for circulating well
+ 0: WSEGEXSS
+ 0: -- Name Seg Type  Rate Rate/DD Pext
+ 0:   SSAGD 52  FREMP 1*   10000     5 /
+ 0: /
+ 0: 
+ 0: -- Heat Transfer Coefficients
+ 0: -- .11 (BTU/ft-D-degF)**-1 ~ .02 (KJ/m-D-degC)**-1
+ 0: WSEGHEAT
+ 0: -- Name Start End Type Resist
+ 0: --      Seg   Seg
+ 0:   SSAGD 52    28  COMP .02 /
+ 0:   SSAGD  1     1  SEG  .002  52 /
+ 0:   SSAGD  2     2  SEG  .002  51 /
+ 0:   SSAGD  3     3  SEG  .002  50 /
+ 0:   SSAGD  4     4  SEG  .002  49 /
+ 0:   SSAGD  5     5  SEG  .002  48 /
+ 0:   SSAGD  6     6  SEG  .002  47 /
+ 0:   SSAGD  7     7  SEG  .002  46 /
+ 0:   SSAGD  8     8  SEG  .002  45 /
+ 0:   SSAGD  9     9  SEG  .002  44 /
+ 0:   SSAGD 10    10  SEG  .002  43 /
+ 0:   SSAGD 11    11  SEG  .002  42 /
+ 0:   SSAGD 12    12  SEG  .002  41 /
+ 0:   SSAGD 13    13  SEG  .002  40 /
+ 0:   SSAGD 14    14  SEG  .002  39 /
+ 0:   SSAGD 15    15  SEG  .002  38 /
+ 0:   SSAGD 16    16  SEG  .002  37 /
+ 0:   SSAGD 17    17  SEG  .002  36 /
+ 0:   SSAGD 18    18  SEG  .002  35 /
+ 0:   SSAGD 19    19  SEG  .002  34 /
+ 0:   SSAGD 20    20  SEG  .002  33 /
+ 0:   SSAGD 21    21  SEG  .002  32 /
+ 0:   SSAGD 22    22  SEG  .002  31 /
+ 0:   SSAGD 23    23  SEG  .002  30 /
+ 0:   SSAGD 24    24  SEG  .002  29 /
+ 0:   SSAGD 25    25  SEG  .002  28 /
+ 0:   SSAGD 26    26  SEG  .002  27 /
+ 0: /
+ 0: 
+ 0: WCONINJE
+ 0: --Well Type  ...   Init Rate  Res BHP
+ 0:   SSAGD WATER OPEN RATE 75.0  1*  70 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   Temp
+ 0:   SSAGD 0.9  295.0  /
+ 0: /
+ 0: 
+ 0: TSCRIT
+ 0: --initT minT   maxT maxInc/Dec targTTE maxTTE TTPT MTPT TSCT MxWT
+ 0:    .1   0.001  0.5    1.5   1*      1*     1*   1*  1*  1*   1.0 /
+ 0: 
+ 0: -- Year 1 -----------------------------------------
+ 0: 
+ 0: TIME
+ 0: 1 5 10 /
+ 0: END
+ 0: 
+ 0: TSCRIT
+ 0: --initT minT   maxT maxInc/Dec targTTE maxTTE TTPT MTPT TSCT MxWT
+ 0:    .1   0.001  20   1.5   1*      1*     1*     1*  1*   1*  1.0 /
+ 0: 
+ 0: TIME
+ 0: 20 50 /
+ 0: 
+ 0: WCONINJE
+ 0: --Well Type  ...   Init Rate  Res BHP
+ 0:   SSAGD WATER OPEN RATE 100.0 1*  70 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Well  SQ   Temp
+ 0:   SSAGD 0.9  295.0  /
+ 0: /
+ 0: 
+ 0: TIME
+ 0: 60 90 100 120 140 170 190 200 250 300 350 /
+ 0: 
+ 0: SAVE
+ 0: END
+ 0: 
+ 0: -- Year 2 -----------------------------------------
+ 0: 
+ 0: TIME
+ 0: 500 730 /
+ 0: 
+ 0: SAVE
+ 0: 
+ 0: -- Year 3 -----------------------------------------
+ 0: 
+ 0: TIME
+ 0: 1095 /
+ 0: 
+ 0: SAVE
+ 0: 
+ 0: -- Year 4 -----------------------------------------
+ 0: 
+ 0: TIME
+ 0: 1460 /
+ 0: 
+ 0: SAVE
+ 0: 
+ 0: -- Year 5 -----------------------------------------
+ 0: 
+ 0: TIME
+ 0: 1825 /
+ 0: 
+ 0: SAVE
+ 0: 
+ 0: -- Years 6-10 -------------------------------------
+ 0: 
+ 0: TIME
+ 0: 2190 2555 2920 3285 3650 /
+ 0: 
+ 0: SAVE
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: END
+ 0: -------------------------------------------------------------------------------
+ 0: 
+
+ ******** END OF INPUT DATA FOR RUN THERM6
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING METRIC  
+     4 READING THERMAL 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                   
+     5 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE WATER    KEYWORD                           
+ @           2 /             2 hydrocarbon components, volatile oil & gas    
+     6 READING WATER   
+     7 READING HWELLS  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            HWELLS IS NOT REQUIRED IN ECLIPSE 100                          
+     8 READING DIMENS  
+     9 READING ROCKDIMS
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD ROCKDIMS IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE WELLDIMS KEYWORD                           
+ @           2   /           Base and cap rock connections                   
+    10 READING WELLDIMS
+    11 READING WSEGDIMS
+    12 READING START   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+    13 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                 3410 KBYTES                                               
+    15 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @             8400 VALUES NOT DEFINED IN BOX (  1- 30,  1- 20,  1- 15)      
+ @           OF KEYWORD TOPS                                                 
+    16 READING DXV     
+    17 READING DYV     
+    18 READING DZV     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           SPURIOUS DATA BEFORE EQUALS   KEYWORD                           
+ @            15*2.0  /                              z-height = 30 meters    
+    19 READING EQUALS  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           INVALID GRID ARRAY NAME HEATCR                                  
+ @           ON RECORD   45 FOLLOWING EQUALS   KEYWORD                       
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+    20 READING ROCKCON 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           UNRECOGNISED KEYWORD ROCKCON  IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           SPURIOUS DATA BEFORE ROCKPROP KEYWORD                           
+ @             1  1 30  1 20  1  1 K- /                   overburden  connect
+ @             2  1 30  1 20 15 15 K+ /                   underburden connect
+ @           /                                                               
+    21 READING ROCKPROP
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           SPURIOUS DATA BEFORE RPTGRID  KEYWORD                           
+ @             1 16.0     74.9              1169.0  /     overburden  propert
+ @             2 16.0     74.9              1169.0  /     underburden propert
+ @           /                                                               
+    22 READING RPTGRID 
+    23 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
+ @           PORE VOLUMES WILL BE SET TO ZERO                                
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
+ @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               0
+ Warnings               6
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

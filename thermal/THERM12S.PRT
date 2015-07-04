@@ -1,0 +1,176 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN THERM12S
+
+ 0: --------------------------------------------------------------------------------
+ 0: --                                                                            --
+ 0: --  ECLIPSE 300 Thermal example data set THERM12S                             --
+ 0: --  * corner point geometry                                                   --
+ 0: --  * lgrs                                                                    --
+ 0: --  * aquifers                                                                --
+ 0: --  * heat loss                                                               --
+ 0: --  * KVWI keyword                                                            --
+ 0: --  * user defined water properties                                           --
+ 0: --  * heaters                                                                 --
+ 0: --  * fast restart                                                            --
+ 0: --                                                                            --
+ 0: --                                                                            --
+ 0: --  Last modified April 2003                                                  --
+ 0: --                                                                            --
+ 0: --------------------------------------------------------------------------------
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Modification date: 	January 2007
+ 0: -- Changes:			-
+ 0: -- Result:			-
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: LOAD
+ 0: THERM12 12 /
+ 0: 
+ 0: SUMMARY
+ 0: RPTONLY
+ 0: RUNSUM
+ 0: SCHEDULE      ==================================================================
+ 0: 
+ 0: 
+ 0: --Year2-------------------------------------------------------------------------
+ 0: 
+ 0: -- Well controls
+ 0: 
+ 0: WCONPROD
+ 0: --Name  O/S  Mode Oil   Wat   Gas Liq Res BHP
+ 0:   PROD1 OPEN BHP  100.0 50.0  1*  1*  1*  20.0 /
+ 0:   PROD2 OPEN BHP  100.0 50.0  1*  1*  1*  20.0 /
+ 0:   PROD3 OPEN BHP  100.0 50.0  1*  1*  1*  20.0 /
+ 0:   PROD4 OPEN BHP  100.0 50.0  1*  1*  1*  20.0 /
+ 0: /
+ 0: 
+ 0: WCONINJE
+ 0: --Name  Type  O/S  Mode Rate      BHP
+ 0:   INJE  WATER OPEN WAT  500.0  1* 200.0 /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --Name  SQ   Temp
+ 0:   INJE  0.70 300.0  /
+ 0: /
+ 0: 
+ 0: --Heater controls
+ 0: 
+ 0: HEATERL
+ 0: --Name  LGR   I  J  K  HMAX
+ 0:   PRODA LGR1  3  2  1  0.0 /
+ 0: /
+ 0: 
+ 0: HEATER
+ 0: --Name   I  J  K  HMAX
+ 0:   PROD1  2  2  1  0.0  /
+ 0:   PROD2  5  2  1  0.0  /
+ 0:   PROD3  2  6  1  0.0  /
+ 0:   PROD4  5  6  1  0.0  /
+ 0: /
+ 0: 
+ 0: -- Small time step as injector comes on
+ 0: NEXT
+ 0: .05 /
+ 0: 
+ 0: TSTEP
+ 0: 31 28 31 30 31 30 31 31 30 31 30 31 /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN THERM12S
+     1 READING LOAD    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNABLE TO OPEN SAVE FILE                                        
+ @           THERM12                                                         
+ @           SYSTEM ERROR CODE IS       29                                   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           BAD HEADER ON SAVE FILE                                         
+ @           THERM12                                                         
+ @           SYSTEM ERROR CODE IS       29                                   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SAVE FILE THERM12                                               
+ @           DOES NOT HAVE A VALID HEADER                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SAVE FILE THERM12                                               
+ @           IN NOT AN ECLIPSE 100 FILE                                      
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SAVE FILE                                                       
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SAVE FILE THERM12                                               
+ @           TAKEN FROM DIFFERENT VERSION        0                           
+ @           CURRENT VERSION IS     5002                                     
+ @           THE SAVE FILE MUST ORIGINATE FROM THE PRESENT VERSION           
+ @           OF ECLIPSE. RESTARTS RUNS CAN BE DONE FROM PREVIOUS             
+ @           VERSIONS OF ECLIPSE BY SPECIFYING THE FULL DATASET              
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           RUN TERMINATED DUE TO SAVE FILE ERRORS                          
+
+ Error summary 
+ Comments               1
+ Warnings               0
+ Problems               0
+ Errors                 6
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

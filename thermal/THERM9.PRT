@@ -1,0 +1,616 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN THERM9
+
+ 0: ------------------------------------------------------------------------
+ 0: --                                                                    --
+ 0: -- Combustion                                                         --
+ 0: --                                                                    --
+ 0: --                                                                    --
+ 0: -- Data from:                                                         --
+ 0: --    K.H.Coats                                                       --
+ 0: --    "In-Situ Combustion Model"                                      --
+ 0: --    Soc. Pet. Eng. J. (Dec 1980) 533-54                             --
+ 0: --                                                                    --
+ 0: -- which was based on:                                                --
+ 0: --    F.W.Smith & T.K.Perkins                                         --
+ 0: --    "Experimental and Numerical Simulation Studies of the Wet       --
+ 0: --    Combustion Recovery Process"                                    --
+ 0: --    J. Cdn. Pet. Tech. (July/Sep  1973) 44-54                       --
+ 0: --                                                                    --
+ 0: --                                                                    --
+ 0: --                                                                    --
+ 0: -- Last modified April 2003                                           --
+ 0: --                                                                    --
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Modification date: 	January 2007
+ 0: -- Changes:			TSCRIT out
+ 0: -- Result:			Speed-up ~1.18
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC  ---------------------------------------------------------------
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: DIMENS
+ 0: 1 1 20 /
+ 0: 
+ 0: COMPS
+ 0: 5 /
+ 0: 
+ 0: WATER
+ 0: 
+ 0: THERMAL
+ 0: 
+ 0: REACTION
+ 0: 3 /
+ 0: 
+ 0: 
+ 0: GRID     ---------------------------------------------------------------
+ 0: 
+ 0: DXV
+ 0: 0.289    /
+ 0: 
+ 0: DYV
+ 0: 0.289    /
+ 0: 
+ 0: DZ
+ 0: 20*.2875  /
+ 0: 
+ 0: TOPS
+ 0: 0.0      /
+ 0: 
+ 0: PORO
+ 0: 20*0.25  /
+ 0: 
+ 0: PERMX
+ 0: 20*700.0 /   mD
+ 0: 
+ 0: PERMY
+ 0: 20*700.0 /   mD
+ 0: 
+ 0: PERMZ
+ 0: 20*700.0 /   mD
+ 0: 
+ 0: HEATCR
+ 0: 20*34.0  /   BTU/cu.ft/F
+ 0: 
+ 0: HEATCRT
+ 0: 20*0.0187/   BTU/cu.ft/F/F
+ 0: 
+ 0: THCONR
+ 0: 20*3.0   /   BTU/ft/D/F
+ 0: 
+ 0: 
+ 0: PROPS    ---------------------------------------------------------------
+ 0: 
+ 0: -- Component data ------------------------------------------------------
+ 0: 
+ 0: CNAMES
+ 0:            C32+C47      C20   C6-C12       O2   N2-COx  /
+ 0: CVTYPE
+ 0:               DEAD     LIVE     LIVE      GAS      GAS  /
+ 0: MW
+ 0:              508.9    282.6    131.4     32.0     32.0  /  lb/lb mol
+ 0: PCRIT
+ 0:               50.7    162.0    336.6    730.0    750.0  /  psi
+ 0: TCRIT
+ 0:                 1*     1381     1067       1*       1*  /  R
+ 0: DREF
+ 0:              61.15     56.6     44.9       1*       1*  /  lb/cu.ft at standard conditions
+ 0: CREF
+ 0:             1.0E-5   1.0E-5   1.0E-5       1*       1*  /  oil phase compressibility /psi
+ 0: THERMEX1
+ 0:             3.8E-4   3.8E-4   3.8E-4       1*       1*  /  oil phase thermal expansion /R
+ 0: SPECHA
+ 0:                0.6      0.6      0.6     0.24    0.226  /  oil phase specific heat BTU/lb/R
+ 0: HEATVAP
+ 0:                0.0      0.0      0.0      0.0      0.0  /  BTU/lb
+ 0: KVCR
+ 0:                  0        0        0        0        0
+ 0:                  0   3.11E6  7.778E5        0        0
+ 0:                  0        0        0        0        0
+ 0:                  0    13620     8331        0        0  /
+ 0: OILVISCC
+ 0: ANDRADE FORMULA
+ 0:               -2.0   -1.557   -1.446        1        1
+ 0:               2131     1461    927.2        1        1  /  log10(mu) = A + B/T
+ 0: /
+ 0: GASVISCF
+ 0:                  1     0.08     0.03 2.196E-4 2.127E-4
+ 0:                  1        0        0    0.721    0.702  /  mu = A.T^B
+ 0: 
+ 0: -- Rock-fluid data -----------------------------------------------------
+ 0: 
+ 0: SWOF
+ 0: --SW      KRW      KRO     PCOW
+ 0:   0.25    0.000    1.00    0.00
+ 0:   0.30    0.005    0.81    0.00
+ 0:   0.35    0.020    0.64    0.00
+ 0:   0.40    0.045    0.49    0.00
+ 0:   0.45    0.080    0.36    0.00
+ 0:   0.50    0.125    0.25    0.00
+ 0:   0.55    0.180    0.16    0.00
+ 0:   0.60    0.245    0.09    0.00
+ 0:   0.65    0.320    0.04    0.00
+ 0:   0.70    0.405    0.01    0.00
+ 0:   0.75    0.500    0.00    0.00
+ 0:   0.80    0.605    0.00    0.00
+ 0:   0.85    0.720    0.00    0.00
+ 0:   0.90    0.845    0.00    0.00
+ 0:   0.95    0.980    0.00    0.00
+ 0:   1.00    1.000    0.00    0.00  /
+ 0: 
+ 0: SGOF
+ 0: --SG      KRG     KROG     PCOG
+ 0:   0.00    0.000   1.000    0.00
+ 0:   0.05    0.006   0.854    0.00
+ 0:   0.10    0.023   0.720    0.00
+ 0:   0.15    0.052   0.597    0.00
+ 0:   0.20    0.092   0.486    0.00
+ 0:   0.25    0.143   0.386    0.00
+ 0:   0.30    0.207   0.298    0.00
+ 0:   0.35    0.281   0.221    0.00
+ 0:   0.40    0.367   0.155    0.00
+ 0:   0.45    0.465   0.101    0.00
+ 0:   0.50    0.574   0.059    0.00
+ 0:   0.55    0.694   0.028    0.00
+ 0:   0.60    0.826   0.008    0.00
+ 0:   0.65    0.970   0.000    0.00
+ 0:   0.70    1.000   0.000    0.00
+ 0:   0.75    1.000   0.000    0.00  /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: STCOND
+ 0: --Temp   Pressure
+ 0:   60     14.7 /
+ 0: 
+ 0: RTEMP
+ 0:  120 /
+ 0: 
+ 0: -- Chemical reaction data ----------------------------------------------
+ 0: 
+ 0: STOREAC
+ 0: -- C32+C47  C20  C6-C12     O2  N2-COx  WATER
+ 0:          1    0       0  45.17       0      0 / reaction 1
+ 0:          0    1       0  25.08       0      0 / reaction 2
+ 0:          0    0       1  11.66       0      0 / reaction 3
+ 0: 
+ 0: STOPROD
+ 0: -- C32+C47  C20  C6-C12     O2  N2-COx  WATER
+ 0:         0     0       0      0   37.46  29.71 / reaction 1
+ 0:         0     0       0      0   20.80  16.51 / reaction 2
+ 0:         0     0       0      0   9.670   7.67 / reaction 3
+ 0: 
+ 0: REACRATE
+ 0:    3.4054E10  0.28164E10   0.4035E10     / reaction 1,2,3
+ 0: 
+ 0: REACACT
+ 0:        32785       32785       32785     / reaction 1,2,3 (BTU/lb mol)
+ 0: 
+ 0: REACENTH
+ 0:      8142400     4521600     2102400     / reaction 1,2,3 (BTU/lb mol)
+ 0: 
+ 0: REACPHA
+ 0: -- C32+C47  C20  C6-C12     O2  N2-COx  WATER
+ 0:        OIL   1*      1*    GPP      1*     1* / reaction 1
+ 0:         1*  OIL      1*    GPP      1*     1* / reaction 2
+ 0:         1*   1*     OIL    GPP      1*     1* / reaction 3
+ 0: 
+ 0: REACCORD
+ 0: -- C32+C47  C20  C6-C12     O2  N2-COx  WATER
+ 0:          2    0       0      1       0      0 / reaction 1
+ 0:          0    2       0      1       0      0 / reaction 2
+ 0:          0    0       2      1       0      0 / reaction 3
+ 0: 
+ 0: 
+ 0: SOLUTION ---------------------------------------------------------------
+ 0: 
+ 0: -- NB In Coats's paper the initial temperature is set to 500F in the top
+ 0: --    20% of the tube.  However this means it is not possible to honour
+ 0: --    both the saturations and the mole fractions (XMF / YMF) given by
+ 0: --    Coats in the top 20% of the tube.
+ 0: --    The tube is initialized with NEI which honours the saturations.
+ 0: --    The NEI values were found by first running the data set with
+ 0: --    XMF and YMF, then calculating Z values from the MLSC output for
+ 0: --    the bottom 80% of the tube.
+ 0: 
+ 0: PRESSURE
+ 0: 20*815.0 /
+ 0: 
+ 0: SGAS
+ 0: 20*0.3 /
+ 0: 
+ 0: SWAT
+ 0: 20*0.3 /
+ 0: 
+ 0: TEMPI
+ 0:  4*500
+ 0: 16*120 /
+ 0: 
+ 0: --XMF
+ 0: --20*0.084
+ 0: --20*0.2063
+ 0: --20*0.7097
+ 0: --20*0.0
+ 0: --20*0.0
+ 0: --20*0.0 /
+ 0: 
+ 0: --YMF
+ 0: --20*0.0
+ 0: --20*0.0
+ 0: --20*0.0
+ 0: --20*0.29
+ 0: --20*0.71
+ 0: --20*0.0 /
+ 0: 
+ 0: NEI
+ 0:  0.0602 0.1479 0.5087 0.0822 0.2011 /
+ 0: 
+ 0: 
+ 0: -- Output --------------------------------------------------------------
+ 0: 
+ 0: RPTSOL
+ 0: PRESSURE SOIL SGAS SWAT MLSC XMF YMF /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC MLSC             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC YMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: RPTRST
+ 0: PRESSURE SOIL SGAS SWAT MLSC /
+ 0: 
+ 0: 
+ 0: SUMMARY  ---------------------------------------------------------------
+ 0: 
+ 0: WBHP
+ 0: INJE PROD /
+ 0: 
+ 0: WYMF
+ 0: PROD 4 /
+ 0: PROD 5 /
+ 0: /
+ 0: 
+ 0: -- Rates
+ 0: 
+ 0: FOPR
+ 0: FGIR
+ 0: FWIR
+ 0: FREAC
+ 0: /
+ 0: 
+ 0: -- Totals
+ 0: 
+ 0: FOPT
+ 0: FGIT
+ 0: FWIT
+ 0: FREAT
+ 0: /
+ 0: 
+ 0: -- Performance
+ 0: 
+ 0: PERFORMANCE
+ 0: 
+ 0: --  Run summary file
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE ---------------------------------------------------------------
+ 0: 
+ 0: -- Output --------------------------------------------------------------
+ 0: 
+ 0: RPTSCHED
+ 0: PRESSURE SOIL SGAS MLSC TEMP ENERGY REAC /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC MLSC             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC ENERGY           IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC REAC             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+ 0: RPTRST
+ 0: PRESSURE SOIL SGAS SWAT MLSC TEMP ENERGY REAC /
+ 0: 
+ 0: 
+ 0: -- Convergence & time step criteria ------------------------------------
+ 0: 
+ 0: CVCRIT
+ 0: .005 10 4* .0005 0.5 /   Need tight convergence criteria for small cells
+ 0: 
+ 0: --TSCRIT
+ 0: --1.0E-8 1.0E-9 7* 10.0  /    Need small time steps for small cells & combustion
+ 0: 
+ 0: 
+ 0: -- Well controls -------------------------------------------------------
+ 0: 
+ 0: -- Define air (20% O2, 80% N2)
+ 0: 
+ 0: WELLSTRE
+ 0:   AIR 0.0 0.0 0.0 0.2 0.8 /
+ 0: /
+ 0: 
+ 0: WELSPECS
+ 0: INJE 1* 1 1 0.00 GAS /
+ 0: PROD 1* 1 1 5.75 OIL /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: INJE 1 1  1  1 OPEN 2* .01 /
+ 0: PROD 1 1 20 20 OPEN 2* .01 /
+ 0: /
+ 0: 
+ 0: -- Inject warm dry air
+ 0: 
+ 0: WCONINJE
+ 0: --                    Rate    BHP
+ 0:   INJE GAS OPEN RATE .1081 1* 2000 /
+ 0: /
+ 0: 
+ 0: WINJGAS
+ 0:   INJE STREAM AIR /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --        T   P
+ 0:   INJE 1* 120 815 /
+ 0: /
+ 0: 
+ 0: --
+ 0: 
+ 0: WCONPROD
+ 0:   PROD OPEN BHP 5* 815 /
+ 0: /
+ 0: 
+ 0: -- Producer BHP = initial field pressure => well will close prematurely
+ 0: -- therefore test the well:
+ 0: 
+ 0: WTEST
+ 0: PROD .00001 P  /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: .007 .007 .007 /
+ 0: 
+ 0: -- Inject warm wet air
+ 0: 
+ 0: WCONINJE
+ 0: --                          Rate    BHP      Gas/Water
+ 0:   INJE STEAM-GAS OPEN RATE .0557 1* 2000 3*  1.9408 /
+ 0: /
+ 0: 
+ 0: WINJGAS
+ 0:   INJE STREAM AIR /
+ 0: /
+ 0: 
+ 0: WINJTEMP
+ 0: --        T   P
+ 0:   INJE 1* 120 815 /
+ 0: /
+ 0: 
+ 0: --
+ 0: 
+ 0: TSTEP
+ 0: .007 .007 .007 /
+ 0: 
+ 0: TSTEP
+ 0: 23*.042 /
+ 0: 
+ 0: 
+ 0: END      ---------------------------------------------------------------
+
+ ******** END OF INPUT DATA FOR RUN THERM9
+     1 READING RUNSPEC 
+     2 READING FIELD   
+     3 READING DIMENS  
+     4 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE WATER    KEYWORD                           
+ @           5 /                                                             
+     5 READING WATER   
+     6 READING THERMAL 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                   
+     7 READING REACTION
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD REACTION IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE GRID     KEYWORD                           
+ @           3 /                                                             
+     8 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                  
+ @           USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                   
+ @           OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                20688 BYTES                                                
+     9 READING DXV     
+    10 READING DYV     
+    11 READING DZ      
+    12 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @               19 VALUES NOT DEFINED IN BOX (  1-  1,  1-  1,  1- 20)      
+ @           OF KEYWORD TOPS                                                 
+    13 READING PORO    
+    14 READING PERMX   
+    15 READING PERMY   
+    16 READING PERMZ   
+    17 READING HEATCR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD HEATCR   IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE HEATCRT  KEYWORD                           
+ @           20*34.0  /   BTU/cu.ft/F                                        
+    18 READING HEATCRT 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD HEATCRT  IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE THCONR   KEYWORD                           
+ @           20*0.0187/   BTU/cu.ft/F/F                                      
+    19 READING THCONR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE PROPS    KEYWORD                           
+ @           20*3.0   /   BTU/ft/D/F                                         
+    20 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NUMBER OF ACTIVE CELLS IS 20                                    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               229156 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @              58528 CHARACTER VARIABLES USED                               
+    21 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE CVTYPE   KEYWORD                           
+ @                      C32+C47      C20   C6-C12       O2   N2-COx  /       
+    22 READING CVTYPE  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD CVTYPE   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE MW       KEYWORD                           
+ @                         DEAD     LIVE     LIVE      GAS      GAS  /       
+    23 READING MW      
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings              10
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

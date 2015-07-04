@@ -1,0 +1,135 @@
+<eclipse>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                           
+</error>
+<warning date="1/1/0" time="0.00000000000000">
+ SPURIOUS DATA BEFORE THERMAL  KEYWORD                                   
+ 4 /                                                                     
+</warning>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                           
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD HEATDIMS IN RUNSPEC DATA                           
+</error>
+<warning date="1/1/0" time="0.00000000000000">
+ SPURIOUS DATA BEFORE ROCKDIMS KEYWORD                                   
+ 5 /                                                                     
+</warning>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD ROCKDIMS IN RUNSPEC DATA                           
+</error>
+<warning date="1/1/0" time="0.00000000000000">
+ SPURIOUS DATA BEFORE START    KEYWORD                                   
+ 2 /                                                                     
+</warning>
+<message date="1/1/2000" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+     202408 BYTES                                                        
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<error date="1/1/2000" time="0.00000000000000">
+ INVALID GRID ARRAY NAME HEATCR                                          
+ ON RECORD    5 FOLLOWING EQUALS   KEYWORD                               
+</error>
+<error date="1/1/2000" time="0.00000000000000">
+ GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                            
+ RUNSPEC OPTIONS. SEE KEYWORD TEMP                                       
+</error>
+<error date="1/1/2000" time="0.00000000000000">
+ UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                              
+</error>
+<warning date="1/1/2000" time="0.00000000000000">
+ SPURIOUS DATA BEFORE ROCKCON  KEYWORD                                   
+    1  50.0     120.0       2500.0     1*            N / Numerica        
+    2  50.0     120.0       2500.0     1*            N / Numerica        
+ /                                                                       
+</warning>
+<error date="1/1/2000" time="0.00000000000000">
+ UNRECOGNISED KEYWORD ROCKCON  IN GRID DATA                              
+</error>
+<warning date="1/1/2000" time="0.00000000000000">
+ SPURIOUS DATA BEFORE AQUANCON KEYWORD                                   
+    1  1 10  1 10  1  1 'K-' 1* /                                        
+    1  1 10  1 10  3  3 'K+' 1* /                                        
+ /                                                                       
+</warning>
+<error date="1/1/2000" time="0.00000000000000">
+ UNRECOGNISED KEYWORD AQUANCON IN GRID DATA                              
+</error>
+<warning date="1/1/2000" time="0.00000000000000">
+ SPURIOUS DATA BEFORE ACTNUM   KEYWORD                                   
+    1  6 10 10 10  1  3 J+ /                                             
+ /                                                                       
+</warning>
+<message date="1/1/2000" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ TRANSMISSIBILITIES TO BE CALCULATED                                     
+ USING  NEWTRAN                                                          
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ 12 NON-NEIGHBOUR CONNECTIONS PRESENT                                    
+</message>
+<warning date="1/1/2000" time="0.00000000000000">
+ INNER RADIUS NOT SPECIFIED FOLLOWING RADFIN                             
+ IT IS SET EQUAL TO 0.15239  METRES                                      
+ FOR LOCAL GRID LGR2                                                     
+</warning>
+<message date="1/1/2000" time="0.00000000000000">
+ AUTOMATIC RADIAL SIZE CALCULATIONS FOR    2 RADII                       
+ IN REFINEMENT LGR2                                                      
+</message>
+<warning date="1/1/2000" time="0.00000000000000">
+ UNEQUAL HOST CELL PERMX/PERMY VALUES COPIED                             
+ TO PERMR/PERMTHT FOR LOCAL RADIAL GRID LGR2                             
+</warning>
+<comment date="1/1/2000" time="0.00000000000000">
+ PORE VOLUMES ADJUSTED FOR OUTER RADIAL BLOCKS                           
+ IN REFINEMENT LGR2                                                      
+</comment>
+<message date="1/1/2000" time="0.00000000000000">
+ LGR WORKSPACE USED:                                                     
+     5231 INTEGERS,     1496 REALS   (TOTAL    32892 BYTES)              
+ LGR WORKSPACE ALLOCATED:                                                
+     5251 INTEGERS,     1497 REALS   (TOTAL    32980 BYTES)              
+ MINIMUM POSSIBLE RUNSPEC VALUES IN LGR FOR THIS RUN ARE:                
+ MAXLGR  =    2     MAXCLS  =     72                                     
+ NOTE: NO. OF CELLS IN ANY LOCAL GRID CANNOT EXCEED MAXCLS               
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ NUMBER OF ACTIVE GLOBAL CELLS IS 277                                    
+ NUMBER OF ACTIVE  LOCAL CELLS IS 81                                     
+  TOTAL NUMBER OF ACTIVE CELLS IS 358                                    
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ ADDITIONAL     0.054 MEGABYTES REQUIRED FOR SIMULATION                  
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+       1447 KBYTES                                                       
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+    58610 CHARACTER VARIABLES USED                                       
+</message>
+<error date="1/1/2000" time="0.00000000000000">
+ UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                          
+ Stop limit reached on error      outputs
+</error>
+<warning date="1/1/2000" time="0.00000000000000">
+ SPURIOUS DATA BEFORE MW       KEYWORD                                   
+         C3     HC4    HC9    HC21   /                                   
+</warning>
+<error date="1/1/2000" time="0.00000000000000">
+ UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                          
+</error>
+<error date="1/1/2000" time="0.00000000000000">
+ RUN STOPPED BECAUSE NUMBER OF   ERRORS                                  
+ EXCEEDS MAXIMUM PERMITTED VALUE (    10).                               
+ SEE MESSAGES KEYWORD                                                    
+</error>
+</eclipse>

@@ -1,0 +1,596 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN THERM2
+
+ 0: ------------------------------------------------------------------------
+ 0: --                                                                    --
+ 0: -- SPE Steam Injection Problem 2A                                     --
+ 0: --                                                                    --
+ 0: -- SPE 13510
+ 0: -- 'Fourth SPE Comparative Solution Project:                          --
+ 0: -- Comparison of Steam Injection Simulators'                          --
+ 0: -- K.Aziz, A.B.Ramesh, P.T.Woo                                        --
+ 0: -- Journal of Petroleum Technology, December 1987                     --
+ 0: --                                                                    --
+ 0: -- 1/8th of inverted 9-spot                                           --
+ 0: -- 2 component problem: dead oil and water                            --
+ 0: --                                                                    --
+ 0: --                                                                    --
+ 0: -- Last modified April 2003                                           --
+ 0: --                                                                    --
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Modification date: 	January 2007
+ 0: -- Changes:			TSCRIT out
+ 0: -- Result:			Speed-up ~3.28
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: 
+ 0: RUNSPEC   ========================================
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: DIMENS
+ 0:  9 5 4 /
+ 0: 
+ 0: WATER
+ 0: OIL
+ 0: GAS
+ 0: 
+ 0: DEADOIL
+ 0: 
+ 0: COMPS
+ 0: 1     /
+ 0: 
+ 0: THERMAL
+ 0: 
+ 0: NINEPOINT
+ 0: 
+ 0: ROCKDIMS
+ 0: 1 1* 22/
+ 0: 
+ 0: -- Use single segment MSW to get 'better' answer
+ 0: --OPTIONS3
+ 0: --61* 1 /
+ 0: 
+ 0: GRID      ========================================
+ 0: 
+ 0: INIT
+ 0: 
+ 0: TOPS
+ 0: 45*1500.0  /
+ 0: 
+ 0: DXV
+ 0: 14.585 7*29.17 14.585 /
+ 0: 
+ 0: DYV
+ 0: 14.585 3*29.17 14.585 /
+ 0: 
+ 0: DZV
+ 0: 10.0  20.0  25.0  25.0 /
+ 0: 
+ 0: PERMX
+ 0:  45*2000.0  45*500.0  45*1000.0  45*2000.0  /
+ 0: PERMY
+ 0:  45*2000.0  45*500.0  45*1000.0  45*2000.0  /
+ 0: PERMZ
+ 0:  45*1000.0  45*250.0  45*500.0   45*1000.0  /
+ 0: 
+ 0: PORO
+ 0:  45*0.3 45*0.3 45*0.3 45*0.3  /
+ 0: 
+ 0: THCONR
+ 0:  180*24.0  /
+ 0: 
+ 0: HEATCR
+ 0:  180*35.0  /
+ 0: 
+ 0: EQUALS
+ 0:      'PORO'  0.0  1 1 2 2 1 4 /
+ 0:      'PORO'  0.0  1 2 3 3 1 4 /
+ 0:      'PORO'  0.0  1 3 4 4 1 4 /
+ 0:      'PORO'  0.0  1 4 5 5 1 4 /
+ 0:      'PERMX'  0.0  1 1 2 2 1 4 /
+ 0:      'PERMX'  0.0  1 2 3 3 1 4 /
+ 0:      'PERMX'  0.0  1 3 4 4 1 4 /
+ 0:      'PERMX'  0.0  1 4 5 5 1 4 /
+ 0:      'PERMY'  0.0  1 1 2 2 1 4 /
+ 0:      'PERMY'  0.0  1 2 3 3 1 4 /
+ 0:      'PERMY'  0.0  1 3 4 4 1 4 /
+ 0:      'PERMY'  0.0  1 4 5 5 1 4 /
+ 0:      'PERMZ'  0.0  1 1 2 2 1 4 /
+ 0:      'PERMZ'  0.0  1 2 3 3 1 4 /
+ 0:      'PERMZ'  0.0  1 3 4 4 1 4 /
+ 0:      'PERMZ'  0.0  1 4 5 5 1 4 /
+ 0:      'THCONR'  0.0  1 1 2 2 1 4 /
+ 0:      'THCONR'  0.0  1 2 3 3 1 4 /
+ 0:      'THCONR'  0.0  1 3 4 4 1 4 /
+ 0:      'THCONR'  0.0  1 4 5 5 1 4 /
+ 0:      'PORO'  0.0  9 9 2 2 1 4 /
+ 0:      'PORO'  0.0  8 9 3 3 1 4 /
+ 0:      'PORO'  0.0  7 9 4 4 1 4 /
+ 0:      'PORO'  0.0  6 9 5 5 1 4 /
+ 0:      'PERMX'  0.0  9 9 2 2 1 4 /
+ 0:      'PERMX'  0.0  8 9 3 3 1 4 /
+ 0:      'PERMX'  0.0  7 9 4 4 1 4 /
+ 0:      'PERMX'  0.0  6 9 5 5 1 4 /
+ 0:      'PERMY'  0.0  9 9 2 2 1 4 /
+ 0:      'PERMY'  0.0  8 9 3 3 1 4 /
+ 0:      'PERMY'  0.0  7 9 4 4 1 4 /
+ 0:      'PERMY'  0.0  6 9 5 5 1 4 /
+ 0:      'PERMZ'  0.0  9 9 2 2 1 4 /
+ 0:      'PERMZ'  0.0  8 9 3 3 1 4 /
+ 0:      'PERMZ'  0.0  7 9 4 4 1 4 /
+ 0:      'PERMZ'  0.0  6 9 5 5 1 4 /
+ 0:      'THCONR'  0.0  9 9 2 2 1 4 /
+ 0:      'THCONR'  0.0  8 9 3 3 1 4 /
+ 0:      'THCONR'  0.0  7 9 4 4 1 4 /
+ 0:      'THCONR'  0.0  6 9 5 5 1 4 /
+ 0: /
+ 0: ACTNUM
+ 0:    1 1 1 1 1 1 1 1 1
+ 0:    0 1 1 1 1 1 1 1 0
+ 0:    0 0 1 1 1 1 1 0 0
+ 0:    0 0 0 1 1 1 0 0 0
+ 0:    0 0 0 0 1 0 0 0 0
+ 0:    1 1 1 1 1 1 1 1 1
+ 0:    0 1 1 1 1 1 1 1 0
+ 0:    0 0 1 1 1 1 1 0 0
+ 0:    0 0 0 1 1 1 0 0 0
+ 0:    0 0 0 0 1 0 0 0 0
+ 0:    1 1 1 1 1 1 1 1 1
+ 0:    0 1 1 1 1 1 1 1 0
+ 0:    0 0 1 1 1 1 1 0 0
+ 0:    0 0 0 1 1 1 0 0 0
+ 0:    0 0 0 0 1 0 0 0 0
+ 0:    1 1 1 1 1 1 1 1 1
+ 0:    0 1 1 1 1 1 1 1 0
+ 0:    0 0 1 1 1 1 1 0 0
+ 0:    0 0 0 1 1 1 0 0 0
+ 0:    0 0 0 0 1 0 0 0 0
+ 0: /
+ 0: 
+ 0: ROCKPROP
+ 0:   1  125  24  35  /
+ 0: /
+ 0: 
+ 0: ROCKCON
+ 0:   1  1  9  1  5  1  1  'K-'       /  top
+ 0:   1  1  1  1  1  1  1  'K-'  0.5  /  top
+ 0:   1  9  9  1  1  1  1  'K-'  0.5  /  top
+ 0:   1  2  2  2  2  1  1  'K-'  0.5  /  top
+ 0:   1  8  8  2  2  1  1  'K-'  0.5  /  top
+ 0:   1  3  3  3  3  1  1  'K-'  0.5  /  top
+ 0:   1  7  7  3  3  1  1  'K-'  0.5  /  top
+ 0:   1  4  4  4  4  1  1  'K-'  0.5  /  top
+ 0:   1  6  6  4  4  1  1  'K-'  0.5  /  top
+ 0:   1  5  5  5  5  1  1  'K-'  0.5  /  top
+ 0: --
+ 0:   1  1  9  1  5  4  4  'K+'       /  bottom
+ 0:   1  1  1  1  1  4  4  'K+'  0.5  /  bottom
+ 0:   1  9  9  1  1  4  4  'K+'  0.5  /  bottom
+ 0:   1  2  2  2  2  4  4  'K+'  0.5  /  bottom
+ 0:   1  8  8  2  2  4  4  'K+'  0.5  /  bottom
+ 0:   1  3  3  3  3  4  4  'K+'  0.5  /  bottom
+ 0:   1  7  7  3  3  4  4  'K+'  0.5  /  bottom
+ 0:   1  4  4  4  4  4  4  'K+'  0.5  /  bottom
+ 0:   1  6  6  4  4  4  4  'K+'  0.5  /  bottom
+ 0:   1  5  5  5  5  4  4  'K+'  0.5  /  bottom
+ 0: /
+ 0: 
+ 0: EDIT      ========================================
+ 0: 
+ 0: MULTIPLY
+ 0:      'PORV'  0.5  1 1 1 1 1 4 /
+ 0:      'PORV'  0.5  2 2 2 2 1 4 /
+ 0:      'PORV'  0.5  3 3 3 3 1 4 /
+ 0:      'PORV'  0.5  4 4 4 4 1 4 /
+ 0:      'PORV'  0.5  5 5 5 5 1 4 /
+ 0:      'PORV'  0.5  6 6 4 4 1 4 /
+ 0:      'PORV'  0.5  7 7 3 3 1 4 /
+ 0:      'PORV'  0.5  8 8 2 2 1 4 /
+ 0:      'PORV'  0.5  9 9 1 1 1 4 /
+ 0: --
+ 0:      'ROCKV' 0.5  1 1 1 1 1 4 /
+ 0:      'ROCKV' 0.5  2 2 2 2 1 4 /
+ 0:      'ROCKV' 0.5  3 3 3 3 1 4 /
+ 0:      'ROCKV' 0.5  4 4 4 4 1 4 /
+ 0:      'ROCKV' 0.5  5 5 5 5 1 4 /
+ 0:      'ROCKV' 0.5  6 6 4 4 1 4 /
+ 0:      'ROCKV' 0.5  7 7 3 3 1 4 /
+ 0:      'ROCKV' 0.5  8 8 2 2 1 4 /
+ 0:      'ROCKV' 0.5  9 9 1 1 1 4 /
+ 0: --
+ 0:      'TRANZ' 0.5  1 1 1 1 1 4 /
+ 0:      'TRANZ' 0.5  2 2 2 2 1 4 /
+ 0:      'TRANZ' 0.5  3 3 3 3 1 4 /
+ 0:      'TRANZ' 0.5  4 4 4 4 1 4 /
+ 0:      'TRANZ' 0.5  5 5 5 5 1 4 /
+ 0:      'TRANZ' 0.5  6 6 4 4 1 4 /
+ 0:      'TRANZ' 0.5  7 7 3 3 1 4 /
+ 0:      'TRANZ' 0.5  8 8 2 2 1 4 /
+ 0:      'TRANZ' 0.5  9 9 1 1 1 4 /
+ 0: --
+ 0:      'HEATTZ' 0.5  1 1 1 1 1 4 /
+ 0:      'HEATTZ' 0.5  2 2 2 2 1 4 /
+ 0:      'HEATTZ' 0.5  3 3 3 3 1 4 /
+ 0:      'HEATTZ' 0.5  4 4 4 4 1 4 /
+ 0:      'HEATTZ' 0.5  5 5 5 5 1 4 /
+ 0:      'HEATTZ' 0.5  6 6 4 4 1 4 /
+ 0:      'HEATTZ' 0.5  7 7 3 3 1 4 /
+ 0:      'HEATTZ' 0.5  8 8 2 2 1 4 /
+ 0:      'HEATTZ' 0.5  9 9 1 1 1 4 /
+ 0: /
+ 0: 
+ 0: PROPS     ========================================
+ 0: 
+ 0: TEMPVD
+ 0: --Depth  Temperature
+ 0:   1300.0  125.0
+ 0:   1700.0  125.0  /
+ 0: 
+ 0: STCOND
+ 0: --Temp   Pressure
+ 0:   60     14.7 /
+ 0: 
+ 0: SWFN
+ 0: -- SWAT     KRW    PCW
+ 0:    .4500   .0000   0.0
+ 0:    .4900   .0003   0.0
+ 0:    .5300   .0018   0.0
+ 0:    .5700   .0049   0.0
+ 0:    .6100   .0101   0.0
+ 0:    .6500   .0177   0.0
+ 0:    .6900   .0279   0.0
+ 0:    .7300   .0410   0.0
+ 0:    .7700   .0572   0.0
+ 0:    .8100   .0768   0.0
+ 0:    .8500   .1000   0.0
+ 0:   1.0000   .1000   0.0
+ 0:  /
+ 0: 
+ 0: SGFN
+ 0: -- SGAS     KRG    PCG
+ 0:    .0000   .0000   0.0
+ 0:    .0600   .0000   0.0
+ 0:    .1090   .0063   0.0
+ 0:    .1580   .0179   0.0
+ 0:    .2070   .0329   0.0
+ 0:    .2560   .0506   0.0
+ 0:    .3050   .0707   0.0
+ 0:    .3540   .0930   0.0
+ 0:    .4030   .1171   0.0
+ 0:    .4520   .1431   0.0
+ 0:    .5010   .1708   0.0
+ 0:    .5500   .2000   0.0
+ 0:   1.0000   .2000   0.0
+ 0:  /
+ 0: 
+ 0: SOF3
+ 0: -- SOIL     KROW    KROG
+ 0:    .0000   .0000   .0000
+ 0:    .1000   .0000   .0000
+ 0:    .1500   .0000   .0049
+ 0:    .1900   .0040   .0160
+ 0:    .2300   .0160   .0334
+ 0:    .2700   .0360   .0571
+ 0:    .3100   .0640   .0871
+ 0:    .3500   .1000   .1235
+ 0:    .3900   .1440   .1661
+ 0:    .4300   .1960   .2151
+ 0:    .4700   .2560   .2704
+ 0:    .5100   .3240   .3320
+ 0:    .5500   .4000   .4000
+ 0:   1.0000   .4000   .4000
+ 0:  /
+ 0: 
+ 0: OILVISCT
+ 0: -- Temp  Viscosity
+ 0:    75    5780
+ 0:   100    1380
+ 0:   150     187
+ 0:   200      47
+ 0:   250      17.4
+ 0:   300       8.5
+ 0:   350       5.2
+ 0:   500       2.5
+ 0: 15000       2.4999
+ 0: /
+ 0: 
+ 0: OILCOMPR
+ 0:   5.00E-06  3.80E-04 0.0  /
+ 0: 
+ 0: OILSPECH
+ 0:  0.5  /
+ 0: 
+ 0: OILMW
+ 0:   600.0  /
+ 0: 
+ 0: -- note density of heavy oil and density of steam.
+ 0: -- for thermal, only oil is needed.
+ 0: DENSITY
+ 0:  60.68 2* /
+ 0: 
+ 0: PVTW
+ 0: --  Pref       Bw        Cw          Vw        Cvw
+ 0: --  PSIA       RB/STB    1/PSI       CPOISE    1/PSI
+ 0:     75.000     1.0       3.E-06      .3        7.E-09
+ 0:  /
+ 0: 
+ 0: ROCK
+ 0: 75.0  5.0E-04  /
+ 0: 
+ 0: ZMFVD
+ 0: 1500 1.0 /
+ 0: 
+ 0: SOLUTION  ========================================
+ 0: 
+ 0: EQUIL
+ 0: --  Ddat    Pdat     Dwoc    Pcog    Dgoc    Pgoc
+ 0: 1505.0      75.0     1600.0  0.0     1500.0  0.0   /
+ 0: 
+ 0: RPTRST
+ 0: PRES TEMP SOIL SWAT ENERGY/
+ 0: 
+ 0: RPTSOL
+ 0: PRES TEMP SOIL SWAT ENERGY/
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC ENERGY           IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: SUMMARY   ========================================
+ 0: 
+ 0: ALL
+ 0: 
+ 0: WSTPR
+ 0:  PNEAR PFAR /
+ 0: 
+ 0: WSTPT
+ 0:  PNEAR PFAR /
+ 0: 
+ 0: FOSRC
+ 0: 
+ 0: FHLR
+ 0: 
+ 0: FHLT
+ 0: 
+ 0: -- Performance data
+ 0: 
+ 0: PERFORMANCE
+ 0: 
+ 0: -- Run summary file
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE  ========================================
+ 0: 
+ 0: RPTPRINT
+ 0: -- s F R G S W C s nl
+ 0:    1 1 0 0 0 1 1 1 0 /
+ 0: 
+ 0: RPTSCHED
+ 0: PRES TEMP ENERGY SOIL SWAT /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC ENERGY           IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+ 0: WELSPECS
+ 0: I     FIELD  1 1 1* WATER /
+ 0: PNEAR FIELD  5 5 1* OIL   /
+ 0: PFAR  FIELD  9 1 1* OIL   /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: I      1 1 4 4  OPEN 1   14.97 /
+ 0: PNEAR  5 5 1 1  OPEN 1   11.97 /
+ 0: PNEAR  5 5 2 2  OPEN 1    5.99 /
+ 0: PNEAR  5 5 3 3  OPEN 1   14.97 /
+ 0: PNEAR  5 5 4 4  OPEN 1   29.94 /
+ 0: PFAR   9 1 1 1  OPEN 1    5.99 /
+ 0: PFAR   9 1 2 2  OPEN 1    2.99 /
+ 0: PFAR   9 1 3 3  OPEN 1    7.48 /
+ 0: PFAR   9 1 4 4  OPEN 1   14.97 /
+ 0: /
+ 0: 
+ 0: WCONINJE
+ 0: --Well Type  ...  Init Rate  Res BHP
+ 0:   I    WATER OPEN BHP  37.5  1*  1000.0  /
+ 0: /
+ 0: WINJTEMP
+ 0: --Well SQ   Temp
+ 0:   I    0.70 450  /
+ 0: /
+ 0: 
+ 0: WCONPROD
+ 0: --Well  ...  Init Oil Wat Gas Liq Res BHP ... Steam
+ 0:   PNEAR OPEN BHP  3*          250 1*  17  5*  2.50 /
+ 0:   PFAR  OPEN BHP  3*          125 1*  17  5*  1.25 /
+ 0: /
+ 0: 
+ 0: --TSCRIT
+ 0: --initT minT maxT maxInc/Dec targTTE maxTTE TTPT MTPT TSCT MxWT
+ 0: --   1*   1*  365   1*   1*      1*     1*     1*  1*    .95  1*
+ 0: --maxPT maxSC ATPT SACT maxSA TEMT maxTEM
+ 0: --  1*    1*    1*   0.4  1*    120  500 /
+ 0: 
+ 0: TSTEP
+ 0:  10*365 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN THERM2
+     1 READING RUNSPEC 
+     2 READING FIELD   
+     3 READING DIMENS  
+     4 READING WATER   
+     5 READING OIL     
+     6 READING GAS     
+     7 READING DEADOIL 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD DEADOIL  IN RUNSPEC DATA                   
+     8 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE THERMAL  KEYWORD                           
+ @           1     /                                                         
+     9 READING THERMAL 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                   
+    10 READING NINEPOIN
+    11 READING ROCKDIMS
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD ROCKDIMS IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE GRID     KEYWORD                           
+ @           1 1* 22/                                                        
+    12 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                  
+ @           USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                   
+ @           OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           *****************************************                       
+ @           DIAGONAL NNC 9-POINT SCHEME WILL BE USED                        
+ @           *****************************************                       
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                89464 BYTES                                                
+    13 READING INIT    
+    14 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @              135 VALUES NOT DEFINED IN BOX (  1-  9,  1-  5,  1-  4)      
+ @           OF KEYWORD TOPS                                                 
+    15 READING DXV     
+    16 READING DYV     
+    17 READING DZV     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE PERMX    KEYWORD                           
+ @           10.0  20.0  25.0  25.0 /                                        
+    18 READING PERMX   
+    19 READING PERMY   
+    20 READING PERMZ   
+    21 READING PORO    
+    22 READING THCONR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE HEATCR   KEYWORD                           
+ @            180*24.0  /                                                    
+    23 READING HEATCR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD HEATCR   IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE EQUALS   KEYWORD                           
+ @            180*35.0  /                                                    
+    24 READING EQUALS  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               0
+ Warnings               8
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00
