@@ -518,7 +518,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     31 READING REGIONS 
 1                             **********************************************************************   1
   PVTO     AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
   --------------------------------- 
@@ -576,7 +576,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
            7200.00   1.1367   0.8900
 1                             **********************************************************************   2
   PVTW     AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
                --------------------
@@ -589,7 +589,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    1    3000.0   1.0034  3.00D-06   0.96  0.00D+00
 1                             **********************************************************************   3
   PVDG     AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  ---------------------------
@@ -615,7 +615,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   5600.00   0.4200   0.0195
 1                             **********************************************************************   4
   DENSITY  AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
        -----------------
@@ -628,7 +628,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    1    45.000   63.020  0.07020
 1                             **********************************************************************   5
   ROCK     AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
      ---------------
@@ -644,7 +644,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     34 READING SOLUTION
 1                             **********************************************************************   6
   FIPNUM   AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  (I,  J,  K) I=  1       2       3       4       5       6       7       8       9
@@ -687,7 +687,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     37 READING SUMMARY 
 1                             **********************************************************************   7
   PRESSURE AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -731,7 +731,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  4079.04 4079.04 4079.04 4079.04 4079.04 4079.04 4079.04 4079.04 4079.04
 1                             **********************************************************************   8
   SWAT     AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -739,7 +739,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.22000                                                                                                       
 1                             **********************************************************************   9
   SGAS     AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -783,7 +783,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000
 1                             **********************************************************************  10
   RS       AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS MSCF/STB        
@@ -818,7 +818,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           MAXIMUM GAS RE-SOLUTION RATE IS DEFAULTED TO INFINITY.          
 1                             **********************************************************************  11
   SIMULATE AT     0.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1983):
@@ -892,7 +892,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  3847.3  PSIA   WCT=0.001 GOR=     1.82 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  12
   SOIL     AT    50.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   1    20 FEB 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   1    20 FEB 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -936,7 +936,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.78000 0.78000 0.78000 0.76726 0.76701 0.76826 0.77190 0.77179 0.77262
 1                             **********************************************************************  13
   SIMULATE AT    50.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   1    20 FEB 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   1    20 FEB 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP    8 TIME=   60.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (2-MAR-1983)           
@@ -955,7 +955,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  3702.4  PSIA   WCT=0.002 GOR=     2.77 MSCF/STB WGR=   0.0007 STB/MSCF   
 1                             **********************************************************************  14
   SOIL     AT   100.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   2    11 APR 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   2    11 APR 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -999,7 +999,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.78000 0.78000 0.78000 0.74502 0.74505 0.74665 0.75528 0.75522 0.75633
 1                             **********************************************************************  15
   SIMULATE AT   100.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   2    11 APR 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   2    11 APR 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   13 TIME=  110.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (21-APR-1983)          
@@ -1018,7 +1018,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  3574.4  PSIA   WCT=0.002 GOR=     3.98 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  16
   SOIL     AT   150.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   3    31 MAY 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   3    31 MAY 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1062,7 +1062,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.78000 0.78000 0.78000 0.73545 0.73547 0.73548 0.73859 0.73860 0.73906
 1                             **********************************************************************  17
   SIMULATE AT   150.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   3    31 MAY 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   3    31 MAY 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   18 TIME=  160.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (10-JUN-1983)          
@@ -1081,7 +1081,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  3457.8  PSIA   WCT=0.003 GOR=     5.24 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  18
   SOIL     AT   200.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   4    20 JLY 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   4    20 JLY 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1125,7 +1125,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.78000 0.78000 0.78000 0.73433 0.73431 0.73428 0.73624 0.73624 0.73622
 1                             **********************************************************************  19
   SIMULATE AT   200.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   4    20 JLY 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   4    20 JLY 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   23 TIME=  210.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (30-JLY-1983)          
@@ -1144,7 +1144,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  3350.0  PSIA   WCT=0.004 GOR=     6.46 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  20
   SOIL     AT   250.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   5     8 SEP 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   5     8 SEP 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1190,7 +1190,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     62 READING TSTEP   
 1                             **********************************************************************  21
   SIMULATE AT   250.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   5     8 SEP 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   5     8 SEP 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      250.0   DAYS    ( 8-SEP-1983):
@@ -1229,7 +1229,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  3248.0  PSIA   WCT=0.004 GOR=     7.72 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  22
   SOIL     AT   300.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   6    28 OCT 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   6    28 OCT 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1273,7 +1273,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.78000 0.78000 0.78000 0.73337 0.73336 0.73337 0.73554 0.73553 0.73555
 1                             **********************************************************************  23
   SIMULATE AT   300.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   6    28 OCT 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   6    28 OCT 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   33 TIME=  310.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (7-NOV-1983)           
@@ -1312,7 +1312,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  3111.5  PSIA   WCT=0.003 GOR=     4.87 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  24
   SOIL     AT   350.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   7    17 DEC 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   7    17 DEC 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1356,7 +1356,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.77991 0.77991 0.77991 0.73272 0.73273 0.73273 0.73517 0.73517 0.73517
 1                             **********************************************************************  25
   SIMULATE AT   350.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   7    17 DEC 1983   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   7    17 DEC 1983   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   38 TIME=  360.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (27-DEC-1983)          
@@ -1394,7 +1394,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  2958.8  PSIA   WCT=0.003 GOR=     5.09 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  26
   SOIL     AT   400.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   8     5 FEB 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   8     5 FEB 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1438,7 +1438,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.77763 0.77764 0.77767 0.73213 0.73213 0.73214 0.73488 0.73488 0.73488
 1                             **********************************************************************  27
   SIMULATE AT   400.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   8     5 FEB 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   8     5 FEB 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   43 TIME=  410.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (15-FEB-1984)          
@@ -1457,7 +1457,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  2811.2  PSIA   WCT=0.004 GOR=     6.53 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  28
   SOIL     AT   450.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   9    26 MAR 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   9    26 MAR 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1501,7 +1501,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.77043 0.77049 0.77057 0.73145 0.73145 0.73147 0.73451 0.73451 0.73453
 1                             **********************************************************************  29
   SIMULATE AT   450.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT   9    26 MAR 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   9    26 MAR 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   48 TIME=  460.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (5-APR-1984)           
@@ -1520,7 +1520,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  2669.8  PSIA   WCT=0.005 GOR=     7.83 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  30
   SOIL     AT   500.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  10    15 MAY 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  10    15 MAY 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1564,7 +1564,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.76156 0.76164 0.76174 0.73070 0.73070 0.73072 0.73404 0.73404 0.73405
 1                             **********************************************************************  31
   SIMULATE AT   500.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  10    15 MAY 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  10    15 MAY 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   53 TIME=  510.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (25-MAY-1984)          
@@ -1583,7 +1583,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  2533.9  PSIA   WCT=0.005 GOR=     8.78 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  32
   SOIL     AT   550.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  11     4 JLY 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  11     4 JLY 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1627,7 +1627,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.75152 0.75160 0.75169 0.72995 0.72995 0.72998 0.73362 0.73362 0.73363
 1                             **********************************************************************  33
   SIMULATE AT   550.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  11     4 JLY 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  11     4 JLY 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   58 TIME=  560.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (14-JLY-1984)          
@@ -1734,7 +1734,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  2407.5  PSIA   WCT=0.005 GOR=     8.25 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  34
   SOIL     AT   600.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  12    23 AUG 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  12    23 AUG 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1778,7 +1778,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.73944 0.73950 0.73958 0.72950 0.72946 0.72943 0.73331 0.73331 0.73332
 1                             **********************************************************************  35
   SIMULATE AT   600.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  12    23 AUG 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  12    23 AUG 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   63 TIME=  610.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (2-SEP-1984)           
@@ -1797,7 +1797,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  2303.2  PSIA   WCT=0.006 GOR=     9.22 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  36
   SOIL     AT   650.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  13    12 OCT 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  13    12 OCT 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1841,7 +1841,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.73668 0.73664 0.73660 0.73103 0.73102 0.73099 0.73274 0.73274 0.73275
 1                             **********************************************************************  37
   SIMULATE AT   650.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  13    12 OCT 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  13    12 OCT 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   68 TIME=  660.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (22-OCT-1984)          
@@ -1867,7 +1867,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  2198.9  PSIA   WCT=0.006 GOR=     9.69 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  38
   SOIL     AT   700.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  14     1 DEC 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  14     1 DEC 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1911,7 +1911,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  3)  0.73546 0.73545 0.73544 0.73233 0.73237 0.73233 0.73200 0.73200 0.73201
 1                             **********************************************************************  39
   SIMULATE AT   700.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  14     1 DEC 1984   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  14     1 DEC 1984   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      700.0   DAYS    ( 1-DEC-1984):
@@ -1967,7 +1967,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  2113.1  PSIA   WCT=0.006 GOR=     9.74 MSCF/STB WGR=   0.0006 STB/MSCF   
 1                             **********************************************************************  40
   SOIL     AT   750.00   DAYS *Example of workover and drilling rigs                                   * ECLIPSE  VERSION 2009.1     
-  REPORT  15    20 JAN 1985   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  15    20 JAN 1985   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -2017,4 +2017,4 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Problems               0
  Errors                 0
  Bugs                   0
- Final cpu       0.00 elapsed       0.00
+ Final cpu       0.27 elapsed       1.00

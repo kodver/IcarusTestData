@@ -594,7 +594,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   1
   SIMULATE AT     0.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP    1 TIME=    1.00  DAYS (  +1.0  DAYS INIT  3 ITS) (2-JAN-1997)           
@@ -614,7 +614,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   2
   SIMULATE AT    20.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   1    21 JAN 1997   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   1    21 JAN 1997   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP    5 TIME=   44.00  DAYS ( +24.0  DAYS MAXF  2 ITS) (14-FEB-1997)          
@@ -629,7 +629,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     70 READING TSTEP   
 1                             **********************************************************************   3
   SIMULATE AT   100.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   2    11 APR 1997   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   2    11 APR 1997   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP    7 TIME=  200.00  DAYS (+100.0  DAYS REPT  3 ITS) (20-JLY-1997)          
@@ -640,7 +640,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   4
   SIMULATE AT   200.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   3    20 JLY 1997   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   3    20 JLY 1997   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP    8 TIME=  300.00  DAYS (+100.0  DAYS REPT  3 ITS) (28-OCT-1997)          
@@ -651,7 +651,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   5
   SIMULATE AT   300.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   4    28 OCT 1997   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   4    28 OCT 1997   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP    9 TIME=  400.00  DAYS (+100.0  DAYS REPT  3 ITS) (5-FEB-1998)           
@@ -662,7 +662,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   6
   SIMULATE AT   400.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   5     5 FEB 1998   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   5     5 FEB 1998   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   10 TIME=  500.00  DAYS (+100.0  DAYS REPT  3 ITS) (16-MAY-1998)          
@@ -673,7 +673,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   7
   SIMULATE AT   500.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   6    16 MAY 1998   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   6    16 MAY 1998   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   11 TIME=  600.00  DAYS (+100.0  DAYS REPT  4 ITS) (24-AUG-1998)          
@@ -684,7 +684,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   8
   SIMULATE AT   600.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   7    24 AUG 1998   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   7    24 AUG 1998   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   12 TIME=  700.00  DAYS (+100.0  DAYS REPT  4 ITS) (2-DEC-1998)           
@@ -695,7 +695,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   9
   SIMULATE AT   700.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   8     2 DEC 1998   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   8     2 DEC 1998   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  @--WARNING  AT TIME      700.0   DAYS    ( 2-DEC-1998):
@@ -718,7 +718,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  10
   SIMULATE AT   800.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT   9    12 MAR 1999   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   9    12 MAR 1999   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   14 TIME=  900.00  DAYS (+100.0  DAYS REPT  2 ITS) (20-JUN-1999)          
@@ -729,7 +729,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  11
   SIMULATE AT   900.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  10    20 JUN 1999   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  10    20 JUN 1999   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   15 TIME= 1000.00  DAYS (+100.0  DAYS REPT  3 ITS) (28-SEP-1999)          
@@ -740,7 +740,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  12
   SIMULATE AT  1000.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  11    28 SEP 1999   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  11    28 SEP 1999   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   16 TIME= 1100.00  DAYS (+100.0  DAYS REPT  3 ITS) (6-JAN-2000)           
@@ -751,7 +751,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  13
   SIMULATE AT  1100.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  12     6 JAN 2000   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  12     6 JAN 2000   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   17 TIME= 1200.00  DAYS (+100.0  DAYS REPT  3 ITS) (15-APR-2000)          
@@ -762,7 +762,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  14
   SIMULATE AT  1200.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  13    15 APR 2000   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  13    15 APR 2000   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   18 TIME= 1300.00  DAYS (+100.0  DAYS REPT  3 ITS) (24-JLY-2000)          
@@ -773,7 +773,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  15
   SIMULATE AT  1300.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  14    24 JLY 2000   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  14    24 JLY 2000   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   19 TIME= 1400.00  DAYS (+100.0  DAYS REPT  4 ITS) (1-NOV-2000)           
@@ -784,7 +784,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  16
   SIMULATE AT  1400.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  15     1 NOV 2000   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  15     1 NOV 2000   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   20 TIME= 1500.00  DAYS (+100.0  DAYS REPT  5 ITS) (9-FEB-2001)           
@@ -795,7 +795,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  17
   SIMULATE AT  1500.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  16     9 FEB 2001   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  16     9 FEB 2001   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   21 TIME= 1600.00  DAYS (+100.0  DAYS REPT  5 ITS) (20-MAY-2001)          
@@ -806,7 +806,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  18
   SIMULATE AT  1600.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  17    20 MAY 2001   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  17    20 MAY 2001   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   22 TIME= 1700.00  DAYS (+100.0  DAYS REPT  4 ITS) (28-AUG-2001)          
@@ -817,7 +817,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  19
   SIMULATE AT  1700.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  18    28 AUG 2001   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  18    28 AUG 2001   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   23 TIME= 1800.00  DAYS (+100.0  DAYS REPT  2 ITS) (6-DEC-2001)           
@@ -828,7 +828,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  20
   SIMULATE AT  1800.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  19     6 DEC 2001   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  19     6 DEC 2001   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   24 TIME= 1900.00  DAYS (+100.0  DAYS REPT  3 ITS) (16-MAR-2002)          
@@ -839,7 +839,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  21
   SIMULATE AT  1900.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  20    16 MAR 2002   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  20    16 MAR 2002   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   25 TIME= 2000.00  DAYS (+100.0  DAYS REPT  2 ITS) (24-JUN-2002)          
@@ -850,7 +850,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  22
   SIMULATE AT  2000.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
-  REPORT  21    24 JUN 2002   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT  21    24 JUN 2002   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  STEP   26 TIME= 2100.00  DAYS (+100.0  DAYS REPT  2 ITS) (2-OCT-2002)           
@@ -905,4 +905,4 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Problems               0
  Errors                 5
  Bugs                   0
- Final cpu       0.00 elapsed       0.00
+ Final cpu       0.38 elapsed       1.00
