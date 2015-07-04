@@ -1,0 +1,722 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN CO2STORE_THERM
+
+ 0: --
+ 0: -- CO2STORE Thermal example
+ 0: RUNSPEC
+ 0: 
+ 0: TITLE
+ 0: 
+ 0: START
+ 0:  1 'JAN' 2003 /
+ 0: 
+ 0: METRIC
+ 0: 
+ 0: CO2STORE
+ 0: THERMAL
+ 0: 
+ 0: COMPS
+ 0: 4
+ 0: /
+ 0: FULLIMP
+ 0: 
+ 0: 
+ 0: 
+ 0: DIMENS
+ 0:    10 10 3  /
+ 0: 
+ 0: 
+ 0: UNIFOUT
+ 0: FMTOUT
+ 0: EQLDIMS
+ 0:  1 100 20 1 20 /
+ 0: 
+ 0: REGDIMS
+ 0:  10 1 0 1 0 /
+ 0: 
+ 0: WELLDIMS
+ 0: 2 20/
+ 0: 
+ 0: 
+ 0: TABDIMS
+ 0:  1 1 50 20 1 20 20 1 1 1 1 1 1 0 0 /
+ 0: 
+ 0: AQUDIMS
+ 0:  /
+ 0: 
+ 0: 
+ 0: GRID    ================================================
+ 0: INIT
+ 0: 
+ 0: TOPS
+ 0: 100*600.0 /
+ 0: 
+ 0: DXV
+ 0: 10*100 /
+ 0: DYV
+ 0: 10*100 /
+ 0: DZV
+ 0: --2*5 10 2*5/
+ 0: 3*10 /
+ 0: 
+ 0: EQUALS
+ 0: PERMX  20   /
+ 0: PERMY  20  /
+ 0: PERMZ  20 /
+ 0: PORO   0.15  /
+ 0: /
+ 0: EQUALS
+ 0: HEATCR 1987.5  /                  rock heat capacity kJ/m3/K    0.75 kJ/kg/K*2650kg/m3 = 1987.5
+ 0: THCONR   302.4 /                  rock conductivity kJ/m/Day/K
+ 0: /
+ 0: 
+ 0: PROPS    ======================================================
+ 0: 
+ 0: SKIP300
+ 0: -- This et of sat. fun. is for COSTORE non-thermal
+ 0: GSF
+ 0: --sg	        krg	     pc(bar)
+ 0: 0.0					0.0				0.0
+ 0: 0.1					0.0				0.0
+ 0: 0.8 	      1.0         0.0
+ 0: --1.0             1.0             6.82589
+ 0: /
+ 0: 
+ 0: WSF
+ 0: --sw	krw	
+ 0: --0.0             0.0
+ 0: 0.2	        0.0
+ 0: 1.0	        1.0
+ 0: /
+ 0: ENDSKIP
+ 0: SGFN
+ 0: -- sg   krg                   pcgo
+ 0: 0.0       	0.0	        0.0
+ 0: 0.1					0.0				0.0
+ 0: 0.8 	      1.0         0.0
+ 0: --1.0             1.0             6.82589
+ 0: /
+ 0: SWFN
+ 0: --sw            krw             pcgw
+ 0: 0.2           0.0						0.0
+ 0: 1.0	        	1.0						0.0
+ 0: /
+ 0: 
+ 0: SOF3
+ 0: --Sw    krow  krog
+ 0: 0.0       0.0  0.0
+ 0: 0.25      0.0  0.0
+ 0: 0.35      0.1  0.0
+ 0: 0.8				1		1 /
+ 0: 
+ 0: -- Mobility multiplier
+ 0: --SOLIDMMS
+ 0: -- SS   Mult
+ 0: --  0.0    1.0
+ 0: --   0.1    0.5
+ 0: --   0.8    0.0 /
+ 0: 
+ 0: ROCK
+ 0: 75 0.0 /
+ 0: --75 7e-5/
+ 0: 
+ 0: RTEMP
+ 0: --
+ 0: -- Constant Reservoir Tempe
+ 0: --
+ 0:          37
+ 0: /
+ 0: 
+ 0: 
+ 0: NCOMPS
+ 0: --
+ 0: -- Number of Component--
+ 0:        4
+ 0: --4
+ 0: /
+ 0: CNAMES
+ 0: --
+ 0: -- Component Names
+ 0: --
+ 0:    'CO2'
+ 0:    'H2O'
+ 0:    'NACL'
+ 0:    'CACL2'
+ 0: --   'CACO3'
+ 0: 
+ 0: /
+ 0: --  diffuse NACL and CACL2...
+ 0: --DIFFCOIL
+ 0: -- 0.0 0.0 0.1 0.1 /
+ 0: TCRIT
+ 0: --
+ 0: -- Critical Temperatures (Reservoir EoS)
+ 0: --
+ 0:          304.7
+ 0:          647.3
+ 0: /
+ 0: 
+ 0: PCRIT
+ 0: --
+ 0: -- Critical Pressures (Reservoir EoS)
+ 0: --
+ 0:      73.865925                    -- CO2 PCCRIT
+ 0:       220.4832                    -- H2O PCCRIT
+ 0: /
+ 0: -- Units: bar
+ 0: PREFT
+ 0: --
+ 0: -- Thermal Reference Pressures
+ 0: --
+ 0:      1.1651875
+ 0:     101.506625
+ 0: /
+ 0: 
+ 0: SPECHA
+ 0: --
+ 0: -- Oil Component Specific Heat 1st Coeff
+ 0: --
+ 0:    0.834944695414749
+ 0:    4.81290845015349
+ 0:    0.0
+ 0:    0.0
+ 0: --   0.0
+ 0: /
+ 0: 
+ 0: -- Units: kJ/ kg/ K/ K
+ 0: SPECHB
+ 0: --
+ 0: -- Oil Component Specific Heat 2nd Coeff
+ 0: --
+ 0:    0.00103117086090892
+ 0:    0.0208203197232935
+ 0:    0.0
+ 0:    0.0
+ 0: --   0.0
+ 0: /
+ 0: -- Units: kJ/ kg/ K
+ 0: -- Units: kJ/ kg/ K
+ 0: 
+ 0: 
+ 0: 
+ 0: SPECHG
+ 0: --
+ 0: -- Gas Component Specific Heat 1st Coeff
+ 0: --
+ 0:    0.834944695414749  -- CO2
+ 0:    4.81290845015349   -- H2O
+ 0:    0.0
+ 0:    0.0
+ 0: --   0.0
+ 0: /
+ 0: -- Units: kJ/ kg/ K/ K
+ 0: -- Units: kJ/ kg/ K/ K
+ 0: SPECHH
+ 0: --
+ 0: -- Gas Component Specific Heat 2nd Coeff
+ 0: --
+ 0:    0.00103117086090892
+ 0:    0.0208203197232935
+ 0:    0.0
+ 0:    0.0
+ 0: --   0.0
+ 0: /
+ 0: 
+ 0: --- just some dummy values
+ 0: --- to test option
+ 0: SPECHW1
+ 0: --
+ 0: --
+ 0:    0.834944695414749
+ 0:    4.81290845015349
+ 0:    0.86409
+ 0:    0.5
+ 0: --   0.1
+ 0: /
+ 0: -- Units: kJ/ kg/ K/ K
+ 0: -- Units: kJ/ kg/ K/ K
+ 0: SPECHW2
+ 0: --
+ 0: -- Oil Component Specific Heat 2nd Coeff
+ 0: --
+ 0:    0.00103117086090892
+ 0:    0.0208203197232935
+ 0:    0.01
+ 0:    0.02
+ 0: --   0.005
+ 0: /
+ 0: 
+ 0: -- Density of NACL_S at reference conditions
+ 0: SDREF
+ 0: -- 3* 2170.0 /
+ 0: /
+ 0: 
+ 0: TEMPVD
+ 0: 600  37					-- =34-0.03*200=
+ 0: 700  37
+ 0: /
+ 0: DENAQA
+ 0: 0.103300	-0.000023	-0.000002
+ 0: 0.000000	0.000000	0.000000
+ 0: 0.309360	-0.000069	0.000000
+ 0: 0.362700	0.000000	0.000000
+ 0: /
+ 0: VISCAQA
+ 0: 0.000000	0.000000	0.000000
+ 0: 0.000000	0.000000	0.000000
+ 0: 0.718000	0.003590	0.000000
+ 0: 1.487000	-0.001720	0.000000
+ 0: /
+ 0: RPTPROPS
+ 0: PVTO PVTW /
+ 0: 
+ 0: REGIONS  ===============================================================
+ 0: --FIPNUM
+ 0: --1 2 3 4 5 6 7 8 9 10 /
+ 0: 
+ 0: SOLUTION ===============================================================
+ 0: 
+ 0: EQUIL
+ 0: --
+ 0: -- Equilibration Data Specification
+ 0: --
+ 0: -- Datum   Datum   WOC     WOC     GOC      GOC
+ 0: -- Depth   Press   Depth   PCOW    Depth    PCOW
+ 0:    615      70     500      0      500     0      1*      1*      1*      1*     1*
+ 0: /
+ 0: 
+ 0: 
+ 0: AMFVD
+ 0: 600	0.00835	  0.92152	    0.07002	  0.00010
+ 0: 700	0.00835	  0.92152	    0.07002	  0.00010 /
+ 0: 
+ 0: AQUCT
+ 0: --AQU#  DATUM		Press@	K			PORO	Ct			Ri			h				angle			WAT PROP	Influence	Salt			AQU
+ 0: --  		depth		Datum																				(dgrees)	(or EOS#)	table#		Concentr	TEMP
+ 0: 		1 	615 		1*			150.0 0.13	3.0E-5	24000.0	1400.0	45 			1 				1 				1* 				37.0 /
+ 0: /
+ 0: AQUANCON
+ 0: 1 10 10 1 10 3 3 I+ /
+ 0: /
+ 0: 
+ 0: 
+ 0: RPTRST
+ 0:  RESTART PRESSURE SGAS SWAT TEMP ENERGY AMF DENG DENW DENS VGAS VWAT
+ 0:   XMF YMF AQSP AQPH  RPORV  /
+ 0: 
+ 0: RPTSOL
+ 0:  PRESSURE SGAS SWAT DENG DENW VGAS VWAT XMF YMF AQSP AQPH
+ 0:       TEMP XFW YFW AMF  /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC YMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC AQSP             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC AQPH             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XFW              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC YFW              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC AMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: SUMMARY  ===========================================================
+ 0: 
+ 0: ALL
+ 0: 
+ 0: WXMF
+ 0: '*' 1 /
+ 0: '*' 2 /
+ 0: '*' 3 /
+ 0: '*' 4 /
+ 0: /
+ 0: WYMF
+ 0: '*' 1 /
+ 0: '*' 2 /
+ 0: '*' 3 /
+ 0: '*' 4 /
+ 0: /
+ 0: WZMF
+ 0: '*' 1 /
+ 0: '*' 2 /
+ 0: '*' 3 /
+ 0: '*' 4 /
+ 0: /
+ 0: WCMPR
+ 0: '*' 1 /
+ 0: '*' 2 /
+ 0: '*' 3 /
+ 0: '*' 4 /
+ 0: /
+ 0: WCMIR
+ 0: '*' 1 /
+ 0: '*' 2 /
+ 0: '*' 3 /
+ 0: '*' 4 /
+ 0: /
+ 0: WCGMR
+ 0: '*' 1 /
+ 0: '*' 2 /
+ 0: '*' 3 /
+ 0: '*' 4 /
+ 0: /
+ 0: WCOMR
+ 0: '*' 1 /
+ 0: '*' 2 /
+ 0: '*' 3 /
+ 0: '*' 4 /
+ 0: /
+ 0: BPR
+ 0: 1 1 1 /
+ 0: 3 1 1 /
+ 0: 5 1 1 /
+ 0: 7 1 1 /
+ 0: 9 1 1 /
+ 0: /
+ 0: BGSAT
+ 0: 1 1 1 /
+ 0: 3 1 1 /
+ 0: 5 1 1 /
+ 0: 7 1 1 /
+ 0: 9 1 1 /
+ 0: /
+ 0: BWSAT
+ 0: 1 1 1 /
+ 0: 3 1 1 /
+ 0: 5 1 1 /
+ 0: 7 1 1 /
+ 0: 9 1 1 /
+ 0: /
+ 0: BDENW
+ 0: 1 1 1 /
+ 0: 3 1 1 /
+ 0: 5 1 1 /
+ 0: 7 1 1 /
+ 0: 9 1 1 /
+ 0: /
+ 0: BVWAT
+ 0: 1 1 1 /
+ 0: 3 1 1 /
+ 0: 5 1 1 /
+ 0: 7 1 1 /
+ 0: 9 1 1 /
+ 0: /
+ 0: BVGAS
+ 0: 1 1 1 /
+ 0: 3 1 1 /
+ 0: 5 1 1 /
+ 0: 7 1 1 /
+ 0: 9 1 1 /
+ 0: /
+ 0: BDENG
+ 0: 1 1 1 /
+ 0: 3 1 1 /
+ 0: 5 1 1 /
+ 0: 7 1 1 /
+ 0: 9 1 1 /
+ 0: /
+ 0: 
+ 0: BPORV
+ 0: 1 1 1 /
+ 0: 3 1 1 /
+ 0: 5 1 1 /
+ 0: 7 1 1 /
+ 0: 9 1 1 /
+ 0: /
+ 0: 
+ 0: BTEMP
+ 0:  1 1 1 /
+ 0:  2 1 1 /
+ 0:  3 1 1 /
+ 0:  4 1 1 /
+ 0:  5 1 1 /
+ 0:  6 1 1 /
+ 0:  7 1 1 /
+ 0:  8 1 1 /
+ 0:  9 1 1 /
+ 0: 10 1 1 /
+ 0: /
+ 0: BOIP
+ 0:  1 1 1 /
+ 0:  2 1 1 /
+ 0:  3 1 1 /
+ 0: /
+ 0: ROIP
+ 0: 1 2 3 4 5 6 7 8 9 10 /
+ 0: BGIP
+ 0:  1 1 1 /
+ 0:  2 1 1 /
+ 0:  3 1 1 /
+ 0: /
+ 0: --RGIP
+ 0: --1 2 3 4 5 6 7 8 9 10 /
+ 0: --RGIPL
+ 0: --1 2 3 4 5 6 7 8 9 10 /
+ 0: FWCD
+ 0: --RWCD					-- CO2 (“carbon dioxide”) dissolved in water phase
+ 0: --1 2 3 4 5 6 7 8 9 10 /
+ 0: FGCDI
+ 0: --CO2 (“carbon dioxide”) trapped (immobile) in gas phase
+ 0: 
+ 0: --RGCDI
+ 0: --1 2 3 4 5 6 7 8 9 10 /
+ 0: FGCDM
+ 0: --CO2 (“carbon dioxide”) mobile in gas phase
+ 0: --RGCDM
+ 0: --1 2 3 4 5 6 7 8 9 10 /
+ 0: ANQR
+ 0: ANQT
+ 0: 
+ 0: PERFORMA
+ 0: SEPARATE
+ 0: RPTONLY
+ 0: RUNSUM
+ 0: 
+ 0: SCHEDULE  ===============================================
+ 0: RPTSCHED
+ 0:  AMF XMF YMF DENG DENW VOIL VGAS  HGAS HOIL HSOL HWAT /
+ 0: 
+ 0: --SKIP300
+ 0: -- molar composition
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC AMF              IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XMF              IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC YMF              IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC HGAS             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC HOIL             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC HSOL             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC HWAT             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+ 0: WELLSTRE
+ 0: 'C02FEED' 1.0 0.0 0.0 0.0  /
+ 0: /
+ 0: 
+ 0: WELSPECS
+ 0: I1  G1 3 3 1*  GAS /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0:  I1  3 3   1 3 OPEN 2* 0.3 1* -2 1* 'Z'/
+ 0: /
+ 0: 
+ 0: WINJGAS
+ 0:  I1 STREAM C02FEED /
+ 0: /
+ 0: 
+ 0: WCONINJE
+ 0: --  I GAS OPEN RESV 1* 13292.3 100 /
+ 0:   I1 GAS OPEN RATE 10000 1* 100 /
+ 0: /
+ 0: WINJTEMP
+ 0:  I1 1* 37.0 70.0 /
+ 0: /
+ 0: TSTEP
+ 0: 1 /
+ 0: TSTEP
+ 0: 5*20 /
+ 0: TSTEP
+ 0: 30*20 /
+ 0: TSTEP
+ 0: 30*30 /
+ 0: 
+ 0: END
+ 0: 
+ 0: 
+ 0: 
+
+ ******** END OF INPUT DATA FOR RUN CO2STORE_THERM
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING START   
+     4 READING METRIC  
+     5 READING CO2STORE
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           UNRECOGNISED KEYWORD CO2STORE IN RUNSPEC DATA                   
+     6 READING THERMAL 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                   
+     7 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           SPURIOUS DATA BEFORE FULLIMP  KEYWORD                           
+ @           4                                                               
+ @           /                                                               
+     8 READING FULLIMP 
+     9 READING DIMENS  
+    10 READING UNIFOUT 
+    11 READING FMTOUT  
+    12 READING EQLDIMS 
+    13 READING REGDIMS 
+    14 READING WELLDIMS
+    15 READING TABDIMS 
+    16 READING AQUDIMS 
+    17 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           THERE ARE NO PHASES PRESENT. SPECIFY KEYWORDS                   
+ @           OIL/WATER/GAS IN THE RUNSPEC SECTION                            
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           NO PHASES SPECIFIED AS BEING PRESENT IN RESERVOIR               
+ @           THERE MUST BE AT LEAST ONE ( OF OIL, WATER AND GAS )            
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @               126140 BYTES                                                
+    18 READING INIT    
+    19 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @              200 VALUES NOT DEFINED IN BOX (  1- 10,  1- 10,  1-  3)      
+ @           OF KEYWORD TOPS                                                 
+    20 READING DXV     
+    21 READING DYV     
+    22 READING DZV     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           SPURIOUS DATA BEFORE EQUALS   KEYWORD                           
+ @           3*10 /                                                          
+    23 READING EQUALS  
+    24 READING EQUALS  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           INVALID GRID ARRAY NAME HEATCR                                  
+ @           ON RECORD    1 FOLLOWING EQUALS   KEYWORD                       
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+    25 READING PROPS   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           FLUX FLAG SET IN RUNSPEC BUT FLUXNUM KEYWORD                    
+ @           NOT USED -- SAVE SPACE BY SETTING NTFREG = 0                    
+ @           IN RUNSPEC KEYWORD REGDIMS.                                     
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
+ @           PORE VOLUMES WILL BE SET TO ZERO                                
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2003):
+ @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               0
+ Warnings               4
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

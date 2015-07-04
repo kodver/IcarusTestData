@@ -1,0 +1,1482 @@
+  SOLVER DIRECTIONS ARE 123      XYZ
+  IN GLOBAL GRID        
+  NDIVI1 =     5
+  NDIVI2 =     5
+  NDIVI3 =     1
+
+    ALLOCATION WORK ARRAY    1      600 ELEMENTS       4800 BYTES  
+    ALLOCATION WORK ARRAY    2     1283 ELEMENTS      10264 BYTES  
+    ALLOCATION WORK ARRAY    3      353 ELEMENTS       2824 BYTES  
+    ALLOCATION WORK ARRAY    4       80 ELEMENTS        640 BYTES  
+    ALLOCATION WORK ARRAY    5       48 ELEMENTS        384 BYTES  
+    ALLOCATION WORK ARRAY    6     1172 ELEMENTS       9376 BYTES  
+    ALLOCATION WORK ARRAY    7        0 ELEMENTS          0 BYTES  
+    ALLOCATION WORK ARRAY    8       76 ELEMENTS        608 BYTES  
+    ALLOCATION WORK ARRAY    9        1 ELEMENTS          8 BYTES  
+    ALLOCATION WORK ARRAY   10       58 ELEMENTS        464 BYTES  
+    ALLOCATION WORK ARRAY   11       25 ELEMENTS        200 BYTES  
+    ALLOCATION WORK ARRAY   12      700 ELEMENTS       5600 BYTES  
+    ALLOCATION WORK ARRAY   13       10 ELEMENTS         80 BYTES  
+    ALLOCATION WORK ARRAY   14      200 ELEMENTS       1600 BYTES  
+    ALLOCATION WORK ARRAY   15        0 ELEMENTS          0 BYTES  
+    ALLOCATION WORK ARRAY   16       14 ELEMENTS        112 BYTES  
+    ALLOCATION WORK ARRAY   17        0 ELEMENTS          0 BYTES  
+    ALLOCATION WORK ARRAY   18      132 ELEMENTS       1056 BYTES  
+    ALLOCATION WORK ARRAY   19        1 ELEMENTS          8 BYTES  
+    ALLOCATION WORK ARRAY   20        6 ELEMENTS         48 BYTES  
+
+TOTAL WORK SPACE REQUIRED     1283 ELEMENTS    10264 BYTES      
+
+    FREEING ARRAY SWORK    -  1011*4  ELEMENTS -  -   18332 BYTES SO FAR
+ ALLOCATING ARRAY SWORK    -    26*4  ELEMENTS -  -   18436 BYTES SO FAR
+ ALLOCATING ARRAY NOCN     -    26*4  ELEMENTS -  -   18540 BYTES SO FAR
+ ALLOCATING ARRAY NBR      -    51*4  ELEMENTS -  -   18744 BYTES SO FAR
+ ALLOCATING ARRAY IFLX     -     7*4  ELEMENTS -  -   18772 BYTES SO FAR
+ ALLOCATING ARRAY ISOLV    -    37*4  ELEMENTS -  -   18920 BYTES SO FAR
+ ALLOCATING ARRAY IVCF     -     7*4  ELEMENTS -  -   18948 BYTES SO FAR
+ ALLOCATING ARRAY IVCL     -     7*4  ELEMENTS -  -   18976 BYTES SO FAR
+ ALLOCATING ARRAY IVOF     -     7*4  ELEMENTS -  -   19004 BYTES SO FAR
+ ALLOCATING ARRAY IAAQ     -    19*4  ELEMENTS -  -   19080 BYTES SO FAR
+ ALLOCATING ARRAY SAAQ     -    25*4  ELEMENTS -  -   19180 BYTES SO FAR
+ ALLOCATING ARRAY XAAQ     -     9*8  ELEMENTS -  -   19252 BYTES SO FAR
+ ALLOCATING ARRAY ICAQ     -     7*4  ELEMENTS -  -   19280 BYTES SO FAR
+ ALLOCATING ARRAY SCAQ     -     3*4  ELEMENTS -  -   19292 BYTES SO FAR
+ ALLOCATING ARRAY ACAQ     -     5*8  ELEMENTS -  -   19332 BYTES SO FAR
+ ALLOCATING ARRAY TRANN    -     2*8  ELEMENTS -  -   19348 BYTES SO FAR
+ ALLOCATING ARRAY IREGN    -     9*4  ELEMENTS -  -   19384 BYTES SO FAR
+ ALLOCATING ARRAY INNC     -     9*4  ELEMENTS -  -   19420 BYTES SO FAR
+ ALLOCATING ARRAY INCS     -     6*4  ELEMENTS -  -   19444 BYTES SO FAR
+ ALLOCATING ARRAY NNCS     -     6*4  ELEMENTS -  -   19468 BYTES SO FAR
+ ALLOCATING ARRAY NNCP     -     2*4  ELEMENTS -  -   19476 BYTES SO FAR
+ ALLOCATING ARRAY INCP     -     2*4  ELEMENTS -  -   19484 BYTES SO FAR
+ ALLOCATING ARRAY IENVD    -   257*4  ELEMENTS -  -   20512 BYTES SO FAR
+ ALLOCATING ARRAY ITRAC    -     2*4  ELEMENTS -  -   20520 BYTES SO FAR
+ ALLOCATING ARRAY XTRAC    -     2*8  ELEMENTS -  -   20536 BYTES SO FAR
+ ALLOCATING ARRAY NUM      - 20001*4  ELEMENTS -  -  100540 BYTES SO FAR
+ ALLOCATING ARRAY XLIST    - 10001*4  ELEMENTS -  -  140544 BYTES SO FAR
+ ALLOCATING ARRAY AT       -     2*8  ELEMENTS -  -  140560 BYTES SO FAR
+ ALLOCATING ARRAY ATN      -     3*8  ELEMENTS -  -  140584 BYTES SO FAR
+ ALLOCATING ARRAY MMGA     -    88*4  ELEMENTS -  -  140936 BYTES SO FAR
+ ALLOCATING ARRAY INETW    -     2*4  ELEMENTS -  -  140944 BYTES SO FAR
+ ALLOCATING ARRAY RNETW    -     2*8  ELEMENTS -  -  140960 BYTES SO FAR
+ ALLOCATING ARRAY IFGUP    -     3*4  ELEMENTS -  -  140972 BYTES SO FAR
+ ALLOCATING ARRAY INGUP    -     3*4  ELEMENTS -  -  140984 BYTES SO FAR
+ ALLOCATING ARRAY RFLX     -     9*8  ELEMENTS -  -  141056 BYTES SO FAR
+ ALLOCATING ARRAY NB9      -    28*4  ELEMENTS -  -  141168 BYTES SO FAR
+ ALLOCATING ARRAY FP9      -     2*8  ELEMENTS -  -  141184 BYTES SO FAR
+ ALLOCATING ARRAY AB9      -     3*8  ELEMENTS -  -  141208 BYTES SO FAR
+ ALLOCATING ARRAY ITAB     -     2*4  ELEMENTS -  -  141216 BYTES SO FAR
+ ALLOCATING ARRAY BWEL     -    10*8  ELEMENTS -  -  141296 BYTES SO FAR
+ ALLOCATING ARRAY DWEL     -    10*8  ELEMENTS -  -  141376 BYTES SO FAR
+ ALLOCATING ARRAY FLODGL   -     2*8  ELEMENTS -  -  141392 BYTES SO FAR
+ ALLOCATING ARRAY NGWEL    -     3*4  ELEMENTS -  -  141404 BYTES SO FAR
+ ALLOCATING ARRAY IACT     -    19*4  ELEMENTS -  -  141480 BYTES SO FAR
+ ALLOCATING ARRAY SACT     -    11*4  ELEMENTS -  -  141524 BYTES SO FAR
+ ALLOCATING ARRAY IACN     -   157*4  ELEMENTS -  -  142152 BYTES SO FAR
+ ALLOCATING ARRAY SACN     -    61*8  ELEMENTS -  -  142640 BYTES SO FAR
+ ALLOCATING ARRAY INUMI    -  3601*4  ELEMENTS -  -  157044 BYTES SO FAR
+ ALLOCATING ARRAY IPNTR    -  3601*4  ELEMENTS -  -  171448 BYTES SO FAR
+ ALLOCATING ARRAY IPNTB    -  3601*4  ELEMENTS -  -  185852 BYTES SO FAR
+ ALLOCATING ARRAY SMAX     -  3601*4  ELEMENTS -  -  200256 BYTES SO FAR
+ ALLOCATING ARRAY SMIN     -  3601*4  ELEMENTS -  -  214660 BYTES SO FAR
+ ALLOCATING ARRAY PGDAT    -   176*8  ELEMENTS -  -  216068 BYTES SO FAR
+ ALLOCATING ARRAY IWEL     -   295*4  ELEMENTS -  -  217248 BYTES SO FAR
+ ALLOCATING ARRAY IGRP     -   199*4  ELEMENTS -  -  218044 BYTES SO FAR
+ ALLOCATING ARRAY SWELW    -   241*4  ELEMENTS -  -  219008 BYTES SO FAR
+ ALLOCATING ARRAY SGRP     -   205*4  ELEMENTS -  -  219828 BYTES SO FAR
+ ALLOCATING ARRAY XGRP     -   361*8  ELEMENTS -  -  222716 BYTES SO FAR
+ ALLOCATING ARRAY ICON     -    41*4  ELEMENTS -  -  222880 BYTES SO FAR
+ ALLOCATING ARRAY SCON     -    81*4  ELEMENTS -  -  223204 BYTES SO FAR
+ ALLOCATING ARRAY XWEL     -   233*8  ELEMENTS -  -  225068 BYTES SO FAR
+ ALLOCATING ARRAY XCON     -   115*8  ELEMENTS -  -  225988 BYTES SO FAR
+ ALLOCATING ARRAY ISEGW    -    19*4  ELEMENTS -  -  226064 BYTES SO FAR
+ ALLOCATING ARRAY RSEGW    -    99*8  ELEMENTS -  -  226856 BYTES SO FAR
+ ALLOCATING ARRAY ISTAT    -    26*4  ELEMENTS -  -  226960 BYTES SO FAR
+ ALLOCATING ARRAY XD       -    76*8  ELEMENTS -  -  227568 BYTES SO FAR
+ ALLOCATING ARRAY DSDT     -    51*8  ELEMENTS -  -  227976 BYTES SO FAR
+ ALLOCATING ARRAY FIPD     -    51*8  ELEMENTS -  -  228384 BYTES SO FAR
+ ALLOCATING ARRAY FLOD     -   101*8  ELEMENTS -  -  229192 BYTES SO FAR
+ ALLOCATING ARRAY FLODN    -     3*8  ELEMENTS -  -  229216 BYTES SO FAR
+ ALLOCATING ARRAY ICOT     -     2*4  ELEMENTS -  -  229224 BYTES SO FAR
+ ALLOCATING ARRAY XCOT     -     2*8  ELEMENTS -  -  229240 BYTES SO FAR
+ ALLOCATING ARRAY IWET     -     2*4  ELEMENTS -  -  229248 BYTES SO FAR
+ ALLOCATING ARRAY XWET     -     2*8  ELEMENTS -  -  229264 BYTES SO FAR
+ ALLOCATING ARRAY IGRT     -     2*4  ELEMENTS -  -  229272 BYTES SO FAR
+ ALLOCATING ARRAY XGRT     -     2*8  ELEMENTS -  -  229288 BYTES SO FAR
+ ALLOCATING ARRAY IREGS    -   101*4  ELEMENTS -  -  229692 BYTES SO FAR
+ ALLOCATING ARRAY PDTR     -   226*8  ELEMENTS -  -  231500 BYTES SO FAR
+ ALLOCATING ARRAY XT       -    76*8  ELEMENTS -  -  232108 BYTES SO FAR
+ ALLOCATING ARRAY FIPT     -    51*8  ELEMENTS -  -  232516 BYTES SO FAR
+ ALLOCATING ARRAY XRPT     -   169*8  ELEMENTS -  -  233868 BYTES SO FAR
+ ALLOCATING ARRAY AWEL     -    25*8  ELEMENTS -  -  234068 BYTES SO FAR
+ ALLOCATING ARRAY ACON     -    37*8  ELEMENTS -  -  234364 BYTES SO FAR
+ ALLOCATING ARRAY R        -    51*8  ELEMENTS -  -  234772 BYTES SO FAR
+ ALLOCATING ARRAY ROLD     -     2*8  ELEMENTS -  -  234788 BYTES SO FAR
+ ALLOCATING ARRAY TAB      -   302*8  ELEMENTS -  -  237204 BYTES SO FAR
+ ALLOCATING ARRAY DMDL     -     2*8  ELEMENTS -  -  237220 BYTES SO FAR
+ ALLOCATING ARRAY GRAD     -     2*8  ELEMENTS -  -  237236 BYTES SO FAR
+ ALLOCATING ARRAY IAHM     -    29*4  ELEMENTS -  -  237352 BYTES SO FAR
+ ALLOCATING ARRAY GLIST    -     2*8  ELEMENTS -  -  237368 BYTES SO FAR
+ ALLOCATING ARRAY IGWD     -     2*4  ELEMENTS -  -  237376 BYTES SO FAR
+ ALLOCATING ARRAY AGWD     -     2*8  ELEMENTS -  -  237392 BYTES SO FAR
+ ALLOCATING ARRAY DDX      -    51*8  ELEMENTS -  -  237800 BYTES SO FAR
+ ALLOCATING ARRAY DDXOLD   -     2*8  ELEMENTS -  -  237816 BYTES SO FAR
+ ALLOCATING ARRAY VFTAB    -     2*8  ELEMENTS -  -  237832 BYTES SO FAR
+ ALLOCATING ARRAY AN       -     9*8  ELEMENTS -  -  237904 BYTES SO FAR
+ ALLOCATING ARRAY IVE      -     2*4  ELEMENTS -  -  237912 BYTES SO FAR
+ ALLOCATING ARRAY RVE      -     2*8  ELEMENTS -  -  237928 BYTES SO FAR
+ ALLOCATING ARRAY A        -   501*8  ELEMENTS -  -  241936 BYTES SO FAR
+ ALLOCATING ARRAY IWRK     -    51*4  ELEMENTS -  -  242140 BYTES SO FAR
+ ALLOCATING ARRAY FLOF     -     2*8  ELEMENTS -  -  242156 BYTES SO FAR
+ ALLOCATING ARRAY IUDQ     -     4*4  ELEMENTS -  -  242172 BYTES SO FAR
+ ALLOCATING ARRAY JOPS     -     4*4  ELEMENTS -  -  242188 BYTES SO FAR
+ ALLOCATING ARRAY JARS     -     2*4  ELEMENTS -  -  242196 BYTES SO FAR
+ ALLOCATING ARRAY DRGS     -     2*8  ELEMENTS -  -  242212 BYTES SO FAR
+ ALLOCATING ARRAY IUOP     -   127*4  ELEMENTS -  -  242720 BYTES SO FAR
+ ALLOCATING ARRAY IGPH     -     3*4  ELEMENTS -  -  242732 BYTES SO FAR
+---------------ALLOCATING CHARACTER WORK ARRAYS--------------
+ ALLOCATING ARRAY ZWORK    -     4*1 ELEMENTS - 1ST ELEMENT   58532 -   58535 BYTES SO FAR
+ NBYDBL,NBYSGL,NBYINT,NBYLOG
+           8           4           4           4
+ NBUSED,NZUSED
+                242732       58535
+ GRAVTY
+  9.809999755816534E-005  6.940000224858522E-003  9.679999784566462E-004
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ CDARCY
+  8.527000434696674E-003  1.126999966800213E-003   3.59999990463257     
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ PRESBA
+   1.01300001144409        14.6999998092651        1.00000000000000     
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ TEMPBA
+   273.105010986328        459.588989257812        273.105010986328     
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ PVFACT
+   1.00000000000000       0.178107604384422        1.00000000000000     
+   1.00000000000000        1.00000000000000        1.00000000000000     
+ GASVOL
+   1.00000000000000        178.107604980469        1.00000000000000     
+   1.00000000000000        1.00000000000000        1.00000000000000     
+ DENAIR
+   1.22000002861023       7.630000263452530E-002  1.219999976456165E-003
+   1.00000000000000        1.00000000000000        1.00000000000000     
+ WATDEN
+   1000.00000000000        62.4000015258789        1.00000000000000     
+   1.00000000000000        1.00000000000000        1.00000000000000     
+ EPSLON,BIGPOS,BIGNEG,DDATUM
+  1.000000000000000E-006  1.000000000000000E+020 -1.000000000000000E+020
+  0.000000000000000E+000
+ MININT,MAXINT
+ -1073741823  1073741823
+ IUNCON
+           2
+ KINPUT,KUSERZ,KPRINT,KDEBUG,KSHORT
+           9           5          12           8           6
+ KUSMRY,KUSPEC,KURST1,KURST2,NCROOT
+           1           2           3           4           7
+ KUGRID,KUINIT,KUNNCW,KGRDOV,KSTACK
+          10          14          16          18          20
+ KTRACE,KZMESS
+          22          24
+ ISWTCH,IDSWCH,IOPTON
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           1           0           1           0           1           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           1           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+ NMPRMX,NMSTOP
+     1000000     1000000       10000         100         100         100
+     1000000     1000000       10000         100          10           1
+ MAXCPU,MAXELA
+  2000000000  2000000000
+ QPRTOP,QDBGOP,QSPCOP,QSUMOP,QGRDOP,QINIOP
+ T T F F F F
+ CONST0,CONSTT
+  0.000000000000000E+000  9.999999999999999E-021  1.000000000000000E-019
+  1.000000000000000E-018  1.000000000000000E-017  1.000000000000000E-016
+  1.000000000000000E-015  1.000000000000000E-014  1.000000000000000E-013
+  1.000000000000000E-012  9.999999999999999E-012  1.000000000000000E-010
+  1.000000000000000E-009  1.000000000000000E-008  1.000000000000000E-007
+  1.000000000000000E-006  1.000000000000000E-005  1.000000000000000E-004
+  1.000000000000000E-003  1.000000000000000E-002  0.100000000000000     
+   1.00000000000000        10.0000000000000        100.000000000000     
+   1000.00000000000        10000.0000000000        100000.000000000     
+   1000000.00000000        10000000.0000000        100000000.000000     
+   1000000000.00000        10000000000.0000        100000000000.000     
+   1000000000000.00        10000000000000.0        100000000000000.     
+  1.000000000000000E+015  1.000000000000000E+016  1.000000000000000E+017
+  1.000000000000000E+018  1.000000000000000E+019  1.000000000000000E+020
+ NDIVIX,NDIVIY,NDIVIZ,NDIVXP,NDIVYP,NDXNDY,NXNYNZ,NUMDIM
+           5           5           1           6           6          25
+          25           2
+ LIMPRT
+           1           5           1           5           1           1
+           1 -1073741823
+ QRDIAL,QINITF
+ F F
+ QDPORO,QDPERM,QDPGRD,QDPNPM,QPSEUD
+ F F F F F
+ NDIVI1,NDIVI2,NDIVI3,ND1ND2,N1N2N3
+           5           5           1          25          25
+ NUMRES,QNNCON,QOLDTR,QNEWTR,QOLDTB
+           1 F T F F
+ MXNAQN,MXNAQC
+           1           1
+ MXIAQN
+           0
+ INCAX1,INCAX2,INCAX3,IDDIR1,IDDIR2,IDDIR3
+           1           5          25           1           2           0
+ NACTIV,NSOLID,NVRTOT
+          25           5           3
+ INWORK,NNWORK,NUMNNC,NNCDR2,NNCDR3
+           8          76           1           0           0
+ NSWORK,NGRARR,NPDTRZ,NEUPST,NNUPST
+          25          19           9           1           1
+ NPHASE,NPHSQU,IPHIND,NFLUID,NFLSQU
+           2           4           3           2           4
+ IEQOIL,IEQWAT,IEQGAS,IDEQUN
+           1           2           0           1           2           0
+           0           0           0           0           0           0
+           0
+ QPHASE,QDIGAS,QGCOND,QAPITR
+ T T F F F F
+ QVEWOC,QVEGOC
+ F F
+ NSTRAC,NOTRAC,NWTRAC,NGTRAC,NTRACE,NITRAC,QTRACE,QTDISP
+           0           0           0           0           1          21 F F
+ ITRMPR,ITRMSW,ITRMSG,ITRMRS,ITRMRV,ITRMSO,ITRMSM,ITRMGM
+           1           2           1           1           1           3
+           3           1
+ ITRMSN,ITRWH1,ITRWH2,ITRWH3
+           3           2           2           2
+ ITRGH1,ITRGH2,ITRGH3
+           1           1           1
+ ITROSD
+           1
+ ITCWOC,ITHWOC,ITLWOC
+           1           1           1
+ ITCGOC,ITHGOC,ITLGOC
+           1           1           1
+ ITCWDW,ITCWDG,ITCGDW,ITCGDG
+           1           1           1           1
+ ITLWDW,ITLWDG,ITLGDW,ITLGDG
+           1           1           1           1
+ ITHWDW,ITHWDG,ITHGDW,ITHGDG
+           1           1           1           1
+ NISTAT,IBGOSI,IBHYSW,IBHYSG,IBVSTA
+           1           1           1           1           1
+ IDTERM,NSOLVA
+           1           2           6           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           3
+ NDPRVD,IBPMQW,IBPMQG,QUIESC
+         100           1           1 F
+ QMISCL,QTWOPT,NUMDAT,NPHSAT,QSRWMS
+ F F           0           1 F
+ IBSORW,IBTLMX,IMSTAB,NTMISC,NSMISC
+           1           1           1           1          20
+ IBSSOL
+           1
+ QPOLYM,QBRINE,NPPVTW,IBCPWV
+ F F           1           1
+ NTBRVD,NDBRVD,IBBRVD
+           1           1           1
+ IEQPLY,IEQNCL,ITRPLY,ITRNCL
+           0           0           1           1
+ NPPRCK,IBPRCK,IBPADS
+           5           1           1
+ ITRRAD,ITRRMA,IBRMAS
+           1           1           1
+ ITPLY1,ITPLY2
+           1           1
+ IBSNOD,IBPNOD,IBCPSV
+           1           1           1
+ QGGICO,IEQGGI,ITRMGI,IBGGGI
+ F           0           1           1
+ IBRSGI,IBRVGI,IBBGGI,IBBOGI
+           1           1           1           1
+ IBPRSG,IBPRVG,IBPBGG,IBPBOG
+           1           1           1           1
+ NACTUP,NNCTUP
+           1           2
+ QMOBIL,IMOBIL
+ F           0
+ IBPRRC,IBKMLT,QROCKC,QRCREV
+           1           9 F T
+ IBPRMC,IBKMLT,QROCKC,QRCREV
+           1           9 F T
+ QSUDAT
+ F
+ IBSWIN,IBSGIN
+           1           1
+ IBRHOG,IBRHOO,IBRHOW
+           1           1           1
+ IBSUDG,IBSUDO,IBSUDW
+           1           1           1
+ IPRP01,IPRP02,IPRP03,IPRP04,IPRP05
+           1           2           3           4           5
+ IPRP06,IPRP07,IPRP08,IPRP09,IPRP10
+           6           7           8           9          10
+ IPRP11,IPRP12,IPRP13,IPRP14,IPRP15
+          11          12          13          14          15
+ IPRP16,IPRP17,IPRP18,IPRP19,IPRP20
+          16          17          18          19          20
+ IPRP21,IPRP22,IPRP23,IPRP24,IPRP25
+          21          22          23          24           1
+ IPRP26,IPRP27,IPRP28,IPRP29,IPRP30
+           1           1           1           1           1
+ IPRP31,IPRP32,IPRP33,IPRP34,IPRP35
+           1           1           1           1           1
+ IPRP36,IPRP37,IPRP38,IPRP39,IPRP40
+           1           1           1           1           1
+ IPRP41,IPRP42,IPRP43,IPRP44,IPRP45
+           1           1           1           1           1
+ IPRP46,IPRP47,IPRP48
+           1           1           1
+ QSCALE,QSCDIR,QSCREV
+ F F T
+ IENDPT
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1
+ IENNUM,IBSLIM
+           2           1
+ IENDTB
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1
+ NSENDP,NTENDP
+          20           1
+ IDMATR
+           1           2           4           5           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1
+ ICACON
+          10          13           1           1           1           1
+           1           1           1           1          11          14
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1
+ IDACON
+           1           4           1           1           1           1
+           1           1           1           1           2           5
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1
+ MOILX1,MOILX2,MOILX3,MOILX4,MOILX5
+           1           2           1           1           1
+ MWATX1,MWATX2,MWATX3,MWATX4,MWATX5
+           3           4           1           1           1
+ MGASX1,MGASX2,MGASX3,MGASX4,MGASX5
+           1           1           1           1           1
+ MPLYX1,MPLYX2,MPLYX3,MPLYX4,MPLYX5
+           1           1           1           1           1
+ MNCLX1,MNCLX2,MNCLX3,MNCLX4,MNCLX5
+           1           1           1           1           1
+ MGGIX1,MGGIX2,MGGIX3,MGGIX4,MGGIX5
+           1           1           1           1           1
+ NTABDA
+         301
+ IBROCK                     ,NTROCK
+           1           1
+ IBPVTO,JBPVTO,NRPVTO,NPPVTO,NTPVTO
+           9           1           1           2           1
+ IBPVTZ,JBPVTZ
+           1           1
+ IBPVTW                     ,NTPVTW
+          82           1
+ IBPVTG,JBPVTG,NRPVTG,NPPVTG,NTPVTG
+           1           1           1           2           1
+ IBDENS                     ,NTDENS
+           3           1
+ IBSWFN       ,NSSWFN       ,NTSWFN
+          87          20           1
+ IBSGFN       ,NSSGFN       ,NTSGFN
+           1          20           1
+ IBSOF2,IBSOF3,NSSOFN       ,NTSOFN
+          19           1          20           1
+ IBSWCO                            
+          79
+ IBEQUL                     ,NTEQUL
+         187           1
+ IBRSVD       ,NDRSVD       ,NTRSVD
+           1           1           1
+ IBRVVD       ,NDRVVD       ,NTRVVD
+           1           1           1
+ IBODVD       ,NDODVD       ,NTODVD
+           1           1           1
+ IBROCC       ,NPROCC       ,NTROCC
+           1           2           1
+ IBTRCE       ,NSTRVD,      ,NTTRVD
+         228          20           1
+ NOXTRP,NGXTRP
+           0           0
+ IBZTRC,NZTRAC
+          22           8
+ IDYNAM
+           0
+ KMDISK
+           0           0           0           0           0           0
+           0           0           0
+ NREGSZ,IPRTAB,ISATAB,IEQTAB,IRPTAB,IMBTAB,IRCTAB
+           4           1           2           3           4           2
+           1
+ IP1TAB,IN1TAB,IP2TAB,IN2TAB,IP3TAB,IN3TAB
+           2           2           2           2           2           2
+ IP1IMT,IN1IMT,IP2IMT,IN2IMT,IP3IMT,IN3IMT
+           2           2           2           2           2           2
+ QDIRKR,QREVKR
+ F T
+ QSTONE,ISTONE
+ F           2
+ QHYSTR
+ F
+ EHYSTR,EHYST2,IHYSTR
+  0.100000000000000        1.00000000000000                0
+ NRPREG
+           1
+ IVEFAC,QVEOPT
+           1 F
+ IBIOWC,IBIOGC
+           1           1
+ IVEOWC,IVEOGC
+           1           1
+ IVETAB,NUMIVE,NUMRVE
+           1           1           1
+ NTVETB,NSVETB,IBVETB
+           1          25         198
+ QTHPRS,IBTHPR,QREVTH
+ F         223 T
+ NSUMMX,NSUMMT,IBZSKW,IBZSWG,IBZSUN
+       10000           0          35       10036       40039
+ QSMPOT
+ F
+ NAMAXZ,NCAMAX,MAAQID,NAQUFS
+           1           1           0           0
+ NRIFTB,NIFTBL
+          36           1
+ NIAAQZ,NSAAQZ,NXAAQZ,NICAQZ,NSCAQZ,NACAQZ
+          18          24           8           6           2           4
+ NXAAQT
+           8
+ MXMFLO,MXMTHP,MXMWCT,MXMGFR,MXMALQ
+           0           0           0           0           1
+ IBMFLO,IBMTHP,IBMWCT,IBMGFR,IBMALQ,IBMBHP
+          14          14          14          14          14          15
+ NSMVF1,NSMVFT,NMMVFT,NTMVFT
+          14          14           0           0
+ MXSFLO,MXSTHP
+           0           0
+ IBSFLO,IBSTHP,IBSBHP
+           8           8           8
+ NSSVF1,NSSVFT,NMSVFT
+           7           7           0
+ NVXTRP
+           0
+ MXCFLO,MXCWOC,MXCGOC,NCRTAB
+           0           0           0           0
+ IBCRTF,IBCFWC,IBCFGC,NSCTF1,NSCRTF
+           1           3           3           2           2
+ IBCRTW,IBCWFL,IBCWWC,NSCTW1,NSCRTW
+           1           3           3           2           2
+ IBCRTG,IBCGFL,IBCGGC,NSCTG1,NSCRTG
+           1           3           3           2           2
+ NVFPTT
+           1
+ RATAQU,CUMAQU
+  0.000000000000000E+000  0.000000000000000E+000
+ PAVRES,FVFAVE,RSAVEZ,RVAVEZ,TPORVZ
+ -1.000000000000000E+020 -1.000000000000000E+020 -1.000000000000000E+020
+ -1.000000000000000E+020 -1.000000000000000E+020 -1.000000000000000E+020
+ -1.000000000000000E+020 -1.000000000000000E+020 -1.000000000000000E+020
+ -1.000000000000000E+020 -1.000000000000000E+020 -1.000000000000000E+020
+ -1.000000000000000E+020   123228.198783472     
+ CONSRS,CONSRV,CONPMN
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ FLDTRK
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000
+ WLMTOL,WWKTIM,WSOMIN
+  1.000000000000000E+020  0.000000000000000E+000  -1.00000000000000     
+ GCTTOL,WWTFLO,WWTFLW,WWTFLG
+  1.000000000000000E+020   1.00000000000000       0.100000000000000     
+  0.178107604980469     
+ BALINT,BALAST,TOLNET,NETBAL
+  0.000000000000000E+000  -100000.000000000       0.000000000000000E+000
+           0
+ NWMAXZ,NCWMAX,NGMAXZ,NWGMAX,NWFRIC,NWELLS,NGRUPS
+           2           1           2           2           0           0
+           0
+ NIWELZ,NSWELZ,NXWELZ,NAWELZ,NZWELZ
+         147         120         116          12           3
+ NBWEL1,NBWEL2,NDWEL1,NDWEL2,NDWEL3
+           9           1           9           1           1
+ NICONZ,NSCONZ,NXCONZ,NACONZ
+          20          40          57          18
+ NIGRPZ,NSGRPZ,NXGRPZ,       NZGRPZ
+          99         102         180           5
+ NWWKPR,NWWKW1
+          33         201
+ NUMDRQ,NUPCOL,LEVMAX,IPTOPU
+           0           3           1           0
+ MXWSIT,MXWPIT
+           8           8
+ IBZWEL,IBZGRP
+           2           9
+ QIMCOL,QWNDSB
+ F F
+ NIWELT,NSWELT,NXWELT,NXCONT,NXGRPT
+         147         120         116          57         180
+ TIMNOW,TSTEPZ,TIMRPT
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ TSINIT,TSMAXZ,TSMINZ,TSMCHP,TSFMAX,TSFMIN,TSFCNV
+   1.00000000000000        365.000000000000       0.100000001490116     
+  0.150000005960464        3.00000000000000       0.300000011920929     
+  0.100000001490116     
+ TRGTTE,TRGCNV,TRGMBE,TRGLCV
+  0.100000001490116       1.000000047497451E-003  1.000000011686097E-007
+  9.999999747378752E-005
+ XXXTTE,XXXCNV,XXXMBE,XXXLCV,XXXWFL
+   10.0000000000000       9.999999776482582E-003  9.999999974752427E-007
+  1.000000047497451E-003  1.000000047497451E-003
+ DRVDTM,DRSDTM
+  1.000000000000000E+020  1.000000000000000E+020
+ RVEXPO,RSEXPO,VAPSOT
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ NEWTMX,NEWTMN,LITMAX,LITMIN
+          12           1          25           1
+ IREPTN,IDATEZ,IMONTH,IYEARZ,IDINIT
+           0           1           1        1983      724291
+ NMSTEP,NEWTIT,NEWTI1,LINITZ
+           0           0           0           0
+ NPROPZ,NWRKXR,NWRKNX,NWRKCQ,NWRKCI,NSTACK,QSTACK
+          24         600        1283 -1073741823          50           8 T
+ QSOLVE,QFMTOU,QFMTIN,QNOSCR,QVFLUX
+ T T T F F
+ IVERSN
+      200901
+ ZUCONV = METRIC  FIELD   LAB                             
+ ZUDIST =  METRES   FEET     CM                           
+ ZUTIME =   DAYS    DAYS    HOURS                         
+ ZUDENS =   KG/M3  LB/FT3   GM/CC                         
+ ZUPOLY =   KG/M3  LB/STB   GM/CC                         
+ ZUPADS =   KG/KG  LB/LB    GM/GM                         
+ ZUMASS =    KG      LB      GM                           
+ ZUPRAB =   BARSA   PSIA   ATMOSA                         
+ ZUPRDI =   BARS     PSI    ATMOS                         
+ ZUCOMP =  1/BARS   1/PSI  1/ATMOS                        
+ ZUVISC =  CPOISE  CPOISE  CPOISE                         
+ ZUPERM =  MDARCY  MDARCY  MDARCY                         
+ ZUSVLQ =    SM3     STB     SCC                          
+ ZUSVGS =    SM3    MSCF     SCC                          
+ ZUSRLQ =  SM3/DAY STB/DAYSCC/HOUR                        
+ ZUSRGS =  SM3/DAYMSCF/DAYSCC/HOUR                        
+ ZURVOL =    RM3     RB      RCC                          
+ ZUFVFL =  RM3/SM3 RB/STB  RCC/SCC                        
+ ZUFVFG =  RM3/SM3 RB/MSCF RCC/SCC                        
+ ZUGORZ =  SM3/SM3MSCF/STB SCC/SCC                        
+ ZUOGRZ =  SM3/SM3STB/MSCF SCC/SCC                        
+ ZUTRAN = CPM3/D/BCPB/D/PSCPCC/H/A                        
+ ZUKHZZ = MD-METRE MD-FEET  MD-CM                         
+ ZUDFAC =  DAY/SM3DAY/MSCFHOUR/SCC                        
+ ZUPILQ = M3/D/BARSB/D/PSISCC/H/AT                        
+ ZUPIGS = M3/D/BARMCF/D/PSSCC/H/AT                        
+ ZUTEMP =   DEG C   DEG F   DEG C                         
+ ZUANGL =  DEGREES DEGREES DEGREES                        
+ ZUVOLZ =    M3      FT3     CC                           
+ ZURVFR =  RM3/DAY RB/DAY RCC/HOUR                        
+ ZPHASE,ZVNAME
+ OIL     WATER                                                           
+         PRESS   SWATER                                                  
+                 
+ ZPRINT,QPSUMM
+  0.20000 0.20000 0.20000 0.20000 0.200001)     MAXIMUM VALUE =  0.20000  AT (  
+ 4,  1,  1)                                            F
+ ZZMESS
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+ ZTITLE
+  THIS LINE IS A RUN TITLE                                               
+   RUN                                                                   
+ ZPROGN,ZVERSN
+ ECLIPSE 2009.1  
+ ZMONTH
+ JANFEBMARAPRMAYJUNJLYAUGSEPOCTNOVDEC
+ ZFROOT,ZRESTT
+ SKIP300                                                                        
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                              
+                                                                                
+                                                      
+ ZPRTFL,ZDBGFL
+ SKIP300.PRT                                                             
+ SKIP300.DBG                                                             
+ ZSPCFL,ZSUMFL
+                                                                         
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                              
+ ZGRDFL,ZINIFL
+                                                                         
+                                                                         
+ IOPTNS
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           0
+ LDATEZ
+        9999           1           1
+ QNWARN,IEXTRP
+ F           0
+ ZSAVFL,ZFLXFL,ZFLXRT
+                                                                                
+                                                      
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+ QQSAVE,QQLOAD,KUNSAV,KUNLOD,QFMSIN,QFMSOU
+ F F          38          40 F F
+ ZSAVFL,ZFLXFL
+                                                                                
+                                                      
+                                                                         
+ IRFLUX
+           1
+ ISWRST,ISWRS0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0
+ KUNIFX,KUNOFX,QFLUXW,QFLUXR
+          46          42 F F
+ QVEO2D,IVEPOR,IVETRX,IVETRY,IVETRZ
+ F           1           1           1           1
+ NFFLUX
+           1
+ QTZONE
+ F F F
+ IVENCX,IVENCY
+           1           1           1           1
+ ICHST2
+           0
+ NIFLUX,NZWORK,IBZWRK,NRFLXZ,INETPH,QNETBA
+           1           4       58532           1           0 F
+ NSUMDM
+           2
+ QSURFT,IBSTOG,IBSTOW,IPRP49,IPRP50
+ F           1           1           1           1
+ ZUSURF
+   N/M    LBS/IN  DYN/CM                         
+ NTFLOW,NCINTR,NUMINT,INTFLO,INTCEL,INTDIR
+           0           0           1           0           0           0
+ KUNTFX,NUMRST,IFLXRS
+          48           1          -1          -1          -1          -1
+          -1          -1          -1          -1          -1          -1
+          -1          -1          -1          -1          -1          -1
+          -1          -1          -1          -1
+ ZFLXRT
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+ QSOLVT,IEQSOL,ITRMSV,IBPVTS               ,MSOLX1,MSOLX2,MSOLX3,MSOLX4,MSOLX5
+ F           1           1           1           1           1           1
+           1           1
+ IDLGRX
+           1
+ IBSSFN,IPRP51,IPRP52
+           1           1           1
+ QINNNC,QNOFLT,QINWEE,QENNCS,QSIMLG
+ F F F F F
+ SSEEDV,NBYTOT,QVAPAR,QAGTRN,QPVTOZ,NWKREQ
+  -9999.000         1048576 F F F         600        1283         353
+          80          48        1172           0          76           1
+          58          25         700          10         200           0
+          14           0         132           1           6           0
+           0           0           0           0           0           0
+           0           0           0
+ KUNNCE,KULOGF,QUNOUT,QUNINP
+          26          30 T F
+ QFMTGV,QORSOP,QRESTT,VINRAD,NNCDPF,NNCDPL
+ F F F  0.000000000000000E+000           0           0
+ NFRACT,NMTRIX,NSVRNS,IGRIDF,NUMAQN,NUMAQC
+          25           0           4           0           0           0
+ NIIAQN,NIRAQN,NIIAQC,NIRAQC,QIMPES,IDZMTX
+          10          13          10           4 F           1
+ QROCKH,IBROVB,IBPRDZ,IBPRPO,IBPOVB,IBCPMX
+ F           1           1           8           0           1
+ IBGIST,MACTIV,MVRTOT,NPDISK,NGDISK
+           1          25           2           1           1
+ IGDISK,NUMMMG,MMWORK,RSENTR,RSLOOK,ITRSXT
+           0          87           1  0.000000000000000E+000
+  0.000000000000000E+000           0
+ NORSXT,WVHDMP,TOLMAN,PRIINT,PRILST
+           0   4000.00000000000       1.000000000000000E-002
+ -1.000000000000000E+020 -1.000000000000000E+020
+ PRICOF,NWWKWC,IDRQPR,NOILIN,NWATIN,NGASIN
+ -1.000000000000000E+020 -1.000000000000000E+020 -1.000000000000000E+020
+ -1.000000000000000E+020 -1.000000000000000E+020 -1.000000000000000E+020
+ -1.000000000000000E+020 -1.000000000000000E+020         353           0
+           0           0           0
+ QPRIR2,PR2COF
+ F  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000
+ NGCONT,NGSALE,NETMIT,IWHIST,QWLCHP,QPRIOR
+           0           0          10           0 F F
+ QWPOTS
+ T
+ TSTEPP,TFDIFF,DDPLIM,DDSLIM,RDPLIM,RDSLIM
+  0.000000000000000E+000   1.25000000000000       -10.0000000000000     
+  -10.0000000000000       -10.0000000000000       -10.0000000000000     
+ DDXMAX,SMXIMP,SMTIMP,PMTIMP,IDSTAR
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  1.000000000000000E+020  1.000000000000000E+020
+  1.000000000000000E+020           1
+ IMSTAR,IYSTAR,ISEQRS,QNOPRT,IIVNNC
+           1        1983          -1 F           1
+ IRVNNC,NNNCTS,IVEFCE,QVEMIX
+           1           8           0 F
+ IXGPLY,IXWPLY,IXCPLY,ISWPLY,IIWPLY
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1
+ QPLRST,NACTAT,RSTEPZ,RSINIT
+ F           1  0.000000000000000E+000   1.00000000000000     
+ RSMAXZ,RSMINZ,RSMCHP,RSFMAX,RSFMIN,RSFCNV
+   365.000000000000       0.100000001490116       0.150000005960464     
+   3.00000000000000       0.300000011920929       0.100000001490116     
+ RRGTTE,RRGCNV,RRGMBE,RRGLCV,RFDIFF,RXXTTE
+  0.100000001490116       1.000000047497451E-003  1.000000011686097E-007
+  9.999999747378752E-005   1.25000000000000        10.0000000000000     
+ RXXCNV,RXXMBE,RXXLCV,RXXWFL,TLFRAC,IEWTMX
+  9.999999776482582E-003  9.999999974752427E-007  1.000000047497451E-003
+  1.000000047497451E-003  0.000000000000000E+000          12
+ IEWTMN,IITMAX,IITMIN,IXWSIT,IXWPIT,QLOCAL
+           1          25           1           8           8 F
+ NLOCAL,ILOCAL,MAXLGR,MAXCLS,MAXDLG,MAXILG
+           0           0           1           1          76          57
+ LGRENV,NCONGL
+           1           1
+ ICFLOW,IDFLOW,NCFLOW,IFFLOW,IGFLOW,INNCON
+           0           0           0           0           0           0
+ NNCTOT,NACTOT,NTHETA,ICTYPE,NUMCON,ICONFG
+           0          25           0           0           0           0
+ ICONFL,ICIOCN,ICHOST,KLOCAL,NXTILG,IGXMIN
+           0           0           0           0           1           0
+ IGXMAX,IGYMIN,IGYMAX,IGZMIN,IGZMAX,ICSYS1
+           0           0           0           0           0           0
+ ICSYS2,ICSYS3,IBDENV
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0
+ ISEEDV,DSEEDV,QSEEDV,NMINIM,NMWORK
+        -999  -99999.0000000000      T           0           0
+------------------------------------------------------------------------------------------
+    FREEING ARRAY GRID     -   476*8  ELEMENTS -  -  238924 BYTES SO FAR
+    FREEING ARRAY COOR     -   217*8  ELEMENTS -  -  237188 BYTES SO FAR
+    FREEING ARRAY CORN     -   201*8  ELEMENTS -  -  235580 BYTES SO FAR
+    FREEING ARRAY CPG      -    43*8  ELEMENTS -  -  235236 BYTES SO FAR
+    FREEING ARRAY TPDTR    -   301*8  ELEMENTS -  -  232828 BYTES SO FAR
+    FREEING ARRAY XRWK     -   601*8  ELEMENTS -  -  228020 BYTES SO FAR
+ ALLOCATING ARRAY WORK     -  1284*8  ELEMENTS -  -  238292 BYTES SO FAR
+------------------------------------------------------------------------------------------
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00005 0.00657                 0.1D-04-0.8D-03                 0.00026 0.03287                                                 
+   1 0.00118 0.00000                -0.1D-17 0.5D-18                 0.00428 0.00000                  0.63434                        
+   2 0.00011 0.00000                -0.2D-18 0.1D-18                 0.00029 0.00000                  0.78694 -0.0123                
+   3 0.00001 0.00000                -0.6D-19 0.2D-19                 0.00002 0.00000                                                 
+  TARGET MET                      
+  0.1508E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00055 0.00222                -0.2D-05 0.8D-06                 0.00227 0.00908                                                 
+   1 0.00001 0.00000                -0.4D-19 0.1D-18                 0.00002 0.00001                                                 
+  TARGET MET                      
+  0.2141E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00082 0.00085                 0.1D-03-0.1D-03                 0.00291 0.00299                                                 
+   1 0.00001 0.00000                -0.6D-20 0.2D-20                 0.00007 0.00000                                                 
+  TARGET MET                      
+  0.6520E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00004 0.00003                 0.7D-05-0.7D-05                 0.00017 0.00013                                                 
+   1 0.00001 0.00000                -0.3D-21 0.5D-23                 0.00002 0.00000                                                 
+  TARGET MET                      
+  0.2117E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00979 0.01048                 0.4D-03-0.2D-02                 0.04845 0.05185                                                 
+   1 0.00139 0.00068                -0.2D-18 0.2D-18                 0.00453 0.00287                  0.60515                        
+   2 0.00024 0.00019                -0.2D-18 0.3D-19                 0.00059 0.00082                  0.75919 -0.0616                
+   3 0.00005 0.00002                -0.6D-19-0.2D-19                 0.00010 0.00007                  0.75295 -0.0061 -0.0025        
+   4 0.00001 0.00000                -0.2D-19-0.6D-20                 0.00001 0.00001                                                 
+  TARGET MET                      
+  0.1470E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00017 0.00068                 0.3D-05-0.4D-05                 0.00066 0.00269                                                 
+   1 0.00001 0.00000                 0.4D-20-0.8D-20                 0.00002 0.00000                                                 
+  TARGET MET                      
+  0.1916E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.02203 0.02256                 0.3D-02-0.4D-02                 0.10413 0.10595                                                 
+   1 0.00404 0.00309                 0.2D-17 0.1D-17                 0.01381 0.01350                  0.56261                        
+   2 0.00080 0.00081                 0.9D-19 0.4D-18                 0.00196 0.00361                  0.63768 -0.1207                
+   3 0.00020 0.00006                -0.1D-18 0.6D-19                 0.00045 0.00027                  0.74660 -0.0169  0.0051        
+   4 0.00002 0.00001                -0.9D-20 0.2D-19                 0.00007 0.00003                                                 
+  TARGET MET                      
+  0.6788E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00113 0.00390                 0.2D-03-0.2D-03                 0.00440 0.01733                                                 
+   1 0.00019 0.00004                -0.2D-19-0.1D-18                 0.00081 0.00017                  0.58793                        
+   2 0.00003 0.00001                -0.1D-19-0.4D-19                 0.00010 0.00004                  0.54577 -0.0913                
+   3 0.00000 0.00000                 0.2D-20-0.1D-19                 0.00002 0.00002                                                 
+  TARGET MET                      
+  0.1637E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.02541 0.02570                 0.6D-02-0.7D-02                 0.10472 0.10497                                                 
+   1 0.00146 0.00262                -0.4D-18-0.3D-18                 0.00453 0.01165                  0.70608                        
+   2 0.00041 0.00026                 0.4D-18-0.2D-18                 0.00125 0.00118                  0.39583 -0.1209                
+   3 0.00016 0.00004                 0.2D-18-0.2D-18                 0.00036 0.00020                  0.82690 -0.0293  0.0632        
+   4 0.00002 0.00001                 0.3D-19-0.2D-19                 0.00005 0.00002                                                 
+  TARGET MET                      
+  0.4692E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00111 0.00376                 0.2D-03-0.2D-03                 0.00454 0.01763                                                 
+   1 0.00038 0.00013                 0.1D-18-0.5D-19                 0.00159 0.00055                  0.48919                        
+   2 0.00006 0.00003                -0.2D-19-0.1D-18                 0.00017 0.00014                  0.52188 -0.1024                
+   3 0.00001 0.00001                -0.2D-20-0.4D-19                 0.00004 0.00004                                                 
+  TARGET MET                      
+  0.4192E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00009 0.00010                 0.2D-04-0.2D-04                 0.00045 0.00043                                                 
+   1 0.00001 0.00000                -0.6D-21 0.7D-20                 0.00003 0.00001                                                 
+  TARGET MET                      
+  0.2614E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.03091 0.03099                 0.1D-01-0.1D-01                 0.10593 0.10593                                                 
+   1 0.00471 0.00172                 0.8D-18-0.2D-17                 0.01876 0.00716                  0.40826                        
+   2 0.00065 0.00061                 0.3D-18-0.7D-18                 0.00152 0.00272                  0.58865 -0.0656                
+   3 0.00013 0.00006                 0.5D-18-0.6D-18                 0.00038 0.00026                  0.85930 -0.0083  0.0258        
+   4 0.00002 0.00001                 0.6D-19-0.1D-18                 0.00004 0.00005                                                 
+  TARGET MET                      
+  0.4861E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00124 0.00404                 0.3D-03-0.3D-03                 0.00477 0.01851                                                 
+   1 0.00056 0.00040                -0.3D-19-0.1D-19                 0.00216 0.00165                  0.41425                        
+   2 0.00012 0.00011                -0.1D-19 0.5D-19                 0.00030 0.00051                  0.53143 -0.0923                
+   3 0.00002 0.00001                -0.3D-19-0.1D-19                 0.00008 0.00003                                                 
+  TARGET MET                      
+  0.7536E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00036 0.00035                 0.9D-04-0.9D-04                 0.00179 0.00175                                                 
+   1 0.00004 0.00004                 0.2D-19-0.1D-19                 0.00016 0.00016                  0.65042                        
+   2 0.00004 0.00002                 0.6D-20 0.2D-19                 0.00015 0.00008                  0.54249 -0.4111                
+   3 0.00000 0.00000                -0.3D-20 0.2D-19                 0.00001 0.00002                                                 
+  TARGET MET                      
+  0.2217E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.03711 0.03706                 0.2D-01-0.2D-01                 0.10213 0.10191                                                 
+   1 0.01338 0.00196                 0.6D-17 0.6D-18                 0.05115 0.00567                  0.36414                        
+   2 0.00122 0.00104                 0.4D-17 0.1D-17                 0.00399 0.00421                  0.85277 -0.0706                
+   3 0.00021 0.00055                 0.2D-18 0.3D-18                 0.00061 0.00254                  0.77199  0.0041 -0.0188        
+   4 0.00001 0.00001                 0.5D-19 0.6D-19                 0.00004 0.00002                                                 
+  TARGET MET                      
+  0.3822E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00113 0.00438                 0.5D-05-0.1D-04                 0.00454 0.01792                                                 
+   1 0.00152 0.00053                -0.5D-20-0.3D-18                 0.00553 0.00158                  0.34695                        
+   2 0.00015 0.00008                 0.4D-18-0.4D-19                 0.00048 0.00025                  0.71499 -0.0645                
+   3 0.00003 0.00008                -0.3D-19-0.6D-19                 0.00013 0.00036                  0.92967 -0.0047 -0.0080        
+   4 0.00000 0.00000                -0.3D-20-0.4D-20                 0.00000 0.00001                                                 
+  TARGET MET                      
+  0.6831E-05  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.04380 0.04365                 0.3D-01-0.3D-01                 0.09257 0.09219                                                 
+   1 0.02673 0.00572                 0.1D-16 0.8D-17                 0.09601 0.01644                  0.32935                        
+   2 0.00288 0.00512                 0.8D-17-0.8D-17                 0.01187 0.02028                  0.92660 -0.0629                
+   3 0.00064 0.00067                 0.9D-18-0.2D-17                 0.00155 0.00277                  0.69318  0.0061 -0.0379        
+   4 0.00008 0.00006                -0.1D-19-0.2D-18                 0.00016 0.00015                  0.63768  0.0018  0.0078  0.0044
+   5 0.00001 0.00001                 0.4D-19-0.4D-19                 0.00002 0.00002                                                 
+  TARGET MET                      
+  0.1878E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00131 0.00503                 0.4D-04-0.2D-03                 0.00372 0.01537                                                 
+   1 0.00290 0.00110                -0.6D-18-0.4D-17                 0.00959 0.00288                  0.31085                        
+   2 0.00038 0.00054                 0.6D-18-0.2D-17                 0.00145 0.00204                  0.94068 -0.0410                
+   3 0.00006 0.00009                 0.8D-19-0.3D-19                 0.00016 0.00031                  0.68441  0.0036 -0.0564        
+   4 0.00001 0.00001                -0.9D-20 0.7D-19                 0.00002 0.00002                                                 
+  TARGET MET                      
+  0.2256E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00002 0.00003                 0.2D-06-0.9D-06                 0.00005 0.00011                                                 
+   1 0.00003 0.00001                 0.1D-19-0.2D-19                 0.00008 0.00004                                                 
+  TARGET MET                      
+  0.7938E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.05139 0.05120                 0.4D-01-0.4D-01                 0.09341 0.09320                                                 
+   1 0.04468 0.01655                 0.9D-17 0.6D-16                 0.14679 0.04404                  0.29242                        
+   2 0.00793 0.01191                 0.2D-16 0.2D-16                 0.03000 0.04394                  0.94042 -0.0236                
+   3 0.00122 0.00165                -0.4D-18 0.6D-18                 0.00254 0.00508                  0.66746  0.0018 -0.0593        
+   4 0.00014 0.00020                -0.9D-18-0.4D-18                 0.00031 0.00054                  0.69486  0.0019  0.0030  0.0002
+   5 0.00001 0.00001                -0.2D-18 0.7D-20                 0.00003 0.00003                                                 
+  TARGET MET                      
+  0.3087E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00163 0.00616                 0.2D-03-0.7D-03                 0.00464 0.01732                                                 
+   1 0.00493 0.00258                 0.4D-18 0.2D-17                 0.01427 0.00601                  0.27802                        
+   2 0.00112 0.00140                 0.4D-18-0.1D-17                 0.00353 0.00490                  0.92934  0.0062                
+   3 0.00013 0.00026                 0.8D-19-0.2D-18                 0.00027 0.00055                  0.66368 -0.0029 -0.0731        
+   4 0.00001 0.00002                 0.4D-19 0.3D-19                 0.00004 0.00006                                                 
+  TARGET MET                      
+  0.5654E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00002 0.00005                 0.6D-06-0.2D-05                 0.00005 0.00011                                                 
+   1 0.00003 0.00003                 0.2D-19 0.4D-19                 0.00006 0.00007                                                 
+  TARGET MET                      
+  0.6869E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.04830 0.04813                 0.4D-01-0.4D-01                 0.07566 0.07543                                                 
+   1 0.04397 0.02523                -0.7D-17-0.9D-16                 0.12661 0.05972                  0.26887                        
+   2 0.01106 0.01335                -0.1D-16-0.3D-16                 0.03489 0.04286                  0.96045  0.0192                
+   3 0.00125 0.00255                -0.1D-18-0.1D-17                 0.00266 0.00545                  0.65788 -0.0002 -0.0738        
+   4 0.00013 0.00027                 0.7D-18-0.3D-18                 0.00037 0.00079                  0.73106  0.0014 -0.0008  0.0005
+   5 0.00001 0.00002                 0.2D-18-0.1D-18                 0.00002 0.00004                                                 
+  TARGET MET                      
+  0.4152E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00127 0.00473                 0.3D-03-0.1D-02                 0.00317 0.01235                                                 
+   1 0.00438 0.00315                 0.1D-17-0.7D-18                 0.01074 0.00662                  0.26009                        
+   2 0.00132 0.00148                 0.1D-17 0.3D-17                 0.00338 0.00442                  0.93812  0.0453                
+   3 0.00012 0.00036                 0.7D-19-0.2D-18                 0.00024 0.00077                  0.66844 -0.0033 -0.0812        
+   4 0.00001 0.00002                -0.5D-19-0.2D-18                 0.00004 0.00007                                                 
+  TARGET MET                      
+  0.7281E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.05799 0.05782                 0.5D-01-0.5D-01                 0.08422 0.08379                                                 
+   1 0.05865 0.05361                -0.6D-17 0.9D-16                 0.14278 0.12170                  0.24835                        
+   2 0.01843 0.01929                 0.4D-17-0.1D-17                 0.04767 0.04940                  0.98085  0.0666                
+   3 0.00184 0.00514                -0.1D-17 0.1D-16                 0.00358 0.01087                  0.67359  0.0026 -0.0929        
+   4 0.00018 0.00044                -0.4D-18 0.6D-17                 0.00051 0.00128                  0.75209  0.0008 -0.0026  0.0004
+   5 0.00002 0.00003                -0.1D-18 0.2D-17                 0.00005 0.00007                                                 
+  TARGET MET                      
+  0.6799E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00181 0.00671                 0.7D-03-0.3D-02                 0.00410 0.01439                                                 
+   1 0.00598 0.00663                -0.9D-19-0.8D-17                 0.01194 0.01415                  0.24673                        
+   2 0.00217 0.00248                -0.8D-18-0.1D-16                 0.00444 0.00556                  0.93512  0.0838                
+   3 0.00022 0.00072                 0.2D-18 0.4D-17                 0.00050 0.00154                  0.69536  0.0027 -0.0955        
+   4 0.00002 0.00005                 0.1D-18 0.2D-17                 0.00006 0.00014                  0.76375 -0.0003 -0.0035 -0.0038
+   5 0.00000 0.00000                 0.4D-19 0.6D-18                 0.00001 0.00001                                                 
+  TARGET MET                      
+  0.9091E-05  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00001 0.00004                -0.2D-05 0.7D-05                 0.00002 0.00007                                                 
+   1 0.00002 0.00003                 0.2D-19 0.3D-19                 0.00004 0.00005                                                 
+  TARGET MET                      
+  0.5182E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.04278 0.04280                 0.4D-01-0.4D-01                 0.05623 0.05609                                                 
+   1 0.03367 0.04005                -0.1D-16-0.3D-16                 0.06691 0.08373                  0.25030                        
+   2 0.01176 0.01287                -0.1D-16-0.4D-16                 0.02419 0.02880                  0.94175  0.0745                
+   3 0.00118 0.00394                 0.1D-17 0.9D-17                 0.00254 0.00841                  0.68673  0.0031 -0.0973        
+   4 0.00011 0.00030                 0.1D-17 0.7D-17                 0.00032 0.00086                  0.76104  0.0003 -0.0038 -0.0019
+   5 0.00001 0.00002                 0.3D-18 0.2D-17                 0.00003 0.00005                                                 
+  TARGET MET                      
+  0.4508E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00085 0.00315                 0.4D-03-0.2D-02                 0.00181 0.00661                                                 
+   1 0.00275 0.00373                 0.1D-17-0.2D-17                 0.00527 0.00877                  0.25127                        
+   2 0.00106 0.00134                 0.5D-18-0.1D-17                 0.00224 0.00333                  0.90027  0.0850                
+   3 0.00012 0.00041                 0.3D-18 0.5D-18                 0.00025 0.00092                  0.70755  0.0044 -0.0932        
+   4 0.00001 0.00003                 0.8D-19 0.3D-18                 0.00003 0.00007                                                 
+  TARGET MET                      
+  0.7426E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00001 0.00003                -0.6D-06 0.2D-05                 0.00003 0.00009                                                 
+   1 0.00000 0.00001                -0.4D-21-0.7D-21                 0.00001 0.00003                                                 
+  TARGET MET                      
+  0.3314E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.06734 0.06745                 0.7D-01-0.7D-01                 0.08462 0.08437                                                 
+   1 0.06147 0.11491                 0.7D-18-0.8D-16                 0.11840 0.23647                  0.24653                        
+   2 0.02267 0.03098                 0.5D-17-0.4D-16                 0.04828 0.08605                  0.89493  0.0916                
+   3 0.00342 0.00974                 0.4D-17-0.6D-16                 0.00727 0.02458                  0.73868  0.0120 -0.1077        
+   4 0.00022 0.00076                 0.8D-18-0.2D-16                 0.00062 0.00199                  0.77728  0.0000 -0.0035 -0.0051
+   5 0.00002 0.00006                 0.1D-18-0.4D-17                 0.00006 0.00013                                                 
+  ONLY MAXIMUM MET                      
+  0.1277E-03  0.2365E+00  0.8462E-01  0.1000E-02  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00239 0.00916                 0.2D-02-0.6D-02                 0.00497 0.01773                                                 
+   1 0.00551 0.01269                 0.3D-18 0.9D-17                 0.01129 0.03206                  0.25803                        
+   2 0.00219 0.00410                 0.3D-18-0.5D-17                 0.00517 0.01240                  0.84134  0.0863                
+   3 0.00038 0.00116                -0.1D-18-0.2D-18                 0.00085 0.00312                  0.74626  0.0129 -0.0917        
+   4 0.00003 0.00009                -0.1D-18 0.8D-18                 0.00007 0.00022                  0.79235  0.0001 -0.0038 -0.0120
+   5 0.00000 0.00001                -0.2D-19 0.2D-18                 0.00000 0.00002                                                 
+  TARGET MET                      
+  0.1695E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00001 0.00005                -0.8D-05 0.3D-04                 0.00002 0.00015                                                 
+   1 0.00003 0.00006                 0.2D-19-0.4D-19                 0.00006 0.00016                  0.25705                        
+   2 0.00001 0.00002                 0.1D-19 0.6D-20                 0.00003 0.00006                                                 
+  TARGET MET                      
+  0.6231E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.04719 0.04764                 0.5D-01-0.5D-01                 0.05682 0.05789                                                 
+   1 0.03069 0.07543                -0.6D-17-0.5D-16                 0.06332 0.17511                  0.26104                        
+   2 0.01176 0.02020                -0.7D-17-0.4D-16                 0.02805 0.06246                  0.83206  0.0797                
+   3 0.00212 0.00615                -0.2D-17-0.4D-17                 0.00491 0.01669                  0.75909  0.0126 -0.0929        
+   4 0.00016 0.00050                -0.7D-19 0.2D-17                 0.00030 0.00121                  0.79028  0.0001 -0.0032 -0.0119
+   5 0.00001 0.00004                 0.2D-19 0.6D-18                 0.00003 0.00009                                                 
+  TARGET MET                      
+  0.9072E-04  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00104 0.00411                 0.8D-03-0.3D-02                 0.00236 0.00882                                                 
+   1 0.00213 0.00621                 0.5D-18-0.2D-17                 0.00495 0.01686                  0.27321                        
+   2 0.00086 0.00198                 0.6D-18-0.3D-17                 0.00224 0.00629                  0.79690  0.0709                
+   3 0.00017 0.00054                 0.9D-19-0.1D-17                 0.00044 0.00148                  0.75424  0.0126 -0.0787        
+   4 0.00002 0.00004                -0.1D-19-0.2D-18                 0.00004 0.00011                  0.80185  0.0003 -0.0033 -0.0165
+   5 0.00000 0.00000                -0.5D-20-0.1D-19                 0.00000 0.00001                                                 
+  TARGET MET                      
+  0.7697E-05  0.1000E-03
+ LXITR  ENTERED - TRGLCV= 0.00010 LITMIN,MAX=    1   25                                       
+  IT  ..........RMS ERRORS..........  ..........SUM ERRORS..........  ..........MAX ERRORS..........     STEP   BETA........
+
+   0 0.00000 0.00001                -0.2D-05 0.7D-05                 0.00000 0.00004                                                 
+   1 0.00000 0.00001                 0.2D-20 0.4D-19                 0.00001 0.00004                                                 
+  TARGET MET                      
+  0.3831E-04  0.1000E-03

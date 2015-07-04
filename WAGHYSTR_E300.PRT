@@ -1,0 +1,669 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN WAGHYSTR_E300
+
+ 0: ------------------------------------------------------------------------
+ 0: -->The fifth SPE comparison problem , reported by Killough and Kossack
+ 0: -- ( 9th SPE Symp on Res. Sim., San Antonio, 1987).
+ 0: -- Dimension 7x7x3-
+ 0: -- 6 components
+ 0: -- FIELD units
+ 0: -- The run follows the first of the three suggested production schedules
+ 0: -- Solvent injection as part of a WAG cycle
+ 0: -- WAG Hysteresis model in E300 (back compatability issue) in 2008.1
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC   ==============================================================
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: OIL
+ 0: WATER
+ 0: GAS
+ 0: 
+ 0: COMPS
+ 0: 6 /
+ 0: 
+ 0: TABDIMS
+ 0: 2 1 40 40 /
+ 0: 
+ 0: DIMENS
+ 0: -- 7 7 3 /
+ 0: 7 1 1 /
+ 0: 
+ 0: EQLDIMS
+ 0: 1 20 /
+ 0: 
+ 0: WELLDIMS
+ 0: 2 2 /
+ 0: 
+ 0: START
+ 0: 1 Jan 1990 /
+ 0: SATOPTS
+ 0: HYSTER /
+ 0: 
+ 0: UNIFOUT
+ 0: 
+ 0: 
+ 0: GRID    ================================================================
+ 0: 
+ 0: INIT
+ 0: 
+ 0: DXV
+ 0: 7*500 /
+ 0: 
+ 0: DYV
+ 0: 1*500 /
+ 0: 
+ 0: DZV
+ 0: --20 30 50 /
+ 0: 20 /
+ 0: 
+ 0: TOPS
+ 0: -- 49*8325 49*8345 49*8375 /
+ 0: 7*8325 /
+ 0: 
+ 0: PORO
+ 0: --147*0.3  /
+ 0: 7*0.3  /
+ 0: 
+ 0: PERMX
+ 0: -- 49*500 49*50 49*200 /
+ 0: 7*500 /
+ 0: 
+ 0: PERMY
+ 0: -- 49*500 49*50 49*200 /
+ 0: 7*500 /
+ 0: 
+ 0: PERMZ
+ 0: -- 49*50 49*50 49*25 /
+ 0: 7*500 /
+ 0: 
+ 0: PROPS     ============================================================
+ 0: 
+ 0: EOS
+ 0: PR /
+ 0: 
+ 0: PRCORR
+ 0: 
+ 0: RTEMP
+ 0: 160 /
+ 0: 
+ 0: STCOND
+ 0: 60 14.7 /
+ 0: 
+ 0: CNAMES
+ 0: C1
+ 0: C3
+ 0: C6
+ 0: C10
+ 0: C15
+ 0: C20
+ 0: /
+ 0: 
+ 0: TCRIT
+ 0:  343.0
+ 0:  665.7
+ 0:  913.4
+ 0: 1111.8
+ 0: 1270.0
+ 0: 1380.0
+ 0: /
+ 0: 
+ 0: PCRIT
+ 0: 667.8
+ 0: 616.3
+ 0: 436.9
+ 0: 304.0
+ 0: 200.0
+ 0: 162.0
+ 0: /
+ 0: 
+ 0: ZCRIT
+ 0: 0.290
+ 0: 0.277
+ 0: 0.264
+ 0: 0.257
+ 0: 0.245
+ 0: 0.235
+ 0: /
+ 0: 
+ 0: MW
+ 0:  16.04
+ 0:  44.10
+ 0:  86.18
+ 0: 149.29
+ 0: 206.00
+ 0: 282.00
+ 0: /
+ 0: 
+ 0: ACF
+ 0: 0.013
+ 0: 0.1524
+ 0: 0.3007
+ 0: 0.4885
+ 0: 0.6500
+ 0: 0.8500
+ 0: /
+ 0: 
+ 0: BIC
+ 0:    0.0
+ 0:    0.0    0.0
+ 0:    0.0    0.0    0.0
+ 0:    0.05   0.005  0.0     0.0
+ 0:    0.05   0.005  0.0     0.0     0.0 /
+ 0: 
+ 0: SWFN
+ 0: --drainage curve wetting
+ 0: --table 1
+ 0: --Sw   Krw   Pc
+ 0: 0.2    0     6
+ 0: 0.25   0.005 5
+ 0: 0.3    0.01  4
+ 0: 0.35   0.02  3
+ 0: 0.40   0.03  2.4
+ 0: 0.45   0.04  1.9
+ 0: 0.5    0.055 1.4
+ 0: 0.55   0.08  1.0
+ 0: 0.6    0.11  0.7
+ 0: 0.65   0.17  0.4
+ 0: 0.7    0.23  0.25
+ 0: 0.75   0.32  0.1
+ 0: 1.0    1.0   0.0
+ 0: /
+ 0: 
+ 0: --imbibition curve wetting
+ 0: --table 2
+ 0: --Sw  Krw   Pc
+ 0: 0.2   0     6
+ 0: 0.25  0.04  3
+ 0: 0.3   0.1   2
+ 0: 0.35  0.17  1.15
+ 0: 0.4   0.25  0.6
+ 0: 0.45  0.32  0.3
+ 0: 0.5   0.39  0.12
+ 0: 0.55  0.46  0
+ 0: 1.0   1.0   0
+ 0: /
+ 0: 
+ 0: 
+ 0: 
+ 0: SGFN
+ 0: --Drainage curves
+ 0: --Table 1 for SATNUM
+ 0: --Sg   Krg   Pcog  note must have connate gas sat = 0
+ 0: 0      0     0
+ 0: 0.05   0     0.09
+ 0: 0.10   0.022 0.20
+ 0: 0.15   0.06  0.38
+ 0: 0.20   0.10  0.57
+ 0: 0.25   0.14  0.83
+ 0: 0.30   0.188 1.08
+ 0: 0.35   0.24  1.37
+ 0: 0.40   0.30  1.69
+ 0: 0.45   0.364 2
+ 0: 0.50   0.458 2.36
+ 0: 0.55   0.60  2.70
+ 0: 0.60   0.75  3
+ 0: 0.80   1.0   3
+ 0: /
+ 0: 
+ 0: --Imbibition curves
+ 0: --Table 2 for IMBNUM
+ 0: --Sg   Krg   Pcog
+ 0: -- 0.0    0     0
+ 0: -- 0.40   0     0
+ 0: -- 0.45   0.066 0.80
+ 0: -- 0.50   0.177 1.56
+ 0: -- 0.55   0.40  2.24
+ 0: -- 0.60   0.75  3
+ 0: 
+ 0: /
+ 0: --Sgcr=0.05 critical gas saturation
+ 0: --the highest for which Krg is zero
+ 0: 
+ 0: --Sgco=0.0 connate gas saturation
+ 0: --minimum gas sat in the table
+ 0: --value below the GOC
+ 0: 
+ 0: --Sgmax max gas sat in the table
+ 0: --Sgmax=1-Swco=1-0.20=0.80
+ 0: --value above the gas transition zone
+ 0: 
+ 0: SOF3
+ 0: --Drainage curves
+ 0: --Table 1 for SATNUM
+ 0: --So   Krow   Krog
+ 0: 0.0    0      0
+ 0: 0.1    0.02   0
+ 0: 0.2    0.05   0
+ 0: 0.25   0.08   0.01
+ 0: 0.30   0.11   0.02
+ 0: 0.35   0.15   0.03
+ 0: 0.40   0.2    0.04
+ 0: 0.45   0.25   0.08
+ 0: 0.50   0.32   0.14
+ 0: 0.55   0.4    0.225
+ 0: 0.60   0.5    0.33
+ 0: 0.65   0.6    0.434
+ 0: 0.70   0.7    0.575
+ 0: 0.75   0.8    0.72
+ 0: 0.80   1.0    1.0
+ 0: /
+ 0: 
+ 0: --Imbibition curves
+ 0: --Table 2 for IMBNUM
+ 0: --So   Krow   Krog
+ 0: -- 0.0    0      0
+ 0: -- 0.1    0      0
+ 0: -- 0.20   0      0
+ 0: -- 0.25   0      0.048
+ 0: -- 0.30   0      0.14
+ 0: -- 0.35   0      0.40
+ 0: -- 0.40   0      0.90
+ 0: -- 0.50   0.03   1*
+ 0: -- 0.55   0.1    1*
+ 0: -- 0.60   0.18   1*
+ 0: -- 0.65   0.3    1*
+ 0: -- 0.70   0.45   1*
+ 0: -- 0.75   0.64   1*
+ 0: -- 0.80   0.90   1*
+ 0: /
+ 0: --Socr=0.2 critical oil sat
+ 0: --highest for which both krow,krog are 0
+ 0: 
+ 0: --Sorw=0.2 residual oil sat in the oil wat system
+ 0: --So at which krow becomes 0
+ 0: 
+ 0: --Sorg=0.38 residual oil sat in the oil gas system
+ 0: --So at which krog becomes 0
+ 0: --Somax=0.80 max oil sat in the table
+ 0: --Somax=1-Swco (Sg=0)
+ 0: 
+ 0: --EHYSTR
+ 0: --0.1  4    1*
+ 0: --/
+ 0: WAGHYSTR
+ 0:  2.0  1.0  /
+ 0:  2.0  1.0  /
+ 0: 
+ 0: 
+ 0: ROCKTAB
+ 0:  1000.0 1.0   1.0
+ 0:  2000.0 1.005 1.0
+ 0:  3000.0 1.010 1.0
+ 0:  4000.0 1.015 1.0
+ 0:  5000.0 1.020 1.0
+ 0:  6000.0 1.025 1.0
+ 0:  7000.0 1.030 1.0
+ 0:  8000.0 1.035 1.0
+ 0:  9000.0 1.040 1.0
+ 0: 10000.0 1.045 1.0 /
+ 0: 
+ 0: WATERTAB
+ 0:  1000.0     1.0099 0.70
+ 0:  4000.0     1.0000 0.70
+ 0:  9000.0     0.9835 0.70 /
+ 0: 
+ 0: --Specify initial liquid composition
+ 0: 
+ 0: ZMFVD
+ 0: 1000.0  0.5 0.03 0.07 0.2 0.15 0.05
+ 0: 10000.0 0.5 0.03 0.07 0.2 0.15 0.05 /
+ 0: 
+ 0: --Surface densities : only the water value is used
+ 0: 
+ 0: DENSITY
+ 0: 1* 62.4 1* /
+ 0: 
+ 0: 
+ 0: --**************regions section*************--
+ 0: 
+ 0: REGIONS
+ 0: 
+ 0: SATNUM
+ 0: 7*1
+ 0: /
+ 0: IMBNUM
+ 0: 7*2
+ 0: /
+ 0: 
+ 0: 
+ 0: SOLUTION   =============================================================
+ 0: 
+ 0: --Request initial state solution output
+ 0: 
+ 0: RPTSOL
+ 0: PRESSURE SOIL SWAT SGAS PSAT /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PSAT             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: EQUIL
+ 0: 8400 4000 9000 0 7000 0 1 1 0  /
+ 0: 
+ 0: SUMMARY    =============================================================
+ 0: 
+ 0: --Request field GOR, water cut oil rate and total, gas rate
+ 0: 
+ 0: FGOR
+ 0: FWCT
+ 0: FOPR
+ 0: FOPT
+ 0: FWPR
+ 0: ALL
+ 0: RUNSUM
+ 0: BSWAT
+ 0: 1  1  1 /
+ 0: 2  1  1 /
+ 0: 3  1  1 /
+ 0: 4  1  1 /
+ 0: 5  1  1 /
+ 0: 6  1  1 /
+ 0: 7  1  1 /
+ 0: 
+ 0: /
+ 0: 
+ 0: BGSAT
+ 0: 1  1  1 /
+ 0: 2  1  1 /
+ 0: 3  1  1 /
+ 0: 4  1  1 /
+ 0: 5  1  1 /
+ 0: 6  1  1 /
+ 0: 7  1  1 /
+ 0: /
+ 0: BOKR
+ 0: 1  1  1 /
+ 0: 2  1  1 /
+ 0: 3  1  1 /
+ 0: 4  1  1 /
+ 0: 5  1  1 /
+ 0: 6  1  1 /
+ 0: 7  1  1 /
+ 0: /
+ 0: BOSAT
+ 0: 1  1  1 /
+ 0: 2  1  1 /
+ 0: 3  1  1 /
+ 0: 4  1  1 /
+ 0: 5  1  1 /
+ 0: 6  1  1 /
+ 0: 7  1  1 /
+ 0: /
+ 0: BGKR
+ 0: 1  1  1 /
+ 0: 2  1  1 /
+ 0: 3  1  1 /
+ 0: 4  1  1 /
+ 0: 5  1  1 /
+ 0: 6  1  1 /
+ 0: 7  1  1 /
+ 0: /
+ 0: BWKR
+ 0: 1  1  1 /
+ 0: 2  1  1 /
+ 0: 3  1  1 /
+ 0: 4  1  1 /
+ 0: 5  1  1 /
+ 0: 6  1  1 /
+ 0: 7  1  1 /
+ 0: /
+ 0: BPR
+ 0: 1  1  1 /
+ 0: 2  1  1 /
+ 0: 3  1  1 /
+ 0: 4  1  1 /
+ 0: 5  1  1 /
+ 0: 6  1  1 /
+ 0: 7  1  1 /
+ 0: /
+ 0: 
+ 0: 
+ 0: SEPARATE
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE    ==========================================================
+ 0: RPTRST
+ 0:  'BASIC=2' SOIL SWAT SGAS PRESSURE /
+ 0: 
+ 0: 
+ 0: 
+ 0: AIMCON
+ 0:  6* -1 /
+ 0: 
+ 0: --Request FIP reports, group, sep and well data, and solution maps.
+ 0: 
+ 0: SAVEEND
+ 0: 
+ 0: RPTPRINT
+ 0: 0 1 0 1 1 1 0 1 0 0 /
+ 0: 
+ 0: --Specify solution maps of pressure and saturations
+ 0: 
+ 0: RPTSCHED
+ 0: PRESSURE SOIL SWAT SGAS /
+ 0: 
+ 0: --One stage separator conditions
+ 0: 
+ 0: SEPCOND
+ 0: Sep Field 1 60 14.7 /
+ 0: /
+ 0: 
+ 0: --Define injection and production wells
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --P Field 7 7 8400 Sep /
+ 0: WELSPECS
+ 0: P Field 7 1 8400 OIL /
+ 0: /
+ 0: 
+ 0: --2000a uses WELSEPC to associate separator with wells
+ 0: WSEPCOND
+ 0: P SEP /
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --P 7 7 3 3 1 0.5 /
+ 0: COMPDAT
+ 0: P 7 1 1 1 1* 1 1* 0.5 /
+ 0: /
+ 0: 
+ 0: --Well P on oil rate of 12000 stb/day, with min bhp of 1000 psi
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --P oil 12000 3* 1000 /
+ 0: WCONPROD
+ 0: P OPEN ORAT 1200 4* 1000 /
+ 0: /
+ 0: 
+ 0: TUNING
+ 0:   0.1  1.0  4* 0.3 2*  0.1 /
+ 0: /
+ 0: /
+ 0: --Limits on water cut and GOR
+ 0: --Note limit is on water cut, rather than water-oil ratio
+ 0: 
+ 0: GRUPLIM
+ 0: Field 2* 0.8333 10 1* A Y /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 1*200 /
+ 0: 
+ 0: --Define injection well
+ 0: 
+ 0: WELLSTRE
+ 0: Solvent 0.77 0.20 0.03 0.0 0.0 /
+ 0: /
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --I Field 1 1 8335 /
+ 0: WELSPECS
+ 0: I Field 1 1 8335 GAS /
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --I 1 1 1 1 1 0.5 /
+ 0: COMPDAT
+ 0: I 1 1 1 1 OPEN 1 1* 0.5 /
+ 0: /
+ 0: 
+ 0: --Start WAG cycles-----------------------------------------------------
+ 0: 
+ 0: --2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+ 0: --WELLINJE
+ 0: --I Stream Solvent Gas 1* 12000 12000 /
+ 0: WCONINJE
+ 0: I GAS OPEN RATE 1200 /
+ 0: /
+ 0: WINJGAS
+ 0: I Stream Solvent /
+ 0: /
+ 0: WELTARG
+ 0: I WRATE 1200 /
+ 0: /
+ 0: 
+ 0: WELLWAG
+ 0: I T G 200 W 200 /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 6*200 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN WAGHYSTR_E300
+     1 READING RUNSPEC 
+     2 READING FIELD   
+     3 READING OIL     
+     4 READING WATER   
+     5 READING GAS     
+     6 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE TABDIMS  KEYWORD                           
+ @           6 /                                                             
+     7 READING TABDIMS 
+     8 READING DIMENS  
+     9 READING EQLDIMS 
+    10 READING WELLDIMS
+    11 READING START   
+    12 READING SATOPTS 
+    13 READING UNIFOUT 
+    14 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                18764 BYTES                                                
+    16 READING INIT    
+    17 READING DXV     
+    18 READING DYV     
+    19 READING DZV     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SPURIOUS DATA BEFORE TOPS     KEYWORD                           
+ @           20 /                                                            
+    20 READING TOPS    
+    21 READING PORO    
+    22 READING PERMX   
+    23 READING PERMY   
+    24 READING PERMZ   
+    25 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
+ @           PORE VOLUMES WILL BE SET TO ZERO                                
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NUMBER OF ACTIVE CELLS IS 0                                     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           THERE ARE NO ACTIVE CELLS IN THE RESERVOIR                      
+
+ Error summary 
+ Comments               1
+ Warnings               2
+ Problems               0
+ Errors                 6
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

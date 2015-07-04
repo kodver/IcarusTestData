@@ -1,0 +1,570 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN SKIP300
+
+ 0: -- THIS IS A SIMPLE 5 BY 5 QUARTER FIVE SPOT
+ 0: --
+ 0: -- Keyword MULTOUTS to request multiple summary file output
+ 0: -- Keyword OPERATE to perform operations on arrays
+ 0: -- Keyword SKIP300 to skip subsequent keywords
+ 0: -- Keyword ENDSKIP to end skipping keywords
+ 0: 
+ 0: RUNSPEC
+ 0: TITLE
+ 0:  THIS LINE IS A RUN TITLE
+ 0: 
+ 0: DIMENS
+ 0:     5    5    1  /
+ 0: 
+ 0: OIL
+ 0: 
+ 0: WATER
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: TABDIMS
+ 0:     1    1   20    2    1   20 /
+ 0: 
+ 0: WELLDIMS
+ 0:     2    1    1    2 /
+ 0: 
+ 0: START
+ 0:    1 'JAN' 1983  /
+ 0: 
+ 0: NSTACK
+ 0:     8 /
+ 0: 
+ 0: FMTOUT
+ 0: 
+ 0: FMTIN
+ 0: 
+ 0: UNIFOUT
+ 0: 
+ 0: MULTOUTS
+ 0: 
+ 0: GRID      ==============================================================
+ 0: DEBUG
+ 0: 
+ 0: DXV
+ 0:    5*75.0 /
+ 0: 
+ 0: PERMX
+ 0:   25*50.0 /
+ 0: 
+ 0: PERMY
+ 0:   25*50.0 /
+ 0: 
+ 0: DYV
+ 0:    5*75.0 /
+ 0: 
+ 0: DZ
+ 0:   25*30.0 /
+ 0: 
+ 0: TOPS
+ 0:   25*4000.0 /
+ 0: 
+ 0: PERMY
+ 0:   25*50.0 /
+ 0: 
+ 0: PORO
+ 0:   25*0.2 /
+ 0: 
+ 0: OPERATE
+ 0: PORO 1  3  1  3  1  1  MULTA  PORO  1  -0.1 /
+ 0: /
+ 0: 
+ 0: RPTGRID
+ 0: PORO /
+ 0: /
+ 0: 
+ 0: DEBUG
+ 0: 
+ 0: PROPS     ==============================================================
+ 0: 
+ 0: SWFN
+ 0:     .25    .0    4.0
+ 0:     .7    1.0     .0
+ 0: /
+ 0: 
+ 0: SOF2       1 TABLES   20 NODES IN EACH           FIELD   13:34  5 MAY 85
+ 0:     .3000  .0000
+ 0:     .7500 1.0000
+ 0: /
+ 0: 
+ 0: PVTW
+ 0:   .0  1.0  3.03E-06  .5  0.0 /
+ 0: 
+ 0: PVDO
+ 0:   .0     1.0     2.0
+ 0:  8000.0   .92    2.0
+ 0: /
+ 0: 
+ 0: ROCK
+ 0:  4000.0         .30E-05 /
+ 0: 
+ 0: DENSITY
+ 0:  52.0000  64.0000   .04400 /
+ 0: 
+ 0: RPTPROPS
+ 0:      /
+ 0: 
+ 0: REGIONS    =============================================================
+ 0: 
+ 0: SATNUM
+ 0:  25*1 /
+ 0: 
+ 0: SOLUTION   =============================================================
+ 0: 
+ 0: EQUIL
+ 0: 4000  4000  6000  0   0   0   0   0   0  /
+ 0: 
+ 0: RPTSOL
+ 0: -- Initialisation Print Output
+ 0: --
+ 0: 'PRES' 'SWAT' /
+ 0: 
+ 0: SUMMARY    ===========================================================
+ 0: 
+ 0: BPR
+ 0: 1 1 1
+ 0: /
+ 0: 
+ 0: FOPR
+ 0: FWIR
+ 0: 
+ 0: WBHP
+ 0: /
+ 0: 
+ 0: FWCT
+ 0: 
+ 0: FPR
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE   ===========================================================
+ 0: 
+ 0: RPTSCHED                                         FIELD   16:55 18 APR 86
+ 0:    'PRES' 'SWAT' /
+ 0: 
+ 0: WELSPECS
+ 0: 'I'  'G'   1  1  4000  'WAT'  /
+ 0: 'P'  'G'   5  5  4000  'OIL'  /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: 'I       '   1   1   1   1 'OPEN'   0  .0   1.0 /
+ 0: 'P       '   5   5   1   1 'OPEN'   0  .0   1.0 /
+ 0: /
+ 0: 
+ 0: WCONPROD
+ 0: 'P' 'OPEN' 'BHP' 5* 3999.0 /
+ 0: /
+ 0: 
+ 0: SKIP300
+ 0: 
+ 0: WCONINJE
+ 0: 'I' 'WAT' 'OPEN' 'RATE' 200.0 /
+ 0: /
+ 0: 
+ 0: ENDSKIP
+ 0: 
+ 0: WCONINJE
+ 0: 'I' 'WAT' 'OPEN' 'RATE' 100.0 /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0:  4*200
+ 0: /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN SKIP300
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING DIMENS  
+     4 READING OIL     
+     5 READING WATER   
+     6 READING FIELD   
+     7 READING TABDIMS 
+     8 READING WELLDIMS
+     9 READING START   
+    10 READING NSTACK  
+    11 READING FMTOUT  
+    12 READING FMTIN   
+    13 READING UNIFOUT 
+    14 READING MULTOUTS
+    15 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                22376 BYTES                                                
+    16 READING DEBUG   
+    17 READING DXV     
+    18 READING PERMX   
+    19 READING PERMY   
+    20 READING DYV     
+    21 READING DZ      
+    22 READING TOPS    
+    23 READING PERMY   
+    24 READING PORO    
+    25 READING OPERATE 
+    26 READING RPTGRID 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           SPURIOUS DATA BEFORE DEBUG    KEYWORD                           
+ @           /                                                               
+    27 READING DEBUG   
+    28 READING PROPS   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           PERMZ KEYWORD HAS NOT BEEN SPECIFIED FOR THIS                   
+ @           2D AREAL MODEL.  PLEASE RE-CHECK DATA INPUT                     
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+1                             **********************************************************************   1
+  PORO     AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+ MINIMUM VALUE =  0.10000  AT (  1,  1,  1)     MAXIMUM VALUE =  0.20000  AT (  4,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  0.10000 0.10000 0.10000 0.20000 0.20000
+ (*,  2,  1)  0.10000 0.10000 0.10000 0.20000 0.20000
+ (*,  3,  1)  0.10000 0.10000 0.10000 0.20000 0.20000
+ (*,  4,  1)  0.20000 0.20000 0.20000 0.20000 0.20000
+ (*,  5,  1)  0.20000 0.20000 0.20000 0.20000 0.20000
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           NUMBER OF ACTIVE CELLS IS 25                                    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               242732 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @              58535 CHARACTER VARIABLES USED                               
+    29 READING SWFN    
+    30 READING SOF2    
+    31 READING PVTW    
+    32 READING PVDO    
+    33 READING ROCK    
+    34 READING DENSITY 
+    35 READING RPTPROPS
+    36 READING REGIONS 
+    37 READING SATNUM  
+    38 READING SOLUTION
+    39 READING EQUIL   
+    40 READING RPTSOL  
+    41 READING SUMMARY 
+1                             **********************************************************************   2
+  PRESSURE AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   PSIA          
+
+     CONSTANT ARRAY =  4005.65        PSIA                                                                                           
+1                             **********************************************************************   3
+  SWAT     AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  0.25000                                                                                                       
+    42 READING BPR     
+    43 READING FOPR    
+    44 READING FWIR    
+    45 READING WBHP    
+    46 READING FWCT    
+    47 READING FPR     
+    48 READING RUNSUM  
+    49 READING RPTONLY 
+    50 READING SCHEDULE
+    51 READING RPTSCHED
+    52 READING WELSPECS
+    53 READING COMPDAT 
+    54 READING WCONPROD
+    55 READING SKIP300 
+    56 READING WCONINJE
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I                       
+ @           HAS BEEN DEFAULTED. THE DEFAULT VALUE IS  100000.   PSIA        
+    57 READING ENDSKIP 
+    58 READING WCONINJE
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1983):
+ @           THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I                       
+ @           HAS BEEN DEFAULTED. THE DEFAULT VALUE IS  100000.   PSIA        
+    59 READING TSTEP   
+1                             **********************************************************************   4
+  SIMULATE AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ STEP    1 TIME=    1.00  DAYS (  +1.0  DAYS INIT  4 ITS) (2-JAN-1983)           
+  PAV=  4058.2  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    2 TIME=    2.95  DAYS (  +1.9  DAYS TRNC  2 ITS) (3-JAN-1983)           
+  PAV=  4114.7  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    3 TIME=    8.32  DAYS (  +5.4  DAYS TRNC  2 ITS) (9-JAN-1983)           
+  PAV=  4160.8  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    4 TIME=   16.88  DAYS (  +8.6  DAYS TRNC  3 ITS) (17-JAN-1983)          
+  PAV=  4175.1  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    5 TIME=   30.56  DAYS ( +13.7  DAYS TRNC  3 ITS) (31-JAN-1983)          
+  PAV=  4175.6  PSIA   WCT=0.005 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    6 TIME=   51.99  DAYS ( +21.4  DAYS TRNC  2 ITS) (21-FEB-1983)          
+  PAV=  4169.3  PSIA   WCT=0.034 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    7 TIME=   85.04  DAYS ( +33.0  DAYS TRNC  3 ITS) (27-MAR-1983)          
+  PAV=  4157.1  PSIA   WCT=0.108 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    8 TIME=  136.04  DAYS ( +51.0  DAYS TRNC  3 ITS) (17-MAY-1983)          
+  PAV=  4139.8  PSIA   WCT=0.229 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    9 TIME=  200.00  DAYS ( +64.0  DAYS REPT  2 ITS) (20-JLY-1983)          
+  PAV=  4123.4  PSIA   WCT=0.354 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+1                             **********************************************************************   5
+  PRESSURE AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   PSIA          
+
+ MINIMUM VALUE =  4051.09  AT (  5,  5,  1)     MAXIMUM VALUE =  4170.23  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  4170*23 4155.81 4146.50 4140.26 4136.02
+ (*,  2,  1)  4155.81 4149.25 4141.46 4134.71 4129.68
+ (*,  3,  1)  4146.50 4141.46 4133.23 4124.11 4116.26
+ (*,  4,  1)  4140.26 4134.71 4124.11 4109.15 4092.87
+ (*,  5,  1)  4136.02 4129.68 4116.25 4092.87 4051*09
+1                             **********************************************************************   6
+  SWAT     AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+ MINIMUM VALUE =  0.30562  AT (  5,  5,  1)     MAXIMUM VALUE =  0.68133  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  0*68133 0.60722 0.50971 0.38582 0.31037
+ (*,  2,  1)  0.60726 0.53555 0.46627 0.37028 0.30762
+ (*,  3,  1)  0.50976 0.46629 0.42603 0.35905 0.30912
+ (*,  4,  1)  0.38586 0.37031 0.35906 0.33797 0.31042
+ (*,  5,  1)  0.31038 0.30764 0.30913 0.31042 0*30562
+1                             **********************************************************************   7
+  SIMULATE AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ STEP   10 TIME=  300.00  DAYS (+100.0  DAYS HALF  3 ITS) (28-OCT-1983)          
+  PAV=  4106.4  PSIA   WCT=0.489 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP   11 TIME=  400.00  DAYS (+100.0  DAYS REPT  3 ITS) (5-FEB-1984)           
+  PAV=  4095.2  PSIA   WCT=0.583 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+1                             **********************************************************************   8
+  PRESSURE AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   PSIA          
+
+ MINIMUM VALUE =  4040.41  AT (  5,  5,  1)     MAXIMUM VALUE =  4135.62  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  4135*62 4121.19 4112.84 4108.11 4105.21
+ (*,  2,  1)  4121.19 4115.20 4108.81 4103.84 4100.34
+ (*,  3,  1)  4112.84 4108.81 4102.46 4095.72 4090.05
+ (*,  4,  1)  4108.11 4103.84 4095.72 4084.42 4072.21
+ (*,  5,  1)  4105.21 4100.34 4090.05 4072.21 4040*41
+1                             **********************************************************************   9
+  SWAT     AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+ MINIMUM VALUE =  0.36910  AT (  5,  5,  1)     MAXIMUM VALUE =  0.69759  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  0*69759 0.67166 0.60245 0.46892 0.37141
+ (*,  2,  1)  0.67168 0.62711 0.56449 0.45345 0.36929
+ (*,  3,  1)  0.60250 0.56451 0.52215 0.44112 0.37270
+ (*,  4,  1)  0.46896 0.45347 0.44113 0.41441 0.37571
+ (*,  5,  1)  0.37144 0.36932 0.37272 0.37572 0*36910
+1                             **********************************************************************  10
+  SIMULATE AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ STEP   12 TIME=  600.00  DAYS (+200.0  DAYS REPT  3 ITS) (23-AUG-1984)          
+  PAV=  4081.8  PSIA   WCT=0.697 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+1                             **********************************************************************  11
+  PRESSURE AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   PSIA          
+
+ MINIMUM VALUE =  4035.13  AT (  5,  5,  1)     MAXIMUM VALUE =  4119.92  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  4119*92 4105.39 4097.09 4092.73 4090.34
+ (*,  2,  1)  4105.39 4099.42 4093.38 4089.01 4086.14
+ (*,  3,  1)  4097.09 4093.38 4087.75 4082.00 4077.29
+ (*,  4,  1)  4092.73 4089.01 4082.00 4072.37 4062.09
+ (*,  5,  1)  4090.34 4086.14 4077.29 4062.09 4035*13
+1                             **********************************************************************  12
+  SWAT     AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+ MINIMUM VALUE =  0.41703  AT (  5,  2,  1)     MAXIMUM VALUE =  0.69946  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  0*69946 0.68944 0.64591 0.52206 0.41864
+ (*,  2,  1)  0.68945 0.66466 0.61675 0.50791 0.41703
+ (*,  3,  1)  0.64594 0.61676 0.57888 0.49597 0.42118
+ (*,  4,  1)  0.52210 0.50794 0.49599 0.46767 0.42481
+ (*,  5,  1)  0.41867 0.41706 0.42121 0.42483 0*41747
+1                             **********************************************************************  13
+  SIMULATE AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ STEP   13 TIME=  800.00  DAYS (+200.0  DAYS REPT  3 ITS) (11-MAR-1985)          
+  PAV=  4073.6  PSIA   WCT=0.769 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+1                             **********************************************************************  14
+  PRESSURE AT   800.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   PSIA          
+
+ MINIMUM VALUE =  4031.90  AT (  5,  5,  1)     MAXIMUM VALUE =  4110.54  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  4110*54 4095.97 4087.60 4083.32 4081.20
+ (*,  2,  1)  4095.97 4089.97 4084.03 4079.92 4077.40
+ (*,  3,  1)  4087.60 4084.03 4078.76 4073.56 4069.44
+ (*,  4,  1)  4083.32 4079.92 4073.56 4064.96 4055.85
+ (*,  5,  1)  4081.20 4077.40 4069.44 4055.85 4031*90
+1                             **********************************************************************  15
+  SWAT     AT   800.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
+  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+ MINIMUM VALUE =  0.45662  AT (  5,  2,  1)     MAXIMUM VALUE =  0.69988  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5
+
+ (*,  1,  1)  0*69988 0.69613 0.67062 0.56184 0.45783
+ (*,  2,  1)  0.69613 0.68344 0.64994 0.54924 0.45662
+ (*,  3,  1)  0.67064 0.64995 0.61862 0.53827 0.46119
+ (*,  4,  1)  0.56188 0.54927 0.53829 0.50992 0.46523
+ (*,  5,  1)  0.45786 0.45666 0.46122 0.46524 0*45756
+    60 READING END     
+
+ Error summary 
+ Comments               1
+ Warnings               4
+ Problems               0
+ Errors                 0
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00
+1                                                                                                                                  
+ -------------------------------------------------------------------------------------------------------------------------------
+ SUMMARY OF RUN SKIP300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ -------------------------------------------------------------------------------------------------------------------------------
+ TIME         YEARS        BPR          FOPR         FWIR         WBHP         WBHP         FWCT         FPR                       
+ DAYS         YEARS        PSIA         STB/DAY      STB/DAY      PSIA         PSIA                      PSIA                      
+                                                                  I            P                                                   
+                           1   1   1                                                                                               
+ -------------------------------------------------------------------------------------------------------------------------------
+        0            0     4005.649            0            0     4005.649     4005.649            0     4005.649                  
+ 200.0000     0.547570     4170.229     66.18723     100.0000     4179.750     3999.000     0.353572     4123.425                  
+ 400.0000     1.095140     4135.621     42.33649     100.0000     4144.702     3999.000     0.582660     4095.182                  
+ 600.0000     1.642710     4119.916     30.61949     100.0000     4128.948     3999.000     0.696899     4081.775                  
+ 800.0000     2.190281     4110.544     23.31804     100.0000     4119.566     3999.000     0.768581     4073.643                  

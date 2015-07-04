@@ -1,0 +1,560 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN VELDEPRELPERM
+
+ 0: -----------------------------------------------------------------------
+ 0: --
+ 0: -- HWU Velocity Dependent Rel Perm Development
+ 0: -- CASE1: Nc1 Only
+ 0: --
+ 0: -- See New Keywords VELDEP [End of RUNSPEC] and
+ 0: --                  VDKRO and VDKRG [End of PROPS section]
+ 0: --
+ 0: -- Note VDKRO and VDKRG are now saturation table quantities
+ 0: -- and as such must contain the same number of rows of data,
+ 0: -- each terminated with a slash, as is specified via the 1st
+ 0: -- argument of the TABDIMS keyword.
+ 0: --
+ 0: -- It is now compulsory to specify the base [threshold]
+ 0: -- capillary number for each saturation region/phase: failure
+ 0: -- to do so will cause the option to be de-activated
+ 0: --
+ 0: -----------------------------------------------------------------------
+ 0: 
+ 0: -----------------------------------------------------------------------
+ 0: RUNSPEC
+ 0: -----------------------------------------------------------------------
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: OIL
+ 0: WATER
+ 0: GAS
+ 0: 
+ 0: EQLDIMS
+ 0: --Eqrgn  Deptab  CompDat
+ 0:     1      20       20   /
+ 0: 
+ 0: COMPS
+ 0: 9   /
+ 0: 
+ 0: FULLIMP
+ 0: 
+ 0: EOS
+ 0:  PR3  /
+ 0: 
+ 0: DIMENS
+ 0:  10   1   1  /
+ 0: 
+ 0: RADIAL
+ 0: 
+ 0: TABDIMS
+ 0: --Sats  Pres  SatRows  PreRows  FIPs  RSs  RVs
+ 0:    1     1      20       20      1     1*   1*  /
+ 0: 
+ 0: WELLDIMS
+ 0: --Wells  Cmpls/wl  Grps  Wls/grp  Stages  Streams  Dummy  Seps
+ 0:     1       10      1       1        4       1       1*    3  /
+ 0: 
+ 0: -- New VELDEP Keyword
+ 0: -- SRF: Cap.Num.    Options 0     => Inactive
+ 0: --                          1,2,3 => N1,N2,N3-Models
+ 0: --      Forchheimer Options 0     => Inactive
+ 0: --                          1,2   => B1,B2-Models
+ 0: 
+ 0: VELDEP
+ 0: -- OCN GCN OFR GFR
+ 0:    1   1   0   0   /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: GRID
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: INRAD
+ 0:   0.2917  /
+ 0: 
+ 0: --  SPECIFY GRID BLOCK DIMENSIONS IN THE R DIRECTION
+ 0: DRV
+ 0:     1.75     2.32     5.01    10.84    23.39
+ 0:    50.55   109.21   235.92   509.68  1101.08  /
+ 0: 
+ 0: DTHETA
+ 0: 10*360.0 /
+ 0: 
+ 0: DZV
+ 0: 100   /
+ 0: 
+ 0: EQUALS
+ 0:   TOPS      13000  /
+ 0:   PORO      0.2    /
+ 0:   PERMR     100    /
+ 0:   PERMTHT   100    /
+ 0:   PERMZ     100    /
+ 0: /
+ 0: 
+ 0: RPTGRID
+ 0: PORV  DEPTH  TRANR  /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: PROPS
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: PRCORR
+ 0: 
+ 0: RTEMP
+ 0:  320  /
+ 0: 
+ 0: STCOND
+ 0:  60  14.7  /
+ 0: 
+ 0: CNAMES
+ 0:  CO2   C1N2   C2   C3   C4   C5C6   C7+   C12+   C22+ /
+ 0: 
+ 0: -- Critical temperatures Deg R
+ 0: 
+ 0: TCRIT
+ 0:     548.46006    342.48251    549.77406    665.64007    755.10008
+ 0:     879.86165   1141.33574   1358.96699   1654.40862              /
+ 0: 
+ 0: -- Critical pressures PSIA
+ 0: 
+ 0: PCRIT
+ 0:    1071.33111    666.87722    708.34238    618.69739    543.45438
+ 0:     485.78133    365.57698    252.95062    189.78843              /
+ 0: 
+ 0: -- Critical Z-factors
+ 0: 
+ 0: ZCRIT
+ 0:       0.20685      0.21488      0.21482      0.20942      0.20919
+ 0:       0.20549      0.19665      0.17907      0.14132              /
+ 0: 
+ 0: -- 3-Parameter EoS Shift Coefficients
+ 0: 
+ 0: SSHIFT
+ 0:       0.05000     -0.15413     -0.10020     -0.08501     -0.07174
+ 0:      -0.03871      0.05232      0.24384      0.48043              /
+ 0: 
+ 0: -- Acentric factors
+ 0: 
+ 0: ACF
+ 0:       0.22500      0.01314      0.09860      0.15240      0.19560
+ 0:       0.24562      0.32415      0.75434      1.32577              /
+ 0: 
+ 0: -- Molecular Weights
+ 0: 
+ 0: MW
+ 0:      44.01000     16.10470     30.07000     44.09700     58.12400
+ 0:      78.04002    115.14386    212.86074    377.57416              /
+ 0: 
+ 0: -- Boiling point temperatures Deg R
+ 0: 
+ 0: TBOIL
+ 0:     350.46003    200.74177    332.10004    415.98006    484.01988
+ 0:     578.44236    726.82434    990.79997   1347.67310              /
+ 0: 
+ 0: -- Reference temperatures Deg R
+ 0: 
+ 0: TREF
+ 0:     527.40006    200.74827    329.40003    415.80004    527.40006
+ 0:     523.82162    520.20006    519.67008    519.67008              /
+ 0: 
+ 0: -- Reference densities LB/FT3
+ 0: 
+ 0: DREF
+ 0:      48.50653     26.65385     34.21053     36.33308     35.69007
+ 0:      41.02131     47.31028     51.35108     56.88489              /
+ 0: 
+ 0: -- Parachors (Dynes/cm)
+ 0: 
+ 0: PARACHOR
+ 0:      78.00000     76.81443    108.00000    150.30000    187.20000
+ 0:     249.82395    363.58067    553.08879    958.01685              /
+ 0: 
+ 0: --DKP Binary Interaction Coefficients
+ 0: 
+ 0: BIC
+ 0:  0.099423
+ 0:  0.100000 0.000515
+ 0:  0.100000 0.000515 0.000000
+ 0:  0.100000 0.000515 0.000000 0.000000
+ 0:  0.100000 0.000515 0.000000 0.000000 0.000000
+ 0:  0.100000 0.038416 0.010000 0.010000 0.000000 0.000000
+ 0:  0.100000 0.047431 0.010000 0.010000 0.000000 0.000000
+ 0:  0.000000
+ 0:  0.100000 0.059778 0.010000 0.010000 0.000000 0.000000
+ 0:  0.000000 0.000000
+ 0: /
+ 0: 
+ 0: SWFN
+ 0: .22      .0        .0
+ 0: .75      .3000     1*
+ 0: 1.0      .9999     .0     /
+ 0: 
+ 0: SGFN
+ 0: .0       .0        .0
+ 0: .1500    .0000     1*
+ 0: .1908    .0059     1*
+ 0: .2814    .0284     1*
+ 0: .3721    .0648     1*
+ 0: .3860    .0720     1*
+ 0: .4627    .1280     1*
+ 0: .4818    .1440     1*
+ 0: .5465    .2160     1*
+ 0: .5534    .2218     1*
+ 0: .5963    .2880     1*
+ 0: .6357    .3600     1*
+ 0: .6440    .3787     1*
+ 0: .6681    .4320     1*
+ 0: .6997    .5040     1*
+ 0: .7279    .5760     1*
+ 0: .7347    .5960     1*
+ 0: .7553    .6480     1*
+ 0: .7800    .7200     .0    /
+ 0: 
+ 0: 
+ 0: SOF3
+ 0:   .0       .0        .0
+ 0:   .2500    .0        .0
+ 0:   .2982    .0250     .0250
+ 0:   .3173    .0350     .0350
+ 0:   .3940    .0660     .0660
+ 0:   .4079    .0750     .0750
+ 0:   .4986    .1400     .1400
+ 0:   .5892    .2400     .2400
+ 0:   .6300    .3000     .3000
+ 0:   .7800    .6000     .6000    /
+ 0: 
+ 0: PVTW
+ 0: -- Pref      Bw        Cw            Vw        Cvw
+ 0: -- PSIA      RB/STB    1/PSI         CPOISE    1/PSI
+ 0:    8000.00   1.06      1.05E-05      0.18      7.8E-08
+ 0: /
+ 0: ROCK
+ 0:  8000.  4.25E-06 /
+ 0: 
+ 0: DENSITY
+ 0:  47.65  62.43  0.07861  /
+ 0: 
+ 0: ZI
+ 0: .0353 .6596 .1008 .0462 .0267 .0334 .0709 .02241 .00469 /
+ 0: 
+ 0: ----------------------------------
+ 0: -- HW Velocity Dependent Rel Perms
+ 0: ----------------------------------
+ 0: 
+ 0: -- Note new order for data entry
+ 0: -- Ncb MUST be specified for all irrespective of Cap.Num. model
+ 0: -- Must have 1st arg. TABDIMS [saturation regions] rows of data
+ 0: 
+ 0: -- SRF: 20/02/98
+ 0: -- There is no physical basis for the b/c-dependency within
+ 0: -- the Forchheimer model.  Suggest that if b/c.ne.0, user takes
+ 0: -- initial porosity, phi, and gas saturation [Sgi=1-Swc], raise
+ 0: -- them to the powers b/c as appropriate, re-compute 'a' as
+ 0: --
+ 0: --  a = a /( phi^b * Sgi^c )
+ 0: --
+ 0: -- and then set b=c=0, as done below.
+ 0: --
+ 0: -- phi=0.20, Swc=0.22 => a = 5E4/( 3.2E-4 * 0.289 ) = 5.41E8
+ 0: 
+ 0: VDKRG
+ 0: -- M    N1   N2   Ncb     A       B   C   D   BetaD
+ 0: -- Junk Data Line for (b,c)-dependency
+ 0: -- 50.0  5.0 -1.0 2.0E-06 50000.0 5.0 5.0 0.5 1*    /
+ 0: -- Replaced by
+ 0:    50.0  5.0 -1.0 2.0e-06 5.41E8  0.0 0.0 0.5 1*    /
+ 0: VDKRO
+ 0: -- M    N1   N2   Ncb     A       B   C   D   BetaD
+ 0:     0.0 15.0 -1.0 2.0E-06 50000.0 5.0 5.0 0.5 1*    /
+ 0: 
+ 0: -- SRF: Can ask for summary of VDKR data to PRT file
+ 0: 
+ 0: RPTPROPS
+ 0: SWFN  SGFN  SOF3  VDKRO VDKRG /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: SOLUTION
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: EQUIL
+ 0: 13200 8000 13201 0 13201 0 0 0 1 1 /
+ 0: 
+ 0: RPTSOL
+ 0:   PRES  PSAT  SGAS  SOIL  SWAT  /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PSAT             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: OUTSOL
+ 0:   PRES  SGAS  SOIL  SWAT  /
+ 0: 
+ 0: FIELDSEP
+ 0: 1  120   800.  /
+ 0: 2  100   400.  /
+ 0: 3  100   200.  /
+ 0: 4   60   14.7  /
+ 0: /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: SUMMARY
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: ALL
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: RPTONLY
+ 0: SCHEDULE
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: NOECHO
+ 0: ECHO
+ 0: 
+ 0: SEPCOND
+ 0:  SEP1  FIELD  1  120   800.  /
+ 0:  SEP1  FIELD  2  100   400.  /
+ 0:  SEP1  FIELD  3  100   200.  /
+ 0:  SEP1  FIELD  4   60   14.7  /
+ 0: /
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --PRO1  FIELD   1   1  13050  SEP1  /
+ 0: WELSPECS
+ 0: PRO1  FIELD   1   1  13050  GAS  /
+ 0: /
+ 0: --2000a uses WELSEPC to associate separator with wells
+ 0: WSEPCOND
+ 0: PRO1  SEP1  /
+ 0: /
+ 0: COMPDAT
+ 0:   PRO1   1   1   1   1   OPEN  1*  1*  0.4  1*  0  1*  'Z' /
+ 0: /
+ 0: --2000a WELLSHUT is used for back-compatibility, prefered keyword is WELOPEN
+ 0: --WELLOPEN
+ 0: --  PRO1  /
+ 0: WELOPEN
+ 0:   PRO1 OPEN /
+ 0: /
+ 0: WELLLIM
+ 0:   PRO1  1*  1*    1*   1*  1*  NONE  N    /
+ 0: /
+ 0: GRUPLIM
+ 0:   FIELD  1*  1*   .99    90  1*  NONE  N  /
+ 0: /
+ 0: RPTSCHED
+ 0:   PRES SGAS SOIL KRO KRG /
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --  PRO1  GAS  1*  1*  2500  1* 3000 /
+ 0: WCONPROD
+ 0:   PRO1  OPEN  GRAT  1*  1*  2500  2* 3000 /
+ 0: /
+ 0: RPTPRINT
+ 0: --STEP FIPFLD FIPRGN GRP SEP WELL COMP SOLN CONVG POTEN
+ 0:     1    1      1     1   1   1    1    1     0     1  /
+ 0: 
+ 0: TSTEP
+ 0: 20*365 /
+ 0: 
+ 0: END
+ 0: 
+
+ ******** END OF INPUT DATA FOR RUN VELDEPRELPERM
+     1 READING RUNSPEC 
+     2 READING FIELD   
+     3 READING OIL     
+     4 READING WATER   
+     5 READING GAS     
+     6 READING EQLDIMS 
+     7 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE FULLIMP  KEYWORD                           
+ @           9   /                                                           
+     8 READING FULLIMP 
+     9 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD EOS      IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE DIMENS   KEYWORD                           
+ @            PR3  /                                                         
+    10 READING DIMENS  
+    11 READING RADIAL  
+    12 READING TABDIMS 
+    13 READING WELLDIMS
+    14 READING VELDEP  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD VELDEP   IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE GRID     KEYWORD                           
+ @              1   1   0   0   /                                            
+    15 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                13560 BYTES                                                
+    16 READING INRAD   
+    17 READING DRV     
+    18 READING DTHETA  
+    19 READING DZV     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE EQUALS   KEYWORD                           
+ @           100   /                                                         
+    20 READING EQUALS  
+    21 READING RPTGRID 
+    22 READING PROPS   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           IN ORDER TO COMPLETE THE CIRCLE FOR THE GLOBAL RADIAL GRID,     
+ @           IT IS NECESSARY TO SET ITEM 3 OF THE COORDSYS KEYWORD TO COMP   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
+ @           PORE VOLUMES WILL BE SET TO ZERO                                
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           INSUFFICIENT DATA TO COMPUTE R TRANSMISSIBILITIES               
+ @           PERMR, DRV, DTHETAV AND DZ ARE REQUIRED                         
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+1                             **********************************************************************   1
+  PORV     AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS    RB           
+
+ MINIMUM VALUE = UNDEFINED AT (  1,  1,  1)     MAXIMUM VALUE = UNDEFINED AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   -----   -----   -----   -----   -----   -----   -----   -----   -----   ----- 
+1                             **********************************************************************   2
+  DEPTH    AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+ MINIMUM VALUE = UNDEFINED AT (  1,  1,  1)     MAXIMUM VALUE = UNDEFINED AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   -----   -----   -----   -----   -----   -----   -----   -----   -----   ----- 
+1                             **********************************************************************   3
+  TRANR    AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS CPB/D/PS        
+
+ MINIMUM VALUE = UNDEFINED AT (  1,  1,  1)     MAXIMUM VALUE = UNDEFINED AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   -----   -----   -----   -----   -----   -----   -----   -----   -----   ----- 
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NUMBER OF ACTIVE CELLS IS 0                                     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THERE ARE NO ACTIVE CELLS IN THE RESERVOIR                      
+
+ Error summary 
+ Comments               1
+ Warnings               6
+ Problems               0
+ Errors                10
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

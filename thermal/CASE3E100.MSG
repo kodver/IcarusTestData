@@ -1,0 +1,72 @@
+<eclipse>
+<message date="1/1/1982" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+      86020 BYTES                                                        
+</message>
+<warning date="1/1/1982" time="0.00000000000000">
+ FLUX FLAG SET IN RUNSPEC BUT FLUXNUM KEYWORD                            
+ NOT USED -- SAVE SPACE BY SETTING NTFREG = 0                            
+ IN RUNSPEC KEYWORD REGDIMS.                                             
+</warning>
+<warning date="1/1/1982" time="0.00000000000000">
+ IN ORDER TO COMPLETE THE CIRCLE FOR THE GLOBAL RADIAL GRID,             
+ IT IS NECESSARY TO SET ITEM 3 OF THE COORDSYS KEYWORD TO COMP           
+</warning>
+<message date="1/1/1982" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 150                                           
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+     461248 BYTES                                                        
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+    58542 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="1/1/1982" time="0.00000000000000">
+ RPTPRINT KEYWORD ENCOUNTERED - WILL BE IGNORED                          
+ USE RPTSCHED IN ECLIPSE 100                                             
+</warning>
+<warning date="1/1/1982" time="0.00000000000000">
+ SPURIOUS DATA BEFORE WELSPECS KEYWORD                                   
+ 10*0                                                                    
+ /                                                                       
+</warning>
+<message date="1/1/1982" time="0.00000000000000">
+ DRSDT KEYWORD HAS NOT BEEN ENTERED, SO THE                              
+ MAXIMUM GAS RE-SOLUTION RATE IS DEFAULTED TO INFINITY.                  
+</message>
+<message date="20/7/1982" time="200.00000000000000">
+ ******************************************                              
+ * WELL P1       HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME    200.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="22/12/1983" time="720.00000000000000">
+ ******************************************                              
+ * WELL P1       HAS CHANGED TO           *                              
+ * CONTROL BY OIL RATE                    *                              
+ * FROM TIME    720.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<warning date="11/3/1984" time="800.00000000000000">
+ RPTPRINT KEYWORD ENCOUNTERED - WILL BE IGNORED                          
+ USE RPTSCHED IN ECLIPSE 100                                             
+</warning>
+<warning date="11/3/1984" time="800.00000000000000">
+ SPURIOUS DATA BEFORE RPTSCHED KEYWORD                                   
+ 11*1 /                                                                  
+</warning>
+</eclipse>

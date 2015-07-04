@@ -1,0 +1,180 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN SPE3_GASCOND_CYCLING_LOAD
+
+ 0: ------------------------------------------------------------------------
+ 0: -->An example of a restart run
+ 0: -- restart from CASE1 step 1
+ 0: -- Bring on 3 more production wells, PE1,2,3, controlled by wet gas rate
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: --Specify name of save file and step to be loaded
+ 0: 
+ 0: MULTIN
+ 0: 
+ 0: LOAD
+ 0: 'SPE3_GASCOND_CYCLING' 1 /
+ 0: 
+ 0: SUMMARY
+ 0: RPTONLY
+ 0: RUNSUM
+ 0: SCHEDULE
+ 0: 
+ 0: TSTEP
+ 0: 365 /
+ 0: 
+ 0: --2000a WELLSHUT is used for back-compatibility, prefered keyword is WELOPEN
+ 0: --WELLSHUT
+ 0: --I /
+ 0: WELOPEN
+ 0: I SHUT/
+ 0: /
+ 0: 
+ 0: --Bring on 3 more production wells, PE1,2,3, controlled by wet gas rate
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --PE1 Field 6 6 7315 Sep /
+ 0: --PE2 Field 8 8 7315 Sep /
+ 0: --PE3 Field 9 9 7315 Sep /
+ 0: WELSPECS
+ 0: PE1 Field 6 6 7315 WGRA /
+ 0: PE2 Field 8 8 7315 WGRA /
+ 0: PE3 Field 9 9 7315 WGRA /
+ 0: /
+ 0: 
+ 0: --2000a uses WELSEPC to associate separator with wells
+ 0: SEPCOND
+ 0: PE1 SEP /
+ 0: PE2 SEP /
+ 0: PE3 SEP /
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --PE1 6 6 3 4 1 /
+ 0: --PE2 8 8 3 4 1 /
+ 0: --PE3 9 9 3 4 1 /
+ 0: COMPDAT
+ 0: PE1 6 6 3 4 OPEN 1 /
+ 0: PE2 8 8 3 4 OPEN 1 /
+ 0: PE3 9 9 3 4 OPEN 1 /
+ 0: /
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --PE1 WG 4* 500 2* 1000 /
+ 0: --PE2 WG 4* 500 2* 1000 /
+ 0: --PE3 WG 4* 500 2* 1000 /
+ 0: WCONPROD
+ 0: PE1 OPEN WGRA 5* 500 3* 1000 /
+ 0: PE2 OPEN WGRA 5* 500 3* 1000 /
+ 0: PE3 OPEN WGRA 5* 500 3* 1000 /
+ 0: /
+ 0: 
+ 0: GRUPLIM
+ 0: Field 3* 50 2* Y /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 5*365 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN SPE3_GASCOND_CYCLING_LOAD
+     1 READING MULTIN  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD MULTIN   MAY NOT BE SPECIFIED BEFORE                
+ @           THE RUNSPEC RECORD HAS BEEN READ                                
+     2 READING LOAD    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNABLE TO OPEN SAVE FILE                                        
+ @           SPE3_GASCOND_CYCLING                                            
+ @           SYSTEM ERROR CODE IS       29                                   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           BAD HEADER ON SAVE FILE                                         
+ @           SPE3_GASCOND_CYCLING                                            
+ @           SYSTEM ERROR CODE IS       29                                   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SAVE FILE SPE3_GASCOND_CYCLING                                  
+ @           DOES NOT HAVE A VALID HEADER                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SAVE FILE SPE3_GASCOND_CYCLING                                  
+ @           IN NOT AN ECLIPSE 100 FILE                                      
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SAVE FILE                                                       
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SAVE FILE SPE3_GASCOND_CYCLING                                  
+ @           TAKEN FROM DIFFERENT VERSION        0                           
+ @           CURRENT VERSION IS     5002                                     
+ @           THE SAVE FILE MUST ORIGINATE FROM THE PRESENT VERSION           
+ @           OF ECLIPSE. RESTARTS RUNS CAN BE DONE FROM PREVIOUS             
+ @           VERSIONS OF ECLIPSE BY SPECIFYING THE FULL DATASET              
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           RUN TERMINATED DUE TO SAVE FILE ERRORS                          
+
+ Error summary 
+ Comments               1
+ Warnings               0
+ Problems               0
+ Errors                 7
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

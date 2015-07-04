@@ -1,0 +1,454 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN CO2SOL
+
+ 0: --====================================================================
+ 0: -- Example of the use of the CO2SOL option (small block size)
+ 0: -- 4 CO2 injectors
+ 0: -- 15 years of gas injection into pure water aquifer
+ 0: --====================================================================
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: METRIC
+ 0: 
+ 0: CO2SOL
+ 0: 
+ 0: GAS
+ 0: WATER
+ 0: 
+ 0: FULLIMP
+ 0: 
+ 0: COMPS
+ 0: 1 /
+ 0: 
+ 0: EOS
+ 0: PR /
+ 0: 
+ 0: DIMENS
+ 0: 30 30 20 /
+ 0: 
+ 0: TABDIMS
+ 0: 1 1 40 40 /
+ 0: 
+ 0: DIFFUSE
+ 0: 
+ 0: START
+ 0: 1 JAN 2007 /
+ 0: 
+ 0: --Grid section--------------------------------------------------------
+ 0: 
+ 0: GRID
+ 0: 
+ 0: EQUALS
+ 0: DX   30         /
+ 0: DY   30         /
+ 0: DZ     10        /
+ 0: PORO    0.2      /
+ 0: PERMX 100        /
+ 0: PERMY 100        /
+ 0: PERMZ  10        /
+ 0: TOPS  1000 4* 1 1 /
+ 0: /
+ 0: 
+ 0: --Properties section-----------------------------------------------
+ 0: 
+ 0: PROPS
+ 0: 
+ 0: --Calorific values in Kj/KgMole
+ 0: 
+ 0: --CALVAL
+ 0: --10 20 0.0 0.0 /
+ 0: 
+ 0: EOS
+ 0: PR   /
+ 0: 
+ 0: CNAMES
+ 0: CO2 /
+ 0: 
+ 0: OMEGAA
+ 0: 0.457 /
+ 0: 
+ 0: OMEGAB
+ 0: 0.077796 /
+ 0: 
+ 0: TCRIT
+ 0: 304.7 /
+ 0: 
+ 0: PCRIT
+ 0: 73.8 /
+ 0: 
+ 0: ZCRIT
+ 0: 0.274 /
+ 0: 
+ 0: --Z-factors for viscosity adjected to get correct water viscosity value
+ 0: 
+ 0: ZCRITVIS
+ 0: 0.215 /
+ 0: 
+ 0: ACF
+ 0: 0.225 /
+ 0: 
+ 0: MW
+ 0: 44 /
+ 0: 
+ 0: -- Single phase is present in the reservoir
+ 0: 
+ 0: ZI
+ 0: 1
+ 0: /
+ 0: --0.001 0.999
+ 0: 
+ 0: 
+ 0: DIFFCGAS
+ 0: 0.2 /
+ 0: 
+ 0: DIFFCOIL
+ 0: 0.01 /
+ 0: 
+ 0: 
+ 0: RTEMP
+ 0: 75 /
+ 0: 
+ 0: BIC
+ 0: 0.1896 /
+ 0: 
+ 0: 
+ 0: PARACHOR
+ 0: 78 /
+ 0: 
+ 0: LBCCOEF
+ 0: 0.1023 /
+ 0: 
+ 0: SGFN
+ 0: --Sg Krg Pcg
+ 0: 0.0 0.00 0.0
+ 0: 0.1 0.00 0.0
+ 0: 0.2 0.05 0.0
+ 0: 0.4 0.10 0.0
+ 0: 0.6 0.40 0.0
+ 0: 0.8 0.60 0.0
+ 0: 0.99 0.70 0.0
+ 0: /
+ 0: 
+ 0: SWFN
+ 0: --Sw Krw Pcw
+ 0: 0.01 0.0  0.0
+ 0: 0.20 0.00 0.0
+ 0: 0.40 0.01 0.0
+ 0: 0.60 0.20 0.0
+ 0: 0.80 0.80 0.0
+ 0: 1.00 1.00 0.0
+ 0: /
+ 0: 
+ 0: --Dummy oil properties
+ 0: SOF3
+ 0: --So  Kro(o-w) Kro (o-g-wi)
+ 0:   0.0 0.00 0.0
+ 0: 0.1 0.00 0.0
+ 0: 0.2 0.05 0.05
+ 0: 0.4 0.10 0.10
+ 0: 0.6 0.40 0.40
+ 0: 0.8 0.60 0.60
+ 0: 0.99 0.70 0.70
+ 0: /
+ 0: 
+ 0: 
+ 0: ROCK
+ 0: 150 0.00005 /
+ 0: 
+ 0: --Solution section------------------------------------------------------
+ 0: 
+ 0: SOLUTION
+ 0: 
+ 0: --Salt concentration varies with depth
+ 0: 
+ 0: RPTSOL
+ 0: PRESSURE SWAT SGAS DENG DENW VWAT XMF YMF /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC YMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: RPTRST
+ 0:   'BASIC=2' /
+ 0: 
+ 0: --Vapour specified - pressure not reset to saturation pressure
+ 0: 
+ 0: EQUIL
+ 0: --                       10 11
+ 0: 1000 100 /    --1000  0 5*  2  1 /
+ 0: 
+ 0: SUMMARY
+ 0: 
+ 0: 
+ 0: FGIR
+ 0: FPR
+ 0: FPRH
+ 0: FPRP
+ 0: 
+ 0: WGIR
+ 0: /
+ 0: 
+ 0: WBHP
+ 0: /
+ 0: 
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: --SCHEDULE section-------------------------------------------------
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE
+ 0: 
+ 0: OUTSOL
+ 0: PRESSURE SWAT SGAS XMF YMF /
+ 0: 
+ 0: RPTSCHED
+ 0: PRESSURE SWAT SGAS XMF YMF/
+ 0: 
+ 0: --Define injection and production wells
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XMF              IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC YMF              IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+ 0: WELSPECS
+ 0: I1 FIELD  8  8 1* GAS  /
+ 0: I2 FIELD  8 23 1* GAS  /
+ 0: I3 FIELD 23  8 1* GAS  /
+ 0: I4 FIELD 23 23 1* GAS  /
+ 0: /
+ 0: 
+ 0: --Define completions
+ 0: 
+ 0: COMPDAT
+ 0: I1  8  8 5 18 /
+ 0: I2  8 23 5 18 /
+ 0: I3 23  8 5 18 /
+ 0: I4 23 23 5 18 /
+ 0: /
+ 0: 
+ 0: --Define water and gas injection streams (gas stream is pure CO2)
+ 0: 
+ 0: WELLSTRE
+ 0: CO2INJ 1.0 /
+ 0: /
+ 0: 
+ 0: --Set water and gas injection rates
+ 0: 
+ 0: WINJGAS
+ 0: I1 STREAM CO2INJ /
+ 0: I2 STREAM CO2INJ /
+ 0: I3 STREAM CO2INJ /
+ 0: I4 STREAM CO2INJ /
+ 0: /
+ 0: 
+ 0: --2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+ 0: 
+ 0: WCONINJE
+ 0: I1 GAS OPEN RATE 5000 1* 200 /
+ 0: I2 GAS OPEN RATE 5000 1* 200 /
+ 0: I3 GAS OPEN RATE 5000 1* 200 /
+ 0: I4 GAS OPEN RATE 5000 1* 200 /
+ 0: /
+ 0: 
+ 0: 
+ 0: --15 years of simulation
+ 0: 
+ 0: DATES
+ 0: 1 JAN 2008 /
+ 0: 1 JAN 2009 /
+ 0: 1 JAN 2010 /
+ 0: 1 JAN 2011 /
+ 0: 1 JAN 2012 /
+ 0: 1 JAN 2013 /
+ 0: 1 JAN 2014 /
+ 0: 1 JAN 2015 /
+ 0: 1 JAN 2016 /
+ 0: 1 JAN 2017 /
+ 0: 1 JAN 2018 /
+ 0: 1 JAN 2019 /
+ 0: 1 JAN 2020 /
+ 0: 1 JAN 2021 /
+ 0: 1 JAN 2022 /
+ 0: /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN CO2SOL
+     1 READING RUNSPEC 
+     2 READING METRIC  
+     3 READING CO2SOL  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD CO2SOL   IN RUNSPEC DATA                   
+     4 READING GAS     
+     5 READING WATER   
+     6 READING FULLIMP 
+     7 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
+ @           1 /                                                             
+     8 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD EOS      IN RUNSPEC DATA                   
+     9 READING PR /    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD PR /     IN RUNSPEC DATA                   
+    10 READING DIMENS  
+    11 READING TABDIMS 
+    12 READING DIFFUSE 
+    13 READING START   
+    14 READING GRID    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                  
+ @           USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                   
+ @           OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                 7645 KBYTES                                               
+    15 READING EQUALS  
+    16 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           NUMBER OF ACTIVE CELLS IS 18000                                 
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @                17941 KBYTES                                               
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @              58528 CHARACTER VARIABLES USED                               
+    17 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+    18 READING PR   /  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD PR   /   IN PROPERTY DATA                  
+    19 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+    20 READING CO2 /   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD CO2 /    IN PROPERTY DATA                  
+    21 READING OMEGAA  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD OMEGAA   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE OMEGAB   KEYWORD                           
+ @           0.457 /                                                         
+    22 READING OMEGAB  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD OMEGAB   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE TCRIT    KEYWORD                           
+ @           0.077796 /                                                      
+    23 READING TCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               4
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.05 elapsed       1.00

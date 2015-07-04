@@ -1,0 +1,283 @@
+<eclipse>
+<warning date="1/1/0" time="0.00000000000000">
+ SPURIOUS DATA BEFORE TITLE    KEYWORD                                   
+           THIS SECTION SETS UP THE BASICS FOR THE SIMULATION            
+</warning>
+<message date="1/1/1983" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+     102468 BYTES                                                        
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<comment date="1/1/1983" time="0.00000000000000">
+ NO NON-NEIGHBOUR CONNECTIONS FOUND                                      
+</comment>
+<message date="1/1/1983" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 243                                           
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+     708800 BYTES                                                        
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+    58794 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="1/1/1983" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC BDENSITY         IN DATA                          
+ FOR KEYWORD RPTPROPS IS IGNORED                                         
+</warning>
+<message date="1/1/1983" time="0.00000000000000">
+ DRSDT KEYWORD HAS NOT BEEN ENTERED, SO THE                              
+ MAXIMUM GAS RE-SOLUTION RATE IS DEFAULTED TO INFINITY.                  
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ ******************************************                              
+ * WELL PC2      HAS CHANGED TO           *                              
+ * CONTROL BY GAS RATE                    *                              
+ * FROM TIME      0.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ ******************************************                              
+ * WELL PC3      HAS CHANGED TO           *                              
+ * CONTROL BY GAS RATE                    *                              
+ * FROM TIME      0.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ ******************************************                              
+ * WELL PC4      HAS CHANGED TO           *                              
+ * CONTROL BY GAS RATE                    *                              
+ * FROM TIME      0.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ ******************************************                              
+ * WELL PC5      HAS CHANGED TO           *                              
+ * CONTROL BY GAS RATE                    *                              
+ * FROM TIME      0.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ ******************************************                              
+ * WELL PC6      HAS CHANGED TO           *                              
+ * CONTROL BY GAS RATE                    *                              
+ * FROM TIME      0.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ **********************************                                      
+ * GROUP PLAT-A   CANNOT MEET ITS *                                      
+ *  GAS   PRODUCTION TARGET       *                                      
+ * AFTER TIME      0.00   DAYS  . *                                      
+ **********************************                                      
+</message>
+<message date="1/1/1983" time="0.00000000000000">
+ **********************************                                      
+ * GROUP SP-C     CANNOT MEET ITS *                                      
+ *  GAS   PRODUCTION TARGET       *                                      
+ * AFTER TIME      0.00   DAYS  . *                                      
+ **********************************                                      
+</message>
+<message date="8/9/1983" time="250.00000000000000">
+ ***********************************************                         
+ * DRILLING RIG NUMBER   1 OCCUPIED WITH       *                         
+ * WELL PA3      UNTIL TIME     318.00  DAYS   *                         
+ ***********************************************                         
+</message>
+<message date="8/9/1983" time="250.00000000000000">
+ ***********************************************************             
+ * WELL PA3      IS OPENED AT TIME    250.00  DAYS         *             
+ * ( WITH ZERO EFFICIENCY FACTOR UNTIL     318.00  DAYS  ) *             
+ * TO INCREASE THE  PRODUCTION RATE  IN GROUP PLAT-A       *             
+ ***********************************************************             
+</message>
+<message date="8/9/1983" time="250.00000000000000">
+ ******************************************                              
+ * WELL PA3      HAS CHANGED TO           *                              
+ * CONTROL BY GAS RATE                    *                              
+ * FROM TIME    250.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="17/11/1983" time="320.00000000000000">
+ ***********************************************                         
+ * DRILLING RIG NUMBER   1 OCCUPIED WITH       *                         
+ * WELL PA2      UNTIL TIME     365.00  DAYS   *                         
+ ***********************************************                         
+</message>
+<message date="17/11/1983" time="320.00000000000000">
+ ***********************************************************             
+ * WELL PA2      IS OPENED AT TIME    320.00  DAYS         *             
+ * ( WITH ZERO EFFICIENCY FACTOR UNTIL     365.00  DAYS  ) *             
+ * TO INCREASE THE  PRODUCTION RATE  IN GROUP PLAT-A       *             
+ ***********************************************************             
+</message>
+<message date="17/11/1983" time="320.00000000000000">
+ ******************************************                              
+ * WELL PA2      HAS CHANGED TO           *                              
+ * CONTROL BY GAS RATE                    *                              
+ * FROM TIME    320.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="6/1/1984" time="370.00000000000000">
+ **********************************************                          
+ * WELL PA2      HAS CHANGED TO GROUP CONTROL *                          
+ * FROM TIME    370.00   DAYS  .              *                          
+ **********************************************                          
+</message>
+<message date="6/1/1984" time="370.00000000000000">
+ **********************************************                          
+ * WELL PA3      HAS CHANGED TO GROUP CONTROL *                          
+ * FROM TIME    370.00   DAYS  .              *                          
+ **********************************************                          
+</message>
+<message date="6/1/1984" time="370.00000000000000">
+ **********************************                                      
+ * GROUP PLAT-A   CAN MEET ITS    *                                      
+ *  GAS   PRODUCTION TARGET       *                                      
+ * AFTER TIME    370.00   DAYS  . *                                      
+ **********************************                                      
+</message>
+<message date="3/8/1984" time="580.00000000000000">
+ ******************************************                              
+ * WELL PB2      HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME    580.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="3/8/1984" time="580.00000000000000">
+ ******************************************                              
+ * WELL PB3      HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME    580.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="3/8/1984" time="580.00000000000000">
+ ******************************************                              
+ * WELL PB4      HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME    580.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="3/8/1984" time="580.00000000000000">
+ ******************************************                              
+ * WELL PB5      HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME    580.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="3/8/1984" time="580.00000000000000">
+ ******************************************                              
+ * WELL PB6      HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME    580.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="3/8/1984" time="580.00000000000000">
+ **********************************                                      
+ * GROUP SP-B     CANNOT MEET ITS *                                      
+ *  GAS   PRODUCTION TARGET       *                                      
+ * AFTER TIME    580.00   DAYS  . *                                      
+ **********************************                                      
+</message>
+<message date="3/8/1984" time="580.00000000000000">
+ ****************************************************************        
+ * WELL PB6      IS  SHUT   AT TIME     590.00   DAYS   BECAUSE *        
+ * THE WELL     WATER CUT      1.0075E-02                       *        
+ * EXCEEDS THE LIMIT   1.0000E-02         .                     *        
+ ****************************************************************        
+</message>
+<message date="3/8/1984" time="580.00000000000000">
+ ****************************************************************        
+ * WELL PB5      IS  SHUT   AT TIME     590.00   DAYS   BECAUSE *        
+ * THE WELL     WATER CUT      1.0015E-02                       *        
+ * EXCEEDS THE LIMIT   1.0000E-02         .                     *        
+ ****************************************************************        
+</message>
+<message date="13/8/1984" time="590.00000000000000">
+ ***********************************************                         
+ * DRILLING RIG NUMBER   4 OCCUPIED WITH       *                         
+ * WELL PC1      UNTIL TIME     641.00  DAYS   *                         
+ ***********************************************                         
+</message>
+<message date="13/8/1984" time="590.00000000000000">
+ **********************************************************              
+ * WELL PC1      IS OPENED AT TIME    590.00  DAYS        *              
+ * ( WITH ZERO EFFICIENCY FACTOR UNTIL    641.00  DAYS  ) *              
+ * BECAUSE WELL PB5      IS NOW CLOSED                    *              
+ **********************************************************              
+</message>
+<message date="13/8/1984" time="590.00000000000000">
+ ****************************************************                    
+ * WELL PA6      IS OPENED AT TIME    590.00  DAYS  *                    
+ * BECAUSE WELL PB6      IS NOW CLOSED              *                    
+ ****************************************************                    
+</message>
+<message date="13/8/1984" time="590.00000000000000">
+ **********************************************                          
+ * WELL PA6      HAS CHANGED TO GROUP CONTROL *                          
+ * FROM TIME    590.00   DAYS  .              *                          
+ **********************************************                          
+</message>
+<message date="13/8/1984" time="590.00000000000000">
+ ******************************************                              
+ * WELL PC1      HAS CHANGED TO           *                              
+ * CONTROL BY GAS RATE                    *                              
+ * FROM TIME    590.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="22/10/1984" time="660.00000000000000">
+ ****************************************************************        
+ * WELL PB4      IS  SHUT   AT TIME     670.00   DAYS   BECAUSE *        
+ * THE WELL     WATER CUT      1.0024E-02                       *        
+ * EXCEEDS THE LIMIT   1.0000E-02         .                     *        
+ ****************************************************************        
+</message>
+<message date="1/12/1984" time="700.00000000000000">
+ *********************************************                           
+ * THE CONNECTION IN BLOCK (  9,  2,  1)     *                           
+ * IN WELL PC1      IS CLOSED                *                           
+ * AT TIME     710.00   DAYS  , BECAUSE      *                           
+ * ITS  GAS-OIL RATIO    5.2508E+02 MSCF/STB *                           
+ * VIOLATES THE LIMIT   5.0000E+02 MSCF/STB. *                           
+ *********************************************                           
+</message>
+<message date="1/12/1984" time="700.00000000000000">
+ *****************************************                               
+ * WORKOVER RIG NUMBER   3 OCCUPIED WITH *                               
+ * WELL PC1      FOR      47.00  DAYS    *                               
+ *****************************************                               
+</message>
+<message date="11/12/1984" time="710.00000000000000">
+ ******************************************                              
+ * WELL PC1      HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME    710.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="10/1/1985" time="740.00000000000000">
+ *********************************************                           
+ * THE CONNECTION IN BLOCK (  7,  3,  1)     *                           
+ * IN WELL PC2      IS CLOSED                *                           
+ * AT TIME     750.00   DAYS  , BECAUSE      *                           
+ * ITS  GAS-OIL RATIO    6.3242E+02 MSCF/STB *                           
+ * VIOLATES THE LIMIT   5.0000E+02 MSCF/STB. *                           
+ *********************************************                           
+</message>
+<message date="10/1/1985" time="740.00000000000000">
+ *****************************************                               
+ * WORKOVER RIG NUMBER   3 OCCUPIED WITH *                               
+ * WELL PC2      FOR      47.00  DAYS    *                               
+ *****************************************                               
+</message>
+</eclipse>

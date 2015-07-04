@@ -1,0 +1,449 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN TRACER
+
+ 0: --TRACER test
+ 0: RUNSPEC  ============================================================
+ 0: 
+ 0: WATER
+ 0: 
+ 0: DIMENS
+ 0: 40  1  1  /
+ 0: 
+ 0: CART
+ 0: 
+ 0: LAB
+ 0: 
+ 0: COMPS
+ 0: 5 /
+ 0: 
+ 0: MISCIBLE
+ 0: 
+ 0: AQUDIMS
+ 0: 1 10 1 36 /
+ 0: 
+ 0: GRID     ============================================================
+ 0: 
+ 0: EQUALS
+ 0: DX   250 /
+ 0: DY   1.0 /
+ 0: DZ   1.0 /
+ 0: PORO 0.3 /
+ 0: PERMX 2000.0 /
+ 0: PERMY 2000.0 /
+ 0: PERMZ 2000.0 /
+ 0: MIDS 100.0 /
+ 0: /
+ 0: 
+ 0: --Add side drive aquifer
+ 0: AQUCT
+ 0: 1  100.0  1*  20.0   0.10  3.0E-5  2400.0 140.0 4.8 1 1 /
+ 0: /
+ 0: AQUCON
+ 0: 1  40  40   1   1   1   1   'I+'  /
+ 0: /
+ 0: 
+ 0: PROPS    ============================================================
+ 0: 
+ 0: --Attach tracer to C1
+ 0: 
+ 0: TRACER
+ 0: TRAC WATER /
+ 0: /
+ 0: 
+ 0: EOS
+ 0: PR    /
+ 0: 
+ 0: CNAMES
+ 0: CO2 C1 PC2 PC3 'C7+' /
+ 0: 
+ 0: MISCEXP
+ 0: 0.2 /
+ 0: 
+ 0: BIC
+ 0: 0.2266599
+ 0: 0.2014434    -0.0008224
+ 0: 0.0717683     0.0135731    .0054848
+ 0: 0.2078494     0.0979894    .0054848     0.0     /
+ 0: 
+ 0: PCRIT
+ 0: 73.76 46.00 48.8 31.6 16.3 /
+ 0: 
+ 0: TCRIT
+ 0: 304.2 190.0 358.4 488.3 741.6 /
+ 0: 
+ 0: MW
+ 0: 44.01 16.2828 41.1450 78.9157  224.0000 /
+ 0: 
+ 0: ACF
+ 0: 0.2250000  0.0086486  0.1366165  0.2727326  0.5856574  /
+ 0: 
+ 0: ZCRIT
+ 0: 0.27490002  0.28971521  0.27810650  0.26666820  0.22416106 /
+ 0: 
+ 0: PARACHOR
+ 0: 79.7       77.536     141.415    250.576    676.333    /
+ 0: 
+ 0: RTEMP
+ 0: 71.0 /
+ 0: 
+ 0: ROCK
+ 0: 136.0  0.000004  /
+ 0: 
+ 0: PVTW
+ 0: 136.0  1.0  0.000003  0.4  0.0  /
+ 0: 
+ 0: SWFN
+ 0: 0.20  0.0000  0.0
+ 0: 1.00  1.0000  0.0  /
+ 0: 
+ 0: SGFN
+ 0: 0.00  0.0000  0.0
+ 0: 0.10  0.0156  0.0
+ 0: 0.20  0.0625  0.0
+ 0: 0.30  0.1406  0.0
+ 0: 0.40  0.2500  0.0
+ 0: 0.50  0.3906  0.0
+ 0: 0.60  0.5625  0.0
+ 0: 0.70  0.7656  0.0
+ 0: 0.80  1.0000  0.0  /
+ 0: 
+ 0: SOF3
+ 0: 0.20  0.0000  0.0000
+ 0: 0.30  0.0278  0.0278
+ 0: 0.40  0.1109  0.1109
+ 0: 0.50  0.2500  0.2500
+ 0: 0.60  0.4444  0.4444
+ 0: 0.70  0.6944  0.6944
+ 0: 0.75  0.8403  0.8403
+ 0: 0.80  1.0000  1.0000  /
+ 0: 
+ 0: SOLUTION ============================================================
+ 0: 
+ 0: --Initialise tracer wrt depth as zero in reservoir
+ 0: 
+ 0: TVDPTRAC
+ 0: 100.0 0.01 /
+ 0: 
+ 0: AQANTRC
+ 0: 1 TRAC 0.6 /
+ 0: /
+ 0: 
+ 0: RPTSOL
+ 0: TRAC XXX /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC TRAC             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XXX              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: OUTSOL
+ 0: TRAC  /
+ 0: 
+ 0: PRESSURE
+ 0: 40*136.0 /
+ 0: 
+ 0: SWAT
+ 0: 40*0.0 /
+ 0: 
+ 0: SOIL
+ 0: 40*0.0 /
+ 0: 
+ 0: XMF
+ 0: 40*0.0247 40*0.5516 40*0.2407 40*0.0733 40*0.1097 /
+ 0: 
+ 0: YMF
+ 0: 40*0.0247 40*0.5516 40*0.2407 40*0.0733 40*0.1097 /
+ 0: 
+ 0: 
+ 0: SUMMARY  ============================================================
+ 0: 
+ 0: --These are all the new tracer keywords
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: 
+ 0: WTPCTRAC
+ 0:  PRODUCER  /  --Well production/injection concentrations
+ 0: WTICTRAC
+ 0:   INJECTOR  /
+ 0: 
+ 0: WTPRTRAC
+ 0: PRODUCER  /  --Well production rates & totals
+ 0: WTPTTRAC
+ 0: PRODUCER  /
+ 0: 
+ 0: WTIRTRAC
+ 0: INJECTOR  /
+ 0: WTITTRAC
+ 0: INJECTOR  /
+ 0: ---------------------
+ 0: GTPCTRAC
+ 0: G1        /  --Group production/injection concentrations
+ 0: GTICTRAC
+ 0: G1        /
+ 0: 
+ 0: GTPRTRAC
+ 0: G1        /  --Group production rates & totals
+ 0: GTPTTRAC
+ 0: G1        /
+ 0: GTIRTRAC
+ 0: G1        /
+ 0: GTITTRAC
+ 0: G1        /
+ 0: ---------------------
+ 0: FTPCTRAC              --Field production/injection concentrations
+ 0: FTICTRAC
+ 0: 
+ 0: FTPRTRAC              --Field production rates & totals
+ 0: FTPTTRAC
+ 0: FTIRTRAC
+ 0: FTITTRAC
+ 0: /
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE ============================================================
+ 0: 
+ 0: SEPCOND
+ 0: SEPP  Field  1  15.0  1.0 /
+ 0: /
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --INJECTOR G1  1 1  1.0       /
+ 0: --PRODUCER G1 40 1 40.0 SEPP  /
+ 0: WELSPECS
+ 0: INJECTOR G1  1 1  1.0 WATER /
+ 0: PRODUCER G1 40 1 40.0 GAS   /
+ 0: /
+ 0: 
+ 0: --2000a uses WELSEPC to associate separator with wells
+ 0: WSEPCOND
+ 0: PRODUCER SEPP /
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --INJECTOR  1 1  1  1  1 1* 5000 /
+ 0: --PRODUCER 40 1  1  1  1 1* 5000 /
+ 0: COMPDAT
+ 0: INJECTOR  1 1  1  1  OPEN  1  5000 /
+ 0: PRODUCER 40 1  1  1  OPEN  1  5000 /
+ 0: /
+ 0: 
+ 0: WELLSTRE
+ 0: LEANGAS  0.684  0.316 /
+ 0: /
+ 0: 
+ 0: --2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+ 0: --WELLINJE
+ 0: --INJECTOR  STREAM  LEANGAS  RV  5* 10.0 /
+ 0: --INJECTOR  Wa 1* RV  5* 10.0 /
+ 0: WCONINJE
+ 0: --INJECTOR  STREAM  LEANGAS  RV  5* 10.0 /
+ 0: INJECTOR  WATER  OPEN  RESV  1*  10.0 /
+ 0: /
+ 0: 
+ 0: --Tag injection well with 100% tracer
+ 0: 
+ 0: WTRACER
+ 0: INJECTOR TRAC 1.0 /
+ 0: /
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --PRODUCER  BHP  4*  136.0  /
+ 0: WCONPROD
+ 0: PRODUCER  OPEN  BHP  5*  136.0  /
+ 0: /
+ 0: 
+ 0: --Ask for report of tracer concentration
+ 0: 
+ 0: RPTSCHED
+ 0: TRAC /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC TRAC             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+ 0: TIME
+ 0:  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN TRACER
+     1 READING RUNSPEC 
+     2 READING WATER   
+     3 READING DIMENS  
+     4 READING CART    
+     5 READING LAB     
+     6 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE MISCIBLE KEYWORD                           
+ @           5 /                                                             
+     7 READING MISCIBLE
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           KEYWORD AQUDIMS                                                 
+ @           ENCOUNTERED WHILE READING SECTION    1 OF KEYWORD MISCIBLE      
+ @           USUALLY CAUSED BY MISSING SLASH ( / )                           
+     8 READING AQUDIMS 
+     9 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                  
+ @           USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                   
+ @           OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                  
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE MISCIBILITY OPTION REQUIRES THAT BOTH                       
+ @           THE OIL AND THE GAS PHASES SHOULD BE PRESENT.                   
+ @           MISCIBILITY FLAG RESET TO FALSE.                                
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                30352 BYTES                                                
+    10 READING EQUALS  
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           INVALID GRID ARRAY NAME MIDS                                    
+ @           ON RECORD    8 FOLLOWING EQUALS   KEYWORD                       
+    11 READING AQUCT   
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD AQUCT    IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE AQUCON   KEYWORD                           
+ @           1  100.0  1*  20.0   0.10  3.0E-5  2400.0 140.0 4.8 1 1 /       
+ @           /                                                               
+    12 READING AQUCON  
+    13 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+
+ @--COMMENT  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           NUMBER OF ACTIVE CELLS IS 40                                    
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               244260 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @              58528 CHARACTER VARIABLES USED                               
+    14 READING TRACER  
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           TRACER KEYWORD SHOULD NOT APPEAR UNLESS                         
+ @           THE TRACER TRACKING OPTION HAS BEEN                             
+ @           SELECTED USING KEYWORD TRACERS IN RUNSPEC                       
+    15 READING TRAC WAT
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD TRAC WAT IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
+ @           /                                                               
+    16 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               5
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

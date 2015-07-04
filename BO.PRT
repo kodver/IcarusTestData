@@ -1,0 +1,531 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN BO
+
+ 0: --------------------------------------------------------------------
+ 0: -->Black oil run using PVT-generated tables
+ 0: --------------------------------------------------------------------
+ 0: 
+ 0: --RUNSPEC section---------------------------------------------------
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: --Request the FIELD unit set
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: --Oil water and gas are present
+ 0: 
+ 0: OIL
+ 0: WATER
+ 0: GAS
+ 0: 
+ 0: --IMPES solution method
+ 0: 
+ 0: IMPES
+ 0: 
+ 0: --Black oil
+ 0: 
+ 0: BLACKOIL
+ 0: 
+ 0: --Grid is 9 by 1 by 4 cells
+ 0: 
+ 0: DIMENS
+ 0: 9 1 4 /
+ 0: 
+ 0: --Grid section--------------------------------------------------------
+ 0: 
+ 0: GRID
+ 0: 
+ 0: --Basic grid block sizes
+ 0: 
+ 0: EQUALS
+ 0: DX 300  /
+ 0: DY 1000 /
+ 0: DZ 50   /
+ 0: PORO 0.1 /
+ 0: PERMX 50 /
+ 0: PERMY 50 /
+ 0: PERMZ 30 /
+ 0: TOPS 7315 4* 1 1 /
+ 0: /
+ 0: 
+ 0: --Properties section-----------------------------------------------
+ 0: 
+ 0: PROPS
+ 0: 
+ 0: --Reservoir temperature
+ 0: 
+ 0: RTEMP
+ 0: 200    /
+ 0: 
+ 0: --Standard conditions
+ 0: 
+ 0: STCOND
+ 0: 60 14.7 /
+ 0: 
+ 0: DENSITY
+ 0:      51.13608      62.36641       0.05247   /
+ 0: 
+ 0: --  2 Stage separator at
+ 0: -- Pressures       427.00000      14.70000
+ 0: -- Temperatures     65.00001      60.00000
+ 0: -- Pressures in PSIA     Temperatures in Deg F
+ 0: 
+ 0: --ECLIPSE 100 PVTG data
+ 0: --(Constant volume depletion)
+ 0: --Units are FIELD
+ 0: --Method used : Whitson and Torp
+ 0: 
+ 0: PVTG
+ 0: --     PSIA       STB/MSCF      RB/MSCF       CPOISE
+ 0:    1000.00000         0.03585       3.51745     0.0171981   --Saturated
+ 0:                       0.00000       3.45410     0.0163045 / --Dry gas
+ 0:    2000.00000         0.03993       1.70980     0.0202001   --Saturated
+ 0:                       0.00000       1.68258     0.0183737 / --Dry gas
+ 0:    3000.00000         0.05208       1.16037     0.0249767   --Saturated
+ 0:                       0.00000       1.13037     0.0209731 / --Dry gas
+ 0:    4000.00000         0.06917       0.92019     0.0317184   --Saturated
+ 0:                       0.00000       0.87484     0.0238307 / --Dry gas
+ 0:    5000.00000         0.09542       0.80236     0.0411009   --Saturated
+ 0:                       0.00000       0.73196     0.0267169 / --Dry gas
+ 0:    5064.01564         0.09765       0.79745     0.0418386   --Psat
+ 0:                       0.00000       0.72498     0.0268999 / --Dry gas
+ 0:    6000.00000         0.15256       0.76226     0.0573702   --Undersat
+ 0:                       0.00000       0.64213     0.0295227 / --Dry gas
+ 0:  /
+ 0: 
+ 0: --ECLIPSE 100 PVTO data
+ 0: --(Constant volume depletion)
+ 0: --Units are FIELD
+ 0: --Method used : Whitson and Torp
+ 0: 
+ 0: PVTO
+ 0: --MSCF/STB       PSIA           RB/STB        CPOISE
+ 0:       0.18644     1000.00000        1.19246       0.31631   --Saturated
+ 0:                   2000.00000        1.17080       0.37198
+ 0:                   3000.00000        1.15393       0.42833
+ 0:                   4000.00000        1.14026       0.48515
+ 0:                   5000.00000        1.12886       0.54199
+ 0:                   5064.01564        1.12819       0.54562
+ 0:                   6000.00000        1.11916       0.59847 /
+ 0:       0.42692     2000.00000        1.32480       0.23723   --Saturated
+ 0:                   3000.00000        1.29552       0.27067
+ 0:                   4000.00000        1.27293       0.30376
+ 0:                   5000.00000        1.25476       0.33666
+ 0:                   5064.01564        1.25371       0.33876
+ 0:                   6000.00000        1.23968       0.36937 /
+ 0:       0.69218     3000.00000        1.45776       0.19845   --Saturated
+ 0:                   4000.00000        1.42253       0.22215
+ 0:                   5000.00000        1.39523       0.24531
+ 0:                   5064.01564        1.39369       0.24678
+ 0:                   6000.00000        1.37322       0.26813 /
+ 0:       0.99860     4000.00000        1.60497       0.17136   --Saturated
+ 0:                   5000.00000        1.56413       0.18918
+ 0:                   5064.01564        1.56186       0.19030
+ 0:                   6000.00000        1.53219       0.20647 /
+ 0:       1.42308     5000.00000        1.81271       0.14479   --Saturated
+ 0:                   5064.01564        1.80913       0.14566
+ 0:                   6000.00000        1.76321       0.15817 /
+ 0:       1.45782     5064.01564        1.83005       0.14300   --Psat
+ 0:                   6000.00000        1.78263       0.15530 /
+ 0:       2.27115     6000.00000        2.25527       0.11146   --Undersat
+ 0:                   7000.00000        2.1           0.12    / --Extra
+ 0:  /
+ 0: 
+ 0: --2000a, move this to solution section
+ 0: --RSVD
+ 0: --1000  1.4208
+ 0: --10000 1.4208
+ 0: --/
+ 0: 
+ 0: --RVVD
+ 0: --1000  0.09542
+ 0: --10000 0.09542
+ 0: --/
+ 0: 
+ 0: --Water saturation functions
+ 0: 
+ 0: SWFN
+ 0: 0.16  0      3
+ 0: 0.18  0      2
+ 0: 0.20  0.002  1
+ 0: 0.44  0.090  0.5
+ 0: 0.68  0.330  0.1
+ 0: 0.8   0.540  0.05
+ 0: 1.00  1.000  0.0 /
+ 0: 
+ 0: --Gas saturation functions
+ 0: 
+ 0: SGFN
+ 0: 0.00  0.000  0.0
+ 0: 0.04  0.005  0.0
+ 0: 0.12  0.026  0.0
+ 0: 0.24  0.078  0.0
+ 0: 0.36  0.156  0.0
+ 0: 0.48  0.260  0.0
+ 0: 0.60  0.400  0.0
+ 0: 0.72  0.562  0.0
+ 0: 0.84  0.740  0.0
+ 0: /
+ 0: 
+ 0: --Oil saturation functions
+ 0: 
+ 0: SOF3
+ 0: 0.00  0.000  0.000
+ 0: 0.24  0.000  0.000
+ 0: 0.28  0.005  0.005
+ 0: 0.32  0.012  0.012
+ 0: 0.44  0.060  0.060
+ 0: 0.56  0.150  0.150
+ 0: 0.72  0.400  0.400
+ 0: 0.84  0.800  0.800 /
+ 0: 
+ 0: --Rock and water pressure data
+ 0: 
+ 0: ROCK
+ 0: 3550 0.000004 /
+ 0: 
+ 0: PVTW
+ 0: 3550 1.0 0.000003 0.31 0.0 /
+ 0: 
+ 0: --Solution section------------------------------------------------------
+ 0: 
+ 0: SOLUTION
+ 0: 
+ 0: --Request initial state output
+ 0: 
+ 0: RPTSOL
+ 0: PRESSURE SOIL SWAT /
+ 0: 
+ 0: OUTSOL
+ 0: PRESSURE SOIL /
+ 0: 
+ 0: EQUIL
+ 0: 7500 6000 9000 0 9000 0 1 1 0  /
+ 0: 
+ 0: --2000a, move this to solution section from props
+ 0: RSVD
+ 0: 1000  1.4208
+ 0: 10000 1.4208
+ 0: /
+ 0: 
+ 0: RVVD
+ 0: 1000  0.09542
+ 0: 10000 0.09542
+ 0: /
+ 0: 
+ 0: SUMMARY    =============================================================
+ 0: 
+ 0: --Request items for summary files , separator oil production rate
+ 0: --and field gas oil ratio
+ 0: 
+ 0: FOPR
+ 0: FGPR
+ 0: FOPT
+ 0: FGPT
+ 0: WBHP
+ 0: /
+ 0: FGOR
+ 0: 
+ 0: 
+ 0: --Producer block oil saturation and injection block pressure
+ 0: 
+ 0: BSOIL
+ 0: 9 1 4 /
+ 0: /
+ 0: BPRES
+ 0: 1 1 1 /
+ 0: /
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: --Schedule section------------------------------------------------------
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE
+ 0: 
+ 0: --Define injection and production wells
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --'P' 'Field' 9 1 7315 /
+ 0: WELSPECS
+ 0: 'P' 'Field' 9 1 7315 GAS/
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --'P' 9 1 3 4 1  /
+ 0: COMPDAT
+ 0: 'P' 9 1 3 4 1* 1 /
+ 0: /
+ 0: 
+ 0: --Well P has gas rate of 2000 MSCF/DAY , with min bhp of 2000 psi
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --'P' 'gas' 2* 2000 1* 2000 /
+ 0: WCONPROD
+ 0: 'P' OPEN GRAT 2* 2000 2* 2000 /
+ 0: /
+ 0: 
+ 0: WELLLIM
+ 0: P 1* 1000 4* Y /
+ 0: /
+ 0: 
+ 0: --Request fluid in place reports, group, separator and well data.
+ 0: --Solution output as requested in RPTSCHED
+ 0: 
+ 0: RPTPRINT
+ 0: 0 1 0 1 1 1 0 1 0 0 /
+ 0: 
+ 0: RPTSCHED
+ 0: PRESSURE SOIL /
+ 0: 
+ 0: --Time steps to 5 years ( well hits bhp limit )
+ 0: 
+ 0: TSTEP
+ 0: 10*365 /
+ 0: 
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN BO
+     1 READING RUNSPEC 
+     2 READING FIELD   
+     3 READING OIL     
+     4 READING WATER   
+     5 READING GAS     
+     6 READING IMPES   
+     7 READING BLACKOIL
+     8 READING DIMENS  
+     9 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                25720 BYTES                                                
+    10 READING EQUALS  
+    11 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NUMBER OF ACTIVE CELLS IS 36                                    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               297296 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @              58528 CHARACTER VARIABLES USED                               
+    12 READING RTEMP   
+    13 READING STCOND  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE DENSITY  KEYWORD                           
+ @           60 14.7 /                                                       
+    14 READING DENSITY 
+    15 READING PVTG    
+    16 READING PVTO    
+    17 READING SWFN    
+    18 READING SGFN    
+    19 READING SOF3    
+    20 READING ROCK    
+    21 READING PVTW    
+    22 READING SOLUTION
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            NEGATIVE COMPRESSIBILITY FOUND IN GAS                          
+ @            PRESSURE TABLE     1 AND OIL PRESSURE                          
+ @            TABLE     1 AT A SAMPLE PRESSURE VALUE                         
+ @             6000.00000 . ADJUST SATURATED FLUID                           
+ @            PROPERTY VALUES AT THIS PRESSURE.                              
+ @            NEGATIVE COMPRESSIBILITIES OCCUR                               
+ @            FOR GAS SATURATIONS LESS THAN     0.01524                      
+    23 READING RPTSOL  
+    24 READING OUTSOL  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC SOIL             IN DATA                  
+ @           FOR KEYWORD OUTSOL   IS IGNORED                                 
+    25 READING EQUIL   
+    26 READING RSVD    
+    27 READING RVVD    
+    28 READING SUMMARY 
+1                             **********************************************************************   1
+  PRESSURE AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   PSIA          
+
+ MINIMUM VALUE =  5977.86  AT (  1,  1,  1)     MAXIMUM VALUE =  5998.61  AT (  1,  1,  4)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9
+
+ (*,  1,  1)  5977.86 5977.86 5977.86 5977.86 5977.86 5977.86 5977.86 5977.86 5977.86
+ (*,  1,  2)  5984.77 5984.77 5984.77 5984.77 5984.77 5984.77 5984.77 5984.77 5984.77
+ (*,  1,  3)  5991.69 5991.69 5991.69 5991.69 5991.69 5991.69 5991.69 5991.69 5991.69
+ (*,  1,  4)  5998.61 5998.61 5998.61 5998.61 5998.61 5998.61 5998.61 5998.61 5998.61
+1                             **********************************************************************   2
+  SOIL     AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  0.00000                                                                                                       
+1                             **********************************************************************   3
+  SWAT     AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  0.16000                                                                                                       
+    29 READING FOPR    
+    30 READING FGPR    
+    31 READING FOPT    
+    32 READING FGPT    
+    33 READING WBHP    
+    34 READING FGOR    
+    35 READING BSOIL   
+    36 READING BPRES   
+    37 READING RUNSUM  
+    38 READING RPTONLY 
+    39 READING SCHEDULE
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           DIMPES SOLUTION PROCEDURE ACTIVATED                             
+ @           TUNING PARAMETERS RESET TO DIMPES DEFAULTS                      
+    40 READING WELSPECS
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           A WELL CANNOT BELONG TO THE GROUP NAMED  FIELD .                
+    41 READING COMPDAT 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE WELL BORE DIAMETER MUST BE SET IN THE                       
+ @           CONNECTION DATA FOR WELL P        IF THE CONNECTION             
+ @           TRANSMISSIBILITY FACTOR IS NOT ENTERED AS POSITIVE              
+    42 READING WCONPROD
+    43 READING WELLLIM 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD WELLLIM  IN SCHEDULING DATA                
+    44 READING P 1* 100
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD P 1* 100 IN SCHEDULING DATA                
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE RPTPRINT KEYWORD                           
+ @           /                                                               
+    45 READING RPTPRINT
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           RPTPRINT KEYWORD ENCOUNTERED - WILL BE IGNORED                  
+ @           USE RPTSCHED IN ECLIPSE 100                                     
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE RPTSCHED KEYWORD                           
+ @           0 1 0 1 1 1 0 1 0 0 /                                           
+    46 READING RPTSCHED
+    47 READING TSTEP   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           RESTART FILE WRITTEN   REPORT     0                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+    48 READING END     
+
+ Error summary 
+ Comments               1
+ Warnings               7
+ Problems               0
+ Errors                 7
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

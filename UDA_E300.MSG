@@ -1,0 +1,241 @@
+<eclipse>
+<message date="1/1/1986" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+       1968 KBYTES                                                       
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 5000                                          
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+       7047 KBYTES                                                       
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+    60025 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="1/1/1986" time="0.00000000000000">
+ RPTPRINT KEYWORD ENCOUNTERED - WILL BE IGNORED                          
+ USE RPTSCHED IN ECLIPSE 100                                             
+</warning>
+<warning date="1/1/1986" time="0.00000000000000">
+ SPURIOUS DATA BEFORE WELSPECS KEYWORD                                   
+ 5* 3 /                                                                  
+</warning>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_ORAT INITIALISED AS USER DEFINED QUANTITY NO. 1                      
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_ORAT ASSIGNMENT PROCESSED. UPDATE STATUS SET TO OFF.                 
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_ORAT DEFINITION PARSED. UPDATE STATUS SET TO ON.                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_ORAT2 INITIALISED AS USER DEFINED QUANTITY NO. 2                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_ORAT2 ASSIGNMENT PROCESSED. UPDATE STATUS SET TO OFF.                
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_ORAT2 DEFINITION PARSED. UPDATE STATUS SET TO ON.                    
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_WRAT INITIALISED AS USER DEFINED QUANTITY NO. 3                      
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_WRAT DEFINITION PARSED. UPDATE STATUS SET TO ON.                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_GRAT INITIALISED AS USER DEFINED QUANTITY NO. 4                      
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_GRAT DEFINITION PARSED. UPDATE STATUS SET TO ON.                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_GRAT DEFINITION PARSED. UPDATE STATUS SET TO ON.                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_LRAT INITIALISED AS USER DEFINED QUANTITY NO. 5                      
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_LRAT DEFINITION PARSED. UPDATE STATUS SET TO ON.                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_RESV INITIALISED AS USER DEFINED QUANTITY NO. 6                      
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_RESV DEFINITION PARSED. UPDATE STATUS SET TO ON.                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_BHP1 INITIALISED AS USER DEFINED QUANTITY NO. 7                      
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_BHP1 ASSIGNMENT PROCESSED. UPDATE STATUS SET TO OFF.                 
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_BHP1 DEFINITION PARSED. UPDATE STATUS SET TO ON.                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_BHP2 INITIALISED AS USER DEFINED QUANTITY NO. 8                      
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_BHP2 ASSIGNMENT PROCESSED. UPDATE STATUS SET TO OFF.                 
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+ FU_BHP2 DEFINITION PARSED. UPDATE STATUS SET TO ON.                     
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P1*.                                                         
+</message>
+<message date="1/1/1986" time="0.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P2*.                                                         
+</message>
+<message date="11/4/1986" time="100.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P1*.                                                         
+</message>
+<message date="11/4/1986" time="100.00000000000000">
+  ARGUMENT NO. 9: BHP RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_BHP1                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P1*.                                                         
+</message>
+<message date="11/4/1986" time="100.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P2*.                                                         
+</message>
+<message date="11/4/1986" time="100.00000000000000">
+  ARGUMENT NO. 9: BHP RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_BHP2                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P2*.                                                         
+</message>
+<message date="20/7/1986" time="200.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT2                        
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="20/7/1986" time="200.00000000000000">
+  ARGUMENT NO. 9: BHP RATE TARGET                                        
+  UN-INITIALISED AS USER  DEFINED QUANTITY                               
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="28/10/1986" time="300.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT2                        
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="28/10/1986" time="300.00000000000000">
+  ARGUMENT NO. 5: WATER RATE TARGET                                      
+  INITIALISED AS USER  DEFINED QUANTITY  FU_WRAT                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="5/2/1987" time="400.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT2                        
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="5/2/1987" time="400.00000000000000">
+  ARGUMENT NO. 5: WATER RATE TARGET                                      
+  UN-INITIALISED AS USER  DEFINED QUANTITY                               
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="5/2/1987" time="400.00000000000000">
+  ARGUMENT NO. 7: LIQUID RATE TARGET                                     
+  INITIALISED AS USER  DEFINED QUANTITY  FU_LRAT                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="5/2/1987" time="400.00000000000000">
+ ******************************************                              
+ * WELL P12      HAS CHANGED TO           *                              
+ * CONTROL BY OIL RATE                    *                              
+ * FROM TIME    400.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="25/2/1987" time="420.00000000000000">
+ ******************************************                              
+ * WELL P24      HAS CHANGED TO           *                              
+ * CONTROL BY OIL RATE                    *                              
+ * FROM TIME    420.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="16/5/1987" time="500.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT2                        
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="16/5/1987" time="500.00000000000000">
+  ARGUMENT NO. 7: LIQUID RATE TARGET                                     
+  UN-INITIALISED AS USER  DEFINED QUANTITY                               
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="16/5/1987" time="500.00000000000000">
+  ARGUMENT NO. 8: RES. FLUID RATE TARGET                                 
+  INITIALISED AS USER  DEFINED QUANTITY  FU_RESV                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="16/5/1987" time="500.00000000000000">
+ ******************************************                              
+ * WELL P12      HAS CHANGED TO           *                              
+ * CONTROL BY OIL RATE                    *                              
+ * FROM TIME    500.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="5/6/1987" time="520.00000000000000">
+ ******************************************                              
+ * WELL P24      HAS CHANGED TO           *                              
+ * CONTROL BY OIL RATE                    *                              
+ * FROM TIME    520.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="24/8/1987" time="600.00000000000000">
+  ARGUMENT NO. 4: OIL RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_ORAT2                        
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="24/8/1987" time="600.00000000000000">
+  ARGUMENT NO. 6: GAS RATE TARGET                                        
+  INITIALISED AS USER  DEFINED QUANTITY  FU_GRAT                         
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+<message date="24/8/1987" time="600.00000000000000">
+  ARGUMENT NO. 8: RES. FLUID RATE TARGET                                 
+  UN-INITIALISED AS USER  DEFINED QUANTITY                               
+  IN THE CONTROL DATA KEYWORD  WCONPROD                                  
+  FOR WELL  P*.                                                          
+</message>
+</eclipse>

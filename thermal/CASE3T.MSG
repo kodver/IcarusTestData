@@ -1,0 +1,112 @@
+<eclipse>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                           
+</error>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                           
+</error>
+<warning date="1/1/1982" time="0.00000000000000">
+ SPURIOUS DATA BEFORE NSTACK   KEYWORD                                   
+  2 /                                                                    
+</warning>
+<message date="1/1/1982" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+      82436 BYTES                                                        
+</message>
+<error date="1/1/1982" time="0.00000000000000">
+ GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                            
+ RUNSPEC OPTIONS. SEE KEYWORD TEMP                                       
+</error>
+<error date="1/1/1982" time="0.00000000000000">
+ INVALID GRID ARRAY NAME HEATCR                                          
+ ON RECORD    2 FOLLOWING EQUALS   KEYWORD                               
+</error>
+<warning date="1/1/1982" time="0.00000000000000">
+ FLUX FLAG SET IN RUNSPEC BUT FLUXNUM KEYWORD                            
+ NOT USED -- SAVE SPACE BY SETTING NTFREG = 0                            
+ IN RUNSPEC KEYWORD REGDIMS.                                             
+</warning>
+<warning date="1/1/1982" time="0.00000000000000">
+ IN ORDER TO COMPLETE THE CIRCLE FOR THE GLOBAL RADIAL GRID,             
+ IT IS NECESSARY TO SET ITEM 3 OF THE COORDSYS KEYWORD TO COMP           
+</warning>
+<message date="1/1/1982" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<comment date="1/1/1982" time="0.00000000000000">
+ NO NON-NEIGHBOUR CONNECTIONS FOUND                                      
+</comment>
+<message date="1/1/1982" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 150                                           
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+ ADDITIONAL     0.146 MEGABYTES REQUIRED FOR SIMULATION                  
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+     435984 BYTES                                                        
+</message>
+<message date="1/1/1982" time="0.00000000000000">
+    58542 CHARACTER VARIABLES USED                                       
+</message>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1982" time="0.00000000000000">
+ SPURIOUS DATA BEFORE RTEMP    KEYWORD                                   
+ 60 14.7 /                                                               
+</warning>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1982" time="0.00000000000000">
+ SPURIOUS DATA BEFORE CVTYPES  KEYWORD                                   
+         CGAS    COIL /                                                  
+</warning>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD CVTYPES  IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1982" time="0.00000000000000">
+ SPURIOUS DATA BEFORE MW       KEYWORD                                   
+         GAS     DEAD /                                                  
+</warning>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1982" time="0.00000000000000">
+ SPURIOUS DATA BEFORE DREF     KEYWORD                                   
+         27      120  /                                                  
+</warning>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD DREF     IN PROPERTY DATA                          
+</error>
+<warning date="1/1/1982" time="0.00000000000000">
+ SPURIOUS DATA BEFORE TCRIT    KEYWORD                                   
+         159     45   /                                                  
+</warning>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                          
+ Stop limit reached on error      outputs
+</error>
+<warning date="1/1/1982" time="0.00000000000000">
+ SPURIOUS DATA BEFORE PCRIT    KEYWORD                                   
+         1000    1200 /                                                  
+</warning>
+<error date="1/1/1982" time="0.00000000000000">
+ UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                          
+</error>
+<error date="1/1/1982" time="0.00000000000000">
+ RUN STOPPED BECAUSE NUMBER OF   ERRORS                                  
+ EXCEEDS MAXIMUM PERMITTED VALUE (    10).                               
+ SEE MESSAGES KEYWORD                                                    
+</error>
+</eclipse>

@@ -1,0 +1,444 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN SLIMTUBE
+
+ 0: ------------------------------------------------------------------------
+ 0: -->Simulation of a 10 metre slimtube using lab units
+ 0: -- 5 components
+ 0: -- Peng-Robinson EoS
+ 0: -- Grid dimensions 200x1x1
+ 0: -- FULLIMP solution method
+ 0: -- LAB units
+ 0: -- OIL GAS only, no water
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC  ============================================================
+ 0: 
+ 0: OIL
+ 0: GAS
+ 0: 
+ 0: FULLIMP
+ 0: 
+ 0: DIMENS
+ 0: 200  1  1  /
+ 0: 
+ 0: -- Cartesian co-ord system
+ 0: 
+ 0: CART
+ 0: 
+ 0: -- Units: Lab
+ 0: 
+ 0: LAB
+ 0: 
+ 0: -- Number of components: implies compositional run
+ 0: 
+ 0: COMPS
+ 0: 5 /
+ 0: 
+ 0: MISCIBLE
+ 0: 
+ 0: GRID     ============================================================
+ 0: 
+ 0: DX
+ 0: 200*5 /
+ 0: 
+ 0: --Cross section is 1 square cm
+ 0: 
+ 0: DY
+ 0: 200*1.0 /
+ 0: 
+ 0: DZ
+ 0: 200*1.0 /
+ 0: 
+ 0: -- Porosity and permeability
+ 0: 
+ 0: PORO
+ 0: 200*0.1 /
+ 0: 
+ 0: PERMX
+ 0: 200*2000.0 /
+ 0: 
+ 0: PERMY
+ 0: 200*2000.0 /
+ 0: 
+ 0: PERMZ
+ 0: 200*2000.0 /
+ 0: 
+ 0: --Depth of cell centres
+ 0: 
+ 0: MIDS
+ 0: 200*100.0 /
+ 0: 
+ 0: PROPS    ============================================================
+ 0: 
+ 0: -- Properties section: PVT data from INCLUDE file
+ 0: 
+ 0: EOS
+ 0: PR    /
+ 0: 
+ 0: CNAMES
+ 0: CO2 PC1 PC2 PC3 'C7+' /
+ 0: 
+ 0: MISCEXP
+ 0: 0.2 /
+ 0: 
+ 0: BIC
+ 0: 0.2266599
+ 0: 0.2014434    -0.0008224
+ 0: 0.0717683     0.0135731    .0054848
+ 0: 0.2078494     0.0979894    .0054848     0.0     /
+ 0: 
+ 0: PCRIT
+ 0: 73.76 46.00 48.8 31.6 16.3 /
+ 0: 
+ 0: TCRIT
+ 0: 304.2 190.0 358.4 488.3 741.6 /
+ 0: 
+ 0: MW
+ 0: 44.01 16.2828 41.1450 78.9157  224.0000 /
+ 0: 
+ 0: ACF
+ 0: 0.2250000  0.0086486  0.1366165  0.2727326  0.5856574  /
+ 0: 
+ 0: ZCRIT
+ 0: 0.27490002  0.28971521  0.27810650  0.26666820  0.22416106 /
+ 0: 
+ 0: ZCRITVIS
+ 0: 0.1140665   0.3219673   0.1884522   0.5301314   0.2372103  /
+ 0: 
+ 0: OMEGAA
+ 0: 0.44162560 0.50724604 0.38625979 0.51680264 0.28916907 /
+ 0: 
+ 0: OMEGAB
+ 0: 0.06815855 0.09485338 0.06251260 0.03738579 0.06581219 /
+ 0: 
+ 0: PARACHOR
+ 0: 79.7       77.536     141.415    250.576    676.333    /
+ 0: 
+ 0: STCOND
+ 0: 15.0 1.0 /
+ 0: 
+ 0: GRAVITY
+ 0: 1* 1.01 1* /
+ 0: 
+ 0: -- Reservoir temperature: Deg C
+ 0: 
+ 0: RTEMP
+ 0: 71.0 /
+ 0: 
+ 0: -- Rock and properties
+ 0: 
+ 0: ROCK
+ 0: 136.0  0.000004  /
+ 0: 
+ 0: SGFN
+ 0: 0.00  0.0000  0.0
+ 0: 0.10  0.0156  0.0
+ 0: 0.20  0.0625  0.0
+ 0: 0.30  0.1406  0.0
+ 0: 0.40  0.2500  0.0
+ 0: 0.50  0.3906  0.0
+ 0: 0.60  0.5625  0.0
+ 0: 0.70  0.7656  0.0
+ 0: 0.80  1.0000  0.0  /
+ 0: 
+ 0: SOF2
+ 0: 0.20  0.0000
+ 0: 0.30  0.0278
+ 0: 0.40  0.1109
+ 0: 0.50  0.2500
+ 0: 0.60  0.4444
+ 0: 0.70  0.6944
+ 0: 0.75  0.8403
+ 0: 0.80  1.0000 /
+ 0: 
+ 0: SOLUTION ============================================================
+ 0: 
+ 0: --  Solution section: define explicitly
+ 0: 
+ 0: PRESSURE
+ 0: 200*136.0 /
+ 0: 
+ 0: SGAS
+ 0: 200*0.0 /
+ 0: 
+ 0: XMF
+ 0: 200*0.0247 200*0.2516 200*0.2407 200*0.0733 200*0.4097 /
+ 0: 
+ 0: YMF
+ 0: 200*0.0247 200*0.2516 200*0.2407 200*0.0733 200*0.4097 /
+ 0: 
+ 0: --  Calculate initial oil and gas in place at surface conditions
+ 0: 
+ 0: FIELDSEP
+ 0: 1 15.0 1.0 /
+ 0: /
+ 0: 
+ 0: RPTSOL
+ 0: PRES  SOIL  SGAS  /
+ 0: 
+ 0: OUTSOL
+ 0: PRES  SOIL  SGAS /
+ 0: 
+ 0: SUMMARY  ============================================================
+ 0: 
+ 0: WOPR
+ 0: PRODUCER  /
+ 0: 
+ 0: FOPR
+ 0: 
+ 0: WOPT
+ 0: PRODUCER  /
+ 0: 
+ 0: WGOR
+ 0: PRODUCER  /
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE ============================================================
+ 0: 
+ 0: CVCRIT
+ 0: -0.001 /
+ 0: 
+ 0: SEPCOND
+ 0: SEPP  G2  1  15.0  1.0 /
+ 0: /
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --INJECTOR G1  1 1 1*       /
+ 0: --PRODUCER G2 200 1 1* SEPP  /
+ 0: WELSPECS
+ 0: INJECTOR G1   1 1 1* GAS  /
+ 0: PRODUCER G2 200 1 1* OIL  /
+ 0: /
+ 0: 
+ 0: --2000a uses WELSEPC to associate separator with wells
+ 0: WSEPCOND
+ 0: PRODUCER SEPP /
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --INJECTOR  1 1  1  1  1 1* 5000 /
+ 0: --PRODUCER 200 1  1  1  1 1* 5000 /
+ 0: COMPDAT
+ 0: INJECTOR   1 1  1  1  OPEN 1 5000 /
+ 0: PRODUCER 200 1  1  1  OPEN 1 5000 /
+ 0: /
+ 0: 
+ 0: WELLSTRE
+ 0: LEANGAS  0.684  0.316 /
+ 0: /
+ 0: 
+ 0: --Total pore volume is 100ccs, inject 1/10 PV per hour
+ 0: 
+ 0: --2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+ 0: --WELLINJE
+ 0: --INJECTOR  STREAM  LEANGAS  RV  5* 10.0 /
+ 0: WCONINJE
+ 0: INJECTOR  GAS OPEN RESV 1* 10.0 /
+ 0: /
+ 0: 
+ 0: WINJGAS
+ 0: INJECTOR STREAM LEANGAS /
+ 0: /
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --PRODUCER  BHP  4*  136.0  /
+ 0: WCONPROD
+ 0: PRODUCER  OPEN BHP  5*  136.0  /
+ 0: /
+ 0: 
+ 0: RPTPRINT
+ 0: 1 1 1 1 1   1 1 1 0 0 /
+ 0: 
+ 0: RPTSCHED
+ 0: PRESSURE  SOIL  SGAS /
+ 0: 
+ 0: --Limit max step to get at least 500 timesteps per 10 hours = 1 PV injected
+ 0: 
+ 0: TSCRIT
+ 0: 0.001 0.0001 0.02 /
+ 0: 
+ 0: --Run for 12 hours - ie 1.2 pore volumes injected
+ 0: 
+ 0: TIME
+ 0: 1 2 3 4 5 6 7 8 9 10 11 12 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN SLIMTUBE
+     1 READING RUNSPEC 
+     2 READING OIL     
+     3 READING GAS     
+     4 READING FULLIMP 
+     5 READING DIMENS  
+     6 READING CART    
+     7 READING LAB     
+     8 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE MISCIBLE KEYWORD                           
+ @           5 /                                                             
+     9 READING MISCIBLE
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           KEYWORD GRID                                                    
+ @           ENCOUNTERED WHILE READING SECTION    1 OF KEYWORD MISCIBLE      
+ @           USUALLY CAUSED BY MISSING SLASH ( / )                           
+    10 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                  
+ @           USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                   
+ @           OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                  
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @               105484 BYTES                                                
+    11 READING DX      
+    12 READING DY      
+    13 READING DZ      
+    14 READING PORO    
+    15 READING PERMX   
+    16 READING PERMY   
+    17 READING PERMZ   
+    18 READING MIDS    
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD MIDS     IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE PROPS    KEYWORD                           
+ @           200*100.0 /                                                     
+    19 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+
+ @--COMMENT  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           NUMBER OF ACTIVE CELLS IS 200                                   
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               393936 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @              58528 CHARACTER VARIABLES USED                               
+    20 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+    21 READING PR    / 
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD PR    /  IN PROPERTY DATA                  
+    22 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+    23 READING CO2 PC1 
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD CO2 PC1  IN PROPERTY DATA                  
+    24 READING MISCEXP 
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD MISCEXP  IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               4
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

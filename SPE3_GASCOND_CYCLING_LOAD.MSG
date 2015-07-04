@@ -1,0 +1,38 @@
+<eclipse>
+<error date="1/1/0" time="0.00000000000000">
+ THE KEYWORD MULTIN   MAY NOT BE SPECIFIED BEFORE                        
+ THE RUNSPEC RECORD HAS BEEN READ                                        
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ UNABLE TO OPEN SAVE FILE                                                
+ SPE3_GASCOND_CYCLING                                                    
+ SYSTEM ERROR CODE IS       29                                           
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ BAD HEADER ON SAVE FILE                                                 
+ SPE3_GASCOND_CYCLING                                                    
+ SYSTEM ERROR CODE IS       29                                           
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ SAVE FILE SPE3_GASCOND_CYCLING                                          
+ DOES NOT HAVE A VALID HEADER                                            
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ SAVE FILE SPE3_GASCOND_CYCLING                                          
+ IN NOT AN ECLIPSE 100 FILE                                              
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ SAVE FILE                                                               
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ SAVE FILE SPE3_GASCOND_CYCLING                                          
+ TAKEN FROM DIFFERENT VERSION        0                                   
+ CURRENT VERSION IS     5002                                             
+ THE SAVE FILE MUST ORIGINATE FROM THE PRESENT VERSION                   
+ OF ECLIPSE. RESTARTS RUNS CAN BE DONE FROM PREVIOUS                     
+ VERSIONS OF ECLIPSE BY SPECIFYING THE FULL DATASET                      
+</error>
+<comment date="1/1/0" time="0.00000000000000">
+ RUN TERMINATED DUE TO SAVE FILE ERRORS                                  
+</comment>
+</eclipse>

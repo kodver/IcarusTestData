@@ -1,0 +1,579 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN ECBM2I
+
+ 0: -----------------------------------------------------------------------
+ 0: -- SPE75669
+ 0: -- Numerical Simulator Comparison Study for Enhanced Coalbed Methane Recovery Processes, Part I: Pure Carbon Dioxide Injection
+ 0: -- David H.-S. Law, L.G.H. (Bert) van der Meer, W.D. (Bill) Gunter
+ 0: -- SPE Gas Technology Symposium, 30 April-2 May 2002, Calgary, Alberta, Canada
+ 0: 
+ 0: -- Problem Set 2
+ 0: 
+ 0: -- ENHANCED COAL BED METHANE TEST CASE
+ 0: -- 2 components
+ 0: -- Grid dimensions 11x11x1
+ 0: -- METRIC units
+ 0: -- CO2 injection case
+ 0: -- SINGLE POROSITY TEST +INSTANT DESORPTION
+ 0: 
+ 0: --ECBM1: Radial/DualPoro/2D/CO2 Inj
+ 0: --ECBM2: DualPoro/3D/CO2 Inj
+ 0: --ECBM3: SinglePoro/2D/CO2 Inj/Instant Desorption
+ 0: --ECBM4: DualPoro/3D/CO2 Inj/ ROCKTAB (Coal swelling and shrinkage)
+ 0: ------------------------------------------------------------------------
+ 0: RUNSPEC
+ 0: 
+ 0: TITLE
+ 0:          PROMLEM SET 2, SPE 75669
+ 0: DIMENS
+ 0:     11    11    1  /
+ 0: 
+ 0: WATER
+ 0: 
+ 0: GAS
+ 0: 
+ 0: METRIC
+ 0: 
+ 0: COAL
+ 0: 
+ 0: COMPS
+ 0: 2 /
+ 0: 
+ 0: FULLIMP
+ 0: 
+ 0: EQLDIMS
+ 0:     1  100    2    1   20 /
+ 0: 
+ 0: TABDIMS
+ 0:     1    1   40   20    1  5 /
+ 0: 
+ 0: -------------------------- coal regions
+ 0: REGDIMS
+ 0:     1    1    1*  1*  1*       1  /
+ 0: 
+ 0: WELLDIMS
+ 0:     5   13    1    2 /
+ 0: 
+ 0: START
+ 0:   26 'JAN' 1983  /
+ 0: 
+ 0: -- Instant desorption model
+ 0: CBMOPTS
+ 0:  INSTANT /
+ 0: 
+ 0: GRID      ==============================================================
+ 0: 
+ 0: INIT
+ 0: 
+ 0: -- Set the coal density 1434 kg/m3
+ 0: ROCKDEN
+ 0:  121*1434.0  /
+ 0: 
+ 0: -- All cells contain coal
+ 0: COALNUM
+ 0: 121*1 /
+ 0: 
+ 0: DXV
+ 0:       2.5   5.0   5.0   5.0   5.0   5.294   5.0
+ 0:       5.0   5.0   5.0   2.5 /
+ 0: 
+ 0: DYV
+ 0:       2.5   5.0   5.0   5.0   5.0   5.294   5.0
+ 0:       5.0   5.0   5.0   2.5 /
+ 0: 
+ 0: EQUALS
+ 0:  'DZ'      9.000   /
+ 0:  'TOPS' 1253.600   /
+ 0:  'PERMX'   3.650   /
+ 0:  'PERMY'   3.650   /
+ 0:  'PERMZ'   3.650   /
+ 0:  'PORO'    0.001   /
+ 0: /
+ 0: 
+ 0: PROPS     ==============================================================
+ 0: 
+ 0: 
+ 0: -- Adsorption of CO2 and CH4
+ 0: LANGMEXT    -- coalnum 1
+ 0: -- Bars     SM3/kg
+ 0:   19.030    0.0240808     -- CO2
+ 0:   46.885    0.01180736 /  -- CH4
+ 0: /
+ 0: 
+ 0: ECHO
+ 0: -- Units: C
+ 0: RTEMP
+ 0: --
+ 0: -- Constant Reservoir Temperature
+ 0: --
+ 0:    45.0000000000001
+ 0: /
+ 0: 
+ 0: EOS
+ 0: --
+ 0: -- Equation of State (Reservoir EoS)
+ 0: --
+ 0:    PR3
+ 0: /
+ 0: 
+ 0: NCOMPS
+ 0: --
+ 0: -- Number of Components
+ 0: --
+ 0:        2
+ 0: /
+ 0: PRCORR
+ 0: --
+ 0: -- Modified Peng-Robinson EoS
+ 0: --
+ 0: CNAMES
+ 0: --
+ 0: -- Component Names
+ 0: --
+ 0:    'CO2'
+ 0:    'C1'
+ 0: /
+ 0: MW
+ 0: --
+ 0: -- Molecular Weights (Reservoir EoS)
+ 0: --
+ 0:          44.01
+ 0:         16.043
+ 0: /
+ 0: 
+ 0: OMEGAA
+ 0: --
+ 0: -- EoS Omega-a Coefficient (Reservoir EoS)
+ 0: --
+ 0:    0.457235529
+ 0:    0.457235529
+ 0: /
+ 0: 
+ 0: OMEGAB
+ 0: --
+ 0: -- EoS Omega-b Coefficient (Reservoir EoS)
+ 0: --
+ 0:    0.077796074
+ 0:    0.077796074
+ 0: /
+ 0: 
+ 0: -- Units: K
+ 0: TCRIT
+ 0: --
+ 0: -- Critical Temperatures (Reservoir EoS)
+ 0: --
+ 0:          304.7
+ 0:          190.6
+ 0: /
+ 0: 
+ 0: -- Units: bar
+ 0: PCRIT
+ 0: --
+ 0: -- Critical Pressures (Reservoir EoS)
+ 0: --
+ 0:      73.865925
+ 0:       46.04208
+ 0: /
+ 0: 
+ 0: -- Units: m3 /kg-mole
+ 0: VCRIT
+ 0: --
+ 0: -- Critical Volumes (Reservoir EoS)
+ 0: --
+ 0:          0.094
+ 0:          0.098
+ 0: /
+ 0: 
+ 0: ZCRIT
+ 0: --
+ 0: -- Critical Z-Factors (Reservoir EoS)
+ 0: --
+ 0:    0.274077797373227
+ 0:    0.284729476628582
+ 0: /
+ 0: 
+ 0: SSHIFT
+ 0: --
+ 0: -- EoS Volume Shift (Reservoir EoS)
+ 0: --
+ 0:    -0.0427303367439383
+ 0:    -0.144265618878948
+ 0: /
+ 0: 
+ 0: ACF
+ 0: --
+ 0: -- Acentric Factors (Reservoir EoS)
+ 0: --
+ 0:          0.225
+ 0:          0.013
+ 0: /
+ 0: 
+ 0: BIC
+ 0: --
+ 0: -- Binary Interaction Coefficients (Reservoir EoS)
+ 0: --
+ 0:      0.1
+ 0: /
+ 0: 
+ 0: PARACHOR
+ 0: --
+ 0: -- Component Parachors
+ 0: --
+ 0:             78
+ 0:             77
+ 0: /
+ 0: 
+ 0: -- Units: m3 /kg-mole
+ 0: VCRITVIS
+ 0: --
+ 0: -- Critical Volumes for Viscosity Calc (Reservoir EoS)
+ 0: --
+ 0:          0.094
+ 0:          0.098
+ 0: /
+ 0: 
+ 0: ZCRITVIS
+ 0: --
+ 0: -- Critical Z-Factors for Viscosity Calculation (Reservoir EoS)
+ 0: --
+ 0:    0.274077797373227
+ 0:    0.284729476628582
+ 0: /
+ 0: 
+ 0: LBCCOEF
+ 0: --
+ 0: -- Lorentz-Bray-Clark Viscosity Correlation Coefficients
+ 0: --
+ 0:     0.1023 0.023364 0.058533 -0.040758 0.0093324
+ 0: /
+ 0: 
+ 0: SWFN
+ 0: 0.00  0.000   0.0
+ 0: 0.05  0.0006  0.0
+ 0: 0.10  0.0013  0.0
+ 0: 0.15  0.002   0.0
+ 0: 0.20  0.007   0.0
+ 0: 0.25  0.015   0.0
+ 0: 0.30  0.024   0.0
+ 0: 0.35  0.035   0.0
+ 0: 0.40  0.049   0.0
+ 0: 0.45  0.067   0.0
+ 0: 0.50  0.088   0.0
+ 0: 0.55  0.116   0.0
+ 0: 0.60  0.154   0.0
+ 0: 0.65  0.200   0.0
+ 0: 0.70  0.251   0.0
+ 0: 0.75  0.312   0.0
+ 0: 0.80  0.392   0.0
+ 0: 0.85  0.490   0.0
+ 0: 0.90  0.601   0.0
+ 0: 0.95  0.731   0.0
+ 0: 0.975 0.814   0.0
+ 0: 1.00  1.00    0.0
+ 0: /
+ 0: 
+ 0: SGFN
+ 0: 0.00  0.000   0.0
+ 0: 0.025 0.0035  0.0
+ 0: 0.05  0.007   0.0
+ 0: 0.10  0.018   0.0
+ 0: 0.15  0.033   0.0
+ 0: 0.20  0.051   0.0
+ 0: 0.25  0.070   0.0
+ 0: 0.30  0.090   0.0
+ 0: 0.35  0.118   0.0
+ 0: 0.40  0.147   0.0
+ 0: 0.45  0.180   0.0
+ 0: 0.50  0.216   0.0
+ 0: 0.55  0.253   0.0
+ 0: 0.60  0.295   0.0
+ 0: 0.65  0.342   0.0
+ 0: 0.70  0.401   0.0
+ 0: 0.75  0.466   0.0
+ 0: 0.80  0.537   0.0
+ 0: 0.85  0.627   0.0
+ 0: 0.90  0.720   0.0
+ 0: 0.95  0.835   0.0
+ 0: 1.00  1.000   0.0
+ 0: /
+ 0: 
+ 0: -- need a dummy SOF3 relperm
+ 0: SOF3
+ 0:   0     0.0       0
+ 0: /
+ 0: 
+ 0: PVTW
+ 0: -- Pressure (bar)     Bw        Cw          Ug      du/dp
+ 0:     1.034           1.00370    5.8E-5    .60700    0.00E+00 /
+ 0: 
+ 0: ROCK
+ 0:  1.01325  1.45E-05 /
+ 0: 
+ 0: GRAVITY
+ 0:     40.0000             0.99000           0.678 /
+ 0: 
+ 0: RPTPROPS
+ 0:  LANGMEXT  /
+ 0: 
+ 0: REGIONS
+ 0: 
+ 0: SOLUTION   =============================================================
+ 0: 
+ 0: PRESSURE
+ 0: 121*76.5  /
+ 0: 
+ 0: SGAS
+ 0: 121*0.408 /
+ 0: 
+ 0: SWAT
+ 0: 121*0.592 /
+ 0: 
+ 0: -- mole fractions in oil phase should always be zero
+ 0: XMF
+ 0:  121*0.0
+ 0:  121*0.0 /
+ 0: 
+ 0: -- mole fractions in gas phase
+ 0: YMF
+ 0:  121*0.0   --CO2
+ 0:  121*1.0 / --CH4
+ 0: 
+ 0: RPTRST
+ 0: 'BASIC=2' SWAT SGAS  YMF /
+ 0: 
+ 0: SUMMARY    ==========================================================
+ 0: 
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: FPR
+ 0: 
+ 0: FWPR
+ 0: 
+ 0: FGPR
+ 0: 
+ 0: -- CO2 production rate
+ 0: FCWGPR
+ 0: 1 /
+ 0: 
+ 0: -- Methan production rate
+ 0: FCWGPR
+ 0: 2 /
+ 0: 
+ 0: FCWGPT
+ 0: 1 /
+ 0: 
+ 0: FCWGPT
+ 0: 2 /
+ 0: 
+ 0: -- gas phase mole fraction in producer
+ 0: WYMF
+ 0: 'P' 1 /
+ 0: 'P' 2 /
+ 0: /
+ 0: 
+ 0: WBHP
+ 0: P /
+ 0: 
+ 0: WBHP
+ 0: I /
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE   ===========================================================
+ 0: 
+ 0: WELSPECS
+ 0: 'P'  'G'   11  11  1253.6  'GAS'  0 'STD' 'SHUT' 'NO'  /
+ 0: 'I'  'G'   1   1   1253.6  'GAS'  0 'STD' 'SHUT' 'NO'  /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: -- Change skin factor to history match:          skin
+ 0: 'P'   11  11 1 1   'OPEN'   0  0  0.073  0   0.0  0 'Z' 0 /
+ 0: 'I'   1   1  1 1   'OPEN'   0  0  0.073  0   0.0  0 'Z' 0 /
+ 0: /
+ 0: 
+ 0: WPIMULT
+ 0: -- Multiplies well connection factors by a given value
+ 0: 'I'   0.25 /
+ 0: 'P'   0.25 /
+ 0: /
+ 0: 
+ 0: -- Inject Co2
+ 0: WELLSTRE
+ 0:  'CO2' 1.0  0.0 /
+ 0: /
+ 0: 
+ 0: WINJGAS
+ 0:  'I' STREAM 'CO2' /
+ 0: /
+ 0: 
+ 0: -- Inj rate: 28316.82/4
+ 0: WCONINJE
+ 0: 'I' 'GAS'  'OPEN' 'RATE' 7079.2 1* 150.0 /
+ 0: /
+ 0: 
+ 0: -- Production
+ 0: WCONPROD
+ 0: 'P' 'OPEN' 'BHP'  1E20   1E20 25000 1E20  1E20  2.75  0    0 0 /
+ 0: /
+ 0: 
+ 0: -- Printout at 5,15,30,45,60,75,
+ 0: --         and 90,105,120,150,182.5 days
+ 0: TSTEP
+ 0:  5 10 15 15 15 15 15 15 15 30 32.5 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN ECBM2I
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING DIMENS  
+     4 READING WATER   
+     5 READING GAS     
+     6 READING METRIC  
+     7 READING COAL    
+     8 READING COMPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE FULLIMP  KEYWORD                           
+ @           2 /                                                             
+     9 READING FULLIMP 
+    10 READING EQLDIMS 
+    11 READING TABDIMS 
+    12 READING REGDIMS 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ITEM 6 OF REGDIMS IS NOT AVAILABLE IN                           
+ @           E100 RUNS.                                                      
+    13 READING WELLDIMS
+    14 READING START   
+    15 READING CBMOPTS 
+
+ @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           UNRECOGNISED KEYWORD CBMOPTS  IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           SPURIOUS DATA BEFORE GRID     KEYWORD                           
+ @            INSTANT /                                                      
+    16 READING GRID    
+
+ @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           THE DUAL POROSITY MODEL MUST BE ACTIVE FOR THE                  
+ @           COAL BED METHANE OPTION. DUAL POROSITY OPTION                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                69684 BYTES                                                
+    17 READING INIT    
+    18 READING ROCKDEN 
+
+ @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           UNRECOGNISED KEYWORD ROCKDEN  IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           SPURIOUS DATA BEFORE COALNUM  KEYWORD                           
+ @            121*1434.0  /                                                  
+    19 READING COALNUM 
+
+ @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           UNRECOGNISED KEYWORD COALNUM  IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           SPURIOUS DATA BEFORE DXV      KEYWORD                           
+ @           121*1 /                                                         
+    20 READING DXV     
+    21 READING DYV     
+    22 READING EQUALS  
+    23 READING PROPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           EITHER SIGMA OR THE ARRAY SIGMAV NEEDS TO BE                    
+ @           SPECIFIED IN DUAL POROSITY RUNS.                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--    BUG  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @            CONSISTENCY PROBLEM IN RCDPTR                                  
+ @            NMTRIX =      0 NFRACT =      0 NFRAC =    121                 
+ @            NACTIV =    242 NKILL  =      0                                
+
+ @--COMMENT  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           2 DUAL POROSITY CONNECTIONS FOUND                               
+
+ @--    BUG  AT TIME        0.0   DAYS    (26-JAN-1983):
+ @           YWGRID HAS MISCOUNTED ACTIVE CELLS                              
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF     BUGS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (     1).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               6
+ Problems               0
+ Errors                 6
+ Bugs                   2
+ Final cpu       0.00 elapsed       0.00

@@ -1,0 +1,140 @@
+<eclipse>
+<message date="1/1/2000" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+     133752 BYTES                                                        
+</message>
+<warning date="1/1/2000" time="0.00000000000000">
+    243 VALUES NOT DEFINED IN BOX (  1-  9,  1-  9,  1-  4)              
+ OF KEYWORD TOPS                                                         
+</warning>
+<message date="1/1/2000" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<comment date="1/1/2000" time="0.00000000000000">
+ NO NON-NEIGHBOUR CONNECTIONS FOUND                                      
+</comment>
+<message date="1/1/2000" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 324                                           
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+       1676 KBYTES                                                       
+</message>
+<message date="1/1/2000" time="0.00000000000000">
+    58548 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="2/1/2000" time="1.00000000000000">
+ WELL P        CANNOT PRODUCE AT THE REQUIRED T.H.P.                     
+</warning>
+<message date="2/1/2000" time="1.00000000000000">
+ WELL P        CANNOT OPERATE UNDER THE CURRENT                          
+ RESERVOIR CONDITIONS IN NON-LINEAR ITERATION   0.                       
+ ITS IPR IS    Q(P)  =  A  -  BHP * B ,   WHERE:                         
+ A(O,W,G) =   2.3327E+07  0.0000E+00  3.3774E+07                         
+ B(O,W,G) =   5.3781E+03  0.0000E+00  7.7866E+03 .                       
+ LAST CONVERGED SOLUTION:                                                
+     ORAT        WRAT        GRAT        BHP         THP                 
+   6.7720E+03  0.0000E+00  9.8047E+03  4.3423E+03  3.5580E+03            
+ THE WELL IS   SHUT  FOR THE ITERATION.                                  
+</message>
+<message date="2/1/2000" time="1.00000000000000">
+ WELL P        IS REVIVED FOR ITERATION   1                              
+</message>
+<message date="2/1/2000" time="1.00000000000000">
+ WELL P        HAS A NEGATIVE PRODUCTION RATE                            
+ DURING NON-LINEAR ITERATION   1.                                        
+ ITS IPR IS   Q(P) = A - BHP * B ,  WHERE:                               
+ A(O,W,G) =   6.3324E+06  0.0000E+00  5.3377E+07                         
+ B(O,W,G) =   1.4591E+03  0.0000E+00  1.2299E+04 .                       
+ LAST CONVERGED SOLUTION:                                                
+     ORAT        WRAT        GRAT        BHP         THP                 
+   0.0000E+00  0.0000E+00  0.0000E+00  4.0521E+03  0.0000E+00            
+ THE WELL IS   SHUT  FOR THE ITERATION.                                  
+</message>
+<message date="2/1/2000" time="1.00000000000000">
+ WELL P        IS REVIVED FOR ITERATION   2                              
+</message>
+<warning date="2/1/2000" time="1.00000000000000">
+ WELL P        CANNOT PRODUCE AT THE REQUIRED T.H.P.                     
+</warning>
+<message date="2/1/2000" time="1.00000000000000">
+ WELL P        CANNOT OPERATE UNDER THE CURRENT                          
+ RESERVOIR CONDITIONS IN NON-LINEAR ITERATION   3.                       
+ ITS IPR IS    Q(P)  =  A  -  BHP * B ,   WHERE:                         
+ A(O,W,G) =   6.3358E+06  0.0000E+00  5.3481E+07                         
+ B(O,W,G) =   1.4599E+03  0.0000E+00  1.2323E+04 .                       
+ LAST CONVERGED SOLUTION:                                                
+     ORAT        WRAT        GRAT        BHP         THP                 
+   2.5910E+02  0.0000E+00  2.1840E+03  4.3401E+03  3.5580E+03            
+ THE WELL IS   SHUT  FOR THE ITERATION.                                  
+</message>
+<message date="2/1/2000" time="1.00000000000000">
+ ****************************************************************        
+ * WELL P        IS  SHUT   AT TIME       1.00   DAYS   BECAUSE *        
+ * IT CANNOT OPERATE AT CURRENT RESERVOIR CONDITIONS.           *        
+ ****************************************************************        
+</message>
+<warning date="29/7/2000" time="210.00000000000000">
+ WELL P        CANNOT PRODUCE AT THE REQUIRED T.H.P.                     
+</warning>
+<message date="29/7/2000" time="210.00000000000000">
+ WELL P        CANNOT OPERATE UNDER THE CURRENT                          
+ RESERVOIR CONDITIONS IN NON-LINEAR ITERATION   0.                       
+ ITS IPR IS    Q(P)  =  A  -  BHP * B ,   WHERE:                         
+ A(O,W,G) =   4.5580E+06  5.4697E+04  3.7697E+07                         
+ B(O,W,G) =   1.1492E+03  1.3918E+01  9.4825E+03 .                       
+ LAST CONVERGED SOLUTION:                                                
+     ORAT        WRAT        GRAT        BHP         THP                 
+   7.8753E+03  4.2158E+02  3.3198E+04  3.9750E+03  3.2000E+03            
+ THE WELL IS   SHUT  FOR THE ITERATION.                                  
+</message>
+<message date="29/7/2000" time="210.00000000000000">
+ WELL P        IS REVIVED FOR ITERATION   1                              
+</message>
+<warning date="29/7/2000" time="210.00000000000000">
+ WELL P        CANNOT PRODUCE AT THE REQUIRED T.H.P.                     
+</warning>
+<message date="29/7/2000" time="210.00000000000000">
+ WELL P        CANNOT OPERATE UNDER THE CURRENT                          
+ RESERVOIR CONDITIONS IN NON-LINEAR ITERATION   1.                       
+ ITS IPR IS    Q(P)  =  A  -  BHP * B ,   WHERE:                         
+ A(O,W,G) =   4.6457E+06  5.5094E+04  3.7819E+07                         
+ B(O,W,G) =   1.1670E+03  1.3917E+01  9.4806E+03 .                       
+ LAST CONVERGED SOLUTION:                                                
+     ORAT        WRAT        GRAT        BHP         THP                 
+   0.0000E+00  0.0000E+00  0.0000E+00  3.7010E+03  0.0000E+00            
+ THE WELL IS   SHUT  FOR THE ITERATION.                                  
+</message>
+<message date="29/7/2000" time="210.00000000000000">
+ WELL P        IS REVIVED FOR ITERATION   2                              
+</message>
+<warning date="29/7/2000" time="210.00000000000000">
+ WELL P        CANNOT PRODUCE AT THE REQUIRED T.H.P.                     
+</warning>
+<message date="29/7/2000" time="210.00000000000000">
+ WELL P        CANNOT OPERATE UNDER THE CURRENT                          
+ RESERVOIR CONDITIONS IN NON-LINEAR ITERATION   2.                       
+ ITS IPR IS    Q(P)  =  A  -  BHP * B ,   WHERE:                         
+ A(O,W,G) =   4.6350E+06  5.4968E+04  3.7828E+07                         
+ B(O,W,G) =   1.1642E+03  1.3884E+01  9.4833E+03 .                       
+ LAST CONVERGED SOLUTION:                                                
+     ORAT        WRAT        GRAT        BHP         THP                 
+   0.0000E+00  0.0000E+00  0.0000E+00  3.7007E+03  0.0000E+00            
+ THE WELL IS   SHUT  FOR THE ITERATION.                                  
+</message>
+<message date="29/7/2000" time="210.00000000000000">
+ ****************************************************************        
+ * WELL P        IS  SHUT   AT TIME     210.00   DAYS   BECAUSE *        
+ * IT CANNOT OPERATE AT CURRENT RESERVOIR CONDITIONS.           *        
+ ****************************************************************        
+</message>
+</eclipse>

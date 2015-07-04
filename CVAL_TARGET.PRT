@@ -1,0 +1,669 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN CVAL_TARGET
+
+ 0: --======================================================================
+ 0: --======================================================================
+ 0: --
+ 0: --2003A TEST CASE: DEMONSTRATES BASIC GROUP AND WELL CONTROL BY
+ 0: --                 CALORIFIC VALUE RATE TARGETS AND LIMITS
+ 0: --
+ 0: --                 COMPOSITIONAL DATASET
+ 0: --
+ 0: --======================================================================
+ 0: --======================================================================
+ 0: 
+ 0: --======================================================================
+ 0: RUNSPEC
+ 0: --======================================================================
+ 0: 
+ 0: MEMORY
+ 0: 100 10 /
+ 0: 
+ 0: --Request the FIELD unit set
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: --Water is present
+ 0: 
+ 0: WATER
+ 0: 
+ 0: --AIM solution method
+ 0: 
+ 0: AIM
+ 0: 
+ 0: --Nine components in study ( plus water )
+ 0: 
+ 0: COMPS
+ 0: 9 /
+ 0: 
+ 0: --Peng-Robinson equation of state to be used
+ 0: 
+ 0: EOS
+ 0: PR /
+ 0: 
+ 0: DIMENS
+ 0: 9 9 4 /
+ 0: 
+ 0: TABDIMS
+ 0: 1 1 40 40 /
+ 0: 
+ 0: ISGAS
+ 0: 
+ 0: TRACK
+ 0: 
+ 0: MULTSAVE
+ 0: 0 /
+ 0: 
+ 0: --======================================================================
+ 0: GRID
+ 0: --======================================================================
+ 0: 
+ 0: DX
+ 0: 324*293.3 /
+ 0: 
+ 0: DY
+ 0: 324*293.3 /
+ 0: 
+ 0: DZ
+ 0: 162*30 162*50 /
+ 0: 
+ 0: TOPS
+ 0: 81*7315 /
+ 0: 
+ 0: EQUALS
+ 0: PORO 0.13 /
+ 0: PERMX 100 /
+ 0: PERMY 100 /
+ 0: PERMZ 100 /
+ 0: /
+ 0: 
+ 0: --======================================================================
+ 0: PROPS
+ 0: --======================================================================
+ 0: 
+ 0: NCOMPS
+ 0: 9 /
+ 0: 
+ 0: EOS
+ 0: PR /
+ 0: 
+ 0: -- Peng-Robinson correction
+ 0: 
+ 0: PRCORR
+ 0: 
+ 0: -- Standard temperature and pressure in Deg F      and PSIA
+ 0: 
+ 0: STCOND
+ 0: 60.0 14.7 /
+ 0: 
+ 0: --Calorific value
+ 0: CALVAL
+ 0: 0.0 0.0 10.0 20.0 30.0 20.0 10.0 5.0 1.0 /
+ 0: 
+ 0: 
+ 0: -- Component names
+ 0: 
+ 0: CNAMES
+ 0: CO2 N2 C1 C2 C3 C4-6 C7+1 C7+2 C7+3 /
+ 0: 
+ 0: -- Critical temperatures Deg R
+ 0: 
+ 0: TCRIT
+ 0: 548.46000    227.16000    343.08000    549.77400    665.64000
+ 0: 806.54054    838.11282   1058.03863   1291.89071              /
+ 0: 
+ 0: -- Critical pressures PSIA
+ 0: 
+ 0: PCRIT
+ 0: 1071.33111    492.31265    667.78170    708.34238    618.69739
+ 0: 514.92549    410.74956    247.56341    160.41589              /
+ 0: 
+ 0: -- Critical Z-factors
+ 0: 
+ 0: ZCRIT
+ 0:  .27408       .29115       .28473       .28463       .27748
+ 0:  .27640       .26120       .22706       .20137              /
+ 0: 
+ 0: -- Acentric factors
+ 0: 
+ 0: ACF
+ 0:  .22500       .04000       .01300       .09860       .15240
+ 0:  .21575       .31230       .55670       .91692              /
+ 0: 
+ 0: -- Molecular Weights
+ 0: 
+ 0: MW
+ 0:  44.01000     28.01300     16.04300     30.07000     44.09700
+ 0:  66.86942    107.77943    198.56203    335.19790              /
+ 0: 
+ 0: -- Omega_A values
+ 0: 
+ 0: OMEGAA
+ 0:  .4572355     .4572355     .5340210     .4572355     .4572355
+ 0:  .4572355     .6373344     .6373344     .6373344              /
+ 0: 
+ 0: -- Omega_B values
+ 0: 
+ 0: OMEGAB
+ 0:  .0777961     .0777961     .0777961     .0777961     .0777961
+ 0:  .0777961     .0872878     .0872878     .0872878              /
+ 0: 
+ 0: -- Default fluid sample composition
+ 0: 
+ 0: ZMFVD
+ 0:       1.00000       .01210       .01940       .65990       .08690
+ 0:        .05910       .09670       .04745       .01515       .00330
+ 0:   10000.00000       .01210       .01940       .65990       .08690
+ 0:        .05910       .09670       .04745       .01515       .00330 /
+ 0: 
+ 0: -- Boiling point temperatures Deg R
+ 0: 
+ 0: TBOIL
+ 0:     350.46000    139.32000    201.06000    332.10000    415.98000
+ 0:     523.33222    689.67140    958.31604   1270.40061              /
+ 0: 
+ 0: -- Reference temperatures Deg R
+ 0: 
+ 0: TREF
+ 0:     527.40000    140.58000    201.06000    329.40000    415.80000
+ 0:     526.05233    519.67000    519.67000    519.67000              /
+ 0: 
+ 0: -- Reference densities LB/FT3
+ 0: 
+ 0: DREF
+ 0:      48.50653     50.19209     26.53189     34.21053     36.33308
+ 0:      37.87047     45.60035     50.88507     55.89861              /
+ 0: 
+ 0: -- Parachors (Dynes/cm)
+ 0: 
+ 0: PARACHOR
+ 0:      78.00000     41.00000     77.00000    108.00000    150.30000
+ 0:     213.52089    331.78241    516.45301    853.48860              /
+ 0: 
+ 0: -- Binary Interaction Coefficients
+ 0: 
+ 0: BIC
+ 0: -.0200
+ 0:  .1000  .0360
+ 0:  .1300  .0500  .000000
+ 0:  .1350  .0800  .000000  .000
+ 0:  .1277  .1002  .092810  .000 .000
+ 0:  .1000  .1000  .130663  .006 .006 .0
+ 0:  .1000  .1000  .130663  .006 .006 .0 .0
+ 0:  .1000  .1000  .130663  .006 .006 .0 .0 .0 /
+ 0: 
+ 0: -- Reservoir temperature in Deg F
+ 0: 
+ 0: RTEMP
+ 0: 200.0 /
+ 0: 
+ 0: --Water saturation functions
+ 0: 
+ 0: SWFN
+ 0:     0.16  0      50
+ 0:     0.18  0      41
+ 0:     0.20  0.002  32
+ 0:     0.24  0.010  21
+ 0:     0.28  0.020  15.5
+ 0:     0.32  0.033  12.0
+ 0:     0.36  0.049  9.2
+ 0:     0.40  0.066  7.0
+ 0:     0.44  0.090  5.3
+ 0:     0.48  0.119  4.2
+ 0:     0.52  0.150  3.4
+ 0:     0.56  0.186  2.7
+ 0:     0.60  0.227  2.1
+ 0:     0.64  0.277  1.7
+ 0:     0.68  0.330  1.3
+ 0:     0.72  0.390  1.0
+ 0:     0.76  0.462  0.7
+ 0:     0.8   0.540  0.5
+ 0:     0.84  0.620  0.4
+ 0:     0.88  0.710  0.3
+ 0:     0.92  0.800  0.2
+ 0:     0.96  0.900  0.1
+ 0:     1.00  1.000  0.0 /
+ 0: 
+ 0: --Gas saturation functions
+ 0: 
+ 0: SGFN
+ 0:     0.00  0.000  0.0
+ 0:     0.04  0.005  0.1
+ 0:     0.08  0.013  0.2
+ 0:     0.12  0.026  0.3
+ 0:     0.16  0.040  0.4
+ 0:     0.20  0.058  0.5
+ 0:     0.24  0.078  0.6
+ 0:     0.28  0.100  0.7
+ 0:     0.32  0.126  0.8
+ 0:     0.36  0.156  0.9
+ 0:     0.40  0.187  1.0
+ 0:     0.44  0.222  1.1
+ 0:     0.48  0.260  1.2
+ 0:     0.52  0.300  1.3
+ 0:     0.56  0.349  1.4
+ 0:     0.60  0.400  1.5
+ 0:     0.64  0.450  1.6
+ 0:     0.68  0.505  1.7
+ 0:     0.72  0.562  1.8
+ 0:     0.76  0.620  1.9
+ 0:     0.80  0.680  2.0
+ 0:     0.84  0.740  2.1
+ 0: /
+ 0: 
+ 0: --Oil saturation functions
+ 0: 
+ 0: SOF3
+ 0:     0.00  0.000  0.000
+ 0:     0.04  0.000  0.000
+ 0:     0.08  0.000  0.000
+ 0:     0.12  0.000  0.000
+ 0:     0.16  0.000  0.000
+ 0:     0.20  0.000  0.000
+ 0:     0.24  0.000  0.000
+ 0:     0.28  0.005  0.005
+ 0:     0.32  0.012  0.012
+ 0:     0.36  0.024  0.024
+ 0:     0.40  0.040  0.040
+ 0:     0.44  0.060  0.060
+ 0:     0.48  0.082  0.082
+ 0:     0.52  0.112  0.112
+ 0:     0.56  0.150  0.150
+ 0:     0.60  0.196  0.196
+ 0:     0.68  0.315  0.315
+ 0:     0.72  0.400  0.400
+ 0:     0.76  0.513  0.513
+ 0:     0.80  0.650  0.650
+ 0:     0.84  0.800  0.800 /
+ 0: 
+ 0: --Rock and water pressure data
+ 0: 
+ 0: ROCK
+ 0: 3550 0.000004 /
+ 0: 
+ 0: PVTW
+ 0: 3550 1.0 0.000003 0.31 0.0 /
+ 0: 
+ 0: --Surface density of water
+ 0: 
+ 0: DENSITY
+ 0: 1* 63.0 1* /
+ 0: 
+ 0: --======================================================================
+ 0: SOLUTION
+ 0: --======================================================================
+ 0: 
+ 0: --Equilibration data - initial pressure 3500 psi at 7500, which is
+ 0: --the oil-water and the oil-gas contact depth
+ 0: 
+ 0: EQUIL
+ 0: --7500 3550 7500 0 7500 0 1 1 0  /
+ 0: 7450 3550 7450 0 7450 0 1 1 0  /
+ 0: 
+ 0: OUTSOL
+ 0: PRESSURE SOIL VOIL /
+ 0: 
+ 0: RPTSOL
+ 0: PRESSURE SOIL PCO PCG /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PCO              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: FIELDSEP
+ 0:  1   80 815 /
+ 0:  2   80  65 /
+ 0:  3   60 14.7 /
+ 0: /
+ 0: 
+ 0: --======================================================================
+ 0: SUMMARY
+ 0: --======================================================================
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: --REQUEST FIELD, GROUP AND WELL CALORIFIC VALUE RATES
+ 0: 
+ 0: FCVPR
+ 0: 
+ 0: GCVPR
+ 0: /
+ 0: 
+ 0: WCVPR
+ 0: /
+ 0: 
+ 0: --COMPARE STANDARD AND ALTERNATIVE ABOVE AND BELOW GOC TRACK RESULTS
+ 0: 
+ 0: WOPR1
+ 0: P1 /
+ 0: 
+ 0: WOPRA
+ 0: P1 /
+ 0: 
+ 0: WOPR2
+ 0: P1 /
+ 0: 
+ 0: WOPRB
+ 0: P1 /
+ 0: 
+ 0: 
+ 0: --======================================================================
+ 0: RPTONLY
+ 0: SCHEDULE
+ 0: --======================================================================
+ 0: 
+ 0: -------------------
+ 0: -- DEFINE SEPARATOR
+ 0: -------------------
+ 0: 
+ 0: SEPCOND
+ 0: SEP FIELD 1   80 815  /
+ 0: SEP FIELD 2   80  65  /
+ 0: SEP FIELD 3   60 14.7 /
+ 0: /
+ 0: 
+ 0: ----------------------------------------
+ 0: -- DEFINE INJECTION AND PRODUCTION WELLS
+ 0: ----------------------------------------
+ 0: 
+ 0: WELSPECS
+ 0: P1 GR1 7 7 7400 'GAS' /
+ 0: P2 GR1 7 7 7400 'GAS' /
+ 0: I1 GR1 7 7 7400 'GAS' /
+ 0: P3 GR2 6 6 7400 'GAS' /
+ 0: P4 GR2 6 6 7400 'GAS' /
+ 0: I2 GR2 6 6 7400 'GAS' /
+ 0: /
+ 0: 
+ 0: --------------------
+ 0: --DEFINE CONNECTIONS
+ 0: --------------------
+ 0: 
+ 0: COMPDAT
+ 0: P1 7 7 3 3  /
+ 0: P2 7 7 4 4  /
+ 0: P3 6 6 3 3  /
+ 0: P4 6 6 4 4  /
+ 0: I1 7 7 1 1  /
+ 0: I2 6 6 2 2  /
+ 0: /
+ 0: 
+ 0: ---------------------------------------------
+ 0: -- ALL WELLS ARE OPEN AND UNDER GROUP CONTROL
+ 0: ---------------------------------------------
+ 0: 
+ 0: WCONPROD
+ 0: P1 OPEN GRUP /
+ 0: P2 OPEN GRUP /
+ 0: P3 OPEN GRUP /
+ 0: P4 OPEN GRUP /
+ 0: /
+ 0: 
+ 0: WCONINJE
+ 0: I1 GAS OPEN GR /
+ 0: I2 GAS OPEN GR /
+ 0: /
+ 0: 
+ 0: ------------------------------------------------------------------------------
+ 0: -- FIELD INJECTS GAS AT 1000 MSCF/DAY - COMPOSITION IS AS THAT OF GAS PRODUCED
+ 0: ------------------------------------------------------------------------------
+ 0: 
+ 0: GINJGAS
+ 0: FIELD GV FIELD /
+ 0: /
+ 0: 
+ 0: GCONINJE
+ 0: FIELD GAS RATE 1000 /
+ 0: /
+ 0: 
+ 0: 
+ 0: -----------------------------------------------------------------------------------
+ 0: -- FIELD PRODUCTION TARGET AT 10,000 BTU/DAY, SPLIT BETWEEN SUB-GROUPS IN 1:4 RATIO
+ 0: -----------------------------------------------------------------------------------
+ 0: 
+ 0: GCONPROD
+ 0: FIELD CVAL 14* 10000 /
+ 0: GR1   FLD   6* 1 CVAL /
+ 0: GR2   FLD   6* 4 CVAL /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: -------------------------------------------------------------
+ 0: -- DEFINE A GUIDE RATE FORMULA - WILL ONLY APPLY TO THE WELLS
+ 0: -------------------------------------------------------------
+ 0: 
+ 0: GUIDERAT
+ 0: 0.0 OIL 2.0 1.0 /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: ------------------------------------------------------------
+ 0: -- NOW INSTRUCT SUB-GROUP TO ALSO USE THE GUIDE RATE FORMULA
+ 0: ------------------------------------------------------------
+ 0: 
+ 0: GCONPROD
+ 0: FIELD CVAL 14* 10000 /
+ 0: GR1   FLD   6* 1* FORM /
+ 0: GR2   FLD   6* 1* FORM /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: -------------------------------------------------------------
+ 0: -- RESET BACK CVAL GUIDE RATES FOR GROUPS AND SET
+ 0: -- A CVAL LIMIT OF 3,500 BTTU/DAY FOR GROUP GR2 - IT WILL HIT
+ 0: -- THIS LIMIT AND MOVE OFF SUPERIOR GROUP CONTROL
+ 0: -------------------------------------------------------------
+ 0: 
+ 0: GCONPROD
+ 0: FIELD CVAL 14* 10000 /
+ 0: GR1   FLD   6* 1 CVAL /
+ 0: GR2   FLD   6* 4 CVAL 6* 3500 /
+ 0: /
+ 0: 
+ 0: -------------------------------------------
+ 0: -- REDUCE THE FIELD CVAL RATE TARGET BY 50%
+ 0: -------------------------------------------
+ 0: 
+ 0: GTMULT
+ 0: FIELD CVAL 0.5 /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: -------------------------------------
+ 0: -- CHANGE SUB-GROUP GUIDE RATES AGAIN
+ 0: -------------------------------------
+ 0: 
+ 0: GCONPROD
+ 0: FIELD CVAL 14* 10000 /
+ 0: GR1   FLD   6* 1 WAT /
+ 0: GR2   FLD   6* 4 WAT /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: -----------------------------------------------------------------
+ 0: -- SET WELL CALORIFIC VALUE RATE TARGETS - GROUPS WILL GO PASSIVE
+ 0: -----------------------------------------------------------------
+ 0: 
+ 0: WCONPROD
+ 0: P1 OPEN CVAL 14* 100 /
+ 0: P2 OPEN CVAL 14* 100 /
+ 0: P3 OPEN CVAL 14* 100 /
+ 0: P4 OPEN CVAL 14* 100 /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: -----------------------------------------------
+ 0: -- REDUCE THE WELL P1'S CVAL RATE TARGET BY 50%
+ 0: -----------------------------------------------
+ 0: 
+ 0: WTMULT
+ 0: P1 CVAL 0.5 /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: ------------------------------
+ 0: -- RESET WELL P1'S CVAL TARGET
+ 0: ------------------------------
+ 0: 
+ 0: WELTARG
+ 0: P1 CVAL 77 /
+ 0: /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: -- RESET FIELD'S CVAL TARGET - GR2 IS STILL NOT ABLE TO PRODUCE ITS GUIDE RATE
+ 0: -- ALLOCATED SHARE AND REMAINS PASSIVE. GR1 IS HOWEVER ABLE TO MAKE 150 BTU/DAY
+ 0: -- AND REVERTS TO CVAL CONTROL (P1 STILL ON INDIVIDUAL CONTROL)
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: GRUPTARG
+ 0: FIELD CVAL 350 /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: END
+ 0: 
+
+ ******** END OF INPUT DATA FOR RUN CVAL_TARGET
+     1 READING RUNSPEC 
+     2 READING MEMORY  
+     3 READING FIELD   
+     4 READING WATER   
+     5 READING AIM     
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           AIM      METHOD IS NOT AVAILABLE IN ECLIPSE 100                 
+ @           CHOICES ARE FULLY IMPLICIT (DEFAULT) OR IMPES                   
+     6 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
+ @           9 /                                                             
+     7 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD EOS      IN RUNSPEC DATA                   
+     8 READING PR /    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD PR /     IN RUNSPEC DATA                   
+     9 READING DIMENS  
+    10 READING TABDIMS 
+    11 READING ISGAS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD ISGAS    IN RUNSPEC DATA                   
+    12 READING TRACK   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD TRACK    IN RUNSPEC DATA                   
+    13 READING MULTSAVE
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           MULTSAVE IS NOT AVAILABLE IN ECLIPSE 100                        
+ @           AND HAS BEEN IGNORED                                            
+    14 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                  
+ @           USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                   
+ @           OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NOT ENOUGH SPACE AVAILABLE FOR CHARACTER VARIABLES              
+ @             58525 LOCATIONS NEEDED - ONLY   10000 ARE AVAILABLE           
+ @           ( NSUMMX (=  10000) MAY BE SET TOO LARGE IN RUNSPEC             
+ @           KEYWORD SMRYDIMS )                                              
+
+ Error summary 
+ Comments               0
+ Warnings               4
+ Problems               0
+ Errors                 8
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

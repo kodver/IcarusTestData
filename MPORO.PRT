@@ -1,0 +1,497 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN MPORO
+
+ 0: -----------------------
+ 0: -- Multi-Porosity Model
+ 0: ------------------------
+ 0: 
+ 0: RUNSPEC
+ 0: TITLE
+ 0:    EXAMPLE MULTIPORO
+ 0: 
+ 0: DIMENS
+ 0:     14   10    11  /
+ 0: 
+ 0: DUALPORO   -- NEED TO HAVE DUALPORO
+ 0: 
+ 0: NMATRIX
+ 0:     10  /  -- 10 MATRIX ELEMENTS
+ 0: 
+ 0: NODPPM     -- DO NOT WANT FRACTURE PERMS MULTIPLIED BY POROSITY	
+ 0: 
+ 0: NODPCO     -- NO REDUCTION OF LINEAR SYSTEM
+ 0: 
+ 0: WATER
+ 0: 
+ 0: GAS
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: BLACKOIL
+ 0: 
+ 0: ROCKCOMP
+ 0:    'REVERS '    2  /   -- REVERS MEANS THAT COMPRESSION IS FULLY REVERSIBLE
+ 0: 
+ 0: EQLDIMS
+ 0:     2  500    2    1    1 / -- TWO EQUILIBRIUM REGIONS
+ 0: 
+ 0: 
+ 0: --  NTSFUN  NTPVT  NSSFUN   NPPVT
+ 0: TABDIMS
+ 0:        2      1      30      50    /
+ 0: 
+ 0: REGDIMS
+ 0:     2    1    0    0   /
+ 0: 
+ 0: WELLDIMS
+ 0:     4   13    1    4 /
+ 0: 
+ 0: 
+ 0: START
+ 0:   01 'JAN' 2005  /
+ 0: 
+ 0: 
+ 0: -- =========================== END RUNSPEC SECTION ====================
+ 0: 
+ 0: 
+ 0: 
+ 0: 
+ 0: GRID      ==============================================================
+ 0: 
+ 0: DPGRID       / USE MATRIX CELL GRID DATA FOR FRACTURE CELLS - IF FRACTURE CELL DATA NOT SPECIFIED
+ 0: 
+ 0: -- X-DIRECTION GRID-BLOCKS
+ 0: DXV
+ 0:       .2  5. 10. 35. 35. 10.  5.  5. 15. 45. 135. 225. 283.23  100
+ 0: /
+ 0: 
+ 0: -- Y-DIRECTION GRID-BLOCKS
+ 0: DYV
+ 0:       .200 .5 1.5 4.5 13.5 40. 120. 260. 368.33  100
+ 0: /
+ 0: 
+ 0: EQUALS
+ 0: -- TOP STRUCTURE (TOP OF LAYER 1 - Z IS POSITIVE DOWNWARD)
+ 0: TOPS   2000   1  14   1  10  1  1   / LAYER 1
+ 0:   DZ    100   1  14   1  10  1  1   / LAYER 1
+ 0: 
+ 0: -- MATRIX (LAYER 1)
+ 0: PERMX    2.E-07    1  14   1  10  1  1   / LAYER 1
+ 0: PERMY    2.E-07    1  14   1  10  1  1   / LAYER 1
+ 0: PERMZ    2.E-07    1  14   1  10  1  1   / LAYER 1
+ 0: PORO    0.130    1  14   1  10  1  1     / LAYER 1
+ 0: -- FRACTURES (LAYER 2)
+ 0: PERMX      0.50   1  14   1  10  2  2   / LAYER 2
+ 0: PERMY      0.50   1  14   1  10  2  2   / LAYER 2
+ 0: PERMZ      0.50   1  14   1  10  2  2   / LAYER 2
+ 0: PORO     0.0025   1  14   1  10  2  2   / LAYER 2 - FRACTURES
+ 0: 
+ 0: -- REDEFINE POROSITY AND PERM FOR HYDRAULIC FRACTURE
+ 0: PORO      0.32   1  7   1  1   2  2   / LAYER 2
+ 0: 
+ 0: -- FRACTURES (LAYER 2)
+ 0:   PERMX     5000   1  7   1  1   2  2   / LAYER 2
+ 0:   PERMY     5000   1  7   1  1   2  2   / LAYER 2
+ 0:   PERMZ     5000   1  7   1  1   2  2   / LAYER 2
+ 0: -- SIGMA VALUE FOR MATRIX FRACTURE CONNECTION
+ 0:  SIGMAV  0.08350     1  14   1  10   1   1  /
+ 0: /
+ 0: 
+ 0: 
+ 0: -- ********** MULTI PORO (MATRIX DISCRETIZATION) **************
+ 0: -- VALUES FROM OUTER MATRIX CELLS WILL BE USED TO INITIALIZE
+ 0: -- THE SUBCELLS
+ 0: NMATOPTS
+ 0:   SPHERICAL 0.05  /
+ 0: 
+ 0: INIT
+ 0: 
+ 0: PROPS     ==============================================================
+ 0: 
+ 0: 
+ 0: -- ******************* RELATIVE PERMEABILITY DATA *****************************
+ 0: 
+ 0: --- DUMMY SOF3
+ 0: SOF3
+ 0: 0.0  0.0 0.0
+ 0: 1.0  1.0 1.0
+ 0: /
+ 0: 0.0  0.0 0.0
+ 0: 0.75 1.0 1.0
+ 0: /
+ 0: 
+ 0: SWFN
+ 0: -- SW    KRW   PCGW     (MATRIX)
+ 0:    0.0   0.0   0.0
+ 0:    1.0   1.0   0.0
+ 0: /
+ 0: -- SW    KRW   PCGW     (FRACTURES)
+ 0:    0.25  0.0   0.0
+ 0:    0.30  0.02  0.0
+ 0:    0.40  0.05  0.0
+ 0:    0.50  0.10  0.0
+ 0:    0.55  0.14  0.0
+ 0:    0.60  0.18  0.0
+ 0:    0.65  0.25  0.0
+ 0:    0.70  0.32  0.0
+ 0:    0.80  0.49  0.0
+ 0:    0.90  0.73  0.0
+ 0:    0.95  0.90  0.0
+ 0:    1.0   1.0   0.0
+ 0: /
+ 0: 
+ 0: SGFN
+ 0: -- SG    KRG   PCGO   (MATRIX - NOT USED FOR GAS-WATER SYSTEM)
+ 0:    0.0   0.0   0.0
+ 0:    1.0   1.0   0.0
+ 0: /
+ 0: -- SG    KRG    PCGO  (FRACTURES - NOT USED FOR GAS-WATER SYSTEM)
+ 0:    0.0    0.0   0.0
+ 0:    0.05   0.02  0.0
+ 0:    0.10   0.05  0.0
+ 0:    0.20   0.15  0.0
+ 0:    0.30   0.40  0.0
+ 0:    0.35   0.60  0.0
+ 0:    0.40   0.80  0.0
+ 0:    0.45   0.90  0.0
+ 0:    0.50   0.95  0.0
+ 0:    0.60   0.99  0.0
+ 0:    0.70   0.995 0.0
+ 0:    0.75   1.0   0.0
+ 0: /
+ 0: 
+ 0: PVTW
+ 0: ----     PREF      BWREF        CW       MUW      VISCOSIBILITY
+ 0:          800.    0.998522    3.2D-06   0.972          0 /
+ 0: 
+ 0: -- PVT PROPERTIES OF DRY GAS
+ 0: --
+ 0: --   PGAS     BGAS     VISGAS
+ 0: --   PSIA    RB/MSCF       CP
+ 0: PVDG
+ 0:   15	176.99115	0.010939
+ 0:   50	52.87368	0.010969
+ 0:  100	26.27983	0.011022
+ 0:  150	17.41493	0.011082
+ 0:  200	12.98330	0.011148
+ 0:  250	10.32482	0.01122
+ 0:  300	8.55286		0.011296
+ 0:  350	7.28757		0.011377
+ 0:  400	6.33874		0.011462
+ 0:  450	5.60130		0.011552
+ 0:  500	5.01153		0.011645
+ 0:  550	4.52919		0.011743
+ 0:  600	4.12780		0.011845
+ 0:  650	3.78831		0.011951
+ 0:  700	3.49760		0.012061
+ 0:  750	3.24591		0.012176
+ 0:  800	3.02599		0.012294
+ 0:  850	2.83230		0.012417
+ 0:  900	2.66035		0.012544
+ 0:  950	2.50677		0.012675
+ 0: 1000	2.36888		0.012811
+ 0: 1050	2.24442		0.012951	
+ 0: /
+ 0: 
+ 0: -- DUMMY PVCO
+ 0: PVCO
+ 0: 400   0.0    1.0  1.14   0.000013 0
+ 0: 1000  0.01   1.0  1.14   0.000013 0 /
+ 0: 
+ 0: -- SURFACE DENSITIES OF RESERVOIR FLUIDS
+ 0: GRAVITY
+ 0: --      OIL    WATER    GAS
+ 0:         40      1.0     0.053  /
+ 0: 
+ 0: 
+ 0: -- ROCK COMPRESSIBILITY
+ 0: --                    ROCKNUM REGIONS DEFINED BELOW IN THE REGIONS SECTION)
+ 0: -- PSIA     VP           TR
+ 0: --        MULTIPLIER  MULTIPLIER  (CAN USE TR MULT FOR PRESSURE DEPENDENT PERM)
+ 0: ROCKTAB
+ 0:     15.0  0.996865     1.000
+ 0:    800.0  1.000        1.000
+ 0: /
+ 0:     15.0  0.996865     1.000
+ 0:    800.0  1.000        1.000
+ 0: /
+ 0: 
+ 0: -- OUTPUT CONTROLS FOR PROPS DATA
+ 0: RPTPROPS
+ 0:     SWFN  SGFN  PVTW PVDG  GRAVITY  ROCK   /
+ 0: 
+ 0: 
+ 0: -- *********************END PROPS SECTION ******************************
+ 0: 
+ 0: 
+ 0: REGIONS     ============================================================
+ 0: 
+ 0: EQUALS
+ 0: -- FLUID IN PLACE REGIONS
+ 0:  FIPNUM    1   1 14   1 10   1 1  /
+ 0:  EQLNUM    1  /
+ 0:  FIPNUM    2   1 14   1 10   2 2  /
+ 0:  EQLNUM    2 /
+ 0: /
+ 0: SOLUTION   =============================================================
+ 0: 
+ 0: --DUMMY RSVD
+ 0: RSVD
+ 0: 1000  0.0
+ 0: 10000 0.0 /
+ 0: 1000  0.0
+ 0: 10000 0.0 /
+ 0: 
+ 0: 
+ 0: --    DATUM  DATUM   GWC    GWC    GOC   GOC   RSVD   RVVD    SOLN
+ 0: --    DEPTH  PRESS  DEPTH   PCOW  DEPTH  PCOG  TABLE  TABLE   METH
+ 0: --      1      2       3     4      5      6     7      8      9
+ 0: EQUIL
+ 0:      2000   800    2101   0.0     2101     1*    1     1*     0  /
+ 0:      2100   800    1999    0.0    1999     1*    1     1*     0  /
+ 0: 
+ 0: 
+ 0: RPTSOL
+ 0:  'PRES'  'SWAT'  'SGAS'  'FIP=2'  /
+ 0: 
+ 0: --  =================== END SOLUTION SECTION ============================
+ 0: 
+ 0: 
+ 0: SUMMARY  ===============================================================
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: FGIP
+ 0: FPR
+ 0: FGPT
+ 0: FGPR
+ 0: FWPT
+ 0: FWPR
+ 0: WGPT
+ 0: /
+ 0: WGPR
+ 0: /
+ 0: 
+ 0: WWPT
+ 0: /
+ 0: WWPR
+ 0: /
+ 0: 
+ 0: WBHP
+ 0: /
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE   ===========================================================
+ 0: 
+ 0: -- SET CONTROLS FOR OUTPUT
+ 0: RPTSCHED
+ 0:  'PRES'  'SWAT'  'SGAS'  /
+ 0: RPTRST
+ 0:  PRES SWAT SGAS 'BASIC=2' /
+ 0: 
+ 0: -- WELL SPECIFICATION DATA
+ 0: --     WELL   GROUP LOCATION  BHP   PREFERRED
+ 0: --     NAME   NAME    I  J   DEPTH   PHASE
+ 0: WELSPECS
+ 0:       'P'   'G'    1  1     1*    'GAS'  /
+ 0: /
+ 0: 
+ 0: --  COMPLETION SPECIFICATION DATA
+ 0: --  WELL  -LOCATION-      OPEN/ SAT TRANS  WELL   EFF  SKIN    D     WELL
+ 0: --  NAME    I  J  K1 K2   SHUT  TAB  FACT  DIAM   KH  FACTOR FACTOR DIRECTION
+ 0: 
+ 0: COMPDAT
+ 0:     'P'  1* 1*  2  2  'OPEN'  1*    -1  .0056  -1   -0.0    0.0     1* /
+ 0: /
+ 0: -- PRODUCTION WELL CONTROLS
+ 0: --  WELL   OPEN/  CTRL  OIL   WATER   GAS  LIQU  RES   BHP  THP   VFP   ARTIFICAL
+ 0: --  NAME   SHUT   MODE  RATE   RATE  RATE  RATE  RATE            TABLE   LIFT
+ 0: 
+ 0: WCONPROD
+ 0:    'P' 'OPEN'  'WRAT'   1*    15    1*     1*   1*    25   1*   1*      1*  /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0:   100 /
+ 0: 
+ 0: -- CONVERT TO BHP CONTROL
+ 0: WCONPROD
+ 0:    'P' 'OPEN'  'BHP'   1*    1*    1*     1*   1*    25   1*   1*      1*  /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0:   2*365 /
+ 0: 
+ 0: TSTEP
+ 0:   5*365 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN MPORO
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING DIMENS  
+     4 READING DUALPORO
+     5 READING NMATRIX 
+     6 READING NODPPM  
+     7 READING NODPCO  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            NODPCO HAS NO EFFECT IN ECLIPSE 100                            
+     8 READING WATER   
+     9 READING GAS     
+    10 READING FIELD   
+    11 READING BLACKOIL
+    12 READING ROCKCOMP
+    13 READING EQLDIMS 
+    14 READING TABDIMS 
+    15 READING REGDIMS 
+    16 READING WELLDIMS
+    17 READING START   
+    18 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           DISSOLVED GAS IN LIVE OIL IS REQUESTED, BUT                     
+ @           THE OIL AND GAS PHASES ARE NOT BOTH DECLARED                    
+ @           PRESENT.  THE OPTION IS SWITCHED OFF.                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                 1306 KBYTES                                               
+    19 READING DPGRID  
+    20 READING DXV     
+    21 READING DYV     
+    22 READING EQUALS  
+    23 READING NMATOPTS
+    24 READING INIT    
+    25 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED DZ VALUES COPIED FROM LAYER ABOVE                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED PERMX VALUES COPIED FROM LAYER ABOVE                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED PERMY VALUES COPIED FROM LAYER ABOVE                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED PERMZ VALUES COPIED FROM LAYER ABOVE                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED PORO VALUES COPIED FROM LAYER ABOVE                 
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED DZ VALUES FOR FRACTURE CELLS                        
+ @           COPIED FROM CORRESPONDING MATRIX CELLS                          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED PERMX VALUES FOR FRACTURE CELLS                     
+ @           COPIED FROM CORRESPONDING MATRIX CELLS                          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED PERMY VALUES FOR FRACTURE CELLS                     
+ @           COPIED FROM CORRESPONDING MATRIX CELLS                          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED PERMZ VALUES FOR FRACTURE CELLS                     
+ @           COPIED FROM CORRESPONDING MATRIX CELLS                          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED POROSITY VALUES FOR FRACTURE CELLS                  
+ @           COPIED FROM CORRESPONDING MATRIX CELLS                          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           UNSPECIFIED TOPS VALUES FOR FRACTURE CELLS                      
+ @           COPIED FROM CORRESPONDING MATRIX CELLS                          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           NUMBER OF CELLS IN THE Z-DIRECTION (NDIVIZ)                     
+ @           MUST BE EVEN FOR A DUAL POROSITY RUN                            
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           700 DUAL POROSITY CONNECTIONS FOUND                             
+
+ @--    BUG  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           YWGRID HAS MISCOUNTED ACTIVE CELLS                              
+
+ @--    BUG  AT TIME        0.0   DAYS    ( 1-JAN-2005):
+ @           YWGRID HAS MISCOUNTED ACTIVE CELLS                              
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF     BUGS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (     1).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               2
+ Warnings               1
+ Problems               0
+ Errors                 3
+ Bugs                   2
+ Final cpu       0.00 elapsed       0.00

@@ -1,0 +1,519 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN SORMW
+
+ 0: ------------------------------------------------------------------------
+ 0: --This model tests the E300 2008.2 version SORMW1 feature
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC   ==============================================================
+ 0: 
+ 0: TITLE
+ 0:   Miscibel flooding residual oil saturation /
+ 0: 
+ 0: START
+ 0:   1 JAN 2007  /
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: GAS
+ 0: OIL
+ 0: WATER
+ 0: 
+ 0: DIMENS
+ 0:  10 1 3  /
+ 0: 
+ 0: COMPS
+ 0: 7 /
+ 0: 
+ 0: EQLDIMS
+ 0: 1 200 /
+ 0: 
+ 0: TABDIMS
+ 0: 2 1 2* 2     /
+ 0: 
+ 0: FULLIMP
+ 0: 
+ 0: MISCIBLE
+ 0: 
+ 0: ENDSCALE
+ 0: 
+ 0: UNIFIN
+ 0: UNIFOUT
+ 0: 
+ 0: 
+ 0: GRID      ==========================================================
+ 0: 
+ 0: --Basic grid block sizes
+ 0: 
+ 0: EQUALS
+ 0: DX 500   /
+ 0: DY 1000   /
+ 0: DZ   30   /
+ 0: PORO  0.1 /
+ 0: PERMX 500 /
+ 0: PERMY 500 /
+ 0: PERMZ 300 /
+ 0: TOPS 4000 4* 1 1 /
+ 0: /
+ 0: 
+ 0: 
+ 0: --Properties section-----------------------------------------------
+ 0: 
+ 0: PROPS
+ 0: 
+ 0: PARACHOR
+ 0: /
+ 0: 
+ 0: SORMW1
+ 0:  0.2  /
+ 0:  0.22  /
+ 0: 
+ 0: --Water saturation functions
+ 0: 
+ 0: SWFN
+ 0: 0.16  0      3
+ 0: 0.18  0      2
+ 0: 0.20  0.002  1
+ 0: 0.44  0.090  0.5
+ 0: 0.68  0.330  0.1
+ 0: 0.8   0.540  0.05
+ 0: 1.00  1.000  0.0
+ 0: /
+ 0: 0.16  0      3
+ 0: 0.18  0      2
+ 0: 0.20  0.002  1
+ 0: 0.44  0.090  0.5
+ 0: 0.68  0.330  0.1
+ 0: 0.8   0.540  0.05
+ 0: 1.00  1.000  0.0
+ 0: /
+ 0: 
+ 0: --Gas saturation functions
+ 0: 
+ 0: SGFN
+ 0: 0.00  0.000  0.0
+ 0: 0.04  0.005  0.0
+ 0: 0.12  0.026  0.0
+ 0: 0.24  0.078  0.0
+ 0: 0.36  0.156  0.0
+ 0: 0.48  0.260  0.0
+ 0: 0.60  0.400  0.0
+ 0: 0.72  0.562  0.0
+ 0: 0.84  0.800  0.0
+ 0: /
+ 0: 0.00  0.000  0.0
+ 0: 0.04  0.005  0.0
+ 0: 0.12  0.026  0.0
+ 0: 0.24  0.078  0.0
+ 0: 0.36  0.156  0.0
+ 0: 0.48  0.260  0.0
+ 0: 0.60  0.400  0.0
+ 0: 0.72  0.562  0.0
+ 0: 0.84  0.800  0.0
+ 0: /
+ 0: --Oil saturation functions
+ 0: 
+ 0: SOF3
+ 0: 0.00  0.000  0.000
+ 0: 0.24  0.000  0.000
+ 0: 0.28  0.005  0.005
+ 0: 0.32  0.012  0.012
+ 0: 0.44  0.060  0.060
+ 0: 0.56  0.150  0.150
+ 0: 0.72  0.400  0.400
+ 0: 0.84  0.800  0.800
+ 0: /
+ 0: 0.00  0.000  0.000
+ 0: 0.24  0.000  0.000
+ 0: 0.28  0.005  0.005
+ 0: 0.32  0.012  0.012
+ 0: 0.44  0.060  0.060
+ 0: 0.56  0.150  0.150
+ 0: 0.72  0.400  0.400
+ 0: 0.84  0.800  0.800
+ 0: /
+ 0: --Rock properties
+ 0: 
+ 0: ROCK
+ 0: -- pres    cw
+ 0:    3550  3.5E-6 /
+ 0: 
+ 0: 
+ 0: -- Water properties
+ 0: 
+ 0: PVTW
+ 0: -- pres    bw    cw     vw
+ 0:    3500  1.03  3.0E-6  0.23 /
+ 0: 
+ 0: 
+ 0: -- Standard conditions
+ 0: 
+ 0: STCOND
+ 0: --Temp   Pressure
+ 0:   60     14.7 /
+ 0: 
+ 0: -- Reservoir temperature (deg F)
+ 0: 
+ 0: RTEMP
+ 0:  160 /
+ 0: 
+ 0: 
+ 0: -- Equation of State
+ 0: 
+ 0: EOS
+ 0:    PR  /
+ 0: 
+ 0: -- Modified Peng-Robinson EoS
+ 0: 
+ 0: PRCORR
+ 0: 
+ 0: -- Component names
+ 0: 
+ 0: CNAMES
+ 0:             C1       C3       C6        C10      C15       C20     ASPH   /
+ 0: 
+ 0: -- Reservoir EoS properties
+ 0: 
+ 0: -- ... molecular weights
+ 0: 
+ 0: MW
+ 0:          16.04    44.10    86.18    149.29    206.00    282.00    282.0   /
+ 0: 
+ 0: -- ... critical temperatures (R)
+ 0: 
+ 0: TCRIT
+ 0:         343.00   665.70   913.40   1111.80   1270.00   1380.00  1380.00   /
+ 0: 
+ 0: -- ... critical pressures (psia)
+ 0: 
+ 0: PCRIT
+ 0:         667.80   616.30   436.90    304.00    200.00    162.00   162.00   /
+ 0: 
+ 0: -- ... critical Z-factors
+ 0: 
+ 0: ZCRIT
+ 0:          0.290    0.277    0.264     0.257     0.245     0.235    0.235   /
+ 0: 
+ 0: --  ... accentric factors
+ 0: 
+ 0: ACF
+ 0:          0.013    0.153    0.301     0.489     0.650     0.850    0.850   /
+ 0: 
+ 0: -- ... binary interaction coefficients
+ 0: 
+ 0: BIC
+ 0:             0
+ 0:             0       0
+ 0:             0       0        0
+ 0:          0.05   0.005        0         0
+ 0:          0.05   0.005        0         0         0
+ 0:          0.05   0.005        0         0         0         0            /
+ 0: 
+ 0: -- Specify initial liquid composition
+ 0: 
+ 0: ZMFVD
+ 0:  1000.0   0.50    0.03     0.07      0.20       0.1     0.10     0.00
+ 0: 10000.0   0.50    0.03     0.07      0.20       0.1     0.10     0.00   /
+ 0: 
+ 0: SOLUTION   ============================================================
+ 0: 
+ 0: EQUIL
+ 0: -- zdat  pdat  owc  pcow   goc  pcog  dummy  dummy  Ninit
+ 0:    4000  4000 4160     0  2000     0     1       1    1*   /
+ 0: 
+ 0: RPTRST
+ 0:   PRESSURE SOIL SGAS SWAT XMF YMF  /
+ 0: 
+ 0: 
+ 0: SUMMARY   ============================================================
+ 0: 
+ 0: FGOR
+ 0: FWCT
+ 0: FOPR
+ 0: FOPT
+ 0: FWIR
+ 0: FWIT
+ 0: FVPR
+ 0: FVIR
+ 0: FPR
+ 0: FOSAT
+ 0: FGSAT
+ 0: 
+ 0: WBHP
+ 0:   PROD  WINJ  /
+ 0: 
+ 0: TCPU
+ 0: ELAPSED
+ 0: NEWTON
+ 0: 
+ 0: BSOIL
+ 0:   1  1  1  /
+ 0:   2  1  1  /
+ 0:   3  1  1  /
+ 0:   4  1  1  /
+ 0:   5  1  1  /
+ 0:   6  1  1  /
+ 0:   7  1  1  /
+ 0:   8  1  1  /
+ 0:   9  1  1  /
+ 0:  10  1  1  /
+ 0: /
+ 0: BKRO
+ 0:   1  1  1  /
+ 0:   2  1  1  /
+ 0:   3  1  1  /
+ 0:   4  1  1  /
+ 0:   5  1  1  /
+ 0:   6  1  1  /
+ 0:   7  1  1  /
+ 0:   8  1  1  /
+ 0:   9  1  1  /
+ 0:  10  1  1  /
+ 0: /
+ 0: PERFORMANCE
+ 0: RUNSUM
+ 0: 
+ 0: SCHEDULE   ============================================================
+ 0: 
+ 0: --Define injection and production wells
+ 0: TUNING
+ 0: 1* 5 /
+ 0: /
+ 0: 4* 200 /
+ 0: 
+ 0: WELSPECS
+ 0: -- Well   Group  I0 J0  depth  phase
+ 0:    WINJ   FIELD   1  1    1*    GAS  9* HMIW /
+ 0:    PROD   FIELD  10  1    1*    OIL  /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: -- Well   I  J  K1  K2  Status
+ 0:    WINJ   1  1   1   3   OPEN   /
+ 0:    PROD  10  1   1   3   OPEN   /
+ 0: /
+ 0: 
+ 0: WCONPROD
+ 0: -- Well  Status  Mode  Orat Wrat  Grat  Lrat   Resv   BHP
+ 0:    PROD   OPEN   RESV   1*   1*    1*    1*    5000   500  /
+ 0: /
+ 0: 
+ 0: WELLSTRE
+ 0:    SOLVENT  1  0.  0.0  0.0  0.0  0.0 0 /
+ 0: /
+ 0: 
+ 0: WINJGAS
+ 0: -- WELL   FLUID   STREAM
+ 0: -- NAME   TYPE     NAME
+ 0:    WINJ  STREAM   SOLVENT  /
+ 0: /
+ 0: WCONINJE
+ 0: -- Well  Type  Status  Mode  Surf  Resv   BHP
+ 0:    WINJ   GAS   OPEN  RATE   2000  1*  6400  /
+ 0: /
+ 0: 
+ 0: 
+ 0: TSTEP
+ 0:   1 3 5 9 300*20  /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN SORMW
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING START   
+     4 READING FIELD   
+     5 READING GAS     
+     6 READING OIL     
+     7 READING WATER   
+     8 READING DIMENS  
+     9 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE EQLDIMS  KEYWORD                           
+ @           7 /                                                             
+    10 READING EQLDIMS 
+    11 READING TABDIMS 
+    12 READING FULLIMP 
+    13 READING MISCIBLE
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           KEYWORD ENDSCALE                                                
+ @           ENCOUNTERED WHILE READING SECTION    1 OF KEYWORD MISCIBLE      
+ @           USUALLY CAUSED BY MISSING SLASH ( / )                           
+    14 READING ENDSCALE
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           KEYWORD GRID                                                    
+ @           ENCOUNTERED WHILE READING SECTION    1 OF KEYWORD ENDSCALE      
+ @           USUALLY CAUSED BY MISSING SLASH ( / )                           
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED MNEMONIC UNIFIN   IN KEYWORD ENDSCALE              
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED MNEMONIC UNIFOUT  IN KEYWORD ENDSCALE              
+    15 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                28568 BYTES                                                
+    18 READING EQUALS  
+    19 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           NUMBER OF ACTIVE CELLS IS 30                                    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           ADDITIONAL     0.006 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               286152 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @              58535 CHARACTER VARIABLES USED                               
+    20 READING PARACHOR
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD PARACHOR IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE SORMW1   KEYWORD                           
+ @           /                                                               
+    21 READING SORMW1  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD SORMW1   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE SWFN     KEYWORD                           
+ @            0.2  /                                                         
+ @            0.22  /                                                        
+    22 READING SWFN    
+    23 READING SGFN    
+    24 READING SOF3    
+    25 READING ROCK    
+    26 READING PVTW    
+    27 READING STCOND  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
+ @             60     14.7 /                                                 
+    28 READING RTEMP   
+    29 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE PRCORR   KEYWORD                           
+ @              PR  /                                                        
+    30 READING PRCORR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
+    31 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE MW       KEYWORD                           
+ @                       C1       C3       C6        C10      C15       C20  
+    32 READING MW      
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE TCRIT    KEYWORD                           
+ @                    16.04    44.10    86.18    149.29    206.00    282.00  
+    33 READING TCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               9
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

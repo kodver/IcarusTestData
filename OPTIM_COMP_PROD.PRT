@@ -1,0 +1,600 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN OPTIM_COMP_PROD
+
+ 0: -- Reservoir Optimization simple 5 spot water injection model with
+ 0: -- water production rate constraint.
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: FULLIMP
+ 0: 
+ 0: METRIC
+ 0: 
+ 0: OIL
+ 0: WATER
+ 0: GAS
+ 0: 
+ 0: RESOPT
+ 0: 
+ 0: COMPS
+ 0: 10 /
+ 0: 
+ 0: TABDIMS
+ 0: 1 1 40 40 /
+ 0: 
+ 0: GPTDIMS
+ 0: 2 3 /
+ 0: 
+ 0: DIMENS
+ 0: 10 10 4 /
+ 0: 
+ 0: EQLDIMS
+ 0: 1 20 /
+ 0: 
+ 0: WELLDIMS
+ 0: 6 /
+ 0: 
+ 0: TITLE
+ 0: Reservoir Optimization Simple Example 1
+ 0: 
+ 0: START
+ 0: 1 Jan 1990 /
+ 0: 
+ 0: --Grid section--------------------------------------------------------
+ 0: GRID
+ 0: 
+ 0: EQUALS
+ 0: DX 100.0 /
+ 0: DY 100.0 /
+ 0: DZ 10     /
+ 0: PERMZ  50 /
+ 0: PORO  0.2 /
+ 0: /
+ 0: 
+ 0: PERMX
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*100 5*50
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: 5*50 5*100
+ 0: /
+ 0: 
+ 0: COPY
+ 0: 'PERMX' 'PERMY' /
+ 0: /
+ 0: 
+ 0: TOPS
+ 0: 2202  2145  2105  2080  2072  2080  2105  2145  2202  2242
+ 0: 2170  2113  2073  2049  2041  2049  2073  2113  2170  2210
+ 0: 2147  2090  2050  2026  2018  2026  2050  2090  2147  2197
+ 0: 2133  2077  2037  2013  2005  2013  2037  2077  2133  2193
+ 0: 2129  2072  2032  2008  2000  2008  2032  2072  2129  2189
+ 0: 2133  2077  2037  2013  2005  2013  2037  2077  2133  2180
+ 0: 2147  2090  2050  2026  2018  2026  2050  2090  2147  2197
+ 0: 2170  2113  2073  2049  2041  2049  2073  2113  2170  2210
+ 0: 2202  2145  2105  2080  2072  2080  2105  2145  2202  2250
+ 0: 2232  2175  2135  2110  2112  2120  2125  2165  2242  2250 /
+ 0: 
+ 0: 
+ 0: --Properties section-----------------------------------------------
+ 0: PROPS
+ 0: 
+ 0: KVGEN
+ 0: 0.0053 0.0330 0.72973 0.07679 0.04100
+ 0: 0.0212 0.0121 0.00850 0.05219 0.02019 1 350 /
+ 0: 
+ 0: --Reservoir temperature
+ 0: RTEMP
+ 0: 143 /
+ 0: 
+ 0: --Standard conditions for stock tank and fluid-in-place reporting
+ 0: STCOND
+ 0: 15 1.013 /
+ 0: 
+ 0: EOS
+ 0: SK /
+ 0: 
+ 0: --Next section defines components and the equation of state
+ 0: --Could be generated by PVT and entered as include file
+ 0: 
+ 0: DNGL
+ 0: 776.0
+ 0: 802.0
+ 0: 424.6
+ 0: 547.5
+ 0: 581.1
+ 0: 608.4
+ 0: 640.4
+ 0: 720.5
+ 0: 800.5
+ 0: 803.7 /
+ 0: 
+ 0: CNAMES
+ 0: N2    CO2     C1     C2     C3     HC4    HC5    HC6    HC9    HC21   /
+ 0: 
+ 0: TCRIT
+ 0: 126.28 304.20 190.60 305.40 369.80 419.55 465.49 507.40 594.60 767.53 /
+ 0: 
+ 0: PCRIT
+ 0: 33.940 73.760 46.000 48.830 42.400 37.500 33.700 29.700 28.200 14.000 /
+ 0: 
+ 0: VCRIT
+ 0: 0.0899 0.0939 0.0992 0.1479 0.2028 0.2573 0.3049 0.3701 0.5639 1.4691 /
+ 0: 
+ 0: VCRITVIS
+ 0: 0.1078 0.1127 0.1190 0.1775 0.2433 0.3087 0.3658 0.4441 0.6767 1.7691 /
+ 0: 
+ 0: MW
+ 0: 28.020 44.010 16.040 30.070 44.090 58.120 72.150 86.170 120.27 289.03 /
+ 0: 
+ 0: ACF
+ 0: 0.0400 0.2250 0.0080 0.0980 0.1520 0.1874 0.2403 0.2960 0.4906 1.1832 /
+ 0: 
+ 0: BIC
+ 0: 0.0
+ 0: 0.02  0.12
+ 0: 0.06  0.15   0.0
+ 0: 0.08  0.15 2*0.0
+ 0: 0.08  0.15 3*0.0
+ 0: 0.08  0.15 4*0.0
+ 0: 0.08  0.15 5*0.0
+ 0: 0.08  0.15 6*0.0
+ 0: 0.08  0.15 7*0.0 /
+ 0: 
+ 0: SWFN
+ 0: 0.221  0      0.0
+ 0: 0.250  0.01   0.0
+ 0: 0.300  0.03   0.0
+ 0: 0.400  0.07   0.0
+ 0: 0.500  0.13   0.0
+ 0: 0.547  0.163  0.0
+ 0: 0.570  0.174  0.0
+ 0: 0.582  0.179  0.0
+ 0: 0.614  0.202  0.0
+ 0: 0.681  0.275  0.0
+ 0: 0.731  0.360  0.0
+ 0: 1.000  1.0    0.0 /
+ 0: 
+ 0: SGFN
+ 0: 0.000 0.000  0.0
+ 0: 0.030 0.000  0.0
+ 0: 0.110 0.0245 0.0
+ 0: 0.244 0.0791 0.0
+ 0: 0.307 0.1212 0.0
+ 0: 0.369 0.1805 0.0
+ 0: 0.435 0.2684 0.0
+ 0: 0.459 0.3320 0.0
+ 0: 0.491 0.3701 0.0
+ 0: 0.779 0.6890 0.0 /
+ 0: 
+ 0: SOF3
+ 0: 0.00  0.00000   0.0000
+ 0: 0.269 0.00000   0.0000
+ 0: 0.288 1*        0.0000
+ 0: 0.294 0.00005   1*
+ 0: 0.299 0.00006   1*
+ 0: 0.301 1*        0.0008
+ 0: 0.304 0.00008   1*
+ 0: 0.319 0.00017   1*
+ 0: 0.320 1*        0.0014
+ 0: 0.330 0.00030   1*
+ 0: 0.342 0.00054   1*
+ 0: 0.344 1*        0.0022
+ 0: 0.355 0.00115   1*
+ 0: 0.386 0.00348   1*
+ 0: 0.410 1*        0.0082
+ 0: 0.418 0.0088    1*
+ 0: 0.430 0.01328   1*
+ 0: 0.453 0.01831   1*
+ 0: 0.472 1*        0.0206
+ 0: 0.500 0.035     1*
+ 0: 0.535 1*        0.0514
+ 0: 0.600 0.095     1*
+ 0: 0.669 1*        0.3650
+ 0: 0.700 0.22      1*
+ 0: 0.749 1*        0.760
+ 0: 0.750 0.47      1*
+ 0: 0.779 1.00      1.000 /
+ 0: 
+ 0: ROCK
+ 0: 459 0.00005 /
+ 0: 
+ 0: PVTW
+ 0: 459 1.0 0.00004 0.31 0.0 /
+ 0: 
+ 0: --Initial composition with respect to depth
+ 0: ZMFVD
+ 0:   100.0 0.0053 0.033  0.72973 0.07679 0.041
+ 0:         0.0212 0.0121 0.0085  0.05219 0.02019
+ 0: 10000.0 0.0053 0.033  0.72973 0.07679 0.041
+ 0:         0.0212 0.0121 0.0085  0.05219 0.02019 /
+ 0: 
+ 0: --Only water density required.
+ 0: --Oil and gas viscosities and densities will be calculated
+ 0: --by equation of state.
+ 0: DENSITY
+ 0: 1* 1000.00 1* /
+ 0: 
+ 0: --Solution section------------------------------------------------------
+ 0: SOLUTION
+ 0: 
+ 0: RPTSOL
+ 0: --       1 2 3 4 0 0 2 1 /
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           END OF FILE ENCOUNTERED WHILE READING SECTION    1              
+ @           OF KEYWORD RPTSOL                                               
+ @           COMMON CAUSES ARE MISSING /, CORRUPTED FILE ETC.                
+ 0: POIL SOIL SWAT SGAS RESTART FIP/
+ 0: POIL SOIL SWAT SGAS RESTART FIP/
+ 0: 
+ 0: GPTABLEN
+ 0: 1 9 9
+ 0: -- C7+  CO2 N2 C1  C2       C3    C4-6  C71  C72  C73
+ 0:    0.0  0.00 0.00 0.00 0.00033  0.05  0.1   1.0  1.0  1.0 1.0
+ 0:         0.01 0.01 0.01 0.05000  0.02  0.01  0.0  0.0  0.0 0.0
+ 0:   0.2  0.00 0.00 0.00 0.00034  0.05  0.1   1.0  1.0  1.0 1.0
+ 0:         0.01 0.01 0.01 0.05000  0.02  0.01  0.0  0.0  0.0 0.0
+ 0: /
+ 0: 
+ 0: GPTABLE
+ 0: 2 9 9
+ 0: -- C7+  CO2 N2 C1  C2       C3    C4-6  C71  C72  C73
+ 0:    0.0  0.00 0.00 0.00 0.00031  0.05  0.10  1.0  1.0  1.0 1.0
+ 0:    0.2  0.00 0.00 0.00 0.00032  0.05  0.10  1.0  1.0  1.0 1.0
+ 0: /
+ 0: 
+ 0: FIELDSEP
+ 0: 1 15 1.03 3* 1 /
+ 0: /
+ 0: 
+ 0: EQUIL
+ 0: 2300 459 2240 0 1900 0 1 1 0 /
+ 0: 
+ 0: --Request items for summary files---------------------------------------
+ 0: SUMMARY
+ 0: 
+ 0: ALL
+ 0: 
+ 0: BSOIL
+ 0: 1 1 1 /
+ 0: /
+ 0: 
+ 0: BSOIL
+ 0: 10 10 4 /
+ 0: /
+ 0: 
+ 0: BPRES
+ 0: 1 1 1 /
+ 0: /
+ 0: 
+ 0: BPRES
+ 0: 10 10 4 /
+ 0: /
+ 0: 
+ 0: --Schedule section------------------------------------------------------
+ 0: RPTONLY
+ 0: RUNSUM
+ 0: SCHEDULE
+ 0: 
+ 0: SAVEEND
+ 0: 
+ 0: MESSAGE
+ 0: Schedule....
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: --Output requests for schedule
+ 0: RPTSCHED
+ 0: PRESSURE PSAT SOIL VGAS /
+ 0: 
+ 0: --Define gas plant with NGLs
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PSAT             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+ 0: SEPCOND
+ 0: S1 GA 1 15 1.03 3* 1 /
+ 0: /
+ 0: 
+ 0: --Define injection and production wells
+ 0: WELSPECS
+ 0: I1 Field 1 1 1* WAT /
+ 0: I2 Field 1 10 1* WAT /
+ 0: I3 Field 10 1 1* WAT /
+ 0: I4 Field 10 10 1* WAT /
+ 0: P1 Field 5 5 1* OIL /
+ 0: /
+ 0: 
+ 0: WSEPCOND
+ 0: P1 S1 /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: I1 1 1 3 3 1* 1 /
+ 0: I2 1 10 3 3 1* 1 /
+ 0: I3 10 1 3 3 1* 1 /
+ 0: I4 10 10 3 3 1* 1 /
+ 0: P1 2*  2 2 1* 1 /
+ 0: /
+ 0: 
+ 0: WCONPROD
+ 0:   P1 OPEN ORAT  1500 /
+ 0: /
+ 0: 
+ 0: TSCRIT
+ 0: 1 /
+ 0: 
+ 0: WCONINJE
+ 0:   'I1' 'WATER' 'OPEN' 'RATE' 1000 /
+ 0:   'I2' 'WATER' 'OPEN' 'RATE' 1000 /
+ 0:   'I3' 'WATER' 'OPEN' 'RATE' 1000 /
+ 0:   'I4' 'WATER' 'OPEN' 'RATE' 1000 /
+ 0:  /
+ 0: 
+ 0: TSTEP
+ 0:  24*30 /
+ 0: 
+ 0: ------------------------------------------------
+ 0: OPTIMIZE
+ 0: ------------------------------------------------
+ 0: 
+ 0: RPTOPT
+ 0:   'SEPARATE' /
+ 0: 
+ 0: OPTFUNC
+ 0:   FOPT /
+ 0: /
+ 0: 
+ 0: OPTDIMS
+ 0:   15 25 /
+ 0: 
+ 0: OPTPARS
+ 0: 'WWIR' 'I1' /
+ 0: 'WWIR' 'I2' /
+ 0: 'WWIR' 'I3' /
+ 0: 'WWIR' 'I4' /
+ 0: /
+ 0: 
+ 0: OPTCONS
+ 0: 'FWPR' 'FIELD' '<' 50  /
+ 0: /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN OPTIM_COMP_PROD
+     1 READING RUNSPEC 
+     2 READING FULLIMP 
+     3 READING METRIC  
+     4 READING OIL     
+     5 READING WATER   
+     6 READING GAS     
+     7 READING RESOPT  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           RESOPT   IS NOT AVAILABLE IN ECLIPSE 100                        
+ @           AND HAS BEEN IGNORED                                            
+     8 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE TABDIMS  KEYWORD                           
+ @           10 /                                                            
+     9 READING TABDIMS 
+    10 READING GPTDIMS 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD GPTDIMS  IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE DIMENS   KEYWORD                           
+ @           2 3 /                                                           
+    11 READING DIMENS  
+    12 READING EQLDIMS 
+    13 READING WELLDIMS
+    14 READING TITLE   
+    15 READING START   
+    16 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @               163968 BYTES                                                
+    18 READING EQUALS  
+    19 READING PERMX   
+    20 READING COPY    
+    21 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @              300 VALUES NOT DEFINED IN BOX (  1- 10,  1- 10,  1-  4)      
+ @           OF KEYWORD TOPS                                                 
+    22 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NUMBER OF ACTIVE CELLS IS 400                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           ADDITIONAL     0.078 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               761704 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @              58563 CHARACTER VARIABLES USED                               
+    23 READING KVGEN   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD KVGEN    IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
+ @           0.0053 0.0330 0.72973 0.07679 0.04100                           
+ @           0.0212 0.0121 0.00850 0.05219 0.02019 1 350 /                   
+    24 READING RTEMP   
+    25 READING STCOND  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
+ @           15 1.013 /                                                      
+    26 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+    27 READING SK /    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD SK /     IN PROPERTY DATA                  
+    28 READING DNGL    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD DNGL     IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
+ @           776.0                                                           
+ @           802.0                                                           
+ @           424.6                                                           
+ @           547.5                                                           
+ @           581.1                                                           
+ @           608.4                                                           
+ @           640.4                                                           
+ @           720.5                                                           
+ @           803.7 /                                                         
+    29 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+    30 READING N2    CO
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD N2    CO IN PROPERTY DATA                  
+    31 READING TCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
+ @           126.28 304.20 190.60 305.40 369.80 419.55 465.49 507.40 594.60 7
+    32 READING PCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               7
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

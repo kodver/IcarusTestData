@@ -1,0 +1,273 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN WAG-MIXED-WET
+
+ 0: -------
+ 0: RUNSPEC
+ 0: -------
+ 0: 
+ 0: TITLE
+ 0: Mixed Wet WAG Injection Core Model
+ 0: 
+ 0: NOECHO
+
+ ******** END OF INPUT DATA FOR RUN WAG-MIXED-WET
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING NOECHO  
+     4 READING START   
+     5 READING LAB     
+     6 READING OIL     
+     7 READING WATER   
+     8 READING GAS     
+     9 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE DIMENS   KEYWORD                           
+ @           10 /                                                            
+    10 READING DIMENS  
+    11 READING TABDIMS 
+    12 READING EQLDIMS 
+    13 READING WELLDIMS
+    14 READING FMTIN   
+    15 READING FMTOUT  
+    16 READING FMTSAVE 
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD FMTSAVE  IN RUNSPEC DATA                   
+    17 READING UNIFOUT 
+    18 READING UNIFOUTS
+    19 READING NODPCDT 
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD NODPCDT  IN RUNSPEC DATA                   
+    20 READING ENDSCALE
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED MNEMONIC SATOPTS  IN KEYWORD ENDSCALE              
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED MNEMONIC HYSTER   IN KEYWORD ENDSCALE              
+    21 READING NOMIX   
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           NOMIX    IS NOT AVAILABLE IN ECLIPSE 100                        
+ @           AND HAS BEEN IGNORED                                            
+    22 READING AIM     
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           AIM      METHOD IS NOT AVAILABLE IN ECLIPSE 100                 
+ @           CHOICES ARE FULLY IMPLICIT (DEFAULT) OR IMPES                   
+    23 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                55616 BYTES                                                
+    27 READING INIT    
+    28 READING DX      
+    29 READING DY      
+    30 READING DZ      
+    31 READING NTG     
+    32 READING TOPS    
+    33 READING PERMX   
+    34 READING PERMY   
+    35 READING PERMZ   
+    36 READING PORO    
+    37 READING RPTGRID 
+    38 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+1                             **********************************************************************   1
+  DX       AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS    CM           
+
+     CONSTANT ARRAY =  10.0000         CM                                                                                            
+1                             **********************************************************************   2
+  DZ       AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS    CM           
+
+     CONSTANT ARRAY =  2.00000         CM                                                                                            
+1                             **********************************************************************   3
+  PERMX    AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+     CONSTANT ARRAY =  500.000       MDARCY                                                                                          
+1                             **********************************************************************   4
+  PERMY    AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+     CONSTANT ARRAY =  500.000       MDARCY                                                                                          
+1                             **********************************************************************   5
+  PERMZ    AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+     CONSTANT ARRAY =  500.000       MDARCY                                                                                          
+1                             **********************************************************************   6
+  PORO     AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  0.25000                                                                                                       
+1                             **********************************************************************   7
+  NTG      AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  1.00000                                                                                                       
+1                             **********************************************************************   8
+  TOPS     AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS    CM           
+
+     CONSTANT ARRAY =  0.00000         CM                                                                                            
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           NUMBER OF ACTIVE CELLS IS 100                                   
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           ADDITIONAL     0.028 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               394332 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @              58542 CHARACTER VARIABLES USED                               
+    39 READING ZI      
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD ZI       IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
+ @           0.0069 0.0314 0.528 0.1515 0.0703                               
+ @           0.0867 0.0529 0.034 0.0238 0.0145                               
+ @           /                                                               
+    40 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+    41 READING SRK     
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD SRK      IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
+ @           /                                                               
+    42 READING RTEMP   
+    43 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+    44 READING N2      
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD N2       IN PROPERTY DATA                  
+    45 READING CO2     
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD CO2      IN PROPERTY DATA                  
+    46 READING C1      
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD C1       IN PROPERTY DATA                  
+    47 READING HC23    
+
+ @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-2007):
+ @           UNRECOGNISED KEYWORD HC23     IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               6
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

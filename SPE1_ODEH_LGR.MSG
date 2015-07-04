@@ -1,0 +1,168 @@
+<eclipse>
+<message date="19/10/1982" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="19/10/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+     334760 BYTES                                                        
+</message>
+<message date="19/10/1982" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="19/10/1982" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="19/10/1982" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<comment date="19/10/1982" time="0.00000000000000">
+ NO NON-NEIGHBOUR CONNECTIONS IN GLOBAL GRID                             
+</comment>
+<message date="19/10/1982" time="0.00000000000000">
+ LGR WORKSPACE USED:                                                     
+     3191 INTEGERS,      828 REALS   (TOTAL    19388 BYTES)              
+ LGR WORKSPACE ALLOCATED:                                                
+     3201 INTEGERS,      829 REALS   (TOTAL    19436 BYTES)              
+ MINIMUM POSSIBLE RUNSPEC VALUES IN LGR FOR THIS RUN ARE:                
+ MAXLGR  =    1     MAXCLS  =     67                                     
+ NOTE: NO. OF CELLS IN ANY LOCAL GRID CANNOT EXCEED MAXCLS               
+</message>
+<message date="19/10/1982" time="0.00000000000000">
+ NUMBER OF ACTIVE GLOBAL CELLS IS 300                                    
+ NUMBER OF ACTIVE  LOCAL CELLS IS 64                                     
+  TOTAL NUMBER OF ACTIVE CELLS IS 364                                    
+</message>
+<message date="19/10/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+       1221 KBYTES                                                       
+</message>
+<message date="19/10/1982" time="0.00000000000000">
+    58564 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="19/10/1982" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC BDENSITY         IN DATA                          
+ FOR KEYWORD RPTPROPS IS IGNORED                                         
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+ INCONSISTENT END POINTS IN SATURATION TABLE   1                         
+ THE MAXIMUM GAS SATURATION (1.0000)                                     
+ PLUS THE CONNATE WATER SATURATION (0.1200)                              
+ MUST NOT EXCEED 1.0                                                     
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   6531.94138 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.01230                              
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   6842.28621 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.07111                              
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   7152.63103 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.12539                              
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   7462.97586 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.17567                              
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   7773.32069 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.22244                              
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   8083.66552 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.26608                              
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   8394.01034 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.30695                              
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   8704.35517 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.34534                              
+</warning>
+<warning date="19/10/1982" time="0.00000000000000">
+  NEGATIVE COMPRESSIBILITY FOUND IN GAS                                  
+  PRESSURE TABLE     1 AND OIL PRESSURE                                  
+  TABLE     1 AT A SAMPLE PRESSURE VALUE                                 
+   9014.70000 . ADJUST SATURATED FLUID                                   
+  PROPERTY VALUES AT THIS PRESSURE.                                      
+  NEGATIVE COMPRESSIBILITIES OCCUR                                       
+  FOR GAS SATURATIONS LESS THAN     0.38150                              
+</warning>
+<message date="19/10/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SCHEDULE SECTION IS                  
+       1598 KBYTES                                                       
+</message>
+<warning date="19/10/1982" time="0.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL INJECTOR                        
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS  100000.   PSIA                
+</warning>
+<problem date="11/2/1983" time="115.53650783860047">
+ NON-LINEAR EQUATION CONVERGENCE FAILURE                                 
+ IN LOCAL GRID A                                                         
+ ITERATION LIMIT REACHED - TIME STEP CHOPPED FROM  10.12                 
+</problem>
+<message date="14/12/1986" time="1460.00000000000000">
+ ******************************************                              
+ * WELL PRODUCER HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME   1460.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<warning date="17/10/1991" time="3285.00000000000000">
+ UNRECOGNISED MNEMONIC SWAT             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="17/10/1991" time="3285.00000000000000">
+ UNRECOGNISED MNEMONIC SGAS             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<message date="16/10/1992" time="3650.00000000000000">
+ RESTART FILE WRITTEN   REPORT    10                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+</eclipse>

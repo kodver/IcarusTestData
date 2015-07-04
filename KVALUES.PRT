@@ -1,0 +1,579 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN KVALUES
+
+ 0: ------------------------------------------------------------------------
+ 0: -->Example of use of K-values for phase equilbrium
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: --RUNSPEC section-------------------------------------------------------
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: --Request the FIELD unit set
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: --Oil water and gas are present
+ 0: 
+ 0: OIL
+ 0: WATER
+ 0: GAS
+ 0: 
+ 0: --IMPES solution method
+ 0: 
+ 0: --IMPES
+ 0: FULLIMP
+ 0: 
+ 0: --Nine components in study ( plus water )
+ 0: 
+ 0: COMPS
+ 0: 9 /
+ 0: 
+ 0: --Peng-Robinson equation of state to be used
+ 0: 
+ 0: EOS
+ 0: PR /
+ 0: 
+ 0: KVALUES
+ 0: 
+ 0: MISCIBLE
+ 0: 
+ 0: --Grid is 4 by 4 by 4 cells
+ 0: 
+ 0: DIMENS
+ 0: 4 4 4 /
+ 0: 
+ 0: --Only one saturation and pressure table region, up to 40 rows in each
+ 0: 
+ 0: TABDIMS
+ 0: 1 1 40 40 /
+ 0: 
+ 0: EQLDIMS
+ 0: 1 20 /
+ 0: 
+ 0: --Two wells, each with two completions
+ 0: 
+ 0: WELLDIMS
+ 0: 5 1* /
+ 0: 
+ 0: --Grid section--------------------------------------------------------
+ 0: 
+ 0: GRID
+ 0: 
+ 0: --Basic grid block sizes
+ 0: 
+ 0: DX
+ 0: 64*293.3 /
+ 0: 
+ 0: DY
+ 0: 64*293.3 /
+ 0: 
+ 0: DZ
+ 0: 32*30 32*50 /
+ 0: 
+ 0: --Cell top depths - only first layer specified
+ 0: 
+ 0: TOPS
+ 0: 16*7315 /
+ 0: 
+ 0: --Rock porosity and permeability
+ 0: 
+ 0: PORO
+ 0: 64*0.13  /
+ 0: 
+ 0: PERMX
+ 0: 64*100 /
+ 0: 
+ 0: PERMY
+ 0: 64*100 /
+ 0: 
+ 0: PERMZ
+ 0: 64*100 /
+ 0: 
+ 0: --Properties section-----------------------------------------------
+ 0: 
+ 0: PROPS
+ 0: 
+ 0: PARACHOR
+ 0: /
+ 0: 
+ 0: -- KVTABLE for ECLIPSE 300
+ 0: 
+ 0: -- Fluid is VAPOUR Phase at temperature of   200.00000 Deg F
+ 0: -- Psat at   4529.92484 PSIA
+ 0: 
+ 0: KVTABLE
+ 0:  500.0 4.1792 15.844 9.2278 2.4155 1.106 0.3343 0.0271 0.00116 0.00000654
+ 0:  614.5 3.4841 12.743 7.5329 2.0498 0.963 0.3013 0.0264 0.00126 0.00000854
+ 0:  729.2 3.0090 10.621 6.3747 1.8020 0.868 0.2810 0.0266 0.00142 0.0000114
+ 0:  843.7 2.6643  9.078 5.5334 1.6242 0.803 0.2686 0.0275 0.00163 0.0000157
+ 0:  958.3 2.4034  7.905 4.8947 1.4913 0.755 0.2613 0.0288 0.00190 0.0000218
+ 0: 1072.9 2.1993  6.985 4.3934 1.3890 0.721 0.2578 0.0307 0.00225 0.0000305
+ 0: 1302.0 1.9020  5.632 3.6571 1.2442 0.678 0.2588 0.0357 0.00320 0.0000608
+ 0: 1532.5 1.6972  4.686 3.1424 1.1493 0.657 0.2673 0.0426 0.00466 0.00012
+ 0: 1760.4 1.5488  3.989 2.7623 1.0849 0.649 0.2815 0.0517 0.00683 0.00025
+ 0: 1989.5 1.4374  3.455 2.4699 1.0405 0.652 0.3004 0.0633 0.01005 0.00049
+ 0: 2218.7 1.3515  3.034 2.2380 1.0098 0.661 0.3235 0.0779 0.01473 0.00095
+ 0: 2447.9 1.2839  2.694 2.0491 0.9889 0.675 0.3503 0.0959 0.02143 0.00183
+ 0: 2677.0 1.2298  2.415 1.8922 0.9751 0.692 0.3808 0.1181 0.03088 0.00341
+ 0: 2906.2 1.1860  2.183 1.7592 0.9665 0.713 0.4147 0.1449 0.04401 0.00622
+ 0: 3135.4 1.1500  1.986 1.6447 0.9618 0.736 0.4521 0.1772 0.06202 0.01106
+ 0: 3364.5 1.1202  1.817 1.5444 0.9601 0.761 0.4930 0.2160 0.08647 0.01924
+ 0: 3593.7 1.0953  1.670 1.4550 0.9608 0.787 0.5378 0.2626 0.11951 0.03283
+ 0: 3822.9 1.0742  1.540 1.3738 0.9632 0.815 0.5873 0.3189 0.16428 0.05530
+ 0: 4052.0 1.0560  1.422 1.2978 0.9673 0.844 0.6428 0.3886 0.22610 0.09297
+ 0: 4281.2 1.0399  1.311 1.2236 0.9730 0.877 0.7081 0.4789 0.31576 0.15939
+ 0: 4510.4 1.0243  1.196 1.1436 0.9810 0.916 0.7933 0.6111 0.46402 0.29530
+ 0: 4625.0 1.0220  1.181 1.1341 0.9819 0.921 0.8046 0.6300 0.48725 0.31966
+ 0: 4854.1 1.0200  1.174 1.1299 0.9821 0.924 0.8094 0.6384 0.49894 0.33296
+ 0: 5083.3 1.0182  1.167 1.1260 0.9823 0.927 0.8137 0.6462 0.50971 0.34538
+ 0: 5312.5 1.0165  1.161 1.1226 0.9826 0.929 0.8178 0.6533 0.51964 0.35698
+ 0: 5541.6 1.0151  1.156 1.1194 0.9828 0.932 0.8215 0.6598 0.52884 0.36785
+ 0: 5770.8 1.0137  1.151 1.1165 0.9830 0.934 0.8249 0.6659 0.53737 0.37804
+ 0: 6000.0 1.0125  1.146 1.1139 0.9832 0.936 0.8280 0.6715 0.54531 0.38760 /
+ 0: 
+ 0: --Reservoir temperature
+ 0: 
+ 0: RTEMP
+ 0: 200 /
+ 0: 
+ 0: --Standard conditions
+ 0: 
+ 0: STCOND
+ 0: 60 14.7 /
+ 0: 
+ 0: --Mnemonics for the nine components
+ 0: 
+ 0: CNAMES
+ 0: CO2  N2    C1
+ 0: C2   C3    C4-6
+ 0: C7+i C7+ii C7+iii /
+ 0: 
+ 0: --Critical temperatures and pressures
+ 0: 
+ 0: TCRIT
+ 0:  547.56   227.16  335.88
+ 0:  549.72   665.82  713.16
+ 0: 1030.50  1134.36 1552.68 /
+ 0: 
+ 0: PCRIT
+ 0: 1071.3  492.3  670.1
+ 0:  708.3  617.2  498.2
+ 0:  367.2  245.4  124.9 /
+ 0: 
+ 0: --Critical Z-factors used in the Lorentz-Bray-Clark viscosity correlatio
+ 0: 
+ 0: ZCRIT
+ 0: 0.288 0.285 0.283
+ 0: 0.259 5*0.23 /
+ 0: 
+ 0: --Molcular weights
+ 0: 
+ 0: MW
+ 0:  44.01 28.01 16.04
+ 0:  30.07 44.10 67.28
+ 0: 110.9 170.9 282.10 /
+ 0: 
+ 0: --Acentric factors
+ 0: 
+ 0: ACF
+ 0: 0.225 0.040 0.013
+ 0: 0.098 0.152 0.234
+ 0: 0.332 0.495 0.833 /
+ 0: 
+ 0: --Binary interaction coefficients ( lower triangular part )
+ 0: 
+ 0: BIC
+ 0:   -0.02
+ 0:    0.1    0.036
+ 0:    0.13   0.05    0.0
+ 0:    0.135  0.08    0.0     0.0
+ 0:    0.1277 0.1002  0.09281 0.0     0.0
+ 0:    0.1    0.1     0.0     0.00385 0.00385 0.0
+ 0:    0.1    0.1     0.0     0.00630 0.00630 0.0     0.0
+ 0:    0.1    0.1     0.14772 0.00600 0.00600 0.0     0.0     0.0  /
+ 0: 
+ 0: --Water saturation functions
+ 0: 
+ 0: SWFN
+ 0: 0.16  0      50
+ 0: 0.18  0      41
+ 0: 0.20  0.002  32
+ 0: 0.40  0.066  7.0
+ 0: 0.60  0.227  2.1
+ 0: 0.80  0.540  0.5
+ 0: 1.00  1.000  0.0 /
+ 0: 
+ 0: --Gas saturation functions
+ 0: 
+ 0: SGFN
+ 0: 0.00  0.000  0.0
+ 0: 0.04  0.005  0.0
+ 0: 0.20  0.058  0.0
+ 0: 0.40  0.187  0.0
+ 0: 0.60  0.400  0.0
+ 0: 0.80  0.680  0.0
+ 0: 0.84  0.740  0.0
+ 0: /
+ 0: 
+ 0: --Oil saturation functions
+ 0: 
+ 0: SOF3
+ 0: 0.00  0.000  0.000
+ 0: 0.20  0.000  0.000
+ 0: 0.40  0.040  0.040
+ 0: 0.60  0.196  0.196
+ 0: 0.80  0.650  0.650
+ 0: 0.84  0.800  0.800 /
+ 0: 
+ 0: --Rock and water pressure data
+ 0: 
+ 0: ROCK
+ 0: 3550 0.000004 /
+ 0: 
+ 0: WATERTAB
+ 0:     14.7 1.0042   0.70
+ 0:    150.0 1.0037   0.70
+ 0:    220.0 1.0035   0.70
+ 0:    300.0 1.0033   0.70
+ 0:    500.0 1.0025   0.70
+ 0:    750.0 1.0018   0.70
+ 0:   1100.0 1.00063  0.70
+ 0:   1500.0 0.9994   0.70
+ 0:   2250.0 0.9969   0.70
+ 0:   3000.0 0.9945   0.70
+ 0:   4500.0 0.9897   0.70
+ 0:   6000.0 0.9849   0.70
+ 0:   7500.0 0.9802   0.70
+ 0:   9000.0 0.9754   0.70
+ 0:  10000.0 0.9707   0.70 /
+ 0: 
+ 0: --Initial composition with respect to depth
+ 0: 
+ 0: ZMFVD
+ 0: 1000.0  0.0121 0.0194 0.6599 0.0869 0.0591 0.0967 0.0472 0.0153 0.0034 /
+ 0: 
+ 0: --Surface density of water
+ 0: 
+ 0: DENSITY
+ 0: 1* 63.0 1* /
+ 0: 
+ 0: --Solution section------------------------------------------------------
+ 0: 
+ 0: SOLUTION
+ 0: 
+ 0: --Request initial state output
+ 0: 
+ 0: RPTSOL
+ 0: PRESSURE SOIL SWAT /
+ 0: 
+ 0: --Equilibration data - initial pressure 3500 psi at 7500, which is
+ 0: --the oil-water and the oil-gas contact depth
+ 0: 
+ 0: EQUIL
+ 0: 7300 3500 7500 0 7500 0 1 1 0  /
+ 0: 
+ 0: SUMMARY
+ 0: 
+ 0: FGOR
+ 0: 
+ 0: FOPR
+ 0: 
+ 0: FGPR
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: --Schedule section-----------------------------------------------------
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE
+ 0: 
+ 0: SEPCOND
+ 0: Sepa Field 1  65 815  /
+ 0: Sepa Field 2  65  65  /
+ 0: Sepa Field 3  45 14.7 /
+ 0: Sepb Field 1  65 815  /
+ 0: Sepb Field 2  65  65  /
+ 0: Sepb Field 3  45 14.7 /
+ 0: /
+ 0: 
+ 0: --Define injection and production wells
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --P1 Field 1 1 7315 Sepa /
+ 0: --P2 Field 2 2 7315 Sepa /
+ 0: --P3 Field 3 3 7315 Sepb /
+ 0: --P4 Field 4 4 7315 Sepb /
+ 0: WELSPECS
+ 0: P1 Field 1 1 7315 GAS /
+ 0: P2 Field 2 2 7315 GAS /
+ 0: P3 Field 3 3 7315 GAS /
+ 0: P4 Field 4 4 7315 GAS /
+ 0: /
+ 0: 
+ 0: --2000a uses WELSEPC to associate separator with wells
+ 0: WSEPCOND
+ 0: P1  Sepa /
+ 0: P2  Sepa /
+ 0: P3  Sepb /
+ 0: P4  Sepb /
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --P1 1 1 4 4 1 /
+ 0: --P2 2 2 4 4 1 /
+ 0: --P3 3 3 4 4 1 /
+ 0: --P4 4 4 4 4 1 /
+ 0: COMPDAT
+ 0: P1 1 1 4 4 OPEN 1 /
+ 0: P2 2 2 4 4 OPEN 1 /
+ 0: P3 3 3 4 4 OPEN 1 /
+ 0: P4 4 4 4 4 OPEN 1 /
+ 0: /
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --P1 Gr 2* /
+ 0: --P2 Gr 2* /
+ 0: --P3 Gr 2* /
+ 0: --P4 Gr 2* /
+ 0: WCONPROD
+ 0: P1 OPEN GRUP 2* /
+ 0: P2 OPEN GRUP 2* /
+ 0: P3 OPEN GRUP 2* /
+ 0: P4 OPEN GRUP 2* /
+ 0: /
+ 0: 
+ 0: --2000a WELLGR is for back-compatibility, prefered keyword is WGRUPCON
+ 0: --WELLGR
+ 0: --P1 Y 2.5 ALL /
+ 0: --P2 Y 7.5 ALL /
+ 0: --P3 Y 2.5 ALL /
+ 0: --P4 Y 7.5 ALL /
+ 0: WGRUPCON
+ 0: P1 YES 2.5 ALL /
+ 0: P2 YES 7.5 ALL /
+ 0: P3 YES 2.5 ALL /
+ 0: P4 YES 7.5 ALL /
+ 0: /
+ 0: 
+ 0: --2000a GRUPPROD is for back-compatibility, prefered keyword is GCONPROD
+ 0: --GRUPPROD
+ 0: --Field Ga 2* 10 /
+ 0: GCONPROD
+ 0: Field GRAT 2* 10 /
+ 0: /
+ 0: 
+ 0: RPTSCHED
+ 0: PRESSURE SOIL PSAT /
+ 0: 
+ 0: --Time steps to 9 years
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PSAT             IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+ 0: TSTEP
+ 0: 9*365 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN KVALUES
+     1 READING RUNSPEC 
+     2 READING FIELD   
+     3 READING OIL     
+     4 READING WATER   
+     5 READING GAS     
+     6 READING FULLIMP 
+     7 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
+ @           9 /                                                             
+     8 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD EOS      IN RUNSPEC DATA                   
+     9 READING PR /    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD PR /     IN RUNSPEC DATA                   
+    10 READING KVALUES 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD KVALUES  IN RUNSPEC DATA                   
+    11 READING MISCIBLE
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           KEYWORD DIMENS                                                  
+ @           ENCOUNTERED WHILE READING SECTION    1 OF KEYWORD MISCIBLE      
+ @           USUALLY CAUSED BY MISSING SLASH ( / )                           
+    12 READING DIMENS  
+    13 READING TABDIMS 
+    14 READING EQLDIMS 
+    15 READING WELLDIMS
+    16 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                32144 BYTES                                                
+    17 READING DX      
+    18 READING DY      
+    19 READING DZ      
+    20 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @               48 VALUES NOT DEFINED IN BOX (  1-  4,  1-  4,  1-  4)      
+ @           OF KEYWORD TOPS                                                 
+    21 READING PORO    
+    22 READING PERMX   
+    23 READING PERMY   
+    24 READING PERMZ   
+    25 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NUMBER OF ACTIVE CELLS IS 64                                    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ADDITIONAL     0.007 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               320808 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @              58556 CHARACTER VARIABLES USED                               
+    26 READING PARACHOR
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD PARACHOR IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE KVTABLE  KEYWORD                           
+ @           /                                                               
+    27 READING KVTABLE 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD KVTABLE  IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
+ @            500.0 4.1792 15.844 9.2278 2.4155 1.106 0.3343 0.0271 0.00116 0
+ @            614.5 3.4841 12.743 7.5329 2.0498 0.963 0.3013 0.0264 0.00126 0
+ @            729.2 3.0090 10.621 6.3747 1.8020 0.868 0.2810 0.0266 0.00142 0
+ @            843.7 2.6643  9.078 5.5334 1.6242 0.803 0.2686 0.0275 0.00163 0
+ @            958.3 2.4034  7.905 4.8947 1.4913 0.755 0.2613 0.0288 0.00190 0
+ @           1072.9 2.1993  6.985 4.3934 1.3890 0.721 0.2578 0.0307 0.00225 0
+ @           1302.0 1.9020  5.632 3.6571 1.2442 0.678 0.2588 0.0357 0.00320 0
+ @           1532.5 1.6972  4.686 3.1424 1.1493 0.657 0.2673 0.0426 0.00466 0
+ @           6000.0 1.0125  1.146 1.1139 0.9832 0.936 0.8280 0.6715 0.54531 0
+    28 READING RTEMP   
+    29 READING STCOND  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
+ @           60 14.7 /                                                       
+    30 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               6
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

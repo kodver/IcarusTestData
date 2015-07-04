@@ -1,0 +1,1098 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN CASE3T
+
+ 0: ------------------------------------------------------------------------
+ 0: -- Version for comparison of Blackoil/Thermal simulations    --
+ 0: --                                                                    --
+ 0: -- CASE3E100  E100 Blackoil                                           --
+ 0: -- CASE3B     E300 Blackoil                                           --
+ 0: -- CASE3T     E300 Blackoil + Thermal                                 --
+ 0: --                                                                    --
+ 0: --                                                                    --
+ 0: -- Last modified January 2004                                         --
+ 0: --                                                                    --
+ 0: -- Please note, this data set is intended to illustrate the way in    --
+ 0: -- which a blackoil data set can be converted to a thermal data set.  --
+ 0: -- However, the reservoir pressure is higher than is recommended for  --
+ 0: -- thermal simulations.                                               --
+ 0: --                                                                    --
+ 0: ------------------------------------------------------------------------
+ 0: -->THIS IS THE SECOND SPE COMPARISON PROBLEM , REPORTED BY CHAPPELEAR
+ 0: -- AND NOLEN AT THE SIXTH SPE SYMPOSIUM ON RESERVOIR SIMULATION , NEW
+ 0: -- ORLEANS, JANUARY 82 . IT IS  A SINGLE WELL CONING  STUDY , WITH THE
+ 0: -- WELL CONNECTED TO TWO GRID BLOCKS. DURING THE PRODUCTION SCHEDULE,
+ 0: -- THE WELL RATE IS SUBJECT TO LARGE CHANGES, AND AT ABOUT 250 DAYS
+ 0: -- CHANGES FROM FLOW RATE TO BHP CONTROL.
+ 0: -- This is the 2nd SPE comparison problem, by Chappelear and Nolen
+ 0: -- 6th SPE Symposium on reservoir simulation, New Orleans, January 1982.
+ 0: -- Single-well coning study, well connected to 2 grid blocks.
+ 0: -- Well rate is subject to large changes and eventually changes to bhp
+ 0: -- BLACKOIL run in Eclipse 300
+ 0: -- Grid dimensions 10x1x15
+ 0: -- FULLIMP solution method
+ 0: -- FIELD units
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Modification date: 	January 2007
+ 0: -- Changes:			NONNC out
+ 0: -- Result:			Speed-up ~1.01
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: TITLE
+ 0:                  Chappelear 3 phase radial coning study
+ 0: 
+ 0: START
+ 0:  1 'JAN' 1982 /
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: FMTIN
+ 0: 
+ 0: UNIFIN
+ 0: 
+ 0: RADIAL
+ 0: 
+ 0: FMTOUT
+ 0: 
+ 0: UNIFOUT
+ 0: 
+ 0: GAS
+ 0: 
+ 0: OIL
+ 0: 
+ 0: WATER
+ 0: 
+ 0: FULLIMP
+ 0: 
+ 0: --BLACKOIL
+ 0: THERMAL
+ 0: COMPS
+ 0:  2 /
+ 0: 
+ 0: NSTACK
+ 0:  24 10 /
+ 0: 
+ 0: MONITOR
+ 0: 
+ 0: --NONNC
+ 0: 
+ 0: NUPCOL
+ 0:  4 /
+ 0: 
+ 0: RSSPEC
+ 0: 
+ 0: DIMENS
+ 0:  10 1 15 /
+ 0: 
+ 0: EQLDIMS
+ 0:  1 100 10 1 20 /
+ 0: 
+ 0: REGDIMS
+ 0:  15 1 0 0 0 /
+ 0: 
+ 0: TABDIMS
+ 0:  1 1 19 20 15 20 20 1 1 1 1 1 1 0 2 /
+ 0: 
+ 0: WELLDIMS
+ 0:  2 3 2 2 5 10 5 4 3 /
+ 0: 
+ 0: GRID
+ 0: --======================================================================
+ 0: -------- IN THIS SECTION , THE GEOMETRY OF THE SIMULATION GRID AND THE
+ 0: -------- ROCK PERMEABILITIES AND POROSITIES ARE DEFINED.
+ 0: ------------------------------------------------------------------------
+ 0: INIT
+ 0: --  SPECIFY INNER RADIUS OF 1ST GRID BLOCK IN THE RADIAL DIRECTION
+ 0: 
+ 0: INRAD
+ 0:   0.25 /
+ 0: 
+ 0: 
+ 0: --  SPECIFY GRID BLOCK DIMENSIONS IN THE R DIRECTION
+ 0: DRV
+ 0:     1.75     2.32     5.01    10.84    23.39
+ 0:    50.55   109.21   235.92   509.68  1101.08  /
+ 0: 
+ 0: 
+ 0: -- SPECIFY CELL THICKNESSES ( DZ ), RADIAL PERMEABILITIES ( PERMR )
+ 0: -- AND POROSITIES ( PORO ) FOR EACH LAYER OF THE GRID. ALSO CELL TOP
+ 0: -- DEPTHS ( TOPS ) FOR LAYER 1. DTHETA IS SET TO 360 DEGREES FOR EVERY
+ 0: -- GRID BLOCK IN THE RESERVOIR.
+ 0: --     ARRAY    VALUE  ------ BOX ------
+ 0: EQUALS
+ 0: 
+ 0:       'DTHETA'  360   /  BOX DEFAULTS TO THE WHOLE GRID
+ 0: 
+ 0:       'DZ'      20     1 10  1  1  1  1  /  LAYER 1
+ 0:       'PERMR'   35    /
+ 0:       'PORO'    0.087 /
+ 0:       'TOPS'    9000  /
+ 0: 
+ 0:       'DZ'      15     1 10  1  1  2  2  /  LAYER 2
+ 0:       'PERMR'   47.5  /
+ 0:       'PORO'    0.097 /
+ 0: 
+ 0:       'DZ'      26     1 10  1  1  3  3  /  LAYER 3
+ 0:       'PERMR'   148   /
+ 0:       'PORO'    0.111 /
+ 0: 
+ 0:       'DZ'      15     1 10  1  1  4  4  /  LAYER 4
+ 0:       'PERMR'   202   /
+ 0:       'PORO'    0.160 /
+ 0: 
+ 0:       'DZ'      16     1 10  1  1  5  5  /  LAYER 5
+ 0:       'PERMR'   90    /
+ 0:       'PORO'    0.130 /
+ 0: 
+ 0:       'DZ'      14     1 10  1  1  6  6  /  LAYER 6
+ 0:       'PERMR'   418.5 /
+ 0:       'PORO'    0.170 /
+ 0: 
+ 0:       'DZ'      8      1 10  1  1  7  7  /  LAYER 7
+ 0:       'PERMR'   775   /
+ 0:       'PORO'    0.170 /
+ 0: 
+ 0:       'DZ'      8      1 10  1  1  8  8  /  LAYER 8
+ 0:       'PERMR'   60    /
+ 0:       'PORO'    0.080 /
+ 0: 
+ 0:       'DZ'      18     1 10  1  1  9  9  /  LAYER 9
+ 0:       'PERMR'   682   /
+ 0:       'PORO'    0.140 /
+ 0: 
+ 0:       'DZ'      12     1 10  1  1 10 10  /  LAYER 10
+ 0:       'PERMR'   472   /
+ 0:       'PORO'    0.130 /
+ 0: 
+ 0:       'DZ'      19     1 10  1  1 11 11  /  LAYER 11
+ 0:       'PERMR'   125   /
+ 0:       'PORO'    0.120 /
+ 0: 
+ 0:       'DZ'      18     1 10  1  1 12 12  /  LAYER 12
+ 0:       'PERMR'   300   /
+ 0:       'PORO'    0.105 /
+ 0: 
+ 0:       'DZ'      20     1 10  1  1 13 13  /  LAYER 13
+ 0:       'PERMR'   137.5 /
+ 0:       'PORO'    0.120 /
+ 0: 
+ 0:       'DZ'      50     1 10  1  1 14 14  /  LAYER 14
+ 0:       'PERMR'   191   /
+ 0:       'PORO'    0.116 /
+ 0: 
+ 0:       'DZ'      100    1 10  1  1 15 15  /  LAYER 15
+ 0:       'PERMR'   350   /
+ 0:       'PORO'    0.157 /
+ 0: 
+ 0: /   EQUALS IS TERMINATED BY A NULL RECORD
+ 0: 
+ 0: --  COPY RADIAL PERMEABILITIES ( PERMR ) INTO VERTICAL PERMEABILITIES
+ 0: --  ( PERMZ ) FOR THE WHOLE GRID, AND THEN MULTIPLY PERMZ BY 0.1.
+ 0: -------- SOURCE     DESTINATION
+ 0: COPY
+ 0:          'PERMR'      'PERMZ'     /
+ 0: /
+ 0: -------- ARRAY     FACTOR
+ 0: MULTIPLY
+ 0:         'PERMZ'     0.1    /
+ 0: /
+ 0: 
+ 0: -- OUTPUT OF CELL DIMENSIONS, PERMEABILITIES, POROSITY AND TOPS
+ 0: -- DATA IS REQUESTED, AND OF THE CALCULATED PORE VOLUMES, CELL
+ 0: -- CENTRE DEPTHS AND X AND Z DIRECTION TRANSMISSIBILITIES
+ 0: RPTGRID
+ 0:  'DR'
+ 0:  'DTHETA'
+ 0:  'DZ'
+ 0:  'PERMR'
+ 0:  'PERMZ'
+ 0:  'PORO'
+ 0:  'TOPS'
+ 0:  'PORV'
+ 0:  'DEPTH'
+ 0:  'TRANR'
+ 0:  'TRANZ'
+ 0:   /
+ 0: 
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Thermal data: conductivity and specific heat
+ 0: ------------------------------------------------------------------------
+ 0: EQUALS
+ 0:       'THCONR'      20     1 10  1  1  1  15  /  LAYER 1-15
+ 0:       'HEATCR'      30     /
+ 0: /
+ 0: 
+ 0: PROPS    ===============================================================
+ 0: -------- THE PROPS SECTION DEFINES THE REL. PERMEABILITIES, CAPILLARY
+ 0: -------- PRESSURES, AND THE PVT PROPERTIES OF THE RESERVOIR FLUIDS
+ 0: ----------------------------------------------------------------------
+ 0: -- WATER RELATIVE PERMEABILITY AND CAPILLARY PRESSURE ARE TABULATED AS
+ 0: -- A FUNCTION OF WATER SATURATION.
+ 0: --
+ 0: --  SWAT   KRW   PCOW
+ 0: SWFN
+ 0: 
+ 0:     0.22  0       7
+ 0:     0.3   0.07    4
+ 0:     0.4   0.15    3
+ 0:     0.5   0.24    2.5
+ 0:     0.6   0.33    2
+ 0:     0.8   0.65    1
+ 0:     0.9   0.83    0.5
+ 0:     1     1       0      /
+ 0: 
+ 0: -- SIMILARLY FOR GAS
+ 0: --
+ 0: --  SGAS   KRG   PCOG
+ 0: SGFN       1 TABLES   19 NODES IN EACH           FIELD   16:31 18 JAN 85
+ 0:     .0000  .0000  .0000
+ 0:     .0400  .0000  .2000
+ 0:     .1000  .0220  .5000
+ 0:     .2000  .1000 1.0000
+ 0:     .3000  .2400 1.5000
+ 0:     .4000  .3400 2.0000
+ 0:     .5000  .4200 2.5000
+ 0:     .6000  .5000 3.0000
+ 0:     .7000  .8125 3.5000
+ 0:     .7800 1.0000 3.9000
+ 0: /
+ 0: 
+ 0: -- OIL RELATIVE PERMEABILITY IS TABULATED AGAINST OIL SATURATION
+ 0: -- FOR OIL-WATER AND OIL-GAS-CONNATE WATER CASES
+ 0: --
+ 0: --  SOIL     KROW     KROG
+ 0: SOF3
+ 0:     0        0         0
+ 0:     0.2      0         0
+ 0:     0.38      0.00432   0
+ 0:     0.4      0.0048    0.004
+ 0:     0.48      0.05288   0.02
+ 0:     0.5      0.0649    0.036
+ 0:     0.58      0.11298   0.1
+ 0:     0.6      0.125     0.146
+ 0:     0.68      0.345     0.33
+ 0:     0.7      0.4       0.42
+ 0:     0.74      0.7       0.6
+ 0:     0.78     1         1          /
+ 0: 
+ 0: 
+ 0: -- PVT PROPERTIES OF WATER
+ 0: --
+ 0: --    REF. PRES. REF. FVF  COMPRESSIBILITY  REF VISCOSITY  VISCOSIBILITY
+ 0: PVTW
+ 0:         3600     1.00341        3.0D-6          0.96             0  /
+ 0: 
+ 0: 
+ 0: -- ROCK COMPRESSIBILITY
+ 0: --
+ 0: --    REF. PRES   COMPRESSIBILITY
+ 0: ROCK
+ 0:          3600          4.0D-6   /
+ 0: 
+ 0: -- SURFACE DENSITIES OF RESERVOIR FLUIDS
+ 0: --
+ 0: --        OIL   WATER   GAS
+ 0: DENSITY
+ 0:            45   63.02   0.0702  /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Comment out blackoil fluid properties
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: -- PVT PROPERTIES OF DRY GAS (NO VAPOURISED OIL)
+ 0: -- WE WOULD USE PVTG TO SPECIFY THE PROPERTIES OF WET GAS
+ 0: --
+ 0: --   PGAS   BGAS   VISGAS
+ 0: --PVDG
+ 0: --      400    5.9   0.013
+ 0: --      800    2.95  0.0135
+ 0: --     1200    1.96  0.014
+ 0: --     1600    1.47  0.0145
+ 0: --     2000    1.18  0.015
+ 0: --     2400    0.98  0.0155
+ 0: --     2800    0.84  0.016
+ 0: --     3200    0.74  0.0165
+ 0: --     3600    0.65  0.017
+ 0: --     4000    0.59  0.0175
+ 0: --     4400    0.54  0.018
+ 0: --     4800    0.49  0.0185
+ 0: --     5200    0.45  0.019
+ 0: --     5600    0.42  0.0195 /
+ 0: 
+ 0: -- PVT PROPERTIES OF LIVE OIL (WITH DISSOLVED GAS)
+ 0: -- WE WOULD USE PVDO TO SPECIFY THE PROPERTIES OF DEAD OIL
+ 0: 
+ 0: -- FOR EACH VALUE OF RS THE SATURATION PRESSURE, FVF AND VISCOSITY
+ 0: -- ARE SPECIFIED. FOR RS=1.81  THE FVF AND VISCOSITY OF
+ 0: -- UNDERSATURATED OIL ARE DEFINED AS A FUNCTION OF PRESSURE. DATA
+ 0: -- FOR UNDERSATURATED OIL MAY BE SUPPLIED FOR ANY RS, BUT MUST BE
+ 0: -- SUPPLIED FOR THE HIGHEST RS (1.81).
+ 0: --
+ 0: --   RS      POIL    FVFO    VISO
+ 0: --PVTO
+ 0: --   0.000      100   1.000    1.18  /
+ 0: --   0.165      400   1.012    1.17  /
+ 0: --   0.335      800   1.0255   1.14  /
+ 0: --   0.500     1200   1.038    1.11  /
+ 0: --   0.665     1600   1.051    1.08  /
+ 0: --   0.828     2000   1.063    1.06  /
+ 0: --   0.985     2400   1.075    1.03  /
+ 0: --   1.130     2800   1.087    1.00  /
+ 0: --   1.270     3200   1.0985   0.98  /
+ 0: --   1.390     3600   1.11     0.95  /
+ 0: --   1.500     4000   1.12     0.94  /
+ 0: --   1.600     4400   1.13     0.92  /
+ 0: --   1.676     4800   1.14     0.91  /
+ 0: --   1.750     5200   1.148    0.9   /
+ 0: --   1.810     5600   1.155    0.89
+ 0: --             6000   1.1504   0.89
+ 0: --             6400   1.1458   0.89
+ 0: --             6800   1.1412   0.89
+ 0: --             7200   1.1367   0.89  /
+ 0: --/
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -- Thermal properties
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: -- Surface conditions
+ 0: STCOND
+ 0: 60 14.7 /
+ 0: 
+ 0: -- Reservoir temperature
+ 0: RTEMP
+ 0: 160 /
+ 0: 
+ 0: -- Component properties
+ 0: CNAMES
+ 0:         CGAS    COIL /
+ 0: --CVTYPE
+ 0: --        LIVE    DEAD /
+ 0: CVTYPES
+ 0:         GAS     DEAD /
+ 0: MW
+ 0:         27      120  /
+ 0: DREF
+ 0:         159     45   /
+ 0: TCRIT
+ 0:         1000    1200 /
+ 0: PCRIT
+ 0:         100     100  /
+ 0: ZFACTOR
+ 0:         0.755   0.755  /
+ 0: ZFACTORS
+ 0:         1.0     1.0  /
+ 0: 
+ 0: -- Kvalues calculated from PVTO and DENSITY data
+ 0: -- KVoil = 0 KVgas =1 + DENG/(DENO*RS)
+ 0: -- Data is required at at least 2 temperatures
+ 0: 
+ 0: KVTEMP
+ 0:  160 200 /
+ 0: 
+ 0: KVTABT1
+ 0:    400   5.908216783    0.0001
+ 0:    800   3.417479908    0.0001
+ 0:   1200   2.619711538    0.0001
+ 0:   1600   2.217828224    0.0001
+ 0:   2000   1.978086678    0.0001
+ 0:   2400   1.822188598    0.0001
+ 0:   2800   1.716686521    0.0001
+ 0:   3200   1.637681708    0.0001
+ 0:   3600   1.58263005     0.0001
+ 0:   4000   1.539903846    0.0001
+ 0:   4400   1.506159856    0.0001
+ 0:   4800   1.4832075      0.0001
+ 0:   5200   1.462774725    0.0001
+ 0:   5600   1.447434127    0.0001   /
+ 0: 
+ 0: KVTABT2
+ 0:    400   271.4679426    0.0002
+ 0:    800   157.024746     0.0002
+ 0:   1200   120.3692633    0.0002
+ 0:   1600   101.9037194    0.0002
+ 0:   2000   90.88818849    0.0002
+ 0:   2400   83.72505747    0.0002
+ 0:   2800   78.87749809    0.0002
+ 0:   3200   75.24742239    0.0002
+ 0:   3600   72.71793491    0.0002
+ 0:   4000   70.75477157    0.0002
+ 0:   4400   69.2043187     0.0002
+ 0:   4800   68.14971472    0.0002
+ 0:   5200   67.2108793     0.0002
+ 0:   5600   66.50601675    0.0002   /
+ 0: 
+ 0: -- Component contribution to oil viscosity as a function of temperature
+ 0: 
+ 0: OILVISCT
+ 0:   50  0.8 1.2
+ 0:  200  0.8 1.2 /
+ 0: 
+ 0: -- Component contribution to gas viscosity as a function of temperature
+ 0: 
+ 0: GASVISCT
+ 0:   50  0.017 1.0
+ 0:  200  0.017 1.0 /
+ 0: 
+ 0: 
+ 0: -- Water viscosity
+ 0: WATVISCT
+ 0:   50 0.96
+ 0:  200 0.96  /
+ 0: 
+ 0: 
+ 0: -- Specific heats
+ 0: 
+ 0: SPECHA
+ 0:  0.2 0.5 /
+ 0: SPECHG
+ 0:  0.1 0.1 /
+ 0: HEATVAPS
+ 0:  98.0 472.0 /
+ 0: 
+ 0: -- Water density
+ 0: WATDENT
+ 0: 620 / set reference temperature = reservoir temperature (R)
+ 0: 
+ 0: ZMFVD
+ 0: 9000 0.63135 0.36865  /
+ 0: 
+ 0: REGIONS  ===============================================================
+ 0: -------- THE REGIONS SECTION DEFINES HOW THE RESERVOIR IS SPLIT INTO
+ 0: -------- REGIONS BY SATURATION FUNCTION, PVT FUNCTION, FLUID IN PLACE
+ 0: -------- REGION ETC.
+ 0: ------------------------------------------------------------------------
+ 0: FIPNUM
+ 0:   10*1  10*2  10*3  10*4  10*5  10*6  10*7  10*8  10*9  10*10
+ 0:   10*11 10*12 10*13 10*14 10*15  /
+ 0: 
+ 0: SOLUTION ===============================================================
+ 0: -------- THE SOLUTION SECTION DEFINES THE INITIAL STATE OF THE SOLUTION
+ 0: -------- VARIABLES (PHASE PRESSURES, SATURATIONS AND GAS-OIL RATIOS)
+ 0: ------------------------------------------------------------------------
+ 0: -- Thermal equilibration with gas cap: item 10 of EQUIL must be 2 or 3
+ 0: -- DATA FOR INITIALISING FLUIDS TO POTENTIAL EQUILIBRIUM
+ 0: --
+ 0: --    DATUM  DATUM   OWC    OWC    GOC    GOC    RSVD   RVVD   SOLN   FLUID
+ 0: --    DEPTH  PRESS  DEPTH   PCOW  DEPTH   PCOG  TABLE  TABLE   METH   TYPE
+ 0: EQUIL
+ 0:        9035   3600   9209    0     9035    0       0      0    1*     3 /
+ 0: 
+ 0: -- SWITCH ON OUTPUT OF INITIAL SOLUTION
+ 0: --                                         FIELD   16:05 12 DEC 88
+ 0: 
+ 0: RPTSOL
+ 0:    PRESSURE SOIL SWAT SGAS FIP PSAT MLSC TEMP SOLVD /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PSAT             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC MLSC             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC SOLVD            IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: SUMMARY ================================================================
+ 0: -------- THIS SECTION SPECIFIES DATA TO BE WRITTEN TO THE SUMMARY FILES
+ 0: -------- AND WHICH MAY LATER BE USED WITH THE ECLIPSE GRAPHICS PACKAGE
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: -- FIELD Rates for Oil, Water, Liquid & 3 Phase Voidage
+ 0: FOPR
+ 0: FWPR
+ 0: FVPR
+ 0: 
+ 0: -- BOTTOM HOLE PRESSURE FOR WELL
+ 0: WBHP
+ 0: 'P1'
+ 0: /
+ 0: -- FIELD Water Cut, GOR and Pressure
+ 0: FWCT
+ 0: FGOR
+ 0: FPR
+ 0: 
+ 0: PERFORMANCE
+ 0: 
+ 0: RPTONLY
+ 0: RUNSUM
+ 0: SCHEDULE ===============================================================
+ 0: -------- THE SCHEDULE SECTION DEFINES THE OPERATIONS TO BE SIMULATED
+ 0: ------------------------------------------------------------------------
+ 0: -- CONTROLS ON OUTPUT AT EACH REPORT TIME
+ 0: --RPTSCHED                                         FIELD   16:07 12 DEC 88
+ 0: --   1   0   1   1   0     0   2   2   2   0     0   2   0   0   0
+ 0: --   0   0   0   0   0     0   0   0   0   0     0   0   0   0   0
+ 0: --   0   0   0   0   0     0   0   0   1   0     0   0   0   0   0  /
+ 0: RPTSCHED
+ 0:    PRESSURE SOIL SWAT SGAS RESTART FIP /
+ 0: RPTPRINT
+ 0: 10*0
+ 0: /
+ 0: 
+ 0: -- WELL SPECIFICATION DATA
+ 0: --
+ 0: --     WELL   GROUP LOCATION  BHP   PI
+ 0: --     NAME   NAME    I  J   DEPTH DEFN
+ 0: WELSPECS                                         FIELD   16:32 18 JAN 85
+ 0: 'P1','G       ',  1,  1,9110.00,'OIL' /
+ 0: /
+ 0: 
+ 0: -- COMPLETION SPECIFICATION DATA
+ 0: --
+ 0: --     WELL     -LOCATION- OPEN/ SAT CONN
+ 0: --     NAME     I  J K1 K2 SHUT  TAB FACT
+ 0: COMPDAT
+ 0:     'P1'  1  1  7  7 'OPEN' 0  27.228  /
+ 0:     'P1'  1  1  8  8 'OPEN' 0  2.1079  /
+ 0:   /
+ 0: 
+ 0: -- PRODUCTION WELL CONTROLS - OIL RATE IS SET TO 1000 BPD
+ 0: --
+ 0: --      WELL     OPEN/  CNTL   OIL  WATER   GAS  LIQU   RES   BHP
+ 0: --      NAME     SHUT   MODE  RATE   RATE  RATE  RATE  RATE
+ 0: WCONPROD
+ 0:     'P1'  'OPEN' 'ORAT' 1000   4*                      3000  /
+ 0:   /
+ 0: -- SPECIFY REPORT AT 10 DAYS
+ 0: TSTEP
+ 0: 10.00000
+ 0: /
+ 0: 
+ 0: -- CUT OIL RATE TO 100 BPD
+ 0: WELTARG
+ 0: 'P1', 'ORAT'  100.000000 /
+ 0: /
+ 0: 
+ 0: -- ADVANCE SIMULATION TO 50 DAYS
+ 0: TSTEP
+ 0:  40.00000
+ 0: /
+ 0: 
+ 0: -- PUT OIL RATE BACK TO 1000 BPD
+ 0: WELTARG
+ 0: 'P1', 'ORAT'  1000.00000 /
+ 0: /
+ 0: 
+ 0: 
+ 0: -- AND ADVANCE TO 720 DAYS - WELL SWITCHES TO BHP CONTROL AT 250 DAYS
+ 0: TSTEP
+ 0:  50.00000  100.0000  100.0000  100.0000  100.0000  100.0000  120.0000
+ 0: /
+ 0: 
+ 0: -- CUT OIL RATE TO 100 BPD
+ 0: WELTARG
+ 0: 'P1', 'ORAT'  100.000000 /
+ 0: /
+ 0: 
+ 0: -- ADVANCE TO 800 DAYS
+ 0: TSTEP
+ 0:  80.00000
+ 0: /
+ 0: 
+ 0: RPTPRINT
+ 0: 11*1 /
+ 0: 
+ 0: -- RESET OUTPUT CONTROLS TO GET FULL OUTPUT FOR LAST REPORT
+ 0: --RPTSCHED
+ 0: --   1   1   1   1   1   1   2   2   2   1   2   2   1   1   2   /
+ 0: 
+ 0: -- ADVANCE TO END OF SIMULATION (900 DAYS)
+ 0: TSTEP
+ 0:  100.0000
+ 0: /
+ 0: 
+ 0: END      ==============================================================
+
+ ******** END OF INPUT DATA FOR RUN CASE3T
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING START   
+     4 READING FIELD   
+     5 READING FMTIN   
+     6 READING UNIFIN  
+     7 READING RADIAL  
+     8 READING FMTOUT  
+     9 READING UNIFOUT 
+    10 READING GAS     
+    11 READING OIL     
+    12 READING WATER   
+    13 READING FULLIMP 
+    14 READING THERMAL 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD THERMAL  IN RUNSPEC DATA                   
+    15 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           SPURIOUS DATA BEFORE NSTACK   KEYWORD                           
+ @            2 /                                                            
+    16 READING NSTACK  
+    17 READING MONITOR 
+    18 READING NUPCOL  
+    19 READING RSSPEC  
+    20 READING DIMENS  
+    21 READING EQLDIMS 
+    22 READING REGDIMS 
+    23 READING TABDIMS 
+    24 READING WELLDIMS
+    25 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                82436 BYTES                                                
+    26 READING INIT    
+    27 READING INRAD   
+    28 READING DRV     
+    29 READING EQUALS  
+    30 READING COPY    
+    31 READING MULTIPLY
+    32 READING RPTGRID 
+    33 READING EQUALS  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
+ @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           INVALID GRID ARRAY NAME HEATCR                                  
+ @           ON RECORD    2 FOLLOWING EQUALS   KEYWORD                       
+    34 READING PROPS   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           FLUX FLAG SET IN RUNSPEC BUT FLUXNUM KEYWORD                    
+ @           NOT USED -- SAVE SPACE BY SETTING NTFREG = 0                    
+ @           IN RUNSPEC KEYWORD REGDIMS.                                     
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           IN ORDER TO COMPLETE THE CIRCLE FOR THE GLOBAL RADIAL GRID,     
+ @           IT IS NECESSARY TO SET ITEM 3 OF THE COORDSYS KEYWORD TO COMP   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+1                             **********************************************************************   1
+  DR       AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+ MINIMUM VALUE =     1.75  AT (  1,  1,  1)     MAXIMUM VALUE =  1101.08  AT ( 10,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1,  2)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1,  3)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1,  4)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1,  5)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1,  6)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1,  7)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1,  8)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1,  9)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1, 10)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1, 11)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1, 12)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1, 13)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1, 14)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+ (*,  1, 15)     1.75    2.32    5.01   10.84   23.39   50.55  109.21  235.92  509.68 1101.08
+1                             **********************************************************************   2
+  DTHETA   AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS  DEGREES        
+
+     CONSTANT ARRAY =  360.000       DEGREES                                                                                         
+1                             **********************************************************************   3
+  DZ       AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+ MINIMUM VALUE =    8.000  AT (  1,  1,  7)     MAXIMUM VALUE =  100.000  AT (  1,  1, 15)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000
+ (*,  1,  2)   15.000  15.000  15.000  15.000  15.000  15.000  15.000  15.000  15.000  15.000
+ (*,  1,  3)   26.000  26.000  26.000  26.000  26.000  26.000  26.000  26.000  26.000  26.000
+ (*,  1,  4)   15.000  15.000  15.000  15.000  15.000  15.000  15.000  15.000  15.000  15.000
+ (*,  1,  5)   16.000  16.000  16.000  16.000  16.000  16.000  16.000  16.000  16.000  16.000
+ (*,  1,  6)   14.000  14.000  14.000  14.000  14.000  14.000  14.000  14.000  14.000  14.000
+ (*,  1,  7)    8.000   8.000   8.000   8.000   8.000   8.000   8.000   8.000   8.000   8.000
+ (*,  1,  8)    8.000   8.000   8.000   8.000   8.000   8.000   8.000   8.000   8.000   8.000
+ (*,  1,  9)   18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000
+ (*,  1, 10)   12.000  12.000  12.000  12.000  12.000  12.000  12.000  12.000  12.000  12.000
+ (*,  1, 11)   19.000  19.000  19.000  19.000  19.000  19.000  19.000  19.000  19.000  19.000
+ (*,  1, 12)   18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000
+ (*,  1, 13)   20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000
+ (*,  1, 14)   50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000
+ (*,  1, 15)  100.000 100.000 100.000 100.000 100.000 100.000 100.000 100.000 100.000 100.000
+1                             **********************************************************************   4
+  PERMR    AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+ MINIMUM VALUE =   35.000  AT (  1,  1,  1)     MAXIMUM VALUE =  775.000  AT (  1,  1,  7)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   35.000  35.000  35.000  35.000  35.000  35.000  35.000  35.000  35.000  35.000
+ (*,  1,  2)   47.500  47.500  47.500  47.500  47.500  47.500  47.500  47.500  47.500  47.500
+ (*,  1,  3)  148.000 148.000 148.000 148.000 148.000 148.000 148.000 148.000 148.000 148.000
+ (*,  1,  4)  202.000 202.000 202.000 202.000 202.000 202.000 202.000 202.000 202.000 202.000
+ (*,  1,  5)   90.000  90.000  90.000  90.000  90.000  90.000  90.000  90.000  90.000  90.000
+ (*,  1,  6)  418.500 418.500 418.500 418.500 418.500 418.500 418.500 418.500 418.500 418.500
+ (*,  1,  7)  775.000 775.000 775.000 775.000 775.000 775.000 775.000 775.000 775.000 775.000
+ (*,  1,  8)   60.000  60.000  60.000  60.000  60.000  60.000  60.000  60.000  60.000  60.000
+ (*,  1,  9)  682.000 682.000 682.000 682.000 682.000 682.000 682.000 682.000 682.000 682.000
+ (*,  1, 10)  472.000 472.000 472.000 472.000 472.000 472.000 472.000 472.000 472.000 472.000
+ (*,  1, 11)  125.000 125.000 125.000 125.000 125.000 125.000 125.000 125.000 125.000 125.000
+ (*,  1, 12)  300.000 300.000 300.000 300.000 300.000 300.000 300.000 300.000 300.000 300.000
+ (*,  1, 13)  137.500 137.500 137.500 137.500 137.500 137.500 137.500 137.500 137.500 137.500
+ (*,  1, 14)  191.000 191.000 191.000 191.000 191.000 191.000 191.000 191.000 191.000 191.000
+ (*,  1, 15)  350.000 350.000 350.000 350.000 350.000 350.000 350.000 350.000 350.000 350.000
+1                             **********************************************************************   5
+  PERMZ    AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+ MINIMUM VALUE =   3.5000  AT (  1,  1,  1)     MAXIMUM VALUE =  77.5000  AT (  1,  1,  7)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   3.5000  3.5000  3.5000  3.5000  3.5000  3.5000  3.5000  3.5000  3.5000  3.5000
+ (*,  1,  2)   4.7500  4.7500  4.7500  4.7500  4.7500  4.7500  4.7500  4.7500  4.7500  4.7500
+ (*,  1,  3)  14.8000 14.8000 14.8000 14.8000 14.8000 14.8000 14.8000 14.8000 14.8000 14.8000
+ (*,  1,  4)  20.2000 20.2000 20.2000 20.2000 20.2000 20.2000 20.2000 20.2000 20.2000 20.2000
+ (*,  1,  5)   9.0000  9.0000  9.0000  9.0000  9.0000  9.0000  9.0000  9.0000  9.0000  9.0000
+ (*,  1,  6)  41.8500 41.8500 41.8500 41.8500 41.8500 41.8500 41.8500 41.8500 41.8500 41.8500
+ (*,  1,  7)  77.5000 77.5000 77.5000 77.5000 77.5000 77.5000 77.5000 77.5000 77.5000 77.5000
+ (*,  1,  8)   6.0000  6.0000  6.0000  6.0000  6.0000  6.0000  6.0000  6.0000  6.0000  6.0000
+ (*,  1,  9)  68.2000 68.2000 68.2000 68.2000 68.2000 68.2000 68.2000 68.2000 68.2000 68.2000
+ (*,  1, 10)  47.2000 47.2000 47.2000 47.2000 47.2000 47.2000 47.2000 47.2000 47.2000 47.2000
+ (*,  1, 11)  12.5000 12.5000 12.5000 12.5000 12.5000 12.5000 12.5000 12.5000 12.5000 12.5000
+ (*,  1, 12)  30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000
+ (*,  1, 13)  13.7500 13.7500 13.7500 13.7500 13.7500 13.7500 13.7500 13.7500 13.7500 13.7500
+ (*,  1, 14)  19.1000 19.1000 19.1000 19.1000 19.1000 19.1000 19.1000 19.1000 19.1000 19.1000
+ (*,  1, 15)  35.0000 35.0000 35.0000 35.0000 35.0000 35.0000 35.0000 35.0000 35.0000 35.0000
+1                             **********************************************************************   6
+  PORO     AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+ MINIMUM VALUE =  0.08000  AT (  1,  1,  8)     MAXIMUM VALUE =  0.17000  AT (  1,  1,  6)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)  0.08700 0.08700 0.08700 0.08700 0.08700 0.08700 0.08700 0.08700 0.08700 0.08700
+ (*,  1,  2)  0.09700 0.09700 0.09700 0.09700 0.09700 0.09700 0.09700 0.09700 0.09700 0.09700
+ (*,  1,  3)  0.11100 0.11100 0.11100 0.11100 0.11100 0.11100 0.11100 0.11100 0.11100 0.11100
+ (*,  1,  4)  0.16000 0.16000 0.16000 0.16000 0.16000 0.16000 0.16000 0.16000 0.16000 0.16000
+ (*,  1,  5)  0.13000 0.13000 0.13000 0.13000 0.13000 0.13000 0.13000 0.13000 0.13000 0.13000
+ (*,  1,  6)  0.17000 0.17000 0.17000 0.17000 0.17000 0.17000 0.17000 0.17000 0.17000 0.17000
+ (*,  1,  7)  0.17000 0.17000 0.17000 0.17000 0.17000 0.17000 0.17000 0.17000 0.17000 0.17000
+ (*,  1,  8)  0.08000 0.08000 0.08000 0.08000 0.08000 0.08000 0.08000 0.08000 0.08000 0.08000
+ (*,  1,  9)  0.14000 0.14000 0.14000 0.14000 0.14000 0.14000 0.14000 0.14000 0.14000 0.14000
+ (*,  1, 10)  0.13000 0.13000 0.13000 0.13000 0.13000 0.13000 0.13000 0.13000 0.13000 0.13000
+ (*,  1, 11)  0.12000 0.12000 0.12000 0.12000 0.12000 0.12000 0.12000 0.12000 0.12000 0.12000
+ (*,  1, 12)  0.10500 0.10500 0.10500 0.10500 0.10500 0.10500 0.10500 0.10500 0.10500 0.10500
+ (*,  1, 13)  0.12000 0.12000 0.12000 0.12000 0.12000 0.12000 0.12000 0.12000 0.12000 0.12000
+ (*,  1, 14)  0.11600 0.11600 0.11600 0.11600 0.11600 0.11600 0.11600 0.11600 0.11600 0.11600
+ (*,  1, 15)  0.15700 0.15700 0.15700 0.15700 0.15700 0.15700 0.15700 0.15700 0.15700 0.15700
+1                             **********************************************************************   7
+  TOPS     AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+ MINIMUM VALUE =  9000.00  AT (  1,  1,  1)     MAXIMUM VALUE =  9259.00  AT (  1,  1, 15)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)  9000.00 9000.00 9000.00 9000.00 9000.00 9000.00 9000.00 9000.00 9000.00 9000.00
+ (*,  1,  2)  9020.00 9020.00 9020.00 9020.00 9020.00 9020.00 9020.00 9020.00 9020.00 9020.00
+ (*,  1,  3)  9035.00 9035.00 9035.00 9035.00 9035.00 9035.00 9035.00 9035.00 9035.00 9035.00
+ (*,  1,  4)  9061.00 9061.00 9061.00 9061.00 9061.00 9061.00 9061.00 9061.00 9061.00 9061.00
+ (*,  1,  5)  9076.00 9076.00 9076.00 9076.00 9076.00 9076.00 9076.00 9076.00 9076.00 9076.00
+ (*,  1,  6)  9092.00 9092.00 9092.00 9092.00 9092.00 9092.00 9092.00 9092.00 9092.00 9092.00
+ (*,  1,  7)  9106.00 9106.00 9106.00 9106.00 9106.00 9106.00 9106.00 9106.00 9106.00 9106.00
+ (*,  1,  8)  9114.00 9114.00 9114.00 9114.00 9114.00 9114.00 9114.00 9114.00 9114.00 9114.00
+ (*,  1,  9)  9122.00 9122.00 9122.00 9122.00 9122.00 9122.00 9122.00 9122.00 9122.00 9122.00
+ (*,  1, 10)  9140.00 9140.00 9140.00 9140.00 9140.00 9140.00 9140.00 9140.00 9140.00 9140.00
+ (*,  1, 11)  9152.00 9152.00 9152.00 9152.00 9152.00 9152.00 9152.00 9152.00 9152.00 9152.00
+ (*,  1, 12)  9171.00 9171.00 9171.00 9171.00 9171.00 9171.00 9171.00 9171.00 9171.00 9171.00
+ (*,  1, 13)  9189.00 9189.00 9189.00 9189.00 9189.00 9189.00 9189.00 9189.00 9189.00 9189.00
+ (*,  1, 14)  9209.00 9209.00 9209.00 9209.00 9209.00 9209.00 9209.00 9209.00 9209.00 9209.00
+ (*,  1, 15)  9259.00 9259.00 9259.00 9259.00 9259.00 9259.00 9259.00 9259.00 9259.00 9259.00
+1                             **********************************************************************   8
+  PORV     AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS    RB           
+
+ MINIMUM VALUE =   1.4100  AT (  1,  1,  8)     MAXIMUM VALUE =  2.90E+7  AT ( 10,  1, 15)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   3.8336  14.275  66.581  311.34  1451.3  6775.5  31625. 1.47E+5 6.88E+5 3.21E+6
+ (*,  1,  2)   3.2056  11.937  55.676  260.34  1213.6  5665.7  26445. 1.23E+5 5.76E+5 2.68E+6
+ (*,  1,  3)   6.3584  23.677  110.43  516.39  2407.1  11238.  52454. 2.44E+5 1.14E+6 5.33E+6
+ (*,  1,  4)   5.2877  19.690  91.836  429.43  2001.8  9345.5  43621. 2.03E+5 9.50E+5 4.43E+6
+ (*,  1,  5)   4.5826  17.065  79.591  372.17  1734.9  8099.5  37804. 1.76E+5 8.23E+5 3.84E+6
+ (*,  1,  6)   5.2436  19.526  91.071  425.85  1985.1  9267.7  43257. 2.01E+5 9.42E+5 4.39E+6
+ (*,  1,  7)   2.9963  11.158  52.041  243.35  1134.3  5295.8  24718. 1.15E+5 5.38E+5 2.51E+6
+ (*,  1,  8)   1.4100  5.2507  24.490  114.52  533.81  2492.1  11632.  54286. 2.53E+5 1.18E+6
+ (*,  1,  9)   5.5521  20.675  96.428  450.90  2101.9  9812.8  45802. 2.13E+5 9.97E+5 4.65E+6
+ (*,  1, 10)   3.4370  12.799  59.694  279.13  1301.2  6074.6  28353. 1.32E+5 6.17E+5 2.88E+6
+ (*,  1, 11)   5.0233  18.706  87.244  407.96  1901.7  8878.3  41439. 1.93E+5 9.02E+5 4.21E+6
+ (*,  1, 12)   4.1640  15.506  72.321  338.18  1576.4  7359.6  34351. 1.60E+5 7.48E+5 3.49E+6
+ (*,  1, 13)   5.2877  19.690  91.836  429.43  2001.8  9345.5  43621. 2.03E+5 9.50E+5 4.43E+6
+ (*,  1, 14)   12.779  47.584  221.94  1037.8  4837.7  22585. 1.05E+5 4.91E+5 2.29E+6 1.07E+7
+ (*,  1, 15)   34.590  128.81  600.76  2809.2  13095.  61135. 2.85E+5 1.33E+6 6.21E+6 2.90E+7
+1                             **********************************************************************   9
+  DEPTH    AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+ MINIMUM VALUE =   9010.0  AT (  1,  1,  1)     MAXIMUM VALUE =   9309.0  AT (  1,  1, 15)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   9010.0  9010.0  9010.0  9010.0  9010.0  9010.0  9010.0  9010.0  9010.0  9010.0
+ (*,  1,  2)   9027.5  9027.5  9027.5  9027.5  9027.5  9027.5  9027.5  9027.5  9027.5  9027.5
+ (*,  1,  3)   9048.0  9048.0  9048.0  9048.0  9048.0  9048.0  9048.0  9048.0  9048.0  9048.0
+ (*,  1,  4)   9068.5  9068.5  9068.5  9068.5  9068.5  9068.5  9068.5  9068.5  9068.5  9068.5
+ (*,  1,  5)   9084.0  9084.0  9084.0  9084.0  9084.0  9084.0  9084.0  9084.0  9084.0  9084.0
+ (*,  1,  6)   9099.0  9099.0  9099.0  9099.0  9099.0  9099.0  9099.0  9099.0  9099.0  9099.0
+ (*,  1,  7)   9110.0  9110.0  9110.0  9110.0  9110.0  9110.0  9110.0  9110.0  9110.0  9110.0
+ (*,  1,  8)   9118.0  9118.0  9118.0  9118.0  9118.0  9118.0  9118.0  9118.0  9118.0  9118.0
+ (*,  1,  9)   9131.0  9131.0  9131.0  9131.0  9131.0  9131.0  9131.0  9131.0  9131.0  9131.0
+ (*,  1, 10)   9146.0  9146.0  9146.0  9146.0  9146.0  9146.0  9146.0  9146.0  9146.0  9146.0
+ (*,  1, 11)   9161.5  9161.5  9161.5  9161.5  9161.5  9161.5  9161.5  9161.5  9161.5  9161.5
+ (*,  1, 12)   9180.0  9180.0  9180.0  9180.0  9180.0  9180.0  9180.0  9180.0  9180.0  9180.0
+ (*,  1, 13)   9199.0  9199.0  9199.0  9199.0  9199.0  9199.0  9199.0  9199.0  9199.0  9199.0
+ (*,  1, 14)   9234.0  9234.0  9234.0  9234.0  9234.0  9234.0  9234.0  9234.0  9234.0  9234.0
+ (*,  1, 15)   9309.0  9309.0  9309.0  9309.0  9309.0  9309.0  9309.0  9309.0  9309.0  9309.0
+1                             **********************************************************************  10
+  TRANR    AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS CPB/D/PS        
+
+ MINIMUM VALUE =   0.0000  AT ( 10,  1,  1)     MAXIMUM VALUE =   321.86  AT (  2,  1, 15)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)   5.2332  6.4373  6.4315  6.4357  6.4355  6.4347  6.4351  6.4351  6.4351  0.0000
+ (*,  1,  2)   5.3266  6.5522  6.5464  6.5506  6.5504  6.5496  6.5500  6.5500  6.5500  0.0000
+ (*,  1,  3)   28.767  35.387  35.355  35.378  35.377  35.373  35.375  35.375  35.375  0.0000
+ (*,  1,  4)   22.652  27.864  27.839  27.857  27.857  27.853  27.855  27.855  27.855  0.0000
+ (*,  1,  5)   10.765  13.242  13.231  13.239  13.239  13.237  13.238  13.238  13.238  0.0000
+ (*,  1,  6)   43.802  53.880  53.832  53.866  53.865  53.859  53.862  53.862  53.862  0.0000
+ (*,  1,  7)   46.351  57.016  56.965  57.002  57.000  56.993  56.996  56.997  56.997  0.0000
+ (*,  1,  8)   3.5885  4.4141  4.4102  4.4130  4.4129  4.4124  4.4126  4.4126  4.4127  0.0000
+ (*,  1,  9)   91.775  112.89  112.79  112.86  112.86  112.85  112.85  112.85  112.85  0.0000
+ (*,  1, 10)   42.344  52.087  52.040  52.074  52.073  52.066  52.069  52.069  52.069  0.0000
+ (*,  1, 11)   17.755  21.841  21.821  21.835  21.835  21.832  21.833  21.833  21.833  0.0000
+ (*,  1, 12)   40.370  49.659  49.615  49.646  49.646  49.639  49.642  49.642  49.642  0.0000
+ (*,  1, 13)   20.559  25.289  25.267  25.283  25.282  25.279  25.281  25.281  25.281  0.0000
+ (*,  1, 14)   71.395  87.823  87.744  87.801  87.799  87.788  87.793  87.793  87.794  0.0000
+ (*,  1, 15)   261.66  321.86  321.58  321.78  321.78  321.74  321.75  321.76  321.76  0.0000
+1                             **********************************************************************  11
+  TRANZ    AT     0.00   DAYS *                 Chappelear 3 phase radial coning study                 * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1982   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS CPB/D/PS        
+
+ MINIMUM VALUE =   0.0000  AT (  1,  1, 15)     MAXIMUM VALUE =   53414.  AT ( 10,  1,  6)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10
+
+ (*,  1,  1)  3.14E-3 1.17E-2 5.45E-2 0.25523  1.1897  5.5544  25.925  120.99  564.69  2635.5
+ (*,  1,  2)  5.67E-3 2.11E-2 9.85E-2 0.46075  2.1478  10.027  46.801  218.42  1019.4  4757.7
+ (*,  1,  3)  1.11E-2 4.15E-2 0.19375 0.90601  4.2233  19.717  92.030  429.50  2004.6  9355.4
+ (*,  1,  4)  1.10E-2 4.11E-2 0.19214 0.89845  4.1881  19.553  91.262  425.91  1987.8  9277.4
+ (*,  1,  5)  1.31E-2 4.91E-2 0.22925  1.0720  4.9971  23.330  108.89  508.19  2371.8  11070.
+ (*,  1,  6)  6.36E-2 0.23718  1.1062  5.1728  24.113  112.57  525.44  2452.2  11445.  53414.
+ (*,  1,  7)  1.94E-2 7.22E-2 0.33709  1.5763  7.3478  34.304  160.11  747.24  3487.5  16277.
+ (*,  1,  8)  1.74E-2 6.50E-2 0.30318  1.4177  6.6085  30.852  144.00  672.06  3136.6  14639.
+ (*,  1,  9)  5.38E-2 0.20037 0.93455  4.3700  20.371  95.103  443.90  2071.6  9668.8  45125.
+ (*,  1, 10)  1.57E-2 5.85E-2 0.27294  1.2763  5.9493  27.775  129.64  605.02  2823.8  13179.
+ (*,  1, 11)  1.31E-2 4.89E-2 0.22842  1.0681  4.9790  23.245  108.50  506.34  2363.2  11029.
+ (*,  1, 12)  1.35E-2 5.05E-2 0.23570  1.1021  5.1376  23.985  111.95  522.48  2438.5  11381.
+ (*,  1, 13)  6.84E-3 2.54E-2 0.11891 0.55605  2.5920  12.101  56.482  263.60  1230.3  5741.7
+ (*,  1, 14)  5.09E-3 1.89E-2 8.84E-2 0.41360  1.9280  9.0009  42.012  196.07  915.08  4270.8
+ (*,  1, 15)   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           NUMBER OF ACTIVE CELLS IS 150                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           ADDITIONAL     0.146 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               435984 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @              58542 CHARACTER VARIABLES USED                               
+    35 READING SWFN    
+    36 READING SGFN    
+    37 READING SOF3    
+    38 READING PVTW    
+    39 READING ROCK    
+    40 READING DENSITY 
+    41 READING STCOND  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
+ @           60 14.7 /                                                       
+    42 READING RTEMP   
+    43 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           SPURIOUS DATA BEFORE CVTYPES  KEYWORD                           
+ @                   CGAS    COIL /                                          
+    44 READING CVTYPES 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD CVTYPES  IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           SPURIOUS DATA BEFORE MW       KEYWORD                           
+ @                   GAS     DEAD /                                          
+    45 READING MW      
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           SPURIOUS DATA BEFORE DREF     KEYWORD                           
+ @                   27      120  /                                          
+    46 READING DREF    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD DREF     IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           SPURIOUS DATA BEFORE TCRIT    KEYWORD                           
+ @                   159     45   /                                          
+    47 READING TCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
+ @                   1000    1200 /                                          
+    48 READING PCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1982):
+ @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               9
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

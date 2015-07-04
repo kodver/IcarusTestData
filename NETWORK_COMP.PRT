@@ -1,0 +1,1179 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN NETWORK_COMP
+
+ 0: --------------------------------------------------------------------
+ 0: -->Illustrates the use of group and field production controls
+ 0: --------------------------------------------------------------------
+ 0: 
+ 0: --This data set has:
+ 0: --ACTIONG keyword on PLAT-A with triggering condition on GLPR changing ORAT to
+ 0: --0.8times;introduced ACTIONW and ACTIONR keywords;introduced COMPLUMP, DRILPRI,
+ 0: --GTMULT, GUIDERATE, WELPI, WTMULT keywords
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: IMPES
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: OIL
+ 0: WATER
+ 0: GAS
+ 0: 
+ 0: MULTSAVE
+ 0: 1 /
+ 0: 
+ 0: COMPS
+ 0: 10 /
+ 0: 
+ 0: TABDIMS
+ 0: 1 1 40 40 3 /
+ 0: 
+ 0: GPTDIMS
+ 0: 2 3 /
+ 0: 
+ 0: DIMENS
+ 0: 9 9 3 /
+ 0: 
+ 0: 
+ 0: 
+ 0: EQLDIMS
+ 0: 1 20 /
+ 0: 
+ 0: WELLDIMS
+ 0: 10  1*  12  2 /
+ 0: 
+ 0: TITLE
+ 0: Example of use of gas plants
+ 0: 
+ 0: START
+ 0: 1 Jan 1990 /
+ 0: 
+ 0: VFPPDIMS
+ 0: 10 3 3 2 2 1 /
+ 0: 
+ 0: VFPIDIMS
+ 0: 7 3 1 /
+ 0: 
+ 0: 
+ 0: 
+ 0: GRID    ================================================================
+ 0: 
+ 0: EQUALS
+ 0: DX     1000    /
+ 0: DY     1000    /
+ 0: DZ     20      /
+ 0: PERMX  300     /
+ 0: PERMY  300     /
+ 0: PERMZ  30      /
+ 0: PORO   0.33    /
+ 0: TOPS   7000      1  9  1  1  1  1   /
+ 0: TOPS   7020      1  9  2  2  1  1   /
+ 0: TOPS   7040      1  9  3  3  1  1   /
+ 0: TOPS   7060      1  9  4  4  1  1   /
+ 0: TOPS   7080      1  9  5  5  1  1   /
+ 0: TOPS   7100      1  9  6  6  1  1   /
+ 0: TOPS   7120      1  9  7  7  1  1   /
+ 0: TOPS   7140      1  9  8  8  1  1   /
+ 0: TOPS   7160      1  9  9  9  1  1   /
+ 0: /
+ 0: 
+ 0: RPTGRID
+ 0: LIMITS /
+ 0: 
+ 0: EDIT     ===============================================================
+ 0: 
+ 0: -- Using TRANX we set up two vertical impermeable barriers, dividing
+ 0: -- the field into three isolated segments.
+ 0: 
+ 0: BOX
+ 0: 3  3  1  9  1  3  /
+ 0: 
+ 0: TRANX
+ 0: 27*0.0 /
+ 0: 
+ 0: ENDBOX
+ 0: 
+ 0: BOX
+ 0: 6  6  1  9  1  3  /
+ 0: 
+ 0: TRANX
+ 0: 27*0.0 /
+ 0: 
+ 0: ENDBOX
+ 0: 
+ 0: BOX
+ 0: 3  3  1  1  1  1  /
+ 0: 
+ 0: TRANY
+ 0: 0.0 /
+ 0: 
+ 0: TRANZ
+ 0: 0.0 /
+ 0: 
+ 0: DEPTH
+ 0: 7001 /
+ 0: 
+ 0: ENDBOX
+ 0: 
+ 0: BOUNDARY
+ 0: 1 6  1 9  1 3 /
+ 0: 
+ 0: PROPS    ===============================================================
+ 0: 
+ 0: SWFN
+ 0:   0.22  0     7
+ 0:   0.3   0.07  4
+ 0:   0.4   0.15  3
+ 0:   0.5   0.24  2.5
+ 0:   0.6   0.33  2
+ 0:   0.8   0.65  1
+ 0:   0.9   0.83  0.5
+ 0:   1     1     0      /
+ 0: 
+ 0: SGFN
+ 0:   0     0       0
+ 0:   0.04  0       0.2
+ 0:   0.1   0.022   0.5
+ 0:   0.2   0.1     1
+ 0:   0.3   0.24    1.5
+ 0:   0.4   0.34    2
+ 0:   0.5   0.42    2.5
+ 0:   0.6   0.5     3
+ 0:   0.7   0.8125  3.5
+ 0:   0.78  1       3.9    /
+ 0: 
+ 0: SOF3
+ 0: 0        0         0
+ 0: 0.15     0         0
+ 0: 0.38     0.00432   0
+ 0: 0.4      0.0048    0.004
+ 0: 0.48     0.05288   0.02
+ 0: 0.5      0.0649    0.036
+ 0: 0.58     0.11298   0.1
+ 0: 0.6      0.125     0.146
+ 0: 0.68     0.345     0.33
+ 0: 0.7      0.4       0.42
+ 0: 0.74     0.7       0.6
+ 0: 0.78     1         1          /
+ 0: 
+ 0: PVTW
+ 0: 3000  1.00341  3.0D-6  0.96  0  /
+ 0: 
+ 0: ROCK
+ 0: 3600    4.0D-6   /
+ 0: 
+ 0: DENSITY
+ 0: 1* 63.02 1* /
+ 0: 
+ 0: EOS
+ 0: PR /
+ 0: 
+ 0: RTEMP
+ 0: 284 /
+ 0: 
+ 0: STCOND
+ 0: 60 14.7 /
+ 0: 
+ 0: CNAMES
+ 0: N2     CO2    C1    HC23  HC46   C8     HC13   HC18   HC26   HC43 /
+ 0: 
+ 0: TCRIT
+ 0: 227.16 547.56 335.8 608.4 820.8 1035.0 1198.8 1323.0 1452.6 1645.2  /
+ 0: 
+ 0: PCRIT
+ 0: 492.3  1071.3 670.1 650.0 504.25 441.1  327.8 237.8 174.0 147.4   /
+ 0: 
+ 0: ZCRIT
+ 0: 0.2908 0.2740 0.2881 0.2760 0.2653 0.3086 0.3224 0.3225 0.3224 0.3224 /
+ 0: 
+ 0: MW
+ 0: 28.02 44.01  16.04  35.88  67.98 110.14 173.11 248.85 361.77 600.98 /
+ 0: 
+ 0: ACF
+ 0: 0.040 0.225 0.0080 0.1255 0.2325 0.4210 0.7174 0.9849 1.2737 1.6704 /
+ 0: 
+ 0: ACFS
+ 0: 0.04  0.22  0.01   0.12   0.23   0.42   0.71   0.98   1.27   1.67   /
+ 0: 
+ 0: BIC
+ 0:    0.0
+ 0:    0.02  0.12
+ 0:    0.06  0.15   0.0
+ 0:    0.08  0.15 2*0.0
+ 0:    0.08  0.15 3*0.0
+ 0:    0.08  0.15 4*0.0
+ 0:    0.08  0.15 5*0.0
+ 0:    0.08  0.15 6*0.0
+ 0:    0.08  0.15 7*0.0 /
+ 0: 
+ 0: BICS
+ 0:    0.0
+ 0:    0.02  0.12
+ 0:    0.06  0.15   0.0
+ 0:    0.08  0.15 2*0.0
+ 0:    0.08  0.15 3*0.0
+ 0:    0.08  0.18 4*0.0
+ 0:    0.09  0.20 5*0.0
+ 0:    0.09  0.20 6*0.0
+ 0:    0.09  0.20 7*0.0 /
+ 0: 
+ 0: ZMFVD
+ 0:   100.0 0.0069 0.0314 0.5280 0.1515 0.0703
+ 0:         0.0867 0.0529 0.0340 0.0238 0.0145
+ 0: 10000.0 0.0069 0.0314 0.5280 0.1515 0.0703
+ 0:         0.0867 0.0529 0.0340 0.0238 0.0145  /
+ 0: 
+ 0: REGIONS    ===========================================================
+ 0: --         There are three fluid-in-place regions, separated by the
+ 0: --         two vertical barriers.
+ 0: --         -----------------------------------------------------------
+ 0: 
+ 0: --    ARRAY    VALUE     ------ BOX ------
+ 0: 
+ 0: EQUALS
+ 0: FIPNUM   1     1  3  1  9  1  3   /
+ 0: FIPNUM   2     4  6  1  9  1  3   /
+ 0: FIPNUM   3     7  9  1  9  1  3   /
+ 0: /
+ 0: 
+ 0: -- PRINT FIPNUM ARRAY
+ 0: 
+ 0: RPTREGS
+ 0: FIPNUM /
+ 0: 
+ 0: SOLUTION    ============================================================
+ 0: --          This section defines the initial conditions in the field.
+ 0: --          ------------------------------------------------------------
+ 0: 
+ 0: -- SET THE EQUILIBRATION DATA
+ 0: --
+ 0: --   DATUM  DATUM   OWC    OWC    GOC    GOC   RSVD   RVVD   SOLN
+ 0: --   DEPTH  PRESS  DEPTH   PCOW  DEPTH   PCOG  TABLE  TABLE  METH  CEO
+ 0: 
+ 0: EQUIL
+ 0:      7010   3000   9000    0.0   7010    0     1      1       0    3 /
+ 0: 
+ 0: -- SWITCH ON OUTPUT OF INITIAL CONDITIONS
+ 0: 
+ 0: --OUTSOL
+ 0: RPTRST
+ 0:  RESTART  /
+ 0: 
+ 0: SUMMARY   =============================================================
+ 0: 
+ 0: -- region properties
+ 0: RPR
+ 0: 1 2 3 /
+ 0: ROFR
+ 0: 1 2 /
+ 0: 2 3 /
+ 0: /
+ 0: ROFT
+ 0: 1 2 /
+ 0: 2 3 /
+ 0: /
+ 0: RGFR
+ 0: 1 2 /
+ 0: 2 3 /
+ 0: /
+ 0: RGFT
+ 0: 1 2 /
+ 0: 2 3 /
+ 0: /
+ 0: RWFR
+ 0: 1 2 /
+ 0: 2 3 /
+ 0: /
+ 0: RWFT
+ 0: 1 2 /
+ 0: 2 3 /
+ 0: /
+ 0: 
+ 0: --group properties
+ 0: GVIR
+ 0: GR-B2 /
+ 0: GVIT
+ 0: GR-B2 /
+ 0: GWIR
+ 0: GR-B2 /
+ 0: GWIT
+ 0: GR-B2 /
+ 0: GLPR
+ 0: GR-A2 /
+ 0: GLPT
+ 0: GR-A2 /
+ 0: GVPR
+ 0: GR-A2 /
+ 0: GVPT
+ 0: GR-A2 /
+ 0: GOPR
+ 0: GR-A2 /
+ 0: GOPT
+ 0: GR-A2 /
+ 0: GWCT
+ 0: GR-A2 /
+ 0: GWGR
+ 0: GR-A2 /
+ 0: GWPR
+ 0: GR-A2 /
+ 0: GWPT
+ 0: GR-A2 /
+ 0: 
+ 0: --field properties
+ 0: FLPR
+ 0: FLPT
+ 0: FPPG
+ 0: FPPO
+ 0: FPPW
+ 0: FPRH
+ 0: FVIR
+ 0: FVIT
+ 0: FVPT
+ 0: FWGR
+ 0: FWIT
+ 0: 
+ 0: --well properties
+ 0: WGPR
+ 0: PA1 /
+ 0: WGPT
+ 0: PA1 /
+ 0: WLPR
+ 0: PA1 /
+ 0: WLPT
+ 0: PA1 /
+ 0: WOPR
+ 0: PA1 /
+ 0: WOPT
+ 0: PA1 /
+ 0: WWPR
+ 0: PA1 /
+ 0: WWPT
+ 0: PA1 /
+ 0: WWIR
+ 0: INJ /
+ 0: WWPT
+ 0: INJ /
+ 0: WWCT
+ 0: PA1 /
+ 0: WWGR
+ 0: PA1 /
+ 0: 
+ 0: --completion properties
+ 0: CGOR
+ 0: PA1 3 2 1 /
+ 0: /
+ 0: CGPR
+ 0: PA1 3 2 1 /
+ 0: /
+ 0: CGPT
+ 0: PA1 3 2 1 /
+ 0: /
+ 0: COPR
+ 0: PA1 3 2 1 /
+ 0: /
+ 0: COPT
+ 0: PA1 3 2 1 /
+ 0: /
+ 0: CWCT
+ 0: PA1 3 2 1 /
+ 0: /
+ 0: CWPR
+ 0: PA1 3 2 1 /
+ 0: /
+ 0: 
+ 0: -- block properties
+ 0: BBGAS
+ 0: 3 2 1 /
+ 0: /
+ 0: BBOIL
+ 0: 3 2 1 /
+ 0: /
+ 0: BBWAT
+ 0: 3 2 1 /
+ 0: /
+ 0: BDENG
+ 0: 3 2 1 /
+ 0: /
+ 0: BDENO
+ 0: 3 2 1 /
+ 0: /
+ 0: BDENW
+ 0: 3 2 1 /
+ 0: /
+ 0: BKRG
+ 0: 3 2 1 /
+ 0: /
+ 0: BKRO
+ 0: 3 2 1 /
+ 0: /
+ 0: BKRW
+ 0: 3 2 1 /
+ 0: /
+ 0: BMLSC
+ 0: 3 2 1 /
+ 0: /
+ 0: BPCG
+ 0: 3 2 1 /
+ 0: /
+ 0: BPCO
+ 0: 3 2 1 /
+ 0: /
+ 0: BPCW
+ 0: 3 2 1 /
+ 0: /
+ 0: BPORV
+ 0: 3 2 1 /
+ 0: /
+ 0: BPORVT
+ 0: 3 2 1 /
+ 0: /
+ 0: BPPG
+ 0: 3 2 1 /
+ 0: /
+ 0: BPPO
+ 0: 3 2 1 /
+ 0: /
+ 0: BPPW
+ 0: 3 2 1 /
+ 0: /
+ 0: BPR
+ 0: 3 2 1 /
+ 0: /
+ 0: BPVDP
+ 0: 3 2 1 /
+ 0: /
+ 0: BSGAS
+ 0: 3 2 1 /
+ 0: /
+ 0: BLMF
+ 0: 3 2 1 /
+ 0: /
+ 0: BSOIL
+ 0: 3 2 1 /
+ 0: /
+ 0: BSVOL
+ 0: 3 2 1 /
+ 0: /
+ 0: BWMF
+ 0: 3 2 1 /
+ 0: /
+ 0: BSWAT
+ 0: 3 2 1 /
+ 0: /
+ 0: BVGAS
+ 0: 3 2 1 /
+ 0: /
+ 0: BVOIL
+ 0: 3 2 1 /
+ 0: /
+ 0: BVWAT
+ 0: 3 2 1 /
+ 0: /
+ 0: BXMF
+ 0: 3 2 1 /
+ 0: /
+ 0: BYMF
+ 0: 3 2 1 /
+ 0: /
+ 0: BGMCO
+ 0: 3 2 1 /
+ 0: /
+ 0: BGMCG
+ 0: 3 2 1 /
+ 0: /
+ 0: BGMRV
+ 0: 3 2 1 /
+ 0: /
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: SCHEDULE  =============================================================
+ 0: 
+ 0: 
+ 0: CHANDIMS
+ 0: 14  3  7  6 /
+ 0: 
+ 0: AUTOSAVE
+ 0:   3 /
+ 0: VFPPROD
+ 0:    1     8300.0     'GAS'    'WCT'    'GOR'   /
+ 0:   3.00000E+03  4.00000E+03
+ 0:   5.00000E+03  6.00000E+03
+ 0:   7.00000E+03  8.00000E+03
+ 0:   9.00000E+03  1.00000E+04
+ 0:   2.00000E+04  4.00000E+04 / --Flow values
+ 0:   50           110          170         / --Thp values
+ 0:   0.0          0.4          0.8         / --WCT value
+ 0:   1            100                      / --GOR values
+ 0:   0            50                       / --ALQ values
+ 0:   1   1   1   1  1.78866E+02  1.80582E+02  1.83249E+02  1.86839E+02
+ 0:                  1.91336E+02  1.96732E+02  2.03021E+02  2.10199E+02
+ 0:                  2.18265E+02  2.27215E+02
+ 0:                /
+ 0:   2   1   1   1  2.29199E+02  2.30918E+02  2.33590E+02  2.37183E+02
+ 0:                  2.41682E+02  2.47080E+02  2.53370E+02  2.60549E+02
+ 0:                  2.68615E+02  2.77565E+02
+ 0:                /
+ 0:   3   1   1   1  2.99367E+02  3.01098E+02  3.03785E+02  3.07395E+02
+ 0:                  3.11912E+02  3.17329E+02  3.23638E+02  3.30837E+02
+ 0:                  3.38923E+02  3.47894E+02
+ 0:                /
+ 0: 
+ 0:   1   2   1   1  1.97733E+02  1.99491E+02  2.02244E+02  2.05967E+02
+ 0:                  2.10650E+02  2.16285E+02  2.22869E+02  2.30398E+02
+ 0:                  2.38870E+02  2.48284E+02
+ 0:                /
+ 0:   2   2   1   1  2.48085E+02  2.49845E+02  2.52599E+02  2.56323E+02
+ 0:                  2.61005E+02  2.66638E+02  2.73218E+02  2.80742E+02
+ 0:                  2.89208E+02  2.98615E+02
+ 0:                /
+ 0:   3   2   1   1  3.18392E+02  3.20159E+02  3.22921E+02  3.26653E+02
+ 0:                  3.31342E+02  3.36981E+02  3.43567E+02  3.51096E+02
+ 0:                  3.59566E+02  3.68976E+02
+ 0:                /
+ 0: 
+ 0:   1   3   1   1  2.17606E+02  2.19383E+02  2.22192E+02  2.26016E+02
+ 0:                  2.30847E+02  2.36682E+02  2.43516E+02  2.51347E+02
+ 0:                  2.60175E+02  2.69997E+02
+ 0:                 /
+ 0:   2   3   1   1  2.68004E+02  2.69779E+02  2.72585E+02  2.76405E+02
+ 0:                  2.81230E+02  2.87055E+02  2.93878E+02  3.01698E+02
+ 0:                  3.10511E+02  3.20316E+02
+ 0:                /
+ 0:   3   3   1   1  3.38499E+02  3.40274E+02  3.43078E+02  3.46893E+02
+ 0:                  3.51711E+02  3.57528E+02  3.64340E+02  3.72145E+02
+ 0:                  3.80942E+02  3.90730E+02
+ 0:                /
+ 0: 
+ 0:   1   1   2   1  1.43364E+02  1.44927E+02  1.50647E+02  1.58609E+02
+ 0:                  1.68051E+02  1.78642E+02  1.90116E+02  2.02450E+02
+ 0:                  2.15556E+02  2.29555E+02
+ 0:                /
+ 0:   2   1   2   1  2.13320E+02  2.15255E+02  2.18576E+02  2.23161E+02
+ 0:                  2.28956E+02  2.35984E+02  2.44196E+02  2.53577E+02
+ 0:                  2.64102E+02  2.75770E+02
+ 0:                /
+ 0:   3   1   2   1  2.85907E+02  2.87972E+02  2.91238E+02  2.95683E+02
+ 0:                  3.01299E+02  3.08078E+02  3.16019E+02  3.25116E+02
+ 0:                  3.35369E+02  3.46774E+02
+ 0:                /
+ 0: 
+ 0:   1   2   2   1  1.71513E+02  1.72243E+02  1.76212E+02  1.82135E+02
+ 0:                  1.89615E+02  1.98392E+02  2.08264E+02  2.19228E+02
+ 0:                  2.31177E+02  2.44080E+02
+ 0:                /
+ 0:   2   2   2   1  2.35462E+02  2.37335E+02  2.40474E+02  2.44796E+02
+ 0:                  2.50275E+02  2.56892E+02  2.64632E+02  2.73489E+02
+ 0:                  2.83464E+02  2.94551E+02
+ 0:                /
+ 0:   3   2   2   1  3.07417E+02  3.09378E+02  3.12485E+02  3.16720E+02
+ 0:                  3.22075E+02  3.28547E+02  3.36130E+02  3.44823E+02
+ 0:                  3.54623E+02  3.65529E+02
+ 0:                /
+ 0: 
+ 0:   1   3   2   1  2.06693E+02  2.07773E+02  2.10699E+02  2.15009E+02
+ 0:                  2.20574E+02  2.27309E+02  2.35180E+02  2.44152E+02
+ 0:                  2.54196E+02  2.65286E+02
+ 0:                /
+ 0:   2   3   2   1  2.62512E+02  2.64316E+02  2.67243E+02  2.71255E+02
+ 0:                  2.76340E+02  2.82491E+02  2.89705E+02  2.97977E+02
+ 0:                  3.07304E+02  3.17685E+02
+ 0:                /
+ 0:   3   3   2   1  3.33621E+02  3.35457E+02  3.38375E+02  3.42357E+02
+ 0:                  3.47400E+02  3.53498E+02  3.60648E+02  3.68849E+02
+ 0:                  3.78100E+02  3.88398E+02
+ 0:                /
+ 0: 
+ 0:   1   1   1   2  7.15354E+01  7.78776E+01  8.85665E+01  1.01404E+02
+ 0:                  1.17933E+02  1.37194E+02  1.59530E+02  1.85187E+02
+ 0:                  2.13318E+02  2.27215E+02
+ 0:                /
+ 0:   2   1   1   2  1.21757E+02  1.28099E+02  1.38800E+02  1.51636E+02
+ 0:                  1.68180E+02  1.87439E+02  2.09789E+02  2.35445E+02
+ 0:                  2.63588E+02  2.77565E+02
+ 0:                /
+ 0:   3   1   1   2  1.91845E+02  1.98196E+02  2.08916E+02  2.21764E+02
+ 0:                  2.38332E+02  2.57604E+02  2.79983E+02  3.05654E+02
+ 0:                  3.33827E+02  3.47894E+02
+ 0:                /
+ 0: 
+ 0:   1   2   1   2  7.66708E+01  8.32992E+01  9.48591E+01  1.08315E+02
+ 0:                  1.26204E+02  1.46419E+02  1.70606E+02  1.97545E+02
+ 0:                  2.28013E+02  2.48284E+02
+ 0:                /
+ 0:   2   2   1   2  1.26851E+02  1.33472E+02  1.45038E+02  1.58477E+02
+ 0:                  1.76372E+02  1.96561E+02  2.20752E+02  2.47655E+02
+ 0:                  2.78125E+02  2.98615E+02
+ 0:                /
+ 0:   3   2   1   2  1.96959E+02  2.03575E+02  2.15151E+02  2.28575E+02
+ 0:                  2.46481E+02  2.66644E+02  2.90846E+02  3.17711E+02
+ 0:                  3.48190E+02  3.68976E+02
+ 0:                /
+ 0: 
+ 0:   1   3   1   2  8.20440E+01  8.88821E+01  1.01278E+02  1.15210E+02
+ 0:                  1.34411E+02  1.55371E+02  1.81346E+02  2.09283E+02
+ 0:                  2.42008E+02  2.69997E+02
+ 0:                 /
+ 0:   2   3   1   2  1.32176E+02  1.38996E+02  1.51390E+02  1.65284E+02
+ 0:                  1.84480E+02  2.05381E+02  2.31348E+02  2.59206E+02
+ 0:                  2.91919E+02  3.20316E+02
+ 0:                 /
+ 0:   3   3   1   2  2.02310E+02  2.09106E+02  2.21499E+02  2.35341E+02
+ 0:                  2.54532E+02  2.75354E+02  3.01312E+02  3.29062E+02
+ 0:                  3.61761E+02  3.90730E+02
+ 0:                /
+ 0: 
+ 0:   1   1   2   2  1.43364E+02  1.44927E+02  7.11495E+01  9.12117E+01
+ 0:                  1.15831E+02  1.43564E+02  1.76171E+02  2.02450E+02
+ 0:                  2.15556E+02  2.29555E+02
+ 0:                /
+ 0:   2   1   2   2  1.16926E+02  1.25304E+02  1.37341E+02  1.54774E+02
+ 0:                  1.75437E+02  1.99895E+02  2.29324E+02  2.53577E+02
+ 0:                  2.64102E+02  2.75770E+02
+ 0:                /
+ 0:   3   1   2   2  1.88751E+02  1.97237E+02  2.09269E+02  2.26540E+02
+ 0:                  2.46985E+02  2.71289E+02  3.00422E+02  3.25116E+02
+ 0:                  3.35369E+02  3.46774E+02
+ 0:                /
+ 0: 
+ 0:   1   2   2   2  5.88808E+01  6.58948E+01  7.94251E+01  9.79444E+01
+ 0:                  1.19326E+02  1.46284E+02  1.75753E+02  2.09604E+02
+ 0:                  2.31177E+02  2.44080E+02
+ 0:                /
+ 0:   2   2   2   2  1.23012E+02  1.30982E+02  1.43342E+02  1.59827E+02
+ 0:                  1.79128E+02  2.03943E+02  2.31283E+02  2.63168E+02
+ 0:                  2.83464E+02  2.94551E+02
+ 0:                /
+ 0:   3   2   2   2  1.94339E+02  2.02371E+02  2.14729E+02  2.31090E+02
+ 0:                  2.50314E+02  2.74938E+02  3.02062E+02  3.33848E+02
+ 0:                  3.54623E+02  3.65529E+02
+ 0:                /
+ 0: 
+ 0:   1   3   2   2  7.48221E+01  8.15275E+01  9.43262E+01  1.09822E+02
+ 0:                  1.29938E+02  1.53193E+02  1.80438E+02  2.11352E+02
+ 0:                  2.45599E+02  2.65286E+02
+ 0:                /
+ 0:   2   3   2   2  1.30512E+02  1.37833E+02  1.50484E+02  1.65507E+02
+ 0:                  1.85164E+02  2.07784E+02  2.34411E+02  2.64562E+02
+ 0:                  2.98131E+02  3.17685E+02
+ 0:                /
+ 0:   3   3   2   2  2.01115E+02  2.08439E+02  2.21090E+02  2.36030E+02
+ 0:                  2.55661E+02  2.78152E+02  3.04736E+02  3.34721E+02
+ 0:                  3.68233E+02  3.88398E+02
+ 0:                /
+ 0: 
+ 0: --Injection well VFP table 2
+ 0: 
+ 0: VFPINJ
+ 0: 1 6900.0 GA /                                           --Basic data
+ 0: 1.00000E+00  3.00000E+02  7.00000E+02  1.00000E+03
+ 0: 2.00000E+03  3.00000E+03 /                             --Flow values
+ 0: 1.00000E+03  2.00000E+03  3.00000E+03 /                --THP values
+ 0: 1  1.31963E+03  1.31781E+03  1.31049E+03  1.30133E+03
+ 0:    1.24694E+03  1.15029E+03 /                          --BHP values
+ 0: 2  2.73750E+03  2.73671E+03  2.73365E+03  2.72991E+03
+ 0:    2.70847E+03  2.67303E+03 /                          --BHP values
+ 0: 3  3.92693E+03  3.92631E+03  3.92396E+03  3.92110E+03
+ 0:    3.90493E+03  3.87853E+03 /                          --BHP values
+ 0: 
+ 0: -- Set controls on output at each report time
+ 0: 
+ 0: RPTPRINT
+ 0: 1 1 1 1 1  1 1 1 0 0 /
+ 0: 
+ 0: SEPCOND
+ 0: SC ' ' 1 60 14.7 /
+ 0: /
+ 0: 
+ 0: --SPECIFY WELLS
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --PA1   GR-A1      3  2      1*    SC /
+ 0: --PA2   GR-A1      1  3      1*    SC /
+ 0: --PA3   GR-A1      2  4      1*    SC /
+ 0: --PA4   GR-A2      2  7      1*    SC /
+ 0: --PA5   GR-A2      1  6      1*    SC /
+ 0: --PA6   GR-A2      3  5      1*    SC /
+ 0: --PB1   GR-B2      5  4      1*    SC /
+ 0: --IGA   GR-A1      1  1      1*    SC /
+ 0: --IGA1  GR-A2      1  9      1*    SC /
+ 0: --IGA2  GR-A2      2  9      1*    SC /
+ 0: --IGA3  GR-A2      3  9      1*    SC /
+ 0: --IWB1  GR-B2      4  9      1*    SC /
+ 0: --IWB2  GR-B2      5  9      1*    SC /
+ 0: --IWB3  GR-B2      6  9      1*    SC /
+ 0: WELSPECS
+ 0: PA1   GR-A1      3  2      1*    OIL /
+ 0: PA2   GR-A1      1  3      1*    OIL /
+ 0: PA3   GR-A1      2  4      1*    OIL /
+ 0: PA4   GR-A2      2  7      1*    OIL /
+ 0: PA5   GR-A2      1  6      1*    OIL /
+ 0: PA6   GR-A2      3  5      1*    OIL /
+ 0: PB1   GR-B2      5  4      1*    OIL /
+ 0: IGA   GR-A1      1  1      1*    GAS /
+ 0: IGA1  GR-A2      1  9      1*    GAS /
+ 0: IGA2  GR-A2      2  9      1*    GAS /
+ 0: IGA3  GR-A2      3  9      1*    GAS /
+ 0: IWB1  GR-B2      4  9      1*    WAT /
+ 0: IWB2  GR-B2      5  9      1*    WAT /
+ 0: IWB3  GR-B2      6  9      1*    WAT /
+ 0: /
+ 0: 
+ 0: --2000a uses WELSEPC to associate separator with wells
+ 0: WSEPCOND
+ 0: PA1  SC /
+ 0: PA2  SC /
+ 0: PA3  SC /
+ 0: PA4  SC /
+ 0: PA5  SC /
+ 0: PA6  SC /
+ 0: PB1  SC /
+ 0: IGA  SC /
+ 0: IGA1 SC /
+ 0: IGA2 SC /
+ 0: IGA3 SC /
+ 0: IWB1 SC /
+ 0: IWB2 SC /
+ 0: IWB3 SC /
+ 0: /
+ 0: 
+ 0: --One platform (PLAT-A) produces at a target liquid rate
+ 0: --of 20,000 stb
+ 0: 
+ 0: -- Set up the group tree structure.  PLAT-A as a platform.
+ 0: -- Well groups GR-A1 and GR-A2 are subordinate to PLAT-A,
+ 0: -- GR-B1 and GR-B2 to SP-B
+ 0: 
+ 0: GRUPTREE
+ 0: GR-A1  PLAT-A  /
+ 0: GR-A2  PLAT-A  /
+ 0: GR-B2  SP-B    /
+ 0: /
+ 0: 
+ 0: -- Set the well completion data, to specify the well connections.
+ 0: -- The producers are completed in layers 1 - 3 , the gas injectors in
+ 0: -- layer 1 only, and the water injectors in layers 2 and 3.  Each well
+ 0: -- is completed in one vertical column of grid blocks, so the
+ 0: -- connections have the I- and J- locations that were set in WELSPECS.
+ 0: --
+ 0: --  WELL    -LOCATION-  OPEN/  SAT  CONN  BORE
+ 0: --  NAME    I  J K1-K2  SHUT   TAB  FACT  DIAM
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --PA1    2*  1  3   0   0.333  /
+ 0: --PA2    2*  1  3   0   0.333  /
+ 0: --PA3    2*  1  3   0   0.333  /
+ 0: --PA4    2*  1  3   0   0.333  /
+ 0: --PA5    2*  1  3   0   0.333  /
+ 0: --PA6    2*  1  3   0   0.333  /
+ 0: --PB1    2*  1  3   0   0.333  /
+ 0: --IGA    2*  1  1   0   0.333  /
+ 0: --IGA1   2*  1  1   0   0.333  /
+ 0: --IGA2   2*  1  1   0   0.333  /
+ 0: --IGA3   2*  1  1   0   0.333  /
+ 0: --IWB1   2*  2  3   0   0.333  /
+ 0: --IWB2   2*  2  3   0   0.333  /
+ 0: --IWB3   2*  2  3   0   0.333  /
+ 0: COMPDAT
+ 0: PA1    2*  1  3   OPEN  0 1* 0.333  /
+ 0: PA2    2*  1  3   OPEN  0 1* 0.333  /
+ 0: PA3    2*  1  3   OPEN  0 1* 0.333  /
+ 0: PA4    2*  1  3   OPEN  0 1* 0.333  /
+ 0: PA5    2*  1  3   OPEN  0 1* 0.333  /
+ 0: PA6    2*  1  3   OPEN  0 1* 0.333  /
+ 0: PB1    2*  1  3   OPEN  0 1* 0.333  /
+ 0: IGA    2*  1  1   OPEN  0 1* 0.333  /
+ 0: IGA1   2*  1  1   OPEN  0 1* 0.333  /
+ 0: IGA2   2*  1  1   OPEN  0 1* 0.333  /
+ 0: IGA3   2*  1  1   OPEN  0 1* 0.333  /
+ 0: IWB1   2*  2  3   OPEN  0 1* 0.333  /
+ 0: IWB2   2*  2  3   OPEN  0 1* 0.333  /
+ 0: IWB3   2*  2  3   OPEN  0 1* 0.333  /
+ 0: /
+ 0: 
+ 0: -- Set the control data for all the producers.
+ 0: -- All wells are initially placed under group control,
+ 0: -- with a maximum gas rate of 30,000 and a minimum BHP of 2000 psi.
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --           Limits on
+ 0: --       Oil     Gas      BHP
+ 0: --PA1  GR      2*  30000 1* 2000 1000 2* 1 /
+ 0: --PA2  GR      2*  30000 1* 2000 1000 2* 1 /
+ 0: --PA3  GR      2*  30000 1* 2000 1000 2* 1 /
+ 0: --PA4  GR      2*  30000 1* 2000 1000 2* 1 /
+ 0: --PA5  GR      2*  30000 1* 2000 1000 2* 1 /
+ 0: --PA6  GR      2*  30000 1* 2000 1000 2* 1 /
+ 0: --PB1  OIL 500 1*  30000 1* 2000 1000 2* 1 /
+ 0: WCONPROD
+ 0: PA1   OPEN  GRUP     2*  30000  2*  2000  1000  1 /
+ 0: PA2   OPEN  GRUP     2*  30000  2*  2000  1000  1 /
+ 0: PA3   OPEN  GRUP     2*  30000  2*  2000  1000  1 /
+ 0: PA4   OPEN  GRUP     2*  30000  2*  2000  1000  1 /
+ 0: PA5   OPEN  GRUP     2*  30000  2*  2000  1000  1 /
+ 0: PA6   OPEN  GRUP     2*  30000  2*  2000  1000  1 /
+ 0: PB1   OPEN  ORAT 500 1*  30000  2*  2000  1000  1 /
+ 0: /
+ 0: --
+ 0: -- Set the control data for all the injectors.
+ 0: -- All wells are initially placed under group control,
+ 0: -- injecting either nitrogen or water, with a maximum BHP of 5500
+ 0: -- or 3300
+ 0: 
+ 0: --2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+ 0: --WELLINJE
+ 0: --IGA    2*      GR 3*         5500 /
+ 0: --IGA1   2*      GR 3*         5500 /
+ 0: --IGA2   2*      GR 3*         5500 /
+ 0: --IGA3   2*      GR 3*         5500 /
+ 0: --IWB1   WAT 1*  GR 3*         5500 /
+ 0: --IWB2   WAT 1*  GR 3*         5500 /
+ 0: --IWB3   WAT 1*  GR 3*         5500 /
+ 0: WCONINJE
+ 0: IGA   GAS    OPEN  GRUP  2*  5500 /
+ 0: IGA1  GAS    OPEN  GRUP  2*  5500 /
+ 0: IGA2  GAS    OPEN  GRUP  2*  5500 /
+ 0: IGA3  GAS    OPEN  GRUP  2*  5500 /
+ 0: IWB1  WATER  OPEN  GRUP  2*  5500 /
+ 0: IWB2  WATER  OPEN  GRUP  2*  5500 /
+ 0: IWB3  WATER  OPEN  GRUP  2*  5500 /
+ 0: /
+ 0: 
+ 0: -- Set economic limits of 200 and 250 stb/day of oil for producers.
+ 0: -- Wells will be shut if their prodcution falls below this limit
+ 0: -- They will be worked over if the water cut exceeds 0.7
+ 0: -- or the GOR exceeds 100.0
+ 0: 
+ 0: 
+ 0: WECON
+ 0: PA1 250    1*   0.7   100.0   1*   CON  NO  /
+ 0: PA2 250    1*   0.7   100.0   1*   CON  NO  /
+ 0: PA3 250    1*   0.7   100.0   1*   CON  NO  /
+ 0: PA4 200    1*   0.7   100.0   1*   CON  NO  /
+ 0: PA5 200    1*   0.7   100.0   1*   CON  NO  /
+ 0: PA6 200    1*   0.7   100.0   1*   CON  NO  /
+ 0: PB1 250    1*   0.7   100.0   1*   CON  NO  /
+ 0: /
+ 0: 
+ 0: -- Set the group production data. The field oil production target is
+ 0: -- 2,500 stb/Day.
+ 0: 
+ 0: -- PLAT-A has a maximum gas production rate of 90,000 Mscf/Day.
+ 0: 
+ 0: --2000a GRUPPROD is for back-compatibility, prefered keyword is GCONPROD
+ 0: --the modification will give different results, GCONPROD uses guide rate
+ 0: --GRUPPROD
+ 0: --FIELD    OIL 2500  /
+ 0: --PLAT-A   GR  2*  90000  /
+ 0: --GR-A1    GR /
+ 0: --GR-A2    GR /
+ 0: GCONPROD
+ 0: FIELD    ORAT  2500         /
+ 0: PLAT-A   FLD   2*    90000  3*  0  POTN  /
+ 0: GR-A1    FLD   6*               0  POTN  /
+ 0: GR-A2    FLD   6*               0  POTN  /
+ 0: /
+ 0: 
+ 0: --2000a GRUPINJE is for back-compatibility, prefered keyword is GCONINJE
+ 0: --the modification will give different results, GCONINJE uses guide rate
+ 0: --GRUPINJE
+ 0: --SP-B  WAT 1* WAT 1* 7000  /
+ 0: --GR-B2 WAT 1*  GR /
+ 0: GCONINJE
+ 0: SP-B  WATER RATE  7000    /
+ 0: GR-B2 WATER FLD   5*   0  RATE /
+ 0: /
+ 0: 
+ 0: -- PLAT-A sells half its gas production.
+ 0: 
+ 0: GRUPSALE
+ 0: PLAT-A 1* 0.5 /
+ 0: /
+ 0: 
+ 0: WELLSTREAM
+ 0: INJ 1.0 /
+ 0: /
+ 0: 
+ 0: -- PLAT-A has a gas injection target of 20,000 Mscf/Day.
+ 0: 
+ 0: --2000a GRUPINJE is for back-compatibility, prefered keyword is GCONINJE
+ 0: --the modification will give different results, GCONINJE uses guide rate
+ 0: --GRUPINJE
+ 0: --PLAT-A ST INJ GAS 2* 20000 /
+ 0: --GR-A1  ST INJ GR   /
+ 0: --GR-A2  ST INJ GR   /
+ 0: GCONINJE
+ 0: PLAT-A   GAS  RATE  20000            /
+ 0: GR-A1    GAS  FLD   5*   0  RATE     /
+ 0: GR-A2    GAS  FLD   5*   0  RATE     /
+ 0: /
+ 0: --2000a, GINJGAS is needed with prefered GCONINJE
+ 0: GINJGAS
+ 0: PLAT-A   STREAM  INJ  /
+ 0: GR-A1    STREAM  INJ  /
+ 0: GR-A2    STREAM  INJ  /
+ 0: /
+ 0: 
+ 0: -- Set economic limits on maximum gas-oil ratio
+ 0: 
+ 0: 
+ 0: GECON
+ 0: PLAT-A 3* 10 2* Y /
+ 0: /
+ 0: 
+ 0: COMPLUMP
+ 0: PA1 3 2 1 3 1 /
+ 0: /
+ 0: DRILPRI
+ 0: 30 1 1 1 1 1 1 1 1 /
+ 0: 
+ 0: WELPI
+ 0: PA1 18 /
+ 0: /
+ 0: 
+ 0: GUIDERAT
+ 0: 100 OIL 1 1 /
+ 0: 
+ 0: 
+ 0: ACTIONG
+ 0: ACT1 'PLAT-A' GLPR > 1500 2 0 /
+ 0: 
+ 0: 
+ 0: GTMULT
+ 0: PLAT-A ORAT 0.8/
+ 0: /
+ 0: ENDACTIO
+ 0: 
+ 0: ACTIONW
+ 0: ACT2 'PA*' WLPR > 300 2 0 /
+ 0: 
+ 0: WTMULT
+ 0: '?' LRAT 0.8 /
+ 0: /
+ 0: 
+ 0: ENDACTIO
+ 0: 
+ 0: --ACTIONR
+ 0: --ACT3 1 1* RWSAT > 0.5 2 0 /
+ 0: 
+ 0: --WTMULT
+ 0: --'?' LRAT 0.7 /
+ 0: --/
+ 0: 
+ 0: --ENDACTIO
+ 0: 
+ 0: 
+ 0: -- Specify report steps
+ 0: 
+ 0: TSTEP
+ 0: 1 9 90 265 2*365 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN NETWORK_COMP
+     1 READING RUNSPEC 
+     2 READING IMPES   
+     3 READING FIELD   
+     4 READING OIL     
+     5 READING WATER   
+     6 READING GAS     
+     7 READING MULTSAVE
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           MULTSAVE IS NOT AVAILABLE IN ECLIPSE 100                        
+ @           AND HAS BEEN IGNORED                                            
+     8 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE TABDIMS  KEYWORD                           
+ @           10 /                                                            
+     9 READING TABDIMS 
+    10 READING GPTDIMS 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD GPTDIMS  IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE DIMENS   KEYWORD                           
+ @           2 3 /                                                           
+    11 READING DIMENS  
+    12 READING EQLDIMS 
+    13 READING WELLDIMS
+    14 READING TITLE   
+    15 READING START   
+    16 READING VFPPDIMS
+    17 READING VFPIDIMS
+    18 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @               119980 BYTES                                                
+    20 READING EQUALS  
+    21 READING RPTGRID 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED MNEMONIC LIMITS           IN DATA                  
+ @           FOR KEYWORD RPTGRID  IS IGNORED                                 
+    22 READING EDIT    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+    23 READING BOX     
+    24 READING TRANX   
+    25 READING ENDBOX  
+    26 READING BOX     
+    27 READING TRANX   
+    28 READING ENDBOX  
+    29 READING BOX     
+    30 READING TRANY   
+    31 READING TRANZ   
+    32 READING DEPTH   
+    33 READING ENDBOX  
+    34 READING BOUNDARY
+    35 READING PROPS   
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           NUMBER OF ACTIVE CELLS IS 243                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               616600 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @              58668 CHARACTER VARIABLES USED                               
+    36 READING SWFN    
+    37 READING SGFN    
+    38 READING SOF3    
+    39 READING PVTW    
+    40 READING ROCK    
+    41 READING DENSITY 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SURFACE DENSITY OF OIL IN DENSITY TABLE   1                     
+ @           IS ZERO OR NEGATIVE (=     0.00000)                             
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SURFACE DENSITY OF GAS IN DENSITY TABLE   1                     
+ @           IS ZERO OR NEGATIVE (=     0.00000)                             
+    42 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+    43 READING PR /    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                  
+    44 READING RTEMP   
+    45 READING STCOND  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
+ @           60 14.7 /                                                       
+    46 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+    47 READING N2     C
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD N2     C IN PROPERTY DATA                  
+    48 READING TCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
+ @           227.16 547.56 335.8 608.4 820.8 1035.0 1198.8 1323.0 1452.6 1645
+    49 READING PCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
+ @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               5
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

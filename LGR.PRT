@@ -1,0 +1,528 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN LGR
+
+ 0: ------------------------------------------------------------------------
+ 0: -->Example of a compositional study with an initial oil-gas contact
+ 0: -- The initial vapour composition is specified.
+ 0: -- The grid geometry is defined by corner points, using an include file
+ 0: -- prepared by GRID. The sloping cross-section has a fault, leading to
+ 0: -- non-neighbour connections.
+ 0: -- 11 components
+ 0: -- Z-J EoS
+ 0: -- Grid dimensions 10x1x4
+ 0: -- IMPES solution method
+ 0: -- FIELD units
+ 0: -- Complex injection stream defined.
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC   ==============================================================
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: OIL
+ 0: WATER
+ 0: GAS
+ 0: 
+ 0: IMPES
+ 0: 
+ 0: COMPS
+ 0: 11 /
+ 0: 
+ 0: TABDIMS
+ 0: 1 1 40 40 /
+ 0: 
+ 0: DIMENS
+ 0: 10 1 4 /
+ 0: 
+ 0: EQLDIMS
+ 0: 1 20 /
+ 0: 
+ 0: WELLDIMS
+ 0: 2 2 /
+ 0: 
+ 0: GRID      =============================================================
+ 0: 
+ 0: --Include file defines geometry, so TOPS,DX,DY,DZ not entered
+ 0: 
+ 0: NOECHO
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNABLE TO OPEN INCLUDED FILE                                    
+ @           CASE5G.INC                                                      
+ @           SYSTEM ERROR CODE IS       29                                   
+ 0: ECHO
+ 0: 
+ 0: EQUALS
+ 0: MULTX 0.1 /
+ 0: MULTY 0.2 /
+ 0: MULTZ 0.3 /
+ 0: /
+ 0: 
+ 0: --Request output TOPS and DEPTH , calculated from corner points
+ 0: 
+ 0: RPTGRID
+ 0: LIMITS MULTX MULTY MULTZ /
+ 0: --PS DEPTH PORV TRANX TRANY TRANZ LIMITS DX DY DZ /
+ 0: 
+ 0: --Rock porosity, permeabilities
+ 0: 
+ 0: PORO
+ 0: 40*0.25  /
+ 0: 
+ 0: PERMX
+ 0: 40*100 /
+ 0: 
+ 0: PERMZ
+ 0: 40*50  /
+ 0: 
+ 0: MINPORV
+ 0: 0.001 /
+ 0: 
+ 0: MINDZNET
+ 0: 0.1 /
+ 0: 
+ 0: MAXTRANZ
+ 0: 1000 /
+ 0: 
+ 0: CARFIN
+ 0: LGR 4 5 1 1 1 2 4 1 4 /
+ 0: 
+ 0: ENDFIN
+ 0: 
+ 0: INIT
+ 0: 
+ 0: EDIT
+ 0: 
+ 0: EQUALS
+ 0: PORV  500 4* 1 3 /
+ 0: PORV 5000 4* 4 4 /
+ 0: /
+ 0: 
+ 0: PROPS     ==============================================================
+ 0: 
+ 0: EOS
+ 0: ZJ /
+ 0: 
+ 0: RTEMP
+ 0: 200    /
+ 0: 
+ 0: STCOND
+ 0: 60 14.65 /
+ 0: 
+ 0: CNAMES
+ 0: CO2 N2 C1 C2 C3 IC4 NC4 IC5 NC5 C6 C7+ /
+ 0: 
+ 0: TCRIT
+ 0:     548.46000    227.16000    343.08000    549.77400    665.64000
+ 0:     734.58000    765.36000    828.72000    845.28000    921.60000
+ 0:    1129.51322                                                     /
+ 0: 
+ 0: -- Critical pressures PSIA
+ 0: 
+ 0: PCRIT
+ 0:    1071.33111    492.31265    667.78170    708.34238    618.69739
+ 0:     529.05240    550.65537    483.49511    489.52043    484.37686
+ 0:     335.08843                                                     /
+ 0: 
+ 0: -- Critical volumes
+ 0: 
+ 0: VCRIT
+ 0:     1.5057         1.4417       1.5698       2.3707       3.2037
+ 0:     4.2129         4.0848       4.9337       4.9817       5.6225
+ 0:     8.9018
+ 0: /
+ 0: 
+ 0: -- Acentric factors
+ 0: 
+ 0: ACF
+ 0:        .22500       .04000       .01300       .09860       .15240
+ 0:        .18480       .20100       .22230       .25390       .25000
+ 0:        .40026                                                     /
+ 0: 
+ 0: -- Molecular Weights
+ 0: 
+ 0: MW
+ 0:      44.01000     28.01300     16.04300     30.07000     44.09700
+ 0:      58.12400     58.12400     72.15100     72.15100     84.00000
+ 0:     140.00000                                                     /
+ 0: 
+ 0: -- Default fluid sample composition
+ 0: 
+ 0: COMPVD
+ 0:       1.00000       .01210       .01940       .65990       .08690
+ 0:        .05910       .02390       .02780       .01570       .01120
+ 0:        .01810       .06590       0.0 0.0
+ 0:   10000.00000       .01210       .01940       .65990       .08690
+ 0:        .05910       .02390       .02780       .01570       .01120
+ 0:        .01810       .06590       0.0 0.0                          /
+ 0: 
+ 0: -- Boiling point temperatures Deg R
+ 0: 
+ 0: TBOIL
+ 0:     350.46000    139.32000    201.06000    332.10000    415.98000
+ 0:     470.34000    490.86000    541.80000    556.56000    606.60000
+ 0:     797.88923                                                     /
+ 0: 
+ 0: -- Reference temperatures Deg R
+ 0: 
+ 0: TREF
+ 0:     527.40000    140.58000    201.06000    329.40000    415.80000
+ 0:     527.40000    527.40000    527.40000    527.40000    520.20000
+ 0:     519.67000                                                     /
+ 0: 
+ 0: -- Reference densities LB/FT3
+ 0: 
+ 0: DREF
+ 0:      48.50653     50.19209     26.53189     34.21053     36.33308
+ 0:      34.77238     36.14579     38.70534     39.07991     43.13773
+ 0:      48.03366                                                     /
+ 0: 
+ 0: -- Parachors (Dynes/cm)
+ 0: 
+ 0: PARACHOR
+ 0:      78.00000     41.00000     77.00000    108.00000    150.30000
+ 0:     181.50000    189.90000    225.00000    231.50000    271.00000
+ 0:     400.88800                                                     /
+ 0: 
+ 0: -- Binary Interaction Coefficients
+ 0: 
+ 0: BIC
+ 0:   -.020000
+ 0:    .100000   .036000
+ 0:    .130000   .050000   .000000
+ 0:    .135000   .080000   .000000   .000000
+ 0:    .127700   .100200   .098200   .000000   .000000
+ 0:    .127700   .100200   .098200   .000000   .000000   .000000
+ 0:    .127700   .100200   .098200   .000000   .000000   .000000
+ 0:    .000000
+ 0:    .127700   .100200   .098200   .000000   .000000   .000000
+ 0:    .000000   .000000
+ 0:    .127700   .100200   .098200   .000000   .000000   .000000
+ 0:    .000000   .000000   .000000
+ 0:    .100000   .100000   .139200   .006000   .006000   .000000
+ 0:    .000000   .000000   .000000   .000000
+ 0: /
+ 0: 
+ 0: --Request neat output of tables
+ 0: 
+ 0: RPTPROPS
+ 0: SWFN SOF3 SGFN ZMFVD /
+ 0: 
+ 0: --Note capillary pressures in water and gas saturation tables
+ 0: 
+ 0: SWFN
+ 0:     0.16  0      0
+ 0:     0.18  0      0
+ 0:     0.20  0.002  0
+ 0:     0.24  0.010  0
+ 0:     0.28  0.020  0
+ 0:     0.40  0.066  0
+ 0:     0.50  0.150  0
+ 0:     0.60  0.227  0
+ 0:     0.8   0.540  0
+ 0:     0.84  0.620  0
+ 0:     1.00  1.000  0 /
+ 0: 
+ 0: SGFN
+ 0:     0.00  0.000  0.0
+ 0:     0.05  0.000  0.0
+ 0:     0.12  0.026  0.0
+ 0:     0.20  0.058  0.0
+ 0:     0.50  0.260  0.0
+ 0:     0.60  0.400  0.0
+ 0:     0.80  0.680  0.0
+ 0:     0.84  0.740  0.0 /
+ 0: 
+ 0: SOF3
+ 0:     0.00  0.000  0.000
+ 0:     0.20  0.000  0.000
+ 0:     0.24  0.000  0.000
+ 0:     0.28  0.005  0.005
+ 0:     0.36  0.024  0.024
+ 0:     0.50  0.112  0.112
+ 0:     0.60  0.196  0.196
+ 0:     0.80  0.650  0.650
+ 0:     0.84  0.800  0.800 /
+ 0: 
+ 0: ROCK
+ 0: 3600 0.000004 /
+ 0: 
+ 0: PVTW
+ 0: 3600 1.0 0.000003 0.31 0.0 /
+ 0: 
+ 0: DENSITY
+ 0:  1* 63.0 1* /
+ 0: 
+ 0: SOLUTION   =============================================================
+ 0: 
+ 0: RPTSOL
+ 0: PRESSURE SWAT SOIL SGAS /
+ 0: 
+ 0: EQUIL
+ 0: 5020 4365 5080 0 5020 0 1 1 0 2 /
+ 0: 
+ 0: SUMMARY
+ 0: 
+ 0: --FPR
+ 0: 
+ 0: ALL
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE    ============================================================
+ 0: 
+ 0: RPTPRINT
+ 0: 1 1 1 1 1  1 1 1 1 /
+ 0: 
+ 0: RPTSCHED
+ 0: PRESSURE SWAT SOIL SGAS /
+ 0: 
+ 0: OUTSOL
+ 0: PRESSURE SWAT SOIL SGAS RESTART /
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --IG Field  1 1 5075 /
+ 0: --IW Field 10 1 5075 /
+ 0: WELSPECS
+ 0: IG Field  1 1 5075 GAS /
+ 0: IW Field 10 1 5075 WAT /
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --IG  1 1 1 1 /
+ 0: --IW 10 1 4 4 /
+ 0: COMPDAT
+ 0: IG  1 1 1 1 /
+ 0: IW 10 1 4 4 /
+ 0: /
+ 0: 
+ 0: WELLSTRE
+ 0: INJG .0121 .0194 .6599 .0869 .0591
+ 0:      .0239 .0278 .0157 .0112 .0181 .0659 /
+ 0: /
+ 0: --Water is to be injected at a rate of 10 bpd
+ 0: 
+ 0: --2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+ 0: --WELLINJE
+ 0: --IG ST INJG Gas 2* 100 /
+ 0: WCONINJE
+ 0: IG GAS OPEN RATE 100 /
+ 0: /
+ 0: 
+ 0: WINJGAS
+ 0: IG STREAM INJG /
+ 0: /
+ 0: 
+ 0: TSCRIT
+ 0: 0.01 0.001 /
+ 0: 
+ 0: TSTEP
+ 0: 100 /
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --IG BHP 4* 4860 /
+ 0: WCONPROD
+ 0: IG OPEN BHP 5* 4860 /
+ 0: /
+ 0: 
+ 0: --2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+ 0: --WELLINJE
+ 0: --IW Wat ' ' Wat 1* 100 /
+ 0: WCONINJE
+ 0: IW WATER OPEN RATE 100 /
+ 0: /
+ 0: 
+ 0: NEXT
+ 0: 0.001 /
+ 0: 
+ 0: TSTEP
+ 0: 100
+ 0: /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN LGR
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNABLE TO DETERMINE LOCAL GRID DIMENSIONS                       
+ @           CHECK THE RADFIN/RADFIN4/CARFIN DATA OR SPECIFY                 
+ @           KEYWORD LGR IN RUNSPEC                                          
+     1 READING RUNSPEC 
+     2 READING FIELD   
+     3 READING OIL     
+     4 READING WATER   
+     5 READING GAS     
+     6 READING IMPES   
+     7 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE TABDIMS  KEYWORD                           
+ @           11 /                                                            
+     8 READING TABDIMS 
+     9 READING DIMENS  
+    10 READING EQLDIMS 
+    11 READING WELLDIMS
+    12 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                26548 BYTES                                                
+    13 READING NOECHO  
+    14 READING INCLUDE CASE5G.INC                                        
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            UNABLE TO OPEN INCLUDED FILE                                   
+ @           CASE5G.INC                                                      
+ @            SYSTEM ERROR CODE IS       29                                  
+    15 READING ECHO    
+    16 READING EQUALS  
+    17 READING RPTGRID 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC LIMITS           IN DATA                  
+ @           FOR KEYWORD RPTGRID  IS IGNORED                                 
+    18 READING PORO    
+    19 READING PERMX   
+    20 READING PERMZ   
+    21 READING MINPORV 
+    22 READING MINDZNET
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD MINDZNET IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE MAXTRANZ KEYWORD                           
+ @           0.1 /                                                           
+    23 READING MAXTRANZ
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD MAXTRANZ IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE CARFIN   KEYWORD                           
+ @           1000 /                                                          
+    24 READING CARFIN  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           LOCAL GRID REFINEMENT CANNOT BE USED UNLESS                     
+ @           BOTH MAXLGR AND MAXCLS ARE SET USING KEYWORD LGR IN THE         
+ @           RUNSPEC SECTION : LGR KEYWORDS WILL BE IGNORED                  
+    25 READING ENDFIN  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           KEYWORD ENDFIN DOES NOT FOLLOW A VALID LOCAL                    
+ @           GRID REFINEMENT SPECIFICATION -- IGNORED                        
+    26 READING INIT    
+    27 READING EDIT    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           A THRESHOLD PORE VOLUME HAS BEEN SUPPLIED (MINPV).              
+ @           ANY CELLS WITH VOLUMES LESS THAN THE THRESHOLD WILL BE          
+ @           REMOVED FROM THE SIMULATION. TO ALLOW FLOW TO CONTINUE          
+ @           ACROSS A DISABLED CELL THE NON NEIGHBOUR CONNECTION FLAG        
+ @           MUST BE ENABLED AND THE PINCH KEYWORD ADDED                     
+ @           TO THE GRID SECTION.                                            
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
+ @           PORE VOLUMES WILL BE SET TO ZERO                                
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+    28 READING EQUALS  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           INVALID BOX (  1-  0,  1-  0,  1-  3)                           
+ @           SPECIFIED ON RECORD    1 OF KEYWORD EQUALS                      
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               0
+ Warnings               7
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

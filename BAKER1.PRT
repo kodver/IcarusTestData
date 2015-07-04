@@ -1,0 +1,1617 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN BAKER1
+
+ 0: ----+---10----+---20----+---30----+---40----+---50----+---60----+---70----+---80----+---90----+--100----+--110----+--120----+--130--
+ 0: -- =======================================================================================
+ 0: -- Model:		E300 1D Test
+ 0: -- Case:		Base
+ 0: -- HM Restart Run:	None
+ 0: -- Reservoir Description
+ 0: --   CSim File:		N/A
+ 0: --   Geomodel:		None
+ 0: --   Grid:		7x1x1 Orthogonal, (250'x250' Cells)
+ 0: --     Layers		50' Nominal
+ 0: --     Kx		20 md
+ 0: --     Ky		20 md
+ 0: --     Kz		20 md
+ 0: --     Porosity		0.20
+ 0: --     NTG		1.0
+ 0: --     Heterogeneity	None
+ 0: --   RelPerm:		Initially per FFM Pseudo Rel Perm
+ 0: --			End Point Scaling Not Used
+ 0: --   Hysteresis:	Conv Land w/dSg set= 1, SGRmax default (SGTR not specified); ASOMIN = 1
+ 0: --   PVT:		8-Component Alpine EOS (initial compositions from Equity FFM)
+ 0: --   Initialization:	Pi 3000 psia (at 7000')
+ 0: --   Formulation:	IMPES (default)
+ 0: --   Tracers:		None
+ 0: --   Wells:		2 Wells (1 Prod/1 Inj)
+ 0: --			Control (History Match Period):
+ 0: --			  Prod BHP: 1000
+ 0: --			  Prod Rate: None
+ 0: --			  Inj BHP: None
+ 0: --			  Inj Rate: 200 stbpd (water & gas)
+ 0: --			Control (Prediction Period): N/A
+ 0: --			Stimulation: N/A
+ 0: --   MWAG:		Time-Based: 6 Months Water/6 Months  MI; 6 MI Slugs; Post-WAG WF To 10 Years
+ 0: --			Prediction: N/A
+ 0: --   History Match:     N/A
+ 0: --   Fac Capacities: 	No restriction
+ 0: --   Satellite Impacts:	None
+ 0: --   Stabilizer:	N/A
+ 0: --   Start Simulation:	1/1/2000
+ 0: --   End Simulation:	1/1/2010
+ 0: -- =======================================================================================
+ 0: 
+ 0: -- =======================================================================================
+ 0: -- === RUNSPEC Section ===================================================================
+ 0: -- =======================================================================================
+ 0: RUNSPEC
+ 0: 
+ 0: -- Specify Model Run Title
+ 0: TITLE
+ 0: Eclipse 300 1D Test
+ 0: 
+ 0: -- Specify Run Start Date
+ 0: START
+ 0: -- DD  MMM YYYY
+ 0:     1  JAN 2000 /
+ 0: 
+ 0: -- Specify USe Of Field Units
+ 0: FIELD
+ 0: 
+ 0: -- Specify Use Of Multiple Input Files
+ 0: MULTIN
+ 0: 
+ 0: -- Specify Use Of Unified Output Files
+ 0: --MULTOUT
+ 0: UNIFOUT
+ 0: 
+ 0: -- Specify That A Gas Phase May Exist In Run
+ 0: GAS
+ 0: 
+ 0: -- Specify That An Oil Phase May Exist In Run
+ 0: OIL
+ 0: 
+ 0: -- Specify That A Water Phase May Exist In Run
+ 0: WATER
+ 0: 
+ 0: -- Specify That Saturation Table End-Point Scaling Used
+ 0: -- Disabled
+ 0: --ENDSCALE
+ 0: 
+ 0: -- Specify That Adaptive Implicit Solution Option Not Used
+ 0: AIM
+ 0: 
+ 0: -- Specify That IMPES Solution Option Used
+ 0: --IMPES
+ 0: 
+ 0: -- Specify That 8 Components Will Be Used
+ 0: COMPS
+ 0: -- NC
+ 0:     8 /
+ 0: 
+ 0: -- Specify That All Cap Pressures Will Be Frozen In Run
+ 0: -- Disable
+ 0: --FREEZEPC
+ 0: 
+ 0: -- Specify That Horizontal Wells May Be Used
+ 0: HWELLS
+ 0: 
+ 0: -- Specify The Size Of The Stack Of The Previous Search Directions In Orthomin
+ 0: --   Note: CVCRIT should always by >= NSTACK
+ 0: NSTACK
+ 0:    50 /
+ 0: 
+ 0: -- Specify Formulation Options In Eclipse 300
+ 0: FORMOPTS
+ 0:     HCSCAL / HC rel perm interpolated to smooth transition between oil and gas states
+ 0: 
+ 0: -- Specify That Some Properties Dependent On Surface Tension
+ 0: -- Disable
+ 0: --MISCIBLE
+ 0: 
+ 0: -- Specify That Fast Flash Option Will Be Used (minimize rigorous stability checks)
+ 0: SKIPSTAB
+ 0: 
+ 0: -- Specify That Information For Run-Time Monitoring Be Written To Summary Spec File
+ 0: MONITOR
+ 0: 
+ 0: -- Specify That A Restart Index File Be Written
+ 0: RSSPEC
+ 0: 
+ 0: -- Specify That Initial Index File Not Be Written
+ 0: NOINSPEC
+ 0: 
+ 0: -- Specify That A Message File Not Be Written
+ 0: MSGFILE
+ 0: 
+ 0: -- Specify The I/J/K Diemnsions Of The Grid
+ 0: DIMENS
+ 0: --  I    J    K
+ 0:     7    1    1 /
+ 0: 
+ 0: -- Specify The Dimensions Of The Equilibrium Tables
+ 0: EQLDIMS
+ 0: --            P vs D  Solution  Con vs D  Con vs D
+ 0: --             Depth     Depth    Tracer    Tracer
+ 0: --  NTEQUL     Nodes     Nodes    Tables     Nodes
+ 0:          1       100       100         1        50 /
+ 0: 
+ 0: -- Specify Region Dimensions
+ 0: REGDIMS
+ 0: --                         Not               Track
+ 0: --   NTFIP    NMFIPR      Used    NTFREG   Regions
+ 0:          1         1         0         1         0 /
+ 0: 
+ 0: -- Specify Parameters For Various Tables
+ 0: TABDIMS
+ 0: --     Sat       PVT       Sat     Press    FIPNUM
+ 0: --  Tables    Tables     Nodes     Nodes   Regions
+ 0: --  NTSFUN     NTPVT    NSSFUN     NPPVT     NTFIP
+ 0: --     (1)       (2)       (3)       (4)       (5)
+ 0:          1         1        85        50         1
+ 0: --
+ 0: --  PVT Rs    PVT Rv   EP vs D                 Max
+ 0: --   Nodes     Nodes    Tables    Number  Surf EOS
+ 0: --   NRPVT     NVPVT    NTENDP    of EOS   Regions
+ 0: --     (6)       (7)       (8)       (9)      (10)
+ 0:         20        20         1         1         1
+ 0: --
+ 0: --     Max       Max      Rock       Max
+ 0: --    Flux   Thermal    Tables   P Maint       Not
+ 0: -- Regions   Regions    NTROCC   Regions      Used
+ 0: --    (11)      (12)      (13)      (14)      (15)
+ 0:          1         1         1         0         0
+ 0: --
+ 0: --   Max K
+ 0: --  Tables
+ 0: -- NTALPHA
+ 0: --    (16)
+ 0:          1 /
+ 0: 
+ 0: -- Specify Parameters For Well Data
+ 0: WELLDIMS
+ 0: --               Max       Max       Max       Max
+ 0: --     Max   Connect      Well    Wells/    Stages
+ 0: --   Wells  Per Well    Groups     Group   Per Sep
+ 0: --     (1)       (2)       (3)       (4)       (5)
+ 0:          2         1         2         2         5
+ 0: --
+ 0: --     Max                           Max       Max
+ 0: --    Well       Max       Max    Items/  X Domain
+ 0: -- Streams  Mixtures      Seps   Mixture     Comps
+ 0: --     (6)       (7)       (8)       (9)      (10)
+ 0:          2         5         4         3         0
+ 0: --
+ 0: --     Max       Max
+ 0: --  Lists/   Dynamic
+ 0: --    Well     Lists
+ 0: --    (11)      (12)
+ 0:          4         1 /
+ 0: 
+ 0: -- Specify Options For Rel Perms
+ 0: --   DIRECT - Directional Rel Perm Tables Used
+ 0: --   IRREVERS - Directional Rel Perms Irreversible
+ 0: --   HYSTER - Hysteresis Option Used
+ 0: --     Note: Hysteresis Not Allowed For IKU Rel Perm Option
+ 0: --SATOPTS
+ 0: -- HYSTER /
+ 0: 
+ 0: -- Specify Size OF Integer Table Used For Fast Property Lookup
+ 0: VECTABLE
+ 0:      50000 /
+ 0: 
+ 0: -- =======================================================================================
+ 0: -- === GRID Section ======================================================================
+ 0: -- =======================================================================================
+ 0: GRID
+ 0: 
+ 0: -- Specify Options For Grid Geometry File Output
+ 0: --   GRID Options
+ 0: --     0  No GRID File
+ 0: --     1  GRID File Produced (active cells only)
+ 0: --     2  GRID File Produced (active & inactive cells, NNCs, LGR, LGC)
+ 0: --   EGRID Options
+ 0: --     0  No EGRID File
+ 0: --     2  EGRID File Produced (active & inactive cells, NNCs, LGR, LGC)
+ 0: GRIDFILE
+ 0: --    GRID     EGRID
+ 0: --    File      File
+ 0: --  Output    Output
+ 0: --     (1)       (2)
+ 0:          2 /
+ 0: 
+ 0: -- Request INIT File (containing initial grid data)
+ 0: INIT
+ 0: 
+ 0: -- ----------------------------------------
+ 0: -- Specify Grid Geometry Data
+ 0: -- ----------------------------------------
+ 0: 
+ 0: -- Disable Printing Input Deck Data
+ 0: -- NOECHO
+ 0: 
+ 0: --  Specify Block Centered Grid Geometry Data
+ 0: DXV
+ 0: 7*250.00 /
+ 0: 
+ 0: DYV
+ 0: 250.00 /
+ 0: 
+ 0: DZV
+ 0: 50.00 /
+ 0: 
+ 0: TOPS
+ 0: 7*7000.00 /
+ 0: 
+ 0: -- ----------------------------------------
+ 0: -- Specify Grid Property Data
+ 0: -- ----------------------------------------
+ 0: --  Specify X Direction Permeability
+ 0: PERMX
+ 0: 7*20.00 /
+ 0: 
+ 0: --  Specify Y Direction Permeability
+ 0: PERMY
+ 0: 7*20.00 /
+ 0: 
+ 0: --  Specify Z Direction Permeability
+ 0: PERMZ
+ 0: 7*20.00 /
+ 0: 
+ 0: --  Specify Porosity
+ 0: PORO
+ 0:  0.10 5*0.20 0.10 /
+ 0: 
+ 0: --  Specify Net To Gross Ratio
+ 0: NTG
+ 0: 7*1.00 /
+ 0: 
+ 0: -- =======================================================================================
+ 0: -- === EDIT Section ======================================================================
+ 0: -- =======================================================================================
+ 0: EDIT
+ 0: 
+ 0: -- Disable Printing Input Deck Data
+ 0: -- NOECHO
+ 0: 
+ 0: --  Specify Pore Volumes
+ 0: PORV
+ 0: 55654.496094 5*111308.992188 55654.496094 /
+ 0: 
+ 0: --  Specify X Direction Transmissibilities
+ 0: TRANX
+ 0: 6*1.127000 0.000000 /
+ 0: 
+ 0: --  Specify Y Direction Transmissibilities
+ 0: TRANY
+ 0: 7*0.000000 /
+ 0: 
+ 0: --  Specify Z Direction Transmissibilities
+ 0: TRANZ
+ 0: 7*0.000000 /
+ 0: 
+ 0: -- Enable Printing Input Deck Data
+ 0: -- ECHO
+ 0: 
+ 0: -- =======================================================================================
+ 0: -- === PROPS Section =====================================================================
+ 0: -- =======================================================================================
+ 0: PROPS
+ 0: 
+ 0: -- ------------------------------------
+ 0: -- INITIAL CONDITIONS -----------------
+ 0: -- ------------------------------------
+ 0: 
+ 0: -- Specify Reservoir Temperature
+ 0: RTEMP
+ 0: --   Deg F
+ 0:        160
+ 0: /
+ 0: 
+ 0: --  Specify Initial Component Mol Fraction (frac)
+ 0: ZI
+ 0: --   N2-C1    CO2-C2     C3-C4     C5-C6     C7-C8    C9-C13   C14-C24      C25+
+ 0:    0.38448   0.06715   0.14194   0.06705   0.08994   0.10958   0.08782   0.05204 /
+ 0: 
+ 0: -- ------------------------------------
+ 0: -- FLUID PROPERTIES -------------------
+ 0: -- ------------------------------------
+ 0: 
+ 0: -- Specify Water Properties
+ 0: PVTW
+ 0: --    Pref        Bw        Cw      Visw        Cv
+ 0:       2000     1.005    3e-006      0.40         0
+ 0: /
+ 0: 
+ 0: --  Specify Use Of Modified Peng-Robinson EoS
+ 0: PRCORR
+ 0: 
+ 0: --  Specify Component Names
+ 0: CNAMES
+ 0:    'N2-C1'
+ 0:   'CO2-C2'
+ 0:    'C3-C4'
+ 0:    'C5-C6'
+ 0:    'C7-C8'
+ 0:   'C9-C13'
+ 0:  'C14-C24'
+ 0:     'C25+'
+ 0: /
+ 0: 
+ 0: --  Specify Component Critical Pressure (psia)
+ 0: PCRIT
+ 0: --   N2-C1    CO2-C2     C3-C4     C5-C6     C7-C8    C9-C13   C14-C24      C25+
+ 0:     666.45    915.98    596.75    483.44    406.86    329.85    226.90    188.19 /
+ 0: 
+ 0: --  Specify Component Critical Temperature (deg R)
+ 0: TCRIT
+ 0: --   N2-C1    CO2-C2     C3-C4     C5-C6     C7-C8    C9-C13   C14-C24      C25+
+ 0:     342.14    548.51    695.37    871.72   1014.23   1149.59   1320.99   1600.85 /
+ 0: 
+ 0: --  Specify Component Acentric Factor
+ 0: ACF
+ 0: --   N2-C1    CO2-C2     C3-C4     C5-C6     C7-C8    C9-C13   C14-C24      C25+
+ 0:     0.0143    0.1722    0.1668    0.2535    0.3157    0.4725    0.6830    1.0007 /
+ 0: 
+ 0: --  Specify Component Molecular Weight
+ 0: MW
+ 0: --   N2-C1    CO2-C2     C3-C4     C5-C6     C7-C8    C9-C13   C14-C24      C25+
+ 0:      16.11     38.07     48.71     76.77    101.79    143.21    245.87    509.78 /
+ 0: 
+ 0: --  Specify Component Critical Z Factor
+ 0: ZCRIT
+ 0: --   N2-C1    CO2-C2     C3-C4     C5-C6     C7-C8    C9-C13   C14-C24      C25+
+ 0:     0.2910    0.2793    0.2761    0.2687    0.2352    0.2495    0.2705    0.3258 /
+ 0: 
+ 0: --  Specify Component Volume Shift Parameter
+ 0: SSHIFT
+ 0: --   N2-C1    CO2-C2     C3-C4     C5-C6     C7-C8    C9-C13   C14-C24      C25+
+ 0:   -0.11830  -0.04402  -0.07851  -0.03034   0.08190   0.10833   0.07137  -0.04502 /
+ 0: 
+ 0: --  Specify Component Binary Interaction Coefficients
+ 0: BIC
+ 0: --    b1_2
+ 0:    0.06293
+ 0: --    b1_3      b2_3
+ 0:    0.00999   0.08464
+ 0: --    b1_4      b2_4      b3_4
+ 0:    0.02222   0.08249   0.00390
+ 0: --    b1_5      b2_5      b3_5      b4_5
+ 0:    0.03443   0.08564   0.01111   0.00205
+ 0: --    b1_6      b2_6      b3_6      b4_6      b5_6
+ 0:    0.05003   0.08531   0.02301   0.00863   0.00248
+ 0: --    b1_7      b2_7      b3_7      b4_7      b5_7      b6_7
+ 0:    0.07793   0.09471   0.04794   0.02598   0.01384   0.00554
+ 0: --    b1_8      b2_8      b3_8      b4_8      b5_8      b6_8      b7_8
+ 0:    0.10111   0.10021   0.05968   0.03579   0.03579   0.03579    0.0414 /
+ 0: 
+ 0: --  Specify Lorentz-Bray-Clark Viscosity Correlation Coefficients
+ 0: LBCCOEF
+ 0: --      a0        a1        a2        a3        a4
+ 0:     0.1023  0.023364  0.058533 -0.040758 0.0093324 /
+ 0: 
+ 0: -- ------------------------------------
+ 0: -- SATURATION PROPERTIES --------------
+ 0: -- ------------------------------------
+ 0: 
+ 0: --  Specify Rock Compressibility (1/psi)
+ 0: ROCK
+ 0: --    Pref        Cr
+ 0:     2000.0    4.0E-6 /
+ 0: 
+ 0: --  Specify Use Of Stone II 3-Phase Rel Perm Model
+ 0: --  Disabled To Use IKU Rel Perm
+ 0: 
+ 0: --STONE1
+ 0: 
+ 0: --  Specify Use Of BAKER2 3-Phase Rel Perm Model
+ 0: --  Disabled To Use IKU Rel Perm
+ 0: 
+ 0: BAKER1
+ 0: OIL /
+ 0: 
+ 0: 
+ 0: -- Specify Use Of IKU 3-Phase Rel Perm Method
+ 0: -- IKU3P
+ 0: --
+ 0: -- Specify Hysteresis Options
+ 0: --   Methods: 0 - Carlson's Hysteresis Method For Non-Wetting Phases; SATNUM Curve For Wetting Phase
+ 0: --            1 - Carlson's Hysteresis Method For Non-Wetting Phases; IMBNUM Curve For Wetting Phase
+ 0: --            2 - Killough's Hysteresis Method For Non-Wetting Phases; SATNUM Curve For Wetting Phase
+ 0: --            3 - Killough's Hysteresis Method For Non-Wetting Phases; IMBNUM Curve For Wetting Phase
+ 0: --            4 - Killough's Hysteresis Method For Non-Wetting & Wetting Phases
+ 0: --            5 - Carlson's Non-Wetting Method For Gas & Water Phases; SATNUM Curve For Oil Phase
+ 0: --            6 - Killough's Non-Wetting Method For Gas & Water Phases; SATNUM Curve For Oil Phase
+ 0: --            7 - Killough's Hysteresis Method For Non-Wetting Gas & Water Phases & For Wetting Oil Phase
+ 0: --            8 - Jargon's Hysteresis Method For Non-Wetting Phases; SATNUM Curve For Wetting Phase
+ 0: --            9 - Jargon's Hysteresis Method For Non-Wetting Phases; IMBNUM Curve For Wetting Phase
+ 0: --   Limits: KR - Limit Hysteresis To Rel Perm Only
+ 0: --           PC - Limit Hysteresis To Cap Pressure Only
+ 0: --           BOTH - Apply Hysteresis To Rel Perm & Cap Pressure
+ 0: --   Note: Hysteresis Not Allowed For IKU Rel Perm Option
+ 0: --EHYSTR
+ 0: --      Pc            Killough  Killough       Pc/             Initial      Oil/
+ 0: --   Curve    Hyster   Wetting  Trapping  Rel Perm       Not     Fluid       Gas
+ 0: --   Param    Method     Param     Param      Flag      Used  Mobility       Wet
+ 0: --     (1)       (2)       (3)       (4)       (5)       (6)       (7)       (8)
+ 0: --       0.1         4      1.00      0.10        KR        1*        1*       OIL /
+ 0: --
+ 0: 
+ 0: --
+ 0: -- Specify Gas/Water Rel Perm Table
+ 0: --
+ 0: 
+ 0: SGFN
+ 0: -- Sg	        Krg	        Pcgo
+ 0:    0	        0	        0
+ 0:    0.018086	7.30E-05	0
+ 0:    0.036173	0.000339	0
+ 0:    0.054259	0.000876	0
+ 0:    0.072345	0.00215	        0
+ 0:    0.090432	0.00388	        0
+ 0:    0.108518	0.00654	        0
+ 0:    0.126604	0.0102	        0
+ 0:    0.144691	0.0144	        0
+ 0:    0.162777	0.0202	        0
+ 0:    0.180863	0.0269	        0
+ 0:    0.19895	0.0384	        0
+ 0:    0.217036	0.0536	        0
+ 0:    0.235122	0.066	        0
+ 0:    0.253209	0.08	        0
+ 0:    0.271295	0.0958	        0
+ 0:    0.289381	0.113	        0
+ 0:    0.307468	0.131	        0
+ 0:    0.325554	0.152	        0
+ 0:    0.34364	0.173	        0
+ 0:    0.361727	0.197	        0
+ 0:    0.379813	0.221	        0
+ 0:    0.397899	0.247	        0
+ 0:    0.415985	0.275	        0
+ 0:    0.434072	0.304	        0
+ 0:    0.452158	0.334	        0
+ 0:    0.470244	0.365	        0
+ 0:    0.488331	0.397	        0
+ 0:    0.506417	0.431	        0
+ 0:    0.524503	0.465	        0
+ 0:    0.54259	0.499	        0
+ 0:    0.68264	0.774	        0
+ 0:    1.0  	1.0	        0
+ 0: /
+ 0: 
+ 0: --    Specify oil Rel Perm Table
+ 0: --    KRWO, KRow & PCO As Function Of So
+ 0: --    Note: oil/water rel perm pseudoized
+ 0: --    Note: first So value is Soc
+ 0: 
+ 0: SOF3
+ 0: -- So	             Krow	    Krog
+ 0:   0.0000000E+00  0.0000000E+00  0.0000000E+00
+ 0:   0.1000000      1.9400000E-05  0.0000000E+00
+ 0:   0.2200000      3.5699999E-05  0.0000000E+00
+ 0:   0.2326400      6.2899999E-05  0.0000000E+00
+ 0:   0.2426400      9.8099998E-05  0.0000000E+00
+ 0:   0.2526400      1.4839999E-04  0.0000000E+00
+ 0:   0.2626400      2.3540000E-04  0.0000000E+00
+ 0:   0.2726400      2.8780001E-04  0.0000000E+00
+ 0:   0.2826400      6.0189998E-04  0.0000000E+00
+ 0:   0.2926400      9.2500000E-04  0.0000000E+00
+ 0:   0.3026400      1.3552000E-03  0.0000000E+00
+ 0:   0.3126400      1.8773000E-03  0.0000000E+00
+ 0:   0.3226400      2.4542999E-03  0.0000000E+00
+ 0:   0.3326400      3.0417000E-03  0.0000000E+00
+ 0:   0.3426400      3.6120000E-03  0.0000000E+00
+ 0:   0.3526400      4.1803000E-03  0.0000000E+00
+ 0:   0.3626400      4.8265001E-03  0.0000000E+00
+ 0:   0.3726400      5.7259998E-03  0.0000000E+00
+ 0:   0.3826400      7.2349999E-03  0.0000000E+00
+ 0:   0.3926400      1.0155600E-02  0.0000000E+00
+ 0:   0.4026400      3.3242799E-02  0.0000000E+00
+ 0:   0.4126400      0.1300000      0.0000000E+00
+ 0:   0.4226400      0.3500000      0.0000000E+00
+ 0:   0.4326400      0.9700000      0.0000000E+00
+ 0:   0.4426400      0.9900000      0.0000000E+00
+ 0:   0.4526400       1.000000      0.0000000E+00
+ 0:   0.4626400       1.000000      8.9259911E-06
+ 0:   0.4726400       1.000000      2.4687254E-05
+ 0:   0.4826400       1.000000      2.6687254E-05
+ 0:   0.4926400       1.000000      2.7279882E-05
+ 0:   0.5026400       1.000000      6.7369285E-05
+ 0:   0.5126400       1.000000      9.2731090E-05
+ 0:   0.5226400       1.000000      1.4062034E-04
+ 0:   0.5326400       1.000000      2.1818238E-04
+ 0:   0.5426400       1.000000      3.1596818E-04
+ 0:   0.5526400       1.000000      4.4876625E-04
+ 0:   0.5626400       1.000000      6.2659947E-04
+ 0:   0.5726400       1.000000      8.5950305E-04
+ 0:   0.5826400       1.000000      1.1602386E-03
+ 0:   0.5926400       1.000000      1.5445106E-03
+ 0:   0.6026400       1.000000      2.0301756E-03
+ 0:   0.6126400       1.000000      2.6377053E-03
+ 0:   0.6226400       1.000000      3.3907841E-03
+ 0:   0.6326400       1.000000      4.3164999E-03
+ 0:   0.6426400       1.000000      5.4455791E-03
+ 0:   0.6526400       1.000000      6.8127392E-03
+ 0:   0.6626400       1.000000      8.4572034E-03
+ 0:   0.6726400       1.000000      1.0423008E-02
+ 0:   0.6826400       1.000000      1.2759191E-02
+ 0:   0.6925320       1.000000      1.5487900E-02
+ 0:   0.7106190       1.000000      2.1749400E-02
+ 0:   0.7287050       1.000000      3.0012799E-02
+ 0:   0.7467910       1.000000      4.0767498E-02
+ 0:   0.7648780       1.000000      5.4589398E-02
+ 0:   0.7829640       1.000000      7.2150499E-02
+ 0:   0.8010500       1.000000      9.4229497E-02
+ 0:   0.8191370       1.000000      0.1217230
+ 0:   0.8372230       1.000000      0.1556560
+ 0:   0.8553090       1.000000      0.1971940
+ 0:   0.8733960       1.000000      0.2476580
+ 0:   0.8914820       1.000000      0.3085330
+ 0:   0.9095680       1.000000      0.3814840
+ 0:   0.9276550       1.000000      0.4683700
+ 0:   0.9457410       1.000000      0.5712560
+ 0:   0.9638270       1.000000      0.6924320
+ 0:   0.9819140       1.000000      0.8344210
+ 0:    1.000000       1.000000       1.000000
+ 0: /
+ 0: 
+ 0: --  Specify Water Rel Perm Table
+ 0: --    KRWO, KRWG & PCOW As Function Of Sw
+ 0: --    Note: oil/water rel perm pseudoized
+ 0: --    Note: first Sw value is Swc
+ 0: 
+ 0: SWFN
+ 0: -- Sw	             Krwo	  Krwg          Pc
+ 0:  0.0              0.00E+00      0
+ 0:  0.1872	      0.00E+00		0
+ 0:  0.21819          0.00E+00		0
+ 0:  0.24918          0.00E+00		0
+ 0:  0.28006          0.00E+00		0
+ 0:  0.31105          0.00E+00		0
+ 0:  0.31736	  0.00E+00		0
+ 0:  0.32736	  0.00E+00		0
+ 0:  0.33736	  0.00E+00		0
+ 0:  0.34204	  0.00E+00	0
+ 0:  0.34736	  0.00E+00		0
+ 0:  0.35736	  0.00E+00		0
+ 0:  0.36736	  0.00E+00	0
+ 0:  0.37303	  0.00E+00		0
+ 0:  0.37736	  0.00E+00		0
+ 0:  0.38736	  0.00E+00		0
+ 0:  0.39736	  0.00E+00		0
+ 0:  0.40401	  0.00E+00	0
+ 0:  0.40736	  0.00E+00		0
+ 0:  0.41736	  0.00E+00		0
+ 0:  0.42736	  0.00E+00		0
+ 0:  0.4349	          0.00E+00		0
+ 0:  0.43736	  0.00E+00		0
+ 0:  0.44736	  0.00E+00		0
+ 0:  0.45736	  0.00E+00		0
+ 0:  0.46589	  0.00E+00		0
+ 0:  0.46736	  0.00E+00		0
+ 0:  0.47736	  0.00E+00		0
+ 0:  0.48736	  0.00E+00		0
+ 0:  0.49688	  0.00E+00		0
+ 0:  0.49736	  1.00E-06		0
+ 0:  0.50736	  2.00E-06		0
+ 0:  0.51736	  6.00E-06		0
+ 0:  0.52736	  2.20E-05		0
+ 0:  0.52786	  4.60E-05		0
+ 0:  0.53736	  8.60E-05		0
+ 0:  0.54736	  4.23E-04		0
+ 0:  0.55736	  2.62E-03		0
+ 0:  0.55885	  4.62E-03		0
+ 0:  0.56736	  2.10E-02		0
+ 0:  0.57736	  3.09E-02		0
+ 0:  0.58736	  3.80E-02		0
+ 0:  0.58974	  4.04E-02		0
+ 0:  0.59736	  4.64E-02		0
+ 0:  0.60736	  5.63E-02		0
+ 0:  0.61736	  6.78E-02		0
+ 0:  0.62073	  7.05E-02		0
+ 0:  0.62736	  8.12E-02		0
+ 0:  0.63736	  9.67E-02		0
+ 0:  0.64736	  0.114533		0
+ 0:  0.65172	  0.1345487		0
+ 0:  0.65736	  0.13497       	0
+ 0:  0.66736	  0.158299		0
+ 0:  0.67736	  0.184828		0
+ 0:  0.6827	          0.2	        	0
+ 0:  0.68736	  0.214889		0
+ 0:  0.69736	  0.248837		0
+ 0:  0.70736	  0.287052		0
+ 0:  0.71369	  0.305052		0
+ 0:  0.71736	  0.32994		0
+ 0:  0.72736	  0.377934		0
+ 0:  0.73736	  0.431495		0
+ 0:  0.74458	  0.461495		0
+ 0:  0.74736	  0.491113		0
+ 0:  0.75736	  0.557307		0
+ 0:  0.76736	  0.630628		0
+ 0:  0.77557	  0.680628		0
+ 0:  0.78	          0.73	        	0
+ 0:  0.80655	  0.795	        	0
+ 0:  0.838	          0.855	        	0
+ 0:  0.869	          0.915	        	0
+ 0:  0.899	          0.948	        	0
+ 0:  0.9	          0.95	        	0
+ 0:  0.93	          0.975	        	0
+ 0:  0.961	          0.985	       	        0
+ 0:  1 	          1	       	0
+ 0: /
+ 0: 
+ 0: -- =======================================================================================
+ 0: -- === REGIONS Section ===================================================================
+ 0: -- =======================================================================================
+ 0: REGIONS
+ 0: 
+ 0: --  Specify Saturation Table Regions (Drainage & Imbibition)
+ 0: --    Note: Imbibition Disabled Because Hysteresis Not Used In With IKU Rel Perm Option
+ 0: EQUALS
+ 0: --   Array  Constant Box
+ 0:     SATNUM         1 /
+ 0: --    IMBNUM         2 /
+ 0: /
+ 0: 
+ 0: --  Specify Fluid-In-Place Regions
+ 0: --    Disable
+ 0: --FIPNUM
+ 0: ----   Array  Constant Box
+ 0: --/
+ 0: 
+ 0: --  Specify Equilibration Regions
+ 0: --    Disable
+ 0: --EQLNUM
+ 0: ----   Array  Constant Box
+ 0: --/
+ 0: 
+ 0: --  Specify PVT Regions
+ 0: --    Disable
+ 0: --PVTNUM
+ 0: ----   Array  Constant Box
+ 0: --/
+ 0: 
+ 0: -- =======================================================================================
+ 0: -- === SOLUTION Section ==================================================================
+ 0: -- =======================================================================================
+ 0: SOLUTION
+ 0: 
+ 0: -- Enumerate Block Properties
+ 0: 
+ 0: --  Specify Datum Depth
+ 0: DATUM
+ 0:    7000.00 /
+ 0: 
+ 0: --  Specify Datum Pressure
+ 0: PRESSURE
+ 0: 7*3000 /
+ 0: 
+ 0: --  Specify Intitial Saturations
+ 0: EQUALS
+ 0: --   Array  Constant Box
+ 0:       SGAS       0.0 /
+ 0:       SWAT       0.31736 /
+ 0: /
+ 0: RPTRST
+ 0:  BASIC=2 SOIL SWAT SGAS PRESSURE/
+ 0: --  Specify Initial Total Compositions
+ 0: --   'N2-C1'    'CO2-C2'     'C3-C4'     'C5-C6'     'C7-C8'    'C9-C13'   'C14-C24'      'C25+'
+ 0: ZMF
+ 0:   7*0.384480  7*0.067150  7*0.141940  7*0.067050  7*0.089940  7*0.109580  7*0.087820  7*0.052040 /
+ 0: 
+ 0: -- Enable Printing Input Deck Data
+ 0: --ECHO
+ 0: 
+ 0: --  Specify Field Separator Data
+ 0: FIELDSEP
+ 0: --                                Liquid     Vapor                 Gas   Surface
+ 0: --   Stage     Stage     Stage    Dispos    Dispos   K Value     Plant       EoS       NGL       NGL
+ 0: --   Index      Temp  Pressure     Stage     Stage     Table     Table     Index      Temp  Pressure
+ 0: --     (1)       (2)       (3)       (4)       (5)       (6)       (7)       (8)       (9)      (10)
+ 0:          1        95       162        1*        1*        1*        1*        1*        1*        1* /
+ 0:          2       141        27        1*        1*        1*        1*        1*        1*        1* /
+ 0:          3        60      14.7        1*        1*        1*        1*        1*        1*        1* /
+ 0: /
+ 0: 
+ 0: -- =======================================================================================
+ 0: -- === SUMMARY Section ===================================================================
+ 0: -- =======================================================================================
+ 0: SUMMARY
+ 0: 
+ 0: -- Specify Printing Summary Vectors To Print File
+ 0: RUNSUM
+ 0: 
+ 0: -- Specify That Run Summary Output Will Be In Excel Format
+ 0: --EXCEL
+ 0: 
+ 0: -- Specify Block Level Output
+ 0: BOSAT
+ 0:     1    1    1 /
+ 0: /
+ 0: BWSAT
+ 0:     1    1    1 /
+ 0: /
+ 0: BGSAT
+ 0:     1    1    1 /
+ 0: /
+ 0: BKRO
+ 0:     1    1    1 /
+ 0: /
+ 0: BKRW
+ 0:     1    1    1 /
+ 0: /
+ 0: BKRG
+ 0:     1    1    1 /
+ 0: /
+ 0: BOVIS
+ 0:     1    1    1 /
+ 0: /
+ 0: BGVIS
+ 0:     1    1    1 /
+ 0: /
+ 0: 
+ 0: BSOIL
+ 0:     2    1    1 /
+ 0: /
+ 0: BOSAT
+ 0:     2    1    1 /
+ 0: /
+ 0: BWSAT
+ 0:     2    1    1 /
+ 0: /
+ 0: BGSAT
+ 0:     2    1    1 /
+ 0: /
+ 0: BKRO
+ 0:     2    1    1 /
+ 0: /
+ 0: BKRW
+ 0:     2    1    1 /
+ 0: /
+ 0: BKRG
+ 0:     2    1    1 /
+ 0: /
+ 0: BOVIS
+ 0:     2    1    1 /
+ 0: /
+ 0: BGVIS
+ 0:     2    1    1 /
+ 0: /
+ 0: 
+ 0: BSOIL
+ 0:     3    1    1 /
+ 0: /
+ 0: BOSAT
+ 0:     3    1    1 /
+ 0: /
+ 0: BWSAT
+ 0:     3    1    1 /
+ 0: /
+ 0: BGSAT
+ 0:     3    1    1 /
+ 0: /
+ 0: BKRO
+ 0:     3    1    1 /
+ 0: /
+ 0: BKRW
+ 0:     3    1    1 /
+ 0: /
+ 0: BKRG
+ 0:     3    1    1 /
+ 0: /
+ 0: BOVIS
+ 0:     3    1    1 /
+ 0: /
+ 0: BGVIS
+ 0:     3    1    1 /
+ 0: /
+ 0: 
+ 0: BSOIL
+ 0:     4   1    1 /
+ 0: /
+ 0: BOSAT
+ 0:     4   1    1 /
+ 0: /
+ 0: BWSAT
+ 0:     4   1    1 /
+ 0: /
+ 0: BGSAT
+ 0:     4   1    1 /
+ 0: /
+ 0: BKRO
+ 0:     4   1    1 /
+ 0: /
+ 0: BKRW
+ 0:     4   1    1 /
+ 0: /
+ 0: BKRG
+ 0:     4   1    1 /
+ 0: /
+ 0: BOVIS
+ 0:     4   1    1 /
+ 0: /
+ 0: BGVIS
+ 0:     4   1    1 /
+ 0: /
+ 0: 
+ 0: BSOIL
+ 0:     5   1    1 /
+ 0: /
+ 0: BOSAT
+ 0:     5   1    1 /
+ 0: /
+ 0: BWSAT
+ 0:     5   1    1 /
+ 0: /
+ 0: BGSAT
+ 0:     5   1    1 /
+ 0: /
+ 0: BKRO
+ 0:     5   1    1 /
+ 0: /
+ 0: BKRW
+ 0:     5   1    1 /
+ 0: /
+ 0: BKRG
+ 0:     5   1    1 /
+ 0: /
+ 0: BOVIS
+ 0:     5   1    1 /
+ 0: /
+ 0: BGVIS
+ 0:     5   1    1 /
+ 0: /
+ 0: 
+ 0: BSOIL
+ 0:     6   1    1 /
+ 0: /
+ 0: BOSAT
+ 0:     6   1    1 /
+ 0: /
+ 0: BWSAT
+ 0:     6   1    1 /
+ 0: /
+ 0: BGSAT
+ 0:     6   1    1 /
+ 0: /
+ 0: BKRO
+ 0:     6   1    1 /
+ 0: /
+ 0: BKRW
+ 0:     6   1    1 /
+ 0: /
+ 0: BKRG
+ 0:     6   1    1 /
+ 0: /
+ 0: BOVIS
+ 0:     6   1    1 /
+ 0: /
+ 0: BGVIS
+ 0:     6   1    1 /
+ 0: /
+ 0: 
+ 0: BSOIL
+ 0:     7   1    1 /
+ 0: /
+ 0: BOSAT
+ 0:     7   1    1 /
+ 0: /
+ 0: BWSAT
+ 0:     7   1    1 /
+ 0: /
+ 0: BGSAT
+ 0:     7   1    1 /
+ 0: /
+ 0: BKRO
+ 0:     7   1    1 /
+ 0: /
+ 0: BKRW
+ 0:     7   1    1 /
+ 0: /
+ 0: BKRG
+ 0:     7   1    1 /
+ 0: /
+ 0: BOVIS
+ 0:     7   1    1 /
+ 0: /
+ 0: BGVIS
+ 0:     7   1    1 /
+ 0: /
+ 0: FOPR
+ 0: WOPR
+ 0: /
+ 0: ALL
+ 0: SEPARATE
+ 0: RPTONLY
+ 0: -- =======================================================================================
+ 0: -- === SCHEDULE Section ==================================================================
+ 0: -- =======================================================================================
+ 0: SCHEDULE
+ 0: 
+ 0: --  Specify Convergence Criteria
+ 0: CVCRIT
+ 0: --  1 - Max cell pressure change (non-linear iteration) [1.47 psi]
+ 0: --  2 - Max non-linear iterations [IMPES 6; AIM/IMPSAT 12; IMPLICIT 20]
+ 0: --  3 - Required improvement in linear solver residual [1.0E-10]
+ 0: --  4 - Max linear iterations [max(40, NSTACK)]
+ 0: --  5 - Max fugacity error [0.001]
+ 0: --  6 - Min linear iterations [1]
+ 0: --  7 - Max component sp vol change/iteration [0.01]
+ 0: --  8 - Not Used
+ 0: --  9 - Min non-linear iterations [1]
+ 0: -- 10 - Min RMS linear solver residual for linear convergence [1.0E+20]
+ 0: -- 11 - Min max_norm non-linear residual for non-linear convergence [1.0E-04]
+ 0: -- 12-21 - Not Used
+ 0: -- 22 - Max L2^2 solver residual norm [1.0E-11]
+ 0: --
+ 0: --     (1)       (2)       (3)       (4)       (5)
+ 0:       150.         5    1.0E-8        40     0.001
+ 0: --
+ 0: --     (6)       (7)       (8)       (9)      (10)
+ 0:          1      0.10        1*         1    1.E+23
+ 0: --
+ 0: --    (11)   (12-21)      (22)
+ 0:      1.E-2       10*    1.0E-8 /
+ 0: 
+ 0: --  Specify Time Stepping Criteria
+ 0: TSCRIT
+ 0: --  1 - Initial timestep length [IMPES 0.25; AIM/IMPLICIT 1.0 days]
+ 0: --  2 - Min timestep [0.02 days]
+ 0: --  3 - Max timestep [50 days]
+ 0: --  4 - Max step length increase factor [2]
+ 0: --  5 - Max step length decrease factor [0.5]
+ 0: --  6 - Target time truncation error (TTE) [IMPES 0.05; AIM/IMPLICIT 0.2]
+ 0: --  7 - Max time truncation error (TTE) [IMPES 0.5; AIM 2.0; IMPLICIT 10]
+ 0: --  8 - Target thruput ratio [IMPES/AIM 0.5]
+ 0: --  9 - Max worst thruput ratio [IMPES 1.0]
+ 0: -- 10 - Target normalized solution change [IMPES 1.0]
+ 0: -- 11 - Timestep length after well mod [IMPLICIT/AIM 40; IMPES 10]
+ 0: -- 12 - Target pressure change [1470 psia]
+ 0: -- 13 - Max normalized solution change [IMPES 0.5; AIM 2.0; IMPLICIT 10]
+ 0: -- 14 - Target avg solution ratio across field [0.25]
+ 0: --
+ 0: --     (1)       (2)       (3)       (4)       (5)
+ 0:         1*        1*        1*         3        1*
+ 0: --
+ 0: --     (6)       (7)       (8)       (9)      (10)
+ 0:        0.5       2.0       1.6       2.5       0.5
+ 0: --
+ 0: --    (11)      (12)      (13)      (14)
+ 0:         1*        1*       2.5        1* /
+ 0: 
+ 0: --  Specify Simulator Control Parameters
+ 0: -- TUNING
+ 0: -- RECORD 1
+ 0: --  1 - Max length next timestep [IMPLICIT 1.0; IMPES 0.5]
+ 0: --  2 - Max length all timesteps [50]
+ 0: --  3 - Min length all timesteps [0.02]
+ 0: --  4 - Not Used
+ 0: --  5 - Max timestep increase factor [2.0]
+ 0: --  6 - Min timestep decrease factor [0.3]
+ 0: --  7 - Not Used
+ 0: --  8 - Not Used
+ 0: --  9 - Max thruput ratio [IMPES 0.5]
+ 0: -- 10 - Max length next timestep after well mod [IMPES 0.5; IMPLICIT/AIM 20]
+ 0: --     (1)       (2)       (3)       (4)       (5)       (6)       (7)       (8)       (9)      (10)
+ 0: --      1*        1*        1*        1*         3        1*        1*        1*       2.5        1*  /
+ 0: --
+ 0: -- RECORD 2
+ 0: --  1 - Target TTE [IMPES 0.05; IMPLICIT 0.2]
+ 0: --  2 - Max non-linear convergence error [0.001]
+ 0: --  3 - Max material balance error [0.000001]
+ 0: --  4 - Target reduction in linear solver rel resid norm [1.0E-10]
+ 0: --  5 - Max TTE [IMPES 0.5; IMPLICIT 10]
+ 0: --  6-10 - Not Used
+ 0: -- 11 - Tolerance on linear solver abs resid norm
+ 0: -- 12 - Target normalized solution change [IMPES/AIM 0.05; IMPLICIT 0.2]
+ 0: -- 13 - Max normalized solution change [IMPES/AIM 0.5; IMPLICIT 10]
+ 0: -- 14 - Max fugacity error convergence criterion [0.001]
+ 0: --     (1)       (2)       (3)       (4)       (5)       (6)       (7)       (8)       (9)      (10)
+ 0: --       0.5      0.01    0.0001    1.0E-8       2.0        1*        1*        1*        1*        1*
+ 0: --    (11)      (12)      (13)      (14)
+ 0: --        1*       0.5       2.0     0.001 /
+ 0: --
+ 0: -- RECORD 3
+ 0: --  1 - Max non-linear iterations in timestep [IMPES 6; AIM 12; IMPLICIT 20]
+ 0: --  2 - Min non-linear iterations in timestep [1]
+ 0: --  3 - Max linear iterations in timestep [40]
+ 0: --  4 - Min linear iterations in Newton iteration [1]
+ 0: --  5 - Max iterations in well flow calculation [40]
+ 0: --  6 - Not Used
+ 0: --  7 - Max pressure change in last Newton iteration [no limit]
+ 0: --  8 - Max saturation change in last Newton iteration [no limit]
+ 0: --  9 - Target max pressure change in timestep [1470 psi]
+ 0: -- 10 - Not Used
+ 0: --     (1)       (2)       (3)       (4)       (5)       (6)       (7)       (8)       (9)      (10)
+ 0: --         5        1*        1*        1*        1*        1*        1*        1*        1*        1*  /
+ 0: 
+ 0: -- Specify output options in SCHEDULE section
+ 0: --   Note: List Arrays To Be Printed Out
+ 0: RPTSCHED
+ 0: 'FIP=1'
+ 0: /
+ 0: 
+ 0: -- Specify restart output options
+ 0: --   Option for graphic data only: NORST
+ 0: --   BASIC restart output options
+ 0: --     'BASIC=0' No restarts created
+ 0: --     'BASIC=2' Restarts created at every report time and kept [default if BASIC used]
+ 0: --     'BASIC=3' Restarts created at every nth report time (controlled by mnemonic 'FREQ=n')
+ 0: --     'BASIC=4' Restarts created at first report time in each nth year and kept (controlled by mnemonic 'FREQ=n')
+ 0: --     'BASIC=5' Restarts created at first report time in each nth month and kept (controlled by mnemonic 'FREQ=n')
+ 0: --     'BASIC=6' Restarts created at every timestep and kept
+ 0: --   Array output controlled by mnemonics: KRO/KRW/KRG, PRES, PSAT, SOIL/SWAT/SGAS, VOIL/VGAS
+ 0: --   Data for flexible restart: RESTART
+ 0: RPTRST
+ 0: 
+ 0: -- ------------------------------------
+ 0: -- WELL SPECIFICATIONS ----------------
+ 0: -- ------------------------------------
+ 0: -- Define Wells
+ 0: WELSPECS
+ 0: --    Well     Group  Location       Ref   Pref   Drain     Gas    Auto  XFlow   Not   Well      Not   Well
+ 0: --    Name      Name    I    J     Depth  Phase  Radius  Inflow    Shut   Flag  Used   Head     Used  Model
+ 0: --     (1)       (2)  (3)  (4)       (5)    (6)     (7)     (8)     (9)   (10)  (11)   (12)  (13-15)   (16)
+ 0:      'INJ'   'FIELD'    1    1        1*    'W'      1*   'STD'  'SHUT'  'YES'    1*  'SEG'       3*  'STD' /
+ 0:     'PROD'   'FIELD'    7    1        1*    'O'      1*   'STD'  'SHUT'  'YES'    1*  'SEG'       3*  'STD' /
+ 0: /
+ 0: 
+ 0: -- Specify Well Lists For MI & LGI Injection
+ 0: --   Clear Initial well lists for MI and LGI injectors
+ 0: WLIST
+ 0: --    List  Change
+ 0: --    Name    Mode     Wells
+ 0:  '*MI_INJ'   'NEW'     'INJ' /
+ 0: /
+ 0: 
+ 0: -- Disable Printing Input Deck Data
+ 0: -- NOECHO
+ 0: 
+ 0: -- Specify Initial Well Completion Data
+ 0: COMPDAT
+ 0: --    Well  -----Location-----   Open/   Not  Trans  Well  Well    Skin   Not   Well
+ 0: --    Name    I    J   K1   K2    Shut  Used   Fact  Diam    KH    Fact  Used    Dir
+ 0: --     (1)  (2)  (3)  (4)  (5)     (6)   (7)    (8)   (9)  (10)    (11)   (12)  (13)
+ 0:      'INJ'    1    1    1    1  'OPEN'    1*     1*  0.50    1*     0.0     1*   'Y' /
+ 0:     'PROD'    7    1    1    1  'OPEN'    1*     1*  0.50    1*     0.0     1*   'Y' /
+ 0: /
+ 0: 
+ 0: -- Enable Printing Input Deck Data
+ 0: -- ECHO
+ 0: 
+ 0: -- Specify Method For Ordering Connections Along Wellbores
+ 0: --   DEPTH - Order vertically by depth
+ 0: --   INPUT - Use order listed in COMPDAT
+ 0: --   TRACK - Trace well tracks
+ 0: -- COMPORD
+ 0: --    Well
+ 0: --    Name    Method
+ 0: --      'CD*'     INPUT /
+ 0: -- /
+ 0: 
+ 0: -- Disable Printing Input Deck Data
+ 0: -- NOECHO
+ 0: 
+ 0: -- Specify Print Reporting Options
+ 0: --   Initial Report: FIP, Well Connections Enabled
+ 0: RPTPRINT
+ 0: --  Report  Fld  Reg                          Non-      Intr
+ 0: --    Step  FIP  FIP  Grp      Well  Con Soln  Lin Well  Reg Comp Aqfr           Ntwk
+ 0: -- Summary  Sum  Sum  Sum  N/A  Sum  Sum  Sum Conv  Pot Flow Flow Flow       N/A Stat
+ 0: --     (1)  (2)  (3)  (4)  (5)  (6)  (7)  (8)  (9) (10) (11) (12) (13)   (14-17) (18)
+ 0:          1    1    0    0   1*    1    1    0    0    0    0    0    0        4*    0 /
+ 0: 
+ 0: -- Specify Injection Gas Compositions By Stream (Period Ending 12/31/2001)
+ 0: --   Define 2 streams: MI & LGI (initial compositions)
+ 0: WELLSTRE
+ 0: --  Stream  --Mol Fraction----------------------------------------------------------------
+ 0: --    Name     N2-C1    CO2-C2     C3-C4     C5-C6     C7-C8    C9-C13   C14-C24      C25+
+ 0:       'MI'   0.64122   0.11058   0.21773   0.02635   0.00403   0.00008   0.00000   0.00000 /
+ 0: /
+ 0: 
+ 0: -- Assign Injectors Supplied By Gas Injection Streams
+ 0: --   Injectors Assigned Using List: *MI_INJ
+ 0: WINJGAS
+ 0: --    Well    Assign    Stream
+ 0: --    Name    Method      Name
+ 0: --     (1)       (2)       (3)
+ 0:  '*MI_INJ'    STREAM      'MI' /
+ 0: /
+ 0: 
+ 0: -- **********************************************************************
+ 0: -- Start Date: 1 'JAN' 2000
+ 0: 
+ 0: -- Specify Producer Controls
+ 0: WCONPROD
+ 0: --    Well   Open/  Control  Oil Rate  Wat Rate  Gas Rate  Liq Rate  Res Rate     BHP
+ 0: --    Name    Shut     Mode    (bopd)    (bwpd)    (mcfd)    (blpd)     (bpd)  Target
+ 0: --     (1)     (2)      (3)       (4)       (5)       (6)       (7)       (8)     (9)
+ 0:     'PROD'  'OPEN'    'BHP'        1*        1*        1*        1*        1*    1000 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'  'WATER'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: --  Specify Time Stepping Criteria
+ 0: TSCRIT
+ 0: --  1 - Initial timestep length [IMPES 0.25; AIM/IMPLICIT 1.0 days]
+ 0: --  2 - Min timestep [0.02 days]
+ 0: --  3 - Max timestep [50 days]
+ 0: --     (1)       (2)       (3)
+ 0:         1*        1*        10 /
+ 0: 
+ 0: -- ********************************************************************** (Water Cycle #1)
+ 0: DATES
+ 0: 01 'FEB' 2000 /
+ 0: /
+ 0: 
+ 0: -- Specify Print Reporting Options
+ 0: --   Minimal Long-Term Reporting
+ 0: RPTPRINT
+ 0: --  Report  Fld  Reg                          Non-      Intr
+ 0: --    Step  FIP  FIP  Grp      Well  Con Soln  Lin Well  Reg Comp Aqfr           Ntwk
+ 0: -- Summary  Sum  Sum  Sum  N/A  Sum  Sum  Sum Conv  Pot Flow Flow Flow       N/A Stat
+ 0: --     (1)  (2)  (3)  (4)  (5)  (6)  (7)  (8)  (9) (10) (11) (12) (13)   (14-17) (18)
+ 0:          1    0    0    0   1*    0    0    0    0    0    0    0    0        4*    0 /
+ 0: 
+ 0: DATES
+ 0: 01 'MAR' 2000 /
+ 0: 01 'APR' 2000 /
+ 0: 01 'MAY' 2000 /
+ 0: 01 'JUN' 2000 /
+ 0: 01 'JUL' 2000 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'    'GAS'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (MI Cycle #1)
+ 0: DATES
+ 0: 01 'AUG' 2000 /
+ 0: 01 'SEP' 2000 /
+ 0: 01 'OCT' 2000 /
+ 0: 01 'NOV' 2000 /
+ 0: 01 'DEC' 2000 /
+ 0: 01 'JAN' 2001 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'  'WATER'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (Water Cycle #2)
+ 0: DATES
+ 0: 01 'FEB' 2001 /
+ 0: 01 'MAR' 2001 /
+ 0: 01 'APR' 2001 /
+ 0: 01 'MAY' 2001 /
+ 0: 01 'JUN' 2001 /
+ 0: 01 'JUL' 2001 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'    'GAS'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (MI Cycle #2)
+ 0: DATES
+ 0: 01 'AUG' 2001 /
+ 0: 01 'SEP' 2001 /
+ 0: 01 'OCT' 2001 /
+ 0: 01 'NOV' 2001 /
+ 0: 01 'DEC' 2001 /
+ 0: 01 'JAN' 2002 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'  'WATER'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: --  Specify Time Stepping Criteria
+ 0: TSCRIT
+ 0: --  1 - Initial timestep length [IMPES 0.25; AIM/IMPLICIT 1.0 days]
+ 0: --  2 - Min timestep [0.02 days]
+ 0: --  3 - Max timestep [50 days]
+ 0: --     (1)       (2)       (3)
+ 0:         1*        1*        50 /
+ 0: 
+ 0: -- ********************************************************************** (Water Cycle #3)
+ 0: DATES
+ 0: 01 'FEB' 2002 /
+ 0: 01 'MAR' 2002 /
+ 0: 01 'APR' 2002 /
+ 0: 01 'MAY' 2002 /
+ 0: 01 'JUN' 2002 /
+ 0: 01 'JUL' 2002 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'    'GAS'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (MI Cycle #3)
+ 0: DATES
+ 0: 01 'AUG' 2002 /
+ 0: 01 'SEP' 2002 /
+ 0: 01 'OCT' 2002 /
+ 0: 01 'NOV' 2002 /
+ 0: 01 'DEC' 2002 /
+ 0: 01 'JAN' 2003 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'  'WATER'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (Water Cycle #4)
+ 0: DATES
+ 0: 01 'FEB' 2003 /
+ 0: 01 'MAR' 2003 /
+ 0: 01 'APR' 2003 /
+ 0: 01 'MAY' 2003 /
+ 0: 01 'JUN' 2003 /
+ 0: 01 'JUL' 2003 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'    'GAS'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (MI Cycle #4)
+ 0: DATES
+ 0: 01 'AUG' 2003 /
+ 0: 01 'SEP' 2003 /
+ 0: 01 'OCT' 2003 /
+ 0: 01 'NOV' 2003 /
+ 0: 01 'DEC' 2003 /
+ 0: 01 'JAN' 2004 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'  'WATER'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (Water Cycle #5)
+ 0: DATES
+ 0: 01 'FEB' 2004 /
+ 0: 01 'MAR' 2004 /
+ 0: 01 'APR' 2004 /
+ 0: 01 'MAY' 2004 /
+ 0: 01 'JUN' 2004 /
+ 0: 01 'JUL' 2004 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'    'GAS'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (MI Cycle #5)
+ 0: DATES
+ 0: 01 'AUG' 2004 /
+ 0: 01 'SEP' 2004 /
+ 0: 01 'OCT' 2004 /
+ 0: 01 'NOV' 2004 /
+ 0: 01 'DEC' 2004 /
+ 0: 01 'JAN' 2005 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'  'WATER'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (Water Cycle #6)
+ 0: DATES
+ 0: 01 'FEB' 2005 /
+ 0: 01 'MAR' 2005 /
+ 0: 01 'APR' 2005 /
+ 0: 01 'MAY' 2005 /
+ 0: 01 'JUN' 2005 /
+ 0: 01 'JUL' 2005 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'    'GAS'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: 
+ 0: -- ********************************************************************** (MI Cycle #6)
+ 0: DATES
+ 0: 01 'AUG' 2005 /
+ 0: 01 'SEP' 2005 /
+ 0: 01 'OCT' 2005 /
+ 0: 01 'NOV' 2005 /
+ 0: 01 'DEC' 2005 /
+ 0: 01 'JAN' 2006 /
+ 0: /
+ 0: 
+ 0: -- Specify Injector Controls
+ 0: WCONINJE
+ 0: --    Well      Inj  Open/  Control  Surface    Res     BHP
+ 0: --    Name     Type   Shut     Mode     Rate   Rate  Target
+ 0: --     (1)      (2)    (3)      (4)      (5)    (6)     (7)
+ 0:      'INJ'  'WATER'  'OPEN'   'RATE'     200     1*   14690 /
+ 0: /
+ 0: -- ********************************************************************** (Post-WAG Water)
+ 0: DATES
+ 0: 01 'JAN' 2007 /
+ 0: 01 'JAN' 2008 /
+ 0: 01 'JAN' 2009 /
+ 0: 01 'JAN' 2010 /
+ 0: /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN BAKER1
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING START   
+     4 READING FIELD   
+     5 READING MULTIN  
+     6 READING UNIFOUT 
+     7 READING GAS     
+     8 READING OIL     
+     9 READING WATER   
+    10 READING AIM     
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           AIM      METHOD IS NOT AVAILABLE IN ECLIPSE 100                 
+ @           CHOICES ARE FULLY IMPLICIT (DEFAULT) OR IMPES                   
+    11 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           SPURIOUS DATA BEFORE HWELLS   KEYWORD                           
+ @               8 /                                                         
+    12 READING HWELLS  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @            HWELLS IS NOT REQUIRED IN ECLIPSE 100                          
+    13 READING NSTACK  
+    14 READING FORMOPTS
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           FORMOPTS IS NOT AVAILABLE IN ECLIPSE 100                        
+ @           AND HAS BEEN IGNORED                                            
+    15 READING SKIPSTAB
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           UNRECOGNISED KEYWORD SKIPSTAB IN RUNSPEC DATA                   
+    16 READING MONITOR 
+    17 READING RSSPEC  
+    18 READING NOINSPEC
+    19 READING MSGFILE 
+    20 READING DIMENS  
+    21 READING EQLDIMS 
+    22 READING REGDIMS 
+    23 READING TABDIMS 
+    24 READING WELLDIMS
+    25 READING VECTABLE
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           UNRECOGNISED KEYWORD VECTABLE IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           SPURIOUS DATA BEFORE GRID     KEYWORD                           
+ @                50000 /                                                    
+    26 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                16228 BYTES                                                
+    28 READING GRIDFILE
+    29 READING INIT    
+    30 READING DXV     
+    31 READING DYV     
+    32 READING DZV     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           SPURIOUS DATA BEFORE TOPS     KEYWORD                           
+ @           50.00 /                                                         
+    33 READING TOPS    
+    34 READING PERMX   
+    35 READING PERMY   
+    36 READING PERMZ   
+    37 READING PORO    
+    38 READING NTG     
+    39 READING EDIT    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           FLUX FLAG SET IN RUNSPEC BUT FLUXNUM KEYWORD                    
+ @           NOT USED -- SAVE SPACE BY SETTING NTFREG = 0                    
+ @           IN RUNSPEC KEYWORD REGDIMS.                                     
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
+ @           PORE VOLUMES WILL BE SET TO ZERO                                
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
+    40 READING PORV    
+    41 READING TRANX   
+    42 READING TRANY   
+    43 READING TRANZ   
+    44 READING PROPS   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @            THERE ARE        7 PORE VOLUMES IN THE EDIT SECTION            
+ @            WHICH ACTIVATE CELLS WHICH HAVE PREVIOUSLY                     
+ @            BEEN MADE INACTIVE BY ACTNUM, MINPV OR MINPVV KEYWORDS.        
+ @            FOR A FULL LISTING SET MNEMONIC PORV > 1 IN RPTGRID            
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           NUMBER OF ACTIVE CELLS IS 7                                     
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           ADDITIONAL     0.015 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               243512 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @              58542 CHARACTER VARIABLES USED                               
+    45 READING RTEMP   
+    46 READING ZI      
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           UNRECOGNISED KEYWORD ZI       IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           SPURIOUS DATA BEFORE PVTW     KEYWORD                           
+ @              0.38448   0.06715   0.14194   0.06705   0.08994   0.10958   0
+    47 READING PVTW    
+    48 READING PRCORR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
+    49 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
+ @              'N2-C1'                                                      
+ @             'CO2-C2'                                                      
+ @              'C3-C4'                                                      
+ @              'C5-C6'                                                      
+ @              'C7-C8'                                                      
+ @             'C9-C13'                                                      
+ @            'C14-C24'                                                      
+ @               'C25+'                                                      
+ @           /                                                               
+    50 READING PCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
+ @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               8
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

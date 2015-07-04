@@ -1,0 +1,458 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN AQUIF_CT
+
+ 0: ----------------------------------------------------------------
+ 0: -->Example of Carter Tracy aquifer support in volatile oil case
+ 0: ----------------------------------------------------------------
+ 0: 
+ 0: IMPES
+ 0: 
+ 0: RUNSPEC
+ 0: 
+ 0: TITLE
+ 0: 2-D Carter-Tracy aquifer test case
+ 0: 
+ 0: DIMENS
+ 0: 15 1 10 /
+ 0: 
+ 0: COMPS
+ 0: 6 /
+ 0: 
+ 0: OIL
+ 0: WATER
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: AQUDIMS
+ 0: 1 10 1 36 /
+ 0: 
+ 0: GRID        ================================================
+ 0: 
+ 0: EQUALS
+ 0: DX     100          /
+ 0: DY     100          /
+ 0: PORO   0.2          /
+ 0: DZ     100 4*  1  1 /
+ 0: PERMX  100          /
+ 0: DZ      20 4*  2  2 /
+ 0: PERMX   50          /
+ 0: DZ      25 4*  3  3 /
+ 0: PERMX   35          /
+ 0: DZ      15 4*  4  4 /
+ 0: PERMX   70          /
+ 0: DZ      10 4*  5  5 /
+ 0: PERMX  100          /
+ 0: DZ      10 4*  6  6 /
+ 0: PERMX  200          /
+ 0: DZ      20 4*  7  7 /
+ 0: PERMX   15          /
+ 0: DZ      10 4*  8  8 /
+ 0: PERMX   50          /
+ 0: DZ      10 4*  9  9 /
+ 0: PERMX  100          /
+ 0: DZ      10 4* 10 10 /
+ 0: PERMX  100          /
+ 0: /
+ 0: 
+ 0: COPY
+ 0: PERMX PERMY /
+ 0: PERMX PERMZ /
+ 0: /
+ 0: 
+ 0: MULTIPLY
+ 0: PERMZ 0.2 /
+ 0: /
+ 0: 
+ 0: INIT
+ 0: 
+ 0: TOPS
+ 0: 5000 5020 5040 5060 5080
+ 0: 5100 5120 5140 5160 5180
+ 0: 5200 5220 5240 5260 5370 /
+ 0: 
+ 0: RPTGRID
+ 0: PORV /
+ 0: 
+ 0: --Add side drive aquifer
+ 0: 
+ 0: AQUCT
+ 0: 1  5400.0  1*  20.0   0.10  3.0E-5  2400.0 140.0 4.8 1 1 /
+ 0: /
+ 0: 
+ 0: AQUCON
+ 0: 1  15  15   1   1   1   10  'I+'  /
+ 0: /
+ 0: 
+ 0: PROPS    ===============================================================
+ 0: 
+ 0: EOS
+ 0: PR /
+ 0: 
+ 0: PRCORR
+ 0: 
+ 0: RTEMP
+ 0: 160 /
+ 0: 
+ 0: STCOND
+ 0: 60 14.7 /
+ 0: 
+ 0: CNAMES
+ 0: C1 C3 C6 C10 C15 C20 /
+ 0: 
+ 0: TCRIT
+ 0: 343.0  665.7  913.4 1111.8 1270.0 1380.0 /
+ 0: 
+ 0: PCRIT
+ 0: 667.8 616.3 436.9 304.0 200.0 162.0 /
+ 0: 
+ 0: ZCRIT
+ 0: 0.290 0.277 0.264 0.257 0.245 0.235 /
+ 0: 
+ 0: MW
+ 0:  16.04  44.10  86.18 149.29 206.00 282.00 /
+ 0: 
+ 0: ACF
+ 0: 0.013 0.1524 0.3007 0.4885 0.6500 0.8500 /
+ 0: 
+ 0: BIC
+ 0: 0.0
+ 0: 0.0    0.0
+ 0: 0.0    0.0    0.0
+ 0: 0.05   0.005  0.0     0.0
+ 0: 0.05   0.005  0.0     0.0     0.0 /
+ 0: 
+ 0: ROCK
+ 0: 4000.0  0.000008    /
+ 0: 
+ 0: PVTW
+ 0: 3000.0  1.000  3.0E-6  1.00  1.0E-6  /
+ 0: 
+ 0: SWFN
+ 0: 0.20  0.0  0.0
+ 0: 0.40  0.1  0.0
+ 0: 0.80  0.5  0.0
+ 0: 1.0   1.0  0.0
+ 0: /
+ 0: 
+ 0: SGFN
+ 0: 0.00   0.000   0.0
+ 0: 0.05   0.000   0.0
+ 0: 0.0889 0.001   0.0
+ 0: 0.1778 0.010   0.0
+ 0: 0.2667 0.030   0.001
+ 0: 0.3556 0.05    0.001
+ 0: 0.4444 0.10    0.03
+ 0: 0.5333 0.20    0.8
+ 0: 0.6222 0.35    3.0
+ 0: 0.65   0.39    4.0
+ 0: 0.7111 0.56    8.0
+ 0: 0.80   1.0    30.0
+ 0: /
+ 0: 
+ 0: SOF3
+ 0: 0.2   0.0     0.0
+ 0: 0.4   0.12    0.12
+ 0: 0.6   0.35    0.35
+ 0: 0.7   0.68    0.68
+ 0: 0.8   1.0     1.0
+ 0: /
+ 0: 
+ 0: --Specify initial liquid composition
+ 0: 
+ 0: ZMFVD
+ 0: 1000.0 0.5 0.03 0.07 0.2 0.15 0.05 /
+ 0: 
+ 0: --Surface densities : only the water value is used
+ 0: 
+ 0: DENSITY
+ 0: 1* 64.0 1* /
+ 0: 
+ 0: SOLUTION   =============================================================
+ 0: 
+ 0: EQUIL
+ 0: 5270  4000.0  5270.0  0.0  400.0  0.0  0  0  5 /
+ 0: 
+ 0: OUTSOL
+ 0: PRE SWAT SGAS SOIL /
+ 0: 
+ 0: RPTSOL
+ 0: PRE SWAT SGAS SOIL /
+ 0: 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PRE              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: SUMMARY   ==========================================================
+ 0: 
+ 0: FOPR
+ 0: 
+ 0: FGPR
+ 0: 
+ 0: FWCT
+ 0: 
+ 0: FGOR
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE  ==========================================================
+ 0: 
+ 0: RPTSCHED
+ 0: PRE SWAT SGAS SOIL /
+ 0: 
+ 0: --2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+ 0: --WELLSPEC
+ 0: --P1 G 1 1 /
+ 0: --P2 G 3 1 /
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PRE              IN DATA                  
+ @           FOR KEYWORD RPTSCHED IS IGNORED                                 
+ 0: WELSPECS
+ 0: P1 G 1 1 1* OIL /
+ 0: P2 G 3 1 1* OIL /
+ 0: /
+ 0: 
+ 0: --2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+ 0: --WELLCOMP
+ 0: --P1 1 1 1 10 1 0.8 /
+ 0: --P2 3 1 1 10 1 0.8 /
+ 0: COMPDAT
+ 0: P1 1 1 1 10 OPEN 1 1* 0.8 /
+ 0: P2 3 1 1 10 OPEN 1 1* 0.8 /
+ 0: /
+ 0: 
+ 0: --2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+ 0: --WELLPROD
+ 0: --P1 OIL 1000.0 1* 2000.0 500.0 /
+ 0: --P2 OIL 1000.0 1* 2000.0 500.0 /
+ 0: WCONPROD
+ 0: P1 OPEN ORAT 1000.0 1* 2000.0 500.0 /
+ 0: P2 OPEN ORAT 1000.0 1* 2000.0 500.0 /
+ 0: /
+ 0: 
+ 0: --Shut wells if water cut above 0.5
+ 0: 
+ 0: WELLLIM
+ 0: P1 1* 1* 0.5 1* 1* ALL Y /
+ 0: P2 1* 1* 0.5 1* 1* ALL Y /
+ 0: /
+ 0: 
+ 0: --Stop run if oil prod falls below 10 stb/day
+ 0: 
+ 0: GRUPLIM
+ 0: G 10 1* 1* 1* 1* 1* Y /
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0: 10*100 /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN AQUIF_CT
+     1 READING IMPES   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD IMPES    MAY NOT BE SPECIFIED BEFORE                
+ @           THE RUNSPEC RECORD HAS BEEN READ                                
+     2 READING RUNSPEC 
+     3 READING TITLE   
+     4 READING DIMENS  
+     5 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE OIL      KEYWORD                           
+ @           6 /                                                             
+     6 READING OIL     
+     7 READING WATER   
+     8 READING FIELD   
+     9 READING AQUDIMS 
+    10 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                  
+ @           USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                   
+ @           OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
+ @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
+ @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
+ @           PROBLEMS FOR OTHER PROGRAMS.                                    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
+ @            HH:MM:SS                                                       
+ @                                                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                64892 BYTES                                                
+    11 READING EQUALS  
+    12 READING COPY    
+    13 READING MULTIPLY
+    14 READING INIT    
+    15 READING TOPS    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @              135 VALUES NOT DEFINED IN BOX (  1- 15,  1-  1,  1- 10)      
+ @           OF KEYWORD TOPS                                                 
+    16 READING RPTGRID 
+    17 READING AQUCT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD AQUCT    IN GRID DATA                      
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE AQUCON   KEYWORD                           
+ @           1  5400.0  1*  20.0   0.10  3.0E-5  2400.0 140.0 4.8 1 1 /      
+ @           /                                                               
+    18 READING AQUCON  
+    19 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+1                             **********************************************************************   1
+  PORV     AT     0.00   DAYS *2-D Carter-Tracy aquifer test case                                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:09 ON 05 JLY 2015 
+                              **************************************************************************
+
+ UNITS    RB           
+
+ MINIMUM VALUE =   3562.2  AT (  1,  1,  5)     MAXIMUM VALUE =   35622.  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+
+ (*,  1,  1)   35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.
+ (*,  1,  2)   7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3
+ (*,  1,  3)   8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4
+ (*,  1,  4)   5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2
+ (*,  1,  5)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
+ (*,  1,  6)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
+ (*,  1,  7)   7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3
+ (*,  1,  8)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
+ (*,  1,  9)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
+ (*,  1, 10)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           NUMBER OF ACTIVE CELLS IS 150                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           ADDITIONAL     0.004 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               344084 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @              58528 CHARACTER VARIABLES USED                               
+    20 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+    21 READING PR /    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                  
+    22 READING PRCORR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
+    23 READING RTEMP   
+    24 READING STCOND  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
+ @           60 14.7 /                                                       
+    25 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+    26 READING C1 C3 C6
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD C1 C3 C6 IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               6
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

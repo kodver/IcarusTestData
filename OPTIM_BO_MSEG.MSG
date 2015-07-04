@@ -1,0 +1,218 @@
+<eclipse>
+<message date="1/1/0" time="0.00000000000000">
+ RESOPT   IS NOT AVAILABLE IN ECLIPSE 100                                
+ AND HAS BEEN IGNORED                                                    
+</message>
+<message date="1/1/0" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/1997" time="0.00000000000000">
+  HWELLS IS NOT REQUIRED IN ECLIPSE 100                                  
+</message>
+<message date="1/1/1997" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/1/1997" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+      44080 BYTES                                                        
+</message>
+<message date="1/1/1997" time="0.00000000000000">
+ UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
+ TO TOPS VALUE FOR LAYER ABOVE                                           
+</message>
+<message date="1/1/1997" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<comment date="1/1/1997" time="0.00000000000000">
+ NO NON-NEIGHBOUR CONNECTIONS FOUND                                      
+</comment>
+<message date="1/1/1997" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 90                                            
+</message>
+<message date="1/1/1997" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+     889292 BYTES                                                        
+</message>
+<message date="1/1/1997" time="0.00000000000000">
+    58566 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="1/1/1997" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SWAT             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="1/1/1997" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SGAS             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="1/1/1997" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SOIL             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="1/1/1997" time="0.00000000000000">
+ UNRECOGNISED KEYWORD SCSA     IN SUMMARY FILE SPECIFICATION             
+</warning>
+<warning date="1/1/1997" time="0.00000000000000">
+ SPURIOUS DATA BEFORE ALL      KEYWORD                                   
+  PROD 29 /                                                              
+ /                                                                       
+</warning>
+<warning date="1/1/1997" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SOIL             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="1/1/1997" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SWAT             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="1/1/1997" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SGAS             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<comment date="1/1/1997" time="0.00000000000000">
+ THE WSEGITER DATA:                                                      
+ MAX NO OF ITERATIONS PER CYCLE              20                          
+ MAX NO OF REDUCTIONS IN WEIGHTING FACTOR     5                          
+ PROPORTIONAL REDUCTION IN WEIGHTING FACTOR  0.30                        
+ PROPORTIONAL INCREASE  IN WEIGHTING FACTOR  2.00                        
+ MAY TAKE UP TO  15 ITERATION CYCLES.                                    
+</comment>
+<message date="1/1/1997" time="0.00000000000000">
+ RESTART FILE WRITTEN   REPORT     0                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="21/1/1997" time="20.00000000000000">
+ RESTART FILE WRITTEN   REPORT     1                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="11/4/1997" time="100.00000000000000">
+ RESTART FILE WRITTEN   REPORT     2                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="20/7/1997" time="200.00000000000000">
+ RESTART FILE WRITTEN   REPORT     3                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="28/10/1997" time="300.00000000000000">
+ RESTART FILE WRITTEN   REPORT     4                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="5/2/1998" time="400.00000000000000">
+ RESTART FILE WRITTEN   REPORT     5                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="16/5/1998" time="500.00000000000000">
+ RESTART FILE WRITTEN   REPORT     6                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="24/8/1998" time="600.00000000000000">
+ RESTART FILE WRITTEN   REPORT     7                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="2/12/1998" time="700.00000000000000">
+ RESTART FILE WRITTEN   REPORT     8                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<warning date="2/12/1998" time="700.00000000000000">
+ LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER                
+ IF YOU (A) INCREASE NSTACK (= 10 - RUNSPEC SECTION)     15              
+     OR (B) MAKE NSTACK NEGATIVE ( EXTENDS STACK ON DISK )               
+</warning>
+<message date="2/12/1998" time="700.00000000000000">
+ ******************************************                              
+ * WELL PROD     HAS CHANGED TO           *                              
+ * CONTROL BY BOTTOM HOLE PRESSURE        *                              
+ * FROM TIME    700.00   DAYS  .          *                              
+ ******************************************                              
+</message>
+<message date="12/3/1999" time="800.00000000000000">
+ RESTART FILE WRITTEN   REPORT     9                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="20/6/1999" time="900.00000000000000">
+ RESTART FILE WRITTEN   REPORT    10                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="28/9/1999" time="1000.00000000000000">
+ RESTART FILE WRITTEN   REPORT    11                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="6/1/2000" time="1100.00000000000000">
+ RESTART FILE WRITTEN   REPORT    12                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="15/4/2000" time="1200.00000000000000">
+ RESTART FILE WRITTEN   REPORT    13                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="24/7/2000" time="1300.00000000000000">
+ RESTART FILE WRITTEN   REPORT    14                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="1/11/2000" time="1400.00000000000000">
+ RESTART FILE WRITTEN   REPORT    15                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="9/2/2001" time="1500.00000000000000">
+ RESTART FILE WRITTEN   REPORT    16                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="20/5/2001" time="1600.00000000000000">
+ RESTART FILE WRITTEN   REPORT    17                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="28/8/2001" time="1700.00000000000000">
+ RESTART FILE WRITTEN   REPORT    18                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="6/12/2001" time="1800.00000000000000">
+ RESTART FILE WRITTEN   REPORT    19                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="16/3/2002" time="1900.00000000000000">
+ RESTART FILE WRITTEN   REPORT    20                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="24/6/2002" time="2000.00000000000000">
+ RESTART FILE WRITTEN   REPORT    21                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<message date="2/10/2002" time="2100.00000000000000">
+ RESTART FILE WRITTEN   REPORT    22                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+</message>
+<error date="2/10/2002" time="2100.00000000000000">
+ UNRECOGNISED KEYWORD OPTIMIZE IN SCHEDULING DATA                        
+</error>
+<error date="2/10/2002" time="2100.00000000000000">
+ UNRECOGNISED KEYWORD OPTDIMS  IN SCHEDULING DATA                        
+</error>
+<warning date="2/10/2002" time="2100.00000000000000">
+ SPURIOUS DATA BEFORE OPTFUNC  KEYWORD                                   
+ 10 10 /                                                                 
+</warning>
+<error date="2/10/2002" time="2100.00000000000000">
+ UNRECOGNISED KEYWORD OPTFUNC  IN SCHEDULING DATA                        
+</error>
+<warning date="2/10/2002" time="2100.00000000000000">
+ SPURIOUS DATA BEFORE OPTPARS  KEYWORD                                   
+ 'FOPT' 'FIELD' /                                                        
+ /                                                                       
+</warning>
+<error date="2/10/2002" time="2100.00000000000000">
+ UNRECOGNISED KEYWORD OPTPARS  IN SCHEDULING DATA                        
+</error>
+<warning date="2/10/2002" time="2100.00000000000000">
+ SPURIOUS DATA BEFORE RPTOPT   KEYWORD                                   
+ 'SCSA' 'PROD:29' 0.0005 0.002 /                                         
+ /                                                                       
+</warning>
+<error date="2/10/2002" time="2100.00000000000000">
+ UNRECOGNISED KEYWORD RPTOPT   IN SCHEDULING DATA                        
+</error>
+<warning date="2/10/2002" time="2100.00000000000000">
+ SPURIOUS DATA BEFORE END      KEYWORD                                   
+ 'SEPARATE' /                                                            
+</warning>
+</eclipse>

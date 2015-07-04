@@ -1,0 +1,344 @@
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           1
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+           0
+ 'PARAMS  '           2 'REAL'
+   0.00000000E+00   0.00000000E+00
+ 'MINISTEP'           1 'INTE'
+           1
+ 'PARAMS  '           2 'REAL'
+   0.10000000E+01   0.27378509E-02
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+           2
+ 'PARAMS  '           2 'REAL'
+   0.16006936E+01   0.43824604E-02
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+           3
+ 'PARAMS  '           2 'REAL'
+   0.20739858E+01   0.56782635E-02
+ 'MINISTEP'           1 'INTE'
+           4
+ 'PARAMS  '           2 'REAL'
+   0.25472779E+01   0.69740671E-02
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+           5
+ 'PARAMS  '           2 'REAL'
+   0.32929211E+01   0.90155266E-02
+ 'MINISTEP'           1 'INTE'
+           6
+ 'PARAMS  '           2 'REAL'
+   0.40385642E+01   0.11056987E-01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+           7
+ 'PARAMS  '           2 'REAL'
+   0.60178733E+01   0.16476039E-01
+ 'MINISTEP'           1 'INTE'
+           8
+ 'PARAMS  '           2 'REAL'
+   0.85124235E+01   0.23305744E-01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+           9
+ 'PARAMS  '           2 'REAL'
+   0.11853140E+02   0.32452129E-01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          10
+ 'PARAMS  '           2 'REAL'
+   0.15968649E+02   0.43719780E-01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          11
+ 'PARAMS  '           2 'REAL'
+   0.19662382E+02   0.53832673E-01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          12
+ 'PARAMS  '           2 'REAL'
+   0.23438068E+02   0.64169936E-01
+ 'MINISTEP'           1 'INTE'
+          13
+ 'PARAMS  '           2 'REAL'
+   0.27213753E+02   0.74507199E-01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          14
+ 'PARAMS  '           2 'REAL'
+   0.30920897E+02   0.84656797E-01
+ 'MINISTEP'           1 'INTE'
+          15
+ 'PARAMS  '           2 'REAL'
+   0.34628040E+02   0.94806403E-01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          16
+ 'PARAMS  '           2 'REAL'
+   0.38813217E+02   0.10626480E+00
+ 'MINISTEP'           1 'INTE'
+          17
+ 'PARAMS  '           2 'REAL'
+   0.42998394E+02   0.11772319E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          18
+ 'PARAMS  '           2 'REAL'
+   0.49825787E+02   0.13641557E+00
+ 'MINISTEP'           1 'INTE'
+          19
+ 'PARAMS  '           2 'REAL'
+   0.56653179E+02   0.15510795E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          20
+ 'PARAMS  '           2 'REAL'
+   0.65306213E+02   0.17879866E+00
+ 'MINISTEP'           1 'INTE'
+          21
+ 'PARAMS  '           2 'REAL'
+   0.73959244E+02   0.20248938E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          22
+ 'PARAMS  '           2 'REAL'
+   0.90029243E+02   0.24648663E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          23
+ 'PARAMS  '           2 'REAL'
+   0.11835483E+03   0.32403785E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          24
+ 'PARAMS  '           2 'REAL'
+   0.12914352E+03   0.35357571E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          25
+ 'PARAMS  '           2 'REAL'
+   0.14483449E+03   0.39653522E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          26
+ 'PARAMS  '           2 'REAL'
+   0.16789586E+03   0.45967379E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          27
+ 'PARAMS  '           2 'REAL'
+   0.19097760E+03   0.52286816E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          28
+ 'PARAMS  '           2 'REAL'
+   0.24223541E+03   0.66320443E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          29
+ 'PARAMS  '           2 'REAL'
+   0.30361771E+03   0.83125997E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          30
+ 'PARAMS  '           2 'REAL'
+   0.33430887E+03   0.91528773E+00
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          31
+ 'PARAMS  '           2 'REAL'
+   0.36500000E+03   0.99931556E+00
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           2
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          32
+ 'PARAMS  '           2 'REAL'
+   0.45707343E+03   0.12513989E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          33
+ 'PARAMS  '           2 'REAL'
+   0.52523157E+03   0.14380056E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          34
+ 'PARAMS  '           2 'REAL'
+   0.62761578E+03   0.17183183E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          35
+ 'PARAMS  '           2 'REAL'
+   0.73000000E+03   0.19986311E+01
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           3
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          36
+ 'PARAMS  '           2 'REAL'
+   0.83854639E+03   0.22958150E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          37
+ 'PARAMS  '           2 'REAL'
+   0.92777423E+03   0.25401075E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          38
+ 'PARAMS  '           2 'REAL'
+   0.10113871E+04   0.27690270E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          39
+ 'PARAMS  '           2 'REAL'
+   0.10950000E+04   0.29979465E+01
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           4
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          40
+ 'PARAMS  '           2 'REAL'
+   0.12420781E+04   0.34006248E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          41
+ 'PARAMS  '           2 'REAL'
+   0.12928127E+04   0.35395284E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          42
+ 'PARAMS  '           2 'REAL'
+   0.13764064E+04   0.37683952E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          43
+ 'PARAMS  '           2 'REAL'
+   0.14182031E+04   0.38828287E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          44
+ 'PARAMS  '           2 'REAL'
+   0.14600000E+04   0.39972622E+01
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           5
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          45
+ 'PARAMS  '           2 'REAL'
+   0.15659163E+04   0.42872448E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          46
+ 'PARAMS  '           2 'REAL'
+   0.16785715E+04   0.45956783E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          47
+ 'PARAMS  '           2 'REAL'
+   0.18250000E+04   0.49965777E+01
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           6
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          48
+ 'PARAMS  '           2 'REAL'
+   0.20075000E+04   0.54962354E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          49
+ 'PARAMS  '           2 'REAL'
+   0.21900000E+04   0.59958930E+01
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           7
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          50
+ 'PARAMS  '           2 'REAL'
+   0.23725000E+04   0.64955511E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          51
+ 'PARAMS  '           2 'REAL'
+   0.25550000E+04   0.69952087E+01
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           8
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          52
+ 'PARAMS  '           2 'REAL'
+   0.27375000E+04   0.74948664E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          53
+ 'PARAMS  '           2 'REAL'
+   0.29200000E+04   0.79945245E+01
+ 'SEQHDR  '           2 'INTE'
+ -1076363439           9
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          54
+ 'PARAMS  '           2 'REAL'
+   0.31025000E+04   0.84941816E+01
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          55
+ 'PARAMS  '           2 'REAL'
+   0.32850000E+04   0.89938402E+01
+ 'SEQHDR  '           2 'INTE'
+ -1076363439          10
+ 'LGRNAME '           1 'CHAR'
+ 'A       '
+ 'MINISTEP'           1 'INTE'
+          56
+ 'PARAMS  '           2 'REAL'
+   0.36500000E+04   0.99931555E+01

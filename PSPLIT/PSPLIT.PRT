@@ -1,0 +1,181 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN PSPLIT
+
+ 0: MEMORY
+ 0: 200 10 /
+ 0: 
+ 0: -------------------------------------------------------------------------------
+ 0: -- E300 DATAFILE FOR ECLIPSE TESTING
+ 0: -------------------------------------------------------------------------------
+ 0: 
+ 0: -- Keywords PSPLITX and PSPLITY to specify directional divisions for parallel runs
+ 0: ---------------------------- Runspec Section -----------------------------------
+ 0: NOECHO
+
+ ******** START OF INCLUDED FILE 20X20X6.GRDECL                                                                                                                      
+
+
+ ******** END OF INCLUDED FILE 
+
+
+ ******** START OF INCLUDED FILE ALL_COMP.PVO                                                                                                                        
+
+
+ ******** END OF INCLUDED FILE 
+
+
+ ******** START OF INCLUDED FILE ALL.RCP                                                                                                                             
+
+
+ ******** END OF INCLUDED FILE 
+
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC PART             IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ ******** START OF INCLUDED FILE 20X20X6_PRED.SCH                                                                                                                    
+
+
+ ******** END OF INCLUDED FILE 
+
+
+ ******** END OF INPUT DATA FOR RUN PSPLIT
+     1 READING MEMORY  
+     2 READING NOECHO  
+     3 READING RUNSPEC 
+     4 READING TITLE   
+     5 READING PARALLEL
+     6 READING DIMENS  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+     7 READING METRIC  
+     8 READING WATER   
+     9 READING AIM     
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           AIM      METHOD IS NOT AVAILABLE IN ECLIPSE 100                 
+ @           CHOICES ARE FULLY IMPLICIT (DEFAULT) OR IMPES                   
+    10 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE HWELLS   KEYWORD                           
+ @            7 /                                                            
+    11 READING HWELLS  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @            HWELLS IS NOT REQUIRED IN ECLIPSE 100                          
+    12 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD EOS      IN RUNSPEC DATA                   
+    13 READING PR /    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD PR /     IN RUNSPEC DATA                   
+    14 READING TABDIMS 
+    15 READING WELLDIMS
+    16 READING VFPIDIMS
+    17 READING VFPPDIMS
+    18 READING START   
+    19 READING UNIFOUT 
+    20 READING PSPLITX 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1970):
+ @           UNRECOGNISED KEYWORD PSPLITX  IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1970):
+ @           SPURIOUS DATA BEFORE PSPLITY  KEYWORD                           
+ @             10  20                                 /--NPROCX=  2 LOAD BALA
+ @              7  14  20                             /--NPROCX=  3 LOAD BALA
+ @              5  10  16  20                         /--NPROCX=  4 LOAD BALA
+ @              4   8  13  17  20                     /--NPROCX=  5 LOAD BALA
+ @              4   8  12  15  18  20                 /--NPROCX=  6 LOAD BALA
+ @              3   6   9  13  16  18  20             /--NPROCX=  7 LOAD BALA
+ @              3   6   9  12  14  16  18  20         /--NPROCX=  8 LOAD BALA
+ @              3   6   8  11  13  15  17  19  20     /--NPROCX=  9 LOAD BALA
+ @           /                                                               
+    21 READING PSPLITY 
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1970):
+ @           UNRECOGNISED KEYWORD PSPLITY  IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1970):
+ @           SPURIOUS DATA BEFORE GRID     KEYWORD                           
+ @             11  20                                 /--NPROCY=  2 LOAD BALA
+ @              7  14  20                             /--NPROCY=  3 LOAD BALA
+ @              5  11  16  20                         /--NPROCY=  4 LOAD BALA
+ @              4   9  13  17  20                     /--NPROCY=  5 LOAD BALA
+ @              4   8  12  15  18  20                 /--NPROCY=  6 LOAD BALA
+ @              3   6  10  13  16  18  20             /--NPROCY=  7 LOAD BALA
+ @              3   6   9  12  14  16  18  20         /--NPROCY=  8 LOAD BALA
+ @              3   6   9  11  13  15  17  19  20     /--NPROCY=  9 LOAD BALA
+ @           /                                                               
+    22 READING GRID    
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1970):
+ @           THE MASTER CANNOT START ALL THE SLAVE PROCESSES.                
+ @           ERROR FLAG =    -4                                              
+
+ Error summary 
+ Comments               0
+ Warnings               4
+ Problems               0
+ Errors                 6
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

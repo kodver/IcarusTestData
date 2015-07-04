@@ -1,0 +1,59 @@
+<eclipse>
+<message date="1/1/0" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<warning date="1/1/0" time="0.00000000000000">
+ AIM      METHOD IS NOT AVAILABLE IN ECLIPSE 100                         
+ CHOICES ARE FULLY IMPLICIT (DEFAULT) OR IMPES                           
+</warning>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                           
+</error>
+<warning date="1/1/0" time="0.00000000000000">
+ SPURIOUS DATA BEFORE HWELLS   KEYWORD                                   
+  7 /                                                                    
+</warning>
+<message date="1/1/0" time="0.00000000000000">
+  HWELLS IS NOT REQUIRED IN ECLIPSE 100                                  
+</message>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD EOS      IN RUNSPEC DATA                           
+</error>
+<error date="1/1/0" time="0.00000000000000">
+ UNRECOGNISED KEYWORD PR /     IN RUNSPEC DATA                           
+</error>
+<error date="1/1/1970" time="0.00000000000000">
+ UNRECOGNISED KEYWORD PSPLITX  IN RUNSPEC DATA                           
+</error>
+<warning date="1/1/1970" time="0.00000000000000">
+ SPURIOUS DATA BEFORE PSPLITY  KEYWORD                                   
+   10  20                                 /--NPROCX=  2 LOAD BALA        
+    7  14  20                             /--NPROCX=  3 LOAD BALA        
+    5  10  16  20                         /--NPROCX=  4 LOAD BALA        
+    4   8  13  17  20                     /--NPROCX=  5 LOAD BALA        
+    4   8  12  15  18  20                 /--NPROCX=  6 LOAD BALA        
+    3   6   9  13  16  18  20             /--NPROCX=  7 LOAD BALA        
+    3   6   9  12  14  16  18  20         /--NPROCX=  8 LOAD BALA        
+    3   6   8  11  13  15  17  19  20     /--NPROCX=  9 LOAD BALA        
+ /                                                                       
+</warning>
+<error date="1/1/1970" time="0.00000000000000">
+ UNRECOGNISED KEYWORD PSPLITY  IN RUNSPEC DATA                           
+</error>
+<warning date="1/1/1970" time="0.00000000000000">
+ SPURIOUS DATA BEFORE GRID     KEYWORD                                   
+   11  20                                 /--NPROCY=  2 LOAD BALA        
+    7  14  20                             /--NPROCY=  3 LOAD BALA        
+    5  11  16  20                         /--NPROCY=  4 LOAD BALA        
+    4   9  13  17  20                     /--NPROCY=  5 LOAD BALA        
+    4   8  12  15  18  20                 /--NPROCY=  6 LOAD BALA        
+    3   6  10  13  16  18  20             /--NPROCY=  7 LOAD BALA        
+    3   6   9  12  14  16  18  20         /--NPROCY=  8 LOAD BALA        
+    3   6   9  11  13  15  17  19  20     /--NPROCY=  9 LOAD BALA        
+ /                                                                       
+</warning>
+<error date="1/1/1970" time="0.00000000000000">
+ THE MASTER CANNOT START ALL THE SLAVE PROCESSES.                        
+ ERROR FLAG =    -4                                                      
+</error>
+</eclipse>
