@@ -851,7 +851,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     20 READING GRID    
 1                             **********************************************************************   1
   RUNSPEC  AT     0.00   DAYS *   USE OF WATER TRACER TO DENOTE SEA WATER FRACTION IN SCALE DEPOSITION * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1986   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1986   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
 
@@ -1128,7 +1128,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           USING  OLDTRAN                                                  
 1                             **********************************************************************   2
   DZ       AT     0.00   DAYS *   USE OF WATER TRACER TO DENOTE SEA WATER FRACTION IN SCALE DEPOSITION * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1986   *  RUN                                                                   * RUN AT 02:13 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1986   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
