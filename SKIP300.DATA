@@ -1,0 +1,178 @@
+-- THIS IS A SIMPLE 5 BY 5 QUARTER FIVE SPOT
+--
+-- Keyword MULTOUTS to request multiple summary file output
+-- Keyword OPERATE to perform operations on arrays
+-- Keyword SKIP300 to skip subsequent keywords 
+-- Keyword ENDSKIP to end skipping keywords
+
+RUNSPEC
+TITLE
+ THIS LINE IS A RUN TITLE
+
+DIMENS
+    5    5    1  /
+
+OIL
+
+WATER
+
+FIELD
+
+TABDIMS
+    1    1   20    2    1   20 /
+
+WELLDIMS
+    2    1    1    2 /
+
+START
+   1 'JAN' 1983  /
+
+NSTACK
+    8 /
+
+FMTOUT
+
+FMTIN
+
+UNIFOUT
+
+MULTOUTS
+
+GRID      ==============================================================
+DEBUG
+38*0 1  /
+
+DXV
+   5*75.0 /
+
+PERMX
+  25*50.0 /
+
+PERMY
+  25*50.0 /
+
+DYV
+   5*75.0 /
+
+DZ
+  25*30.0 /
+
+TOPS
+  25*4000.0 /
+
+PERMY
+  25*50.0 /
+
+PORO
+  25*0.2 /
+
+OPERATE
+PORO 1  3  1  3  1  1  MULTA  PORO  1  -0.1 /
+/
+
+RPTGRID
+PORO /
+/
+
+DEBUG
+ 0 0 1 0 1 0 1  /
+
+PROPS     ==============================================================
+
+SWFN
+    .25    .0    4.0
+    .7    1.0     .0
+/
+
+SOF2       1 TABLES   20 NODES IN EACH           FIELD   13:34  5 MAY 85
+    .3000  .0000
+    .7500 1.0000
+/
+
+PVTW
+  .0  1.0  3.03E-06  .5  0.0 /
+
+PVDO
+  .0     1.0     2.0
+ 8000.0   .92    2.0
+/
+
+ROCK
+ 4000.0         .30E-05 /
+
+DENSITY
+ 52.0000  64.0000   .04400 /
+
+RPTPROPS
+     /
+
+REGIONS    =============================================================
+
+SATNUM
+ 25*1 /
+
+SOLUTION   =============================================================
+
+EQUIL
+4000  4000  6000  0   0   0   0   0   0  /
+
+RPTSOL
+-- Initialisation Print Output
+-- 
+'PRES' 'SWAT' /
+
+SUMMARY    ===========================================================
+
+BPR
+1 1 1
+/
+
+FOPR
+FWIR
+
+WBHP
+/
+
+FWCT
+
+FPR
+
+RUNSUM
+
+RPTONLY
+SCHEDULE   ===========================================================
+
+RPTSCHED                                         FIELD   16:55 18 APR 86
+   'PRES' 'SWAT' /
+
+WELSPECS
+'I'  'G'   1  1  4000  'WAT'  /
+'P'  'G'   5  5  4000  'OIL'  /
+/
+
+COMPDAT
+'I       '   1   1   1   1 'OPEN'   0  .0   1.0 /
+'P       '   5   5   1   1 'OPEN'   0  .0   1.0 /
+/
+
+WCONPROD
+'P' 'OPEN' 'BHP' 5* 3999.0 /
+/
+
+SKIP300
+
+WCONINJE
+'I' 'WAT' 'OPEN' 'RATE' 200.0 /
+/
+
+ENDSKIP
+
+WCONINJE
+'I' 'WAT' 'OPEN' 'RATE' 100.0 /
+/
+
+TSTEP
+ 4*200
+/
+
+END

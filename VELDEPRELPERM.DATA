@@ -1,0 +1,357 @@
+-----------------------------------------------------------------------
+--
+-- HWU Velocity Dependent Rel Perm Development
+-- CASE1: Nc1 Only
+--
+-- See New Keywords VELDEP [End of RUNSPEC] and
+--                  VDKRO and VDKRG [End of PROPS section]
+--
+-- Note VDKRO and VDKRG are now saturation table quantities
+-- and as such must contain the same number of rows of data,
+-- each terminated with a slash, as is specified via the 1st
+-- argument of the TABDIMS keyword.
+--
+-- It is now compulsory to specify the base [threshold]
+-- capillary number for each saturation region/phase: failure
+-- to do so will cause the option to be de-activated
+--
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+RUNSPEC
+-----------------------------------------------------------------------
+
+FIELD
+
+OIL
+WATER
+GAS
+
+EQLDIMS
+--Eqrgn  Deptab  CompDat
+    1      20       20   /
+
+COMPS
+9   /
+
+FULLIMP
+
+EOS
+ PR3  /
+
+DIMENS
+ 10   1   1  /
+
+RADIAL
+
+TABDIMS
+--Sats  Pres  SatRows  PreRows  FIPs  RSs  RVs
+   1     1      20       20      1     1*   1*  /
+
+WELLDIMS
+--Wells  Cmpls/wl  Grps  Wls/grp  Stages  Streams  Dummy  Seps
+    1       10      1       1        4       1       1*    3  /
+
+-- New VELDEP Keyword
+-- SRF: Cap.Num.    Options 0     => Inactive
+--                          1,2,3 => N1,N2,N3-Models
+--      Forchheimer Options 0     => Inactive
+--                          1,2   => B1,B2-Models
+
+VELDEP
+-- OCN GCN OFR GFR
+   1   1   0   0   /
+
+------------------------------------------------------------------------
+GRID
+------------------------------------------------------------------------
+
+INRAD
+  0.2917  /
+
+--  SPECIFY GRID BLOCK DIMENSIONS IN THE R DIRECTION
+DRV
+    1.75     2.32     5.01    10.84    23.39
+   50.55   109.21   235.92   509.68  1101.08  /
+
+DTHETA
+10*360.0 /
+
+DZV
+100   /
+
+EQUALS
+  TOPS      13000  /
+  PORO      0.2    /
+  PERMR     100    /
+  PERMTHT   100    /
+  PERMZ     100    /
+/
+
+RPTGRID
+PORV  DEPTH  TRANR  /
+
+------------------------------------------------------------------------
+PROPS
+------------------------------------------------------------------------
+
+PRCORR
+
+RTEMP
+ 320  /
+
+STCOND
+ 60  14.7  /
+
+CNAMES
+ CO2   C1N2   C2   C3   C4   C5C6   C7+   C12+   C22+ /
+
+-- Critical temperatures Deg R
+
+TCRIT
+    548.46006    342.48251    549.77406    665.64007    755.10008
+    879.86165   1141.33574   1358.96699   1654.40862              /
+
+-- Critical pressures PSIA
+
+PCRIT
+   1071.33111    666.87722    708.34238    618.69739    543.45438
+    485.78133    365.57698    252.95062    189.78843              /
+
+-- Critical Z-factors
+
+ZCRIT
+      0.20685      0.21488      0.21482      0.20942      0.20919
+      0.20549      0.19665      0.17907      0.14132              /
+
+-- 3-Parameter EoS Shift Coefficients
+
+SSHIFT
+      0.05000     -0.15413     -0.10020     -0.08501     -0.07174
+     -0.03871      0.05232      0.24384      0.48043              /
+
+-- Acentric factors
+
+ACF
+      0.22500      0.01314      0.09860      0.15240      0.19560
+      0.24562      0.32415      0.75434      1.32577              /
+
+-- Molecular Weights
+
+MW
+     44.01000     16.10470     30.07000     44.09700     58.12400
+     78.04002    115.14386    212.86074    377.57416              /
+
+-- Boiling point temperatures Deg R
+
+TBOIL
+    350.46003    200.74177    332.10004    415.98006    484.01988
+    578.44236    726.82434    990.79997   1347.67310              /
+
+-- Reference temperatures Deg R
+
+TREF
+    527.40006    200.74827    329.40003    415.80004    527.40006
+    523.82162    520.20006    519.67008    519.67008              /
+
+-- Reference densities LB/FT3
+
+DREF
+     48.50653     26.65385     34.21053     36.33308     35.69007
+     41.02131     47.31028     51.35108     56.88489              /
+
+-- Parachors (Dynes/cm)
+
+PARACHOR
+     78.00000     76.81443    108.00000    150.30000    187.20000
+    249.82395    363.58067    553.08879    958.01685              /
+
+--DKP Binary Interaction Coefficients
+
+BIC
+ 0.099423
+ 0.100000 0.000515
+ 0.100000 0.000515 0.000000
+ 0.100000 0.000515 0.000000 0.000000
+ 0.100000 0.000515 0.000000 0.000000 0.000000
+ 0.100000 0.038416 0.010000 0.010000 0.000000 0.000000
+ 0.100000 0.047431 0.010000 0.010000 0.000000 0.000000
+ 0.000000
+ 0.100000 0.059778 0.010000 0.010000 0.000000 0.000000
+ 0.000000 0.000000
+/
+
+SWFN
+.22      .0        .0
+.75      .3000     1*
+1.0      .9999     .0     /
+
+SGFN
+.0       .0        .0
+.1500    .0000     1*
+.1908    .0059     1*
+.2814    .0284     1*
+.3721    .0648     1*
+.3860    .0720     1*
+.4627    .1280     1*
+.4818    .1440     1*
+.5465    .2160     1*
+.5534    .2218     1*
+.5963    .2880     1*
+.6357    .3600     1*
+.6440    .3787     1*
+.6681    .4320     1*
+.6997    .5040     1*
+.7279    .5760     1*
+.7347    .5960     1*
+.7553    .6480     1*
+.7800    .7200     .0    /
+
+
+SOF3
+  .0       .0        .0
+  .2500    .0        .0
+  .2982    .0250     .0250
+  .3173    .0350     .0350
+  .3940    .0660     .0660
+  .4079    .0750     .0750
+  .4986    .1400     .1400
+  .5892    .2400     .2400
+  .6300    .3000     .3000
+  .7800    .6000     .6000    /
+
+PVTW
+-- Pref      Bw        Cw            Vw        Cvw
+-- PSIA      RB/STB    1/PSI         CPOISE    1/PSI
+   8000.00   1.06      1.05E-05      0.18      7.8E-08
+/
+ROCK
+ 8000.  4.25E-06 /
+
+DENSITY
+ 47.65  62.43  0.07861  /
+
+ZI
+.0353 .6596 .1008 .0462 .0267 .0334 .0709 .02241 .00469 /
+
+----------------------------------
+-- HW Velocity Dependent Rel Perms
+----------------------------------
+
+-- Note new order for data entry
+-- Ncb MUST be specified for all irrespective of Cap.Num. model
+-- Must have 1st arg. TABDIMS [saturation regions] rows of data
+
+-- SRF: 20/02/98
+-- There is no physical basis for the b/c-dependency within
+-- the Forchheimer model.  Suggest that if b/c.ne.0, user takes
+-- initial porosity, phi, and gas saturation [Sgi=1-Swc], raise
+-- them to the powers b/c as appropriate, re-compute 'a' as
+--
+--  a = a /( phi^b * Sgi^c )
+--
+-- and then set b=c=0, as done below.
+--
+-- phi=0.20, Swc=0.22 => a = 5E4/( 3.2E-4 * 0.289 ) = 5.41E8
+
+VDKRG
+-- M    N1   N2   Ncb     A       B   C   D   BetaD
+-- Junk Data Line for (b,c)-dependency
+-- 50.0  5.0 -1.0 2.0E-06 50000.0 5.0 5.0 0.5 1*    /
+-- Replaced by
+   50.0  5.0 -1.0 2.0e-06 5.41E8  0.0 0.0 0.5 1*    /
+VDKRO
+-- M    N1   N2   Ncb     A       B   C   D   BetaD
+    0.0 15.0 -1.0 2.0E-06 50000.0 5.0 5.0 0.5 1*    /
+
+-- SRF: Can ask for summary of VDKR data to PRT file
+
+RPTPROPS
+SWFN  SGFN  SOF3  VDKRO VDKRG /
+
+------------------------------------------------------------------------
+SOLUTION
+------------------------------------------------------------------------
+
+EQUIL
+13200 8000 13201 0 13201 0 0 0 1 1 /
+
+RPTSOL
+  PRES  PSAT  SGAS  SOIL  SWAT  /
+
+OUTSOL
+  PRES  SGAS  SOIL  SWAT  /
+
+FIELDSEP
+1  120   800.  /
+2  100   400.  /
+3  100   200.  /
+4   60   14.7  /
+/
+
+------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------
+
+ALL
+
+RUNSUM
+
+------------------------------------------------------------------------
+RPTONLY
+SCHEDULE
+------------------------------------------------------------------------
+
+NOECHO
+
+ECHO
+
+SEPCOND
+ SEP1  FIELD  1  120   800.  /
+ SEP1  FIELD  2  100   400.  /
+ SEP1  FIELD  3  100   200.  /
+ SEP1  FIELD  4   60   14.7  /
+/
+--2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+--WELLSPEC
+--PRO1  FIELD   1   1  13050  SEP1  /
+WELSPECS
+PRO1  FIELD   1   1  13050  GAS  /
+/
+--2000a uses WELSEPC to associate separator with wells
+WSEPCOND
+PRO1  SEP1  /
+/
+COMPDAT
+  PRO1   1   1   1   1   OPEN  1*  1*  0.4  1*  0  1*  'Z' /
+/
+--2000a WELLSHUT is used for back-compatibility, prefered keyword is WELOPEN
+--WELLOPEN
+--  PRO1  /
+WELOPEN
+  PRO1 OPEN /
+/
+WELLLIM
+  PRO1  1*  1*    1*   1*  1*  NONE  N    /
+/
+GRUPLIM
+  FIELD  1*  1*   .99    90  1*  NONE  N  /
+/
+RPTSCHED
+  PRES SGAS SOIL KRO KRG /
+
+--2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+--WELLPROD
+--  PRO1  GAS  1*  1*  2500  1* 3000 /
+WCONPROD
+  PRO1  OPEN  GRAT  1*  1*  2500  2* 3000 /
+/
+RPTPRINT
+--STEP FIPFLD FIPRGN GRP SEP WELL COMP SOLN CONVG POTEN
+    1    1      1     1   1   1    1    1     0     1  /
+
+TSTEP
+20*365 /
+
+END
+

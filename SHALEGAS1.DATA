@@ -1,0 +1,513 @@
+-----------------------------------------------------------------------
+-- SHALE GAS TEST CASE
+-- INSTANT DESORPTION WITH MATRIX DISCRETIZATION
+-- 2 components
+-- Grid dimensions 11x11x11 
+-- METRIC units
+------------------------------------------------------------------------
+RUNSPEC
+
+TITLE
+         SHALE GAS TEST
+-- 1 layer (  1 matrix + 1 fracture + 9 subcell=11)
+DIMENS
+    11    11    11  /
+
+DUALPORO
+
+WATER
+
+GAS
+
+METRIC
+
+-- read as SHALE
+COAL
+
+COMPS
+2 /
+
+
+FULLIMP
+
+EQLDIMS
+    2  100    2    1   20 /
+
+TABDIMS
+    2    1   40   20    1  5 /
+
+REGDIMS 
+    1    1    1*  1*  1*    1  /
+
+WELLDIMS
+    5   13    1    2 /
+
+START
+  26 'JAN' 1983  /
+
+-- Do not multiply input permabilities in 
+-- fractures with porosities 
+NODPPM
+
+-- instant desorption model 
+CBMOPTS
+'INSTANT' /
+
+
+-- matrix + 9 subcells 
+NMATRIX
+10 /
+
+GRID      ==============================================================
+
+INIT 
+
+
+DXV
+      2.5   5.0   5.0   5.0   5.0   5.294   5.0
+      5.0   5.0   5.0   2.5 /
+
+DYV
+      2.5   5.0   5.0   5.0   5.0   5.294   5.0
+      5.0   5.0   5.0   2.5 /
+
+-- copies data to the fractures
+-- DPGRID
+
+-- general grid data will be copied to subcells
+-- from matrix 
+NMATOPTS
+ RADIAL 0.05 /
+
+
+EQUALS    
+-- Matrix & Fracture grid data
+  'DZ'   9.0  1 11 1 11 1 2 /
+  'TOPS' 1253.6  / 
+-- Fracture 
+ 'PERMX'   30.65   1  11 1 11 2 2 /
+ 'PERMY'   30.65  /
+ 'PERMZ'   30.65  /
+ 'PORO'   .01     /
+  COALNUM  0      /
+--matrix 
+ 'COALNUM'   1  1  11 1  11  1  1 /
+ 'PERMX'   3.0  /
+ 'PERMY'   3.0  /
+ 'PERMZ'   3.0  /
+ 'PORO'    .1   /
+  SIGMAV  0.08 1 11 1 11 1 10 /
+ 'ROCKDEN' 1434 1 11 1 11 1 11 /
+/
+
+-- COALNUM - 1 in the outer matrix grid is redefined
+-- so the outer matrix cell do not have any adsorption
+-- thereafter the next cell have some rock with adsorbed
+-- gas, next cell no adsorbed gas etc. The total rock with
+-- volume for adsorption still correspond to the rock volume of the 
+-- matrix cell (Bulk volume - 0.1*bulk volume - 0.01 bulk volume)
+
+COALNUMR
+1   0 1 0 1 0 1 0 1 0 1  /
+/
+
+PROPS     ==============================================================
+
+
+LANGMEXT    -- coalnum 1
+-- Bars     SM3/kg 
+  19.030   0.0240808     -- CO2
+  46.885   0.01180736 /  -- CH4
+/
+
+-- Units: C
+RTEMP
+-- 
+-- Constant Reservoir Temperature
+-- 
+   45.0000000000001
+/
+ 
+EOS
+-- 
+-- Equation of State (Reservoir EoS)
+-- 
+   PR3
+/
+ 
+NCOMPS
+-- 
+-- Number of Components
+-- 
+       2
+/
+PRCORR
+-- 
+-- Modified Peng-Robinson EoS
+-- 
+CNAMES
+-- 
+-- Component Names
+-- 
+   'CO2'
+   'C1'
+/
+MW
+-- 
+-- Molecular Weights (Reservoir EoS)
+-- 
+         44.01
+        16.043
+/
+ 
+OMEGAA
+-- 
+-- EoS Omega-a Coefficient (Reservoir EoS)
+-- 
+   0.457235529
+   0.457235529
+/
+ 
+OMEGAB
+-- 
+-- EoS Omega-b Coefficient (Reservoir EoS)
+-- 
+   0.077796074
+   0.077796074
+/
+ 
+-- Units: K
+TCRIT
+-- 
+-- Critical Temperatures (Reservoir EoS)
+-- 
+         304.7
+         190.6
+/
+ 
+-- Units: bar
+PCRIT
+-- 
+-- Critical Pressures (Reservoir EoS)
+-- 
+     73.865925
+      46.04208
+/
+ 
+-- Units: m3 /kg-mole
+VCRIT
+-- 
+-- Critical Volumes (Reservoir EoS)
+-- 
+         0.094
+         0.098
+/
+ 
+ZCRIT
+-- 
+-- Critical Z-Factors (Reservoir EoS)
+-- 
+   0.274077797373227
+   0.284729476628582
+/
+ 
+SSHIFT
+-- 
+-- EoS Volume Shift (Reservoir EoS)
+-- 
+   -0.0427303367439383
+   -0.144265618878948
+/
+ 
+ACF
+-- 
+-- Acentric Factors (Reservoir EoS)
+-- 
+         0.225
+         0.013
+/
+ 
+BIC
+-- 
+-- Binary Interaction Coefficients (Reservoir EoS)
+-- 
+     0.1
+/
+ 
+PARACHOR
+-- 
+-- Component Parachors
+-- 
+            78
+            77
+/
+ 
+-- Units: m3 /kg-mole
+VCRITVIS
+-- 
+-- Critical Volumes for Viscosity Calc (Reservoir EoS)
+-- 
+         0.094
+         0.098
+/
+ 
+ZCRITVIS
+-- 
+-- Critical Z-Factors for Viscosity Calculation (Reservoir EoS)
+-- 
+   0.274077797373227
+   0.284729476628582
+/
+ 
+LBCCOEF
+-- 
+-- Lorentz-Bray-Clark Viscosity Correlation Coefficients
+-- 
+    0.1023 0.023364 0.058533 -0.040758 0.0093324
+/
+
+SWFN
+-- No water flow in matrix 
+0.00  0.0   0.0 
+1.00  0.0   0.0 /
+-- fracture
+0.00  0.000   0.0 
+0.05  0.0006  0.0
+0.10  0.0013  0.0
+0.15  0.002   0.0
+0.20  0.007   0.0 
+0.25  0.015   0.0 
+0.30  0.024   0.0 
+0.35  0.035   0.0 
+0.40  0.049   0.0 
+0.45  0.067   0.0
+0.50  0.088   0.0
+0.55  0.116   0.0
+0.60  0.154   0.0 
+0.65  0.200   0.0 
+0.70  0.251   0.0
+0.75  0.312   0.0
+0.80  0.392   0.0 
+0.85  0.490   0.0
+0.90  0.601   0.0
+0.95  0.731   0.0
+0.975 0.814   0.0
+1.00  1.00    0.0
+/
+
+SGFN
+-- matrix
+0.00  0.000   0.0 
+0.025 0.0035  0.0 
+0.05  0.007   0.0
+0.10  0.018   0.0
+0.15  0.033   0.0
+0.20  0.051   0.0 
+0.25  0.070   0.0 
+0.30  0.090   0.0 
+0.35  0.118   0.0 
+0.40  0.147   0.0 
+0.45  0.180   0.0
+0.50  0.216   0.0
+0.55  0.253   0.0
+0.60  0.295   0.0 
+0.65  0.342   0.0 
+0.70  0.401   0.0
+0.75  0.466   0.0
+0.80  0.537   0.0 
+0.85  0.627   0.0
+0.90  0.720   0.0
+0.95  0.835   0.0
+1.00  1.000   0.0
+/
+--fracture
+0.00  0.000   0.0 
+0.025 0.0035  0.0 
+0.05  0.007   0.0
+0.10  0.018   0.0
+0.15  0.033   0.0
+0.20  0.051   0.0 
+0.25  0.070   0.0 
+0.30  0.090   0.0 
+0.35  0.118   0.0 
+0.40  0.147   0.0 
+0.45  0.180   0.0
+0.50  0.216   0.0
+0.55  0.253   0.0
+0.60  0.295   0.0 
+0.65  0.342   0.0 
+0.70  0.401   0.0
+0.75  0.466   0.0
+0.80  0.537   0.0 
+0.85  0.627   0.0
+0.90  0.720   0.0
+0.95  0.835   0.0
+1.00  1.000   0.0
+/
+
+-- Dummy SOF3 relperm
+---so  krow   krog
+SOF3
+-- matrix
+  0.0   0.0   0.0 /  
+-- fractures
+  0.0   0.0   0.0   /
+
+-- Make sure gas is gas....
+FACTLI
+ 0.05 0.05  /
+
+
+PVTW
+-- Pressure (bar)     Bw        Cw          Ug      du/dp
+    1.034           1.00370    5.8E-5    .60700    0.00E+00 /
+
+ROCK
+ 1.01325  1.45E-05 /
+
+GRAVITY
+    40.0000             0.99000           0.678 /
+
+-- Initial composition all methane
+ZI
+ 0.0 1.0 / 
+
+
+REGIONS
+
+SATNUM
+121*1    -- outer matrix
+121*2    -- fracture
+1089*1 / -- matrix sub cells
+
+EQLNUM
+ 121*1 
+ 121*2 
+1089*1 /
+
+SOLUTION   =============================================================
+
+
+--- depth press   oil-water   pcow    gas-oil  pcgo  black  N  type
+EQUIL
+ 1255    100.0   1262.6     0     1262.6    0     2*    1*   1  / --all gas
+ 1255    100.0   1253.6     0     1253.6  0     2*    1*   1    / --all water
+
+
+RPTRST
+'BASIC=2' SWAT SGAS  YMF /
+
+SUMMARY    ==========================================================
+
+ALL
+
+RUNSUM
+
+FPR
+
+FGIP
+
+PERFORMA
+
+-- CO2 production rate
+FCWGPR
+1 /
+
+-- Methan production rate 
+FCWGPR
+2 /
+
+FCWGPT
+1 /
+
+FCWGPT
+2 /
+
+-- gas phase mole fraction in producer
+WYMF
+'P' 1 /
+'P' 2 /
+/
+
+WBHP
+P /
+
+WBHP
+I /
+
+
+RPTONLY
+SCHEDULE   ===========================================================
+
+RPTSCHED 
+ PRES SWAT SGAS YMF MLSC / 
+
+TUNING
+-- TSINIT   TSMAXZ  TSMINZ  TSMCHP  TSFMAX  TSFMIN
+   0.0001     60.0     0.01   .015     2.0    0.10  / (record 1
+                                              / (record 2 - use all defaults)
+-- NEWTMX   NEWTMN  LITMAX
+    30       1*     30         / (record 3 - increase max linear iterations)
+
+WELSPECS
+'P'  'G'   11  11  1253.6  'GAS'  0 'STD' 'SHUT' 'NO'  /
+'I'  'G'   1   1   1253.6  'GAS'  0 'STD' 'SHUT' 'NO'  /
+/
+
+TSTEP 
+365 /
+ 
+COMPDAT
+-- Change skin factor to history match:          skin
+'P'   11  11 2 2   'OPEN'   0  0  0.073  0   0.0  0 'Z' 0 /
+'I'   1   1  2 2   'OPEN'   0  0  0.073  0   0.0  0 'Z' 0 /
+/
+
+WPIMULT
+-- Multiplies well connection factors by a given value 
+-- (since the wells are on the corners)
+'I'   0.25 /
+'P'   0.25 /
+/
+
+-- Inject Co2
+WELLSTRE
+ 'CO2' 1.0  0.0 /
+/
+ 
+WINJGAS
+ 'I' STREAM 'CO2' /
+/
+
+-- Production
+WCONPROD
+'P' 'OPEN' 'BHP'  1E20   1E20 25000 1E20  1E20  50  0    0 0 /
+/
+------ Inject CO2
+
+WCONINJE
+ 'I' 'GAS' 'OPEN' 'RATE' 7079.2 1* 150.0 /
+/
+
+--primary production for one years
+
+TSTEP
+1*365 /
+
+
+
+WELOPEN
+ P   SHUT /
+ I   SHUT /
+/
+
+TSTEP
+2*365 /
+
+WCONINJE
+ 'I' 'GAS' 'OPEN' 'RATE' 7079.2 1* 150.0 /
+/
+TSTEP
+1*365 /
+                                        
+END

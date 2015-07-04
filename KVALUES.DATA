@@ -1,0 +1,374 @@
+------------------------------------------------------------------------
+-->Example of use of K-values for phase equilbrium
+------------------------------------------------------------------------
+
+--RUNSPEC section-------------------------------------------------------
+
+RUNSPEC
+
+--Request the FIELD unit set
+
+FIELD
+
+--Oil water and gas are present
+
+OIL
+WATER
+GAS
+
+--IMPES solution method
+
+--IMPES
+FULLIMP
+
+--Nine components in study ( plus water )
+
+COMPS
+9 /
+
+--Peng-Robinson equation of state to be used
+
+EOS
+PR /
+
+KVALUES
+
+MISCIBLE
+
+--Grid is 4 by 4 by 4 cells
+
+DIMENS
+4 4 4 /
+
+--Only one saturation and pressure table region, up to 40 rows in each
+
+TABDIMS
+1 1 40 40 /
+
+EQLDIMS
+1 20 /
+
+--Two wells, each with two completions
+
+WELLDIMS
+5 1* /
+
+--Grid section--------------------------------------------------------
+
+GRID
+
+--Basic grid block sizes
+
+DX
+64*293.3 /
+
+DY
+64*293.3 /
+
+DZ
+32*30 32*50 /
+
+--Cell top depths - only first layer specified
+
+TOPS
+16*7315 /
+
+--Rock porosity and permeability
+
+PORO
+64*0.13  /
+
+PERMX
+64*100 /
+
+PERMY
+64*100 /
+
+PERMZ
+64*100 /
+
+--Properties section-----------------------------------------------
+
+PROPS
+
+PARACHOR
+/
+
+-- KVTABLE for ECLIPSE 300
+
+-- Fluid is VAPOUR Phase at temperature of   200.00000 Deg F
+-- Psat at   4529.92484 PSIA
+
+KVTABLE
+ 500.0 4.1792 15.844 9.2278 2.4155 1.106 0.3343 0.0271 0.00116 0.00000654
+ 614.5 3.4841 12.743 7.5329 2.0498 0.963 0.3013 0.0264 0.00126 0.00000854
+ 729.2 3.0090 10.621 6.3747 1.8020 0.868 0.2810 0.0266 0.00142 0.0000114
+ 843.7 2.6643  9.078 5.5334 1.6242 0.803 0.2686 0.0275 0.00163 0.0000157
+ 958.3 2.4034  7.905 4.8947 1.4913 0.755 0.2613 0.0288 0.00190 0.0000218
+1072.9 2.1993  6.985 4.3934 1.3890 0.721 0.2578 0.0307 0.00225 0.0000305
+1302.0 1.9020  5.632 3.6571 1.2442 0.678 0.2588 0.0357 0.00320 0.0000608
+1532.5 1.6972  4.686 3.1424 1.1493 0.657 0.2673 0.0426 0.00466 0.00012
+1760.4 1.5488  3.989 2.7623 1.0849 0.649 0.2815 0.0517 0.00683 0.00025
+1989.5 1.4374  3.455 2.4699 1.0405 0.652 0.3004 0.0633 0.01005 0.00049
+2218.7 1.3515  3.034 2.2380 1.0098 0.661 0.3235 0.0779 0.01473 0.00095
+2447.9 1.2839  2.694 2.0491 0.9889 0.675 0.3503 0.0959 0.02143 0.00183
+2677.0 1.2298  2.415 1.8922 0.9751 0.692 0.3808 0.1181 0.03088 0.00341
+2906.2 1.1860  2.183 1.7592 0.9665 0.713 0.4147 0.1449 0.04401 0.00622
+3135.4 1.1500  1.986 1.6447 0.9618 0.736 0.4521 0.1772 0.06202 0.01106
+3364.5 1.1202  1.817 1.5444 0.9601 0.761 0.4930 0.2160 0.08647 0.01924
+3593.7 1.0953  1.670 1.4550 0.9608 0.787 0.5378 0.2626 0.11951 0.03283
+3822.9 1.0742  1.540 1.3738 0.9632 0.815 0.5873 0.3189 0.16428 0.05530
+4052.0 1.0560  1.422 1.2978 0.9673 0.844 0.6428 0.3886 0.22610 0.09297
+4281.2 1.0399  1.311 1.2236 0.9730 0.877 0.7081 0.4789 0.31576 0.15939
+4510.4 1.0243  1.196 1.1436 0.9810 0.916 0.7933 0.6111 0.46402 0.29530
+4625.0 1.0220  1.181 1.1341 0.9819 0.921 0.8046 0.6300 0.48725 0.31966
+4854.1 1.0200  1.174 1.1299 0.9821 0.924 0.8094 0.6384 0.49894 0.33296
+5083.3 1.0182  1.167 1.1260 0.9823 0.927 0.8137 0.6462 0.50971 0.34538
+5312.5 1.0165  1.161 1.1226 0.9826 0.929 0.8178 0.6533 0.51964 0.35698
+5541.6 1.0151  1.156 1.1194 0.9828 0.932 0.8215 0.6598 0.52884 0.36785
+5770.8 1.0137  1.151 1.1165 0.9830 0.934 0.8249 0.6659 0.53737 0.37804
+6000.0 1.0125  1.146 1.1139 0.9832 0.936 0.8280 0.6715 0.54531 0.38760 /
+
+--Reservoir temperature
+
+RTEMP
+200 /
+
+--Standard conditions
+
+STCOND
+60 14.7 /
+
+--Mnemonics for the nine components
+
+CNAMES
+CO2  N2    C1
+C2   C3    C4-6
+C7+i C7+ii C7+iii /
+
+--Critical temperatures and pressures
+
+TCRIT
+ 547.56   227.16  335.88
+ 549.72   665.82  713.16
+1030.50  1134.36 1552.68 /
+
+PCRIT
+1071.3  492.3  670.1
+ 708.3  617.2  498.2
+ 367.2  245.4  124.9 /
+
+--Critical Z-factors used in the Lorentz-Bray-Clark viscosity correlatio
+
+ZCRIT
+0.288 0.285 0.283
+0.259 5*0.23 /
+
+--Molcular weights
+
+MW
+ 44.01 28.01 16.04
+ 30.07 44.10 67.28
+110.9 170.9 282.10 /
+
+--Acentric factors
+
+ACF
+0.225 0.040 0.013
+0.098 0.152 0.234
+0.332 0.495 0.833 /
+
+--Binary interaction coefficients ( lower triangular part )
+
+BIC
+  -0.02
+   0.1    0.036
+   0.13   0.05    0.0
+   0.135  0.08    0.0     0.0
+   0.1277 0.1002  0.09281 0.0     0.0
+   0.1    0.1     0.0     0.00385 0.00385 0.0
+   0.1    0.1     0.0     0.00630 0.00630 0.0     0.0
+   0.1    0.1     0.14772 0.00600 0.00600 0.0     0.0     0.0  /
+
+--Water saturation functions
+
+SWFN
+0.16  0      50
+0.18  0      41
+0.20  0.002  32
+0.40  0.066  7.0
+0.60  0.227  2.1
+0.80  0.540  0.5
+1.00  1.000  0.0 /
+
+--Gas saturation functions
+
+SGFN
+0.00  0.000  0.0
+0.04  0.005  0.0
+0.20  0.058  0.0
+0.40  0.187  0.0
+0.60  0.400  0.0
+0.80  0.680  0.0
+0.84  0.740  0.0
+/
+
+--Oil saturation functions
+
+SOF3
+0.00  0.000  0.000
+0.20  0.000  0.000
+0.40  0.040  0.040
+0.60  0.196  0.196
+0.80  0.650  0.650
+0.84  0.800  0.800 /
+
+--Rock and water pressure data
+
+ROCK
+3550 0.000004 /
+
+WATERTAB
+    14.7 1.0042   0.70
+   150.0 1.0037   0.70
+   220.0 1.0035   0.70
+   300.0 1.0033   0.70
+   500.0 1.0025   0.70
+   750.0 1.0018   0.70
+  1100.0 1.00063  0.70
+  1500.0 0.9994   0.70
+  2250.0 0.9969   0.70
+  3000.0 0.9945   0.70
+  4500.0 0.9897   0.70
+  6000.0 0.9849   0.70
+  7500.0 0.9802   0.70
+  9000.0 0.9754   0.70
+ 10000.0 0.9707   0.70 /
+
+--Initial composition with respect to depth
+
+ZMFVD
+1000.0  0.0121 0.0194 0.6599 0.0869 0.0591 0.0967 0.0472 0.0153 0.0034 /
+
+--Surface density of water
+
+DENSITY
+1* 63.0 1* /
+
+--Solution section------------------------------------------------------
+
+SOLUTION
+
+--Request initial state output
+
+RPTSOL
+PRESSURE SOIL SWAT /
+
+--Equilibration data - initial pressure 3500 psi at 7500, which is
+--the oil-water and the oil-gas contact depth
+
+EQUIL
+7300 3500 7500 0 7500 0 1 1 0  /
+
+SUMMARY
+
+FGOR
+
+FOPR
+
+FGPR
+
+RUNSUM
+
+--Schedule section-----------------------------------------------------
+
+RPTONLY
+SCHEDULE
+
+SEPCOND
+Sepa Field 1  65 815  /
+Sepa Field 2  65  65  /
+Sepa Field 3  45 14.7 /
+Sepb Field 1  65 815  /
+Sepb Field 2  65  65  /
+Sepb Field 3  45 14.7 /
+/
+
+--Define injection and production wells
+
+--2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+--WELLSPEC
+--P1 Field 1 1 7315 Sepa /
+--P2 Field 2 2 7315 Sepa /
+--P3 Field 3 3 7315 Sepb /
+--P4 Field 4 4 7315 Sepb /
+WELSPECS
+P1 Field 1 1 7315 GAS /
+P2 Field 2 2 7315 GAS /
+P3 Field 3 3 7315 GAS /
+P4 Field 4 4 7315 GAS /
+/
+
+--2000a uses WELSEPC to associate separator with wells
+WSEPCOND
+P1  Sepa /
+P2  Sepa /
+P3  Sepb /
+P4  Sepb /
+/
+
+--2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+--WELLCOMP
+--P1 1 1 4 4 1 /
+--P2 2 2 4 4 1 /
+--P3 3 3 4 4 1 /
+--P4 4 4 4 4 1 /
+COMPDAT
+P1 1 1 4 4 OPEN 1 /
+P2 2 2 4 4 OPEN 1 /
+P3 3 3 4 4 OPEN 1 /
+P4 4 4 4 4 OPEN 1 /
+/
+
+--2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+--WELLPROD
+--P1 Gr 2* /
+--P2 Gr 2* /
+--P3 Gr 2* /
+--P4 Gr 2* /
+WCONPROD
+P1 OPEN GRUP 2* /
+P2 OPEN GRUP 2* /
+P3 OPEN GRUP 2* /
+P4 OPEN GRUP 2* /
+/
+
+--2000a WELLGR is for back-compatibility, prefered keyword is WGRUPCON
+--WELLGR
+--P1 Y 2.5 ALL /
+--P2 Y 7.5 ALL /
+--P3 Y 2.5 ALL /
+--P4 Y 7.5 ALL /
+WGRUPCON
+P1 YES 2.5 ALL /
+P2 YES 7.5 ALL /
+P3 YES 2.5 ALL /
+P4 YES 7.5 ALL /
+/
+
+--2000a GRUPPROD is for back-compatibility, prefered keyword is GCONPROD
+--GRUPPROD
+--Field Ga 2* 10 /
+GCONPROD
+Field GRAT 2* 10 /
+/
+
+RPTSCHED
+PRESSURE SOIL PSAT /
+
+--Time steps to 9 years
+
+TSTEP
+9*365 /
+
+END

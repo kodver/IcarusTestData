@@ -1,0 +1,515 @@
+-- 
+------------------------------------------------------------------------
+--  Condensate field
+--  Optimizing the oil production by adjusting the gas injection rate
+--  Considering the cost of injecting Gas
+------------------------------------------------------------------------
+ 
+RUNSPEC  ============================================================
+
+-- Phases present 
+OIL 
+WATER
+GAS
+ISGAS
+
+-- 2D model: x-z cross-section
+ 
+DIMENS
+--nx ny nz
+  20  1  5 /
+
+ 
+-- Unit: FIELD
+ 
+FIELD
+ 
+-- Number of components
+ 
+COMPS
+6 /
+ 
+ 
+TABDIMS
+-- sat pres - max rows in tables- 
+-- tab tab    sat    press
+    1   1      40     40 /
+
+WELLDIMS
+-- max  max   max    max wells  max stages
+--wells comps groups in group   per sep
+    1*   10     2      1*       /
+
+-- Starting date 
+START
+1 Jan 1997 /
+
+UNIFOUT
+
+-- activate the reservoir optimization option
+
+RESOPT
+
+GRID     
+
+INIT 
+ 
+--  SPECIFY GRID BLOCK DIMENSIONS IN THE X DIRECTION
+DXV
+    20*200 /    
+                            
+--  SPECIFY GRID BLOCK DIMENSIONS IN THE y DIRECTION  
+DYV
+     1000.0  /
+ 
+-- SPECIFY CELL THICKNESSES ( DZ ), HORIZ. PERMEABILITIES ( PERMX )
+-- AND POROSITIES ( PORO ) FOR EACH LAYER OF THE GRID. ALSO CELL TOP
+-- DEPTHS ( TOPS ) FOR LAYER 1. 
+
+--     ARRAY    VALUE  ------ BOX ------
+EQUALS
+
+      'TOPS'    6100   1   1   1   1   1  1  /  
+      'TOPS'    6105   2   2   1   1   1  1  /  
+      'TOPS'    6110   3   3   1   1   1  1  /  
+      'TOPS'    6115   4   4   1   1   1  1  /  
+      'TOPS'    6120   5   5   1   1   1  1  /  
+      'TOPS'    6125   6   6   1   1   1  1  /  
+      'TOPS'    6130   7   7   1   1   1  1  /  
+      'TOPS'    6135   8   8   1   1   1  1  /  
+      'TOPS'    6140   9   9   1   1   1  1  /  
+      'TOPS'    6145   10  10  1   1   1  1  /  
+      'TOPS'    6150   11  11  1   1   1  1  /  
+      'TOPS'    6155   12  12  1   1   1  1  /  
+      'TOPS'    6160   13  13  1   1   1  1  /  
+      'TOPS'    6165   14  14  1   1   1  1  /  
+      'TOPS'    6170   15  15  1   1   1  1  /  
+      'TOPS'    6175   16  16  1   1   1  1  /  
+      'TOPS'    6180   17  17  1   1   1  1  /  
+      'TOPS'    6185   18  18  1   1   1  1  /  
+      'TOPS'    6190   19  19  1   1   1  1  /  
+      'TOPS'    6195   20  20  1   1   1  1  /  
+ 
+--      CONSTANT POROSITY AND NTG
+
+      'PORO'    0.18   1  20    1  1   1  5   /
+      'NTG'     1.00   1  20    1  1   1  5   /
+
+  
+      'DZ'      32.    1  20    1  1   1  1  /  LAYER 1
+      'PERMX'   50.    1  20    1  1   1  1  /
+
+      'DZ'      5.     1  20    1  1   2  2  /  LAYER 2
+      'PERMX'   0.01   1  20    1  1   2  2  /
+
+      'DZ'      20.    1  20    1  1   3  3  /  LAYER 3
+      'PERMX'   20.    1  20    1  1   3  3  /
+
+      'DZ'      41.    1  20    1  1   4  4  /  LAYER 4
+      'PERMX'   80.    1  20    1  1   4  4  /
+
+      'DZ'      32.    1  20    1  1   5  5  /  LAYER 5
+      'PERMX'   150.   1  20    1  1   5  5  /
+
+
+/   EQUALS IS TERMINATED BY A NULL RECORD
+ 
+--  COPY X PERMEABILITIES ( PERMX ) INTO Y AND Z PERMEABILITIES
+--  ( PERMZ ) FOR THE WHOLE GRID, AND THEN MULTIPLY PERMZ BY 0.2.
+-------- SOURCE     DESTINATION
+COPY
+         'PERMX'      'PERMZ'     /
+         'PERMX'      'PERMY'     /
+/
+-- set Kv/Kh ratio
+MULTIPLY
+--       array   factor i1  i2  j1 j2  k1 k2
+        'PERMZ'     0.2  1  20   1  1   1  5  /
+/
+
+
+-- OUTPUT OF CELL DIMENSIONS, PERMEABILITIES, POROSITY AND TOPS
+-- DATA IS REQUESTED, AND OF THE CALCULATED PORE VOLUMES, CELL
+-- CENTRE DEPTHS AND X AND Z DIRECTION TRANSMISSIBILITIES
+
+RPTGRID
+ DX DY DZ PERMX PERMY PERMZ PORO NTG TOPS MIDS  /
+ 
+ 
+PROPS    ===============================================================
+-------- THE PROPS SECTION DEFINES THE REL. PERMEABILITIES, CAPILLARY
+-------- PRESSURES, AND THE PVT PROPERTIES OF THE RESERVOIR FLUIDS
+----------------------------------------------------------------------
+
+-- include relative permeability and capillary pressure tables
+-- saturation tables  THREE PHASE
+
+SWFN 
+--  sw        krw      Pcwo
+   0.15      0.        5
+   0.2       0.        3
+   0.25      0.01      1.9
+   0.3       0.05      1
+   0.35      0.1       0.7
+   0.4       0.18      0.6
+   0.45      0.28      0.5
+   0.50      0.4       0.4
+   1.00      1.        0.
+/ 
+
+SOF3
+--  so       krow       krog   
+   0.        0.          0.  
+   0.1       0.          0.   
+   0.15      0.          0.01
+   0.2       0.05        0.03
+   0.25      0.1         0.05
+   0.3       0.15        0.08
+   0.35      0.2         0.11
+   0.4       0.25        0.15
+   0.45      0.3         0.19
+   0.5       0.35        0.23
+   0.55      0.4         0.28
+   0.6       0.45        0.34
+   0.65      0.5         0.4
+   0.7       0.55        0.47
+   0.75      0.6         0.54
+   0.85      0.7         0.7
+/
+
+SGFN
+--  sg        krg       Pcgo
+   0.        0.         0.
+   0.05      0.         0.
+   0.1       0.03       0.
+   0.15      0.06       0.
+   0.2       0.1        0.
+   0.25      0.15       0.
+   0.3       0.2        0.
+   0.35      0.25       0.
+   0.4       0.3        0.
+   0.45      0.36       0.
+   0.5       0.42       0.
+   0.55      0.5        0.
+   0.850     1.000      0.
+/
+
+--    'RELPFCON.DAT'  / special for water injection into condensates
+--
+--  'relpfld.dat'  / file name depends on machine
+
+ 
+-- Properties section: PVT data 
+
+NCOMPS
+        6 /
+ 
+EOS
+ PR   /
+ 
+-- Peng-Robinson correction
+ 
+PRCORR
+ 
+-- Standard temperature and pressure in Deg F      and PSIA
+ 
+STCOND
+     60.00001     14.69590 /
+ 
+-- Component names
+ 
+CNAMES
+ CO2
+ N2
+ C1
+ C3
+ C10
+ C15
+ /
+ 
+-- Critical temperatures Deg R
+ 
+TCRIT
+  5.484599855E+02  2.271599940E+02  3.430799909E+02  6.656399824E+02
+  1.126799970E+03  1.303199965E+03                                   /
+ 
+-- Critical pressures PSIA
+ 
+PCRIT
+  1.071331110E+03  4.923126500E+02  6.677816960E+02  6.186973900E+02
+  3.509380920E+02  2.552677830E+02                                   /
+ 
+-- Critical volumes
+ 
+VCRIT
+  1.505735240E+00  1.441661400E+00  1.569809080E+00  3.203692000E+00
+  8.553857640E+00  1.247838034E+01                                   /
+ 
+-- Critical Z-factors
+ 
+ZCRIT
+  2.740777974E-01  2.911514044E-01  2.847294766E-01  2.774828283E-01
+  2.482516673E-01  2.277663896E-01                                   /
+ 
+-- Critical volumes for LBC Viscosities
+ 
+VCRITVIS
+  1.505735240E+00  1.441661400E+00  1.569809080E+00  3.203692000E+00
+  8.553857640E+00  1.247838034E+01                                   /
+ 
+-- Critical Z-factors for LBC Viscosities
+ 
+ZCRITVIS
+  2.740777974E-01  2.911514044E-01  2.847294766E-01  2.774828283E-01
+  2.482516673E-01  2.277663896E-01                                   /
+ 
+-- Reference 3-Parameter PR   EoS Shift Coefficients
+ 
+SSHIFT
+ -4.273033674E-02 -1.313342386E-01 -1.442656189E-01 -7.750138148E-02
+  9.246642050E-02  1.524746377E-01                                   /
+ 
+-- Acentric factors
+ 
+ACF
+  2.250000000E-01  4.000000000E-02  1.300000000E-02  1.524000000E-01
+  3.850000000E-01  5.500000119E-01                                   /
+ 
+-- Molecular Weights
+ 
+MW
+  4.401000000E+01  2.801300000E+01  1.604300000E+01  4.409700000E+01
+  1.340000000E+02  2.060000000E+02                                   /
+ 
+-- Default fluid sample composition
+ 
+ZMFVD
+  1.000000000E+00  1.000000000E-02  1.000000000E-02  7.500000000E-01
+  1.700000000E-01  4.000000000E-02  2.000000000E-02
+  1.000000000E+04  1.000000000E-02  1.000000000E-02  7.500000000E-01
+  1.700000000E-01  4.000000000E-02  2.000000000E-02                  /
+ 
+-- Boiling point temperatures Deg R
+ 
+TBOIL
+  3.504599852E+02  1.393199991E+02  2.010599892E+02  4.159800000E+02
+  7.901999791E+02  9.701999743E+02                                   /
+ 
+-- Reference temperatures Deg R
+ 
+TREF
+  5.273999860E+02  1.405799935E+02  2.010599892E+02  4.157999890E+02
+  5.201999862E+02  5.201999862E+02                                   /
+ 
+-- Reference densities LB/FT3
+ 
+DREF
+  4.850653269E+01  5.019208788E+01  2.653188725E+01  3.633307854E+01
+  4.888110051E+01  5.225221089E+01                                   /
+ 
+-- Parachors (Dynes/cm)
+ 
+PARACHOR
+  7.800000000E+01  4.100000000E+01  7.700000000E+01  1.503000031E+02
+  4.048999939E+02  5.505999756E+02                                   /
+ 
+-- Binary Interaction Coefficients
+ 
+BIC
+  -.01200000
+  0.10000000  0.10000000
+  0.10000000  0.10000000  0.00000000
+  0.10000000  0.10000000  0.04162000  0.01000000
+  0.10000000  0.10000000  0.04918000  0.01000000  0.00000000
+/
+ 
+-- Units are: FIELD
+ 
+ 
+RTEMP
+   180.00000 /
+
+
+-- Compositional run only water density required
+DENSITY
+--  lb/ft^3 ---- (surface conditions)
+1*  64.0    1* /
+ 
+ 
+-- Rock and water properties
+ 
+ROCK
+-- ref pres  compressibility (1/psi)
+     3000.0    0.000004  /
+
+PVTW
+--     Pref          Bw            Cw            Vw           Cvw
+--  PSIA          RB/STB        1/PSI         CPOISE        1/PSI
+    3000.00000       1.00528   3.27915E-06       0.55730   5.89998E-06
+/ 
+ 
+ 
+SOLUTION ============================================================
+
+-- set reservior initial conditions  
+EQUIL
+-- datum pressure   depth  Pc@ depth  Pc@ init init init  comp
+-- depth at datum    woc   woc  goc   goc type type accur case
+   6100    4700      8000   0   8000   0  1*    1*   1*    1   / class problem   
+ 
+-- set field separator conditions  
+FIELDSEP 
+--stage  temp  press
+--       deg F psia
+    1    100.  815.  /
+    2     70.  500.  /
+    3     60.  14.7  /
+/
+-- set variables to be printed in the .PRT file  
+RPTSOL
+PRES  SOIL  SGAS XMF YMF /
+
+-- set variable to be put into .X00  files
+OUTSOL
+PRES SOIL SGAS SWAT XMF YMF /
+ 
+SUMMARY  ============================================================
+
+-- set summary variable to be stored to be available for line plots 
+
+FOPT
+FGOR 
+FGPT
+FOPR 
+FGIR 
+FGIT
+FPR
+-- FIOP is field oil in place, oil recovery efficiency is determined
+-- by looking up the initial FOIP after the first small time step
+-- in the .RSM file and subtracting the final FOIP (last FOIP value 
+-- in the .RSM file) and then dividing the difference by the inital FOIP.
+FOIP
+
+WGOR
+ P1  
+ P2  
+/
+
+WOPR
+ P1  
+ P2  
+/
+
+
+WYMF
+ P1  2  /
+ P2  2  /
+ P1  3  /
+ P2  3  /
+ P1  1  /
+ P2  1  /
+ P1   4  /
+ P2   4  /
+/
+RPTONLY
+-- create a .RSM file of summary results
+RUNSUM  
+ 
+SCHEDULE ============================================================
+
+--Define injection and production wells
+ 
+WELSPECS
+--well group   i  j  bhp    Phase
+--name name          depth  
+  IN   Field   1  1  1*     GAS /
+  P1   Field  10  1  1*     OIL /
+  P2   Field  20  1  1*     OIL /
+
+/
+ 
+COMPDAT            
+--name     i  j k1 k2 status  sat_table Con_fact w-diam 
+IN         1  1  1  1    1*      1*       1*      .6      /    
+P1        10  1  4  5    1*      1*       1*      .6      /
+P2        20  1  3  5    1*      1*       1*      .6      /
+/
+ 
+-- set injectior well stream mole fractions
+WELLSTRE
+--       CO2  N2   C1   C3   C10  C15
+CO2      1.0  0.0  0.0  0.0  0.0  0.0  /
+N2       0.0  1.0  0.0  0.0  0.0  0.0  /
+SOLVENT  0.0  0.0  .60  .40  0.0  0.0  /
+C1       0.0  0.0  1.0  0.0  0.0  0.0  /
+/
+ 
+-- 
+-- set injection well specifications
+WELLINJE       
+--name  inj      name   cntl oil  water gas  bhp  thp   rv   wg   re-in
+--well  fluid           mode rate rate  rate           rate rate  frac
+     IN  STREAM    C1     GAS   1*   1*   4500 6000  1*   1*    1*    1*  /
+/
+
+
+-- set production well specifications 
+WCONPROD
+--name Status cntl oil  water  gas   liq  resv  bhp   
+--well       mode rate  rate  rate  rate  rate            
+   P1   OPEN  BHP   1*    1*   2500   1*   1*  300. /
+   P2   OPEN  BHP   1*    1*   2500   1*   1*  300. /
+/
+
+
+
+
+--Specify solution maps of pressure and saturations
+ 
+RPTSCHED
+PRESSURE SGAS   /
+
+RPTRST
+BASIC=2 /
+ 
+--Initial step of 0.1 days 
+ 
+TSCRIT
+0.1  0.1 50.          /
+
+
+-- run for 20 years max 
+TSTEP
+ 0.1 365.15  19*365.25  / 
+
+------------------------------------------------
+OPTIMIZE
+------------------------------------------------
+-- output separate summary files for each iteration
+RPTOPT
+  SEPARATE /
+-- optimize, say
+-- Income = FOPT*40($/stb) (discount factor=0.0) - FGIT*0.1($/Mscf cost for injecting gas)
+OPTFUNC
+  FOPT  FIELD 40.0  0.0  /
+  FGIT  FIELD -0.1  0.0  /
+/
+-- Max_outer_iter   Max_runs
+OPTDIMS 
+  40 200 /
+-- Change gas injection rate for the optimization
+OPTPARS
+'WGIR' 'IN'  0  10000 /
+/
+
+-- re-set the convergence criteria for the objective function
+OPTTUNE
+3* 1e-4 1e-4 /
+
+--No constraints in theis case
+--OPTCONS
+--'WWCT' 'P' '<' 0.99  /
+--/
+
+END
+

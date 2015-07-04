@@ -1,0 +1,505 @@
+-----------------------------------------------------------------------
+-->    CO2 storage example 
+------------------------------------------------------------------------
+
+RUNSPEC
+
+--Request the METRIC unit set
+
+METRIC
+
+-- Capillary pressure mode
+-- PW = P - PC
+-- PG = P
+OPTIONS3
+  7* 1 /
+
+-- Include diffusion
+DIFFUSE
+
+--Four components in study.
+COMPS
+ 4 /
+
+DIMENS
+ 14 14 10 /
+
+TABDIMS
+ 1 1 40 40 /
+
+HWELLS
+
+CO2STORE
+
+FULLIMP
+
+SOLID
+
+START
+ 1 AUG 2004 /
+
+UNIFOUT
+UNIFIN
+
+--Grid section--------------------------------------------------------
+
+GRID
+--Basic grid block sizes
+DX
+ 1960*500 /
+
+DY
+ 1960*500 /
+
+DZ
+ 196*0.204    
+ 196*0.163
+ 196*0.177
+ 196*0.203
+ 196*0.145
+ 196*0.191   
+ 196*0.223
+ 196*0.206
+ 196*0.183
+ 196*0.132 /
+
+--Cell top depths - only for first layer specified
+TOPS
+ 196*1411.4 /                                                       
+
+PORO
+ 196*0.204
+ 196*0.163
+ 196*0.177
+ 196*0.203
+ 196*0.145
+ 196*0.191
+ 196*0.223
+ 196*0.206
+ 196*0.183
+ 196*0.132 /
+
+PERMX
+ 196*97.9
+ 196*8.9
+ 196*15.1
+ 196*37.9
+ 196*2.7
+ 196*26.8
+ 196*110
+ 196*45.4
+ 196*58.1
+ 196*6.0  /
+
+COPY 
+ PERMX PERMY / 
+/
+
+PERMZ
+ 196*46.4
+ 196*6.28
+ 196*12.1
+ 196*32.2
+ 196*0.94
+ 196*18.0 
+ 196*97.1
+ 196*41.3
+ 196*0.73
+ 196*0.65 /
+
+
+BOUNDARY
+ 7 7 7 7 1 10 /
+
+RPTGRID
+ 'DEPTH' /
+
+INIT
+
+--Properties section-----------------------------------------------
+
+PROPS
+
+CNAMES
+  'H2O' 'CO2' 'NACL'  'CACL2' /
+
+ZMFVD
+-- depth  h20  co2  nacl  cacl2 
+ 1411.4   0.9109 0.0  0.0741     0.015 
+ 1413.227 0.9109 0.0  0.0741     0.015 / 
+
+-- Solid component NACL_S referece density
+SDREF
+ 3* 2170.0 1* / 
+
+-- Mobility multiplier
+SOLIDMMS
+-- SS   Mult
+   0.0    1.0
+   0.1    0.5
+   0.8    0.0 /
+--
+-- Set diffusion constants (example)
+--
+DIFFCWAT
+-- h2o   co2   nacl          cacl2 
+  0.0001  0.0001  0.0001     0.0001 /
+
+DIFFCGAS
+--  h2o  co2
+   0.001 0.001  / 
+ 
+-- Temp in deg C
+RTEMP
+ 32.2 /
+
+-- Water saturation functions
+WSF
+--   Sw         Krw        
+--  -----      -----      
+    0.3        0.0         
+    0.38       0.000152    
+    0.46       0.002439    
+    0.53       0.012346    
+    0.61       0.039018    
+    0.69       0.09526     
+    0.77       0.197531    
+    0.84       0.36595     
+    0.92       0.624295    
+    1.0        1.0      /        
+
+
+-- Gas saturation functions
+GSF
+--   Sg         Krg      Drain Pcog    
+--  -----      ------    ----------    
+    0.0        0.0         0.           
+    0.08       0.0         0.6           
+    0.16       0.000407    0.78           
+    0.23       0.005831    0.93           
+    0.31       0.024131    1.09          
+    0.39       0.064892    1.26          
+    0.47       0.140566    1.49          
+    0.54       0.269314    1.84          
+    0.62       0.484797    2.53          
+    0.7        1.0         10.0   /
+
+
+--Rock data
+
+ROCK
+ 137.2  7.25E-5 /
+
+
+--Solution section------------------------------------------------------
+
+SOLUTION
+
+--Equilibration data 
+EQUIL
+ 1411.7 174 0.0 0 0.0 0 1 1 0  /
+
+RPTRST
+ RESTART PRESSURE SGAS SWAT DENG DENW VGAS VWAT XMF AQSP AQPH SSOLID /
+
+BOUNDARY
+ 7 7 7 7 1 10 /
+
+RPTSOL
+ PRESSURE SGAS SWAT DENG DENW VGAS VWAT XMF AQSP AQPH SSOLID /
+
+FIELDSEP
+ 1 15.0 1.01 /
+/
+
+SUMMARY    =============================================================
+
+FPR
+FGIPL
+FGIPG
+
+WBHP
+ CO2_INJ / 
+
+FGIR
+
+TCPU
+
+BPRES
+1 1 1   / 
+7 7 6 /
+/
+
+BSSOLID 
+7 7 6 / 
+/
+
+BXMF 
+7 7 6 1 /
+7 7 6 2 /
+7 7 6 3 /
+7 7 6 4 /
+--7 7 6 5 /
+/
+
+RUNSUM
+
+
+--Schedule section------------------------------------------------------
+
+RPTONLY
+SCHEDULE
+
+
+-- Lower throughput target and solution change target for aim selection
+-- and increase implicitness, do eval every time step.
+
+BOUNDARY
+ 7 7 7 7 1 10 /
+
+RPTSCHED
+ PRESSURE SGAS SWAT DENG DENW VGAS VWAT XMF AQPH SSOLID /
+
+--Define injection well
+WELSPECS
+ 'CO2_INJ' FIELD 7 7 1431.7 GAS /
+/
+
+COMPDAT
+ 'CO2_INJ' 7 7 6 6 1* 1* 1* 0.09 97000 2* 'Y' /
+ 'CO2_INJ' 7 8 6 6 1* 1* 1* 0.09 97000 2* 'Y' /
+/
+
+WELLSTRE
+ 'SeqCO2' 0.0 1.0 /
+/
+
+WINJGAS
+ 'CO2_INJ' STREAM 'SeqCO2' /
+/
+
+--
+-- BHP LIMIT 400 bar
+--
+
+WCONINJE
+ 'CO2_INJ' GAS OPEN RATE 5.736E5 1* 400.0 /
+/
+
+          
+DATES 
+ 1 SEP 2004 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 3.626E5 1* 400.0 / 
+/
+
+
+DATES 
+ 1 OCT 2004 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 2.202E5 1* 400.0 / 
+/
+
+
+DATES 
+ 1 NOV 2004 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 2.116E5 1* 400.0 /  
+/
+
+
+
+DATES 
+ 1 DEC 2004 /
+/
+
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 3.799E5 1* 400.0 /  
+/
+
+-----------
+-- 2005
+-----------
+
+DATES 
+ 1 JAN 2005 /
+/
+
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 3.656E5 1* 400.0 /  
+/
+
+DATES 
+ 1 FEB 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 3.78E5 1* 400.0 /  
+/
+
+
+DATES 
+ 1 MAR 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 4.3256E5 1* 400.0 / 
+/
+
+
+
+DATES 
+ 1 APR 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 2.582E5 1* 400.0 /  
+/
+
+
+DATES 
+ 1 MAY 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 1.675E5 1* 400.0 /  
+/
+
+
+DATES 
+ 1 JUN 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 2.361E5 1* 400.0 /  
+/
+
+
+
+DATES 
+ 1 JLY 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 1.475E5 1* 400.0 /  
+/
+
+
+
+DATES 
+ 1 AUG 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 3.791E5 1* 400.0 /  
+/
+
+
+
+DATES 
+ 1 SEP 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 2.81E5 1* 400.0 /  
+/
+
+
+
+DATES 
+ 1 OCT 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 3.986E5 1* 400.0 / 
+/
+
+
+
+DATES 
+ 1 NOV 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 1.953E5 1* 400.0 /  
+/
+
+
+
+DATES 
+ 1 DEC 2005 /
+/
+WCONINJE
+'CO2_INJ' GAS OPEN RATE 1.612E5 1* 400.0 / 
+/
+
+-----------
+-- 2006
+-----------
+
+DATES 
+ 1 JAN 2006 /
+/
+DATES 
+ 1 FEB 2006 /
+/
+DATES 
+ 1 MAR 2006 /
+/
+DATES 
+ 1 APR 2006 /
+/
+DATES 
+ 1 MAY 2006 /
+/
+DATES 
+ 1 JUN 2006 /
+/
+DATES 
+ 1 JLY 2006 /
+/
+DATES 
+ 1 AUG 2006 /
+/
+DATES 
+ 1 SEP 2006 /
+/
+DATES 
+ 1 OCT 2006 /
+/
+DATES 
+ 1 NOV 2006 /
+/
+DATES 
+ 1 DEC 2006 /
+/
+
+-- yearly reports until 1 1 2010 when injection stops
+
+DATES 
+ 31 DEC 2007 /
+/ 
+DATES 
+ 31 DEC 2008 /
+/   
+DATES 
+ 31 DEC 2009 /
+/  
+DATES 
+ 31 DEC 2010 /
+/   
+
+WELLSHUT
+'CO2_INJ' / 
+/
+
+DATES 
+ 31 JAN 2032 /
+/
+
+TUNING 
+ 1* 3650.0 /
+ /
+ /
+
+DATES
+ 31 DEC 2131 /
+/ 
+DATES
+ 31 DEC 2231 /
+/
+
+END

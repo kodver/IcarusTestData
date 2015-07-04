@@ -1,0 +1,440 @@
+------------------------------------------------------------------------
+--                                                                    --
+-- Combustion + solid phase                                           --
+--                                                                    --
+--                                                                    --
+-- Data from:                                                         --
+--    K.H.Coats                                                       --
+--    "In-Situ Combustion Model"                                      --
+--    Soc. Pet. Eng. J. (Dec 1980) 533-54                             --
+--                                                                    --
+-- which was based on:                                                --
+--    H.B.Crookston, W.E.Culham & W.H.Chen                            --
+--    "Numerical Simulation Model for Thermal Recovery Processes"     --
+--    Soc. Per. Eng. J. (Feb. 1979) 37-58; Trans., AIME, 267          --
+--                                                                    --
+--                                                                    --
+--                                                                    --
+-- Last modified by Jim Bennett Oct 2002                              --
+--                                                                    --
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+-- Modification date: 	January 2007
+-- Changes:			-
+-- Result:			-
+------------------------------------------------------------------------
+
+RUNSPEC  ---------------------------------------------------------------
+
+FIELD
+
+DIMENS
+10 1 1 /
+
+COMPS
+5 /
+
+WATER
+
+SOLID
+
+THERMAL
+
+REACTION
+4 /
+
+ROCKDIMS
+   1   1*   2 /
+
+GRID     ---------------------------------------------------------------
+
+DX
+10*16.4   /
+
+DY
+10*115.0  /
+
+DZ
+10*21.0   /
+
+TOPS
+10*0.0    /
+
+PORO
+10*0.38   /
+
+PERMX
+10*4000.0 /   mD
+
+COPY
+   PERMX   PERMY /
+   PERMX   PERMZ /
+/
+
+HEATCR
+10*35.0   /   BTU/cu.ft/F
+
+THCONR
+10*38.4   /   BTU/ft/D/F
+
+-- Heat loss
+
+ROCKPROP
+-- #     F BTU/ft/D/F  BTU/cu.ft/F
+   1   200       38.4         35.0   0  N /  overburden/underburden properties
+/
+
+ROCKCON
+-- #  I1 I2 J1 J2 K1 K2 DIR
+   1   1 10  1  1  1  1 'K-'   /   top
+   1   1 10  1  1  1  1 'K+'   /   bottom
+/
+
+
+
+PROPS    ---------------------------------------------------------------
+
+-- Component data ------------------------------------------------------
+
+CNAMES
+             Heavy    Light     Coke       O2      CO2  /
+CVTYPE
+              LIVE     LIVE    SOLID      GAS      GAS  /
+CVTYPES
+              LIVE     LIVE    SOLID      GAS      GAS  /
+MW
+             170.0     44.0     13.0     32.0     44.0  /
+PCRIT
+             264.6    615.9       1*    730.0   1073.0  /  psi
+TCRIT
+            1184.9    665.6       1*       1*       1*  /  R
+DREF
+             56.85    49.77       1*       1*       1*  /  lb/cu.ft at reference conditions
+PREF
+              14.7   1000.0       1*       1*       1*  /  psi
+TREF
+               0.0      0.0       1*       1*       1*  /  R
+CREF
+            1.0E-5   2.2E-4       1*       1*       1*  /  oil phase compressibility /psi
+THERMEX1
+            3.8E-4  7.69E-4       1*       1*       1*  /  oil phase thermal expansion /R
+SDREF
+                1*       1*     80.0       1*       1*  /  lb/cu.ft at standard conditions
+SPECHA
+            0.5248   0.6097       1*       1*       1*  /  oil   phase specific heat term BTU/lb/R
+SPECHB
+          3.547E-4 3.452E-3       1*       1*       1*  /  oil   phase specific heat term BTU/lb/R/R
+SPECHG
+              0.25     0.25     0.00     0.24     0.25  /  gas   phase specific heat term BTU/lb/R
+SPECHS
+                1*       1*      0.3       1*       1*  /  solid phase specific heat term BTU/lb/R
+HEATVAPS
+             262.3    90.98     0.00     0.00     0.00  /  heat of vaporization at STCOND, BTU/lb
+KVCR
+                 0        0        0        0	     0
+           1.849E5  1.307E5        0        0        0
+                 0        0        0        0        0
+           6.739E3  3.370E3        0        0        0
+           1.671E2  4.529E1        0        0        0  /
+OILVISCC
+ANDRADE FORMULA
+           -3.4408   -1.681        1        1        1
+            3685.0   416.75        1        1        1  /  log10(mu) = A + B/T
+/
+GASVISCF
+          3.926E-6 2.166E-5        1 2.196E-4 2.127E-4
+             1.102    0.943        0    0.721    0.702  /  mu = A.T^B
+
+-- Rock-fluid data -----------------------------------------------------
+
+SWOF
+--SW      KRW     KRO    PCOW
+0.00    0.000   1.000   0.750
+0.20    0.000   1.000   0.450
+0.25    0.000   0.729   0.375
+0.30    0.002   0.512   0.300
+0.35    0.007   0.343   0.225
+0.40    0.016   0.216   0.150
+0.45    0.031   0.125   0.075
+0.50    0.054   0.064   0.000
+0.55    0.086   0.027   0.000
+0.60    0.128   0.008   0.000
+0.65    0.182   0.001   0.000
+0.70    0.250   0.000   0.000
+0.75    0.333   0.000   0.000
+0.80    0.432   0.000   0.000
+0.85    0.549   0.000   0.000
+0.90    0.686   0.000   0.000
+0.95    0.844   0.000   0.000
+1.00    1.000   0.000   0.000 /
+
+SGOF
+--SG      KRG    KROG    PCOG
+0.00    0.000   1.000   0.000
+0.05    0.000   0.803   0.000
+0.10    0.053   0.634   0.000
+0.15    0.105   0.491   0.000
+0.20    0.158   0.371   0.000
+0.25    0.211   0.272   0.000
+0.30    0.263   0.193   0.000
+0.35    0.316   0.130   0.000
+0.40    0.368   0.083   0.380
+0.45    0.421   0.049   0.803
+0.50    0.474   0.026   1.225
+0.55    0.526   0.011   1.648
+0.60    0.579   0.004   2.070
+0.65    0.632   0.001   2.493
+0.70    0.684   0.000   2.915
+0.75    0.737   0.000   3.338
+0.80    0.789   0.000   3.760
+0.85    0.842   0.000   4.183
+0.90    0.895   0.000   4.605
+0.95    0.947   0.000   5.028
+1.00    1.000   0.000   5.450 /
+
+
+------------------------------------------------------------------------
+
+STCOND
+--Temp   Pressure
+  60     14.7 /
+
+RTEMP
+ 200 /
+
+-- Chemical reaction data ----------------------------------------------
+
+STOREAC
+-- HEAVY  LIGHT   COKE     O2    CO2   WATER
+       1      0      0     18      0       0 / reaction 1
+       0      1      0      5      0       0 / reaction 2
+       1      0      0      0      0       0 / reaction 3
+       0      0      1   1.25      0       0 / reaction 4
+
+STOPROD
+-- HEAVY  LIGHT   COKE     O2    CO2   WATER
+       0      0      0      0     12      13 / reaction 1
+       0      0      0      0      3       4 / reaction 2
+       0      2   4.67      0   1.33       0 / reaction 3
+       0      0      0      0      1     0.5 / reaction 4
+
+REACRATE
+     1.0E6  1.0E6   0.3E6  1.0E6     / reaction 1,2,3,4
+
+REACACT
+     33300  33300   28800  23400     / reaction 1,2,3,4 (BTU/lb mol)
+
+REACENTH
+    3.49E6 0.948E6 2.0E4 0.225E6     / reaction 1,2,3,4 (BTU/lb mol)
+
+REACPHA
+-- HEAVY  LIGHT   COKE     O2    CO2   WATER
+     OIL     1*     1*    GPP     1*     1* / reaction 1
+      1*    OIL     1*    GPP     1*     1* / reaction 2
+     OIL     1*     1*     1*     1*     1* / reaction 3
+      1*     1*    ALL    GPP     1*     1* / reaction 4
+
+REACCORD
+-- HEAVY  LIGHT   COKE     O2    CO2   WATER
+       1      0      0      1      0      0 / reaction 1
+       0      1      0      1      0      0 / reaction 2
+       1      0      0      0      0      0 / reaction 3
+       0      0      1      1      0      0 / reaction 4
+    
+
+SOLUTION ---------------------------------------------------------------
+
+PRESSURE
+10*65.0 /
+
+SGAS
+10*0.3 /
+
+SWAT
+10*0.2 /
+
+TEMPI
+10*200 /
+
+XMF
+10*1.0
+10*0.0
+10*0.0
+10*0.0
+10*0.0
+10*0.0 /
+
+
+YMF
+10*0.0
+10*0.0
+10*0.0
+10*0.0
+10*0.806
+10*0.194 /
+
+-- Output --------------------------------------------------------------
+
+RPTSOL
+PRESSURE SSOLID SOIL SGAS SWAT MLSC TEMP HOIL HSOL XMF YMF /
+
+RPTRST
+PRESSURE SSOLID SOIL SGAS SWAT MLSC TEMP HOIL HSOL /
+
+
+SUMMARY  ---------------------------------------------------------------
+
+WBHP
+INJE PROD /
+
+
+-- Rates
+
+FOPR
+FWPR
+FGPR
+FGIR
+FREAC
+/
+
+
+-- Totals
+
+FOPT
+FOIP
+FWPT
+FWIP
+FGPT
+FGIT
+FREAT
+/
+
+
+-- Block data
+
+BSOIL
+ 1 1 1 /
+ 3 1 1 /
+ 6 1 1 /
+ 8 1 1 /
+10 1 1 /
+/
+
+BSWAT
+ 1 1 1 /
+ 3 1 1 /
+ 6 1 1 /
+ 8 1 1 /
+10 1 1 /
+/
+
+BPRES
+ 1 1 1 /
+ 3 1 1 /
+ 6 1 1 /
+ 8 1 1 /
+10 1 1 /
+/
+
+BTEMP
+ 1 1 1 /
+ 3 1 1 /
+ 6 1 1 /
+ 8 1 1 /
+10 1 1 /
+/
+
+BMLSC
+ 1 1 1 3 / Coke
+ 3 1 1 3 / Coke
+ 6 1 1 3 / Coke
+ 8 1 1 3 / Coke
+10 1 1 3 / Coke
+/
+
+BSSOLID
+ 1 1 1 /
+ 3 1 1 /
+ 6 1 1 /
+ 8 1 1 /
+10 1 1 /
+/
+
+BHSOL
+ 1 1 1 /
+ 3 1 1 /
+ 6 1 1 /
+ 8 1 1 /
+10 1 1 /
+/
+
+BDENS
+ 1 1 1 /
+ 3 1 1 /
+ 6 1 1 /
+ 8 1 1 /
+10 1 1 /
+/
+
+-- Performance
+
+PERFORMANCE
+
+--
+
+RUNSUM
+
+
+RPTONLY
+SCHEDULE ---------------------------------------------------------------
+
+-- Output --------------------------------------------------------------
+
+RPTSCHED
+PRESSURE SSOLID SOIL SGAS SWAT MLSC TEMP REAC HOIL HSOL /
+
+RPTRST
+PRESSURE SSOLID SOIL SGAS SWAT MLSC TEMP REAC HOIL HSOL /
+
+
+-- Convergence & time step criteria ------------------------------------
+
+-- Unnecessary in 2006.1
+--TSCRIT
+--  9* 10.0  4* 0.3 /  
+
+
+-- Well controls -------------------------------------------------------
+
+WELSPECS
+INJE 1* 1  1 1* GAS /
+PROD 1* 10 1 1* OIL /
+/
+
+COMPDAT
+-- WELL  I  J K1 K2
+   INJE  1  1  1  1 OPEN 1* 300 /
+   PROD 10  1  1  1 OPEN 1* 300  /
+/
+
+COMPMOBI
+INJE 4* 10.0 /
+/
+
+WELLSTRE
+  OXYGEN 0.0 0.0 0.0 1.0 0.0 /
+/
+
+WELLINJE
+  INJE STREAM OXYGEN TM 15* 300 1* 200 70 /     300 lbmol/day at 200F at 70psi
+/
+
+WCONPROD
+  PROD OPEN BHP 5* 60 /
+/
+
+TIME
+30 60 90 120 150 /
+
+END      ---------------------------------------------------------------

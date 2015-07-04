@@ -1,0 +1,282 @@
+------------------------------------------------------------------------
+--                                                                    -- 
+-- Thermal example of gas production                                  --
+--    * radial grid                                                   --
+--    * dual porosity                                                 --
+--    * single phase, single component                                --
+--    * Joule-Thomson effect                                          --
+--    * multi-segment well                                            --
+--                                                                    --
+-- A dual porosity model has been used to allow different             --
+-- temperatures in the rock and fluid.  The pore volume in the        --
+-- matrix and the heat capacity of the fracture rock have both been   --
+-- set to zero. (A simpler alternative is to use a single porosity    -- 
+-- model and ignore the energy stored in the rock by setting the      --
+-- rock heat capacity to zero, as we do here in the fracture cells.)  --
+--                                                                    --
+-- In THERM15  the Joule Thomson coefficient is  0.0 K/bar            --
+-- In THERM15J the Joule Thomson coefficient is +0.1 K/bar            --
+--                                                                    --
+--                                                                    --
+-- Last modified August 2004                                          --
+--                                                                    -- 
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+-- Modification date: 	January 2007
+-- Changes:			- 
+-- Result:			-
+------------------------------------------------------------------------
+
+RUNSPEC   ========================================
+
+METRIC
+
+THERMAL
+
+COMPS
+1     /
+
+FULLIMP
+
+RADIAL
+
+DUALPORO
+
+DIMENS
+10 1 20 /
+
+WSEGDIMS
+ 1 15 1 /
+
+GRID      ========================================
+
+INRAD
+ 0.1  /
+
+DRV
+ 1 2 4 8 16 32 64 128 256 512   /
+
+DTHETAV
+360.0                           /
+
+DZV
+ 10*10.0
+ 10*10.0      / Matrix and fracture
+
+TOPS
+ 10*500.0 90*
+ 10*500.0 90* / Matrix and fracture
+
+PORO
+ 100*0.0
+ 100*0.3      / Matrix and fracture
+
+PERMR
+ 100*20.0
+ 100*20.0   /  Matrix and fracture
+
+PERMTHT
+ 100*20.0
+ 100*20.0   /  Matrix and fracture
+
+PERMZ
+ 100*1.0
+ 100*1.0    /  Matrix and fracture
+
+THCONR
+ 100*200.0
+ 100*200.0    /  Matrix and fracture
+
+HEATCR
+ 100*800.0  
+ 100*0.0      /  Matrix and fracture
+
+SIGMA
+ 0.12 /
+
+SIGMATH
+ 100*0.1      /
+
+INIT
+
+PROPS     ========================================
+
+--Component data
+
+--
+-- Specific heat                 Cp = 2         KJ/Kg/K
+-- Molecular weight              MW = 40        Kg/KgMole
+-- Joule-Thomson coefficient of  Mu = 0.1       K/bar
+-- Gas constant                  R  = 8.3145    KJ/KgMole/K
+--                                  = 8.3145e-2 bar.m3/KgMole/K
+--
+-- Z-factor Z = Z0 - Z1 x P/(RT)
+--          Z1 = Cp x MW x Mu
+--                               Z0 = 1
+--                               Z1 = 8         KJ/KgMole/bar
+--                                  = 0.08      m3/KgMole
+--
+-- At reservoir conditions 
+-- Pressure                      P  =  50       bars
+-- Temperature                   T  =  30       C
+--                                  =  303      K
+-- Avearge Z-factor              Z  =  1-0.16
+--                                  =  0.84
+--
+
+CNAMES
+          GAS /
+CVTYPE
+          GAS /
+MW
+          40.0 /
+ZFACTOR
+          1.0 /
+ZFACT1
+          0.08 /
+SPECHG
+          2.0 /
+GASVISCT
+     25   0.0143
+     50   0.0149
+     75   0.0161
+    100   0.0172
+    125   0.0184
+    150   0.0196
+    200   0.0207
+    250   0.0241 /
+
+-- Dummy K-value, crits and oil-phase properties
+
+KVCR
+          1.0 /
+TCRIT
+          1.0 /
+PCRIT
+          1.0 /
+DREF
+        900.0 /
+SPECHA
+          0.1 /
+OILVISCT
+     25   2.3  
+    250   0.3 /
+
+-- Water properties
+
+PVTW                                                                    
+--  Pref       Bw        Cw          Vw        Cvw       
+    1*         1*        1*          1*         1*
+ /                                                                      
+
+-- Rock compressibility
+
+ROCK
+50.0  5.0E-04  /
+
+
+--Initial Reservoir and surface conditions
+
+RTEMP
+  30.0 /
+
+ZMFVD
+500.0 1.0 /
+
+STCOND
+20.0 1.0 /
+
+
+-- Rel perm tables
+
+SWFN
+   .0000   .0000   0.0
+  1.0000   1.000   0.0
+ /
+SGFN
+   .0000   .0000   0.0
+  1.0000  1.0000   0.0
+ /
+SOF3
+   .0000   .0000   .0000
+  1.0000  1.0000  1.0000
+ /
+
+
+
+SOLUTION  ========================================
+
+EQUIL
+--  Ddat    Pdat     Dwoc    Pcog    Dgoc    Pgoc  It1  It2  Iac Iin
+ 500.0      50.      1000.0  0.0     1000.0  0.0   1     1    0   1  /
+
+RPTRST
+RESTART /
+
+RPTSOL
+PRES TEMP /
+
+SUMMARY   ========================================
+
+ALL
+PERFORMANCE
+
+STEM
+'PROD' /
+/
+
+SPR
+'PROD' /
+/
+
+RUNSUM
+
+RPTONLY
+SCHEDULE  ========================================
+
+RPTSCHED
+PRES TEMP /
+
+WELSPECS
+ PROD   FIELD   1    1  1* GAS /
+/
+
+COMPDAT
+-- well    - location -   open   satn  trans   well  kh    S    D    direct
+-- name    i  j  k1 k2   shut   tab   factor  diam
+ PROD      1  1  11 14  'OPEN'   1     1*     0.2    3*              Z    /
+/
+
+WELSEGS
+-- Name    Dep 1   Tlen 1  Vol 1
+'PROD'     5       1       1    'INC' / 
+
+-- First   Last   Branch   Outlet  Length   Depth  Diam  Ruff  Area  Vol
+-- Seg     Seg    Num      Seg              Chang
+-- Main Stem
+   2       11     1        1       500      500    0.2   1.E-3 1*    1* /
+   12      14     1        11      30        30    0.2   1.E-3 1*    1* /
+ /
+
+COMPSEGS
+-- Name
+'PROD' /
+-- I  J  K  Brn  Start   End     Dirn   End
+--          No   Length  Length  Penet  Range
+   1  1 11  1    500     510      'Z'    /
+   1  1 12  1    510     520      'Z'    /
+   1  1 13  1    520     530      'Z'    /
+   1  1 14  1    530     540      'Z'    /
+/
+
+
+WCONPROD
+-- Well O/S Control O  W  G     L  RV BHP
+ PROD OPEN  GRAT    1* 1* 1.0E5 1* 1* 25 /
+/
+
+TSTEP
+31 28 31 30 31 30 31 31 30 31 30 31 /
+
+END

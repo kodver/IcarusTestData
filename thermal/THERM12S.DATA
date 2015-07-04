@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------
+--                                                                            --
+--  ECLIPSE 300 Thermal example data set THERM12S                             --
+--  * corner point geometry                                                   --
+--  * lgrs                                                                    --
+--  * aquifers                                                                --
+--  * heat loss                                                               --
+--  * KVWI keyword                                                            --
+--  * user defined water properties                                           --
+--  * heaters                                                                 --
+--  * fast restart                                                            --
+--                                                                            --
+--                                                                            --
+--  Last modified April 2003                                                  --
+--                                                                            --
+--------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+-- Modification date: 	January 2007
+-- Changes:			-
+-- Result:			-
+------------------------------------------------------------------------
+
+LOAD
+THERM12 12 /
+
+SUMMARY
+RPTONLY
+RUNSUM
+SCHEDULE      ==================================================================
+
+
+--Year2-------------------------------------------------------------------------
+
+-- Well controls
+
+WCONPROD
+--Name  O/S  Mode Oil   Wat   Gas Liq Res BHP
+  PROD1 OPEN BHP  100.0 50.0  1*  1*  1*  20.0 /
+  PROD2 OPEN BHP  100.0 50.0  1*  1*  1*  20.0 /
+  PROD3 OPEN BHP  100.0 50.0  1*  1*  1*  20.0 /
+  PROD4 OPEN BHP  100.0 50.0  1*  1*  1*  20.0 /
+/
+
+WCONINJE
+--Name  Type  O/S  Mode Rate      BHP
+  INJE  WATER OPEN WAT  500.0  1* 200.0 /
+/
+
+WINJTEMP
+--Name  SQ   Temp
+  INJE  0.70 300.0  /
+/
+
+--Heater controls
+
+HEATERL
+--Name  LGR   I  J  K  HMAX 
+  PRODA LGR1  3  2  1  0.0 /
+/
+
+HEATER
+--Name   I  J  K  HMAX 
+  PROD1  2  2  1  0.0  /
+  PROD2  5  2  1  0.0  /
+  PROD3  2  6  1  0.0  /
+  PROD4  5  6  1  0.0  /
+/
+
+-- Small time step as injector comes on
+NEXT
+.05 /
+
+TSTEP
+31 28 31 30 31 30 31 31 30 31 30 31 /
+
+------------------------------------------------------------------------
+
+END

@@ -1,0 +1,975 @@
+-------------------------------------------------------------------------------
+--                                                                           --
+-- SPE 78131 case study 4                                                    --
+--                                                                           --
+-- Single Horizontal well with steam cyclic injection & production           --
+--                                                                           --
+-- oil viscosity from Al-Hadrami                                             --
+-- rel perm from Al-Hadrami                                                  --
+--                                                                           --
+--                                                                           --
+-- Last modified April 2003                                                  --
+--                                                                           --
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+-- Modification date: 	January 2007
+-- Changes:			TSCRIT out
+-- Result:			Speed-up ~1.18
+------------------------------------------------------------------------
+
+RUNSPEC
+
+TITLE
+Single well Huff and Puff Midway Sunset for SPE paper
+
+FIELD
+
+THERMAL
+
+COMPS
+2 /             2 hydrocarbon components, dead oil + solution gas
+
+WATER
+
+HWELLS
+
+DIMENS
+11 24 21 /      Grid dimensions
+
+ROCKDIMS
+2  /            Base and cap rock connections
+
+WELLDIMS	
+1* 25 /         Max number of completions / well
+
+WSEGDIMS
+ 2 18 1 /       Multi-segment well dimensions
+
+START
+ 01 JAN 1996 /
+
+-------------------------------------------------------------------------------
+GRID
+-------------------------------------------------------------------------------
+
+TOPS
+264*980.0 /
+
+DXV
+ 11*33.3 /                             x-length = 366.63 feet
+
+DYV
+ 3*11.1 21*33.3 /                     y-length = 733.26 feet
+
+DZV
+ 8*64 7*40 4*10 40 100 /                z-height = 1052 feet
+
+-- Properties with uniform values:
+
+EQUALS
+PORO   0.30 /                           porosity
+PERMX  300.0  /                         kx, mD
+PERMY  300.0  /                         ky, mD,  ky = kx
+PERMZ  200.0  /                         kz, mD,  kv/kh = 0.66
+HEATCR 35 /                             rock heat capacity Btu/ft**3/deg F
+THCONR  30 /                            rock conductivity Btu/ft/Day/deg F
+/
+
+
+ROCKCON
+--# I1 I2 J1 J2 K1 K2 Dir
+  1  1 11  1 24  1  1 K- /                   overburden  connections
+  2  1 11  1 24 21 21 K+ /                   underburden connections
+/
+
+ROCKPROP
+--# Temp (F) Cond (Btu/ft/Day/F) Heat capacity (kJ/m3/K)
+  1 225      30                  35  1* N /     overburden  properties
+  2 110      30                  35  1* N /     underburden properties
+/
+
+ 
+-------------------------------------------------------------------------------
+PROPS
+-------------------------------------------------------------------------------
+
+SWFN
+  0.250000     0.000000     0.000000
+  0.300000     6.00000e-005 0.000000
+  0.350000     0.000170000  0.000000
+  0.400000     0.00158000   0.000000
+  0.450000     0.00363000   0.000000
+  0.500000     0.00637000   0.000000
+  0.550000     0.0101400    0.000000
+  0.600000     0.0146600    0.000000
+  0.650000     0.0201600    0.000000
+  0.700000     0.0256500    0.000000
+  0.800000     0.0256500    0.000000
+  1.00000      1.00000      0.000000
+ /
+--
+SGFN
+  0.000000     0.000000     0.000000
+  0.0380000    0.0249707    0.000000
+  0.0500000    0.0333603    0.000000
+  0.100000     0.0753083    0.000000
+  0.150000     0.114710     0.000000
+  0.200000     0.158820     0.000000
+  0.250000     0.212338     0.000000
+  0.300000     0.271065     0.000000
+  0.350000     0.332589     0.000000
+  0.400000     0.394113     0.000000
+  0.450000     0.458433     0.000000
+  0.550000     0.500381     0.000000
+ /
+--
+SOF3
+  0.200000     0.000000     0.000000
+  0.300000     0.000000     0.0193777
+  0.350000     0.00501000   0.0277673
+  0.400000     0.0246800    0.0361568
+  0.450000     0.0627200    0.0585291
+  0.500000     0.121550     0.0976805
+  0.550000     0.287470     0.159204
+  0.600000     0.502200     0.234710
+  0.650000     0.757030     0.326996
+  0.700000     0.871560     0.539532
+  0.712000     0.883243     0.606649
+  0.750000     0.920240     0.916670
+ /
+
+
+
+-- Stone 3-phase oil rel perm
+STONE
+
+-- Component gas viscosities
+GASVISCT
+100  .0112  1
+200  .0128  1
+300  .0145  1
+400  .016   1
+/
+
+-- Relative permeability endpoints vs temperature (deg F)
+ENKRVT
+-- temp Krwmax Krgmax Kromax Krwro  Krgro Krorg Krorw
+   105  1*     1*     1*     0.004  1*    1*    1*
+   450  1*     1*     1*     0.12   1*    1*    1*     /
+
+-- Saturation endpoints vs temperature (deg F)
+ENPTVT
+-- temp  Swc  Swir  Swmax  Sgc  Sgr  Sgmax  Sorw  Sorg
+   105   0.20 0.20  1*     1*   1*   1*     0.3   0.2
+   450   0.45 0.45  1*     1*   1*   1*     0.1   0.05 /
+
+-- Component oil phase viscosities cp
+OILVISCT
+ 90 6000  6000
+100 3500  3500
+120 1050  1050
+140  470   470
+160  200   200
+180  118   118
+200   62    62
+240   23    23
+280   11    11
+300   10    10
+400    5     5
+500    2     2
+/
+
+-- Crookston K-value coefficients
+-- Propane
+
+KVCR
+--    SGAS  HEAVY
+      3.167  1*
+   170447    1*
+      0      1*
+    3062     1*
+      0      1*
+/
+
+-- Heats of vapourisation Btu/lb
+HEATVAP
+350  0.0 /
+
+-- Critical temperatures deg R
+TCRIT
+358 10000 /
+
+-- Critical pressures psia
+PCRIT
+666.37  1* /
+
+-- Component reference densities in oil phase lb/ft**3
+DREF
+60.975 60.975 /
+
+-- Component compressibilities in oil phase 1/psi
+CREF
+0.00002  0.0000126 /
+
+-- Component specific heats Btu/lb/deg R
+SPECHA
+0.52 0.432 /
+
+CNAMES
+SGAS HEAVY /
+
+MW
+30.07 600 /
+
+-- Thermal expansion coefficients 1/deg R
+THERMEX1
+.00035 .000315 /
+
+-- oil component gas phase compressibilities 1/psi
+ZFACTOR
+0.95 /
+
+-- Surface density of oil phase - lb/ft**3
+DENSITY
+61.0 /
+
+-- Water properties
+PVTW
+--  Pref       Bw        Cw          Vw        Cvw
+--  PSIA       RB/STB    1/PSI       CPOISE    1/PSI
+    75.000     1.0       3.E-08      .3        7.E-09
+ /
+
+-- Ref press  rock compressibility
+-- psia       1/psi
+ROCK
+100  5.0E-05  /
+
+-- global mole fraction vs depth
+ZMFVD
+624 0.05 0.95 /
+
+-------------------------------------------------------------------------------
+SOLUTION
+-------------------------------------------------------------------------------
+
+PRESSURE
+5544*20 /                                    initial pressure (psi)
+
+SOIL
+-- 8 layers of 0.1, 264 grids/layer
+2112*0.10
+-- 11 layers of 0.8
+2904*0.8
+-- 1 layer of 0.4
+264*0.4
+-- 1 layer of 0.04
+264*0.02 /
+
+SWAT
+2112*0.45
+2904*0.20
+264*0.60
+264*0.98 /
+
+TEMPI
+2112*225
+264*190
+264*165
+264*120
+2640*110 /
+
+NEI
+0.05 0.95     /                              non-equilibrium initialization
+
+
+-- Output to print file
+RPTSOL
+PRES SOIL SGAS SWAT TEMP YMF XMF /
+
+-- Output to restart file
+RPTRST
+PRES SOIL SGAS SWAT TEMP /
+
+-------------------------------------------------------------------------------
+SUMMARY
+-------------------------------------------------------------------------------
+
+-- Field vectors
+FWIR
+FWIT
+FHLT
+FOPR
+
+COPR
+ SCYCI  1 1 16 /
+ SCYCI  2 1 17 /
+ SCYCI  3 1 17 /
+ SCYCI  4 1 18 /
+ SCYCI  5 1 18 /
+ SCYCI  6 1 19 /
+ SCYCI  7 1 19 /
+ SCYCI  8 1 20 /
+ SCYCI  9 1 20 /
+ SCYCI 10 1 20 /
+--
+ SCYCP  1 1 16 /
+ SCYCP  2 1 17 /
+ SCYCP  3 1 17 /
+ SCYCP  4 1 18 /
+ SCYCP  5 1 18 /
+ SCYCP  6 1 19 /
+ SCYCP  7 1 19 /
+ SCYCP  8 1 20 /
+ SCYCP  9 1 20 /
+ SCYCP 10 1 20 /
+/
+
+CWPR
+ SCYCI  1 1 16 /
+ SCYCI  2 1 17 /
+ SCYCI  3 1 17 /
+ SCYCI  4 1 18 /
+ SCYCI  5 1 18 /
+ SCYCI  6 1 19 /
+ SCYCI  7 1 19 /
+ SCYCI  8 1 20 /
+ SCYCI  9 1 20 /
+ SCYCI 10 1 20 /
+--
+ SCYCP  1 1 16 /
+ SCYCP  2 1 17 /
+ SCYCP  3 1 17 /
+ SCYCP  4 1 18 /
+ SCYCP  5 1 18 /
+ SCYCP  6 1 19 /
+ SCYCP  7 1 19 /
+ SCYCP  8 1 20 /
+ SCYCP  9 1 20 /
+ SCYCP 10 1 20 /
+/
+
+CGPR
+ SCYCI  1 1 16 /
+ SCYCI  2 1 17 /
+ SCYCI  3 1 17 /
+ SCYCI  4 1 18 /
+ SCYCI  5 1 18 /
+ SCYCI  6 1 19 /
+ SCYCI  7 1 19 /
+ SCYCI  8 1 20 /
+ SCYCI  9 1 20 /
+ SCYCI 10 1 20 /
+--
+ SCYCP  1 1 16 /
+ SCYCP  2 1 17 /
+ SCYCP  3 1 17 /
+ SCYCP  4 1 18 /
+ SCYCP  5 1 18 /
+ SCYCP  6 1 19 /
+ SCYCP  7 1 19 /
+ SCYCP  8 1 20 /
+ SCYCP  9 1 20 /
+ SCYCP 10 1 20 /
+/
+
+CWIR
+ SCYCI  1 1 16 /
+ SCYCI  2 1 17 /
+ SCYCI  3 1 17 /
+ SCYCI  4 1 18 /
+ SCYCI  5 1 18 /
+ SCYCI  6 1 19 /
+ SCYCI  7 1 19 /
+ SCYCI  8 1 20 /
+ SCYCI  9 1 20 /
+ SCYCI 10 1 20 /
+--
+ SCYCP  1 1 16 /
+ SCYCP  2 1 17 /
+ SCYCP  3 1 17 /
+ SCYCP  4 1 18 /
+ SCYCP  5 1 18 /
+ SCYCP  6 1 19 /
+ SCYCP  7 1 19 /
+ SCYCP  8 1 20 /
+ SCYCP  9 1 20 /
+ SCYCP 10 1 20 /
+/
+
+CGIR
+ SCYCI  1 1 16 /
+ SCYCI  2 1 17 /
+ SCYCI  3 1 17 /
+ SCYCI  4 1 18 /
+ SCYCI  5 1 18 /
+ SCYCI  6 1 19 /
+ SCYCI  7 1 19 /
+ SCYCI  8 1 20 /
+ SCYCI  9 1 20 /
+ SCYCI 10 1 20 /
+--
+ SCYCP  1 1 16 /
+ SCYCP  2 1 17 /
+ SCYCP  3 1 17 /
+ SCYCP  4 1 18 /
+ SCYCP  5 1 18 /
+ SCYCP  6 1 19 /
+ SCYCP  7 1 19 /
+ SCYCP  8 1 20 /
+ SCYCP  9 1 20 /
+ SCYCP 10 1 20 /
+/
+
+-- Segment data
+
+SSQU
+SCYCI /
+SCYCP /
+/
+
+SOFR
+SCYCI /
+SCYCP /
+/
+
+SGFR
+SCYCI /
+SCYCP /
+/
+
+SWFR
+SCYCI /
+SCYCP /
+/
+
+SHFR
+SCYCI /
+SCYCP /
+/
+
+-- Performance data
+
+PERFORMANCE
+
+-- Run summary file
+
+RUNSUM
+
+-------------------------------------------------------------------------------
+RPTONLY
+SCHEDULE
+-------------------------------------------------------------------------------
+
+CVCRIT
+ 1* 15 6* 2 /
+
+--RPTPRINT
+--  1 1 0 0 0   1 1 1 0 0 /
+RPTSCHED
+  TEMP  PRES  SOIL  SWAT  SGAS VOIL VGAS VWAT /
+RPTRST
+PRES TEMP SOIL SGAS SWAT VOIL VGAS VWAT /
+
+WELSPECS
+ SCYCI FIELD 1 1 1* LIQ /
+ SCYCP FIELD 1 1 1* LIQ /
+/
+
+COMPDAT
+-- 4 1/2 " diameter from Carpenter
+--      I J K1 K2 ...  ... T   Diam   K  Skin D  Dir Ro
+ SCYCI  1 1 16 16 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI  2 1 17 17 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI  3 1 17 17 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI  4 1 18 18 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI  5 1 18 18 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI  6 1 19 19 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI  7 1 19 19 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI  8 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI  9 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCI 10 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+--
+ SCYCP  1 1 16 16 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP  2 1 17 17 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP  3 1 17 17 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP  4 1 18 18 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP  5 1 18 18 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP  6 1 19 19 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP  7 1 19 19 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP  8 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP  9 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+ SCYCP 10 1 20 20 OPEN 1*  1*  0.375  1* 1*   1* X   1* /
+/
+
+-- Use 1/2 the connection transmissibility factor
+
+WPIMULT
+ SCYCI 0.5 /
+ SCYCP 0.5 /
+/
+
+-- Inner Tubing Diameter = .295 ft - from Prats
+-- Inner Liner  Diameter = .375 ft - from Carpenter
+-- Areas * 1/2 because of symmetry
+-- Diameters unaltered for homogeneous flow Reynold's number
+
+WELSEGS
+--Name  Node   Length  Vol Data Pres   Flow
+--      Depth  to Node     Type Drop   Model
+ SCYCI   0      1       1  ABS 'HFA'  'HO' /
+--Start End  Branch Conn Length  Depth Diam  Rough  Area
+--Seg   Seg         Seg  from 0
+   2    5      1     1    981     980   .295  1.0E-3 .034 /
+   6    7      1     5   1735    1734   .375  1.0E-3 .055 /
+   8    8      1     7   1795.8  1777   .375  1.0E-3 .055 /
+   9    9      1     8   1812.6  1779.5 .375  1.0E-3 .055 /
+  10   18      1     9   2115.7  1824.5 .375  1.0E-3 .055 /
+/
+
+COMPSEGS
+--Name
+  SCYCI /
+-- I of  J of  K of  Branch  Length  Length Dir End of Depth Thermal
+-- conn  conn  conn          to strt to end     range  Conn  Length
+    1     1     16      1     1795.8  1829.5 X    2*         33.7 /
+    2     1     17      1     1829.5  1863.1 X    2*         33.7 /
+    3     1     17      1     1863.1  1896.8 X    2*         33.7 /
+    4     1     18      1     1896.8  1930.5 X    2*         33.7 /
+    5     1     18      1     1930.5  1964.2 X    2*         33.7 /
+    6     1     19      1     1964.2  1997.8 X    2*         33.7 /
+    7     1     19      1     1997.8  2031.5 X    2*         33.7 /
+    8     1     20      1     2031.5  2065.2 X    2*         33.7 /
+    9     1     20      1     2065.2  2098.9 X    2*         33.7 /
+   10     1     20      1     2098.9  2115.7 X    2*         16.8 /
+/
+
+-- Inner Tubing Diameter = .295 ft - from Prats
+-- Inner Liner  Diameter = .375 ft - from Carpenter
+-- Areas * 1/2 because of symmetry
+-- Diameters unaltered for homogeneous flow Reynold's number
+-- because the producers are pumped off (Al-Hadrami), the
+-- BHP depth is defined right at the start of completions
+
+WELSEGS
+--Name  Node   Length  Vol Data Pres   Flow
+--      Depth  to Node     Type Drop   Model
+ SCYCP   1777    1       1  ABS 'HFA'  'HO' /
+--Start End  Branch Conn Length  Depth  Diam  Rough  Area
+--Seg   Seg         Seg  from 0
+   2     2     1     1    17.8   1779.5 .375  1.0E-3 .055 /
+   3    11     1     2   320.8   1824.5 .375  1.0E-3 .055 /
+/
+
+COMPSEGS
+--Name
+ SCYCP /
+-- I of  J of  K of  Branch  Length  Length Dir End of Depth Thermal
+-- conn  conn  conn          to strt to end     range  Conn  Length
+    1     1     16      1      1      1*     X    2*         33.7  /
+    2     1     17      1      34.7   1*     X    2*         33.7 /
+    3     1     17      1      68.3   1*     X    2*         33.7 /
+    4     1     18      1     102.0   1*     X    2*         33.7 /
+    5     1     18      1     135.7   1*     X    2*         33.7 /
+    6     1     19      1     169.4   1*     X    2*         33.7 /
+    7     1     19      1     203.0   1*     X    2*         33.7 /
+    8     1     20      1     236.7   1*     X    2*         33.7 /
+    9     1     20      1     270.4   1*     X    2*         33.7 /
+   10     1     20      1     304.1   1*     X    2*         16.8 /
+/
+
+-- Heat Transfer Coefficients
+-- .11 (BTU/ft-D-degF)**-1 ~ .02 (KJ/m-D-degC)**-1
+-- from Prats, "Heat Loss from an Injection Well", page 130
+-- HTC from liner is higher because no cement or annulus with stagnant gas
+
+WSEGHEAT
+-- Name Start End  Type Resist
+--      Seg   Seg
+  SCYCI  2     5   TEMP .112 1* 75  / 1* 250 /
+  SCYCI  6     7   TEMP .112 1* 225 / 1* 140 /
+  SCYCI  8     8   TEMP .112 1* 110 /
+  SCYCI  9    18   COMP .05 /
+  SCYCP  2    11   COMP .05 /
+/
+
+--TSCRIT
+--initT minT   maxT maxInc/Dec targTTE maxTTE TTPT MTPT TSCT MxWT
+--   .1   0.0001  20   1.5   1*      1*     1*     1*  1*  1*  0.2 /
+
+-- Cycle 1
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 10 days
+TSTEP
+15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 18 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 108 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+END
+
+-- Cycle 2
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 123 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 126 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 216 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+-- Cycle 3
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 231 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 234 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 324 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+-- Cycle 4
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 339 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 342 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 432 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+-- Cycle 5
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 447 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 450 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 540 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+-- Cycle 6
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 555 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 558 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 648 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+-- Cycle 7
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 663 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 666 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 756 days - 2 years, 26 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+-- Cycle 8
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 771 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 774 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 864 days - 2 years, 134 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+-- Cycle 9
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 879 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 882 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 972 days - 2 years, 242 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+-- Cycle 10
+
+WCONINJE
+--Well  Type  ...   Init Rate  Res BHP
+  SCYCI WATER OPEN  RATE 325.0 1*  700.0 /
+/
+
+WINJTEMP
+--Well  SQ   T(F)
+  SCYCI 0.7  450.0  /
+/
+
+-- 987 days
+TSTEP
+ 15 /
+
+WELOPEN
+ SCYCI  SHUT /
+/
+
+-- 990 days
+TSTEP
+ 3 /
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP
+  SCYCP OPEN LRAT 1*  1*  1*  1000 1* 15 /
+/
+
+-- 1080 days - 3 years, 350 days
+TSTEP
+ 90 /
+
+WELOPEN
+ SCYCP  SHUT /
+/
+
+END
+-------------------------------------------------------------------------------
+

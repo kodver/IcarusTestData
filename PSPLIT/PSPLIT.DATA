@@ -1,0 +1,275 @@
+MEMORY
+200 10 /
+
+-------------------------------------------------------------------------------
+-- E300 DATAFILE FOR ECLIPSE TESTING
+-------------------------------------------------------------------------------
+
+-- Keywords PSPLITX and PSPLITY to specify directional divisions for parallel runs
+---------------------------- Runspec Section -----------------------------------
+NOECHO
+
+RUNSPEC
+
+TITLE
+ 20X20X6=2,400 blocks - e300 Eclipse test example
+
+PARALLEL
+ 2  /
+
+DIMENS
+-- NX   NY   NZ
+   20   20    6  /
+
+METRIC
+
+WATER
+
+AIM
+
+--Seven components in study ( plus water )
+
+COMPS
+ 7 /
+
+--Horizontal wells are present
+
+HWELLS
+
+--Peng-Robinson equation of state to be used
+
+EOS
+PR /
+
+---------------------------------------------
+-- Switching on parallel mode, example is for
+-- 4 processor machine
+
+--PARALLEL
+-- 4  /
+--NPROCY
+--4 /
+--Only for PVM version
+--MODULE
+-- 'e300.exe' /
+---------------------------------------------
+
+-- Table dimension
+
+TABDIMS
+
+-- NoSatTabl     MaxNodesSatTab  MaxFIPReg      MaxSatEndpointsDepthTab
+--       NoPVTTab       MaxPressNodes    MaxRsRvNodes
+     1       1      20      200       1      200       1    /
+
+-- Well dimension
+
+WELLDIMS
+-- MaxNo  MaxPerf  MaxGroup MaxWell/Group
+    20     200       10        15  5* 60 /
+
+-- Injection wells VFP table dimensions
+--MXSFLO (Maximum No. of flow values per table
+--                MXSTHP (Max No. of tubing head pressure values per table)
+--                                    NMSVFT (Max. No. of injection well VFP tables)
+VFPIDIMS
+   20            10                 3  /
+
+-- Production wells VFP table dimensions
+--MXMFLO (Max No. of flow values per table)
+--         MXMTHP (Max No. of tubing head pressure values per table)
+--                      MXMWFR (Max. No. of water fraction values per table)
+--                                        MXMGFR (Max. No. gas fraction values per table)
+--                                                 MXMALQ (Max. No. of artificial lift quantities per table)
+--                                                            NMMVFT (Max. No. of production well VFP tables)
+VFPPDIMS
+   20     10        10             10        5          2  /
+
+START
+  1 JAN 1970 /
+
+--FMTOUT
+
+UNIFOUT
+
+--NOSIM
+
+-- Recommended partitions to paste in RUNSPEC SECTION
+-- SPLITS IN X       
+PSPLITX       
+  10  20                                 /--NPROCX=  2 LOAD BALANCED (%) =  98.86             
+   7  14  20                             /--NPROCX=  3 LOAD BALANCED (%) =  93.29             
+   5  10  16  20                         /--NPROCX=  4 LOAD BALANCED (%) =  86.18             
+   4   8  13  17  20                     /--NPROCX=  5 LOAD BALANCED (%) =  85.34             
+   4   8  12  15  18  20                 /--NPROCX=  6 LOAD BALANCED (%) =  81.63             
+   3   6   9  13  16  18  20             /--NPROCX=  7 LOAD BALANCED (%) =  77.93             
+   3   6   9  12  14  16  18  20         /--NPROCX=  8 LOAD BALANCED (%) =  81.63             
+   3   6   8  11  13  15  17  19  20     /--NPROCX=  9 LOAD BALANCED (%) =  72.56 (WARP ONLY) 
+   2   4   6   8  11  13  15  17  19  20 /--NPROCX= 10 LOAD BALANCED (%) =  72.34 (WARP ONLY) 
+   2   4   6   8  10  12  14  16  18  19
+  20                                     /--NPROCX= 11 LOAD BALANCED (%) =  89.05 (WARP ONLY) 
+   2   4   6   8  10  12  14  16  17  18
+  19  20                                 /--NPROCX= 12 LOAD BALANCED (%) =  81.63 (WARP ONLY) 
+   2   4   6   8  10  12  14  15  16  17
+  18  19  20                             /--NPROCX= 13 LOAD BALANCED (%) =  75.35 (WARP ONLY) 
+   2   4   6   8  10  12  13  14  15  16
+  17  18  19  20                         /--NPROCX= 14 LOAD BALANCED (%) =  69.97 (WARP ONLY) 
+/
+-- 
+-- 
+-- Recommended partitions to paste in RUNSPEC SECTION
+-- SPLITS IN Y       
+PSPLITY       
+  11  20                                 /--NPROCY=  2 LOAD BALANCED (%) =  92.49             
+   7  14  20                             /--NPROCY=  3 LOAD BALANCED (%) =  94.99             
+   5  11  16  20                         /--NPROCY=  4 LOAD BALANCED (%) =  87.59             
+   4   9  13  17  20                     /--NPROCY=  5 LOAD BALANCED (%) =  84.27             
+   4   8  12  15  18  20                 /--NPROCY=  6 LOAD BALANCED (%) =  81.63             
+   3   6  10  13  16  18  20             /--NPROCY=  7 LOAD BALANCED (%) =  77.39             
+   3   6   9  12  14  16  18  20         /--NPROCY=  8 LOAD BALANCED (%) =  81.63             
+   3   6   9  11  13  15  17  19  20     /--NPROCY=  9 LOAD BALANCED (%) =  72.56 (WARP ONLY) 
+   2   4   6   9  11  13  15  17  19  20 /--NPROCY= 10 LOAD BALANCED (%) =  73.24 (WARP ONLY) 
+   2   4   6   8  10  12  14  16  18  19
+  20                                     /--NPROCY= 11 LOAD BALANCED (%) =  89.05 (WARP ONLY) 
+   2   4   6   8  10  12  14  16  17  18
+  19  20                                 /--NPROCY= 12 LOAD BALANCED (%) =  81.63 (WARP ONLY) 
+   2   4   6   8  10  12  14  15  16  17
+  18  19  20                             /--NPROCY= 13 LOAD BALANCED (%) =  75.35 (WARP ONLY) 
+   2   4   6   8  10  12  13  14  15  16
+  17  18  19  20                         /--NPROCY= 14 LOAD BALANCED (%) =  69.97 (WARP ONLY) 
+   2   4   6   8  10  11  12  13  14  15
+  16  17  18  19  20                     /--NPROCY= 15 LOAD BALANCED (%) =  65.31 (WARP ONLY) 
+/ 
+
+------------------------------- Grid Section -----------------------------------
+
+GRID
+
+-- Including the indiviual grid file
+
+INCLUDE
+ '20X20X6.GRDECL' /
+
+--GRIDFILE
+-- 2 /
+
+NOGGF
+
+--INIT
+
+
+------------------------------- Edit Section -----------------------------------
+
+
+------------------------------ Properties Section ------------------------------
+
+
+PROPS
+
+INCLUDE
+ 'ALL_COMP.PVO   ' /
+
+ROCK
+-- RefPressure          Compressibility
+-- for PoreVol Calc
+--BARSA                 1/BARSA
+  200                        1.450E-05 /
+
+INCLUDE
+'ALL.RCP   ' /
+
+
+------------------------------- Regions Section --------------------------------
+
+
+------------------------------ Solution Section --------------------------------
+
+SOLUTION
+
+-- Equilibrium data
+
+EQUIL
+
+-- DATUM   DATUM    OWC    OWC      GOC     GOC     RSVD   RVVD   ACCURACY OPT
+-- DEPTH   PRESS   DEPTH   PCOW    DEPTH    PCOG    TABLE  TABLE  No of LAYERS
+2000.000 200.00 2280.00  .000  2000.000  .000     0      0       0 /
+
+RPTSOL
+PART /
+
+------------------------------- Summary Section --------------------------------
+
+SUMMARY
+
+------------------------------------------------
+--Output of production data/pressure  for FIELD:
+------------------------------------------------
+FOPR
+
+FPR
+
+PERFORMA
+
+-----------------------------------------
+--Output of production data for all wells:
+-----------------------------------------
+WOPR
+ /
+WWPR
+ /
+WGPR
+ /
+WWCT
+ /
+WGOR
+ /
+WBHP
+  /
+WTHP
+ /
+WWIR
+/
+
+
+RPTONLY
+
+RUNSUM
+
+--SEPARATE
+
+RPTSMRY
+ 1  /
+
+
+--LOTUS
+
+TCPU
+------------------------------ Schedule Section --------------------------------
+
+SCHEDULE
+
+--INCLUDE
+--'VERTWELLS.VFP  ' /
+
+--INCLUDE
+--'HORWELLS.VFP  ' /
+
+--INCLUDE
+--'INJWELLS.VFP  ' /
+
+----------------------------------------------
+-- To run the simulation in prediction mode
+-- uncomment these two lines
+
+INCLUDE
+ '20X20X6_PRED.SCH ' /
+
+-- To run the simulation in history match mode
+-- uncomment these two lines
+
+--INCLUDE
+--  '20X20X6_HIST.SCH ' /
+-----------------------------------------------
+
+END
+

@@ -1,0 +1,288 @@
+--------------------------------------------------------------------
+-->Black oil run using PVT-generated tables
+--------------------------------------------------------------------
+
+--RUNSPEC section---------------------------------------------------
+
+RUNSPEC
+
+--Request the FIELD unit set
+
+FIELD
+
+--Oil water and gas are present
+
+OIL
+WATER
+GAS
+
+--IMPES solution method
+
+IMPES
+
+--Black oil
+
+BLACKOIL
+
+--Grid is 9 by 1 by 4 cells
+
+DIMENS
+9 1 4 /
+
+--Grid section--------------------------------------------------------
+
+GRID
+
+--Basic grid block sizes
+
+EQUALS
+DX 300  /
+DY 1000 /
+DZ 50   /
+PORO 0.1 /
+PERMX 50 /
+PERMY 50 /
+PERMZ 30 /
+TOPS 7315 4* 1 1 /
+/
+
+--Properties section-----------------------------------------------
+
+PROPS
+
+--Reservoir temperature
+
+RTEMP
+200    /
+
+--Standard conditions
+
+STCOND
+60 14.7 /
+
+DENSITY
+     51.13608      62.36641       0.05247   /
+
+--  2 Stage separator at
+-- Pressures       427.00000      14.70000
+-- Temperatures     65.00001      60.00000
+-- Pressures in PSIA     Temperatures in Deg F
+
+--ECLIPSE 100 PVTG data
+--(Constant volume depletion)
+--Units are FIELD
+--Method used : Whitson and Torp
+
+PVTG
+--     PSIA       STB/MSCF      RB/MSCF       CPOISE
+   1000.00000         0.03585       3.51745     0.0171981   --Saturated
+                      0.00000       3.45410     0.0163045 / --Dry gas
+   2000.00000         0.03993       1.70980     0.0202001   --Saturated
+                      0.00000       1.68258     0.0183737 / --Dry gas
+   3000.00000         0.05208       1.16037     0.0249767   --Saturated
+                      0.00000       1.13037     0.0209731 / --Dry gas
+   4000.00000         0.06917       0.92019     0.0317184   --Saturated
+                      0.00000       0.87484     0.0238307 / --Dry gas
+   5000.00000         0.09542       0.80236     0.0411009   --Saturated
+                      0.00000       0.73196     0.0267169 / --Dry gas
+   5064.01564         0.09765       0.79745     0.0418386   --Psat
+                      0.00000       0.72498     0.0268999 / --Dry gas
+   6000.00000         0.15256       0.76226     0.0573702   --Undersat
+                      0.00000       0.64213     0.0295227 / --Dry gas
+ /
+
+--ECLIPSE 100 PVTO data
+--(Constant volume depletion)
+--Units are FIELD
+--Method used : Whitson and Torp
+
+PVTO
+--MSCF/STB       PSIA           RB/STB        CPOISE
+      0.18644     1000.00000        1.19246       0.31631   --Saturated
+                  2000.00000        1.17080       0.37198
+                  3000.00000        1.15393       0.42833
+                  4000.00000        1.14026       0.48515
+                  5000.00000        1.12886       0.54199
+                  5064.01564        1.12819       0.54562
+                  6000.00000        1.11916       0.59847 /
+      0.42692     2000.00000        1.32480       0.23723   --Saturated
+                  3000.00000        1.29552       0.27067
+                  4000.00000        1.27293       0.30376
+                  5000.00000        1.25476       0.33666
+                  5064.01564        1.25371       0.33876
+                  6000.00000        1.23968       0.36937 /
+      0.69218     3000.00000        1.45776       0.19845   --Saturated
+                  4000.00000        1.42253       0.22215
+                  5000.00000        1.39523       0.24531
+                  5064.01564        1.39369       0.24678
+                  6000.00000        1.37322       0.26813 /
+      0.99860     4000.00000        1.60497       0.17136   --Saturated
+                  5000.00000        1.56413       0.18918
+                  5064.01564        1.56186       0.19030
+                  6000.00000        1.53219       0.20647 /
+      1.42308     5000.00000        1.81271       0.14479   --Saturated
+                  5064.01564        1.80913       0.14566
+                  6000.00000        1.76321       0.15817 /
+      1.45782     5064.01564        1.83005       0.14300   --Psat
+                  6000.00000        1.78263       0.15530 /
+      2.27115     6000.00000        2.25527       0.11146   --Undersat
+                  7000.00000        2.1           0.12    / --Extra
+ /
+
+--2000a, move this to solution section
+--RSVD
+--1000  1.4208
+--10000 1.4208
+--/
+
+--RVVD
+--1000  0.09542
+--10000 0.09542
+--/
+
+--Water saturation functions
+
+SWFN
+0.16  0      3
+0.18  0      2
+0.20  0.002  1
+0.44  0.090  0.5
+0.68  0.330  0.1
+0.8   0.540  0.05
+1.00  1.000  0.0 /
+
+--Gas saturation functions
+
+SGFN
+0.00  0.000  0.0
+0.04  0.005  0.0
+0.12  0.026  0.0
+0.24  0.078  0.0
+0.36  0.156  0.0
+0.48  0.260  0.0
+0.60  0.400  0.0
+0.72  0.562  0.0
+0.84  0.740  0.0
+/
+
+--Oil saturation functions
+
+SOF3
+0.00  0.000  0.000
+0.24  0.000  0.000
+0.28  0.005  0.005
+0.32  0.012  0.012
+0.44  0.060  0.060
+0.56  0.150  0.150
+0.72  0.400  0.400
+0.84  0.800  0.800 /
+
+--Rock and water pressure data
+
+ROCK
+3550 0.000004 /
+
+PVTW
+3550 1.0 0.000003 0.31 0.0 /
+
+--Solution section------------------------------------------------------
+
+SOLUTION
+
+--Request initial state output
+
+RPTSOL
+PRESSURE SOIL SWAT /
+
+OUTSOL
+PRESSURE SOIL /
+
+EQUIL
+7500 6000 9000 0 9000 0 1 1 0  /
+
+--2000a, move this to solution section from props
+RSVD
+1000  1.4208
+10000 1.4208
+/
+
+RVVD
+1000  0.09542
+10000 0.09542
+/
+
+SUMMARY    =============================================================
+
+--Request items for summary files , separator oil production rate
+--and field gas oil ratio
+
+FOPR
+FGPR
+FOPT
+FGPT
+WBHP
+/
+FGOR
+
+
+--Producer block oil saturation and injection block pressure
+
+BSOIL
+9 1 4 /
+/
+BPRES
+1 1 1 /
+/
+
+RUNSUM
+
+--Schedule section------------------------------------------------------
+
+RPTONLY
+SCHEDULE
+
+--Define injection and production wells
+
+--2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+--WELLSPEC
+--'P' 'Field' 9 1 7315 /
+WELSPECS
+'P' 'Field' 9 1 7315 GAS/
+/
+
+--2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+--WELLCOMP
+--'P' 9 1 3 4 1  /
+COMPDAT
+'P' 9 1 3 4 1* 1 /
+/
+
+--Well P has gas rate of 2000 MSCF/DAY , with min bhp of 2000 psi
+
+--2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+--WELLPROD
+--'P' 'gas' 2* 2000 1* 2000 /
+WCONPROD
+'P' OPEN GRAT 2* 2000 2* 2000 /
+/
+
+WELLLIM
+P 1* 1000 4* Y /
+/
+
+--Request fluid in place reports, group, separator and well data.
+--Solution output as requested in RPTSCHED
+
+RPTPRINT
+0 1 0 1 1 1 0 1 0 0 /
+
+RPTSCHED
+PRESSURE SOIL /
+
+--Time steps to 5 years ( well hits bhp limit )
+
+TSTEP
+10*365 /
+
+
+END

@@ -1,0 +1,309 @@
+--====================================================================
+-- Example of the use of the GASWAT option
+--
+-- Three producers extract gas under a quality control
+-- CO2 and water are injected: the CO2 eventually lowers the gas
+-- quality so that the required quality cannot be met.
+--====================================================================
+
+RUNSPEC
+
+METRIC
+
+--Select option using GASWAT
+
+GASWAT
+
+AIM
+
+COMPS
+4 /
+
+EOS
+PR /
+
+DIMENS
+10 10 11 /
+
+TABDIMS
+1 1 40 40 /
+UNIFOUT
+--Grid section--------------------------------------------------------
+
+GRID
+INIT
+
+EQUALS
+DX   100         /
+DY   100         /
+DZ     20        /
+PORO    0.1      /
+PERMX 100        /
+PERMY 100        /
+PERMZ  10        /
+TOPS  890 4* 1 1 /
+/
+
+--Properties section-----------------------------------------------
+
+PROPS
+
+--Calorific values in Kj/KgMole
+
+CALVAL
+10 20 0.0 0.0 /
+
+EOS
+PR   /
+
+--H2O as last component
+
+CNAMES
+C1 C2 CO2 H2O /
+
+TCRIT
+190.6 305.4 304.2 647.3 /
+
+PCRIT
+46.0 48.8 73.8 221.2 /
+
+ZCRIT
+0.229 0.229 0.229 0.288 /
+
+--Z-factors for viscosity adjected to get correct water viscosity value
+
+ZCRITVIS
+4*0.215 /
+
+ACF
+0.0108 0.0998 0.2273 0.3434 /
+
+MW
+16 30 44 18 /
+
+--Composition varies wrt depth; liquid is defined at GOC
+
+COMPVD
+900  0.47 0.47 0.04 0.02 0 0               --Gas   composition above contact
+1006 0.37 0.37 0.24 0.02 0 0               --Gas   composition at    contact
+1007 0.0001  0.0001  0.0002  0.9996 1 0    --Water composition below contact
+1100 0.0001  0.0001  0.0002  0.9996 1 0    --Water composition below contact
+/
+
+DENAQA 
+/
+VISCAQA 
+/
+
+RTEMP
+40 /
+
+BIC
+0.1
+0.1    0.0360
+0.4850 0.4920 0.1896 /
+
+GSF
+0.0 0.00 0.0
+0.1 0.00 0.0
+0.2 0.05 0.0
+0.4 0.10 0.0
+0.6 0.40 0.0
+0.8 0.60 0.0
+--0.99 0.70 0.0
+/
+
+WSF
+--0.01 0.0
+0.20 0.00
+0.40 0.01
+0.60 0.20
+0.80 0.80
+1.00 1.00 /
+
+ROCK
+250 0.00005 /
+
+--Solution section------------------------------------------------------
+
+SOLUTION
+
+--Salt concentration varies with depth
+
+RPTSOL
+PRESSURE SWAT SGAS DENG DENW VWAT XMF YMF AMF /
+
+--Vapour specified - pressure not reset to saturation pressure
+
+EQUIL
+--                 10 11
+1005 250 1005 0 5*  2  1 /
+RPTRST
+PRESSURE SWAT SGAS DENG DENW AMF XMF YMF/
+SUMMARY      ---==============================
+
+--Well energy production rate and total
+ALL
+WEPR
+/
+WEPT
+/
+
+--Well gas quality
+
+WGQ
+P1 /
+
+--Group energy production rate and total
+
+GEPR
+FIELD /
+GEPT
+FIELD /
+
+--Group gas quality
+
+GGQ
+FIELD /
+
+--Field energy production rate and total
+
+FEPR
+FEPT
+
+--Field gas quality
+
+FGQ
+BDENW
+7 8 1 /
+7 8 2 /
+7 8 3 /
+7 8 4 /
+7 8 5 /
+7 8 6 /
+7 8 7 /
+7 8 8 /
+7 8 9 /
+7 8 10 /
+/
+BVWAT
+7 8 1 /
+7 8 2 /
+7 8 3 /
+7 8 4 /
+7 8 5 /
+7 8 6 /
+7 8 7 /
+7 8 8 /
+7 8 9 /
+7 8 10 /
+/
+
+RUNSUM
+
+--SCHEDULE section-------------------------------------------------
+
+SCHEDULE
+RPTRST
+PRESSURE SWAT SGAS DENG DENW AMF XMF YMF/
+
+OUTSOL
+SWAT SGAS XMF YMF AMF /
+
+RPTSCHED
+SWAT SGAS AMF /
+
+--Define injection and production wells
+
+--2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+--WELLSPEC
+--P1 FIELD 2 2 /
+--P2 FIELD 5 5 /
+--P3 FIELD 6 6 /
+--IG FIELD 1 1 /
+--IW FIELD 8 8 /
+WELSPECS
+P1 FIELD 2 2 1* GAS   /
+P2 FIELD 5 5 1* GAS   /
+P3 FIELD 6 6 1* GAS   /
+IG FIELD 1 1 1* GAS   /
+IW FIELD 8 8 1* WATER /
+/
+
+--Define completions
+
+--2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+--WELLCOMP
+--P1  2  2  1  2 /
+--P2  5  5  3  4 /
+--P3  6  6  1  2 /
+--IG  1  1  1  1 /
+--IW  8  8  6  6 /
+COMPDAT
+P1  2  2  1  2 /
+P2  5  5  3  4 /
+P3  6  6  1  2 /
+IG  1  1  1  1 /
+IW  8  8  6  6 /
+/
+
+--Three producers with individual limits
+
+--2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+--WELLPROD
+--P1 Ga 1* 1* 10000 /
+--P2 Ga 1* 1* 10000 /
+--P3 Ga 1* 1*   100 /
+WCONPROD
+P1 OPEN GRAT 1* 1* 10000 2* 10.0 /
+P2 OPEN GRAT 1* 1* 10000 2* 10.0 /
+P3 OPEN GRAT 1* 1*   100 2* 10.0 /
+/
+
+--Define water and gas injection streams (gas stream is pure CO2)
+
+WELLSTRE
+--   C1   C2 CO2 H2O
+InjW 0.0 0.0 0.0 1.0 /
+InjG 0.0 0.0 1.0 0.0 /
+/
+
+--Set water and gas injection rates
+WINJGAS
+IW STREAM InjW /
+IG STREAM InjG /
+/
+
+--2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+--WELLINJE
+--IW St InjW Wa 1* 50   /
+--IG St InjG Ga 2* 8000 /
+WCONINJE
+IW WATER OPEN RATE 50   1* 300.0 /
+IG GAS   OPEN RATE 8000 1* 300.0 /
+/
+
+--Set group production target
+
+--2000a GRUPPROD is for back-compatibility, prefered keyword is GCONPROD
+--GRUPPROD
+--Field GA 1* 1* 7500 /
+GCONPROD
+Field GRAT 1* 1* 7500 /
+/
+
+--Set group gas quality target
+
+GQUALITY
+FIELD 13.5 /
+/
+
+--8 years of simulation
+
+TSTEP
+7*365 /
+
+TSTEP
+365 /
+
+END

@@ -1,0 +1,595 @@
+------------------------------------------------------------------------
+-->This model tests the E300 Asphaltene Feature
+-- Case 4I: all asphaltene options enabled
+-- EoS mode in E300
+-- Grid dimensions 10*1*3
+-- FIELD units
+------------------------------------------------------------------------
+
+RUNSPEC   ==============================================================
+
+TITLE
+  Asphaltene test model 4E: asphaltene depo only  /
+
+START
+  1 JAN 2007  /
+
+FIELD
+
+GAS
+OIL
+WATER
+
+DIMENS
+ 10 1 3  /
+
+COMPS
+7 /
+
+EQLDIMS
+1 200 /
+
+TABDIMS
+1 1 2* 2     /
+
+FULLIMP
+
+UNIFIN
+UNIFOUT
+
+
+NOECHO
+
+-- Switch on Asphaltene deposition model
+
+ASPHALTE
+  WEIGHT  / 
+
+
+GRID      ==========================================================
+
+NOGGF
+--Basic grid block sizes
+
+EQUALS
+DX 1000   /
+DY 3000   /
+DZ   30   /
+PORO  0.1 /
+PERMX 500 /
+PERMY 500 /
+PERMZ 300 /
+TOPS 4000 4* 1 1 /
+/
+
+-- Increase PV to provide pressure buffer and keep pres > psat
+
+EQUALS
+  MULTPV 10  /
+/
+
+-- Remove cells from "sump" of model
+
+EQUALS
+-- array  value  I1 I2  J1 J2  K1 K2
+  ACTNUM    0     2 10   1  1   2  3  /
+/
+
+
+--Properties section-----------------------------------------------
+
+PROPS
+
+--Water saturation functions
+
+SWFN
+0.16  0      3
+0.18  0      2
+0.20  0.002  1
+0.44  0.090  0.5
+0.68  0.330  0.1
+0.8   0.540  0.05
+1.00  1.000  0.0 /
+
+--Gas saturation functions
+
+SGFN
+0.00  0.000  0.0
+0.04  0.005  0.0
+0.12  0.026  0.0
+0.24  0.078  0.0
+0.36  0.156  0.0
+0.48  0.260  0.0
+0.60  0.400  0.0
+0.72  0.562  0.0
+0.84  0.800  0.0
+/
+
+--Oil saturation functions
+
+SOF3
+0.00  0.000  0.000
+0.24  0.000  0.000
+0.28  0.005  0.005
+0.32  0.012  0.012
+0.44  0.060  0.060
+0.56  0.150  0.150
+0.72  0.400  0.400
+0.84  0.800  0.800 /
+
+--Rock properties
+
+ROCK
+-- pres    cw
+   3550  3.5E-6 /
+
+
+-- Water properties
+
+PVTW
+-- pres    bw    cw     vw  
+   3500  1.03  3.0E-6  0.23 /
+
+
+-- Standard conditions
+
+STCOND
+--Temp   Pressure
+  60     14.7 /
+
+-- Reservoir temperature (deg F)
+
+RTEMP
+ 160 /
+
+
+-- Equation of State 
+
+EOS
+   PR  /
+
+-- Modified Peng-Robinson EoS
+
+PRCORR
+
+-- Component names
+
+CNAMES
+            C1       C3       C6        C10      C15       C20     ASPH   /
+
+-- Reservoir EoS properties
+
+-- ... molecular weights 
+
+MW
+         16.04    44.10    86.18    149.29    206.00    282.00    282.0   /
+ 
+-- ... critical temperatures (R)
+
+TCRIT
+        343.00   665.70   913.40   1111.80   1270.00   1380.00  1380.00   /
+ 
+-- ... critical pressures (psia)
+
+PCRIT
+        667.80   616.30   436.90    304.00    200.00    162.00   162.00   /
+
+-- ... critical Z-factors  
+
+ZCRIT
+         0.290    0.277    0.264     0.257     0.245     0.235    0.235   /
+
+--  ... accentric factors   
+
+ACF
+         0.013    0.153    0.301     0.489     0.650     0.850    0.850   /
+
+-- ... binary interaction coefficients 
+
+BIC
+            0
+            0       0
+            0       0        0
+         0.05   0.005        0         0
+         0.05   0.005        0         0         0
+         0.05   0.005        0         0         0         0            /
+
+-- Specify initial liquid composition
+
+ZMFVD
+ 1000.0   0.50    0.03     0.07      0.20       0.15     0.05     0.00   
+10000.0   0.50    0.03     0.07      0.20       0.15     0.05     0.00   /
+
+
+-- Asphaltene parameters
+ 
+-- ... asphaltene floc components
+
+ASPFLOC
+-- first  last  floc
+     6      6     7  /
+
+-- ... define asphaltene concentration limits
+-- (set here to avoid asphaltene precipitation)
+
+ASPREWG
+--  pres   %_wt 
+  1000.0    0.0
+  2000.0    5.0
+  3900.0   15.0
+ 10000.0  100.0  /
+     
+-- ... ashphaltene floc rates
+-- (set here to cause faster floc degradation than formation)
+
+ASPFLRT
+-- CMP6
+    0.0100
+    0.001  /
+
+-- ... asphaltene deposition
+
+ASPDEPO
+-- adsorp   plug  entrain   Vcr
+   5.0E-4  1.0E-6  1.0E-4   2500  /
+     
+-- ... asphaltene damage ratio
+
+ASPKDAM
+-- deposit  mult
+     0.0     1.0
+     1.0E-5  0.99
+     1.0E-4  0.90
+     1.0E-3  0.80
+     1.0E-2  0.50  /
+
+-- ... asphaltene viscosity change
+
+ASPVISO
+-- vfrac    mult
+    0.0     1.0
+    0.01    1.2
+    0.1     1.5  
+    1.0    10.0  /
+    
+
+SOLUTION   ============================================================
+
+EQUIL
+-- zdat  pdat  owc  pcow   goc  pcog  dummy  dummy  Ninit
+   4000  4000 4060     0  2000     0     1       1    1*   /
+  
+RPTRST
+  PRESSURE SOIL SGAS SWAT XMF YMF ASPADS ASPDOT ASPEN ASPFL ASPKDM ASPLU ASPREW ASPVOM  /
+
+
+SUMMARY   ============================================================
+
+FGOR
+FWCT
+FOPR
+FOPT
+FWIR
+FWIT
+FVPR
+FVIR
+FPR
+FOSAT
+FGSAT
+
+WBHP
+  PROD  WINJ  /
+
+-- Asphaltene grid block parameters
+
+BASPDOT
+  1  1  1  /
+  2  1  1  /
+  3  1  1  /
+  4  1  1  /
+  5  1  1  /
+  6  1  1  /
+  7  1  1  /
+  8  1  1  /
+  9  1  1  /
+ 10  1  1  /
+/
+
+BASPREW
+  1  1  1  /
+  2  1  1  /
+  3  1  1  /
+  4  1  1  /
+  5  1  1  /
+  6  1  1  /
+  7  1  1  /
+  8  1  1  /
+  9  1  1  /
+ 10  1  1  /
+/
+
+BASPKDM
+  1  1  1  /
+  2  1  1  /
+  3  1  1  /
+  4  1  1  /
+  5  1  1  /
+  6  1  1  /
+  7  1  1  /
+  8  1  1  /
+  9  1  1  /
+ 10  1  1  /
+/
+
+BASPVOM
+  1  1  1  /
+  2  1  1  /
+  3  1  1  /
+  4  1  1  /
+  5  1  1  /
+  6  1  1  /
+  7  1  1  /
+  8  1  1  /
+  9  1  1  /
+ 10  1  1  /
+/
+
+BASPFL
+  1  1  1  6  /
+  2  1  1  6  /
+  3  1  1  6  /
+  4  1  1  6  /
+  5  1  1  6  /
+  6  1  1  6  /
+  7  1  1  6  /
+  8  1  1  6  /
+  9  1  1  5  /
+ 10  1  1  6  /
+  1  1  1  7  /
+  2  1  1  7  /
+  3  1  1  7  /
+  4  1  1  7  /
+  5  1  1  7  /
+  6  1  1  7  /
+  7  1  1  7  /
+  8  1  1  7  /
+  9  1  1  7  /
+ 10  1  1  7  /
+/
+
+
+-- Other block parameters
+
+BXMF
+  1  1  1  6  /
+  2  1  1  6  /
+  3  1  1  6  /
+  4  1  1  6  /
+  5  1  1  6  /
+  6  1  1  6  /
+  7  1  1  6  /
+  8  1  1  6  /
+  9  1  1  5  /
+ 10  1  1  6  /
+  1  1  1  7  /
+  2  1  1  7  /
+  3  1  1  7  /
+  4  1  1  7  /
+  5  1  1  7  /
+  6  1  1  7  /
+  7  1  1  7  /
+  8  1  1  7  /
+  9  1  1  7  /
+ 10  1  1  7  /
+/
+
+BPR
+  1  1  1  /
+  2  1  1  /
+  3  1  1  /
+  4  1  1  /
+  5  1  1  /
+  6  1  1  /
+  7  1  1  /
+  8  1  1  /
+  9  1  1  /
+ 10  1  1  /
+/
+
+BDENO
+  1  1  1  /
+  2  1  1  /
+  3  1  1  /
+  4  1  1  /
+  5  1  1  /
+  6  1  1  /
+  7  1  1  /
+  8  1  1  /
+  9  1  1  /
+ 10  1  1  /
+/
+
+BPORV
+  1  1  1  /
+  2  1  1  /
+  3  1  1  /
+  4  1  1  /
+  5  1  1  /
+  6  1  1  /
+  7  1  1  /
+  8  1  1  /
+  9  1  1  /
+ 10  1  1  /
+/
+
+BOVIS
+  1  1  1  /
+  2  1  1  /
+  3  1  1  /
+  4  1  1  /
+  5  1  1  /
+  6  1  1  /
+  7  1  1  /
+  8  1  1  /
+  9  1  1  /
+ 10  1  1  /
+/
+
+RPTONLY
+
+
+RUNSUM
+
+SCHEDULE   ============================================================
+
+--Define injection and production wells
+
+WELSPECS
+-- Well   Group  I0 J0  depth  phase
+   WINJ   FIELD   1  1    1*    WAT  /
+   PROD   FIELD  10  1    1*    OIL  /
+/
+
+COMPDAT
+-- Well   I  J  K1  K2  Status  
+   WINJ   1  1   1   1   OPEN   /
+   PROD  10  1   1   1   OPEN   /
+/
+
+WCONPROD
+-- Well  Status  Mode  Orat Wrat  Grat  Lrat   Resv   BHP  
+   PROD   OPEN   RESV   1*   1*    1*    1*    5000   500  /
+/
+
+WCONINJE
+-- Well  Type  Status  Mode  Surf  Resv   BHP
+   WINJ   WAT   SHUT   RESV   1*  25000  4400  /
+/
+
+-- Increase PI to avoid premature switch to BHP control
+
+WPIMULT
+-- Well  Value
+   WINJ  100.0  /
+/
+
+-- Composition of injected fluid (native oil)
+
+WELLSTRE
+-- name     C1     C3     C6    C10    C15    C20   ASPH   
+   IOIL   0.50   0.03   0.07   0.20   0.15   0.05   0.00   /
+/
+
+-- Link well to type of injected fluid
+
+WINJGAS
+-- Well  Type  Stream
+   WINJ  STRE   IOIL  /
+/
+
+
+TUNING
+  0.01  101.0  /
+/
+/
+
+-- Reporting frequency
+  
+-- Simulate depletion and re-pressurisation periods
+
+TSTEP
+  20*50  /
+
+-- Switch off producer and start injecting to re-pressurise
+
+WELOPEN
+-- Well  Status
+   WINJ   OPEN  /
+   PROD   SHUT  /
+/
+
+TSTEP
+   20*10  /
+
+-- Switch off injector and watch change in asphaltenes
+
+WELOPEN
+-- Well  Status
+   WINJ   SHUT  /
+/
+
+TSTEP
+  18*100  /
+  
+TSTEP
+  0.01 /
+    
+
+  
+-- Write out restart record
+
+SAVE
+
+-- Reduce the pressure once more ....
+
+WELOPEN
+-- name  status
+   PROD   OPEN  /
+/
+
+NEXTSTEP
+  0.01  /
+
+TSTEP
+  20*50  /
+  
+
+TSTEP
+  0.01 /
+    
+
+
+-- Watch for deposition by plugging
+
+WELTARG
+-- name   mode  target
+   PROD   RESV   2500  /
+   WINJ   RESV   2550  /
+/
+
+WELOPEN
+-- name  status
+   PROD   OPEN  /
+   WINJ   OPEN  /
+/
+
+NEXTSTEP
+  0.01  /
+
+TSTEP
+  20*50  /
+  
+  
+TSTEP
+  0.01 /
+    
+
+-- Increase rate to induce entrainment
+
+WELTARG
+-- name   mode  target
+   PROD   RESV   5000  /
+   WINJ   RESV   5100  /
+/
+
+NEXTSTEP
+  0.01  /
+
+TSTEP
+  20*50  /
+    
+  
+TSTEP
+  0.01 /
+
+END

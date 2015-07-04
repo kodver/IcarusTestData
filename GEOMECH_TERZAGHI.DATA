@@ -1,0 +1,345 @@
+-- Filename: GEOMECH3_TERZAGHI.DATA  Tuesday, March 22, 2005
+--
+------------------------------------------------------------------------------------------
+-- Terzaghi's consolidation model in lab units
+--------------------------------------------------------------------
+
+
+/
+
+RUNSPEC
+
+AIM
+
+METRIC
+
+OIL
+WATER
+GAS
+
+NUMRES
+1 /
+
+GEOMECH
+ 1* T 'FE' RVBAL INIT / 
+
+COMPS
+10 /
+
+TABDIMS
+1 1 40 40 3 /
+
+DIMENS
+1 1 100 /
+
+WELLDIMS
+9 2* 9 /
+
+TITLE
+3-D Geomechanics 1D Consolidation
+
+START
+1 Jan 1990 /
+
+UNIFOUT
+
+GRID    ================================================================
+
+GRIDFILE
+2   /
+INIT
+
+EQUALS
+ DX     10  1 1  1 1 1 100 /
+ DY     10 /
+ DZ     2 /
+ PERMX  2  /
+ PERMY  2  /
+ PERMZ  .2  /
+ PORO   0.33 /
+ YOUNGMOD  10000 / bar
+ POISSONR 0.3 /
+ ROCKDEN 2600 /
+ BIOTC 1.0 /
+/
+
+TOPS
+1*100 /
+
+RPTGRID
+DEPTH LIMITS /
+
+PROPS    ===============================================================
+
+SWFN
+  0.22  0    0.0
+  0.3   0.99 0.0
+  0.4   0.99 0.0
+  0.5   0.99 0.0
+  0.6   0.99 0.0
+  0.8   0.99 0.0
+  0.9   0.99 0.0
+  1     1    0.0   /
+
+SGFN
+  0     0        0.0
+  0.04  0        0.0
+  0.1   0.001    0.0
+  0.2   0.001    0.0
+  0.3   0.001    0.0
+  0.4   0.001    0.0
+  0.5   0.001    0.0
+  0.6   0.001    0.0
+  0.7   0.001    0.0
+  0.78  0.001    0.0    /
+
+SOF3
+0        0         0
+0.15     0         0
+0.38     0.001     0
+0.4      0.001     0.001
+0.48     0.001     0.001
+0.5      0.001     0.001
+0.58     0.001     0.001
+0.6      0.001     0.001
+0.68     0.001     0.001
+0.7      0.001     0.001
+0.74     0.001     0.001
+0.78     0.001     0.001          /
+
+PVTW
+2  1.00  5.D-5 1  0  /
+
+ROCK
+15 24.70E-5 0 7.43E-5  0.30/
+
+DENSITY
+1* 1000 1* /
+
+ECHO
+-- Units: C
+RTEMP
+-- 
+-- Constant Reservoir Temperature
+-- 
+         140
+/
+ 
+EOS
+-- 
+-- Equation of State (Reservoir EoS)
+-- 
+   PR
+/
+ 
+NCOMPS
+-- 
+-- Number of Components
+-- 
+      10
+/
+CNAMES
+-- 
+-- Component Names
+-- 
+   'N2'
+   'CO2'
+   'C1'
+   'HC23'
+   'HC46'
+   'C8'
+   'HC13'
+   'HC18'
+   'HC26'
+   'HC43'
+/
+MW
+-- 
+-- Molecular Weights (Reservoir EoS)
+-- 
+ 28.02 44.01 16.04 35.88 67.98 110.14 173.11 248.85 361.77 600.98 /
+ 
+OMEGAA
+-- 
+-- EoS Omega-a Coefficient (Reservoir EoS)
+-- 
+ 0.457235529 0.457235529 0.457235529 0.457235529 0.457235529 
+ 0.457235529 0.457235529 0.457235529 0.457235529 0.457235529 /
+ 
+OMEGAB
+-- 
+-- EoS Omega-b Coefficient (Reservoir EoS)
+-- 
+ 0.077796074 0.077796074 0.077796074 0.077796074 0.077796074
+ 0.077796074 0.077796074 0.077796074 0.077796074 0.077796074 
+/
+ 
+-- Units: K
+TCRIT
+-- 
+-- Critical Temperatures (Reservoir EoS)
+-- 
+ 126.200003343158 304.200008058548 186.55556049759 338.000008953942 456.000012079875 
+ 575.000015232299 666.000017642975 735.000019470851 807.0000213782 914.000024212732 
+/
+ 
+-- Units: bar
+PCRIT
+-- 
+-- Critical Pressures (Reservoir EoS)
+-- 
+ 33.9430028103076 73.863780033887 46.2019219646296 44.816071149096 34.7669290414333 
+ 30.4128753597942 22.601089419498 16.3957872603924 11.9969175076042 10.1629059805796 
+/
+ 
+-- Units: m3 /kg-mole
+VCRIT
+-- 
+-- Critical Volumes (Reservoir EoS)
+-- 
+ 0.0898936869509808 0.0938218386122395 0.0967201806287312 0.173068367675218 0.289308675900488 
+ 0.485100788462376 0.789888125275783 1.20201663951134 1.80311983763573 2.41073246893478
+/
+ 
+ZCRIT
+-- 
+-- Critical Z-Factors (Reservoir EoS)
+-- 
+ 0.2908 0.274 0.2881 0.276 0.2653 
+ 0.3086 0.3224 0.3225 0.3224 0.3224
+/
+ 
+ACF
+-- 
+-- Acentric Factors (Reservoir EoS)
+-- 
+ 0.04 0.22 0.01 0.12 0.23 0.42 0.71 0.98 1.27 1.67 
+/
+ 
+BIC
+-- 
+-- Binary Interaction Coefficients (Reservoir EoS)
+-- 
+       0
+    0.02    0.12
+    0.06    0.15       0
+    0.08    0.15       0       0
+    0.08    0.15       0       0       0
+    0.08    0.18       0       0       0       0
+    0.09     0.2       0       0       0       0       0
+    0.09     0.2       0       0       0       0       0       0
+    0.09     0.2       0       0       0       0       0       0       0
+/
+ 
+PARACHOR
+-- 
+-- Component Parachors
+-- 
+ 60 60 74.9119992351532 130.463998289108 220.343996758461 338.391994748116 
+ 458.645085296631 640.496831274033 919.033211774826 1509.08535116196 
+/
+ 
+-- Units: m3 /kg-mole
+VCRITVIS
+-- 
+-- Critical Volumes for Viscosity Calc (Reservoir EoS)
+-- 
+ 0.0898936869509808 0.0938218386122395 0.0967201806287312 0.173068367675218 0.289308675900488 
+ 0.485100788462376 0.789888125275783 1.20201663951134 1.80311983763573 2.41073246893478 
+/
+ 
+ZCRITVIS
+-- 
+-- Critical Z-Factors for Viscosity Calculation (Reservoir EoS)
+-- 
+ 0.2908 0.274 0.2881 0.276 0.2653 0.3086 0.3224 0.3225 0.3224 0.3224 /
+ 
+LBCCOEF
+-- 
+-- Lorentz-Bray-Clark Viscosity Correlation Coefficients
+-- 
+    0.1023 0.023364 0.058533 -0.040758 0.0093324
+/
+
+ZMFVD
+  100.0 0.0069 0.0314 0.5280 0.1515 0.0703
+        0.0867 0.0529 0.0340 0.0238 0.0145
+10000.0 0.0069 0.0314 0.5280 0.1515 0.0703
+        0.0867 0.0529 0.0340 0.0238 0.0145  /
+
+SOLUTION    ============================================================
+--          This section defines the initial conditions in the field.
+--          ------------------------------------------------------------
+
+-- SET THE EQUILIBRATION DATA
+--
+--   DATUM  DATUM   OWC    OWC    GOC    GOC   RSVD   RVVD   SOLN
+--   DEPTH  PRESS  DEPTH   PCOW  DEPTH   PCOG  TABLE  TABLE  METH  CEO
+
+EQUIL
+     100    20       50    0.0      20    0     1*      1*    0   1    /
+
+
+STRESBC
+-- I-
+'I+' 2 3* 0  / --Normal displacements 0 
+'I-' 2 3* 0  / --Normal displacements 0
+
+-- J-
+'J+' 2 3* 0  / --Normal displacements 0
+'J-' 2 3* 0  / --Normal displacements 0
+
+-- K-
+'K-' 1 -30 / --Load on top surface
+/
+
+RPTRST
+'BASIC=2' TOTSTRES STRAIN  DROCKDISP  PRSTRESS EFFSTRES    /
+
+SUMMARY
+
+ALL
+FPR
+
+RPTONLY
+RUNSUM
+MSUMLINS
+MSUMNEWT
+SCHEDULE  =============================================================
+
+WELSPECS
+P11	1*	1	1	1*   WATER	/
+/
+
+COMPDAT
+P11	2*	1	1	OPEN	2* 	1	/
+/
+
+-- Remove excess water that moves to top of model due to consolidation
+WCONPROD
+'P11' OPEN BHP 5* 10 /
+/
+
+TSTEP
+50*3 25*30 /
+
+RPTSCHED
+DROCKDISP EFFSTRES PRESSURE TOTSTRES /
+
+TSTEP
+50 /
+
+RPTSCHED
+/
+TSTEP
+50 9*100 99 50 /
+
+RPTSCHED
+DROCKDISP EFFSTRES PRESSURE TOTSTRES /
+
+TSTEP
+1 /
+
+END
+
+ 

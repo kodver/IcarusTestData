@@ -1,0 +1,501 @@
+-- 
+-- CO2STORE Thermal example
+RUNSPEC
+ 
+TITLE
+ 
+START
+ 1 'JAN' 2003 /
+ 
+METRIC
+
+CO2STORE
+THERMAL
+
+COMPS
+4
+/
+FULLIMP
+
+
+
+DIMENS
+   10 10 3  /
+
+
+UNIFOUT
+FMTOUT
+EQLDIMS
+ 1 100 20 1 20 /
+ 
+REGDIMS
+ 10 1 0 1 0 /   
+
+WELLDIMS
+2 20/
+
+ 
+TABDIMS
+ 1 1 50 20 1 20 20 1 1 1 1 1 1 0 0 /
+
+AQUDIMS
+ /
+
+
+GRID    ================================================
+INIT
+
+TOPS
+100*600.0 /
+
+DXV
+10*100 /
+DYV
+10*100 /
+DZV
+--2*5 10 2*5/
+3*10 /
+
+EQUALS
+PERMX  20   /
+PERMY  20  /
+PERMZ  20 /
+PORO   0.15  /
+/
+EQUALS
+HEATCR 1987.5  /                  rock heat capacity kJ/m3/K    0.75 kJ/kg/K*2650kg/m3 = 1987.5
+THCONR   302.4 /                  rock conductivity kJ/m/Day/K   
+/
+
+PROPS    ======================================================
+
+SKIP300
+-- This et of sat. fun. is for COSTORE non-thermal
+GSF
+--sg	        krg	     pc(bar)
+0.0					0.0				0.0
+0.1					0.0				0.0
+0.8 	      1.0         0.0
+--1.0             1.0             6.82589
+/
+
+WSF
+--sw	krw	
+--0.0             0.0
+0.2	        0.0
+1.0	        1.0
+/
+ENDSKIP
+SGFN
+-- sg   krg                   pcgo
+0.0       	0.0	        0.0
+0.1					0.0				0.0
+0.8 	      1.0         0.0
+--1.0             1.0             6.82589
+/
+SWFN
+--sw            krw             pcgw
+0.2           0.0						0.0
+1.0	        	1.0						0.0
+/
+
+SOF3
+--Sw    krow  krog
+0.0       0.0  0.0
+0.25      0.0  0.0
+0.35      0.1  0.0
+0.8				1		1 /
+
+-- Mobility multiplier
+--SOLIDMMS
+-- SS   Mult
+--  0.0    1.0
+--   0.1    0.5
+--   0.8    0.0 /
+
+ROCK
+75 0.0 /
+--75 7e-5/
+
+RTEMP
+--
+-- Constant Reservoir Tempe
+--
+         37 
+/
+
+
+NCOMPS
+--
+-- Number of Component--
+       4
+--4
+/
+CNAMES
+--
+-- Component Names
+--
+   'CO2'
+   'H2O'
+   'NACL'
+   'CACL2' 
+--   'CACO3'
+
+/
+--  diffuse NACL and CACL2... 
+--DIFFCOIL 
+-- 0.0 0.0 0.1 0.1 /
+TCRIT
+-- 
+-- Critical Temperatures (Reservoir EoS)
+-- 
+         304.7
+         647.3
+/
+
+PCRIT
+-- 
+-- Critical Pressures (Reservoir EoS)
+-- 
+     73.865925                    -- CO2 PCCRIT
+      220.4832                    -- H2O PCCRIT
+/
+-- Units: bar
+PREFT
+-- 
+-- Thermal Reference Pressures
+-- 
+     1.1651875
+    101.506625
+/
+
+SPECHA
+--
+-- Oil Component Specific Heat 1st Coeff
+--
+   0.834944695414749
+   4.81290845015349
+   0.0
+   0.0
+--   0.0
+/
+
+-- Units: kJ/ kg/ K/ K
+SPECHB
+--
+-- Oil Component Specific Heat 2nd Coeff
+--
+   0.00103117086090892
+   0.0208203197232935
+   0.0
+   0.0
+--   0.0
+/
+-- Units: kJ/ kg/ K
+-- Units: kJ/ kg/ K
+
+
+
+SPECHG
+--
+-- Gas Component Specific Heat 1st Coeff
+--
+   0.834944695414749  -- CO2 
+   4.81290845015349   -- H2O
+   0.0
+   0.0
+--   0.0
+/
+-- Units: kJ/ kg/ K/ K
+-- Units: kJ/ kg/ K/ K
+SPECHH
+--
+-- Gas Component Specific Heat 2nd Coeff
+--
+   0.00103117086090892
+   0.0208203197232935
+   0.0
+   0.0
+--   0.0
+/
+
+--- just some dummy values
+--- to test option 
+SPECHW1
+--
+--
+   0.834944695414749
+   4.81290845015349
+   0.86409
+   0.5
+--   0.1
+/
+-- Units: kJ/ kg/ K/ K
+-- Units: kJ/ kg/ K/ K
+SPECHW2
+--
+-- Oil Component Specific Heat 2nd Coeff
+--
+   0.00103117086090892
+   0.0208203197232935
+   0.01
+   0.02
+--   0.005
+/
+
+-- Density of NACL_S at reference conditions
+SDREF
+-- 3* 2170.0 /
+/
+
+TEMPVD
+600  37					-- =34-0.03*200= 
+700  37 
+/
+DENAQA
+0.103300	-0.000023	-0.000002
+0.000000	0.000000	0.000000
+0.309360	-0.000069	0.000000
+0.362700	0.000000	0.000000
+/
+VISCAQA
+0.000000	0.000000	0.000000
+0.000000	0.000000	0.000000
+0.718000	0.003590	0.000000
+1.487000	-0.001720	0.000000
+/
+RPTPROPS
+PVTO PVTW /
+
+REGIONS  ===============================================================
+--FIPNUM
+--1 2 3 4 5 6 7 8 9 10 /
+
+SOLUTION ===============================================================
+
+EQUIL
+-- 
+-- Equilibration Data Specification
+-- 
+-- Datum   Datum   WOC     WOC     GOC      GOC   
+-- Depth   Press   Depth   PCOW    Depth    PCOW
+   615      70     500      0      500     0      1*      1*      1*      1*     1* 
+/
+
+
+AMFVD
+600	0.00835	  0.92152	    0.07002	  0.00010
+700	0.00835	  0.92152	    0.07002	  0.00010 / 
+
+AQUCT
+--AQU#  DATUM		Press@	K			PORO	Ct			Ri			h				angle			WAT PROP	Influence	Salt			AQU 
+--  		depth		Datum																				(dgrees)	(or EOS#)	table#		Concentr	TEMP
+		1 	615 		1*			150.0 0.13	3.0E-5	24000.0	1400.0	45 			1 				1 				1* 				37.0 /
+/
+AQUANCON
+1 10 10 1 10 3 3 I+ /
+/
+
+
+RPTRST
+ RESTART PRESSURE SGAS SWAT TEMP ENERGY AMF DENG DENW DENS VGAS VWAT
+  XMF YMF AQSP AQPH  RPORV  /
+
+RPTSOL
+ PRESSURE SGAS SWAT DENG DENW VGAS VWAT XMF YMF AQSP AQPH   
+      TEMP XFW YFW AMF  /
+
+SUMMARY  ===========================================================
+
+ALL
+
+WXMF
+'*' 1 /
+'*' 2 /
+'*' 3 /
+'*' 4 /
+/
+WYMF
+'*' 1 /
+'*' 2 /
+'*' 3 /
+'*' 4 /
+/
+WZMF
+'*' 1 /
+'*' 2 /
+'*' 3 /
+'*' 4 /
+/
+WCMPR
+'*' 1 /
+'*' 2 /
+'*' 3 /
+'*' 4 /
+/
+WCMIR
+'*' 1 /
+'*' 2 /
+'*' 3 /
+'*' 4 /
+/
+WCGMR
+'*' 1 /
+'*' 2 /
+'*' 3 /
+'*' 4 /
+/
+WCOMR
+'*' 1 /
+'*' 2 /
+'*' 3 /
+'*' 4 /
+/
+BPR
+1 1 1 /
+3 1 1 /
+5 1 1 /
+7 1 1 /
+9 1 1 /
+/
+BGSAT
+1 1 1 /
+3 1 1 /
+5 1 1 /
+7 1 1 /
+9 1 1 /
+/
+BWSAT
+1 1 1 /
+3 1 1 /
+5 1 1 /
+7 1 1 /
+9 1 1 /
+/
+BDENW
+1 1 1 /
+3 1 1 /
+5 1 1 /
+7 1 1 /
+9 1 1 /
+/
+BVWAT
+1 1 1 /
+3 1 1 /
+5 1 1 /
+7 1 1 /
+9 1 1 /
+/
+BVGAS
+1 1 1 /
+3 1 1 /
+5 1 1 /
+7 1 1 /
+9 1 1 /
+/
+BDENG
+1 1 1 /
+3 1 1 /
+5 1 1 /
+7 1 1 /
+9 1 1 /
+/
+
+BPORV
+1 1 1 /
+3 1 1 /
+5 1 1 /
+7 1 1 /
+9 1 1 /
+/
+
+BTEMP
+ 1 1 1 /
+ 2 1 1 /
+ 3 1 1 /
+ 4 1 1 /
+ 5 1 1 /
+ 6 1 1 /
+ 7 1 1 /
+ 8 1 1 /
+ 9 1 1 /
+10 1 1 /
+/
+BOIP
+ 1 1 1 /
+ 2 1 1 /
+ 3 1 1 /
+/
+ROIP
+1 2 3 4 5 6 7 8 9 10 /
+BGIP
+ 1 1 1 /
+ 2 1 1 /
+ 3 1 1 /
+/
+--RGIP
+--1 2 3 4 5 6 7 8 9 10 /
+--RGIPL
+--1 2 3 4 5 6 7 8 9 10 /
+FWCD
+--RWCD					-- CO2 (“carbon dioxide”) dissolved in water phase
+--1 2 3 4 5 6 7 8 9 10 /
+FGCDI
+--CO2 (“carbon dioxide”) trapped (immobile) in gas phase
+
+--RGCDI
+--1 2 3 4 5 6 7 8 9 10 /
+FGCDM
+--CO2 (“carbon dioxide”) mobile in gas phase
+--RGCDM
+--1 2 3 4 5 6 7 8 9 10 /
+ANQR
+ANQT
+
+PERFORMA
+SEPARATE
+RPTONLY
+RUNSUM
+
+SCHEDULE  ===============================================
+RPTSCHED
+ AMF XMF YMF DENG DENW VOIL VGAS  HGAS HOIL HSOL HWAT /
+
+--SKIP300
+-- molar composition
+WELLSTRE
+'C02FEED' 1.0 0.0 0.0 0.0  /
+/
+
+WELSPECS
+I1  G1 3 3 1*  GAS /
+/
+ 
+COMPDAT 
+ I1  3 3   1 3 OPEN 2* 0.3 1* -2 1* 'Z'/
+/
+
+WINJGAS
+ I1 STREAM C02FEED /
+/
+
+WCONINJE
+--  I GAS OPEN RESV 1* 13292.3 100 / 
+  I1 GAS OPEN RATE 10000 1* 100 / 
+/
+WINJTEMP
+ I1 1* 37.0 70.0 /
+/
+TSTEP
+1 /
+TSTEP
+5*20 /
+TSTEP
+30*20 /
+TSTEP
+30*30 /
+
+END
+
+
+

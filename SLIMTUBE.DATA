@@ -1,0 +1,268 @@
+------------------------------------------------------------------------
+-->Simulation of a 10 metre slimtube using lab units
+-- 5 components
+-- Peng-Robinson EoS
+-- Grid dimensions 200x1x1
+-- FULLIMP solution method
+-- LAB units
+-- OIL GAS only, no water
+
+------------------------------------------------------------------------
+
+RUNSPEC  ============================================================
+
+OIL
+GAS
+
+FULLIMP
+
+DIMENS
+200  1  1  /
+
+-- Cartesian co-ord system
+
+CART
+
+-- Units: Lab
+
+LAB
+
+-- Number of components: implies compositional run
+
+COMPS
+5 /
+
+MISCIBLE
+
+GRID     ============================================================
+
+DX
+200*5 /
+
+--Cross section is 1 square cm
+
+DY
+200*1.0 /
+
+DZ
+200*1.0 /
+
+-- Porosity and permeability
+
+PORO
+200*0.1 /
+
+PERMX
+200*2000.0 /
+
+PERMY
+200*2000.0 /
+
+PERMZ
+200*2000.0 /
+
+--Depth of cell centres
+
+MIDS
+200*100.0 /
+
+PROPS    ============================================================
+
+-- Properties section: PVT data from INCLUDE file
+
+EOS
+PR    /
+
+CNAMES
+CO2 PC1 PC2 PC3 'C7+' /
+
+MISCEXP
+0.2 /
+
+BIC
+0.2266599
+0.2014434    -0.0008224
+0.0717683     0.0135731    .0054848
+0.2078494     0.0979894    .0054848     0.0     /
+
+PCRIT
+73.76 46.00 48.8 31.6 16.3 /
+
+TCRIT
+304.2 190.0 358.4 488.3 741.6 /
+
+MW
+44.01 16.2828 41.1450 78.9157  224.0000 /
+
+ACF
+0.2250000  0.0086486  0.1366165  0.2727326  0.5856574  /
+
+ZCRIT
+0.27490002  0.28971521  0.27810650  0.26666820  0.22416106 /
+
+ZCRITVIS
+0.1140665   0.3219673   0.1884522   0.5301314   0.2372103  /
+
+OMEGAA
+0.44162560 0.50724604 0.38625979 0.51680264 0.28916907 /
+
+OMEGAB
+0.06815855 0.09485338 0.06251260 0.03738579 0.06581219 /
+
+PARACHOR
+79.7       77.536     141.415    250.576    676.333    /
+
+STCOND
+15.0 1.0 /
+
+GRAVITY
+1* 1.01 1* /
+
+-- Reservoir temperature: Deg C
+
+RTEMP
+71.0 /
+
+-- Rock and properties
+
+ROCK
+136.0  0.000004  /
+
+SGFN
+0.00  0.0000  0.0
+0.10  0.0156  0.0
+0.20  0.0625  0.0
+0.30  0.1406  0.0
+0.40  0.2500  0.0
+0.50  0.3906  0.0
+0.60  0.5625  0.0
+0.70  0.7656  0.0
+0.80  1.0000  0.0  /
+
+SOF2
+0.20  0.0000
+0.30  0.0278
+0.40  0.1109
+0.50  0.2500
+0.60  0.4444
+0.70  0.6944
+0.75  0.8403
+0.80  1.0000 /
+
+SOLUTION ============================================================
+
+--  Solution section: define explicitly
+
+PRESSURE
+200*136.0 /
+
+SGAS
+200*0.0 /
+
+XMF
+200*0.0247 200*0.2516 200*0.2407 200*0.0733 200*0.4097 /
+
+YMF
+200*0.0247 200*0.2516 200*0.2407 200*0.0733 200*0.4097 /
+
+--  Calculate initial oil and gas in place at surface conditions
+
+FIELDSEP
+1 15.0 1.0 /
+/
+
+RPTSOL
+PRES  SOIL  SGAS  /
+
+OUTSOL
+PRES  SOIL  SGAS /
+
+SUMMARY  ============================================================
+
+WOPR
+PRODUCER  /
+
+FOPR
+
+WOPT
+PRODUCER  /
+
+WGOR
+PRODUCER  /
+
+RUNSUM
+
+RPTONLY
+SCHEDULE ============================================================
+
+CVCRIT
+-0.001 /
+
+SEPCOND
+SEPP  G2  1  15.0  1.0 /
+/
+
+--2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+--WELLSPEC
+--INJECTOR G1  1 1 1*       /
+--PRODUCER G2 200 1 1* SEPP  /
+WELSPECS
+INJECTOR G1   1 1 1* GAS  /
+PRODUCER G2 200 1 1* OIL  /
+/
+
+--2000a uses WELSEPC to associate separator with wells
+WSEPCOND
+PRODUCER SEPP /
+/
+
+--2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+--WELLCOMP
+--INJECTOR  1 1  1  1  1 1* 5000 /
+--PRODUCER 200 1  1  1  1 1* 5000 /
+COMPDAT
+INJECTOR   1 1  1  1  OPEN 1 5000 /
+PRODUCER 200 1  1  1  OPEN 1 5000 /
+/
+
+WELLSTRE
+LEANGAS  0.684  0.316 /
+/
+
+--Total pore volume is 100ccs, inject 1/10 PV per hour
+
+--2000a WELLINJE is for back-compatibility, prefered keyword is WCONINJE
+--WELLINJE
+--INJECTOR  STREAM  LEANGAS  RV  5* 10.0 /
+WCONINJE
+INJECTOR  GAS OPEN RESV 1* 10.0 /
+/
+
+WINJGAS
+INJECTOR STREAM LEANGAS /
+/
+
+--2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+--WELLPROD
+--PRODUCER  BHP  4*  136.0  /
+WCONPROD
+PRODUCER  OPEN BHP  5*  136.0  /
+/
+
+RPTPRINT
+1 1 1 1 1   1 1 1 0 0 /
+
+RPTSCHED
+PRESSURE  SOIL  SGAS /
+
+--Limit max step to get at least 500 timesteps per 10 hours = 1 PV injected
+
+TSCRIT
+0.001 0.0001 0.02 /
+
+--Run for 12 hours - ie 1.2 pore volumes injected
+
+TIME
+1 2 3 4 5 6 7 8 9 10 11 12 /
+
+END

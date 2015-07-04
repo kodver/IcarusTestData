@@ -1,0 +1,342 @@
+-- New keyword REACLIMS is implemented which allow setting pressure and temperature minimum 
+-- and maximum limits for calculating chemical reaction rates. 
+-- Block pressures and temperatures outside the range specified are modified 
+-- to the minimum or maximum values accordingly prior to calculating reaction rates
+-- REACLIMS:Limit temperature and pressure values used in chemical reaction rate calculations
+
+RUNSPEC  ---------------------------------------------------------------
+
+FIELD
+
+DIMENS
+1 1 20 /
+
+COMPS
+5 /
+
+WATER
+
+THERMAL
+
+REACTION
+1 /
+
+UNIFOUT
+FMTOUT
+
+
+GRID     ---------------------------------------------------------------
+
+DXV
+0.289    /
+
+DYV
+0.289    /
+
+DZ
+20*.2875  /
+
+TOPS
+0.0      /
+
+PORO
+20*0.25  /
+
+PERMX
+20*700.0 /   mD
+
+PERMY
+20*700.0 /   mD
+
+PERMZ
+20*700.0 /   mD
+
+HEATCR
+20*34.0  /   BTU/cu.ft/F
+
+HEATCRT
+20*0.0187/   BTU/cu.ft/F/F
+
+THCONR
+20*3.0   /   BTU/ft/D/F
+
+
+PROPS    ---------------------------------------------------------------
+
+-- Component data ------------------------------------------------------
+
+CNAMES
+           C32+C47      C20   C6-C12       O2   N2-COx  /
+CVTYPE
+              DEAD     LIVE     LIVE      GAS      GAS  /
+MW
+             508.9    282.6    131.4     32.0     32.0  /  lb/lb mol
+PCRIT
+              50.7    162.0    336.6    730.0    750.0  /  psi
+TCRIT
+                1*     1381     1067       1*       1*  /  R
+DREF
+             61.15     56.6     44.9       1*       1*  /  lb/cu.ft at standard conditions
+CREF
+            1.0E-5   1.0E-5   1.0E-5       1*       1*  /  oil phase compressibility /psi
+THERMEX1
+            3.8E-4   3.8E-4   3.8E-4       1*       1*  /  oil phase thermal expansion /R
+SPECHA
+               0.6      0.6      0.6     0.24    0.226  /  oil phase specific heat BTU/lb/R
+HEATVAP
+               0.0      0.0      0.0      0.0      0.0  /  BTU/lb
+KVCR
+                 0        0        0        0        0
+                 0   3.11E6  7.778E5        0        0
+                 0        0        0        0        0
+                 0    13620     8331        0        0  /
+OILVISCC
+ANDRADE FORMULA
+              -2.0   -1.557   -1.446        1        1
+              2131     1461    927.2        1        1  /  log10(mu) = A + B/T
+/
+GASVISCF
+                 1     0.08     0.03 2.196E-4 2.127E-4
+                 1        0        0    0.721    0.702  /  mu = A.T^B
+
+-- Rock-fluid data -----------------------------------------------------
+
+SWOF
+--SW      KRW      KRO     PCOW
+  0.25    0.000    1.00    0.00
+  0.30    0.005    0.81    0.00
+  0.35    0.020    0.64    0.00
+  0.40    0.045    0.49    0.00
+  0.45    0.080    0.36    0.00
+  0.50    0.125    0.25    0.00
+  0.55    0.180    0.16    0.00
+  0.60    0.245    0.09    0.00
+  0.65    0.320    0.04    0.00
+  0.70    0.405    0.01    0.00
+  0.75    0.500    0.00    0.00
+  0.80    0.605    0.00    0.00
+  0.85    0.720    0.00    0.00
+  0.90    0.845    0.00    0.00
+  0.95    0.980    0.00    0.00
+  1.00    1.000    0.00    0.00  /
+
+SGOF
+--SG      KRG     KROG     PCOG
+  0.00    0.000   1.000    0.00
+  0.05    0.006   0.854    0.00
+  0.10    0.023   0.720    0.00
+  0.15    0.052   0.597    0.00
+  0.20    0.092   0.486    0.00
+  0.25    0.143   0.386    0.00
+  0.30    0.207   0.298    0.00
+  0.35    0.281   0.221    0.00
+  0.40    0.367   0.155    0.00
+  0.45    0.465   0.101    0.00
+  0.50    0.574   0.059    0.00
+  0.55    0.694   0.028    0.00
+  0.60    0.826   0.008    0.00
+  0.65    0.970   0.000    0.00
+  0.70    1.000   0.000    0.00
+  0.75    1.000   0.000    0.00  /
+
+------------------------------------------------------------------------
+
+STCOND
+--Temp   Pressure
+  60     14.7 /
+
+RTEMP
+ 120 /
+
+-- Chemical reaction data ----------------------------------------------
+
+STOREAC
+-- C32+C47  C20  C6-C12     O2  N2-COx  WATER
+         1    0       0  45.17       0      0 / reaction 1
+
+STOPROD
+-- C32+C47  C20  C6-C12     O2  N2-COx  WATER
+        0     0       0      0   37.46  29.71 / reaction 1
+
+REACRATE
+   3.4054E10         / reaction 1,2,3
+
+REACACT
+       32785         / reaction 1,2,3 (BTU/lb mol)
+
+REACENTH
+     8142400         / reaction 1,2,3 (BTU/lb mol)
+
+REACPHA
+-- C32+C47  C20  C6-C12     O2  N2-COx  WATER
+       OIL   1*      1*    GPP      1*     1* / reaction 1
+
+REACCORD
+-- C32+C47  C20  C6-C12     O2  N2-COx  WATER
+         2    0       0      1       0      0 / reaction 1
+
+
+
+SOLUTION ---------------------------------------------------------------
+
+
+PRESSURE
+20*815.0 /
+
+SGAS
+20*0.3 /
+
+SWAT
+20*0.3 /
+
+TEMPI
+ 4*500
+16*120 /
+
+
+NEI
+ 0.0602 0.1479 0.5087 0.0822 0.2011 /
+
+
+-- Output --------------------------------------------------------------
+
+RPTSOL
+PRESSURE SOIL SGAS SWAT MLSC XMF YMF /
+
+RPTRST
+BASIC=2 TEMP ENERGY REAC /
+
+SUMMARY  ---------------------------------------------------------------
+
+WBHP
+INJE PROD /
+
+WYMF
+PROD 4 /
+PROD 5 /
+/
+
+-- Rates
+
+FOPR
+FGIR
+FWIR
+FREAC
+/
+
+-- Totals
+
+FOPT
+FGIT
+FWIT
+FREAT
+/
+
+-- Performance
+
+PERFORMANCE
+
+--  Run summary file
+
+RUNSUM
+RPTONLY
+ALL
+SEPARATE
+SCHEDULE ---------------------------------------------------------------
+
+-- Output --------------------------------------------------------------
+
+RPTSCHED
+PRESSURE SOIL SGAS MLSC TEMP ENERGY REAC /
+
+RPTRST
+BASIC=2 TEMP ENERGY REAC /
+
+
+-- Convergence & time step criteria ------------------------------------
+
+CVCRIT
+.005 10 4* .0005 0.5 /   Need tight convergence criteria for small cells
+
+TSCRIT
+1.0E-8 1.0E-9 7* 10.0  /    Need small time steps for small cells & combustion
+
+
+-- Well controls -------------------------------------------------------
+
+-- Define air (20% O2, 80% N2)
+
+WELLSTRE
+  AIR 0.0 0.0 0.0 0.2 0.8 /
+/
+
+WELSPECS
+INJE 1* 1 1 0.00 GAS /
+PROD 1* 1 1 5.75 OIL /
+/
+
+COMPDAT
+INJE 1 1  1  1 OPEN 2* .01 /
+PROD 1 1 20 20 OPEN 2* .01 /
+/
+
+-- Inject warm dry air
+
+WCONINJE
+--                    Rate    BHP
+  INJE GAS OPEN RATE .1081 1* 2000 /
+/
+
+WINJGAS
+  INJE STREAM AIR /
+/
+
+WINJTEMP
+--        T   P
+  INJE 1* 120 815 /
+/
+
+--
+
+WCONPROD
+  PROD OPEN BHP 5* 815 /
+/
+
+-- Producer BHP = initial field pressure => well will close prematurely
+-- therefore test the well:
+
+WTEST
+PROD .00001 P  /
+/
+
+TSTEP
+.007 .007 .007 /
+
+-- Inject warm wet air
+
+WCONINJE
+--                          Rate    BHP      Gas/Water
+  INJE STEAM-GAS OPEN RATE .0557 1* 2000 3*  1.9408 /
+/
+
+WINJGAS
+  INJE STREAM AIR /
+/
+
+WINJTEMP
+--        T   P
+  INJE 1* 120 815 /
+/
+
+--
+
+TSTEP
+.007 .007 .007 /
+
+SAVE
+
+TSTEP
+10*.042 /
+
+
+END      ---------------------------------------------------------------

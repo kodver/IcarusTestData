@@ -1,0 +1,203 @@
+--
+-- This deck contains 
+--  - GETSOL
+--  - Restart based on SPE1_ODEH_LGR
+--
+
+
+RUNSPEC
+
+FIELD
+
+DIMENS
+10 10 3 /
+
+COMPS
+9 /
+
+WATER
+
+ISGAS
+
+FMTIN
+
+GRID
+
+EQUALS
+DX 300            /
+DY 300            / 
+DZ 20             /
+PERMX 400         /
+PERMY 400         /
+PERMZ 400         /
+PORO 0.13         /
+TOPS 7000 4* 1  1 /
+/
+
+CARFIN
+A 2 2 2 2 1 1 4 4 4 /
+ENDFIN
+
+--Properties section-----------------------------------------------
+
+PROPS
+
+NCOMPS
+9 /
+
+EOS
+P /
+
+-- Component names, same for all three EoS regions
+
+CNAMES
+CO2 N2 C1 C2 C3 C4-6 C7+1 C7+2 C7+3 /
+
+--Component properties by EoS region
+
+TCRIT
+548.4 227.1 343.0 549.7 665.6 806.54 838 1058 1291 /
+
+PCRIT
+1071 492 667 708 618 514 410 247 160 /
+
+ZCRIT
+0.270 0.290 0.280 0.280 0.270 0.270 0.260 0.220 0.200  /
+
+ACF
+0.225 0.04 0.013 0.09 0.152 0.21 0.31 0.53 0.91 /
+
+MW
+44.01 28.01 16.04 30.07 44.09 66.86 107.77 198.56 335.19 /
+
+OMEGAA
+2*0.45723 0.53402 0.45723 0.45723 0.45723 0.63733 0.63733 0.63733 /
+
+OMEGAB
+6*0.0777961 3*0.0872878 /
+
+BIC
+-0.0200
+ 0.1000  .0360
+ 0.1300  .0500  .000000
+ 0.1350  .0800  .000000  .000
+ 0.1277  .1002  .092810  .000 .000
+ 0.1000  .1000  .130663  .006 .006 .0
+ 0.1000  .1000  .130663  .006 .006 .0 .0
+ 0.1000  .1000  .130663  .006 .006 .0 .0 .0 /
+
+RTEMP
+210.0 /
+
+--Initial compostions by equilbration region
+
+ZMFVD
+1.0 .0121 .0194 .6599 .0869 .0591 .0967 .04745 .01515 .0033 /
+
+SWFN
+0.16  0      5
+0.18  0      4
+1.00  1.000  0 /
+
+SGFN
+0.00  0.000  0.0
+0.04  0.005  0.0
+0.84  0.740  0.0
+/
+
+SOF3
+0.00  0.000  0.000
+0.24  0.000  0.000
+0.28  0.005  0.005
+0.84  0.800  0.800 /
+
+ROCK
+3550 0.000004 /
+
+PVTW
+3550 1.0 0.000003 0.31 0.0 /
+
+DENSITY
+1* 63.0 1* /
+
+SOLUTION
+
+NEI
+0.0121 .0194 .6599 .0869 .0591 .0967 .04745 .01515 .0033 /
+
+GETSOL
+PRESSURE SPE1_ODEH_LGR 10 /
+SWAT     SPE1_ODEH_LGR 10 /
+SGAS     SPE1_ODEH_LGR 10 /
+/
+
+OUTSOL
+PRESSURE SOIL /
+
+FIELDSEP
+1 80 815 /
+2 80  65 /
+3 60 14.7 /
+/
+
+SUMMARY
+ALL
+RUNSUM
+
+--Schedule section------------------------------------------------------
+
+RPTONLY
+SCHEDULE
+
+NSTACK
+30 /
+
+SEPCOND
+SEP FIELD 1 80 815  /
+SEP FIELD 2 80  65  /
+SEP FIELD 3 60 14.7 /
+/
+
+--2000a WELLSPEC is used for back-compatibility, prefered keyword is WELSPECS
+--WELLSPEC
+--P1 FIELD 1 1 7400 SEP /
+--P2 FIELD 1 1 7400 SEP /
+--P3 FIELD 1 1 7400 SEP /
+WELSPECS
+P1 FIELD 1 1 7400 GAS /
+P2 FIELD 1 1 7400 GAS /
+P3 FIELD 1 1 7400 GAS /
+/
+--2000a uses WELSEPC to associate separator with wells
+WSEPCOND
+P1  SEP /
+P2  SEP /
+P3  SEP /
+/
+
+--2000a WELLCOMP is for back-compatibility, prefered keyword is COMPDAT
+--WELLCOMP
+--P1 1 1 1 1 1 /
+--P2 1 1 2 2 1 /
+--P3 1 1 3 3 1 /
+COMPDAT
+P1 1 1 1 1 OPEN 1 /
+P2 1 1 2 2 OPEN 1 /
+P3 1 1 3 3 OPEN 1 /
+/
+
+--2000a WELLPROD is for back-compatibility, prefered keyword is WCONPROD
+--WELLPROD
+--P1 WG 7* 5000 /
+--P2 WG 7* 5000 /
+--P3 WG 7* 5000 /
+WCONPROD
+P1 OPEN WGRA 9* 5000 /
+P2 OPEN WGRA 9* 5000 /
+P3 OPEN WGRA 9* 5000 /
+/
+
+TSTEP
+10*100 /
+
+END

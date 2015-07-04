@@ -1,0 +1,228 @@
+------------------------------------------------------------------------
+--                                                                    --
+-- Foamy oil example                                                  --
+--                                                                    --
+-- THERM10A.DATA - no foamy oil, conventional flash                   --
+-- THERM10B.DATA - no foamy oil, reactions replacing flash            --
+-- THERM10.DATA  - foamy oil   , reactions replacing flash            --
+-- THERM10C.DATA - foamy solids, reactions replacing flash            --
+-- THERM10.GRF   - GRF for use with Graf or Office                    --
+--                                                                    --
+--                                                                    --
+-- Last modified April 2003                                           --
+--                                                                    --
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+-- Modification date: 	January 2007
+-- Changes:			TSCRIT out 
+-- Result:			Speed-up ~1.15
+------------------------------------------------------------------------
+
+RUNSPEC   ========================================
+
+FIELD
+
+DIMENS
+11 11 4 /
+
+WATER
+OIL
+GAS
+
+THERMAL
+
+COMPS
+2       /
+
+
+GRID      ========================================
+
+DXV
+      11*10  / ft
+DYV
+      11*10  / ft
+DZV
+       4*10  / ft
+TOPS
+     121*1500 / ft
+
+PORO
+ 121*0.3     121*0.3     121*0.3     121*0.3     /
+PERMX
+ 121*2000.0  121*500.0   121*1000.0  121*2000.0  / mD
+PERMY
+ 121*2000.0  121*500.0   121*1000.0  121*2000.0  / = PERMX
+PERMZ
+ 121*1000.0  121*250.0   121*500.0   121*1000.0  / = PERMX / 2
+THCONR
+ 121*24.0    121*24.0    121*24.0    121*24.0    / Btu/ft/D/F
+HEATCR
+ 121*35.0    121*35.0    121*35.0    121*35.0    / Btu/ft3/F
+
+
+PROPS     ========================================
+
+-- Rock fluid properties
+
+SWFN
+   .4500   .0000   0.0
+   .4900   .0003   0.0
+   .5300   .0018   0.0
+   .5700   .0049   0.0
+   .6100   .0101   0.0
+   .6500   .0177   0.0
+   .6900   .0279   0.0
+   .7300   .0410   0.0
+   .7700   .0572   0.0
+   .8100   .0768   0.0
+   .8500   .1000   0.0
+  1.0000   .1000   0.0
+ /
+SGFN
+   .0000   .0000   0.0
+   .0001   .00002  0.0
+  1.0000   .2000   0.0
+ /
+SOF3
+   .0000   .0000   .0000
+   .1000   .0000   .0000
+   .1500   .0000   .0049
+   .1900   .0040   .0160
+   .2300   .0160   .0334
+   .2700   .0360   .0571
+   .3100   .0640   .0871
+   .3500   .1000   .1235
+   .3900   .1440   .1661
+   .4300   .1960   .2151
+   .4700   .2560   .2704
+   .5100   .3240   .3320
+   .5500   .4000   .4000
+  1.0000   .4000   .4000
+ /
+
+-- Component properites
+
+
+CNAMES
+         HEAVY    GAS      /
+MW
+         450      30.07    /
+KVCR
+         212      0     
+         1.554E5  170400
+         0        0     
+         4000     3062  
+         480      0        /
+TCRIT
+         1409.67  549.7    /
+PCRIT
+         140.     708.2    /
+CREF
+         5.0E-5   5.0E-5   /
+DREF
+         57.6     39.375   /
+THERMEX1
+         3.7E-4   3.7E-4   /
+ZFACTOR
+         0.97     0.96     /
+SPECHA
+         .55      .55      /
+HEATVAP
+         100.0    0        /
+OILVISCT
+ 75       106      2.3
+100        91      2.0     /
+GASVISCT
+ 75     0.0285    .0143
+100     0.0297    .0149    /
+
+
+
+STCOND
+60 14.7 /
+
+
+PVTW
+--  Pref       Bw        Cw          Vw        Cvw       
+--  PSIA       RB/STB    1/PSI       CPOISE    1/PSI       
+    75.000     1.0       3.E-08      .3        7.E-09 /                                                                      
+
+ROCK
+75.0  5.0E-04  /
+
+ZMFVD
+ 1500.0  0.87  0.13 /
+
+TEMPVD
+  1300.0  75.0
+  1700.0  75.0  /
+
+
+
+SOLUTION  ========================================
+
+EQUIL
+--  Ddat    Pdat     Dwoc    Pcog    Dgoc    Pgoc  It1  It2  Iac Iin
+1500.0      75.0     1600.0  0.0     1500.0  0.0   1     1    0   1  /
+
+RPTRST
+PRES TEMP SOIL SWAT /
+
+RPTSOL
+PRES MLSC ENERGY TEMP SOIL SGAS SWAT PSAT /
+
+
+SUMMARY   ========================================
+
+ALL
+
+PERFORMANCE
+
+RUNSUM
+
+
+RPTONLY
+SCHEDULE  ========================================
+
+
+-- Output
+
+RPTSCHED
+PRES MLSC TEMP SOIL SWAT SGAS XMF YMF /
+
+
+-- Numerical control
+
+CVCRIT
+ 1* 15 6* 2 /
+
+--TSCRIT
+--initT minT maxT maxInc/Dec targTTE maxTTE TTPT MTPT TSCT MxWT
+--  .1   .0001 10.0   1*   1*     10     100    1*  1*  10.0  0.5
+--maxPT maxSC ATPT SACT maxSA TEMT maxTEM
+--  1*    50    1*   0.5  1*    50  500 /
+
+
+-- Well definition
+
+WELSPECS
+PROD  FIELD  6 6 1* OIL  /
+/
+
+COMPDAT
+PROD   6 6 1 4 OPEN  1 1* 0.6 /
+/
+
+
+-- Well controls and time steps
+
+WCONPROD
+PROD  OPEN BHP 5* 17 /
+/
+
+TSTEP
+ 31 28 31 30 31 30 31 31 30 31 30 31 /
+
+
+END

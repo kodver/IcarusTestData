@@ -1,0 +1,825 @@
+------------------------------------------------------------------------
+--                                                                    --
+-- SPE 78131 case study 1                                             --
+--                                                                    --
+-- Thermal multi-segment well example                                 --
+--    * recirculating wells                                           --
+--    * heat conduction tubing <-> casing <-> formation               --
+--    * homogeneous                                                   --
+--    * rel perm and viscosity similar to Lloydminster                --
+--                                                                    --
+--                                                                    --
+-- Last modified April 2003                                           --
+--                                                                    --
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+-- Modification date: 	January 2007
+-- Changes:			TSCRIT out 
+-- Result:			Speed-up ~1.7
+------------------------------------------------------------------------
+
+RUNSPEC   ==============================================================
+
+TITLE
+3-D SAGD with Multi-Segment Well Model, Homogeneous
+
+METRIC
+
+DIMENS
+   20    12    15 /
+
+WATER
+OIL
+GAS
+
+COMPS
+   2 /
+
+THERMAL
+
+HWELLS
+
+ROCKDIMS
+   1   1*   2 /
+
+TABDIMS
+   1   1   25   25 /
+
+WSEGDIMS
+   4   12  1 /
+
+GRID      ==============================================================
+
+INIT
+
+DXV
+   0.75 19*1.5 /
+
+DYV
+   12*50.0 /
+
+DZV
+   15*1.5 /
+
+TOPS
+   240*500.0 /
+
+PORO
+   3600*0.34 /
+
+PERMX
+   3600*5000 /
+
+COPY
+   PERMX   PERMY /
+   PERMX   PERMZ /
+/
+
+HEATCR   
+   3600*7.4E2 /
+
+HEATCRT
+   3600*2.0    /
+
+THCONR   
+   3600*2.1E2 /
+
+ROCKPROP
+   1   18   1.496E2   2.35E3   0  N /
+/
+
+ROCKCON
+   1   1   20   1  12   1   1   'K-'   /   top
+   1   1   20   1  12  15  15   'K+'   /   bottom
+/
+
+
+PROPS     ==============================================================
+
+CNAMES
+   HEAVY   METHANE /
+
+KVCR
+     0  0.
+     0  5.45E3
+     0  0
+     0  879.8
+     0  7.01
+/
+
+MW
+   378.0     16.04 /
+
+DREF
+  979.0 304.8 /
+
+-- Component liquid specific heat coefficients - Kj/Kg/K
+SPECHA
+ 2.0   4.19 /
+
+-- Component vapour specific heat coefficients - Kj/Kg/K
+SPECHG
+ 0.0   2.19 /
+
+-- Heats of Vapourisation at standard temperature - Kj/Kg
+HEATVAPS
+ 0.0  110.3 /
+
+PCRIT
+   9.0  46.0 /
+
+TCRIT
+   10000.0   190.45 /
+
+DENSITY
+-- kg/m3 at surface conditions
+--   oil         water          gas
+     1*        998.2            1* /
+
+CREF
+   8.63E-5   7.10E-5 /
+
+THERMEX1
+   5.58E-4   5.40E-4 /
+
+OILVISCT
+    18      25573     35.2
+    25      12726     30.0
+    50       1696     18.57
+    75        384     13.03
+   100        123.2    9.80
+   125         50.4    7.10
+   150         24.5    5.60
+   200         8.3     3.70
+   250         3.8     2.70
+   300         2.2     2.00
+   350         1.2     1.20
+ 10000         1.15    1.15 /
+
+
+GASVISCT
+ 10   1.0 0.013979
+ 20   1.0 0.014360
+ 30   1.0 0.014740
+ 40   1.0 0.015120
+ 50   1.0 0.015500
+ 60   1.0 0.015880
+ 70   1.0 0.016260
+ 80   1.0 0.016410
+100   1.0 0.017401
+125   1.0 0.018351
+150   1.0 0.019302
+175   1.0 0.020252
+250   1.0 0.023103
+275   1.0 0.024054
+1000  1.0 0.051615
+/
+
+STCOND
+   17. 1.0 /
+
+TREF
+   290.0 290.0 /
+PREF
+   1. 1./
+
+SWOF
+ 
+-- these from Wang and Chen
+ 
+--Sw           Krw          Kro          Pc
+  0.000000     0.000000     1.000000     0.000000
+  0.010000     0.000000     0.500000     0.000000
+  0.100000     0.000000     0.300000     0.000000
+  0.200000     0.020000     0.170000     0.000000
+  0.300000     0.040000     0.100000     0.000000
+  0.400000     0.070000     0.040000     0.000000
+  0.500000     0.120000     0.010000     0.000000
+  0.600000     0.180000     0.000000     0.000000
+  0.700000     0.270000     0.000000     0.000000
+  0.800000     0.510000     0.000000     0.000000
+  0.880000     0.710000     0.000000     0.000000
+  1.000000     1.000000     0.000000     0.000000
+/
+ 
+ 
+SLGOF
+ 
+-- these from Wang and Chen
+ 
+--Sliq         Krg          Kro          Pc
+  0.000000     1.000000     0.000000     0.000000
+  0.010000     0.970000     0.000000     0.000000
+  0.020000     0.940000     0.000000     0.000000
+  0.120000     0.910000     0.000000     0.000000
+  0.200000     0.870000     0.000000     0.000000
+  0.300000     0.700000     0.000000     0.000000
+  0.400000     0.460000     0.010000     0.000000
+  0.500000     0.200000     0.040000     0.000000
+  0.600000     0.060000     0.100000     0.000000
+  0.700000     0.020000     0.170000     0.000000
+  0.800000     0.000000     0.300000     0.000000
+  0.880000     0.000000     0.500000     0.000000
+  1.000000     0.000000     1.000000     0.000000
+/
+
+
+ROCK
+ 1.   2.6E-4 /
+
+RTEMP
+ 18 /
+
+
+SOLUTION  ==============================================================
+
+PRESSURE
+   3600*33.50 /
+
+TEMPI
+   3600*18 /
+
+SGAS
+   3600*0.01 /
+
+SWAT
+   3600*0.10 /
+
+XMF
+3600*0.8  3600*0.2  3600*0.0/
+
+YMF
+3600*0.0  3600*1.0  3600*0.0/
+
+RPTRST
+   PRES   TEMP   SOIL   SWAT   SGAS   YMF /
+
+
+SUMMARY   ==============================================================
+
+
+-- FIELD DATA
+
+FPR
+FOPR
+FOPT
+FWPR
+FWPT
+FGPR
+FGPT
+FWIR
+FWIT
+FSTPR
+FSTPT
+FHLR
+FHLT
+
+-- WELL DATA
+
+WBHP
+HORI
+HORP
+HORI2
+HORP2 /
+
+WTEMP
+HORI
+HORP
+HORI2
+HORP2 /
+
+WSTPR
+HORP
+HORP2 /
+
+WSTPT
+HORP
+HORP2 /
+
+
+-- SEGMENT DATA
+
+SPR
+HORI /
+HORP /
+HORI2 /
+HORP2 /
+/
+
+SHFR
+HORI /
+HORP /
+HORI2 /
+HORP2 /
+/
+
+SENE
+HORI /
+HORP /
+HORI2 /
+HORP2 /
+/
+
+STEM
+HORI /
+HORP /
+HORI2 /
+HORP2 /
+/
+
+SSQU
+HORI /
+HORP /
+HORI2 /
+HORP2 /
+/
+
+-- PERFORMANCE DATA
+
+PERFORMANCE
+
+-- RUN SUMMARY FILE
+
+RUNSUM
+   
+RPTONLY
+SCHEDULE  ==============================================================
+
+MESSAGES
+ 10* 2*10 /
+
+--TSCRIT
+--initT minT   maxT maxInc/Dec targTTE maxTTE  TTPT MTPT TSCT MxWT
+--   .01   0.0001  20   1.5   1*      1*     1*     1*  1*  .95  0.1
+--maxPT maxSC ATPT SACT maxSA TEMT maxTEM
+--  1*    1*    1*   0.4  1*    120  500 /
+
+CVCRIT
+ 1* 15 6* 2 /
+
+RPTPRINT
+  1 1 0 0 0   1 1 1 0 0 /
+
+RPTSCHED
+  TEMP  PRES  SOIL  SWAT  SGAS /
+
+--==============================================================================
+--
+-- Two slightly undulating horizontal wells with tubing inside casing
+-- Initially flow is out through the tubing & back through the casing
+--
+--
+--
+--        v Well HORI
+--        |
+--	  |
+--        + ----+ ----+ ----+ ----+ ----+  (+ segment nodes  1-6: tubing)
+--                                      |
+--   <--- +---- +---- +---- +---- +---- +  (+ segment nodes 12-7: casing)
+--   Sink   
+--
+--
+--        v Well HORP
+--        |
+--	  |
+--        + ----+ ----+ ----+ ----+ ----+  (+ segment nodes  1-6: tubing)
+--                                      |
+--   <--- +---- +---- +---- +---- +---- +  (+ segment nodes 12-7: casing)
+--   Sink   
+--
+--
+--==============================================================================
+
+WELSPECS
+-- Location of horizontal well heads
+   HORI   FIELD   1    1  1* WAT /
+   HORP   FIELD   1    1  1* WAT /
+   HORI2  FIELD   1    1  1* WAT /
+   HORP2  FIELD   1    1  1* OIL/
+/
+
+COMPDAT
+-- well    - location -   open   satn  trans   well  kh    S    D    direct
+-- name    i  j  k1 k2   shut   tab   factor  diam
+ HORI      1  1  11 11  'SHUT'   1     1*     0.22  3*              Y    /
+ HORI      1  2  11 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI      1  3  11 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI      1  4  11 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI      1  5  11 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI      1  6  10 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI      1  7  10 10  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI      1  8  10 10  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI      1  9  10 10  'OPEN'   1     1*     0.22  3*              Y    /
+--
+ HORP      1  1  15 15  'SHUT'   1     1*     0.22  3*              Y    /
+ HORP      1  2  15 15  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP      1  2  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP      1  3  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP      1  4  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP      1  5  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP      1  6  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP      1  7  13 13  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP      1  8  13 13  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP      1  9  13 13  'OPEN'   1     1*     0.22  3*              Y    /
+--
+ HORI2     1  1  11 11  'SHUT'   1     1*     0.22  3*              Y    /
+ HORI2     1  2  11 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI2     1  3  11 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI2     1  4  11 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI2     1  5  11 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI2     1  6  10 11  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI2     1  7  10 10  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI2     1  8  10 10  'OPEN'   1     1*     0.22  3*              Y    /
+ HORI2     1  9  10 10  'OPEN'   1     1*     0.22  3*              Y    /
+--
+ HORP2     1  1  15 15  'SHUT'   1     1*     0.22  3*              Y    /
+ HORP2     1  2  15 15  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP2     1  2  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP2     1  3  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP2     1  4  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP2     1  5  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP2     1  6  14 14  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP2     1  7  13 13  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP2     1  8  13 13  'OPEN'   1     1*     0.22  3*              Y    /
+ HORP2     1  9  13 13  'OPEN'   1     1*     0.22  3*              Y    /
+/
+
+
+-- Multiply all connection factors by 1/2 because
+-- the simulation is for only 1/2 the reservoir
+
+WPIMULT
+ HORI  0.5 /
+ HORP  0.5 /
+ HORI2 0.5 /
+ HORP2 0.5 /
+/
+
+
+-- Multiply connections by factors that represent 
+-- the fraction of the grid block that is penetrated
+
+WPIMULT
+--
+ HORI  .50  1  1  11 /
+ HORI  .67  1  6  11 /
+ HORI  .33  1  6  10 /
+ HORI  .50  1  9  10 /
+--
+ HORP  .50  1  1  15 /    
+ HORP  .25  1  2  15 /    
+ HORP  .75  1  2  14 /    
+ HORP  .50  1  9  13 /
+--
+ HORI2 .50  1  1  11 /
+ HORI2 .67  1  6  11 /
+ HORI2 .33  1  6  10 /
+ HORI2 .50  1  9  10 /
+--
+ HORP2 .50  1  1  15 /    
+ HORP2 .25  1  2  15 /    
+ HORP2 .75  1  2  14 /    
+ HORP2 .50  1  9  13 /
+/
+
+
+--==============================================================================
+--
+--
+-- Note: for an annulus, inner diameter d1, outer diameter d2
+--       inner radius is      r1 = d1/2
+--       outer radius is      r2 = d2/2
+--       area is              A  = pi.(r2.r2-r1.r1)
+--       hydraulic diameter   D  = r2-r1 (assuming annulus is a thin tube)
+--
+--
+-- Well tubing / casing inner/outer diameters
+-- ID tubing = 3"     = 0.0762m, x-s area = .00456m2
+-- OD tubing = 3.5"   = 0.0889m, x-s area = .00621m2
+-- ID casing = 8.625" = 0.2191m, x-s area = .03769m2
+-- OD casing = 9.5"   = 0.2413m, x-s area = .04573m2
+--
+-- x-s area of tubing  = .00621-.00456 = .00165m2
+-- x-s area of annulus = .03769-.00621 = .03149m2
+-- x-s area of casing  = .04573-.03769 = .00804m2
+--
+-- Hydraulic diameter of annulus = (0.2191-0.0889)/2 = 0.0651
+--
+--
+-- Use 1/2 areas for 1/2 grid
+--
+-- Volumetric heat of tubing / casing       300 kJ/m3/K
+-- Thermal conductivity of tubing / casing 1000 kJ/m/day/K
+--
+--==============================================================================
+
+
+WELSEGS
+--Name Node   Length  Vol Data          Tubing  Tubing Tubing
+--     Depth  to Node     Type          Area    Cp     K
+ HORI  516.5  1.0      1.  ABS 1* HO 2* 0.0008  300    0/
+--Start End  Branch Conn Length  Depth Diam    Rough   Area       Tubing Tubing Tubing   
+--Seg   Seg         Seg  from 0                                   area   Cp     K
+    2    2     1     1     76.0  515.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    3    3     1     2    176.0  516   0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    4    4     1     3    276.0  514.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    5    5     1     4    351.0  514   0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    6    6     1     5    401.0  514.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    7    7     1     6    401.1  514.5 0.0651  1.0E-3  .01574 3*  0.0008 300       0 /
+    8    8     1     7    451.1  514   0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+    9    9     1     8    526.1  514.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   10   10     1     9    626.1  516   0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   11   11     1    10    726.1  515.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   12   12     1    11    801.1  516.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+/
+
+
+WELSEGS
+--Name Node   Length  Vol Data          Tubing  Tubing Tubing
+--     Depth  to Node     Type          Area    Cp     K
+ HORP  521.5    1      1  ABS  1* HO 2* 0.0008  300    0/
+--Start End  Branch Conn Length  Depth Diam    Rough   Area       Tubing Tubing Tubing   
+--Seg   Seg         Seg  from 0                                   area   Cp     K
+    2    2     1     1     76.0  520.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    3    3     1     2    176.0  521   0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    4    4     1     3    276.0  519.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    5    5     1     4    351.0  519   0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    6    6     1     5    401.0  519.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    7    7     1     6    401.1  519.5 0.0651  1.0E-3  .01574 3*  0.0008 300       0 /
+    8    8     1     7    451.1  519   0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+    9    9     1     8    526.1  519.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   10   10     1     9    626.1  521   0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   11   11     1    10    726.1  520.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   12   12     1    11    801.1  521.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+/
+
+WELSEGS
+--Name Node   Length  Vol Data          Tubing  Tubing Tubing
+--     Depth  to Node     Type          Area    Cp     K
+ HORI2 516.5  1.0      1.  ABS 1* HO 2* 0.0008  300    0/
+--Start End  Branch Conn Length  Depth Diam    Rough   Area       Tubing Tubing Tubing   
+--Seg   Seg         Seg  from 0                                   area   Cp     K
+    2    2     1     1     76.0  515.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    3    3     1     2    176.0  516   0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    4    4     1     3    276.0  514.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    5    5     1     4    351.0  514   0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    6    6     1     5    401.0  514.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    7    7     1     6    401.1  514.5 0.0651  1.0E-3  .01574 3*  0.0008 300       0 /
+    8    8     1     7    451.1  514   0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+    9    9     1     8    526.1  514.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   10   10     1     9    626.1  516   0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   11   11     1    10    726.1  515.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   12   12     1    11    801.1  516.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+/
+
+
+WELSEGS
+--Name Node   Length  Vol Data          Tubing  Tubing Tubing
+--     Depth  to Node     Type          Area    Cp     K
+ HORP2 521.5    1      1  ABS  1* HO 2* 0.0008  300    0/
+--Start End  Branch Conn Length  Depth Diam    Rough   Area       Tubing Tubing Tubing   
+--Seg   Seg         Seg  from 0                                   area   Cp     K
+    2    2     1     1     76.0  520.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    3    3     1     2    176.0  521   0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    4    4     1     3    276.0  519.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    5    5     1     4    351.0  519   0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    6    6     1     5    401.0  519.5 0.0762  1.0E-3  .00228 3*  0.0008 300    1000 /
+    7    7     1     6    401.1  519.5 0.0651  1.0E-3  .01574 3*  0.0008 300       0 /
+    8    8     1     7    451.1  519   0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+    9    9     1     8    526.1  519.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   10   10     1     9    626.1  521   0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   11   11     1    10    726.1  520.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+   12   12     1    11    801.1  521.5 0.0651  1.0E-3  .01574 3*  0.0040 300    1000 /
+/
+
+
+COMPSEGS
+ HORI  /
+--  i  j   k  b                      thermal 
+--                                   contact
+--                                   length
+    1  1  11  1  776.2  801.1  Y  2* 25.0 /
+    1  2  11  1  726.2  776.1  Y  2* 50.0 /
+    1  3  11  1  676.2  726.1  Y  2* 50.0 /
+    1  4  11  1  626.2  676.1  Y  2* 50.0 /
+    1  5  11  1  576.2  626.1  Y  2* 50.0 /
+    1  6  11  1  542.9  576.1  Y  2* 33.3 /
+    1  6  10  1  526.2  542.8  Y  2* 16.7 /
+    1  7  10  1  476.2  526.1  Y  2* 50.0 /
+    1  8  10  1  426.2  476.1  Y  2* 50.0 /
+    1  9  10  1  401.2  426.1  Y  2* 25.0 /
+/
+
+
+COMPSEGS
+ HORP  /
+--  i  j   k  b                      thermal 
+--                                   contact
+--                                   length
+    1  1  15  1  776.2  801.1  Y  2* 25.0 /    
+    1  2  15  1  763.7  776.1  Y  2* 12.5 /    
+    1  2  14  1  726.2  763.6  Y  2* 37.5 /    
+    1  3  14  1  676.2  726.1  Y  2* 50.0 /
+    1  4  14  1  626.2  676.1  Y  2* 50.0 /
+    1  5  14  1  576.2  626.1  Y  2* 50.0 /
+    1  6  14  1  526.2  576.1  Y  2* 50.0 /
+    1  7  13  1  476.2  526.1  Y  2* 50.0 /
+    1  8  13  1  426.2  476.1  Y  2* 50.0 /
+    1  9  13  1  401.2  426.1  Y  2* 25.0 /
+/
+
+COMPSEGS
+ HORI2 /
+--  i  j   k  b                      thermal 
+--                                   contact
+--                                   length
+    1  1  11  1  776.2  801.1  Y  2* 25.0 /
+    1  2  11  1  726.2  776.1  Y  2* 50.0 /
+    1  3  11  1  676.2  726.1  Y  2* 50.0 /
+    1  4  11  1  626.2  676.1  Y  2* 50.0 /
+    1  5  11  1  576.2  626.1  Y  2* 50.0 /
+    1  6  11  1  542.9  576.1  Y  2* 33.3 /
+    1  6  10  1  526.2  542.8  Y  2* 16.7 /
+    1  7  10  1  476.2  526.1  Y  2* 50.0 /
+    1  8  10  1  426.2  476.1  Y  2* 50.0 /
+    1  9  10  1  401.2  426.1  Y  2* 25.0 /
+/
+
+
+COMPSEGS
+ HORP2 /
+--  i  j   k  b                      thermal 
+--                                   contact
+--                                   length
+    1  1  15  1  776.2  801.1  Y  2* 25.0 /    
+    1  2  15  1  763.7  776.1  Y  2* 12.5 /    
+    1  2  14  1  726.2  763.6  Y  2* 37.5 /    
+    1  3  14  1  676.2  726.1  Y  2* 50.0 /
+    1  4  14  1  626.2  676.1  Y  2* 50.0 /
+    1  5  14  1  576.2  626.1  Y  2* 50.0 /
+    1  6  14  1  526.2  576.1  Y  2* 50.0 /
+    1  7  13  1  476.2  526.1  Y  2* 50.0 /
+    1  8  13  1  426.2  476.1  Y  2* 50.0 /
+    1  9  13  1  401.2  426.1  Y  2* 25.0 /
+/
+
+
+--==============================================================================
+--
+-- Heat loss, tubing-casing and casing-formation
+--
+-- Resistance = ln(router/rinner)/K/(2Pi)
+--
+-- For 1/2 pipe use twice the resistance
+--
+--==============================================================================
+
+
+WSEGHEAT
+ HORI  1  1 SEG  .02 12 2*  37.5 /
+ HORI  2  2 SEG  .02 11 2*  87.5 /
+ HORI  3  3 SEG  .02 10 2* 100.0 /
+ HORI  4  4 SEG  .02  9 2*  87.5 /
+ HORI  5  5 SEG  .02  8 2*  62.5 /
+ HORI  6  6 SEG  .02  7 2*  25.0 /
+ HORI  7 12 COMP .02             /
+----
+ HORP  1  1 SEG  .02 12 2*  37.5 /
+ HORP  2  2 SEG  .02 11 2*  87.5 /
+ HORP  3  3 SEG  .02 10 2* 100.0 /
+ HORP  4  4 SEG  .02  9 2*  87.5 /
+ HORP  5  5 SEG  .02  8 2*  62.5 /
+ HORP  6  6 SEG  .02  7 2*  25.0 /
+ HORP  7 12 COMP .02             /
+--
+ HORI2 1  1 SEG  .02 12 2*  37.5 /
+ HORI2 2  2 SEG  .02 11 2*  87.5 /
+ HORI2 3  3 SEG  .02 10 2* 100.0 /
+ HORI2 4  4 SEG  .02  9 2*  87.5 /
+ HORI2 5  5 SEG  .02  8 2*  62.5 /
+ HORI2 6  6 SEG  .02  7 2*  25.0 /
+ HORI2 7 12 COMP .02             /
+----
+ HORP2 1  1 SEG  .02 12 2*  37.5 /
+ HORP2 2  2 SEG  .02 11 2*  87.5 /
+ HORP2 3  3 SEG  .02 10 2* 100.0 /
+ HORP2 4  4 SEG  .02  9 2*  87.5 /
+ HORP2 5  5 SEG  .02  8 2*  62.5 /
+ HORP2 6  6 SEG  .02  7 2*  25.0 /
+ HORP2 7 12 COMP .02             /
+/
+
+--==============================================================================
+--
+-- First 60 days: 2 recirculating steam wells to heat the reservoir
+--
+--==============================================================================
+
+WCONINJE
+--Well Type  ...  Init Rate  Res BHP
+  HORI WATER OPEN BHP  60.0  1*  40 /
+  HORP WATER OPEN BHP  60.0  1*  40 /
+/
+
+WINJTEMP
+--Well SQ   Temp
+  HORI 0.65 250  /
+  HORP 0.65 250  /
+/
+
+WSEGEXSS
+ HORI 12 WREMP 60 100 32 /
+ HORP 12 WREMP 60 100 32 /
+/
+
+WTEST
+ HORP 0.1 P /
+ HORI 0.1 P /
+/
+
+TIME
+ 1 20 40 60 /
+
+SAVE
+END
+
+
+--==============================================================================
+--
+-- After 60 days: start steam injection in top well HORI, 
+--                start producing from lower well HORP.
+--
+-- Maximum steam injection pressure        = 50 bar
+-- Maximum steam injection rate            = 1200 sm3/d
+-- Steam quality = 65%, steam temperatutre = 250 C
+--
+-- Minimum production pressure             = 30 bar
+-- Maximum liquid production rate          = 1200 sm3/d
+-- Maximum steam production rate           = 120 sm3/d (CWE)
+--
+-- Use 1/2 rates
+--
+--==============================================================================
+
+WSEGEXSS
+ HORI 12 /
+ HORP 12 /
+/
+
+WELOPEN
+ HORI  SHUT /
+ HORP  SHUT /
+/
+
+WCONINJE
+--Well  Type  ...  Init Rate   Res BHP
+  HORI2 WATER OPEN BHP  600.0  1*  50 /
+/
+
+WINJTEMP
+--Well  SQ   Temp
+  HORI2 0.65 250  /
+/
+
+WCONPROD
+--Well  ...  Init Oil Wat Gas Liq Res BHP ... Steam
+  HORP2 OPEN LRAT 1*  1*  1*  600 1*  30  5*  60 /
+/
+
+
+--==============================================================================
+--
+-- NB: A small time step here may shut the producer. When
+--     the pressure is reduced, water from the reservoir
+--     enters the well, causing the steam to condense. No
+--     fluid is produced. If the producer shuts the injector
+--     may shut too. Therefore test both wells.
+--
+--==============================================================================
+
+NEXT 
+.0001/
+
+WTEST
+ HORP2 0.1 P 20 /
+ HORI2 0.1 P 20 /
+/
+
+-- Year 1
+TIME
+ 80 100 120 140 160 180 200 220 240 260 280 300 320 340 365 /
+
+-- Year 2
+TIME
+  456.25 547.5 638.75 730 /
+
+-- Year 3
+TIME
+ 821.25 912.5 1003.75 1095/
+
+-- Year 4 - 25
+TIME
+ 1460 1825 2190 2555 2920 3285 3650 4380 5475 7300 9125/
+
+END
