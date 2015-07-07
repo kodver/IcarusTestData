@@ -1,8 +1,4 @@
 <eclipse>
-<warning date="1/1/0" time="0.00000000000000">
- SPURIOUS DATA BEFORE RUNSPEC  KEYWORD                                   
- -&gt;The fifth SPE comparison problem , reported by Killough and Ko     
-</warning>
 <error date="1/1/0" time="0.00000000000000">
  UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                           
 </error>

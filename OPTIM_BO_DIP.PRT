@@ -171,7 +171,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           MAXIMUM GAS RE-SOLUTION RATE IS DEFAULTED TO INFINITY.          
 1                             **********************************************************************   1
   SIMULATE AT     0.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   0     1 JAN 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP    1 TIME=   14.40  MINS (+14.40  MINS INIT  2 ITS) (1-JAN-1990)           
@@ -205,7 +205,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     1                             
 1                             **********************************************************************   2
   SIMULATE AT    30.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   1    31 JAN 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   1    31 JAN 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   10 TIME=   40.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (10-FEB-1990)          
@@ -221,7 +221,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     2                             
 1                             **********************************************************************   3
   SIMULATE AT    60.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   2     2 MAR 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   2     2 MAR 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   13 TIME=   70.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (12-MAR-1990)          
@@ -237,7 +237,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     3                             
 1                             **********************************************************************   4
   SIMULATE AT    90.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   3     1 APR 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   3     1 APR 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   16 TIME=  100.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (11-APR-1990)          
@@ -253,7 +253,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     4                             
 1                             **********************************************************************   5
   SIMULATE AT   120.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   4     1 MAY 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   4     1 MAY 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   19 TIME=  130.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (11-MAY-1990)          
@@ -269,7 +269,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     5                             
 1                             **********************************************************************   6
   SIMULATE AT   150.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   5    31 MAY 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   5    31 MAY 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   22 TIME=  160.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (10-JUN-1990)          
@@ -285,7 +285,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     6                             
 1                             **********************************************************************   7
   SIMULATE AT   180.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   6    30 JUN 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   6    30 JUN 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   25 TIME=  190.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (10-JLY-1990)          
@@ -301,7 +301,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     7                             
 1                             **********************************************************************   8
   SIMULATE AT   210.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   7    30 JLY 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   7    30 JLY 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   28 TIME=  220.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (9-AUG-1990)           
@@ -317,7 +317,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     8                             
 1                             **********************************************************************   9
   SIMULATE AT   240.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   8    29 AUG 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   8    29 AUG 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   31 TIME=  250.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (8-SEP-1990)           
@@ -333,7 +333,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     9                             
 1                             **********************************************************************  10
   SIMULATE AT   270.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT   9    28 SEP 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT   9    28 SEP 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   34 TIME=  280.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (8-OCT-1990)           
@@ -349,7 +349,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    10                             
 1                             **********************************************************************  11
   SIMULATE AT   300.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  10    28 OCT 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  10    28 OCT 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   37 TIME=  310.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (7-NOV-1990)           
@@ -365,7 +365,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    11                             
 1                             **********************************************************************  12
   SIMULATE AT   330.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  11    27 NOV 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  11    27 NOV 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   40 TIME=  340.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (7-DEC-1990)           
@@ -381,7 +381,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    12                             
 1                             **********************************************************************  13
   SIMULATE AT   360.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  12    27 DEC 1990   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  12    27 DEC 1990   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   43 TIME=  370.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (6-JAN-1991)           
@@ -397,7 +397,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    13                             
 1                             **********************************************************************  14
   SIMULATE AT   390.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  13    26 JAN 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  13    26 JAN 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   46 TIME=  400.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (5-FEB-1991)           
@@ -413,7 +413,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    14                             
 1                             **********************************************************************  15
   SIMULATE AT   420.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  14    25 FEB 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  14    25 FEB 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   49 TIME=  430.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (7-MAR-1991)           
@@ -429,7 +429,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    15                             
 1                             **********************************************************************  16
   SIMULATE AT   450.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  15    27 MAR 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  15    27 MAR 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   52 TIME=  460.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (6-APR-1991)           
@@ -445,7 +445,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    16                             
 1                             **********************************************************************  17
   SIMULATE AT   480.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  16    26 APR 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  16    26 APR 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   55 TIME=  490.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (6-MAY-1991)           
@@ -461,7 +461,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    17                             
 1                             **********************************************************************  18
   SIMULATE AT   510.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  17    26 MAY 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  17    26 MAY 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   58 TIME=  520.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (5-JUN-1991)           
@@ -477,7 +477,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    18                             
 1                             **********************************************************************  19
   SIMULATE AT   540.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  18    25 JUN 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  18    25 JUN 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   61 TIME=  550.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (5-JLY-1991)           
@@ -493,7 +493,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    19                             
 1                             **********************************************************************  20
   SIMULATE AT   570.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  19    25 JLY 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  19    25 JLY 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   64 TIME=  580.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (4-AUG-1991)           
@@ -509,7 +509,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    20                             
 1                             **********************************************************************  21
   SIMULATE AT   600.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  20    24 AUG 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  20    24 AUG 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   67 TIME=  610.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (3-SEP-1991)           
@@ -525,7 +525,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    21                             
 1                             **********************************************************************  22
   SIMULATE AT   630.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  21    23 SEP 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  21    23 SEP 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   70 TIME=  640.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (3-OCT-1991)           
@@ -541,7 +541,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    22                             
 1                             **********************************************************************  23
   SIMULATE AT   660.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  22    23 OCT 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  22    23 OCT 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   73 TIME=  670.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (2-NOV-1991)           
@@ -557,7 +557,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    23                             
 1                             **********************************************************************  24
   SIMULATE AT   690.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  23    22 NOV 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  23    22 NOV 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   76 TIME=  700.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (2-DEC-1991)           
@@ -573,7 +573,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    24                             
 1                             **********************************************************************  25
   SIMULATE AT   720.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  24    22 DEC 1991   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  24    22 DEC 1991   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   79 TIME=  730.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (1-JAN-1992)           
@@ -589,7 +589,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    25                             
 1                             **********************************************************************  26
   SIMULATE AT   750.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  25    21 JAN 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  25    21 JAN 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   82 TIME=  760.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (31-JAN-1992)          
@@ -605,7 +605,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    26                             
 1                             **********************************************************************  27
   SIMULATE AT   780.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  26    20 FEB 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  26    20 FEB 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   85 TIME=  790.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (1-MAR-1992)           
@@ -621,7 +621,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    27                             
 1                             **********************************************************************  28
   SIMULATE AT   810.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  27    21 MAR 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  27    21 MAR 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   88 TIME=  820.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (31-MAR-1992)          
@@ -637,7 +637,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    28                             
 1                             **********************************************************************  29
   SIMULATE AT   840.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  28    20 APR 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  28    20 APR 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   91 TIME=  850.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (30-APR-1992)          
@@ -653,7 +653,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    29                             
 1                             **********************************************************************  30
   SIMULATE AT   870.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  29    20 MAY 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  29    20 MAY 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   94 TIME=  880.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (30-MAY-1992)          
@@ -669,7 +669,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    30                             
 1                             **********************************************************************  31
   SIMULATE AT   900.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  30    19 JUN 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  30    19 JUN 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP   97 TIME=  910.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (29-JUN-1992)          
@@ -685,7 +685,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    31                             
 1                             **********************************************************************  32
   SIMULATE AT   930.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  31    19 JLY 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  31    19 JLY 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  100 TIME=  940.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (29-JLY-1992)          
@@ -701,7 +701,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    32                             
 1                             **********************************************************************  33
   SIMULATE AT   960.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  32    18 AUG 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  32    18 AUG 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  103 TIME=  970.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (28-AUG-1992)          
@@ -717,7 +717,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    33                             
 1                             **********************************************************************  34
   SIMULATE AT   990.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  33    17 SEP 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  33    17 SEP 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  106 TIME= 1000.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (27-SEP-1992)          
@@ -733,7 +733,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    34                             
 1                             **********************************************************************  35
   SIMULATE AT  1020.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  34    17 OCT 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  34    17 OCT 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  109 TIME= 1030.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (27-OCT-1992)          
@@ -749,7 +749,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    35                             
 1                             **********************************************************************  36
   SIMULATE AT  1050.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  35    16 NOV 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  35    16 NOV 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  112 TIME= 1060.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (26-NOV-1992)          
@@ -765,7 +765,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    36                             
 1                             **********************************************************************  37
   SIMULATE AT  1080.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  36    16 DEC 1992   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  36    16 DEC 1992   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  115 TIME= 1090.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (26-DEC-1992)          
@@ -781,7 +781,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    37                             
 1                             **********************************************************************  38
   SIMULATE AT  1110.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  37    15 JAN 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  37    15 JAN 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  118 TIME= 1120.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (25-JAN-1993)          
@@ -797,7 +797,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    38                             
 1                             **********************************************************************  39
   SIMULATE AT  1140.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  38    14 FEB 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  38    14 FEB 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  121 TIME= 1150.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (24-FEB-1993)          
@@ -813,7 +813,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    39                             
 1                             **********************************************************************  40
   SIMULATE AT  1170.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  39    16 MAR 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  39    16 MAR 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  124 TIME= 1180.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (26-MAR-1993)          
@@ -829,7 +829,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    40                             
 1                             **********************************************************************  41
   SIMULATE AT  1200.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  40    15 APR 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  40    15 APR 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  127 TIME= 1210.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (25-APR-1993)          
@@ -845,7 +845,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    41                             
 1                             **********************************************************************  42
   SIMULATE AT  1230.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  41    15 MAY 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  41    15 MAY 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  130 TIME= 1240.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (25-MAY-1993)          
@@ -861,7 +861,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    42                             
 1                             **********************************************************************  43
   SIMULATE AT  1260.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  42    14 JUN 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  42    14 JUN 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  133 TIME= 1270.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (24-JUN-1993)          
@@ -877,7 +877,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    43                             
 1                             **********************************************************************  44
   SIMULATE AT  1290.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  43    14 JLY 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  43    14 JLY 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  136 TIME= 1300.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (24-JLY-1993)          
@@ -893,7 +893,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    44                             
 1                             **********************************************************************  45
   SIMULATE AT  1320.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  44    13 AUG 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  44    13 AUG 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  139 TIME= 1330.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (23-AUG-1993)          
@@ -909,7 +909,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    45                             
 1                             **********************************************************************  46
   SIMULATE AT  1350.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  45    12 SEP 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  45    12 SEP 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  142 TIME= 1360.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (22-SEP-1993)          
@@ -925,7 +925,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    46                             
 1                             **********************************************************************  47
   SIMULATE AT  1380.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  46    12 OCT 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  46    12 OCT 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  145 TIME= 1390.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (22-OCT-1993)          
@@ -941,7 +941,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    47                             
 1                             **********************************************************************  48
   SIMULATE AT  1410.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  47    11 NOV 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  47    11 NOV 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  148 TIME= 1420.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (21-NOV-1993)          
@@ -957,7 +957,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    48                             
 1                             **********************************************************************  49
   SIMULATE AT  1440.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  48    11 DEC 1993   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  48    11 DEC 1993   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  151 TIME= 1450.00  DAYS ( +10.0  DAYS MAXS  3 ITS) (21-DEC-1993)          
@@ -973,7 +973,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    49                             
 1                             **********************************************************************  50
   SIMULATE AT  1470.00   DAYS * Reservoir Optimization Test Model 1                                    * ECLIPSE  VERSION 2009.1     
-  REPORT  49    10 JAN 1994   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
+  REPORT  49    10 JAN 1994   *  RUN                                                                   * RUN AT 10:21 ON 07 JLY 2015 
                               **************************************************************************
 
  STEP  154 TIME= 1480.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (20-JAN-1994)          
@@ -1051,4 +1051,4 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Problems               0
  Errors                 7
  Bugs                   0
- Final cpu       2.83 elapsed       3.00
+ Final cpu       4.03 elapsed       7.00
