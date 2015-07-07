@@ -379,7 +379,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           10 NON-NEIGHBOUR CONNECTIONS PRESENT                            
 1                             **********************************************************************   1
   PORV     AT     0.00   DAYS *2-D numerical test case                                                 * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:35 ON 05 JLY 2015 
+  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 02:37 ON 05 JLY 2015 
                               **************************************************************************
 
  UNITS    RB           
@@ -456,4 +456,4 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Problems               0
  Errors                12
  Bugs                   0
- Final cpu       0.00 elapsed       0.00
+ Final cpu       0.03 elapsed       1.00
