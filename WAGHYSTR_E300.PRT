@@ -53,7 +53,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ******** ECHO OF INPUT DATA FOR RUN WAGHYSTR_E300
 
  0: --------------------------------------------------------------
- 0: ->The fifth SPE comparison problem , reported by Killough and Kossack
+ 0: -- The fifth SPE comparison problem , reported by Killough and Kossack
  0: -- ( 9th SPE Symp on Res. Sim., San Antonio, 1987).
  0: -- Dimension 7x7x3-
  0: -- 6 components
@@ -590,10 +590,6 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  0: END
 
  ******** END OF INPUT DATA FOR RUN WAGHYSTR_E300
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE RUNSPEC  KEYWORD                           
- @           ->The fifth SPE comparison problem , reported by Killough and Ko
      1 READING RUNSPEC 
      2 READING FIELD   
      3 READING OIL     
@@ -666,7 +662,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
 
  Error summary 
  Comments               1
- Warnings               3
+ Warnings               2
  Problems               0
  Errors                 6
  Bugs                   0
