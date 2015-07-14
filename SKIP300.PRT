@@ -283,7 +283,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
 1                             **********************************************************************   1
   PORO     AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -322,7 +322,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     41 READING SUMMARY 
 1                             **********************************************************************   2
   PRESSURE AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -330,7 +330,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  4005.65        PSIA                                                                                           
 1                             **********************************************************************   3
   SWAT     AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -364,7 +364,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     59 READING TSTEP   
 1                             **********************************************************************   4
   SIMULATE AT     0.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  STEP    1 TIME=    1.00  DAYS (  +1.0  DAYS INIT  4 ITS) (2-JAN-1983)           
@@ -395,7 +395,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  4123.4  PSIA   WCT=0.354 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************   5
   PRESSURE AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -411,7 +411,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  4136.02 4129.68 4116.25 4092.87 4051*09
 1                             **********************************************************************   6
   SWAT     AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -427,7 +427,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  0.31038 0.30764 0.30913 0.31042 0*30562
 1                             **********************************************************************   7
   SIMULATE AT   200.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   1    20 JLY 1983   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  STEP   10 TIME=  300.00  DAYS (+100.0  DAYS HALF  3 ITS) (28-OCT-1983)          
@@ -437,7 +437,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  4095.2  PSIA   WCT=0.583 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************   8
   PRESSURE AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -453,7 +453,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  4105.21 4100.34 4090.05 4072.21 4040*41
 1                             **********************************************************************   9
   SWAT     AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -469,14 +469,14 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  0.37144 0.36932 0.37272 0.37572 0*36910
 1                             **********************************************************************  10
   SIMULATE AT   400.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   2     5 FEB 1984   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  STEP   12 TIME=  600.00  DAYS (+200.0  DAYS REPT  3 ITS) (23-AUG-1984)          
   PAV=  4081.8  PSIA   WCT=0.697 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************  11
   PRESSURE AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -492,7 +492,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  4090.34 4086.14 4077.29 4062.09 4035*13
 1                             **********************************************************************  12
   SWAT     AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -508,14 +508,14 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  0.41867 0.41706 0.42121 0.42483 0*41747
 1                             **********************************************************************  13
   SIMULATE AT   600.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   3    23 AUG 1984   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  STEP   13 TIME=  800.00  DAYS (+200.0  DAYS REPT  3 ITS) (11-MAR-1985)          
   PAV=  4073.6  PSIA   WCT=0.769 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************  14
   PRESSURE AT   800.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -531,7 +531,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  5,  1)  4081.20 4077.40 4069.44 4055.85 4031*90
 1                             **********************************************************************  15
   SWAT     AT   800.00   DAYS * THIS LINE IS A RUN TITLE                                               * ECLIPSE  VERSION 2009.1     
-  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 16:02 ON 14 JLY 2015 
+  REPORT   4    11 MAR 1985   *  RUN                                                                   * RUN AT 16:06 ON 14 JLY 2015 
                               **************************************************************************
 
  UNITS                 
