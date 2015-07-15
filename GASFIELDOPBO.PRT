@@ -492,7 +492,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     38 READING SUMMARY 
 1                             **********************************************************************   1
   PRESSURE AT     0.00   DAYS *Example of GAS FIELD OPERATIONS                                         * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 SEP 1990   *  RUN                                                                   * RUN AT 16:13 ON 14 JLY 2015 
+  REPORT   0     1 SEP 1990   *  RUN                                                                   * RUN AT 15:17 ON 15 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -512,7 +512,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  9,  1)  3008.83 3008.83 3008.83 3008.83 3008.83 3008.83 3008.83 3008.83 3008.83
 1                             **********************************************************************   2
   SWAT     AT     0.00   DAYS *Example of GAS FIELD OPERATIONS                                         * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 SEP 1990   *  RUN                                                                   * RUN AT 16:13 ON 14 JLY 2015 
+  REPORT   0     1 SEP 1990   *  RUN                                                                   * RUN AT 15:17 ON 15 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -530,74 +530,3 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  7,  1)  0.18000 0.18000 0.18000 0.18000 0.18000 0.18000 0.18000 0.18000 0.18000
  (*,  8,  1)  0.34400 0.34400 0.34400 0.34400 0.34400 0.34400 0.34400 0.34400 0.34400
  (*,  9,  1)  0.83600 0.83600 0.83600 0.83600 0.83600 0.83600 0.83600 0.83600 0.83600
-    39 READING GGDCQ   
-    40 READING FGPR    
-    41 READING GGPR    
-    42 READING FGSR    
-    43 READING GGSR    
-    44 READING FGDC    
-    45 READING GGDC    
-    46 READING FGPT    
-    47 READING GGPT    
-    48 READING GPR     
-    49 READING RUNSUM  
-    50 READING RPTONLY 
-    51 READING SCHEDULE
- =======================================================
- TIMING REPORTS AT CPU=     0 SECS - ELAPSED=     0 SECS
- =======================================================
- ZZSS    1  0  0
-                RR      1  0  0
- SR      1  0  0
-                LC      1  0  0
-    52 READING SKIPREST
-    53 READING RPTSCHED
-    54 READING NOECHO  
-    55 READING VFPPROD 
-    56 READING VFPPROD 
-    57 READING VFPPROD 
-    58 READING ECHO    
-    59 READING WELSPECS
-    60 READING GRUPTREE
-    61 READING COMPDAT 
-    62 READING WCONPROD
-    63 READING WECON   
-    64 READING GRUPNET 
-    65 READING NETBALAN
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-SEP-1990):
- @           CHECKING FOR LICENSES                                           
-    66 READING SKIP300 
-    67 READING GCONSUMP
-    68 READING ENDSKIP 
-    69 READING SKIP100 
-       SKIPPING KEYWORDS
-    70 READING ENDSKIP 
-    71 READING GSWINGF 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-SEP-1990):
- @           PROFILE FACTORS FOR GROUP PLAT-B   ARE NOT NORMALISED.          
- @           THE SUM OF PROFILE FACTORS TIMES NUMBER OF DAYS IN              
- @           MONTH =   364.55 (ALLOWING 28.25 DAYS FOR FEBRUARY).            
- @           WHEN NORMALISED, THE SUM SHOULD BE 365.25 .                     
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-SEP-1990):
- @           PROFILE FACTORS FOR GROUP PLAT-C   ARE NOT NORMALISED.          
- @           THE SUM OF PROFILE FACTORS TIMES NUMBER OF DAYS IN              
- @           MONTH =   364.72 (ALLOWING 28.25 DAYS FOR FEBRUARY).            
- @           WHEN NORMALISED, THE SUM SHOULD BE 365.25 .                     
-    72 READING GDCQ    
-    73 READING GASYEAR 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-SEP-1990):
- @           GAS FIELD OPERATIONS MODEL                                      
- @           NOT ALLOWED UNDER CURRENT CONTRACT.                             
- @           CONSULT YOUR LOCAL SUPPORT OFFICE TO OBTAIN NEW PASSWORD.       
-
- Error summary 
- Comments               1
- Warnings               4
- Problems               0
- Errors                 1
- Bugs                   0
- Final cpu       0.00 elapsed       0.00
