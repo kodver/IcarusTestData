@@ -490,7 +490,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     42 READING REGIONS 
 1                             **********************************************************************   1
   SOF3     AT     0.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
    ------------------------------------ 
@@ -564,7 +564,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     0.7800    0.2200    0.0000    :    0.0000    1.0000    0.0000
 1                             **********************************************************************   2
   SWFN     AT     0.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
    -----------------------------------  
@@ -585,7 +585,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   1.0000  1.0000   0.000    1.70   -0.10
 1                             **********************************************************************   3
   SGFN     AT     0.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
    ---------------------------------  
@@ -607,7 +607,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   0.7800  1.0000   0.000    2.34    0.00
 1                             **********************************************************************   4
   SATN TAB AT     0.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
    --------------------------------------------
@@ -637,7 +637,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    OIL RELATIVE PERMEABILITY AT RESIDUAL GAS              0.6268
 1                             **********************************************************************   5
   PVTW     AT     0.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
                --------------------
@@ -655,7 +655,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     47 READING SUMMARY 
 1                             **********************************************************************   6
   BALANCE  AT     0.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -735,7 +735,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************   7
   SIMULATE AT     0.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    1 TIME=   14.40  MINS (+14.40  MINS INIT  2 ITS) (1-JAN-2002)           
@@ -794,7 +794,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -1.17(  1,  1,  1)  MAX DRS= -0.0002(  1,  1,  1) 
 1                             **********************************************************************   8
   WELLS    AT     1.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   1     2 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   1     2 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -836,7 +836,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************   9
   BALANCE  AT     1.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   1     2 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   1     2 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -875,7 +875,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     1                             
 1                             **********************************************************************  10
   SIMULATE AT     1.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   1     2 JAN 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   1     2 JAN 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    6 TIME=    2.80  DAYS (  +1.8  DAYS MAXF  3 ITS) (3-JAN-2002)           
@@ -967,7 +967,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.47(  5,  1,  1)  MAX DRS= -0.0001(  5,  1,  1) 
 1                             **********************************************************************  11
   WELLS    AT    50.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   2    20 FEB 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   2    20 FEB 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1009,7 +1009,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  12
   BALANCE  AT    50.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   2    20 FEB 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   2    20 FEB 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1048,7 +1048,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     2                             
 1                             **********************************************************************  13
   SIMULATE AT    50.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   2    20 FEB 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   2    20 FEB 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   14 TIME=   60.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (2-MAR-2002)           
@@ -1107,7 +1107,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.27(  6,  1,  1)  MAX DRS=  0.0000(  6,  1,  1) 
 1                             **********************************************************************  14
   WELLS    AT   100.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   3    11 APR 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   3    11 APR 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1149,7 +1149,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  15
   BALANCE  AT   100.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   3    11 APR 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   3    11 APR 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1188,7 +1188,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     3                             
 1                             **********************************************************************  16
   SIMULATE AT   100.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   3    11 APR 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   3    11 APR 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   19 TIME=  110.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (21-APR-2002)          
@@ -1247,7 +1247,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.22(  2,  1,  2)  MAX DRS=  0.0000(  2,  1,  2) 
 1                             **********************************************************************  17
   WELLS    AT   150.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   4    31 MAY 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   4    31 MAY 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1289,7 +1289,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  18
   BALANCE  AT   150.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   4    31 MAY 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   4    31 MAY 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1328,7 +1328,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     4                             
 1                             **********************************************************************  19
   SIMULATE AT   150.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   4    31 MAY 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   4    31 MAY 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   24 TIME=  160.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (10-JUN-2002)          
@@ -1387,7 +1387,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.17(  3,  1,  2)  MAX DRS=  0.0000(  3,  1,  2) 
 1                             **********************************************************************  20
   WELLS    AT   200.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   5    20 JLY 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   5    20 JLY 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1429,7 +1429,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  21
   BALANCE  AT   200.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   5    20 JLY 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   5    20 JLY 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1468,7 +1468,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     5                             
 1                             **********************************************************************  22
   SIMULATE AT   200.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   5    20 JLY 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   5    20 JLY 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   29 TIME=  210.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (30-JLY-2002)          
@@ -1527,7 +1527,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.14(  2,  1,  2)  MAX DRS=  0.0000(  2,  1,  2) 
 1                             **********************************************************************  23
   WELLS    AT   250.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   6     8 SEP 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   6     8 SEP 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1569,7 +1569,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  24
   BALANCE  AT   250.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   6     8 SEP 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   6     8 SEP 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1608,7 +1608,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     6                             
 1                             **********************************************************************  25
   SIMULATE AT   250.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   6     8 SEP 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   6     8 SEP 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   34 TIME=  260.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (18-SEP-2002)          
@@ -1667,7 +1667,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.13(  7,  1,  1)  MAX DRS=  0.0000(  7,  1,  1) 
 1                             **********************************************************************  26
   WELLS    AT   300.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   7    28 OCT 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   7    28 OCT 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1709,7 +1709,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  27
   BALANCE  AT   300.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   7    28 OCT 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   7    28 OCT 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1748,7 +1748,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     7                             
 1                             **********************************************************************  28
   SIMULATE AT   300.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   7    28 OCT 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   7    28 OCT 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   39 TIME=  310.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (7-NOV-2002)           
@@ -1807,7 +1807,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.12(  7,  1,  1)  MAX DRS=  0.0000(  7,  1,  1) 
 1                             **********************************************************************  29
   WELLS    AT   350.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   8    17 DEC 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   8    17 DEC 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1849,7 +1849,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  30
   BALANCE  AT   350.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   8    17 DEC 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   8    17 DEC 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1888,7 +1888,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     8                             
 1                             **********************************************************************  31
   SIMULATE AT   350.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   8    17 DEC 2002   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   8    17 DEC 2002   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   44 TIME=  360.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (27-DEC-2002)          
@@ -1947,7 +1947,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.09(  7,  1,  1)  MAX DRS=  0.0000(  7,  1,  1) 
 1                             **********************************************************************  32
   WELLS    AT   400.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   9     5 FEB 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   9     5 FEB 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1989,7 +1989,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  33
   BALANCE  AT   400.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   9     5 FEB 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   9     5 FEB 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2028,7 +2028,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     9                             
 1                             **********************************************************************  34
   SIMULATE AT   400.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT   9     5 FEB 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT   9     5 FEB 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   49 TIME=  410.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (15-FEB-2003)          
@@ -2087,7 +2087,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.09(  7,  1,  1)  MAX DRS=  0.0000(  7,  1,  1) 
 1                             **********************************************************************  35
   WELLS    AT   450.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  10    27 MAR 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  10    27 MAR 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2129,7 +2129,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  36
   BALANCE  AT   450.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  10    27 MAR 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  10    27 MAR 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2168,7 +2168,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    10                             
 1                             **********************************************************************  37
   SIMULATE AT   450.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  10    27 MAR 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  10    27 MAR 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   54 TIME=  460.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (6-APR-2003)           
@@ -2227,7 +2227,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.07(  7,  1,  2)  MAX DRS=  0.0000(  7,  1,  2) 
 1                             **********************************************************************  38
   WELLS    AT   500.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  11    16 MAY 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  11    16 MAY 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2269,7 +2269,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  39
   BALANCE  AT   500.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  11    16 MAY 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  11    16 MAY 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2308,7 +2308,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    11                             
 1                             **********************************************************************  40
   SIMULATE AT   500.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  11    16 MAY 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  11    16 MAY 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   59 TIME=  510.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (26-MAY-2003)          
@@ -2367,7 +2367,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  7,  1,  2)  MAX DRS=  0.0000(  7,  1,  2) 
 1                             **********************************************************************  41
   WELLS    AT   550.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  12     5 JLY 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  12     5 JLY 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2409,7 +2409,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  42
   BALANCE  AT   550.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  12     5 JLY 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  12     5 JLY 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2448,7 +2448,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    12                             
 1                             **********************************************************************  43
   SIMULATE AT   550.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  12     5 JLY 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  12     5 JLY 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   64 TIME=  560.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (15-JLY-2003)          
@@ -2507,7 +2507,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  7,  1,  2)  MAX DRS=  0.0000(  7,  1,  2) 
 1                             **********************************************************************  44
   WELLS    AT   600.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  13    24 AUG 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  13    24 AUG 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2549,7 +2549,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  45
   BALANCE  AT   600.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  13    24 AUG 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  13    24 AUG 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2588,7 +2588,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    13                             
 1                             **********************************************************************  46
   SIMULATE AT   600.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  13    24 AUG 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  13    24 AUG 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   69 TIME=  610.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (3-SEP-2003)           
@@ -2647,7 +2647,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  47
   WELLS    AT   650.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  14    13 OCT 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  14    13 OCT 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2689,7 +2689,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  48
   BALANCE  AT   650.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  14    13 OCT 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  14    13 OCT 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2728,7 +2728,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    14                             
 1                             **********************************************************************  49
   SIMULATE AT   650.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  14    13 OCT 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  14    13 OCT 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   74 TIME=  660.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (23-OCT-2003)          
@@ -2787,7 +2787,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  50
   WELLS    AT   700.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  15     2 DEC 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  15     2 DEC 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2829,7 +2829,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  51
   BALANCE  AT   700.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  15     2 DEC 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  15     2 DEC 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2868,7 +2868,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    15                             
 1                             **********************************************************************  52
   SIMULATE AT   700.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  15     2 DEC 2003   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  15     2 DEC 2003   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   79 TIME=  710.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (12-DEC-2003)          
@@ -2927,7 +2927,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  53
   WELLS    AT   750.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  16    21 JAN 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  16    21 JAN 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2969,7 +2969,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  54
   BALANCE  AT   750.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  16    21 JAN 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  16    21 JAN 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3008,7 +3008,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    16                             
 1                             **********************************************************************  55
   SIMULATE AT   750.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  16    21 JAN 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  16    21 JAN 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   84 TIME=  760.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (31-JAN-2004)          
@@ -3067,7 +3067,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  56
   WELLS    AT   800.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  17    11 MAR 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  17    11 MAR 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3109,7 +3109,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  57
   BALANCE  AT   800.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  17    11 MAR 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  17    11 MAR 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3148,7 +3148,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    17                             
 1                             **********************************************************************  58
   SIMULATE AT   800.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  17    11 MAR 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  17    11 MAR 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   89 TIME=  810.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (21-MAR-2004)          
@@ -3207,7 +3207,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.07(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  59
   WELLS    AT   850.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  18    30 APR 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  18    30 APR 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3249,7 +3249,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  60
   BALANCE  AT   850.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  18    30 APR 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  18    30 APR 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3288,7 +3288,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    18                             
 1                             **********************************************************************  61
   SIMULATE AT   850.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  18    30 APR 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  18    30 APR 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   94 TIME=  860.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (10-MAY-2004)          
@@ -3347,7 +3347,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  62
   WELLS    AT   900.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  19    19 JUN 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  19    19 JUN 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3389,7 +3389,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  63
   BALANCE  AT   900.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  19    19 JUN 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  19    19 JUN 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3428,7 +3428,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    19                             
 1                             **********************************************************************  64
   SIMULATE AT   900.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  19    19 JUN 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  19    19 JUN 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   99 TIME=  910.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (29-JUN-2004)          
@@ -3487,7 +3487,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.07(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  65
   WELLS    AT   950.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  20     8 AUG 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  20     8 AUG 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3529,7 +3529,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  66
   BALANCE  AT   950.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  20     8 AUG 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  20     8 AUG 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3568,7 +3568,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    20                             
 1                             **********************************************************************  67
   SIMULATE AT   950.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  20     8 AUG 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  20     8 AUG 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  104 TIME=  960.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (18-AUG-2004)          
@@ -3627,7 +3627,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.07(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  68
   WELLS    AT  1000.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  21    27 SEP 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  21    27 SEP 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3669,7 +3669,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  69
   BALANCE  AT  1000.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  21    27 SEP 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  21    27 SEP 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3709,7 +3709,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     68 READING TSTEP   
 1                             **********************************************************************  70
   SIMULATE AT  1000.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  21    27 SEP 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  21    27 SEP 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  109 TIME= 1010.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (7-OCT-2004)           
@@ -3768,7 +3768,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  8,  1,  1)  MAX DRS=  0.0000(  8,  1,  1) 
 1                             **********************************************************************  71
   WELLS    AT  1050.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  22    16 NOV 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  22    16 NOV 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3810,7 +3810,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  72
   BALANCE  AT  1050.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  22    16 NOV 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  22    16 NOV 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3849,7 +3849,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    22                             
 1                             **********************************************************************  73
   SIMULATE AT  1050.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  22    16 NOV 2004   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  22    16 NOV 2004   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  114 TIME= 1060.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (26-NOV-2004)          
@@ -3908,7 +3908,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  74
   WELLS    AT  1100.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  23     5 JAN 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  23     5 JAN 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3950,7 +3950,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  75
   BALANCE  AT  1100.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  23     5 JAN 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  23     5 JAN 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3989,7 +3989,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    23                             
 1                             **********************************************************************  76
   SIMULATE AT  1100.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  23     5 JAN 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  23     5 JAN 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  119 TIME= 1110.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (15-JAN-2005)          
@@ -4048,7 +4048,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  77
   WELLS    AT  1150.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  24    24 FEB 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  24    24 FEB 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4090,7 +4090,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  78
   BALANCE  AT  1150.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  24    24 FEB 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  24    24 FEB 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4129,7 +4129,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    24                             
 1                             **********************************************************************  79
   SIMULATE AT  1150.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  24    24 FEB 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  24    24 FEB 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  124 TIME= 1160.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (6-MAR-2005)           
@@ -4188,7 +4188,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  80
   WELLS    AT  1200.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  25    15 APR 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  25    15 APR 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4230,7 +4230,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  81
   BALANCE  AT  1200.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  25    15 APR 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  25    15 APR 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4269,7 +4269,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    25                             
 1                             **********************************************************************  82
   SIMULATE AT  1200.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  25    15 APR 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  25    15 APR 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  129 TIME= 1210.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (25-APR-2005)          
@@ -4328,7 +4328,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  83
   WELLS    AT  1250.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  26     4 JUN 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  26     4 JUN 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4370,7 +4370,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  84
   BALANCE  AT  1250.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  26     4 JUN 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  26     4 JUN 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4409,7 +4409,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    26                             
 1                             **********************************************************************  85
   SIMULATE AT  1250.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  26     4 JUN 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  26     4 JUN 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  134 TIME= 1260.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (14-JUN-2005)          
@@ -4468,7 +4468,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  86
   WELLS    AT  1300.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  27    24 JLY 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  27    24 JLY 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4510,7 +4510,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  87
   BALANCE  AT  1300.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  27    24 JLY 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  27    24 JLY 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4549,7 +4549,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    27                             
 1                             **********************************************************************  88
   SIMULATE AT  1300.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  27    24 JLY 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  27    24 JLY 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  139 TIME= 1310.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (3-AUG-2005)           
@@ -4608,7 +4608,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  89
   WELLS    AT  1350.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  28    12 SEP 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  28    12 SEP 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4650,7 +4650,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  90
   BALANCE  AT  1350.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  28    12 SEP 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  28    12 SEP 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4689,7 +4689,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    28                             
 1                             **********************************************************************  91
   SIMULATE AT  1350.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  28    12 SEP 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  28    12 SEP 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  144 TIME= 1360.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (22-SEP-2005)          
@@ -4748,7 +4748,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  92
   WELLS    AT  1400.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  29     1 NOV 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  29     1 NOV 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4790,7 +4790,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  93
   BALANCE  AT  1400.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  29     1 NOV 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  29     1 NOV 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4829,7 +4829,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    29                             
 1                             **********************************************************************  94
   SIMULATE AT  1400.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  29     1 NOV 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  29     1 NOV 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  149 TIME= 1410.00  DAYS ( +10.0  DAYS MAXS  2 ITS) (11-NOV-2005)          
@@ -4888,7 +4888,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  95
   WELLS    AT  1450.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  30    21 DEC 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  30    21 DEC 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4930,7 +4930,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  96
   BALANCE  AT  1450.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  30    21 DEC 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  30    21 DEC 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -4969,7 +4969,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    30                             
 1                             **********************************************************************  97
   SIMULATE AT  1450.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  30    21 DEC 2005   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  30    21 DEC 2005   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  154 TIME= 1460.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (31-DEC-2005)          
@@ -5028,7 +5028,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             **********************************************************************  98
   WELLS    AT  1500.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  31     9 FEB 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  31     9 FEB 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5070,7 +5070,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             **********************************************************************  99
   BALANCE  AT  1500.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  31     9 FEB 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  31     9 FEB 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5109,7 +5109,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    31                             
 1                             ********************************************************************** 100
   SIMULATE AT  1500.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  31     9 FEB 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  31     9 FEB 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  159 TIME= 1510.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (19-FEB-2006)          
@@ -5168,7 +5168,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             ********************************************************************** 101
   WELLS    AT  1550.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  32    31 MAR 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  32    31 MAR 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5210,7 +5210,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 102
   BALANCE  AT  1550.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  32    31 MAR 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  32    31 MAR 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5249,7 +5249,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    32                             
 1                             ********************************************************************** 103
   SIMULATE AT  1550.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  32    31 MAR 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  32    31 MAR 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  164 TIME= 1560.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (10-APR-2006)          
@@ -5308,7 +5308,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             ********************************************************************** 104
   WELLS    AT  1600.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  33    20 MAY 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  33    20 MAY 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5350,7 +5350,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 105
   BALANCE  AT  1600.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  33    20 MAY 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  33    20 MAY 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5389,7 +5389,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    33                             
 1                             ********************************************************************** 106
   SIMULATE AT  1600.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  33    20 MAY 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  33    20 MAY 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  169 TIME= 1610.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (30-MAY-2006)          
@@ -5448,7 +5448,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.06(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             ********************************************************************** 107
   WELLS    AT  1650.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  34     9 JLY 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  34     9 JLY 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5490,7 +5490,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 108
   BALANCE  AT  1650.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  34     9 JLY 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  34     9 JLY 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5529,7 +5529,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    34                             
 1                             ********************************************************************** 109
   SIMULATE AT  1650.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  34     9 JLY 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  34     9 JLY 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  174 TIME= 1660.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (19-JLY-2006)          
@@ -5588,7 +5588,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.05(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             ********************************************************************** 110
   WELLS    AT  1700.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  35    28 AUG 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  35    28 AUG 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5630,7 +5630,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 111
   BALANCE  AT  1700.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  35    28 AUG 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  35    28 AUG 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5669,7 +5669,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    35                             
 1                             ********************************************************************** 112
   SIMULATE AT  1700.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  35    28 AUG 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  35    28 AUG 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  179 TIME= 1710.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (7-SEP-2006)           
@@ -5728,7 +5728,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.05(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             ********************************************************************** 113
   WELLS    AT  1750.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  36    17 OCT 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  36    17 OCT 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5770,7 +5770,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 114
   BALANCE  AT  1750.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  36    17 OCT 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  36    17 OCT 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5809,7 +5809,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    36                             
 1                             ********************************************************************** 115
   SIMULATE AT  1750.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  36    17 OCT 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  36    17 OCT 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  184 TIME= 1760.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (27-OCT-2006)          
@@ -5868,7 +5868,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.05(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             ********************************************************************** 116
   WELLS    AT  1800.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  37     6 DEC 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  37     6 DEC 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5910,7 +5910,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 117
   BALANCE  AT  1800.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  37     6 DEC 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  37     6 DEC 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -5949,7 +5949,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    37                             
 1                             ********************************************************************** 118
   SIMULATE AT  1800.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  37     6 DEC 2006   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  37     6 DEC 2006   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  189 TIME= 1810.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (16-DEC-2006)          
@@ -6008,7 +6008,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.05(  1,  1,  3)  MAX DRS=  0.0000(  1,  1,  3) 
 1                             ********************************************************************** 119
   WELLS    AT  1850.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  38    25 JAN 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  38    25 JAN 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -6050,7 +6050,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 120
   BALANCE  AT  1850.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  38    25 JAN 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  38    25 JAN 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -6089,7 +6089,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    38                             
 1                             ********************************************************************** 121
   SIMULATE AT  1850.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  38    25 JAN 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  38    25 JAN 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  194 TIME= 1860.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (4-FEB-2007)           
@@ -6148,7 +6148,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.05(  6,  1,  3)  MAX DRS=  0.0000(  6,  1,  3) 
 1                             ********************************************************************** 122
   WELLS    AT  1900.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  39    16 MAR 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  39    16 MAR 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -6190,7 +6190,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 123
   BALANCE  AT  1900.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  39    16 MAR 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  39    16 MAR 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -6229,7 +6229,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    39                             
 1                             ********************************************************************** 124
   SIMULATE AT  1900.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  39    16 MAR 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  39    16 MAR 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  199 TIME= 1910.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (26-MAR-2007)          
@@ -6288,7 +6288,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.05(  6,  1,  3)  MAX DRS=  0.0000(  6,  1,  3) 
 1                             ********************************************************************** 125
   WELLS    AT  1950.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  40     5 MAY 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  40     5 MAY 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -6330,7 +6330,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 126
   BALANCE  AT  1950.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  40     5 MAY 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  40     5 MAY 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -6369,7 +6369,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT    40                             
 1                             ********************************************************************** 127
   SIMULATE AT  1950.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  40     5 MAY 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  40     5 MAY 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP  204 TIME= 1960.00  DAYS ( +10.0  DAYS MAXS  1 ITS) (15-MAY-2007)          
@@ -6428,7 +6428,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
       MAX DP =   -0.05(  7,  1,  3)  MAX DRS=  0.0000(  7,  1,  3) 
 1                             ********************************************************************** 128
   WELLS    AT  2000.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  41    24 JUN 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  41    24 JUN 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -6470,7 +6470,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     ================================================================================================================================
 1                             ********************************************************************** 129
   BALANCE  AT  2000.00   DAYS *            Applied Reservoir Simulation Oil Field Problem              * ECLIPSE  VERSION 2009.1     
-  REPORT  41    24 JUN 2007   *  RUN                                                                   * RUN AT 15:07 ON 16 JLY 2015 
+  REPORT  41    24 JUN 2007   *  RUN                                                                   * RUN AT 15:13 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -6567,4 +6567,4 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Problems               0
  Errors                 7
  Bugs                   0
- Final cpu       0.61 elapsed       1.00
+ Final cpu       0.50 elapsed       1.00
