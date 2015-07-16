@@ -2530,7 +2530,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           MAXIMUM GAS RE-SOLUTION RATE IS DEFAULTED TO INFINITY.          
 1                             **********************************************************************   1
   SIMULATE AT     0.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   0     1 JAN 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1983):
@@ -2562,7 +2562,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   2
   SIMULATE AT    30.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   1    31 JAN 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   1    31 JAN 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME       30.0   DAYS    (31-JAN-1983):
@@ -2576,7 +2576,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   3
   SIMULATE AT    60.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   2     2 MAR 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   2     2 MAR 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME       60.0   DAYS    ( 2-MAR-1983):
@@ -2590,7 +2590,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   4
   SIMULATE AT    90.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   3     1 APR 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   3     1 APR 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME       90.0   DAYS    ( 1-APR-1983):
@@ -2604,7 +2604,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   5
   SIMULATE AT   120.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   4     1 MAY 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   4     1 MAY 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      120.0   DAYS    ( 1-MAY-1983):
@@ -2618,7 +2618,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   6
   SIMULATE AT   150.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   5    31 MAY 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   5    31 MAY 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      150.0   DAYS    (31-MAY-1983):
@@ -2632,7 +2632,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   7
   SIMULATE AT   180.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   6    30 JUN 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   6    30 JUN 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      180.0   DAYS    (30-JUN-1983):
@@ -2646,7 +2646,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   8
   SIMULATE AT   210.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   7    30 JLY 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   7    30 JLY 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      210.0   DAYS    (30-JLY-1983):
@@ -2660,7 +2660,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************   9
   SIMULATE AT   240.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   8    29 AUG 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   8    29 AUG 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      240.0   DAYS    (29-AUG-1983):
@@ -2674,7 +2674,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  10
   SIMULATE AT   270.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT   9    28 SEP 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   9    28 SEP 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      270.0   DAYS    (28-SEP-1983):
@@ -2688,7 +2688,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  11
   SIMULATE AT   300.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  10    28 OCT 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  10    28 OCT 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      300.0   DAYS    (28-OCT-1983):
@@ -2702,7 +2702,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  12
   SIMULATE AT   330.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  11    27 NOV 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  11    27 NOV 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      330.0   DAYS    (27-NOV-1983):
@@ -2730,7 +2730,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  13
   SIMULATE AT   360.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  12    27 DEC 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  12    27 DEC 1983   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      360.0   DAYS    (27-DEC-1983):
@@ -2750,7 +2750,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  14
   SIMULATE AT   390.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  13    26 JAN 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  13    26 JAN 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      390.0   DAYS    (26-JAN-1984):
@@ -2805,7 +2805,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  15
   SIMULATE AT   420.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  14    25 FEB 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  14    25 FEB 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      420.0   DAYS    (25-FEB-1984):
@@ -2825,7 +2825,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  16
   SIMULATE AT   450.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  15    26 MAR 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  15    26 MAR 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      450.0   DAYS    (26-MAR-1984):
@@ -2845,7 +2845,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  17
   SIMULATE AT   480.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  16    25 APR 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  16    25 APR 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      480.0   DAYS    (25-APR-1984):
@@ -2879,7 +2879,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  18
   SIMULATE AT   510.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  17    25 MAY 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  17    25 MAY 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      510.0   DAYS    (25-MAY-1984):
@@ -2913,7 +2913,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  19
   SIMULATE AT   540.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  18    24 JUN 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  18    24 JUN 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      540.0   DAYS    (24-JUN-1984):
@@ -2933,7 +2933,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  20
   SIMULATE AT   570.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  19    24 JLY 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  19    24 JLY 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      570.0   DAYS    (24-JLY-1984):
@@ -2955,7 +2955,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     92 READING TSTEP   
 1                             **********************************************************************  21
   SIMULATE AT   600.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  20    23 AUG 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  20    23 AUG 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      600.0   DAYS    (23-AUG-1984):
@@ -2982,7 +2982,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  22
   SIMULATE AT   630.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  21    22 SEP 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  21    22 SEP 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      630.0   DAYS    (22-SEP-1984):
@@ -3039,7 +3039,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  23
   SIMULATE AT   660.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  22    22 OCT 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  22    22 OCT 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      660.0   DAYS    (22-OCT-1984):
@@ -3059,7 +3059,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  24
   SIMULATE AT   690.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  23    21 NOV 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  23    21 NOV 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      690.0   DAYS    (21-NOV-1984):
@@ -3079,7 +3079,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  25
   SIMULATE AT   720.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  24    21 DEC 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  24    21 DEC 1984   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      720.0   DAYS    (21-DEC-1984):
@@ -3106,7 +3106,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  26
   SIMULATE AT   750.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  25    20 JAN 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  25    20 JAN 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      750.0   DAYS    (20-JAN-1985):
@@ -3126,7 +3126,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  27
   SIMULATE AT   780.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  26    19 FEB 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  26    19 FEB 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      780.0   DAYS    (19-FEB-1985):
@@ -3146,7 +3146,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  28
   SIMULATE AT   810.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  27    21 MAR 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  27    21 MAR 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      810.0   DAYS    (21-MAR-1985):
@@ -3166,7 +3166,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  29
   SIMULATE AT   840.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  28    20 APR 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  28    20 APR 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      840.0   DAYS    (20-APR-1985):
@@ -3191,7 +3191,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  30
   SIMULATE AT   870.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  29    20 MAY 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  29    20 MAY 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      870.0   DAYS    (20-MAY-1985):
@@ -3211,7 +3211,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  31
   SIMULATE AT   900.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  30    19 JUN 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  30    19 JUN 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      900.0   DAYS    (19-JUN-1985):
@@ -3231,7 +3231,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  32
   SIMULATE AT   930.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  31    19 JLY 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  31    19 JLY 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      930.0   DAYS    (19-JLY-1985):
@@ -3251,7 +3251,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  33
   SIMULATE AT   960.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  32    18 AUG 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  32    18 AUG 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      960.0   DAYS    (18-AUG-1985):
@@ -3271,7 +3271,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  34
   SIMULATE AT   990.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  33    17 SEP 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  33    17 SEP 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME      990.0   DAYS    (17-SEP-1985):
@@ -3291,7 +3291,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  35
   SIMULATE AT  1020.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  34    17 OCT 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  34    17 OCT 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1020.0   DAYS    (17-OCT-1985):
@@ -3305,7 +3305,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  36
   SIMULATE AT  1050.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  35    16 NOV 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  35    16 NOV 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1050.0   DAYS    (16-NOV-1985):
@@ -3319,7 +3319,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  37
   SIMULATE AT  1080.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  36    16 DEC 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  36    16 DEC 1985   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1080.0   DAYS    (16-DEC-1985):
@@ -3333,7 +3333,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  38
   SIMULATE AT  1110.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  37    15 JAN 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  37    15 JAN 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1110.0   DAYS    (15-JAN-1986):
@@ -3347,7 +3347,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  39
   SIMULATE AT  1140.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  38    14 FEB 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  38    14 FEB 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1140.0   DAYS    (14-FEB-1986):
@@ -3361,7 +3361,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  40
   SIMULATE AT  1170.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  39    16 MAR 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  39    16 MAR 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1170.0   DAYS    (16-MAR-1986):
@@ -3375,7 +3375,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  41
   SIMULATE AT  1200.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  40    15 APR 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  40    15 APR 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1200.0   DAYS    (15-APR-1986):
@@ -3389,7 +3389,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  42
   SIMULATE AT  1230.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  41    15 MAY 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  41    15 MAY 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1230.0   DAYS    (15-MAY-1986):
@@ -3403,7 +3403,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  43
   SIMULATE AT  1260.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  42    14 JUN 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  42    14 JUN 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1260.0   DAYS    (14-JUN-1986):
@@ -3417,7 +3417,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  44
   SIMULATE AT  1290.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  43    14 JLY 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  43    14 JLY 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1290.0   DAYS    (14-JLY-1986):
@@ -3431,7 +3431,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  45
   SIMULATE AT  1320.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  44    13 AUG 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  44    13 AUG 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1320.0   DAYS    (13-AUG-1986):
@@ -3445,7 +3445,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  46
   SIMULATE AT  1350.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  45    12 SEP 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  45    12 SEP 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1350.0   DAYS    (12-SEP-1986):
@@ -3459,7 +3459,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  47
   SIMULATE AT  1380.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  46    12 OCT 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  46    12 OCT 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1380.0   DAYS    (12-OCT-1986):
@@ -3473,7 +3473,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  48
   SIMULATE AT  1410.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  47    11 NOV 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  47    11 NOV 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1410.0   DAYS    (11-NOV-1986):
@@ -3487,7 +3487,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  49
   SIMULATE AT  1440.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  48    11 DEC 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  48    11 DEC 1986   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1440.0   DAYS    (11-DEC-1986):
@@ -3501,7 +3501,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  50
   SIMULATE AT  1470.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  49    10 JAN 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  49    10 JAN 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1470.0   DAYS    (10-JAN-1987):
@@ -3515,7 +3515,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  51
   SIMULATE AT  1500.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  50     9 FEB 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  50     9 FEB 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1500.0   DAYS    ( 9-FEB-1987):
@@ -3529,7 +3529,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  52
   SIMULATE AT  1530.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  51    11 MAR 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  51    11 MAR 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1530.0   DAYS    (11-MAR-1987):
@@ -3543,7 +3543,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  53
   SIMULATE AT  1560.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  52    10 APR 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  52    10 APR 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1560.0   DAYS    (10-APR-1987):
@@ -3557,7 +3557,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  54
   SIMULATE AT  1590.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  53    10 MAY 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  53    10 MAY 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1590.0   DAYS    (10-MAY-1987):
@@ -3571,7 +3571,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  55
   SIMULATE AT  1620.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  54     9 JUN 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  54     9 JUN 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1620.0   DAYS    ( 9-JUN-1987):
@@ -3585,7 +3585,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  56
   SIMULATE AT  1650.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  55     9 JLY 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  55     9 JLY 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1650.0   DAYS    ( 9-JLY-1987):
@@ -3599,7 +3599,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  57
   SIMULATE AT  1680.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  56     8 AUG 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  56     8 AUG 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1680.0   DAYS    ( 8-AUG-1987):
@@ -3613,7 +3613,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  58
   SIMULATE AT  1710.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  57     7 SEP 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  57     7 SEP 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1710.0   DAYS    ( 7-SEP-1987):
@@ -3627,7 +3627,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  59
   SIMULATE AT  1740.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  58     7 OCT 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  58     7 OCT 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1740.0   DAYS    ( 7-OCT-1987):
@@ -3641,7 +3641,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  60
   SIMULATE AT  1770.00   DAYS *  GAS LIFT OPTIMIZATION BLACK OIL TEST 5                                * ECLIPSE  VERSION 2009.1     
-  REPORT  59     6 NOV 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT  59     6 NOV 1987   *  RUN                                                                   * RUN AT 14:52 ON 16 JLY 2015 
                               **************************************************************************
 
  @--MESSAGE  AT TIME     1770.0   DAYS    ( 6-NOV-1987):
@@ -3661,4 +3661,4 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Problems               0
  Errors                 0
  Bugs                   0
- Final cpu       0.00 elapsed       0.00
+ Final cpu       0.53 elapsed       1.00
