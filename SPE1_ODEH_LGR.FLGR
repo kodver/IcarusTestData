@@ -1,5 +1,5 @@
  'SEQHDR  '           2 'INTE'
- -1075535208           1
+ -1075383193           1
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -125,7 +125,7 @@
  'PARAMS  '           2 'REAL'
    0.36500000E+03   0.99931556E+00
  'SEQHDR  '           2 'INTE'
- -1075535208           2
+ -1075383193           2
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -175,7 +175,7 @@
  'PARAMS  '           2 'REAL'
    0.73000000E+03   0.19986311E+01
  'SEQHDR  '           2 'INTE'
- -1075535208           3
+ -1075383192           3
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -207,7 +207,7 @@
  'PARAMS  '           2 'REAL'
    0.10950000E+04   0.29979465E+01
  'SEQHDR  '           2 'INTE'
- -1075535208           4
+ -1075383192           4
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -245,7 +245,7 @@
  'PARAMS  '           2 'REAL'
    0.14600000E+04   0.39972622E+01
  'SEQHDR  '           2 'INTE'
- -1075535208           5
+ -1075383192           5
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -289,7 +289,7 @@
  'PARAMS  '           2 'REAL'
    0.18250000E+04   0.49965777E+01
  'SEQHDR  '           2 'INTE'
- -1075535208           6
+ -1075383192           6
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -309,7 +309,7 @@
  'PARAMS  '           2 'REAL'
    0.21900000E+04   0.59958930E+01
  'SEQHDR  '           2 'INTE'
- -1075535208           7
+ -1075383192           7
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -323,7 +323,7 @@
  'PARAMS  '           2 'REAL'
    0.25550000E+04   0.69952087E+01
  'SEQHDR  '           2 'INTE'
- -1075535208           8
+ -1075383192           8
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -337,7 +337,7 @@
  'PARAMS  '           2 'REAL'
    0.29200000E+04   0.79945245E+01
  'SEQHDR  '           2 'INTE'
- -1075535208           9
+ -1075383192           9
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'
@@ -351,7 +351,7 @@
  'PARAMS  '           2 'REAL'
    0.32850000E+04   0.89938402E+01
  'SEQHDR  '           2 'INTE'
- -1075535208          10
+ -1075383192          10
  'LGRNAME '           1 'CHAR'
  'A       '
  'MINISTEP'           1 'INTE'

@@ -1,0 +1,62 @@
+<eclipse>
+<message date="1/1/0" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/9/1990" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="1/9/1990" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+      43464 BYTES                                                        
+</message>
+<message date="1/9/1990" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<comment date="1/9/1990" time="0.00000000000000">
+ NO NON-NEIGHBOUR CONNECTIONS FOUND                                      
+</comment>
+<message date="1/9/1990" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 81                                            
+</message>
+<message date="1/9/1990" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+     343644 BYTES                                                        
+</message>
+<message date="1/9/1990" time="0.00000000000000">
+    58605 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="1/9/1990" time="0.00000000000000">
+ INCONSISTENT END POINTS IN SATURATION TABLE   1                         
+ THE MAXIMUM GAS SATURATION (1.0000)                                     
+ PLUS THE CONNATE WATER SATURATION (0.1800)                              
+ MUST NOT EXCEED 1.0                                                     
+</warning>
+<warning date="1/9/1990" time="0.00000000000000">
+ INCONSISTENT END POINTS IN SATURATION TABLE   1                         
+ THE MAXIMUM WATER SATURATION (1.0000)                                   
+ PLUS THE CONNATE GAS SATURATION (0.3820)                                
+ MUST NOT EXCEED 1.0                                                     
+</warning>
+<message date="1/9/1990" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<warning date="1/9/1990" time="0.00000000000000">
+ PROFILE FACTORS FOR GROUP PLAT-B   ARE NOT NORMALISED.                  
+ THE SUM OF PROFILE FACTORS TIMES NUMBER OF DAYS IN                      
+ MONTH =   364.55 (ALLOWING 28.25 DAYS FOR FEBRUARY).                    
+ WHEN NORMALISED, THE SUM SHOULD BE 365.25 .                             
+</warning>
+<warning date="1/9/1990" time="0.00000000000000">
+ PROFILE FACTORS FOR GROUP PLAT-C   ARE NOT NORMALISED.                  
+ THE SUM OF PROFILE FACTORS TIMES NUMBER OF DAYS IN                      
+ MONTH =   364.72 (ALLOWING 28.25 DAYS FOR FEBRUARY).                    
+ WHEN NORMALISED, THE SUM SHOULD BE 365.25 .                             
+</warning>
+<error date="1/9/1990" time="0.00000000000000">
+ GAS FIELD OPERATIONS MODEL                                              
+ NOT ALLOWED UNDER CURRENT CONTRACT.                                     
+ CONSULT YOUR LOCAL SUPPORT OFFICE TO OBTAIN NEW PASSWORD.               
+</error>
+</eclipse>
