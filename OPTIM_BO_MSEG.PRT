@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -906,3 +907,913 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Errors                 5
  Bugs                   0
  Final cpu       0.00 elapsed       0.00
+=======
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN OPTIM_BO_MSEG
+
+ 0: RUNSPEC
+ 0: 
+ 0: TITLE
+ 0:  Reservoir Optimization MSW SCSA Parameter Example
+ 0: 
+ 0: DIMENS
+ 0:  9  1  10  /
+ 0: 
+ 0: RESOPT
+ 0: 
+ 0: OIL
+ 0: 
+ 0: WATER
+ 0: 
+ 0: GAS
+ 0: 
+ 0: BLACKOIL
+ 0: 
+ 0: DISGAS
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: WELLDIMS
+ 0:  3  20  1  3  /
+ 0: 
+ 0: WSEGDIMS
+ 0:  2  30  4  /
+ 0: 
+ 0: START
+ 0:  1 'JAN' 1997 /
+ 0: 
+ 0: HWELLS
+ 0: 
+ 0: GRID        =========================================================
+ 0: 
+ 0: GRIDFILE
+ 0: 1 1 /
+ 0: 
+ 0: INIT
+ 0: 
+ 0: EQUALS
+ 0:  'DX'     100  /
+ 0:  'DY'     500  /
+ 0:  'PERMX'  25   /
+ 0:  'PERMZ'  5   /
+ 0:  'DZ'     20   /
+ 0:  'PORO'   0.4  /
+ 0:  'TOPS'   7000   1 9  1 1  1 1  /
+ 0:  'DZ'     100    1 9  1 1  3 3  /
+ 0:  'PORO'   0.1    1 9  1 1  3 3  /
+ 0:  /
+ 0: 
+ 0: PROPS       ==========================================================
+ 0: 
+ 0: SWFN
+ 0: -- Sw    Krw    Pcow
+ 0:   0.22   0.0    6.30
+ 0:   0.3    0.07   3.60
+ 0:   0.4    0.15   2.70
+ 0:   0.5    0.24   2.25
+ 0:   0.6    0.33   1.80
+ 0:   0.8    0.65   0.90
+ 0:   0.9    0.83   0.45
+ 0:   1.0    1.0    0.0    /
+ 0: 
+ 0: SGFN
+ 0: -- Sg    Krg    Pcgo
+ 0:   0.0   0.0     0.0
+ 0:   0.04  0.0     0.2
+ 0:   0.1   0.022   0.5
+ 0:   0.2   0.1     1.0
+ 0:   0.3   0.24    1.5
+ 0:   0.4   0.34    2.0
+ 0:   0.5   0.42    2.5
+ 0:   0.6   0.5     3.0
+ 0:   0.7   0.8125  3.5
+ 0:   0.78  1.0     3.9    /
+ 0: 
+ 0: SOF3
+ 0: -- So   Krow    Krog
+ 0:   0.0   0.0     0.0
+ 0:   0.2   0.0     0.0
+ 0:   0.38  1*      0.0
+ 0:   0.4   0.0048  1*
+ 0:   0.48  1*      0.02
+ 0:   0.5   0.0649  1*
+ 0:   0.58  1*      0.1
+ 0:   0.6   0.125   1*
+ 0:   0.68  1*      0.33
+ 0:   0.7   0.4     1*
+ 0:   0.74  1*      0.6
+ 0:   0.78  1.0     1.0   /
+ 0: 
+ 0: PVTW
+ 0: 3000  1.00341  3.0D-6  0.96  0  /
+ 0: 
+ 0: ROCK
+ 0: 3000    4.0D-6   /
+ 0: 
+ 0: DENSITY
+ 0: 45   63.02   0.0702  /
+ 0: 
+ 0: PVDG
+ 0:  400  5.9   0.013
+ 0:  800  2.95  0.0135
+ 0: 1200  1.96  0.014
+ 0: 1600  1.47  0.0145
+ 0: 2000  1.18  0.015
+ 0: 2400  0.98  0.0155
+ 0: 2800  0.84  0.016
+ 0: 3200  0.74  0.0165
+ 0: 3600  0.65  0.017
+ 0: 4000  0.59  0.0175
+ 0: 4400  0.54  0.018
+ 0: 4800  0.49  0.0185
+ 0: 5200  0.45  0.019
+ 0: 5600  0.42  0.0195 /
+ 0: 
+ 0: PMAX
+ 0:  7000 /
+ 0: 
+ 0: PVCO
+ 0: 400  0.165   1.012    1.17   5.0E-5  1*
+ 0: 800  0.335   1.0255   1.14     2*
+ 0: 1200 0.500   1.038    1.11     2*
+ 0: 1600 0.665   1.051    1.08     2*
+ 0: 2000 0.828   1.063    1.06     2*
+ 0: 2400 0.985   1.075    1.03     2*
+ 0: 2800 1.130   1.087    1.00     2*
+ 0: 3200 1.270   1.0985   0.98     2*
+ 0: 3600 1.390   1.11     0.95     2*
+ 0: 4000 1.500   1.12     0.94     2*
+ 0: 4400 1.600   1.13     0.92     2*
+ 0: 4800 1.676   1.14     0.91     2*
+ 0: 5200 1.750   1.148    0.9      2*
+ 0: 5600 1.810   1.155    0.89     2*
+ 0:   /
+ 0: 
+ 0: SOLUTION    ============================================================
+ 0: 
+ 0: EQUIL
+ 0:  7010.00 3500.00 7300.00  .00000 7010.00  .00000     0      0       5 /
+ 0: 
+ 0: RPTRST
+ 0: 'BASIC=2' PRESSURE SWAT SGAS SOIL /
+ 0: 
+ 0: SUMMARY      ===========================================================
+ 0: 
+ 0: WMCTL
+ 0: /
+ 0: 
+ 0: SCSA
+ 0:  PROD 29 /
+ 0: /
+ 0: 
+ 0: ALL
+ 0: 
+ 0: FOPT
+ 0: 
+ 0: WOPR
+ 0:  PROD /
+ 0: 
+ 0: WWCT
+ 0:  PROD /
+ 0: 
+ 0: WGOR
+ 0:  PROD /
+ 0: 
+ 0: SGOR
+ 0:  PROD 29 /
+ 0:  /
+ 0: 
+ 0: SGFR
+ 0:  PROD 29 /
+ 0:  /
+ 0: 
+ 0: SWCT
+ 0:  PROD 30 /
+ 0:  /
+ 0: 
+ 0: SWFR
+ 0:  PROD 30 /
+ 0:  /
+ 0: 
+ 0: SPRDF
+ 0:  PROD 29 /
+ 0:  PROD 30 /
+ 0:  /
+ 0: 
+ 0: SWIMR
+ 0:  PROD  6  /
+ 0:  /
+ 0: 
+ 0: SWIMT
+ 0:  PROD  6 /
+ 0:  /
+ 0: 
+ 0: SGIMR
+ 0:  PROD  5 /
+ 0:  /
+ 0: 
+ 0: SGIMT
+ 0:  PROD  5 /
+ 0:  /
+ 0: 
+ 0: SPR
+ 0:  PROD  6 /
+ 0:  /
+ 0: 
+ 0: SWIMR
+ 0:  WINJ  4 /
+ 0:  /
+ 0: 
+ 0: SWIMT
+ 0:  WINJ  4  /
+ 0:  /
+ 0: 
+ 0: RUNSUM
+ 0: 
+ 0: RPTONLY
+ 0: SCHEDULE     ===========================================================
+ 0: 
+ 0: RPTRST
+ 0:  'BASIC=2' PRESSURE SOIL SWAT SGAS /
+ 0: 
+ 0: DRSDT
+ 0:    1.0E20  /
+ 0: 
+ 0: WELSPECS
+ 0:  'PROD' 'G' 1 1 7030 'OIL' 0.0  'STD'  'STOP' 'YES' 0 'AVG' 0 /
+ 0:  'WINJ' 'G' 9 1 7030 'WAT' 0.0  'STD'  'STOP' 'YES' 0 'AVG' 0 /
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: 
+ 0:  'PROD' 1 1 2 2   3*  0.2   3*  'X' /
+ 0:  'PROD' 2 1 2 2   3*  0.2   3*  'X' /
+ 0:  'PROD' 3 1 2 2   3*  0.2   3*  'X' /
+ 0:  'PROD' 4 1 2 2   3*  0.2   3*  'X' /
+ 0:  'PROD' 5 1 2 2   3*  0.2   3*  'X' /
+ 0: 
+ 0:  'PROD' 1 1 5 5   3*  0.2   3*  'X' /
+ 0:  'PROD' 2 1 5 5   3*  0.2   3*  'X' /
+ 0:  'PROD' 3 1 5 5   3*  0.2   3*  'X' /
+ 0:  'PROD' 4 1 5 5   3*  0.2   3*  'X' /
+ 0:  'PROD' 5 1 5 5   3*  0.2   3*  'X' /
+ 0: 
+ 0:  'PROD' 1 1 8 8   3*  0.2   3*  'X' /
+ 0:  'PROD' 2 1 8 8   3*  0.2   3*  'X' /
+ 0:  'PROD' 3 1 8 8   3*  0.2   3*  'X' /
+ 0:  'PROD' 4 1 8 8   3*  0.2   3*  'X' /
+ 0:  'PROD' 5 1 8 8   3*  0.2   3*  'X' /
+ 0: 
+ 0:  'WINJ' 9 1 2 2   3*  0.2   3*  'X' /
+ 0:  'WINJ' 8 1 2 2   3*  0.2   3*  'X' /
+ 0: 
+ 0:  'WINJ' 9 1 10 10   3*  0.2   3*  'X' /
+ 0:  'WINJ' 8 1 10 10   3*  0.2   3*  'X' /
+ 0:  'WINJ' 7 1 10 10   3*  0.2   3*  'X' /
+ 0:  'WINJ' 6 1 10 10   3*  0.2   3*  'X' /
+ 0:  'WINJ' 5 1 10 10   3*  0.2   3*  'X' /
+ 0:  'WINJ' 4 1 10 10   3*  0.2   3*  'X' /
+ 0: /
+ 0: 
+ 0: WELSEGS
+ 0: 
+ 0: -- Name    Dep 1   Tlen 1  Vol 1
+ 0:   'PROD'   7010      10    0.31   'INC' /
+ 0: 
+ 0: -- First   Last   Branch   Outlet  Length   Depth  Diam  Ruff  Area  Vol
+ 0: -- Seg     Seg    Num      Seg              Chang
+ 0: -- Main Stem
+ 0:     2       12     1        1         20     20    0.2   1.E-3  1*   1* /
+ 0: -- Top Branch
+ 0:     29      29     2        2          1      0    0.2   1.E-3  1*   1* /
+ 0:     13      13     2        29        49      0    0.2   1.E-3  1*   1* /
+ 0:     14      17     2        13       100      0    0.2   1.E-3  1*   1* /
+ 0: -- Middle Branch
+ 0:     18      18     3        9         50      0    0.2   1.E-3  1*   1* /
+ 0:     19      22     3        18       100      0    0.2   1.E-3  1*   1* /
+ 0: -- Bottom Branch
+ 0:     30      30     4        12         1      0    0.2   1.E-3  1*   1* /
+ 0:     23      23     4        30        49      0    0.2   1.E-3  1*   1* /
+ 0:     24      27     4        23       100      0    0.2   1.E-3  1*   1* /
+ 0:  /
+ 0: 
+ 0: COMPSEGS
+ 0: 
+ 0: -- Name
+ 0:   'PROD' /
+ 0: 
+ 0: -- I  J  K  Brn  Start   End     Dirn   End
+ 0: --          No   Length  Length  Penet  Range
+ 0: -- Top Branch
+ 0:    1  1  2  2      30      1*     'X'    5  /
+ 0: -- Middle Branch
+ 0:    1  1  5  3      170     1*     'X'    5  /
+ 0: -- Bottom Branch
+ 0:    1  1  8  4      230     1*     'X'    5  /
+ 0:  /
+ 0: 
+ 0: WELSEGS
+ 0: 
+ 0: -- Name    Dep 1   Tlen 1  Vol 1
+ 0:   'WINJ'   7010      10    0.31   'INC' /
+ 0: 
+ 0: -- First   Last   Branch   Outlet  Length   Depth  Diam  Ruff  Area  Vol
+ 0: -- Seg     Seg    Num      Seg              Chang
+ 0: -- Main Stem
+ 0:     2       14     1        1         20     20    0.2   1.E-3  1*   1* /
+ 0: -- Top Branch
+ 0:     15      15     2        2         50      0    0.2   1.E-3  1*   1* /
+ 0:     16      16     2        15       100      0    0.2   1.E-3  1*   1* /
+ 0: -- Bottom Branch
+ 0:     23      23     3        14         1      0    0.2   1.E-3  1*   1* /
+ 0:     17      17     3        23        49      0    0.2   1.E-3  1*   1* /
+ 0:     18      22     3        17       100      0    0.2   1.E-3  1*   1* /
+ 0:  /
+ 0: 
+ 0: COMPSEGS
+ 0: 
+ 0: -- Name
+ 0:   'WINJ' /
+ 0: 
+ 0: -- I  J  K  Brn  Start   End     Dirn   End
+ 0: --          No   Length  Length  Penet  Range
+ 0: -- Top Branch
+ 0:    9  1  2  2      30      1*     'X'    8  /
+ 0: -- Bottom Branch
+ 0:    9  1 10  3      270     1*     'X'    4  /
+ 0:  /
+ 0: 
+ 0: WEFAC
+ 0:  '*'  0.5  /
+ 0:  /
+ 0: 
+ 0: WCONPROD
+ 0:  'PROD' 'OPEN' 'ORAT'   2000  4*  1000  /
+ 0:  /
+ 0: 
+ 0: WCONINJE
+ 0:  'WINJ' 'WAT' 'OPEN' 'RATE'  2000  1*  4000  /
+ 0:  /
+ 0: 
+ 0: WSEGITER
+ 0:  /
+ 0: 
+ 0: WSEGVALV
+ 0:  PROD  29  0.66  0.001  /
+ 0:  /
+ 0: 
+ 0: -- Import a constant rate 100 of gas into segment 5 of PROD
+ 0: -- Import a pressure-dependent rate of water into segment 6
+ 0: --  of PROD, limited to 100
+ 0: -- Import a constant rate 100 of water into segment 4 of WINJ
+ 0: WSEGEXSS
+ 0:  PROD  5  GIMPR  100  /
+ 0:  PROD  6  WIMPP  100  0.5  3200 /
+ 0:  WINJ  4  WIMPR  100 /
+ 0:  /
+ 0: 
+ 0: TSTEP
+ 0:  20  80
+ 0: /
+ 0: 
+ 0: TSTEP
+ 0:  20*100
+ 0: /
+ 0: 
+ 0: OPTIMIZE     ===========================================================
+ 0: 
+ 0: OPTDIMS
+ 0: 10 10 /
+ 0: 
+ 0: OPTFUNC
+ 0: 'FOPT' 'FIELD' /
+ 0: /
+ 0: 
+ 0: OPTPARS
+ 0: 'SCSA' 'PROD:29' 0.0005 0.002 /
+ 0: /
+ 0: 
+ 0: RPTOPT
+ 0: 'SEPARATE' /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN OPTIM_BO_MSEG
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING DIMENS  
+     4 READING RESOPT  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           RESOPT   IS NOT AVAILABLE IN ECLIPSE 100                        
+ @           AND HAS BEEN IGNORED                                            
+     5 READING OIL     
+     6 READING WATER   
+     7 READING GAS     
+     8 READING BLACKOIL
+     9 READING DISGAS  
+    10 READING FIELD   
+    11 READING WELLDIMS
+    12 READING WSEGDIMS
+    13 READING START   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           CHECKING FOR LICENSES                                           
+    14 READING HWELLS  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @            HWELLS IS NOT REQUIRED IN ECLIPSE 100                          
+    15 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                44080 BYTES                                                
+    16 READING GRIDFILE
+    17 READING INIT    
+    18 READING EQUALS  
+    19 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           NUMBER OF ACTIVE CELLS IS 90                                    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               889292 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @              58566 CHARACTER VARIABLES USED                               
+    20 READING SWFN    
+    21 READING SGFN    
+    22 READING SOF3    
+    23 READING PVTW    
+    24 READING ROCK    
+    25 READING DENSITY 
+    26 READING PVDG    
+    27 READING PMAX    
+    28 READING PVCO    
+    29 READING SOLUTION
+    30 READING EQUIL   
+    31 READING RPTRST  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED MNEMONIC SWAT             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED MNEMONIC SGAS             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED MNEMONIC SOIL             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+    32 READING SUMMARY 
+    33 READING WMCTL   
+    34 READING SCSA    
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD SCSA     IN SUMMARY FILE SPECIFICATION     
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           SPURIOUS DATA BEFORE ALL      KEYWORD                           
+ @            PROD 29 /                                                      
+ @           /                                                               
+    35 READING ALL     
+    36 READING FOPT    
+    37 READING WOPR    
+    38 READING WWCT    
+    39 READING WGOR    
+    40 READING SGOR    
+    41 READING SGFR    
+    42 READING SWCT    
+    43 READING SWFR    
+    44 READING SPRDF   
+    45 READING SWIMR   
+    46 READING SWIMT   
+    47 READING SGIMR   
+    48 READING SGIMT   
+    49 READING SPR     
+    50 READING SWIMR   
+    51 READING SWIMT   
+    52 READING RUNSUM  
+    53 READING RPTONLY 
+    54 READING SCHEDULE
+    55 READING RPTRST  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED MNEMONIC SOIL             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED MNEMONIC SWAT             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED MNEMONIC SGAS             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+    56 READING DRSDT   
+    57 READING WELSPECS
+    58 READING COMPDAT 
+    59 READING WELSEGS 
+    60 READING COMPSEGS
+    61 READING WELSEGS 
+    62 READING COMPSEGS
+    63 READING WEFAC   
+    64 READING WCONPROD
+    65 READING WCONINJE
+    66 READING WSEGITER
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           THE WSEGITER DATA:                                              
+ @           MAX NO OF ITERATIONS PER CYCLE              20                  
+ @           MAX NO OF REDUCTIONS IN WEIGHTING FACTOR     5                  
+ @           PROPORTIONAL REDUCTION IN WEIGHTING FACTOR  0.30                
+ @           PROPORTIONAL INCREASE  IN WEIGHTING FACTOR  2.00                
+ @           MAY TAKE UP TO  15 ITERATION CYCLES.                            
+    67 READING WSEGVALV
+    68 READING WSEGEXSS
+    69 READING TSTEP   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           RESTART FILE WRITTEN   REPORT     0                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************   1
+  SIMULATE AT     0.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP    1 TIME=    1.00  DAYS (  +1.0  DAYS INIT  3 ITS) (2-JAN-1997)           
+  PAV=  3552.0  PSIA   WCT=0.063 GOR=     1.41 MSCF/STB WGR=   0.0475 STB/MSCF   
+
+ STEP    2 TIME=    4.00  DAYS (  +3.0  DAYS MAXF  2 ITS) (5-JAN-1997)           
+  PAV=  3551.6  PSIA   WCT=0.062 GOR=     1.41 MSCF/STB WGR=   0.0468 STB/MSCF   
+
+ STEP    3 TIME=   12.00  DAYS (  +8.0  DAYS HALF  2 ITS) (13-JAN-1997)          
+  PAV=  3550.6  PSIA   WCT=0.065 GOR=     1.41 MSCF/STB WGR=   0.0494 STB/MSCF   
+
+ STEP    4 TIME=   20.00  DAYS (  +8.0  DAYS REPT  2 ITS) (21-JAN-1997)          
+  PAV=  3549.3  PSIA   WCT=0.068 GOR=     1.41 MSCF/STB WGR=   0.0519 STB/MSCF   
+
+ @--MESSAGE  AT TIME       20.0   DAYS    (21-JAN-1997):
+ @           RESTART FILE WRITTEN   REPORT     1                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************   2
+  SIMULATE AT    20.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   1    21 JAN 1997   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP    5 TIME=   44.00  DAYS ( +24.0  DAYS MAXF  2 ITS) (14-FEB-1997)          
+  PAV=  3543.4  PSIA   WCT=0.077 GOR=     1.40 MSCF/STB WGR=   0.0594 STB/MSCF   
+
+ STEP    6 TIME=  100.00  DAYS ( +56.0  DAYS REPT  3 ITS) (11-APR-1997)          
+  PAV=  3525.7  PSIA   WCT=0.097 GOR=     1.40 MSCF/STB WGR=   0.0766 STB/MSCF   
+
+ @--MESSAGE  AT TIME      100.0   DAYS    (11-APR-1997):
+ @           RESTART FILE WRITTEN   REPORT     2                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+    70 READING TSTEP   
+1                             **********************************************************************   3
+  SIMULATE AT   100.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   2    11 APR 1997   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP    7 TIME=  200.00  DAYS (+100.0  DAYS REPT  3 ITS) (20-JLY-1997)          
+  PAV=  3476.0  PSIA   WCT=0.142 GOR=     1.51 MSCF/STB WGR=   0.1094 STB/MSCF   
+
+ @--MESSAGE  AT TIME      200.0   DAYS    (20-JLY-1997):
+ @           RESTART FILE WRITTEN   REPORT     3                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************   4
+  SIMULATE AT   200.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   3    20 JLY 1997   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP    8 TIME=  300.00  DAYS (+100.0  DAYS REPT  3 ITS) (28-OCT-1997)          
+  PAV=  3415.8  PSIA   WCT=0.207 GOR=     1.56 MSCF/STB WGR=   0.1681 STB/MSCF   
+
+ @--MESSAGE  AT TIME      300.0   DAYS    (28-OCT-1997):
+ @           RESTART FILE WRITTEN   REPORT     4                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************   5
+  SIMULATE AT   300.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   4    28 OCT 1997   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP    9 TIME=  400.00  DAYS (+100.0  DAYS REPT  3 ITS) (5-FEB-1998)           
+  PAV=  3344.7  PSIA   WCT=0.263 GOR=     1.58 MSCF/STB WGR=   0.2254 STB/MSCF   
+
+ @--MESSAGE  AT TIME      400.0   DAYS    ( 5-FEB-1998):
+ @           RESTART FILE WRITTEN   REPORT     5                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************   6
+  SIMULATE AT   400.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   5     5 FEB 1998   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   10 TIME=  500.00  DAYS (+100.0  DAYS REPT  3 ITS) (16-MAY-1998)          
+  PAV=  3238.3  PSIA   WCT=0.318 GOR=     1.86 MSCF/STB WGR=   0.2502 STB/MSCF   
+
+ @--MESSAGE  AT TIME      500.0   DAYS    (16-MAY-1998):
+ @           RESTART FILE WRITTEN   REPORT     6                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************   7
+  SIMULATE AT   500.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   6    16 MAY 1998   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   11 TIME=  600.00  DAYS (+100.0  DAYS REPT  4 ITS) (24-AUG-1998)          
+  PAV=  3042.0  PSIA   WCT=0.390 GOR=     2.77 MSCF/STB WGR=   0.2310 STB/MSCF   
+
+ @--MESSAGE  AT TIME      600.0   DAYS    (24-AUG-1998):
+ @           RESTART FILE WRITTEN   REPORT     7                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************   8
+  SIMULATE AT   600.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   7    24 AUG 1998   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   12 TIME=  700.00  DAYS (+100.0  DAYS REPT  4 ITS) (2-DEC-1998)           
+  PAV=  2577.2  PSIA   WCT=0.484 GOR=     5.99 MSCF/STB WGR=   0.1569 STB/MSCF   
+
+ @--MESSAGE  AT TIME      700.0   DAYS    ( 2-DEC-1998):
+ @           RESTART FILE WRITTEN   REPORT     8                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************   9
+  SIMULATE AT   700.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   8     2 DEC 1998   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ @--WARNING  AT TIME      700.0   DAYS    ( 2-DEC-1998):
+ @           LINEAR EQUATIONS NOT FULLY CONVERGED - RUN MAY GO FASTER        
+ @           IF YOU (A) INCREASE NSTACK (= 10 - RUNSPEC SECTION)     15      
+ @               OR (B) MAKE NSTACK NEGATIVE ( EXTENDS STACK ON DISK )       
+
+ @--MESSAGE  AT TIME      700.0   DAYS    ( 2-DEC-1998):
+ @           ******************************************                      
+ @           * WELL PROD     HAS CHANGED TO           *                      
+ @           * CONTROL BY BOTTOM HOLE PRESSURE        *                      
+ @           * FROM TIME    700.00   DAYS  .          *                      
+ @           ******************************************                      
+
+ STEP   13 TIME=  800.00  DAYS (+100.0  DAYS REPT  7 ITS) (12-MAR-1999)          
+  PAV=  2093.5  PSIA   WCT=0.555 GOR=     9.34 MSCF/STB WGR=   0.1333 STB/MSCF   
+
+ @--MESSAGE  AT TIME      800.0   DAYS    (12-MAR-1999):
+ @           RESTART FILE WRITTEN   REPORT     9                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  10
+  SIMULATE AT   800.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT   9    12 MAR 1999   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   14 TIME=  900.00  DAYS (+100.0  DAYS REPT  2 ITS) (20-JUN-1999)          
+  PAV=  1780.0  PSIA   WCT=0.602 GOR=    10.64 MSCF/STB WGR=   0.1422 STB/MSCF   
+
+ @--MESSAGE  AT TIME      900.0   DAYS    (20-JUN-1999):
+ @           RESTART FILE WRITTEN   REPORT    10                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  11
+  SIMULATE AT   900.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  10    20 JUN 1999   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   15 TIME= 1000.00  DAYS (+100.0  DAYS REPT  3 ITS) (28-SEP-1999)          
+  PAV=  1579.8  PSIA   WCT=0.639 GOR=    10.54 MSCF/STB WGR=   0.1681 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1000.0   DAYS    (28-SEP-1999):
+ @           RESTART FILE WRITTEN   REPORT    11                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  12
+  SIMULATE AT  1000.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  11    28 SEP 1999   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   16 TIME= 1100.00  DAYS (+100.0  DAYS REPT  3 ITS) (6-JAN-2000)           
+  PAV=  1454.8  PSIA   WCT=0.670 GOR=     9.56 MSCF/STB WGR=   0.2125 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1100.0   DAYS    ( 6-JAN-2000):
+ @           RESTART FILE WRITTEN   REPORT    12                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  13
+  SIMULATE AT  1100.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  12     6 JAN 2000   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   17 TIME= 1200.00  DAYS (+100.0  DAYS REPT  3 ITS) (15-APR-2000)          
+  PAV=  1380.5  PSIA   WCT=0.696 GOR=     8.04 MSCF/STB WGR=   0.2842 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1200.0   DAYS    (15-APR-2000):
+ @           RESTART FILE WRITTEN   REPORT    13                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  14
+  SIMULATE AT  1200.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  13    15 APR 2000   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   18 TIME= 1300.00  DAYS (+100.0  DAYS REPT  3 ITS) (24-JLY-2000)          
+  PAV=  1342.0  PSIA   WCT=0.716 GOR=     6.18 MSCF/STB WGR=   0.4084 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1300.0   DAYS    (24-JLY-2000):
+ @           RESTART FILE WRITTEN   REPORT    14                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  15
+  SIMULATE AT  1300.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  14    24 JLY 2000   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   19 TIME= 1400.00  DAYS (+100.0  DAYS REPT  4 ITS) (1-NOV-2000)           
+  PAV=  1329.7  PSIA   WCT=0.732 GOR=     4.17 MSCF/STB WGR=   0.6568 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1400.0   DAYS    ( 1-NOV-2000):
+ @           RESTART FILE WRITTEN   REPORT    15                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  16
+  SIMULATE AT  1400.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  15     1 NOV 2000   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   20 TIME= 1500.00  DAYS (+100.0  DAYS REPT  5 ITS) (9-FEB-2001)           
+  PAV=  1335.3  PSIA   WCT=0.741 GOR=     2.34 MSCF/STB WGR=   1.2197 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1500.0   DAYS    ( 9-FEB-2001):
+ @           RESTART FILE WRITTEN   REPORT    16                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  17
+  SIMULATE AT  1500.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  16     9 FEB 2001   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   21 TIME= 1600.00  DAYS (+100.0  DAYS REPT  5 ITS) (20-MAY-2001)          
+  PAV=  1349.4  PSIA   WCT=0.739 GOR=     1.29 MSCF/STB WGR=   2.1889 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1600.0   DAYS    (20-MAY-2001):
+ @           RESTART FILE WRITTEN   REPORT    17                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  18
+  SIMULATE AT  1600.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  17    20 MAY 2001   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   22 TIME= 1700.00  DAYS (+100.0  DAYS REPT  4 ITS) (28-AUG-2001)          
+  PAV=  1365.3  PSIA   WCT=0.738 GOR=     0.93 MSCF/STB WGR=   3.0306 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1700.0   DAYS    (28-AUG-2001):
+ @           RESTART FILE WRITTEN   REPORT    18                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  19
+  SIMULATE AT  1700.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  18    28 AUG 2001   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   23 TIME= 1800.00  DAYS (+100.0  DAYS REPT  2 ITS) (6-DEC-2001)           
+  PAV=  1380.6  PSIA   WCT=0.743 GOR=     0.81 MSCF/STB WGR=   3.5816 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1800.0   DAYS    ( 6-DEC-2001):
+ @           RESTART FILE WRITTEN   REPORT    19                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  20
+  SIMULATE AT  1800.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  19     6 DEC 2001   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   24 TIME= 1900.00  DAYS (+100.0  DAYS REPT  3 ITS) (16-MAR-2002)          
+  PAV=  1394.6  PSIA   WCT=0.752 GOR=     0.77 MSCF/STB WGR=   3.9156 STB/MSCF   
+
+ @--MESSAGE  AT TIME     1900.0   DAYS    (16-MAR-2002):
+ @           RESTART FILE WRITTEN   REPORT    20                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  21
+  SIMULATE AT  1900.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  20    16 MAR 2002   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   25 TIME= 2000.00  DAYS (+100.0  DAYS REPT  2 ITS) (24-JUN-2002)          
+  PAV=  1406.9  PSIA   WCT=0.764 GOR=     0.78 MSCF/STB WGR=   4.1517 STB/MSCF   
+
+ @--MESSAGE  AT TIME     2000.0   DAYS    (24-JUN-2002):
+ @           RESTART FILE WRITTEN   REPORT    21                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+1                             **********************************************************************  22
+  SIMULATE AT  2000.00   DAYS * Reservoir Optimization MSW SCSA Parameter Example                      * ECLIPSE  VERSION 2009.1     
+  REPORT  21    24 JUN 2002   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
+                              **************************************************************************
+
+ STEP   26 TIME= 2100.00  DAYS (+100.0  DAYS REPT  2 ITS) (2-OCT-2002)           
+  PAV=  1418.1  PSIA   WCT=0.776 GOR=     0.79 MSCF/STB WGR=   4.4113 STB/MSCF   
+
+ @--MESSAGE  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           RESTART FILE WRITTEN   REPORT    22                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+    71 READING OPTIMIZE
+
+ @--  ERROR  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           UNRECOGNISED KEYWORD OPTIMIZE IN SCHEDULING DATA                
+    72 READING OPTDIMS 
+
+ @--  ERROR  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           UNRECOGNISED KEYWORD OPTDIMS  IN SCHEDULING DATA                
+
+ @--WARNING  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           SPURIOUS DATA BEFORE OPTFUNC  KEYWORD                           
+ @           10 10 /                                                         
+    73 READING OPTFUNC 
+
+ @--  ERROR  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           UNRECOGNISED KEYWORD OPTFUNC  IN SCHEDULING DATA                
+
+ @--WARNING  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           SPURIOUS DATA BEFORE OPTPARS  KEYWORD                           
+ @           'FOPT' 'FIELD' /                                                
+ @           /                                                               
+    74 READING OPTPARS 
+
+ @--  ERROR  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           UNRECOGNISED KEYWORD OPTPARS  IN SCHEDULING DATA                
+
+ @--WARNING  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           SPURIOUS DATA BEFORE RPTOPT   KEYWORD                           
+ @           'SCSA' 'PROD:29' 0.0005 0.002 /                                 
+ @           /                                                               
+    75 READING RPTOPT  
+
+ @--  ERROR  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           UNRECOGNISED KEYWORD RPTOPT   IN SCHEDULING DATA                
+
+ @--WARNING  AT TIME     2100.0   DAYS    ( 2-OCT-2002):
+ @           SPURIOUS DATA BEFORE END      KEYWORD                           
+ @           'SEPARATE' /                                                    
+    76 READING END     
+
+ Error summary 
+ Comments               2
+ Warnings              13
+ Problems               0
+ Errors                 5
+ Bugs                   0
+ Final cpu       0.42 elapsed       1.00
+>>>>>>> origin/master

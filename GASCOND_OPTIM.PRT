@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -889,3 +890,896 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Errors                12
  Bugs                   0
  Final cpu       0.00 elapsed       0.00
+=======
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2009.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 27-APR-2009 16:22:47 | 27-APR-2009 19:37:10 | S:\2009.1_w18i
+system   | 22-APR-2009 14:52:01 | 25-APR-2009 05:27:35 | S:\2009.1_w18
+utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN GASCOND_OPTIM
+
+ 0: --
+ 0: ------------------------------------------------------------------------
+ 0: --  Condensate field
+ 0: --  Optimizing the oil production by adjusting the gas injection rate
+ 0: --  Considering the cost of injecting Gas
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC  ============================================================
+ 0: 
+ 0: -- Phases present
+ 0: OIL
+ 0: WATER
+ 0: GAS
+ 0: ISGAS
+ 0: 
+ 0: -- 2D model: x-z cross-section
+ 0: 
+ 0: DIMENS
+ 0: --nx ny nz
+ 0:   20  1  5 /
+ 0: 
+ 0: 
+ 0: -- Unit: FIELD
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: -- Number of components
+ 0: 
+ 0: COMPS
+ 0: 6 /
+ 0: 
+ 0: 
+ 0: TABDIMS
+ 0: -- sat pres - max rows in tables-
+ 0: -- tab tab    sat    press
+ 0:     1   1      40     40 /
+ 0: 
+ 0: WELLDIMS
+ 0: -- max  max   max    max wells  max stages
+ 0: --wells comps groups in group   per sep
+ 0:     1*   10     2      1*       /
+ 0: 
+ 0: -- Starting date
+ 0: START
+ 0: 1 Jan 1997 /
+ 0: 
+ 0: UNIFOUT
+ 0: 
+ 0: -- activate the reservoir optimization option
+ 0: 
+ 0: RESOPT
+ 0: 
+ 0: GRID
+ 0: 
+ 0: INIT
+ 0: 
+ 0: --  SPECIFY GRID BLOCK DIMENSIONS IN THE X DIRECTION
+ 0: DXV
+ 0:     20*200 /
+ 0: 
+ 0: --  SPECIFY GRID BLOCK DIMENSIONS IN THE y DIRECTION
+ 0: DYV
+ 0:      1000.0  /
+ 0: 
+ 0: -- SPECIFY CELL THICKNESSES ( DZ ), HORIZ. PERMEABILITIES ( PERMX )
+ 0: -- AND POROSITIES ( PORO ) FOR EACH LAYER OF THE GRID. ALSO CELL TOP
+ 0: -- DEPTHS ( TOPS ) FOR LAYER 1.
+ 0: 
+ 0: --     ARRAY    VALUE  ------ BOX ------
+ 0: EQUALS
+ 0: 
+ 0:       'TOPS'    6100   1   1   1   1   1  1  /
+ 0:       'TOPS'    6105   2   2   1   1   1  1  /
+ 0:       'TOPS'    6110   3   3   1   1   1  1  /
+ 0:       'TOPS'    6115   4   4   1   1   1  1  /
+ 0:       'TOPS'    6120   5   5   1   1   1  1  /
+ 0:       'TOPS'    6125   6   6   1   1   1  1  /
+ 0:       'TOPS'    6130   7   7   1   1   1  1  /
+ 0:       'TOPS'    6135   8   8   1   1   1  1  /
+ 0:       'TOPS'    6140   9   9   1   1   1  1  /
+ 0:       'TOPS'    6145   10  10  1   1   1  1  /
+ 0:       'TOPS'    6150   11  11  1   1   1  1  /
+ 0:       'TOPS'    6155   12  12  1   1   1  1  /
+ 0:       'TOPS'    6160   13  13  1   1   1  1  /
+ 0:       'TOPS'    6165   14  14  1   1   1  1  /
+ 0:       'TOPS'    6170   15  15  1   1   1  1  /
+ 0:       'TOPS'    6175   16  16  1   1   1  1  /
+ 0:       'TOPS'    6180   17  17  1   1   1  1  /
+ 0:       'TOPS'    6185   18  18  1   1   1  1  /
+ 0:       'TOPS'    6190   19  19  1   1   1  1  /
+ 0:       'TOPS'    6195   20  20  1   1   1  1  /
+ 0: 
+ 0: --      CONSTANT POROSITY AND NTG
+ 0: 
+ 0:       'PORO'    0.18   1  20    1  1   1  5   /
+ 0:       'NTG'     1.00   1  20    1  1   1  5   /
+ 0: 
+ 0: 
+ 0:       'DZ'      32.    1  20    1  1   1  1  /  LAYER 1
+ 0:       'PERMX'   50.    1  20    1  1   1  1  /
+ 0: 
+ 0:       'DZ'      5.     1  20    1  1   2  2  /  LAYER 2
+ 0:       'PERMX'   0.01   1  20    1  1   2  2  /
+ 0: 
+ 0:       'DZ'      20.    1  20    1  1   3  3  /  LAYER 3
+ 0:       'PERMX'   20.    1  20    1  1   3  3  /
+ 0: 
+ 0:       'DZ'      41.    1  20    1  1   4  4  /  LAYER 4
+ 0:       'PERMX'   80.    1  20    1  1   4  4  /
+ 0: 
+ 0:       'DZ'      32.    1  20    1  1   5  5  /  LAYER 5
+ 0:       'PERMX'   150.   1  20    1  1   5  5  /
+ 0: 
+ 0: 
+ 0: /   EQUALS IS TERMINATED BY A NULL RECORD
+ 0: 
+ 0: --  COPY X PERMEABILITIES ( PERMX ) INTO Y AND Z PERMEABILITIES
+ 0: --  ( PERMZ ) FOR THE WHOLE GRID, AND THEN MULTIPLY PERMZ BY 0.2.
+ 0: -------- SOURCE     DESTINATION
+ 0: COPY
+ 0:          'PERMX'      'PERMZ'     /
+ 0:          'PERMX'      'PERMY'     /
+ 0: /
+ 0: -- set Kv/Kh ratio
+ 0: MULTIPLY
+ 0: --       array   factor i1  i2  j1 j2  k1 k2
+ 0:         'PERMZ'     0.2  1  20   1  1   1  5  /
+ 0: /
+ 0: 
+ 0: 
+ 0: -- OUTPUT OF CELL DIMENSIONS, PERMEABILITIES, POROSITY AND TOPS
+ 0: -- DATA IS REQUESTED, AND OF THE CALCULATED PORE VOLUMES, CELL
+ 0: -- CENTRE DEPTHS AND X AND Z DIRECTION TRANSMISSIBILITIES
+ 0: 
+ 0: RPTGRID
+ 0:  DX DY DZ PERMX PERMY PERMZ PORO NTG TOPS MIDS  /
+ 0: 
+ 0: 
+ 0: PROPS    ===============================================================
+ 0: -------- THE PROPS SECTION DEFINES THE REL. PERMEABILITIES, CAPILLARY
+ 0: -------- PRESSURES, AND THE PVT PROPERTIES OF THE RESERVOIR FLUIDS
+ 0: ----------------------------------------------------------------------
+ 0: 
+ 0: -- include relative permeability and capillary pressure tables
+ 0: -- saturation tables  THREE PHASE
+ 0: 
+ 0: SWFN
+ 0: --  sw        krw      Pcwo
+ 0:    0.15      0.        5
+ 0:    0.2       0.        3
+ 0:    0.25      0.01      1.9
+ 0:    0.3       0.05      1
+ 0:    0.35      0.1       0.7
+ 0:    0.4       0.18      0.6
+ 0:    0.45      0.28      0.5
+ 0:    0.50      0.4       0.4
+ 0:    1.00      1.        0.
+ 0: /
+ 0: 
+ 0: SOF3
+ 0: --  so       krow       krog
+ 0:    0.        0.          0.
+ 0:    0.1       0.          0.
+ 0:    0.15      0.          0.01
+ 0:    0.2       0.05        0.03
+ 0:    0.25      0.1         0.05
+ 0:    0.3       0.15        0.08
+ 0:    0.35      0.2         0.11
+ 0:    0.4       0.25        0.15
+ 0:    0.45      0.3         0.19
+ 0:    0.5       0.35        0.23
+ 0:    0.55      0.4         0.28
+ 0:    0.6       0.45        0.34
+ 0:    0.65      0.5         0.4
+ 0:    0.7       0.55        0.47
+ 0:    0.75      0.6         0.54
+ 0:    0.85      0.7         0.7
+ 0: /
+ 0: 
+ 0: SGFN
+ 0: --  sg        krg       Pcgo
+ 0:    0.        0.         0.
+ 0:    0.05      0.         0.
+ 0:    0.1       0.03       0.
+ 0:    0.15      0.06       0.
+ 0:    0.2       0.1        0.
+ 0:    0.25      0.15       0.
+ 0:    0.3       0.2        0.
+ 0:    0.35      0.25       0.
+ 0:    0.4       0.3        0.
+ 0:    0.45      0.36       0.
+ 0:    0.5       0.42       0.
+ 0:    0.55      0.5        0.
+ 0:    0.850     1.000      0.
+ 0: /
+ 0: 
+ 0: --    'RELPFCON.DAT'  / special for water injection into condensates
+ 0: --
+ 0: --  'relpfld.dat'  / file name depends on machine
+ 0: 
+ 0: 
+ 0: -- Properties section: PVT data
+ 0: 
+ 0: NCOMPS
+ 0:         6 /
+ 0: 
+ 0: EOS
+ 0:  PR   /
+ 0: 
+ 0: -- Peng-Robinson correction
+ 0: 
+ 0: PRCORR
+ 0: 
+ 0: -- Standard temperature and pressure in Deg F      and PSIA
+ 0: 
+ 0: STCOND
+ 0:      60.00001     14.69590 /
+ 0: 
+ 0: -- Component names
+ 0: 
+ 0: CNAMES
+ 0:  CO2
+ 0:  N2
+ 0:  C1
+ 0:  C3
+ 0:  C10
+ 0:  C15
+ 0:  /
+ 0: 
+ 0: -- Critical temperatures Deg R
+ 0: 
+ 0: TCRIT
+ 0:   5.484599855E+02  2.271599940E+02  3.430799909E+02  6.656399824E+02
+ 0:   1.126799970E+03  1.303199965E+03                                   /
+ 0: 
+ 0: -- Critical pressures PSIA
+ 0: 
+ 0: PCRIT
+ 0:   1.071331110E+03  4.923126500E+02  6.677816960E+02  6.186973900E+02
+ 0:   3.509380920E+02  2.552677830E+02                                   /
+ 0: 
+ 0: -- Critical volumes
+ 0: 
+ 0: VCRIT
+ 0:   1.505735240E+00  1.441661400E+00  1.569809080E+00  3.203692000E+00
+ 0:   8.553857640E+00  1.247838034E+01                                   /
+ 0: 
+ 0: -- Critical Z-factors
+ 0: 
+ 0: ZCRIT
+ 0:   2.740777974E-01  2.911514044E-01  2.847294766E-01  2.774828283E-01
+ 0:   2.482516673E-01  2.277663896E-01                                   /
+ 0: 
+ 0: -- Critical volumes for LBC Viscosities
+ 0: 
+ 0: VCRITVIS
+ 0:   1.505735240E+00  1.441661400E+00  1.569809080E+00  3.203692000E+00
+ 0:   8.553857640E+00  1.247838034E+01                                   /
+ 0: 
+ 0: -- Critical Z-factors for LBC Viscosities
+ 0: 
+ 0: ZCRITVIS
+ 0:   2.740777974E-01  2.911514044E-01  2.847294766E-01  2.774828283E-01
+ 0:   2.482516673E-01  2.277663896E-01                                   /
+ 0: 
+ 0: -- Reference 3-Parameter PR   EoS Shift Coefficients
+ 0: 
+ 0: SSHIFT
+ 0:  -4.273033674E-02 -1.313342386E-01 -1.442656189E-01 -7.750138148E-02
+ 0:   9.246642050E-02  1.524746377E-01                                   /
+ 0: 
+ 0: -- Acentric factors
+ 0: 
+ 0: ACF
+ 0:   2.250000000E-01  4.000000000E-02  1.300000000E-02  1.524000000E-01
+ 0:   3.850000000E-01  5.500000119E-01                                   /
+ 0: 
+ 0: -- Molecular Weights
+ 0: 
+ 0: MW
+ 0:   4.401000000E+01  2.801300000E+01  1.604300000E+01  4.409700000E+01
+ 0:   1.340000000E+02  2.060000000E+02                                   /
+ 0: 
+ 0: -- Default fluid sample composition
+ 0: 
+ 0: ZMFVD
+ 0:   1.000000000E+00  1.000000000E-02  1.000000000E-02  7.500000000E-01
+ 0:   1.700000000E-01  4.000000000E-02  2.000000000E-02
+ 0:   1.000000000E+04  1.000000000E-02  1.000000000E-02  7.500000000E-01
+ 0:   1.700000000E-01  4.000000000E-02  2.000000000E-02                  /
+ 0: 
+ 0: -- Boiling point temperatures Deg R
+ 0: 
+ 0: TBOIL
+ 0:   3.504599852E+02  1.393199991E+02  2.010599892E+02  4.159800000E+02
+ 0:   7.901999791E+02  9.701999743E+02                                   /
+ 0: 
+ 0: -- Reference temperatures Deg R
+ 0: 
+ 0: TREF
+ 0:   5.273999860E+02  1.405799935E+02  2.010599892E+02  4.157999890E+02
+ 0:   5.201999862E+02  5.201999862E+02                                   /
+ 0: 
+ 0: -- Reference densities LB/FT3
+ 0: 
+ 0: DREF
+ 0:   4.850653269E+01  5.019208788E+01  2.653188725E+01  3.633307854E+01
+ 0:   4.888110051E+01  5.225221089E+01                                   /
+ 0: 
+ 0: -- Parachors (Dynes/cm)
+ 0: 
+ 0: PARACHOR
+ 0:   7.800000000E+01  4.100000000E+01  7.700000000E+01  1.503000031E+02
+ 0:   4.048999939E+02  5.505999756E+02                                   /
+ 0: 
+ 0: -- Binary Interaction Coefficients
+ 0: 
+ 0: BIC
+ 0:   -.01200000
+ 0:   0.10000000  0.10000000
+ 0:   0.10000000  0.10000000  0.00000000
+ 0:   0.10000000  0.10000000  0.04162000  0.01000000
+ 0:   0.10000000  0.10000000  0.04918000  0.01000000  0.00000000
+ 0: /
+ 0: 
+ 0: -- Units are: FIELD
+ 0: 
+ 0: 
+ 0: RTEMP
+ 0:    180.00000 /
+ 0: 
+ 0: 
+ 0: -- Compositional run only water density required
+ 0: DENSITY
+ 0: --  lb/ft^3 ---- (surface conditions)
+ 0: 1*  64.0    1* /
+ 0: 
+ 0: 
+ 0: -- Rock and water properties
+ 0: 
+ 0: ROCK
+ 0: -- ref pres  compressibility (1/psi)
+ 0:      3000.0    0.000004  /
+ 0: 
+ 0: PVTW
+ 0: --     Pref          Bw            Cw            Vw           Cvw
+ 0: --  PSIA          RB/STB        1/PSI         CPOISE        1/PSI
+ 0:     3000.00000       1.00528   3.27915E-06       0.55730   5.89998E-06
+ 0: /
+ 0: 
+ 0: 
+ 0: SOLUTION ============================================================
+ 0: 
+ 0: -- set reservior initial conditions
+ 0: EQUIL
+ 0: -- datum pressure   depth  Pc@ depth  Pc@ init init init  comp
+ 0: -- depth at datum    woc   woc  goc   goc type type accur case
+ 0:    6100    4700      8000   0   8000   0  1*    1*   1*    1   / class problem
+ 0: 
+ 0: -- set field separator conditions
+ 0: FIELDSEP
+ 0: --stage  temp  press
+ 0: --       deg F psia
+ 0:     1    100.  815.  /
+ 0:     2     70.  500.  /
+ 0:     3     60.  14.7  /
+ 0: /
+ 0: -- set variables to be printed in the .PRT file
+ 0: RPTSOL
+ 0: PRES  SOIL  SGAS XMF YMF /
+ 0: 
+ 0: -- set variable to be put into .X00  files
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC XMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED MNEMONIC YMF              IN DATA                  
+ @           FOR KEYWORD RPTSOL   IS IGNORED                                 
+ 0: OUTSOL
+ 0: PRES SOIL SGAS SWAT XMF YMF /
+ 0: 
+ 0: SUMMARY  ============================================================
+ 0: 
+ 0: -- set summary variable to be stored to be available for line plots
+ 0: 
+ 0: FOPT
+ 0: FGOR
+ 0: FGPT
+ 0: FOPR
+ 0: FGIR
+ 0: FGIT
+ 0: FPR
+ 0: -- FIOP is field oil in place, oil recovery efficiency is determined
+ 0: -- by looking up the initial FOIP after the first small time step
+ 0: -- in the .RSM file and subtracting the final FOIP (last FOIP value
+ 0: -- in the .RSM file) and then dividing the difference by the inital FOIP.
+ 0: FOIP
+ 0: 
+ 0: WGOR
+ 0:  P1
+ 0:  P2
+ 0: /
+ 0: 
+ 0: WOPR
+ 0:  P1
+ 0:  P2
+ 0: /
+ 0: 
+ 0: 
+ 0: WYMF
+ 0:  P1  2  /
+ 0:  P2  2  /
+ 0:  P1  3  /
+ 0:  P2  3  /
+ 0:  P1  1  /
+ 0:  P2  1  /
+ 0:  P1   4  /
+ 0:  P2   4  /
+ 0: /
+ 0: RPTONLY
+ 0: -- create a .RSM file of summary results
+ 0: RUNSUM
+ 0: 
+ 0: SCHEDULE ============================================================
+ 0: 
+ 0: --Define injection and production wells
+ 0: 
+ 0: WELSPECS
+ 0: --well group   i  j  bhp    Phase
+ 0: --name name          depth
+ 0:   IN   Field   1  1  1*     GAS /
+ 0:   P1   Field  10  1  1*     OIL /
+ 0:   P2   Field  20  1  1*     OIL /
+ 0: 
+ 0: /
+ 0: 
+ 0: COMPDAT
+ 0: --name     i  j k1 k2 status  sat_table Con_fact w-diam
+ 0: IN         1  1  1  1    1*      1*       1*      .6      /
+ 0: P1        10  1  4  5    1*      1*       1*      .6      /
+ 0: P2        20  1  3  5    1*      1*       1*      .6      /
+ 0: /
+ 0: 
+ 0: -- set injectior well stream mole fractions
+ 0: WELLSTRE
+ 0: --       CO2  N2   C1   C3   C10  C15
+ 0: CO2      1.0  0.0  0.0  0.0  0.0  0.0  /
+ 0: N2       0.0  1.0  0.0  0.0  0.0  0.0  /
+ 0: SOLVENT  0.0  0.0  .60  .40  0.0  0.0  /
+ 0: C1       0.0  0.0  1.0  0.0  0.0  0.0  /
+ 0: /
+ 0: 
+ 0: --
+ 0: -- set injection well specifications
+ 0: WELLINJE
+ 0: --name  inj      name   cntl oil  water gas  bhp  thp   rv   wg   re-in
+ 0: --well  fluid           mode rate rate  rate           rate rate  frac
+ 0:      IN  STREAM    C1     GAS   1*   1*   4500 6000  1*   1*    1*    1*  /
+ 0: /
+ 0: 
+ 0: 
+ 0: -- set production well specifications
+ 0: WCONPROD
+ 0: --name Status cntl oil  water  gas   liq  resv  bhp
+ 0: --well       mode rate  rate  rate  rate  rate
+ 0:    P1   OPEN  BHP   1*    1*   2500   1*   1*  300. /
+ 0:    P2   OPEN  BHP   1*    1*   2500   1*   1*  300. /
+ 0: /
+ 0: 
+ 0: 
+ 0: 
+ 0: 
+ 0: --Specify solution maps of pressure and saturations
+ 0: 
+ 0: RPTSCHED
+ 0: PRESSURE SGAS   /
+ 0: 
+ 0: RPTRST
+ 0: BASIC=2 /
+ 0: 
+ 0: --Initial step of 0.1 days
+ 0: 
+ 0: TSCRIT
+ 0: 0.1  0.1 50.          /
+ 0: 
+ 0: 
+ 0: -- run for 20 years max
+ 0: TSTEP
+ 0:  0.1 365.15  19*365.25  /
+ 0: 
+ 0: ------------------------------------------------
+ 0: OPTIMIZE
+ 0: ------------------------------------------------
+ 0: -- output separate summary files for each iteration
+ 0: RPTOPT
+ 0:   SEPARATE /
+ 0: -- optimize, say
+ 0: -- Income = FOPT*40($/stb) (discount factor=0.0) - FGIT*0.1($/Mscf cost for injecting gas)
+ 0: OPTFUNC
+ 0:   FOPT  FIELD 40.0  0.0  /
+ 0:   FGIT  FIELD -0.1  0.0  /
+ 0: /
+ 0: -- Max_outer_iter   Max_runs
+ 0: OPTDIMS
+ 0:   40 200 /
+ 0: -- Change gas injection rate for the optimization
+ 0: OPTPARS
+ 0: 'WGIR' 'IN'  0  10000 /
+ 0: /
+ 0: 
+ 0: -- re-set the convergence criteria for the objective function
+ 0: OPTTUNE
+ 0: 3* 1e-4 1e-4 /
+ 0: 
+ 0: --No constraints in theis case
+ 0: --OPTCONS
+ 0: --'WWCT' 'P' '<' 0.99  /
+ 0: --/
+ 0: 
+ 0: END
+ 0: 
+
+ ******** END OF INPUT DATA FOR RUN GASCOND_OPTIM
+     1 READING RUNSPEC 
+     2 READING OIL     
+     3 READING WATER   
+     4 READING GAS     
+     5 READING ISGAS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD ISGAS    IN RUNSPEC DATA                   
+     6 READING DIMENS  
+     7 READING FIELD   
+     8 READING COMPS   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           SPURIOUS DATA BEFORE TABDIMS  KEYWORD                           
+ @           6 /                                                             
+     9 READING TABDIMS 
+    10 READING WELLDIMS
+    11 READING START   
+    12 READING UNIFOUT 
+    13 READING RESOPT  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           RESOPT   IS NOT AVAILABLE IN ECLIPSE 100                        
+ @           AND HAS BEEN IGNORED                                            
+    14 READING GRID    
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @                47568 BYTES                                                
+    15 READING INIT    
+    16 READING DXV     
+    17 READING DYV     
+    18 READING EQUALS  
+    19 READING COPY    
+    20 READING MULTIPLY
+    21 READING RPTGRID 
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED MNEMONIC MIDS             IN DATA                  
+ @           FOR KEYWORD RPTGRID  IS IGNORED                                 
+    22 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
+ @           TO TOPS VALUE FOR LAYER ABOVE                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+1                             **********************************************************************   1
+  DX       AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+     CONSTANT ARRAY =  200.000        FEET                                                                                           
+1                             **********************************************************************   2
+  DY       AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+     CONSTANT ARRAY =  1000.00        FEET                                                                                           
+1                             **********************************************************************   3
+  DZ       AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+ MINIMUM VALUE =   5.0000  AT (  1,  1,  2)     MAXIMUM VALUE =  41.0000  AT (  1,  1,  4)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+
+ (*,  1,  1)  32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000
+ (*,  1,  2)   5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000  5.0000
+ (*,  1,  3)  20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000
+ (*,  1,  4)  41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000 41.0000
+ (*,  1,  5)  32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000 32.0000
+
+ (I,  J,  K) I= 16      17      18      19      20
+
+ (*,  1,  1)  32.0000 32.0000 32.0000 32.0000 32.0000
+ (*,  1,  2)   5.0000  5.0000  5.0000  5.0000  5.0000
+ (*,  1,  3)  20.0000 20.0000 20.0000 20.0000 20.0000
+ (*,  1,  4)  41.0000 41.0000 41.0000 41.0000 41.0000
+ (*,  1,  5)  32.0000 32.0000 32.0000 32.0000 32.0000
+1                             **********************************************************************   4
+  PERMX    AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+ MINIMUM VALUE =    0.010  AT (  1,  1,  2)     MAXIMUM VALUE =  150.000  AT (  1,  1,  5)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+
+ (*,  1,  1)   50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000
+ (*,  1,  2)    0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010
+ (*,  1,  3)   20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000
+ (*,  1,  4)   80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000
+ (*,  1,  5)  150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000
+
+ (I,  J,  K) I= 16      17      18      19      20
+
+ (*,  1,  1)   50.000  50.000  50.000  50.000  50.000
+ (*,  1,  2)    0.010   0.010   0.010   0.010   0.010
+ (*,  1,  3)   20.000  20.000  20.000  20.000  20.000
+ (*,  1,  4)   80.000  80.000  80.000  80.000  80.000
+ (*,  1,  5)  150.000 150.000 150.000 150.000 150.000
+1                             **********************************************************************   5
+  PERMY    AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+ MINIMUM VALUE =    0.010  AT (  1,  1,  2)     MAXIMUM VALUE =  150.000  AT (  1,  1,  5)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+
+ (*,  1,  1)   50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000  50.000
+ (*,  1,  2)    0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010   0.010
+ (*,  1,  3)   20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000
+ (*,  1,  4)   80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000  80.000
+ (*,  1,  5)  150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000
+
+ (I,  J,  K) I= 16      17      18      19      20
+
+ (*,  1,  1)   50.000  50.000  50.000  50.000  50.000
+ (*,  1,  2)    0.010   0.010   0.010   0.010   0.010
+ (*,  1,  3)   20.000  20.000  20.000  20.000  20.000
+ (*,  1,  4)   80.000  80.000  80.000  80.000  80.000
+ (*,  1,  5)  150.000 150.000 150.000 150.000 150.000
+1                             **********************************************************************   6
+  PERMZ    AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+ MINIMUM VALUE =   0.0020  AT (  1,  1,  2)     MAXIMUM VALUE =  30.0000  AT (  1,  1,  5)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+
+ (*,  1,  1)  10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000 10.0000
+ (*,  1,  2)   0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020  0.0020
+ (*,  1,  3)   4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000  4.0000
+ (*,  1,  4)  16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000 16.0000
+ (*,  1,  5)  30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000 30.0000
+
+ (I,  J,  K) I= 16      17      18      19      20
+
+ (*,  1,  1)  10.0000 10.0000 10.0000 10.0000 10.0000
+ (*,  1,  2)   0.0020  0.0020  0.0020  0.0020  0.0020
+ (*,  1,  3)   4.0000  4.0000  4.0000  4.0000  4.0000
+ (*,  1,  4)  16.0000 16.0000 16.0000 16.0000 16.0000
+ (*,  1,  5)  30.0000 30.0000 30.0000 30.0000 30.0000
+1                             **********************************************************************   7
+  PORO     AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  0.18000                                                                                                       
+1                             **********************************************************************   8
+  NTG      AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  1.00000                                                                                                       
+1                             **********************************************************************   9
+  TOPS     AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
+  REPORT   0     1 JAN 1997   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+ MINIMUM VALUE =  6100.00  AT (  1,  1,  1)     MAXIMUM VALUE =  6293.00  AT ( 20,  1,  5)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+
+ (*,  1,  1)  6100.00 6105.00 6110.00 6115.00 6120.00 6125.00 6130.00 6135.00 6140.00 6145.00 6150.00 6155.00 6160.00 6165.00 6170.00
+ (*,  1,  2)  6132.00 6137.00 6142.00 6147.00 6152.00 6157.00 6162.00 6167.00 6172.00 6177.00 6182.00 6187.00 6192.00 6197.00 6202.00
+ (*,  1,  3)  6137.00 6142.00 6147.00 6152.00 6157.00 6162.00 6167.00 6172.00 6177.00 6182.00 6187.00 6192.00 6197.00 6202.00 6207.00
+ (*,  1,  4)  6157.00 6162.00 6167.00 6172.00 6177.00 6182.00 6187.00 6192.00 6197.00 6202.00 6207.00 6212.00 6217.00 6222.00 6227.00
+ (*,  1,  5)  6198.00 6203.00 6208.00 6213.00 6218.00 6223.00 6228.00 6233.00 6238.00 6243.00 6248.00 6253.00 6258.00 6263.00 6268.00
+
+ (I,  J,  K) I= 16      17      18      19      20
+
+ (*,  1,  1)  6175.00 6180.00 6185.00 6190.00 6195.00
+ (*,  1,  2)  6207.00 6212.00 6217.00 6222.00 6227.00
+ (*,  1,  3)  6212.00 6217.00 6222.00 6227.00 6232.00
+ (*,  1,  4)  6232.00 6237.00 6242.00 6247.00 6252.00
+ (*,  1,  5)  6273.00 6278.00 6283.00 6288.00 6293.00
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           NUMBER OF ACTIVE CELLS IS 100                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           ADDITIONAL     0.028 MEGABYTES REQUIRED FOR SIMULATION          
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               346220 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @              58543 CHARACTER VARIABLES USED                               
+    23 READING SWFN    
+    24 READING SOF3    
+    25 READING SGFN    
+    26 READING NCOMPS  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD NCOMPS   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
+ @                   6 /                                                     
+    27 READING EOS     
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           SPURIOUS DATA BEFORE PRCORR   KEYWORD                           
+ @            PR   /                                                         
+    28 READING PRCORR  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
+    29 READING STCOND  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
+ @                60.00001     14.69590 /                                    
+    30 READING CNAMES  
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           SPURIOUS DATA BEFORE TCRIT    KEYWORD                           
+ @            CO2                                                            
+ @            N2                                                             
+ @            C1                                                             
+ @            C3                                                             
+ @            C10                                                            
+ @            C15                                                            
+ @            /                                                              
+    31 READING TCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
+ @             5.484599855E+02  2.271599940E+02  3.430799909E+02  6.656399824
+ @             1.126799970E+03  1.303199965E+03                              
+    32 READING PCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           SPURIOUS DATA BEFORE VCRIT    KEYWORD                           
+ @             1.071331110E+03  4.923126500E+02  6.677816960E+02  6.186973900
+ @             3.509380920E+02  2.552677830E+02                              
+    33 READING VCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD VCRIT    IN PROPERTY DATA                  
+
+ @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           SPURIOUS DATA BEFORE ZCRIT    KEYWORD                           
+ @             1.505735240E+00  1.441661400E+00  1.569809080E+00  3.203692000
+ @             8.553857640E+00  1.247838034E+01                              
+    34 READING ZCRIT   
+
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1997):
+ @           UNRECOGNISED KEYWORD ZCRIT    IN PROPERTY DATA                  
+
+ @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
+ @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
+ @         SEE MESSAGES KEYWORD.
+
+ Error summary 
+ Comments               1
+ Warnings               9
+ Problems               0
+ Errors                12
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00
+>>>>>>> origin/master
