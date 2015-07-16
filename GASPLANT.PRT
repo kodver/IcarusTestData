@@ -640,7 +640,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
 1                             **********************************************************************   1
   TOPS     AT     0.00   DAYS *Example of use of gas plants                                            * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1990   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   0     1 JAN 1990   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS  METRES         
@@ -700,7 +700,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  4)  2322.00 2265.00 2225.00 2200.00 2202.00 2210.00 2215.00 2255.00 2332.00 2340.00
 1                             **********************************************************************   2
   PORV     AT     0.00   DAYS *Example of use of gas plants                                            * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1990   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   0     1 JAN 1990   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS    RM3          
@@ -708,7 +708,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  8.10E+5         RM3                                                                                           
 1                             **********************************************************************   3
   TRANX    AT     0.00   DAYS *Example of use of gas plants                                            * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1990   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
+  REPORT   0     1 JAN 1990   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS CPM3/D/B        

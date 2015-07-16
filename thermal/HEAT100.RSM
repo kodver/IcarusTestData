@@ -1,6 +1,6 @@
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         YEARS        FOPR         GOPR         WOPR         WOPR         FOPT         GOPT         WOPT         WOPT         
  DAYS         YEARS        STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB          STB          STB          STB          
@@ -14,7 +14,7 @@
  1111.000     3.041752     5.215562     5.215562     5.215562            0     184669.7     184669.7     184669.7            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         FOIR         GOIR         WOIR         WOIR         FOIT         GOIT         WOIT         WOIT         FWPR         
  DAYS         STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB          STB          STB          STB          STB/DAY      
@@ -28,7 +28,7 @@
  1111.000            0            0            0            0            0            0            0            0     3542.331     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         GWPR         WWPR         WWPR         FWPT         GWPT         WWPT         WWPT         FWIR         GWIR         
  DAYS         STB/DAY      STB/DAY      STB/DAY      STB          STB          STB          STB          STB/DAY      STB/DAY      
@@ -42,7 +42,7 @@
  1111.000     3542.331     3542.331            0     3888633.     3888633.     3888633.            0     3550.920     3550.920     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WWIR         WWIR         FWIT         GWIT         WWIT         WWIT         FGPR         GGPR         WGPR         
  DAYS         STB/DAY      STB/DAY      STB          STB          STB          STB          MSCF/DAY     MSCF/DAY     MSCF/DAY     
@@ -56,7 +56,7 @@
  1111.000            0     3550.920     4192364.     4192364.            0     4192364.     4.800311     4.800311     4.800311     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WGPR         FGPT         GGPT         WGPT         WGPT         FGIR         GGIR         WGIR         WGIR         
  DAYS         MSCF/DAY     MSCF         MSCF         MSCF         MSCF         MSCF/DAY     MSCF/DAY     MSCF/DAY     MSCF/DAY     
@@ -70,7 +70,7 @@
  1111.000            0     170884.4     170884.4     170884.4            0            0            0            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         FGIT         GGIT         WGIT         WGIT         FVPR         GVPR         WVPR         WVPR         FVPT         
  DAYS         MSCF         MSCF         MSCF         MSCF         RB/DAY       RB/DAY       RB/DAY       RB/DAY       RB           
@@ -84,7 +84,7 @@
  1111.000            0            0            0            0     3550.789     3550.789     3550.789            0     4180574.     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         GVPT         WVPT         WVPT         FVIR         GVIR         WVIR         WVIR         FVIT         GVIT         
  DAYS         RB           RB           RB           RB/DAY       RB/DAY       RB/DAY       RB/DAY       RB           RB           
@@ -98,7 +98,7 @@
  1111.000     4180574.     4180574.            0     3551.367     3551.367            0     3551.367     4194518.     4194518.     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WVIT         WVIT         FWCT         GWCT         WWCT         WWCT         FGOR         GGOR         WGOR         
  DAYS         RB           RB                                                               MSCF/STB     MSCF/STB     MSCF/STB     
@@ -112,7 +112,7 @@
  1111.000            0     4194518.     0.998530     0.998530     0.998530            0     0.920382     0.920382     0.920382     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WGOR         FWGR         GWGR         WWGR         WWGR         WBHP         WBHP         WTHP         WTHP         
  DAYS         MSCF/STB     STB/MSCF     STB/MSCF     STB/MSCF     STB/MSCF     PSIA         PSIA         PSIA         PSIA         
@@ -126,7 +126,7 @@
  1111.000            0     737.9379     737.9379     737.9379            0     1500.000     6000.000            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WPI          WPI          FOIP         FOIPL        FOIPG        FWIP         FGIP         FGIPL        FGIPG        
  DAYS                                   STB          STB          STB          STB          MSCF         MSCF         MSCF         
@@ -140,7 +140,7 @@
  1111.000     0.015063     18.20471     161835.3     161835.3            0     1244614.     149786.3     149731.9     54.36549     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         FPR          NEWTON       TCPU         ELAPSED      TIMESTEP     TCPUTS       TCPUDAY      MLINEARS     MSUMLINS     
  DAYS         PSIA                      SECONDS      SECONDS      DAYS         SECONDS      SECONDS                                
@@ -150,11 +150,11 @@
         0     3014.470            0            0            0            0            0            0            0            0     
  1.000000     3015.052            5            0            0     1.000000            0            0           52           52     
  11.00000     2891.820            7            0            0     2.834847            0            0           64          225     
- 111.0000     3967.663            4     0.859000     1.000000     16.30298     0.859000     0.052690           85         1230     
- 1111.000     4100.409            3     1.000000     1.000000     171.7095     0.141000     0.000821           38         1858     
+ 111.0000     3967.663            4     1.000000     1.000000     16.30298     1.000000     0.061338           85         1230     
+ 1111.000     4100.409            3     1.000000     1.000000     171.7095            0            0           38         1858     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         NLINEARS     STEPTYPE     TELAPLIN     MSUMNEWT     TIMESTRY     BTCNFHEA     BTCNFHEA     BTCNFHEA     BTCNFHEA     
  DAYS                                   SECONDS                   DAYS         DEG F        DEG F        DEG F        DEG F        
@@ -168,7 +168,7 @@
  1111.000     12.66667       REPT              0          142     171.7095     81.07471     81.10023     81.10739     80.00000     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                      
+ SUMMARY OF RUN HEAT100 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                                
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         BTCNFHEA     BTCNFHEA                                                                                                
  DAYS         DEG F        DEG F                                                                                                   

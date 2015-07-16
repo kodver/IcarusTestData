@@ -488,7 +488,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           USING  OLDTRAN                                                  
 1                             **********************************************************************   1
   PORV     AT     0.00   DAYS *          Simple Cold Water Injection case                              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1994   *  RUN                                                                   * RUN AT 12:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 1994   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS    RB           
@@ -634,7 +634,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 20,  3)   359.06  269.30  179.53  134.65  89.766
 1                             **********************************************************************   2
   TRANX    AT     0.00   DAYS *          Simple Cold Water Injection case                              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1994   *  RUN                                                                   * RUN AT 12:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 1994   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS CPB/D/PS        
@@ -780,7 +780,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 20,  3)   1.7388  2.4343  3.4776  4.8686  0.0000
 1                             **********************************************************************   3
   TRANY    AT     0.00   DAYS *          Simple Cold Water Injection case                              * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1994   *  RUN                                                                   * RUN AT 12:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 1994   *  RUN                                                                   * RUN AT 11:53 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS CPB/D/PS        
