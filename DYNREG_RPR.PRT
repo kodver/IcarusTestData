@@ -190,7 +190,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART FILE WRITTEN   REPORT     0                             
 1                             **********************************************************************   1
   SIMULATE AT     0.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   0     1 JAN 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    1 TIME=    1.00  DAYS (  +1.0  DAYS REPT  1 ITS) (2-JAN-1970)           
@@ -212,7 +212,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     80 READING ENDACTIO
 1                             **********************************************************************   2
   BALANCE  AT     1.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   1     2 JAN 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   1     2 JAN 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -269,7 +269,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************   3
   BALYYY   AT     1.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   1     2 JAN 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   1     2 JAN 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -295,7 +295,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     82 READING TSTEP   
 1                             **********************************************************************   4
   SIMULATE AT     1.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   1     2 JAN 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   1     2 JAN 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    2 TIME=    4.00  DAYS (  +3.0  DAYS MAXF  1 ITS) (5-JAN-1970)           
@@ -360,7 +360,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     88 READING ENDACTIO
 1                             **********************************************************************   5
   BALANCE  AT    31.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   2     1 FEB 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   2     1 FEB 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -417,7 +417,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************   6
   BALYYY   AT    31.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   2     1 FEB 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   2     1 FEB 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -479,7 +479,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************   7
   SIMULATE AT    31.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   2     1 FEB 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   2     1 FEB 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    5 TIME=   61.00  DAYS ( +30.0  DAYS REPT  2 ITS) (3-MAR-1970)           
@@ -501,7 +501,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     90 READING ENDACTIO
 1                             **********************************************************************   8
   BALANCE  AT    61.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   3     3 MAR 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   3     3 MAR 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -558,7 +558,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************   9
   BALYYY   AT    61.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   3     3 MAR 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   3     3 MAR 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -620,7 +620,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  10
   SIMULATE AT    61.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   3     3 MAR 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   3     3 MAR 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    6 TIME=   91.00  DAYS ( +30.0  DAYS REPT  2 ITS) (2-APR-1970)           
@@ -642,7 +642,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     92 READING ENDACTIO
 1                             **********************************************************************  11
   BALANCE  AT    91.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   4     2 APR 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   4     2 APR 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -699,7 +699,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  12
   BALYYY   AT    91.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   4     2 APR 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   4     2 APR 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -761,7 +761,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  13
   SIMULATE AT    91.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   4     2 APR 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   4     2 APR 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    7 TIME=  121.00  DAYS ( +30.0  DAYS REPT  2 ITS) (2-MAY-1970)           
@@ -783,7 +783,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     94 READING ENDACTIO
 1                             **********************************************************************  14
   BALANCE  AT   121.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   5     2 MAY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   5     2 MAY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -840,7 +840,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  15
   BALYYY   AT   121.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   5     2 MAY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   5     2 MAY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -902,7 +902,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  16
   SIMULATE AT   121.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   5     2 MAY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   5     2 MAY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    8 TIME=  151.00  DAYS ( +30.0  DAYS REPT  2 ITS) (1-JUN-1970)           
@@ -924,7 +924,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     96 READING ENDACTIO
 1                             **********************************************************************  17
   BALANCE  AT   151.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   6     1 JUN 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   6     1 JUN 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -981,7 +981,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  18
   BALYYY   AT   151.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   6     1 JUN 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   6     1 JUN 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1043,7 +1043,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  19
   SIMULATE AT   151.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   6     1 JUN 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   6     1 JUN 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP    9 TIME=  181.00  DAYS ( +30.0  DAYS REPT  2 ITS) (1-JLY-1970)           
@@ -1065,7 +1065,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     98 READING ENDACTIO
 1                             **********************************************************************  20
   BALANCE  AT   181.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   7     1 JLY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   7     1 JLY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1122,7 +1122,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  21
   BALYYY   AT   181.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   7     1 JLY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   7     1 JLY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1184,7 +1184,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  22
   SIMULATE AT   181.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   7     1 JLY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   7     1 JLY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   10 TIME=  211.00  DAYS ( +30.0  DAYS REPT  1 ITS) (31-JLY-1970)          
@@ -1206,7 +1206,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    100 READING ENDACTIO
 1                             **********************************************************************  23
   BALANCE  AT   211.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   8    31 JLY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   8    31 JLY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1263,7 +1263,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  24
   BALYYY   AT   211.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   8    31 JLY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   8    31 JLY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1325,7 +1325,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  25
   SIMULATE AT   211.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   8    31 JLY 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   8    31 JLY 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   11 TIME=  241.00  DAYS ( +30.0  DAYS REPT  1 ITS) (30-AUG-1970)          
@@ -1347,7 +1347,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    102 READING ENDACTIO
 1                             **********************************************************************  26
   BALANCE  AT   241.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   9    30 AUG 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   9    30 AUG 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1404,7 +1404,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  27
   BALYYY   AT   241.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   9    30 AUG 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   9    30 AUG 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1466,7 +1466,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  28
   SIMULATE AT   241.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT   9    30 AUG 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT   9    30 AUG 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   12 TIME=  271.00  DAYS ( +30.0  DAYS REPT  2 ITS) (29-SEP-1970)          
@@ -1488,7 +1488,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    104 READING ENDACTIO
 1                             **********************************************************************  29
   BALANCE  AT   271.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  10    29 SEP 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  10    29 SEP 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1545,7 +1545,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  30
   BALYYY   AT   271.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  10    29 SEP 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  10    29 SEP 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1607,7 +1607,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  31
   SIMULATE AT   271.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  10    29 SEP 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  10    29 SEP 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   13 TIME=  301.00  DAYS ( +30.0  DAYS REPT  2 ITS) (29-OCT-1970)          
@@ -1629,7 +1629,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    106 READING ENDACTIO
 1                             **********************************************************************  32
   BALANCE  AT   301.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  11    29 OCT 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  11    29 OCT 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1686,7 +1686,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  33
   BALYYY   AT   301.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  11    29 OCT 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  11    29 OCT 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1748,7 +1748,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  34
   SIMULATE AT   301.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  11    29 OCT 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  11    29 OCT 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   14 TIME=  331.00  DAYS ( +30.0  DAYS REPT  2 ITS) (28-NOV-1970)          
@@ -1770,7 +1770,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    108 READING ENDACTIO
 1                             **********************************************************************  35
   BALANCE  AT   331.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  12    28 NOV 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  12    28 NOV 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1827,7 +1827,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  36
   BALYYY   AT   331.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  12    28 NOV 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  12    28 NOV 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1889,7 +1889,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  37
   SIMULATE AT   331.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  12    28 NOV 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  12    28 NOV 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   15 TIME=  361.00  DAYS ( +30.0  DAYS REPT  2 ITS) (28-DEC-1970)          
@@ -1911,7 +1911,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    110 READING ENDACTIO
 1                             **********************************************************************  38
   BALANCE  AT   361.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  13    28 DEC 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  13    28 DEC 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1968,7 +1968,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  39
   BALYYY   AT   361.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  13    28 DEC 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  13    28 DEC 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2030,7 +2030,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  40
   SIMULATE AT   361.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  13    28 DEC 1970   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  13    28 DEC 1970   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   16 TIME=  391.00  DAYS ( +30.0  DAYS REPT  1 ITS) (27-JAN-1971)          
@@ -2052,7 +2052,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    112 READING ENDACTIO
 1                             **********************************************************************  41
   BALANCE  AT   391.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  14    27 JAN 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  14    27 JAN 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2109,7 +2109,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  42
   BALYYY   AT   391.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  14    27 JAN 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  14    27 JAN 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2171,7 +2171,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  43
   SIMULATE AT   391.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  14    27 JAN 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  14    27 JAN 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   17 TIME=  421.00  DAYS ( +30.0  DAYS REPT  2 ITS) (26-FEB-1971)          
@@ -2193,7 +2193,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    114 READING ENDACTIO
 1                             **********************************************************************  44
   BALANCE  AT   421.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  15    26 FEB 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  15    26 FEB 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2250,7 +2250,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  45
   BALYYY   AT   421.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  15    26 FEB 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  15    26 FEB 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2312,7 +2312,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  46
   SIMULATE AT   421.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  15    26 FEB 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  15    26 FEB 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   18 TIME=  451.00  DAYS ( +30.0  DAYS REPT  2 ITS) (28-MAR-1971)          
@@ -2334,7 +2334,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    116 READING ENDACTIO
 1                             **********************************************************************  47
   BALANCE  AT   451.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  16    28 MAR 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  16    28 MAR 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2391,7 +2391,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  48
   BALYYY   AT   451.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  16    28 MAR 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  16    28 MAR 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2453,7 +2453,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  49
   SIMULATE AT   451.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  16    28 MAR 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  16    28 MAR 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   19 TIME=  481.00  DAYS ( +30.0  DAYS REPT  1 ITS) (27-APR-1971)          
@@ -2475,7 +2475,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    118 READING ENDACTIO
 1                             **********************************************************************  50
   BALANCE  AT   481.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  17    27 APR 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  17    27 APR 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2532,7 +2532,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  51
   BALYYY   AT   481.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  17    27 APR 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  17    27 APR 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2594,7 +2594,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  52
   SIMULATE AT   481.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  17    27 APR 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  17    27 APR 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   20 TIME=  511.00  DAYS ( +30.0  DAYS REPT  1 ITS) (27-MAY-1971)          
@@ -2616,7 +2616,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    120 READING ENDACTIO
 1                             **********************************************************************  53
   BALANCE  AT   511.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  18    27 MAY 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  18    27 MAY 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2673,7 +2673,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  54
   BALYYY   AT   511.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  18    27 MAY 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  18    27 MAY 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2735,7 +2735,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  55
   SIMULATE AT   511.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  18    27 MAY 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  18    27 MAY 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   21 TIME=  541.00  DAYS ( +30.0  DAYS REPT  2 ITS) (26-JUN-1971)          
@@ -2757,7 +2757,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    122 READING ENDACTIO
 1                             **********************************************************************  56
   BALANCE  AT   541.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  19    26 JUN 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  19    26 JUN 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2814,7 +2814,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  57
   BALYYY   AT   541.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  19    26 JUN 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  19    26 JUN 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2876,7 +2876,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  58
   SIMULATE AT   541.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  19    26 JUN 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  19    26 JUN 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   22 TIME=  571.00  DAYS ( +30.0  DAYS REPT  1 ITS) (26-JLY-1971)          
@@ -2898,7 +2898,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    124 READING ENDACTIO
 1                             **********************************************************************  59
   BALANCE  AT   571.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  20    26 JLY 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  20    26 JLY 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -2955,7 +2955,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  60
   BALYYY   AT   571.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  20    26 JLY 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  20    26 JLY 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3017,7 +3017,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  61
   SIMULATE AT   571.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  20    26 JLY 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  20    26 JLY 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
  STEP   23 TIME=  601.00  DAYS ( +30.0  DAYS REPT  1 ITS) (25-AUG-1971)          
@@ -3039,7 +3039,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    126 READING ENDACTIO
 1                             **********************************************************************  62
   BALANCE  AT   601.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  21    25 AUG 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  21    25 AUG 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3096,7 +3096,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  ====================================================================================================================================
 1                             **********************************************************************  63
   BALYYY   AT   601.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  21    25 AUG 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
+  REPORT  21    25 AUG 1971   *  RUN                                                                   * RUN AT 10:17 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -3135,147 +3135,6 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  :ORIGINALLY IN PLACE                   0.                           0.:             0. :            0.            0.             0.:
  :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
  :OUTFLOW TO REGION   1           -921605.                     -921605.:      12604322. :            0.   -492391721.    -492391721.:
- ====================================================================================================================================
-
-
-                                                     ===================================
-                                                     :  FIPYYY OIL RECOVERY FACTORS    :
- :---------:-----------------------------:---------------------------------------------:--------------------------------------------:
- :         :                             : RATIO OF       RATIO OF       RATIO OF      : RATIO OF       RATIO OF       RATIO OF     :
- : REGION  : MOBILE OIIP    MOBILE OIIP  : DISPLACED OIL  DISPLACED OIL  DISPLACED OIL : WELL FLOW      WELL FLOW      WELL FLOW    :
- :         : (W.R.T WATER)  (W.R.T GAS)  : TO INITIAL     TO INITIAL     TO INITIAL    : TO INITIAL     TO INITIAL     TO INITIAL   :
- :         :                             : OIP            MOBILE OIL     MOBILE OIL    : OIP            MOBILE OIL     MOBILE OIL   :
- :         :                             :                (WATER)        (GAS)         :                (WATER)        (GAS)        :
- :---------:-----------------------------:---------------------------------------------:--------------------------------------------:
- :   FIELD :    0.000E+00      0.000E+00 :                                             :                                            :
- :       1 :    0.000E+00      0.000E+00 :                                             :                                            :
- :       2 :    0.000E+00      0.000E+00 :                                             :                                            :
- :       3 :    0.000E+00      0.000E+00 :                                             :                                            :
- ====================================================================================================================================
-
- @--MESSAGE  AT TIME      601.0   DAYS    (25-AUG-1971):
- @           RESTART FILE WRITTEN   REPORT    21                             
- @           RESTART INCLUDES FLUIDS IN PLACE                                
-1                             **********************************************************************  64
-  SIMULATE AT   601.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  21    25 AUG 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
-                              **************************************************************************
-
- STEP   24 TIME=  631.00  DAYS ( +30.0  DAYS REPT  1 ITS) (24-SEP-1971)          
-  PAV=   206.2  BARSA  WCT=0.012 GOR=   520.00  SM3/SM3 WGR=   0.0000  SM3/SM3   
-
-      PR.RATE   PR.TOTAL  IN.RATE   IN.TOTAL  MAX SATURN CHANGE   MAX TIME TRNC ERR
-
- OIL  178201. 129359867.       0.         0. -0.001( 13, 11,  5)  0.000( 13, 14,  2)
- WAT    2082.   1396730.       0.         0. -0.001( 13, 11,  6)  0.000( 13, 11,  5)
- GAS 9.27E+07 6.7828E+10       0.         0.  0.001( 13, 11,  1)  0.000( 13, 14,  2)
-
-      MAX DP =   -0.48( 12,  9,  3)  MAX DRS= -0.2525( 12,  9,  3) 
-
- @--MESSAGE  AT TIME      631.0   DAYS    (24-SEP-1971):
- @           ACTION ACT1 TRIGGERING ON NEXT                                  
- @           TIMESTEP. ACTION CONDITIONS MET ARE:                            
- @           "ALWAYS"                                                        
-   127 READING DYNAMICR
-   128 READING ENDACTIO
-1                             **********************************************************************  65
-  BALANCE  AT   631.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  22    24 SEP 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
-                              **************************************************************************
-
-
-                                                     ==================================================
-                                                     :               FIELD TOTALS                     :
-                                                     :         PAV =        206.21  BARSA             :
-                                                     :         PORV= 798519765943.   RM3              :
-                                                     :(PRESSURE IS WEIGHTED BY HYDROCARBON PORE VOLUME:
-                                                     : PORE VOLUMES ARE TAKEN AT REFERENCE CONDITIONS):
-                           :--------------- OIL    SM3  ---------------:-- WAT    SM3  -:--------------- GAS    SM3  ---------------:
-                           :     LIQUID         VAPOUR         TOTAL   :       TOTAL    :       FREE      DISSOLVED         TOTAL   :
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :CURRENTLY IN PLACE       :  6.140332E+10                 6.140332E+10:   6.234491E+11 :  3.242338E+10  3.301030E+13   3.304272E+13:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :OUTFLOW THROUGH WELLS    :                                 129359867.:       1396730. :                               67828179579.:
- :WELL  MATERIAL BAL. ERROR:                                         0.:             0. :                                         0.:
- :FIELD MATERIAL BAL. ERROR:                                   -153473.:            41. :                                 103571348.:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :ORIGINALLY IN PLACE      :  6.153252E+10                 6.153252E+10:   6.234505E+11 :  0.000000E+00  3.311065E+13   3.311065E+13:
- ====================================================================================================================================
-
-
-                                                =================================
-                                                : FIPNUM  REPORT REGION    1    :
-                                                :     PAV =        206.21  BARSA:
-                                                :     PORV= 798519765943.   RM3 :
-                           :--------------- OIL    SM3  ---------------:-- WAT    SM3  -:--------------- GAS    SM3  ---------------:
-                           :     LIQUID         VAPOUR         TOTAL   :       TOTAL    :       FREE      DISSOLVED         TOTAL   :
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :CURRENTLY IN PLACE       :  6.140332E+10                 6.140332E+10:   6.234491E+11 :  3.242338E+10  3.301030E+13   3.304272E+13:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :OUTFLOW TO OTHER REGIONS :            0.                           0.:             0. :            0.            0.             0.:
- :OUTFLOW THROUGH WELLS    :                                 129359867.:       1396730. :                               67828179579.:
- :MATERIAL BALANCE ERROR.  :                                   -153473.:            41. :                                 103571348.:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :ORIGINALLY IN PLACE      :  6.153252E+10                 6.153252E+10:   6.234505E+11 :  0.000000E+00  3.311065E+13   3.311065E+13:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- ====================================================================================================================================
-
-
-                                                     ===================================
-                                                     :  FIPNUM OIL RECOVERY FACTORS    :
- :---------:-----------------------------:---------------------------------------------:--------------------------------------------:
- :         :                             : RATIO OF       RATIO OF       RATIO OF      : RATIO OF       RATIO OF       RATIO OF     :
- : REGION  : MOBILE OIIP    MOBILE OIIP  : DISPLACED OIL  DISPLACED OIL  DISPLACED OIL : WELL FLOW      WELL FLOW      WELL FLOW    :
- :         : (W.R.T WATER)  (W.R.T GAS)  : TO INITIAL     TO INITIAL     TO INITIAL    : TO INITIAL     TO INITIAL     TO INITIAL   :
- :         :                             : OIP            MOBILE OIL     MOBILE OIL    : OIP            MOBILE OIL     MOBILE OIL   :
- :         :                             :                (WATER)        (GAS)         :                (WATER)        (GAS)        :
- :---------:-----------------------------:---------------------------------------------:--------------------------------------------:
- :   FIELD :    4.291E+10      4.291E+10 :   0.00210        0.00301       0.00301      :   0.00210        0.00301        0.00301    :
- :       1 :    4.291E+10      4.291E+10 :   0.00210        0.00301       0.00301      :   0.00210        0.00301        0.00301    :
- :       2 :    0.000E+00      0.000E+00 :                                             :                                            :
- :       3 :    0.000E+00      0.000E+00 :                                             :                                            :
- ====================================================================================================================================
-1                             **********************************************************************  66
-  BALYYY   AT   631.00   DAYS * 20X20X6=2,400 blocks parallel Eclipse test example                     * ECLIPSE  VERSION 2009.1     
-  REPORT  22    24 SEP 1971   *  RUN                                                                   * RUN AT 10:07 ON 16 JLY 2015 
-                              **************************************************************************
-
-
-                                                =================================
-                                                : FIPYYY  REPORT REGION    1    :
-                                                :     PAV =        206.05  BARSA:
-                                                :     PORV= 189032344656.   RM3 :
-                           :--------------- OIL    SM3  ---------------:-- WAT    SM3  -:--------------- GAS    SM3  ---------------:
-                           :     LIQUID         VAPOUR         TOTAL   :       TOTAL    :       FREE      DISSOLVED         TOTAL   :
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :CURRENTLY IN PLACE          5.964098E+10                 5.964098E+10:   2.851401E+10 :  3.240998E+10  3.206200E+13   3.209441E+13:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :OUTFLOW TO OTHER REGIONS         946480.                      946480.:     -13493306. :            0.    505430294.     505430294.:
- :OUTFLOW THROUGH WELLS                                      129079867.:           202. :                               67677511579.:
- :MATERIAL BALANCE ERROR.                                 -5.977100E+10:  -2.850051E+10 :                              -3.216259E+13:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :ORIGINALLY IN PLACE                   0.                           0.:             0. :            0.            0.             0.:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :OUTFLOW TO REGION   2            946480.                      946480.:     -13493306. :            0.    505430294.     505430294.:
- ====================================================================================================================================
-
-
-                                                =================================
-                                                : FIPYYY  REPORT REGION    2    :
-                                                :     PAV =        211.80  BARSA:
-                                                :     PORV= 609487421287.   RM3 :
-                           :--------------- OIL    SM3  ---------------:-- WAT    SM3  -:--------------- GAS    SM3  ---------------:
-                           :     LIQUID         VAPOUR         TOTAL   :       TOTAL    :       FREE      DISSOLVED         TOTAL   :
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :CURRENTLY IN PLACE           1762341907.                  1762341907.:  594935060587. :     13408313. 948298733953.  948312142266.:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :OUTFLOW TO OTHER REGIONS        -946480.                     -946480.:      13493306. :            0.   -505430294.    -505430294.:
- :OUTFLOW THROUGH WELLS                                              0.:       1394013. :                                         0.:
- :MATERIAL BALANCE ERROR.                                  -1761395427.:  ************* :                              *************:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :ORIGINALLY IN PLACE                   0.                           0.:             0. :            0.            0.             0.:
- :-------------------------:-------------------------------------------:----------------:-------------------------------------------:
- :OUTFLOW TO REGION   1           -946480.                     -946480.:      13493306. :            0.   -505430294.    -505430294.:
  ====================================================================================================================================
 
 
