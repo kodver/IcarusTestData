@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  'RESTART '           9 'CHAR'
  '        ' '        ' '        ' '        ' '        ' '        ' '        '
  '        ' '        '
@@ -28,8 +27,8 @@
            1           1        1982
  'RUNTIMEI'          50 'INTE'
            2           0          11        2015           7          16
-          14          52          53        2015           7          16
-          14          52          53          19           6        1984
+          15           7          35        2015           7          16
+          15           7          35          19           6        1984
            2          10           0           6           0           0
            0           0           2           1           1           1
            0           0           0           0           0           0
@@ -39,45 +38,3 @@
  'RUNTIMED'           5 'DOUB'
    0.90000000000000D+03   0.50000000000000D+00   0.50000000000000D+00
    0.00000000000000D+00   0.00000000000000D+00
-=======
- 'RESTART '           9 'CHAR'
- '        ' '        ' '        ' '        ' '        ' '        ' '        '
- '        ' '        '
- 'DIMENS  '           6 'INTE'
-          22          10           1          15           0          -1
- 'KEYWORDS'          22 'CHAR'
- 'TIME    ' 'YEARS   ' 'FOPR    ' 'FWPR    ' 'FVPR    ' 'WBHP    ' 'FWCT    '
- 'FGOR    ' 'FPR     ' 'NEWTON  ' 'TCPU    ' 'ELAPSED ' 'TIMESTEP' 'TCPUTS  '
- 'TCPUDAY ' 'MLINEARS' 'MSUMLINS' 'NLINEARS' 'STEPTYPE' 'TELAPLIN' 'MSUMNEWT'
- 'TIMESTRY'
- 'WGNAMES '          22 'CHAR'
- ':+:+:+:+' ':+:+:+:+' 'FIELD   ' 'FIELD   ' 'FIELD   ' 'P1      ' 'FIELD   '
- 'FIELD   ' 'FIELD   ' '        ' '        ' '        ' '        ' '        '
- '        ' '        ' '        ' '        ' '        ' '        ' '        '
- '        '
- 'NUMS    '          22 'INTE'
-      -32767      -32767           0           0           0           0
-           0           0           0           0           0           0
-           0           0           0           0           0           0
-           0           0           0           0
- 'UNITS   '          22 'CHAR'
- '  DAYS  ' 'YEARS   ' ' STB/DAY' ' STB/DAY' ' RB/DAY ' '  PSIA  ' '        '
- 'MSCF/STB' '  PSIA  ' '        ' 'SECONDS ' 'SECONDS ' '  DAYS  ' 'SECONDS '
- 'SECONDS ' '        ' '        ' '        ' '        ' 'SECONDS ' '        '
- '  DAYS  '
- 'STARTDAT'           3 'INTE'
-           1           1        1982
- 'RUNTIMEI'          50 'INTE'
-           2           0          11        2015           7          16
-          11          53          15        2015           7          16
-          11          53          15          19           6        1984
-           2          10           0           6           0           0
-           0           0           2           1           1           1
-           0           0           0           0           0           0
-           0           0           0           0           0           0
-           0           0           0           0           0           0
-           0           0
- 'RUNTIMED'           5 'DOUB'
-   0.90000000000000D+03   0.59300000000000D+00   0.15000000000000D+01
-   0.00000000000000D+00   0.00000000000000D+00
->>>>>>> origin/master

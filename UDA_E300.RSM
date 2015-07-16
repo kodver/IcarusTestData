@@ -1,6 +1,6 @@
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         YEARS        FU_GRAT      WGPR         WGPR         WGPR         WGPR         FU_WRAT      WWPR         WWPR         
  DAYS         YEARS        FLDS         MSCF/DAY     MSCF/DAY     MSCF/DAY     MSCF/DAY     FLDS         STB/DAY      STB/DAY      
@@ -45,7 +45,7 @@
  700.0000     1.916496     5903.350     5903.350     5903.350     5903.350     5903.350     1291.848     1291.848     1351.562     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WWPR         WWPR         FU_ORAT      FU_ORAT2     WOPR         WOPR         WOPR         WOPR         FU_LRAT      
  DAYS         STB/DAY      STB/DAY      FLDS         FLDS         STB/DAY      STB/DAY      STB/DAY      STB/DAY      FLDS         
@@ -90,7 +90,7 @@
  700.0000     1353.656     1298.147     5224.203     5224.203     5224.203     5224.203     5224.203     5224.203     6577.860     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WLPR         WLPR         WLPR         WLPR         FU_RESV      WVPR         WVPR         WVPR         WVPR         
  DAYS         STB/DAY      STB/DAY      STB/DAY      STB/DAY      FLDS         RB/DAY       RB/DAY       RB/DAY       RB/DAY       
@@ -135,7 +135,7 @@
  700.0000     6516.051     6575.765     6577.860     6522.351     6930.109     6930.109     6989.951     6992.050     6936.422     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         FU_BHP1      FU_BHP2      WBHP         WBHP         WBHP         WBHP         FU_ORAT      FU_WRAT      FU_GRAT      
  DAYS         FLDS         FLDS         PSIA         PSIA         PSIA         PSIA         FLDS         FLDS         FLDS         
@@ -180,7 +180,7 @@
  700.0000     3148.660     3143.930     3148.660     3144.156     3143.930     3147.980     5224.203     1291.848     5903.350     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         FU_LRAT      FU_RESV      FPR          FOPR         FOPR         GOPR         WOPR         WOPR         WOPR         
  DAYS         FLDS         FLDS         PSIA         STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB/DAY      
@@ -225,7 +225,7 @@
  700.0000     6577.860     6930.109     3275.982     20896.81     20896.81     20896.81     5224.203     5224.203     5224.203     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WOPR         FOPT         GOPT         WOPT         WOPT         WOPT         WOPT         FOIR         GOIR         
  DAYS         STB/DAY      STB          STB          STB          STB          STB          STB          STB/DAY      STB/DAY      
@@ -271,7 +271,7 @@
  700.0000     5224.203     18541.43     18541.43     4644514.     4608533.     4627842.     4660544.            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WOIR         WOIR         WOIR         WOIR         FOIT         GOIT         WOIT         WOIT         WOIT         
  DAYS         STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB          STB          STB          STB          STB          
@@ -316,7 +316,7 @@
  700.0000            0            0            0            0            0            0            0            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WOIT         FWPR         GWPR         WWPR         WWPR         WWPR         WWPR         FWPT         GWPT         
  DAYS         STB          STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB          STB          
@@ -361,7 +361,7 @@
  700.0000            0     5295.214     5295.214     1291.848     1351.562     1353.656     1298.147     2765206.     2765206.     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WWPT         WWPT         WWPT         WWPT         FWIR         GWIR         WWIR         WWIR         WWIR         
  DAYS         STB          STB          STB          STB          STB/DAY      STB/DAY      STB/DAY      STB/DAY      STB/DAY      
@@ -406,7 +406,7 @@
  700.0000     681909.3     694783.6     700293.8     688219.0            0            0            0            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WWIR         FWIT         GWIT         WWIT         WWIT         WWIT         WWIT         FGPR         GGPR         
  DAYS         STB/DAY      STB          STB          STB          STB          STB          STB          MSCF/DAY     MSCF/DAY     
@@ -451,7 +451,7 @@
  700.0000            0            0            0            0            0            0            0     23613.40     23613.40     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WGPR         WGPR         WGPR         WGPR         FGPT         GGPT         WGPT         WGPT         WGPT         
  DAYS         MSCF/DAY     MSCF/DAY     MSCF/DAY     MSCF/DAY     MSCF         MSCF         MSCF         MSCF         MSCF         
@@ -497,7 +497,7 @@
  700.0000     5903.350     5903.350     5903.350     5903.350     20951.82     20951.82     5248301.     5207642.     5229460.     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WGPT         FGIR         GGIR         WGIR         WGIR         WGIR         WGIR         FGIT         GGIT         
  DAYS         MSCF         MSCF/DAY     MSCF/DAY     MSCF/DAY     MSCF/DAY     MSCF/DAY     MSCF/DAY     MSCF         MSCF         
@@ -542,7 +542,7 @@
  700.0000     5266415.            0            0            0            0            0            0            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WGIT         WGIT         WGIT         WGIT         FVPR         GVPR         WVPR         WVPR         WVPR         
  DAYS         MSCF         MSCF         MSCF         MSCF         RB/DAY       RB/DAY       RB/DAY       RB/DAY       RB/DAY       
@@ -587,7 +587,7 @@
  700.0000            0            0            0            0     27848.53     27848.53     6930.109     6989.951     6992.050     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WVPR         FVPT         GVPT         WVPT         WVPT         WVPT         WVPT         FVIR         GVIR         
  DAYS         RB/DAY       RB           RB           RB           RB           RB           RB           RB/DAY       RB/DAY       
@@ -633,7 +633,7 @@
  700.0000     6936.422     22721.78     22721.78     5680895.     5655088.     5681358.     5704442.            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WVIR         WVIR         WVIR         WVIR         FVIT         GVIT         WVIT         WVIT         WVIT         
  DAYS         RB/DAY       RB/DAY       RB/DAY       RB/DAY       RB           RB           RB           RB           RB           
@@ -678,7 +678,7 @@
  700.0000            0            0            0            0            0            0            0            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WVIT         FWCT         GWCT         WWCT         WWCT         WWCT         WWCT         FGOR         GGOR         
  DAYS         RB                                                                                         MSCF/STB     MSCF/STB     
@@ -723,7 +723,7 @@
  700.0000            0     0.202169     0.202169     0.198256     0.205537     0.205790     0.199031     1.130000     1.130000     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WGOR         WGOR         WGOR         WGOR         FWGR         GWGR         WWGR         WWGR         WWGR         
  DAYS         MSCF/STB     MSCF/STB     MSCF/STB     MSCF/STB     STB/MSCF     STB/MSCF     STB/MSCF     STB/MSCF     STB/MSCF     
@@ -768,7 +768,7 @@
  700.0000     1.130000     1.130000     1.130000     1.130000     0.224246     0.224246     0.218833     0.228948     0.229303     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WWGR         WBHP         WBHP         WBHP         WBHP         WTHP         WTHP         WTHP         WTHP         
  DAYS         STB/MSCF     PSIA         PSIA         PSIA         PSIA         PSIA         PSIA         PSIA         PSIA         
@@ -813,7 +813,7 @@
  700.0000     0.219900     3148.660     3144.156     3143.930     3147.980            0            0            0            0     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         WPI          WPI          WPI          WPI          FOIP         FOIPL        FOIPG        FWIP         FGIP         
  DAYS                                                             STB          STB          STB          STB          MSCF         
@@ -859,7 +859,7 @@
  700.0000     44.53777     44.04239     44.02533     44.48537     2404265.     2404265.            0     2639776.     2716820.     
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
- SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE icaruscloudpc                                               
+ SUMMARY OF RUN UDA_E300 ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                     
  -------------------------------------------------------------------------------------------------------------------------------
  TIME         FGIPL        FGIPG        FPR                                                                                        
  DAYS         MSCF         MSCF         PSIA                                                                                       
