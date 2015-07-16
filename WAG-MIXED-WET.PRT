@@ -141,7 +141,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
 1                             **********************************************************************   1
   DX       AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:20 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:37 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS    CM           
@@ -149,7 +149,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  10.0000         CM                                                                                            
 1                             **********************************************************************   2
   DZ       AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:20 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:37 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS    CM           
@@ -157,7 +157,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  2.00000         CM                                                                                            
 1                             **********************************************************************   3
   PERMX    AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:20 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:37 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS  MDARCY         
@@ -165,7 +165,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  500.000       MDARCY                                                                                          
 1                             **********************************************************************   4
   PERMY    AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:20 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:37 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS  MDARCY         
@@ -173,7 +173,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  500.000       MDARCY                                                                                          
 1                             **********************************************************************   5
   PERMZ    AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:20 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:37 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS  MDARCY         
@@ -181,7 +181,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  500.000       MDARCY                                                                                          
 1                             **********************************************************************   6
   PORO     AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:20 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:37 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -189,7 +189,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.25000                                                                                                       
 1                             **********************************************************************   7
   NTG      AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:20 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:37 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -197,7 +197,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************   8
   TOPS     AT     0.00   HOURS*Mixed Wet WAG Injection Core Model                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:20 ON 16 JLY 2015 
+  REPORT   0     1 JAN 2007   *  RUN                                                                   * RUN AT 15:37 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS    CM           
