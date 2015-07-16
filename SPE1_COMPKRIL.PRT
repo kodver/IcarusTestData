@@ -480,7 +480,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           NO NON-NEIGHBOUR CONNECTIONS IN GLOBAL GRID                     
 1                             **********************************************************************   1
   DX       AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
@@ -488,7 +488,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1000.00        FEET                                                                                           
 1                             **********************************************************************   2
   DY       AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
@@ -496,7 +496,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1000.00        FEET                                                                                           
 1                             **********************************************************************   3
   DZ       AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
@@ -543,7 +543,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  3)  50.0000 50.0000 50.0000 50.0000 50.0000 50.0000 50.0000 50.0000 50.0000 50.0000
 1                             **********************************************************************   4
   PERMX    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS  MDARCY         
@@ -590,7 +590,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  3)  200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000
 1                             **********************************************************************   5
   PERMY    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS  MDARCY         
@@ -637,7 +637,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  3)  200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000
 1                             **********************************************************************   6
   PERMZ    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS  MDARCY         
@@ -684,7 +684,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  3)  200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000 200.000
 1                             **********************************************************************   7
   MULTX    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -692,7 +692,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************   8
   MULTY    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -700,7 +700,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************   9
   MULTZ    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -708,7 +708,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************  10
   PORO     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -716,7 +716,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.30000                                                                                                       
 1                             **********************************************************************  11
   NTG      AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -724,7 +724,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************  12
   TOPS     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
@@ -771,7 +771,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  3)  8375.00 8375.00 8375.00 8375.00 8375.00 8375.00 8375.00 8375.00 8375.00 8375.00
 1                             **********************************************************************  13
   DEPTH    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS   FEET          
@@ -818,7 +818,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  3)   8400.0  8400.0  8400.0  8400.0  8400.0  8400.0  8400.0  8400.0  8400.0  8400.0
 1                             **********************************************************************  14
   TRANX    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS CPB/D/PS        
@@ -865,7 +865,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  3)   11.270  11.270  11.270  11.270  11.270  11.270  11.270  11.270  11.270  0.0000
 1                             **********************************************************************  15
   DX       AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS   FEET          
@@ -873,7 +873,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  250.000        FEET                                                                                           
 1                             **********************************************************************  16
   DY       AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS   FEET          
@@ -881,7 +881,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  250.000        FEET                                                                                           
 1                             **********************************************************************  17
   DZ       AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS   FEET          
@@ -889,7 +889,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  5.00000        FEET                                                                                           
 1                             **********************************************************************  18
   PERMX    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS  MDARCY         
@@ -897,7 +897,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  500.000       MDARCY                                                                                          
 1                             **********************************************************************  19
   PERMY    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS  MDARCY         
@@ -905,7 +905,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  500.000       MDARCY                                                                                          
 1                             **********************************************************************  20
   PERMZ    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS  MDARCY         
@@ -913,7 +913,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  500.000       MDARCY                                                                                          
 1                             **********************************************************************  21
   MULTX    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS                 
@@ -921,7 +921,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************  22
   MULTY    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS                 
@@ -929,7 +929,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************  23
   MULTZ    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS                 
@@ -937,7 +937,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************  24
   PORO     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS                 
@@ -945,7 +945,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.30000                                                                                                       
 1                             **********************************************************************  25
   NTG      AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS                 
@@ -953,7 +953,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.00000                                                                                                       
 1                             **********************************************************************  26
   TOPS     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS   FEET          
@@ -983,7 +983,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  4,  4)  8340.00 8340.00 8340.00 8340.00
 1                             **********************************************************************  27
   DEPTH    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS   FEET          
@@ -1013,7 +1013,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  4,  4)   8342.5  8342.5  8342.5  8342.5
 1                             **********************************************************************  28
   TRANX    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS CPB/D/PS        
@@ -1043,7 +1043,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  4,  4)   2.8175  2.8175  2.8175  0.0000
 1                             **********************************************************************  29
   PORV     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS    RB           
@@ -1060,7 +1060,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           NOTE: NO. OF CELLS IN ANY LOCAL GRID CANNOT EXCEED MAXCLS       
 1                             **********************************************************************  30
   PORV     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS    RB           
@@ -1129,7 +1129,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     39 READING SOLUTION
 1                             **********************************************************************  31
   SOF3     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
    ------------------------------------ 
@@ -1183,7 +1183,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  0.88   0.000
 1                             **********************************************************************  32
   SWFN     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
    -----------------------------------  
@@ -1197,7 +1197,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   1.0000  0.0000   0.000    0.00    0.00
 1                             **********************************************************************  33
   SGFN     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
    ---------------------------------  
@@ -1223,7 +1223,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   1.0000  1.0000   0.000    0.13    0.00
 1                             **********************************************************************  34
   SATN TAB AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
    --------------------------------------------
@@ -1249,7 +1249,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           MUST NOT EXCEED 1.0                                             
 1                             **********************************************************************  35
   PVTW     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
                --------------------
@@ -1262,7 +1262,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    1    4014.7   1.0290  3.13D-06   0.31  0.00D+00
 1                             **********************************************************************  36
   PVDG     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  ---------------------------
@@ -1284,7 +1284,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   9014.70   0.3860   0.0470
 1                             **********************************************************************  37
   DENSITY  AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
        -----------------
@@ -1297,7 +1297,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    1    49.100   64.790  0.06054
 1                             **********************************************************************  38
   ROCK     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
      ---------------
@@ -1395,7 +1395,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     43 READING SUMMARY 
 1                             **********************************************************************  39
   EQUIL    AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1410,7 +1410,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
     1    8200.00   4800.00     8500.00             0      8200.00         0     1           0  (CELL CENTRE CONDITIONS)              
 1                             **********************************************************************  40
   RSVD     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1425,7 +1425,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
    8500.0            1.270         0.00000E+00        4014.70
 1                             **********************************************************************  41
   PRESSURE AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS   PSIA          
@@ -1472,7 +1472,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*, 10,  3)  4852.02 4852.02 4852.02 4852.02 4852.02 4852.02 4852.02 4852.02 4852.02 4852.02
 1                             **********************************************************************  42
   SOIL     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1480,7 +1480,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.88000                                                                                                       
 1                             **********************************************************************  43
   SWAT     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1488,7 +1488,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.12000                                                                                                       
 1                             **********************************************************************  44
   SGAS     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS                 
@@ -1496,7 +1496,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.00000                                                                                                       
 1                             **********************************************************************  45
   RS       AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  UNITS MSCF/STB        
@@ -1504,7 +1504,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  1.27000      MSCF/STB                                                                                         
 1                             **********************************************************************  46
   PRESSURE AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS   PSIA          
@@ -1534,7 +1534,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  (*,  4,  4)  4837.06 4837.06 4837.06 4837.06
 1                             **********************************************************************  47
   SOIL     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS                 
@@ -1542,7 +1542,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.88000                                                                                                       
 1                             **********************************************************************  48
   SWAT     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS                 
@@ -1550,7 +1550,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.12000                                                                                                       
 1                             **********************************************************************  49
   SGAS     AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS                 
@@ -1558,7 +1558,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
      CONSTANT ARRAY =  0.00000                                                                                                       
 1                             **********************************************************************  50
   RS       AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
  LOCAL GRID A         UNITS MSCF/STB        
@@ -1570,7 +1570,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @                 1607 KBYTES                                               
 1                             **********************************************************************  51
   BALANCE  AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
 
 
@@ -1666,7 +1666,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES FLUIDS IN PLACE                                
 1                             **********************************************************************  52
   SIMULATE AT     0.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   0    19 OCT 1982   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -1886,7 +1886,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  5693.4  PSIA   WCT=0.000 GOR=     1.28 MSCF/STB WGR=   0.0000 STB/MSCF   
 1                             **********************************************************************  53
   SIMULATE AT   365.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   1    19 OCT 1983   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   1    19 OCT 1983   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -1926,7 +1926,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  54
   SIMULATE AT   730.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   2    18 OCT 1984   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   2    18 OCT 1984   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -1962,7 +1962,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  6579.1  PSIA   WCT= 0.00 GOR=     3.31 MSCF/STB WGR= 0.00000  STB/MSCF   
 1                             **********************************************************************  55
   SIMULATE AT  1095.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   3    18 OCT 1985   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   3    18 OCT 1985   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -2017,7 +2017,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  56
   SIMULATE AT  1460.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   4    18 OCT 1986   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   4    18 OCT 1986   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -2045,7 +2045,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  5103.1  PSIA   WCT=0.000 GOR=    10.31 MSCF/STB WGR=   0.0000 STB/MSCF   
 1                             **********************************************************************  57
   SIMULATE AT  1825.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   5    18 OCT 1987   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   5    18 OCT 1987   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -2069,7 +2069,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  58
   SIMULATE AT  2190.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   6    17 OCT 1988   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   6    17 OCT 1988   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -2089,7 +2089,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  4311.9  PSIA   WCT=0.000 GOR=    14.06 MSCF/STB WGR=   0.0000 STB/MSCF   
 1                             **********************************************************************  59
   SIMULATE AT  2555.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   7    17 OCT 1989   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   7    17 OCT 1989   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -2113,7 +2113,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
 1                             **********************************************************************  60
   SIMULATE AT  2920.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   8    17 OCT 1990   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   8    17 OCT 1990   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -2133,7 +2133,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
   PAV=  3923.9  PSIA   WCT=0.000 GOR=    19.43 MSCF/STB WGR=   0.0000 STB/MSCF   
 1                             **********************************************************************  61
   SIMULATE AT  3285.00   DAYS *   ODEH PROBLEM - IMPLICIT OPTION                                       * ECLIPSE  VERSION 2009.1     
-  REPORT   9    17 OCT 1991   *  RUN                                                                   * RUN AT 11:52 ON 16 JLY 2015 
+  REPORT   9    17 OCT 1991   *  RUN                                                                   * RUN AT 12:06 ON 16 JLY 2015 
                               **************************************************************************
     -------- LOCAL GRID A        ------
 
@@ -2155,7 +2155,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  Problems               0
  Errors                 0
  Bugs                   0
- Final cpu       0.00 elapsed       0.00
+ Final cpu       0.42 elapsed       1.00
 1                                                                                                                                  
  -------------------------------------------------------------------------------------------------------------------------------
  SUMMARY OF RUN SPE1_COMPKRIL ECLIPSE 2009.1 DATESTAMP 27-APR-2009 USER   MACHINE pceta16                                                
