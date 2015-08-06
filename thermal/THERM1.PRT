@@ -472,70 +472,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                31320 BYTES                                                
-    13 READING ROCKPROP
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE ROCKCON  KEYWORD                           
- @           1 125 24. 35. /                                                 
- @           /                                                               
-    14 READING ROCKCON 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD ROCKCON  IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE INRAD    KEYWORD                           
- @           1    1 13 1 1 1 1 'K-' /                                        
- @           1    1 13 1 1 4 4 'K+' /                                        
- @           /                                                               
-    15 READING INRAD   
-    16 READING DRV     
-    17 READING DTHETAV 
-    18 READING DZV     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE PERMR    KEYWORD                           
- @            10.0  20.0  25.0  25.0        /                                
-    19 READING PERMR   
-    20 READING PERMTHT 
-    21 READING PERMZ   
-    22 READING PORO    
-    23 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @               39 VALUES NOT DEFINED IN BOX (  1- 13,  1-  1,  1-  4)      
- @           OF KEYWORD TOPS                                                 
-    24 READING THCONR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
- @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE HEATCR   KEYWORD                           
- @            52*24.0  /                                                     
-    25 READING HEATCR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD HEATCR   IN GRID DATA                      
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
  Comments               0
- Warnings               9
+ Warnings               4
  Problems               0
- Errors                12
+ Errors                 7
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

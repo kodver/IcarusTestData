@@ -439,90 +439,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                26548 BYTES                                                
-    13 READING NOECHO  
-    14 READING INCLUDE CASE5G.INC                                        
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @            UNABLE TO OPEN INCLUDED FILE                                   
- @           CASE5G.INC                                                      
- @            SYSTEM ERROR CODE IS       29                                  
-    15 READING ECHO    
-    16 READING EQUALS  
-    17 READING RPTGRID 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED MNEMONIC LIMITS           IN DATA                  
- @           FOR KEYWORD RPTGRID  IS IGNORED                                 
-    18 READING PORO    
-    19 READING PERMX   
-    20 READING PERMZ   
-    21 READING MINPORV 
-    22 READING MINDZNET
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD MINDZNET IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE MAXTRANZ KEYWORD                           
- @           0.1 /                                                           
-    23 READING MAXTRANZ
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD MAXTRANZ IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE CARFIN   KEYWORD                           
- @           1000 /                                                          
-    24 READING CARFIN  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           LOCAL GRID REFINEMENT CANNOT BE USED UNLESS                     
- @           BOTH MAXLGR AND MAXCLS ARE SET USING KEYWORD LGR IN THE         
- @           RUNSPEC SECTION : LGR KEYWORDS WILL BE IGNORED                  
-    25 READING ENDFIN  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           KEYWORD ENDFIN DOES NOT FOLLOW A VALID LOCAL                    
- @           GRID REFINEMENT SPECIFICATION -- IGNORED                        
-    26 READING INIT    
-    27 READING EDIT    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           A THRESHOLD PORE VOLUME HAS BEEN SUPPLIED (MINPV).              
- @           ANY CELLS WITH VOLUMES LESS THAN THE THRESHOLD WILL BE          
- @           REMOVED FROM THE SIMULATION. TO ALLOW FLOW TO CONTINUE          
- @           ACROSS A DISABLED CELL THE NON NEIGHBOUR CONNECTION FLAG        
- @           MUST BE ENABLED AND THE PINCH KEYWORD ADDED                     
- @           TO THE GRID SECTION.                                            
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
- @           PORE VOLUMES WILL BE SET TO ZERO                                
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
-    28 READING EQUALS  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INVALID BOX (  1-  0,  1-  0,  1-  3)                           
- @           SPECIFIED ON RECORD    1 OF KEYWORD EQUALS                      
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
  Comments               0
- Warnings               7
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 5
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

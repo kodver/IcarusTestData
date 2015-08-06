@@ -2,49 +2,23 @@
  '        ' '        ' '        ' '        ' '        ' '        ' '        '
  '        ' '        '
  'DIMENS  '           6 'INTE'
-          11          10          10           3           0          -1
- 'KEYWORDS'          11 'CHAR'
- 'TIME    ' 'YEARS   ' 'FOPR    ' 'WGOR    ' 'WBHP    ' 'BGSAT   ' 'BGSAT   '
- 'BOSAT   ' 'BOSAT   ' 'BPR     ' 'BPR     '
- 'WGNAMES '          11 'CHAR'
- ':+:+:+:+' ':+:+:+:+' 'FIELD   ' 'PRODUCER' 'PRODUCER' ':+:+:+:+' ':+:+:+:+'
- ':+:+:+:+' ':+:+:+:+' ':+:+:+:+' ':+:+:+:+'
- 'NUMS    '          11 'INTE'
-      -32767      -32767           0           0           0         300
-           1         300           1         300           1
- 'LGRS    '          11 'CHAR'
- '        ' '        ' '        ' '        ' '        ' '        ' '        '
- '        ' '        ' '        ' '        '
- 'NUMLX   '          11 'INTE'
-           0           0           0           0           0           0
-           0           0           0           0           0
- 'NUMLY   '          11 'INTE'
-           0           0           0           0           0           0
-           0           0           0           0           0
- 'NUMLZ   '          11 'INTE'
-           0           0           0           0           0           0
-           0           0           0           0           0
- 'UNITS   '          11 'CHAR'
- '  DAYS  ' 'YEARS   ' ' STB/DAY' 'MSCF/STB' '  PSIA  ' '        ' '        '
- '        ' '        ' '  PSIA  ' '  PSIA  '
+           0          10          10           3           0          -1
+ 'KEYWORDS'           0 'CHAR'
+ 'WGNAMES '           0 'CHAR'
+ 'NUMS    '           0 'INTE'
+ 'UNITS   '           0 'CHAR'
  'STARTDAT'           3 'INTE'
           19          10        1982
- 'LGRNAMES'           1 'CHAR'
- 'A       '
- 'LGRVEC  '           1 'INTE'
-           2
- 'LGRTIMES'           1 'INTE'
-          57
  'RUNTIMEI'          50 'INTE'
-           2           0          10        2015           7          16
-          16          14          57        2015           7          16
-          16          14          58          16          10        1992
-           2          17           1          14           0           0
-           0           0           3           0           0           1
-           0           0           0           0           4           0
+           2           0           0        2015           8           6
+          14           1          25        2015           8           6
+          14           1          25          19          10        1982
+           2           1           0           0           0           1
+           0           0           0           0           0           1
+           0           0           0           0           0           0
            0           0           0           0           0           0
            0           0           0           0           0           0
            0           0
  'RUNTIMED'           5 'DOUB'
-   0.36500000000000D+04   0.10000000000000D+01   0.15000000000000D+01
+   0.00000000000000D+00   0.50000000000000D+00   0.50000000000000D+00
    0.00000000000000D+00   0.00000000000000D+00

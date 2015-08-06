@@ -303,13 +303,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               125092 BYTES                                                
-     9 READING EQUALS  
-    10 READING CARFIN  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           LOCAL GRID REFINEMENT CANNOT BE USED UNLESS                     
- @           BOTH MAXLGR AND MAXCLS ARE SET USING KEYWORD LGR IN THE         
- @           RUNSPEC SECTION : LGR KEYWORDS WILL BE IGNORED                  
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
+
+ Error summary 
+ Comments               0
+ Warnings               3
+ Problems               0
+ Errors                 6
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00

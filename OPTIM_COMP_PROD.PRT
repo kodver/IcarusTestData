@@ -487,114 +487,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               163968 BYTES                                                
-    18 READING EQUALS  
-    19 READING PERMX   
-    20 READING COPY    
-    21 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @              300 VALUES NOT DEFINED IN BOX (  1- 10,  1- 10,  1-  4)      
- @           OF KEYWORD TOPS                                                 
-    22 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NUMBER OF ACTIVE CELLS IS 400                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           ADDITIONAL     0.078 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               761704 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @              58563 CHARACTER VARIABLES USED                               
-    23 READING KVGEN   
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD KVGEN    IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
- @           0.0053 0.0330 0.72973 0.07679 0.04100                           
- @           0.0212 0.0121 0.00850 0.05219 0.02019 1 350 /                   
-    24 READING RTEMP   
-    25 READING STCOND  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
- @           15 1.013 /                                                      
-    26 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    27 READING SK /    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD SK /     IN PROPERTY DATA                  
-    28 READING DNGL    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD DNGL     IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
- @           776.0                                                           
- @           802.0                                                           
- @           424.6                                                           
- @           547.5                                                           
- @           581.1                                                           
- @           608.4                                                           
- @           640.4                                                           
- @           720.5                                                           
- @           803.7 /                                                         
-    29 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-    30 READING N2    CO
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD N2    CO IN PROPERTY DATA                  
-    31 READING TCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
- @           126.28 304.20 190.60 305.40 369.80 419.55 465.49 507.40 594.60 7
-    32 READING PCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               7
+ Comments               0
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 3
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

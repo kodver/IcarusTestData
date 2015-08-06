@@ -412,108 +412,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                28568 BYTES                                                
-    18 READING EQUALS  
-    19 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NUMBER OF ACTIVE CELLS IS 30                                    
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           ADDITIONAL     0.006 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               286152 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @              58535 CHARACTER VARIABLES USED                               
-    20 READING PARACHOR
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD PARACHOR IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE SORMW1   KEYWORD                           
- @           /                                                               
-    21 READING SORMW1  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD SORMW1   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE SWFN     KEYWORD                           
- @            0.2  /                                                         
- @            0.22  /                                                        
-    22 READING SWFN    
-    23 READING SGFN    
-    24 READING SOF3    
-    25 READING ROCK    
-    26 READING PVTW    
-    27 READING STCOND  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
- @             60     14.7 /                                                 
-    28 READING RTEMP   
-    29 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE PRCORR   KEYWORD                           
- @              PR  /                                                        
-    30 READING PRCORR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
-    31 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE MW       KEYWORD                           
- @                       C1       C3       C6        C10      C15       C20  
-    32 READING MW      
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE TCRIT    KEYWORD                           
- @                    16.04    44.10    86.18    149.29    206.00    282.00  
-    33 READING TCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               9
+ Comments               0
+ Warnings               3
  Problems               0
- Errors                12
+ Errors                 4
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

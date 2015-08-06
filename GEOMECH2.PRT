@@ -385,91 +385,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               163968 BYTES                                                
-    16 READING GRIDFILE
-    17 READING INIT    
-    18 READING EQUALS  
-    19 READING EQUALS  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INVALID GRID ARRAY NAME YOUNGMOD                                
- @           ON RECORD    1 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INVALID GRID ARRAY NAME POISSONR                                
- @           ON RECORD    2 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INVALID GRID ARRAY NAME ROCKDEN                                 
- @           ON RECORD    3 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INVALID GRID ARRAY NAME BIOTC                                   
- @           ON RECORD    4 FOLLOWING EQUALS   KEYWORD                       
-    20 READING RPTGRID 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED MNEMONIC LIMITS           IN DATA                  
- @           FOR KEYWORD RPTGRID  IS IGNORED                                 
-    21 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NUMBER OF ACTIVE CELLS IS 400                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           ADDITIONAL     0.077 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               751704 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @              58535 CHARACTER VARIABLES USED                               
-    22 READING SWFN    
-    23 READING SGFN    
-    24 READING SOF3    
-    25 READING PVTW    
-    26 READING ROCK    
-    27 READING DENSITY 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SURFACE DENSITY OF OIL IN DENSITY TABLE   1                     
- @           IS ZERO OR NEGATIVE (=     0.00000)                             
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SURFACE DENSITY OF GAS IN DENSITY TABLE   1                     
- @           IS ZERO OR NEGATIVE (=     0.00000)                             
-    28 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    29 READING PR /    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               5
+ Comments               0
+ Warnings               4
  Problems               0
- Errors                12
+ Errors                 4
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

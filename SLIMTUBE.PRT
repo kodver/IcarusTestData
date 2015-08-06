@@ -367,78 +367,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               105484 BYTES                                                
-    11 READING DX      
-    12 READING DY      
-    13 READING DZ      
-    14 READING PORO    
-    15 READING PERMX   
-    16 READING PERMY   
-    17 READING PERMZ   
-    18 READING MIDS    
-
  @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD MIDS     IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE PROPS    KEYWORD                           
- @           200*100.0 /                                                     
-    19 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
-
- @--COMMENT  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           NUMBER OF ACTIVE CELLS IS 200                                   
-
- @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               393936 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @              58528 CHARACTER VARIABLES USED                               
-    20 READING EOS     
-
- @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    21 READING PR    / 
-
- @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PR    /  IN PROPERTY DATA                  
-    22 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-    23 READING CO2 PC1 
-
- @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD CO2 PC1  IN PROPERTY DATA                  
-    24 READING MISCEXP 
-
- @--  ERROR  AT TIME        0.0   HOURS   ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD MISCEXP  IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               4
+ Comments               0
+ Warnings               3
  Problems               0
- Errors                12
+ Errors                 5
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

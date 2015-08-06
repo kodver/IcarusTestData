@@ -424,61 +424,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                63828 BYTES                                                
-    13 READING INIT    
-    14 READING DXV     
-    15 READING DYV     
-    16 READING DZV     
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE TOPS     KEYWORD                           
- @           20 30 50 /                                                      
-    17 READING TOPS    
-    18 READING PORO    
-    19 READING PERMX   
-    20 READING PERMY   
-    21 READING PERMZ   
-    22 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
- @           PORE VOLUMES WILL BE SET TO ZERO                                
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INSUFFICIENT DATA TO COMPUTE Y TRANSMISSIBILITIES               
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INSUFFICIENT DATA TO COMPUTE Z TRANSMISSIBILITIES               
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NUMBER OF ACTIVE CELLS IS 0                                     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THERE ARE NO ACTIVE CELLS IN THE RESERVOIR                      
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               2
+ Comments               0
+ Warnings               1
  Problems               0
- Errors                 8
+ Errors                 2
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

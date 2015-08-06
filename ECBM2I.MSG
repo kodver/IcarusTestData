@@ -3,72 +3,8 @@
  CHECKING FOR LICENSES                                                   
 </message>
 <error date="1/1/0" time="0.00000000000000">
- UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                           
-</error>
-<warning date="1/1/0" time="0.00000000000000">
- SPURIOUS DATA BEFORE FULLIMP  KEYWORD                                   
- 2 /                                                                     
-</warning>
-<warning date="1/1/0" time="0.00000000000000">
- ITEM 6 OF REGDIMS IS NOT AVAILABLE IN                                   
- E100 RUNS.                                                              
-</warning>
-<error date="26/1/1983" time="0.00000000000000">
- UNRECOGNISED KEYWORD CBMOPTS  IN RUNSPEC DATA                           
-</error>
-<warning date="26/1/1983" time="0.00000000000000">
- SPURIOUS DATA BEFORE GRID     KEYWORD                                   
-  INSTANT /                                                              
-</warning>
-<warning date="26/1/1983" time="0.00000000000000">
- THE DUAL POROSITY MODEL MUST BE ACTIVE FOR THE                          
- COAL BED METHANE OPTION. DUAL POROSITY OPTION                           
-</warning>
-<message date="26/1/1983" time="0.00000000000000">
- CHECKING FOR LICENSES                                                   
-</message>
-<message date="26/1/1983" time="0.00000000000000">
- THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
-      69684 BYTES                                                        
-</message>
-<error date="26/1/1983" time="0.00000000000000">
- UNRECOGNISED KEYWORD ROCKDEN  IN GRID DATA                              
-</error>
-<warning date="26/1/1983" time="0.00000000000000">
- SPURIOUS DATA BEFORE COALNUM  KEYWORD                                   
-  121*1434.0  /                                                          
-</warning>
-<error date="26/1/1983" time="0.00000000000000">
- UNRECOGNISED KEYWORD COALNUM  IN GRID DATA                              
-</error>
-<warning date="26/1/1983" time="0.00000000000000">
- SPURIOUS DATA BEFORE DXV      KEYWORD                                   
- 121*1 /                                                                 
-</warning>
-<error date="26/1/1983" time="0.00000000000000">
- EITHER SIGMA OR THE ARRAY SIGMAV NEEDS TO BE                            
- SPECIFIED IN DUAL POROSITY RUNS.                                        
-</error>
-<message date="26/1/1983" time="0.00000000000000">
- NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
- BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
- USING  OLDTRAN                                                          
-</message>
-<bug date="26/1/1983" time="0.00000000000000">
-  CONSISTENCY PROBLEM IN RCDPTR                                          
-  NMTRIX =      0 NFRACT =      0 NFRAC =    121                         
-  NACTIV =    242 NKILL  =      0                                        
- Stop limit reached on bug        outputs
-</bug>
-<comment date="26/1/1983" time="0.00000000000000">
- 2 DUAL POROSITY CONNECTIONS FOUND                                       
-</comment>
-<bug date="26/1/1983" time="0.00000000000000">
- YWGRID HAS MISCOUNTED ACTIVE CELLS                                      
-</bug>
-<error date="26/1/1983" time="0.00000000000000">
- RUN STOPPED BECAUSE NUMBER OF     BUGS                                  
- EXCEEDS MAXIMUM PERMITTED VALUE (     1).                               
- SEE MESSAGES KEYWORD                                                    
+ LICENSE ERROR  -1 FOR COAL BED METHANE OPTION                           
+ FEATURE IS INVALID. CHECK YOUR LICENSE FILE AND                         
+ THE LICENSE LOG FILE                                                    
 </error>
 </eclipse>

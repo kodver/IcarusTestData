@@ -102,134 +102,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                47568 BYTES                                                
-    19 READING INIT    
-    20 READING MAPUNITS
-    21 READING MAPAXES 
-    22 READING GRIDUNIT
-    23 READING SPECGRID
-    24 READING COORD   
-    25 READING ZCORN   
-    26 READING EQUALS  
-    27 READING COPY    
-    28 READING MULTIPLY
-    29 READING RPTGRID 
-    30 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           TRANSMISSIBILITIES TO BE CALCULATED                             
- @           USING  NEWTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NUMBER OF ACTIVE CELLS IS 100                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           ADDITIONAL     0.212 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               445060 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @              58605 CHARACTER VARIABLES USED                               
-    31 READING RTEMP   
-    32 READING EOS     
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE NCOMPS   KEYWORD                           
- @              PR3                                                          
- @           /                                                               
-    33 READING NCOMPS  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD NCOMPS   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE PRCORR   KEYWORD                           
- @                  6                                                        
- @           /                                                               
-    34 READING PRCORR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
-    35 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE MW       KEYWORD                           
- @              'CO2'                                                        
- @              'N2'                                                         
- @              'C1'                                                         
- @              'C3'                                                         
- @              'C10'                                                        
- @              'C15'                                                        
- @           /                                                               
-    36 READING MW      
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE OMEGAA   KEYWORD                           
- @                    44.01                                                  
- @                   28.013                                                  
- @                   16.043                                                  
- @                   44.097                                                  
- @                      134                                                  
- @                      206                                                  
- @           /                                                               
-    37 READING OMEGAA  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD OMEGAA   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE OMEGAB   KEYWORD                           
- @              0.45723                                                      
- @              0.45723                                                      
- @              0.45723                                                      
- @              0.45723                                                      
- @              0.45723                                                      
- @              0.45723                                                      
- @           /                                                               
-    38 READING OMEGAB  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD OMEGAB   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE TCRIT    KEYWORD                           
- @              0.07779                                                      
- @              0.07779                                                      
- @              0.07779                                                      
- @              0.07779                                                      
- @              0.07779                                                      
- @              0.07779                                                      
- @           /                                                               
-    39 READING TCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               8
+ Comments               0
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 4
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

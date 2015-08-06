@@ -595,119 +595,14 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           CHECKING FOR LICENSES                                           
 
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE FULLIMP  KEYWORD                           
- @           2 /                                                             
-    10 READING FULLIMP 
-    11 READING EQLDIMS 
-    12 READING TABDIMS 
-    13 READING REGDIMS 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ITEM 6 OF REGDIMS IS NOT AVAILABLE IN                           
- @           E100 RUNS.                                                      
-    14 READING WELLDIMS
-    15 READING START   
-    16 READING NODPPM  
-    17 READING CBMOPTS 
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNRECOGNISED KEYWORD CBMOPTS  IN RUNSPEC DATA                   
-
- @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           SPURIOUS DATA BEFORE NMATRIX  KEYWORD                           
- @           'TIMEDEP' /                                                     
-    18 READING NMATRIX 
-    19 READING GRID    
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           CHECKING FOR LICENSES                                           
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                 1202 KBYTES                                               
-    20 READING INIT    
-    21 READING DXV     
-    22 READING DYV     
-    23 READING NMATOPTS
-    24 READING EQUALS  
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           INVALID GRID ARRAY NAME COALNUM                                 
- @           ON RECORD    7 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           INVALID GRID ARRAY NAME COALNUM                                 
- @           ON RECORD    8 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           INVALID GRID ARRAY NAME ROCKDEN                                 
- @           ON RECORD   14 FOLLOWING EQUALS   KEYWORD                       
-    25 READING COALNUMR
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNRECOGNISED KEYWORD COALNUMR IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           SPURIOUS DATA BEFORE PROPS    KEYWORD                           
- @           1   0 1 0 1 0 1 0 1 0 1  /                                      
- @           /                                                               
-    26 READING PROPS   
-
- @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           PLEASE RE-CHECK TOPS DATA SPECIFIED.  THE FIRST                 
- @           AND SECOND LAYERS HAVE SAME TOPS VALUE                          
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNSPECIFIED DZ VALUES COPIED FROM LAYER ABOVE                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNSPECIFIED PERMX VALUES COPIED FROM LAYER ABOVE                
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNSPECIFIED PERMY VALUES COPIED FROM LAYER ABOVE                
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNSPECIFIED PERMZ VALUES COPIED FROM LAYER ABOVE                
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNSPECIFIED PORO VALUES COPIED FROM LAYER ABOVE                 
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           NUMBER OF CELLS IN THE Z-DIRECTION (NDIVIZ)                     
- @           MUST BE EVEN FOR A DUAL POROSITY RUN                            
-
- @--COMMENT  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--COMMENT  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           605 DUAL POROSITY CONNECTIONS FOUND                             
-
- @--    BUG  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           YWGRID HAS MISCOUNTED ACTIVE CELLS                              
-
- @--    BUG  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           YWGRID HAS MISCOUNTED ACTIVE CELLS                              
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF     BUGS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (     1).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE ERROR  -1 FOR COAL BED METHANE OPTION                   
+ @           FEATURE IS INVALID. CHECK YOUR LICENSE FILE AND                 
+ @           THE LICENSE LOG FILE                                            
 
  Error summary 
- Comments               2
- Warnings               5
+ Comments               0
+ Warnings               0
  Problems               0
- Errors                 8
- Bugs                   2
+ Errors                 1
+ Bugs                   0
  Final cpu       0.00 elapsed       0.00

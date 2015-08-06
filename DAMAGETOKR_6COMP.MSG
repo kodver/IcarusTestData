@@ -9,45 +9,7 @@
 <message date="1/1/1990" time="0.00000000000000">
  CHECKING FOR LICENSES                                                   
 </message>
-<message date="1/1/1990" time="0.00000000000000">
- THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
-      63828 BYTES                                                        
-</message>
 <error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD DZV      IN GRID DATA                              
-</error>
-<warning date="1/1/1990" time="0.00000000000000">
- SPURIOUS DATA BEFORE TOPS     KEYWORD                                   
- 20 30 50 /                                                              
-</warning>
-<message date="1/1/1990" time="0.00000000000000">
- NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
- BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
- USING  OLDTRAN                                                          
-</message>
-<error date="1/1/1990" time="0.00000000000000">
- INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                               
- PORE VOLUMES WILL BE SET TO ZERO                                        
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                         
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES                       
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- INSUFFICIENT DATA TO COMPUTE Y TRANSMISSIBILITIES                       
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- INSUFFICIENT DATA TO COMPUTE Z TRANSMISSIBILITIES                       
-</error>
-<comment date="1/1/1990" time="0.00000000000000">
- NO NON-NEIGHBOUR CONNECTIONS FOUND                                      
-</comment>
-<message date="1/1/1990" time="0.00000000000000">
- NUMBER OF ACTIVE CELLS IS 0                                             
-</message>
-<error date="1/1/1990" time="0.00000000000000">
- THERE ARE NO ACTIVE CELLS IN THE RESERVOIR                              
+ LICENSE FAILURE: ERROR NUMBER IS -1                                     
 </error>
 </eclipse>

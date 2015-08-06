@@ -585,97 +585,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                64892 BYTES                                                
-    13 READING EQUALS  
-    14 READING COPY    
-    15 READING MULTIPLY
-    16 READING INIT    
-    17 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              135 VALUES NOT DEFINED IN BOX (  1- 15,  1-  1,  1- 10)      
- @           OF KEYWORD TOPS                                                 
-    18 READING RPTGRID 
-    19 READING AQUCT   
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD AQUCT    IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE AQUCON   KEYWORD                           
- @           1  5400.0  1*  20.0   0.10  3.0E-5  2400.0 140.0 4.8 1 1 /      
- @           /                                                               
-    20 READING AQUCON  
-    21 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-1                             **********************************************************************   1
-  PORV     AT     0.00   DAYS *GASSOL example                                                          * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 16:14 ON 16 JLY 2015 
-                              **************************************************************************
-
- UNITS    RB           
-
-     CONSTANT ARRAY =   21373.         RB                                                                                            
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NUMBER OF ACTIVE CELLS IS 150                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ADDITIONAL     0.004 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               344016 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              58528 CHARACTER VARIABLES USED                               
-    22 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    23 READING PR3 /   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PR3 /    IN PROPERTY DATA                  
-    24 READING PRCORR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
-    25 READING RTEMP   
-    26 READING STCOND  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
- @           60 14.7 /                                                       
-    27 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               7
+ Comments               0
+ Warnings               4
  Problems               0
- Errors                12
+ Errors                 6
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

@@ -1500,118 +1500,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                16228 BYTES                                                
-    28 READING GRIDFILE
-    29 READING INIT    
-    30 READING DXV     
-    31 READING DYV     
-    32 READING DZV     
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           SPURIOUS DATA BEFORE TOPS     KEYWORD                           
- @           50.00 /                                                         
-    33 READING TOPS    
-    34 READING PERMX   
-    35 READING PERMY   
-    36 READING PERMZ   
-    37 READING PORO    
-    38 READING NTG     
-    39 READING EDIT    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           FLUX FLAG SET IN RUNSPEC BUT FLUXNUM KEYWORD                    
- @           NOT USED -- SAVE SPACE BY SETTING NTFREG = 0                    
- @           IN RUNSPEC KEYWORD REGDIMS.                                     
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
- @           PORE VOLUMES WILL BE SET TO ZERO                                
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
-    40 READING PORV    
-    41 READING TRANX   
-    42 READING TRANY   
-    43 READING TRANZ   
-    44 READING PROPS   
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @            THERE ARE        7 PORE VOLUMES IN THE EDIT SECTION            
- @            WHICH ACTIVATE CELLS WHICH HAVE PREVIOUSLY                     
- @            BEEN MADE INACTIVE BY ACTNUM, MINPV OR MINPVV KEYWORDS.        
- @            FOR A FULL LISTING SET MNEMONIC PORV > 1 IN RPTGRID            
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           NUMBER OF ACTIVE CELLS IS 7                                     
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           ADDITIONAL     0.015 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               243512 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @              58542 CHARACTER VARIABLES USED                               
-    45 READING RTEMP   
-    46 READING ZI      
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD ZI       IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           SPURIOUS DATA BEFORE PVTW     KEYWORD                           
- @              0.38448   0.06715   0.14194   0.06705   0.08994   0.10958   0
-    47 READING PVTW    
-    48 READING PRCORR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
-    49 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
- @              'N2-C1'                                                      
- @             'CO2-C2'                                                      
- @              'C3-C4'                                                      
- @              'C5-C6'                                                      
- @              'C7-C8'                                                      
- @             'C9-C13'                                                      
- @            'C14-C24'                                                      
- @               'C25+'                                                      
- @           /                                                               
-    50 READING PCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               8
+ Comments               0
+ Warnings               3
  Problems               0
- Errors                12
+ Errors                 4
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

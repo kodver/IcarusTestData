@@ -22,73 +22,9 @@
 <message date="1/1/0" time="0.00000000000000">
  CHECKING FOR LICENSES                                                   
 </message>
-<message date="1/1/1996" time="0.00000000000000">
- CHECKING FOR LICENSES                                                   
-</message>
-<message date="1/1/1996" time="0.00000000000000">
- THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
-       2098 KBYTES                                                       
-</message>
-<warning date="1/1/1996" time="0.00000000000000">
-   5280 VALUES NOT DEFINED IN BOX (  1- 11,  1- 24,  1- 21)              
- OF KEYWORD TOPS                                                         
-</warning>
-<error date="1/1/1996" time="0.00000000000000">
- UNRECOGNISED KEYWORD DZV      IN GRID DATA                              
-</error>
-<warning date="1/1/1996" time="0.00000000000000">
- SPURIOUS DATA BEFORE EQUALS   KEYWORD                                   
-  8*64 7*40 4*10 40 100 /                z-height = 1052 feet            
-</warning>
-<error date="1/1/1996" time="0.00000000000000">
- INVALID GRID ARRAY NAME HEATCR                                          
- ON RECORD    5 FOLLOWING EQUALS   KEYWORD                               
-</error>
-<error date="1/1/1996" time="0.00000000000000">
- GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                            
- RUNSPEC OPTIONS. SEE KEYWORD TEMP                                       
-</error>
-<error date="1/1/1996" time="0.00000000000000">
- UNRECOGNISED KEYWORD ROCKCON  IN GRID DATA                              
-</error>
-<warning date="1/1/1996" time="0.00000000000000">
- SPURIOUS DATA BEFORE ROCKPROP KEYWORD                                   
-   1  1 11  1 24  1  1 K- /                   overburden  connect        
-   2  1 11  1 24 21 21 K+ /                   underburden connect        
- /                                                                       
-</warning>
-<error date="1/1/1996" time="0.00000000000000">
- UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                              
-</error>
-<warning date="1/1/1996" time="0.00000000000000">
- SPURIOUS DATA BEFORE PROPS    KEYWORD                                   
-   1 225      30                  35  1* N /     overburden  prop        
-   2 110      30                  35  1* N /     underburden prop        
- /                                                                       
-</warning>
-<message date="1/1/1996" time="0.00000000000000">
- UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
- TO TOPS VALUE FOR LAYER ABOVE                                           
-</message>
-<message date="1/1/1996" time="0.00000000000000">
- NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
- BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
- USING  OLDTRAN                                                          
-</message>
-<error date="1/1/1996" time="0.00000000000000">
- INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                               
- PORE VOLUMES WILL BE SET TO ZERO                                        
-</error>
-<error date="1/1/1996" time="0.00000000000000">
- INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                         
- Stop limit reached on error      outputs
-</error>
-<error date="1/1/1996" time="0.00000000000000">
- INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES                       
-</error>
-<error date="1/1/1996" time="0.00000000000000">
- RUN STOPPED BECAUSE NUMBER OF   ERRORS                                  
- EXCEEDS MAXIMUM PERMITTED VALUE (    10).                               
- SEE MESSAGES KEYWORD                                                    
+<error date="1/1/0" time="0.00000000000000">
+ LICENSE ERROR  -1 FOR MULTI-SEGMENT WELL OPTION                         
+ FEATURE IS INVALID. CHECK YOUR LICENSE FILE AND                         
+ THE LICENSE LOG FILE                                                    
 </error>
 </eclipse>

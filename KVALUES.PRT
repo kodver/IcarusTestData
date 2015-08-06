@@ -487,93 +487,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                32144 BYTES                                                
-    17 READING DX      
-    18 READING DY      
-    19 READING DZ      
-    20 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @               48 VALUES NOT DEFINED IN BOX (  1-  4,  1-  4,  1-  4)      
- @           OF KEYWORD TOPS                                                 
-    21 READING PORO    
-    22 READING PERMX   
-    23 READING PERMY   
-    24 READING PERMZ   
-    25 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NUMBER OF ACTIVE CELLS IS 64                                    
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ADDITIONAL     0.007 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               320808 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              58556 CHARACTER VARIABLES USED                               
-    26 READING PARACHOR
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PARACHOR IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE KVTABLE  KEYWORD                           
- @           /                                                               
-    27 READING KVTABLE 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD KVTABLE  IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
- @            500.0 4.1792 15.844 9.2278 2.4155 1.106 0.3343 0.0271 0.00116 0
- @            614.5 3.4841 12.743 7.5329 2.0498 0.963 0.3013 0.0264 0.00126 0
- @            729.2 3.0090 10.621 6.3747 1.8020 0.868 0.2810 0.0266 0.00142 0
- @            843.7 2.6643  9.078 5.5334 1.6242 0.803 0.2686 0.0275 0.00163 0
- @            958.3 2.4034  7.905 4.8947 1.4913 0.755 0.2613 0.0288 0.00190 0
- @           1072.9 2.1993  6.985 4.3934 1.3890 0.721 0.2578 0.0307 0.00225 0
- @           1302.0 1.9020  5.632 3.6571 1.2442 0.678 0.2588 0.0357 0.00320 0
- @           1532.5 1.6972  4.686 3.1424 1.1493 0.657 0.2673 0.0426 0.00466 0
- @           6000.0 1.0125  1.146 1.1139 0.9832 0.936 0.8280 0.6715 0.54531 0
-    28 READING RTEMP   
-    29 READING STCOND  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
- @           60 14.7 /                                                       
-    30 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               6
+ Comments               0
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 8
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

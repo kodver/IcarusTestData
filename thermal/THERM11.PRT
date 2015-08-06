@@ -603,46 +603,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                16864 BYTES                                                
-    11 READING DX      
-    12 READING DY      
-    13 READING DZ      
-    14 READING TOPS    
-    15 READING PORO    
-    16 READING PERMX   
-    17 READING COPY    
-    18 READING HEATCR  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD HEATCR   IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE THCONR   KEYWORD                           
- @           10*35.0   /   BTU/cu.ft/F                                       
-    19 READING THCONR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
- @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE ROCKPROP KEYWORD                           
- @           10*38.4   /   BTU/ft/D/F                                        
-    20 READING ROCKPROP
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                      
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
  Comments               0
- Warnings               7
+ Warnings               5
  Problems               0
- Errors                12
+ Errors                 9
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

@@ -836,83 +836,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                 1260 KBYTES                                               
-    15 READING INIT    
-    16 READING DX      
-    17 READING DY      
-    18 READING DZ      
-    19 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @             2430 VALUES NOT DEFINED IN BOX (  1- 45,  1- 18,  1-  4)      
- @           OF KEYWORD TOPS                                                 
-    20 READING PORO    
-    21 READING PERMX   
-    22 READING PERMY   
-    23 READING PERMZ   
-    24 READING MULTX   
-    25 READING MULTY   
-    26 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NUMBER OF ACTIVE CELLS IS 3240                                  
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ADDITIONAL     0.817 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @                 2516 KBYTES                                               
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              58668 CHARACTER VARIABLES USED                               
-    27 READING NCOMPS  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD NCOMPS   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE EOS      KEYWORD                           
- @           9 /                                                             
-    28 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    29 READING PR /    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                  
-    30 READING PRCORR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
-    31 READING STCOND  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               5
+ Comments               0
+ Warnings               3
  Problems               0
- Errors                12
+ Errors                 7
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

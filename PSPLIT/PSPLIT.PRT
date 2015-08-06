@@ -101,81 +101,16 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
 
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
-     7 READING METRIC  
-     8 READING WATER   
-     9 READING AIM     
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           AIM      METHOD IS NOT AVAILABLE IN ECLIPSE 100                 
- @           CHOICES ARE FULLY IMPLICIT (DEFAULT) OR IMPES                   
-    10 READING COMPS   
 
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE HWELLS   KEYWORD                           
- @            7 /                                                            
-    11 READING HWELLS  
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @            HWELLS IS NOT REQUIRED IN ECLIPSE 100                          
-    12 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD EOS      IN RUNSPEC DATA                   
-    13 READING PR /    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PR /     IN RUNSPEC DATA                   
-    14 READING TABDIMS 
-    15 READING WELLDIMS
-    16 READING VFPIDIMS
-    17 READING VFPPDIMS
-    18 READING START   
-    19 READING UNIFOUT 
-    20 READING PSPLITX 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1970):
- @           UNRECOGNISED KEYWORD PSPLITX  IN RUNSPEC DATA                   
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1970):
- @           SPURIOUS DATA BEFORE PSPLITY  KEYWORD                           
- @             10  20                                 /--NPROCX=  2 LOAD BALA
- @              7  14  20                             /--NPROCX=  3 LOAD BALA
- @              5  10  16  20                         /--NPROCX=  4 LOAD BALA
- @              4   8  13  17  20                     /--NPROCX=  5 LOAD BALA
- @              4   8  12  15  18  20                 /--NPROCX=  6 LOAD BALA
- @              3   6   9  13  16  18  20             /--NPROCX=  7 LOAD BALA
- @              3   6   9  12  14  16  18  20         /--NPROCX=  8 LOAD BALA
- @              3   6   8  11  13  15  17  19  20     /--NPROCX=  9 LOAD BALA
- @           /                                                               
-    21 READING PSPLITY 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1970):
- @           UNRECOGNISED KEYWORD PSPLITY  IN RUNSPEC DATA                   
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1970):
- @           SPURIOUS DATA BEFORE GRID     KEYWORD                           
- @             11  20                                 /--NPROCY=  2 LOAD BALA
- @              7  14  20                             /--NPROCY=  3 LOAD BALA
- @              5  11  16  20                         /--NPROCY=  4 LOAD BALA
- @              4   9  13  17  20                     /--NPROCY=  5 LOAD BALA
- @              4   8  12  15  18  20                 /--NPROCY=  6 LOAD BALA
- @              3   6  10  13  16  18  20             /--NPROCY=  7 LOAD BALA
- @              3   6   9  12  14  16  18  20         /--NPROCY=  8 LOAD BALA
- @              3   6   9  11  13  15  17  19  20     /--NPROCY=  9 LOAD BALA
- @           /                                                               
-    22 READING GRID    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1970):
- @           THE MASTER CANNOT START ALL THE SLAVE PROCESSES.                
- @           ERROR FLAG =    -4                                              
+ @           LICENSE ERROR  -1 FOR PARALLEL OPTIONS                          
+ @           FEATURE IS INVALID. CHECK YOUR LICENSE FILE AND                 
+ @           THE LICENSE LOG FILE                                            
 
  Error summary 
  Comments               0
- Warnings               4
+ Warnings               0
  Problems               0
- Errors                 6
+ Errors                 1
  Bugs                   0
- Final cpu       0.00 elapsed       0.00
+ Final cpu       0.27 elapsed       1.00

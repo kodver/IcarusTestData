@@ -489,91 +489,14 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           CHECKING FOR LICENSES                                           
 
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD COMPS    IN RUNSPEC DATA                   
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE FULLIMP  KEYWORD                           
- @           2 /                                                             
-     9 READING FULLIMP 
-    10 READING EQLDIMS 
-    11 READING TABDIMS 
-    12 READING REGDIMS 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ITEM 6 OF REGDIMS IS NOT AVAILABLE IN                           
- @           E100 RUNS.                                                      
-    13 READING WELLDIMS
-    14 READING START   
-    15 READING CBMOPTS 
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNRECOGNISED KEYWORD CBMOPTS  IN RUNSPEC DATA                   
-
- @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           SPURIOUS DATA BEFORE GRID     KEYWORD                           
- @            INSTANT /                                                      
-    16 READING GRID    
-
- @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           THE DUAL POROSITY MODEL MUST BE ACTIVE FOR THE                  
- @           COAL BED METHANE OPTION. DUAL POROSITY OPTION                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           CHECKING FOR LICENSES                                           
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                69684 BYTES                                                
-    17 READING INIT    
-    18 READING ROCKDEN 
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNRECOGNISED KEYWORD ROCKDEN  IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           SPURIOUS DATA BEFORE COALNUM  KEYWORD                           
- @            121*1434.0  /                                                  
-    19 READING COALNUM 
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           UNRECOGNISED KEYWORD COALNUM  IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           SPURIOUS DATA BEFORE DXV      KEYWORD                           
- @           121*1 /                                                         
-    20 READING DXV     
-    21 READING DYV     
-    22 READING EQUALS  
-    23 READING PROPS   
-
- @--  ERROR  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           EITHER SIGMA OR THE ARRAY SIGMAV NEEDS TO BE                    
- @           SPECIFIED IN DUAL POROSITY RUNS.                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--    BUG  AT TIME        0.0   DAYS    (26-JAN-1983):
- @            CONSISTENCY PROBLEM IN RCDPTR                                  
- @            NMTRIX =      0 NFRACT =      0 NFRAC =    121                 
- @            NACTIV =    242 NKILL  =      0                                
-
- @--COMMENT  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           2 DUAL POROSITY CONNECTIONS FOUND                               
-
- @--    BUG  AT TIME        0.0   DAYS    (26-JAN-1983):
- @           YWGRID HAS MISCOUNTED ACTIVE CELLS                              
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF     BUGS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (     1).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE ERROR  -1 FOR COAL BED METHANE OPTION                   
+ @           FEATURE IS INVALID. CHECK YOUR LICENSE FILE AND                 
+ @           THE LICENSE LOG FILE                                            
 
  Error summary 
- Comments               1
- Warnings               6
+ Comments               0
+ Warnings               0
  Problems               0
- Errors                 6
- Bugs                   2
- Final cpu       0.05 elapsed       1.00
+ Errors                 1
+ Bugs                   0
+ Final cpu       0.00 elapsed       0.00
