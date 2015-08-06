@@ -345,114 +345,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                64892 BYTES                                                
-    11 READING EQUALS  
-    12 READING COPY    
-    13 READING MULTIPLY
-    14 READING INIT    
-    15 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              135 VALUES NOT DEFINED IN BOX (  1- 15,  1-  1,  1- 10)      
- @           OF KEYWORD TOPS                                                 
-    16 READING RPTGRID 
-    17 READING AQUCT   
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD AQUCT    IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE AQUCON   KEYWORD                           
- @           1  5400.0  1*  20.0   0.10  3.0E-5  2400.0 140.0 4.8 1 1 /      
- @           /                                                               
-    18 READING AQUCON  
-    19 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-1                             **********************************************************************   1
-  PORV     AT     0.00   DAYS *2-D Carter-Tracy aquifer test case                                      * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 JAN 0000   *  RUN                                                                   * RUN AT 16:14 ON 16 JLY 2015 
-                              **************************************************************************
-
- UNITS    RB           
-
- MINIMUM VALUE =   3562.2  AT (  1,  1,  5)     MAXIMUM VALUE =   35622.  AT (  1,  1,  1)                                           
-
- (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
-
- (*,  1,  1)   35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.  35622.
- (*,  1,  2)   7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3
- (*,  1,  3)   8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4  8905.4
- (*,  1,  4)   5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2  5343.2
- (*,  1,  5)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
- (*,  1,  6)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
- (*,  1,  7)   7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3  7124.3
- (*,  1,  8)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
- (*,  1,  9)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
- (*,  1, 10)   3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2  3562.2
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NUMBER OF ACTIVE CELLS IS 150                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ADDITIONAL     0.004 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               344084 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              58528 CHARACTER VARIABLES USED                               
-    20 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    21 READING PR /    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                  
-    22 READING PRCORR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
-    23 READING RTEMP   
-    24 READING STCOND  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
- @           60 14.7 /                                                       
-    25 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-    26 READING C1 C3 C6
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD C1 C3 C6 IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               6
+ Comments               0
+ Warnings               3
  Problems               0
- Errors                12
+ Errors                 5
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

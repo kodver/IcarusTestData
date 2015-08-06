@@ -1066,114 +1066,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               119980 BYTES                                                
-    20 READING EQUALS  
-    21 READING RPTGRID 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED MNEMONIC LIMITS           IN DATA                  
- @           FOR KEYWORD RPTGRID  IS IGNORED                                 
-    22 READING EDIT    
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-    23 READING BOX     
-    24 READING TRANX   
-    25 READING ENDBOX  
-    26 READING BOX     
-    27 READING TRANX   
-    28 READING ENDBOX  
-    29 READING BOX     
-    30 READING TRANY   
-    31 READING TRANZ   
-    32 READING DEPTH   
-    33 READING ENDBOX  
-    34 READING BOUNDARY
-    35 READING PROPS   
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NUMBER OF ACTIVE CELLS IS 243                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               616600 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @              58668 CHARACTER VARIABLES USED                               
-    36 READING SWFN    
-    37 READING SGFN    
-    38 READING SOF3    
-    39 READING PVTW    
-    40 READING ROCK    
-    41 READING DENSITY 
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SURFACE DENSITY OF OIL IN DENSITY TABLE   1                     
- @           IS ZERO OR NEGATIVE (=     0.00000)                             
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SURFACE DENSITY OF GAS IN DENSITY TABLE   1                     
- @           IS ZERO OR NEGATIVE (=     0.00000)                             
-    42 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    43 READING PR /    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                  
-    44 READING RTEMP   
-    45 READING STCOND  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
- @           60 14.7 /                                                       
-    46 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-    47 READING N2     C
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD N2     C IN PROPERTY DATA                  
-    48 READING TCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
- @           227.16 547.56 335.8 608.4 820.8 1035.0 1198.8 1323.0 1452.6 1645
-    49 READING PCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               5
+ Comments               0
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 3
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

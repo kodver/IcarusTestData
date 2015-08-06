@@ -918,91 +918,14 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           CHECKING FOR LICENSES                                           
 
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
- @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
- @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
- @           PROBLEMS FOR OTHER PROGRAMS.                                    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
- @            HH:MM:SS                                                       
- @                                                                           
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           CHECKING FOR LICENSES                                           
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                 1369 KBYTES                                               
-    15 READING INIT    
-    16 READING DXV     
-    17 READING DYV     
-    18 READING DZV     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE TOPS     KEYWORD                           
- @              15*1.5 /                                                     
-    19 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @             3360 VALUES NOT DEFINED IN BOX (  1- 20,  1- 12,  1- 15)      
- @           OF KEYWORD TOPS                                                 
-    20 READING PORO    
-    21 READING PERMX   
-    22 READING COPY    
-    23 READING HEATCR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD HEATCR   IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE HEATCRT  KEYWORD                           
- @              3600*7.4E2 /                                                 
-    24 READING HEATCRT 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD HEATCRT  IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE THCONR   KEYWORD                           
- @              3600*2.0    /                                                
-    25 READING THCONR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
- @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE ROCKPROP KEYWORD                           
- @              3600*2.1E2 /                                                 
-    26 READING ROCKPROP
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE ROCKCON  KEYWORD                           
- @              1   18   1.496E2   2.35E3   0  N /                           
- @           /                                                               
-    27 READING ROCKCON 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD ROCKCON  IN GRID DATA                      
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE ERROR  -1 FOR MULTI-SEGMENT WELL OPTION                 
+ @           FEATURE IS INVALID. CHECK YOUR LICENSE FILE AND                 
+ @           THE LICENSE LOG FILE                                            
 
  Error summary 
  Comments               0
- Warnings               9
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 4
  Bugs                   0
- Final cpu       0.00 elapsed       0.00
+ Final cpu       0.34 elapsed       1.00

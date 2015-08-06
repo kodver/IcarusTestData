@@ -348,77 +348,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               197352 BYTES                                                
-    10 READING DXV     
-    11 READING DYV     
-    12 READING DZV     
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE TOPS     KEYWORD                           
- @                  4*10  / ft                                               
-    13 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              363 VALUES NOT DEFINED IN BOX (  1- 11,  1- 11,  1-  4)      
- @           OF KEYWORD TOPS                                                 
-    14 READING PORO    
-    15 READING PERMX   
-    16 READING PERMY   
-    17 READING PERMZ   
-    18 READING THCONR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
- @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE HEATCR   KEYWORD                           
- @            121*24.0    121*24.0    121*24.0    121*24.0    / Btu/ft/D/F   
-    19 READING HEATCR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD HEATCR   IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE PROPS    KEYWORD                           
- @            121*35.0    121*35.0    121*35.0    121*35.0    / Btu/ft3/F    
-    20 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
- @           PORE VOLUMES WILL BE SET TO ZERO                                
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE Y TRANSMISSIBILITIES               
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
  Comments               0
- Warnings               7
+ Warnings               3
  Problems               0
- Errors                12
+ Errors                 5
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

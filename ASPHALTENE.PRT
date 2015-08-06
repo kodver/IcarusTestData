@@ -130,118 +130,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                28528 BYTES                                                
-    18 READING NOGGF   
-    19 READING EQUALS  
-    20 READING EQUALS  
-    21 READING EQUALS  
-    22 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NUMBER OF ACTIVE CELLS IS 12                                    
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           ADDITIONAL     0.004 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               249764 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @              58535 CHARACTER VARIABLES USED                               
-    23 READING SWFN    
-    24 READING SGFN    
-    25 READING SOF3    
-    26 READING ROCK    
-    27 READING PVTW    
-    28 READING STCOND  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE RTEMP    KEYWORD                           
- @             60     14.7 /                                                 
-    29 READING RTEMP   
-    30 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE PRCORR   KEYWORD                           
- @              PR  /                                                        
-    31 READING PRCORR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
-    32 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE MW       KEYWORD                           
- @                       C1       C3       C6        C10      C15       C20  
-    33 READING MW      
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE TCRIT    KEYWORD                           
- @                    16.04    44.10    86.18    149.29    206.00    282.00  
-    34 READING TCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE PCRIT    KEYWORD                           
- @                   343.00   665.70   913.40   1111.80   1270.00   1380.00  
-    35 READING PCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD PCRIT    IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE ZCRIT    KEYWORD                           
- @                   667.80   616.30   436.90    304.00    200.00    162.00  
-    36 READING ZCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD ZCRIT    IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE ACF      KEYWORD                           
- @                    0.290    0.277    0.264     0.257     0.245     0.235  
-    37 READING ACF     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD ACF      IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               9
+ Comments               0
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 3
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

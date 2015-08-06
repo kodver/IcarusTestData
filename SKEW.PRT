@@ -274,50 +274,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               656628 BYTES                                                
-     8 READING INCLUDE SKEW.GRDECL                                       
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @            UNABLE TO OPEN INCLUDED FILE                                   
- @           SKEW.GRDECL                                                     
- @            SYSTEM ERROR CODE IS       29                                  
-     9 READING EQUALS  
-    10 READING INIT    
-    11 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
- @           PORE VOLUMES WILL BE SET TO ZERO                                
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           INSUFFICIENT DATA TO COMPUTE Y TRANSMISSIBILITIES               
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NUMBER OF ACTIVE CELLS IS 0                                     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THERE ARE NO ACTIVE CELLS IN THE RESERVOIR                      
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
+ Comments               0
  Warnings               2
  Problems               0
- Errors                 8
+ Errors                 3
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

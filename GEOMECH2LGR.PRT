@@ -388,107 +388,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                 2643 KBYTES                                               
-    16 READING GRIDFILE
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           CHECKING FOR LICENSES                                           
-    17 READING INIT    
-    18 READING EQUALS  
-    19 READING CARFIN  
-    20 READING ENDFIN  
-    21 READING EQUALS  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INVALID GRID ARRAY NAME YOUNGMOD                                
- @           ON RECORD    1 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INVALID GRID ARRAY NAME POISSONR                                
- @           ON RECORD    2 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INVALID GRID ARRAY NAME ROCKDEN                                 
- @           ON RECORD    3 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           INVALID GRID ARRAY NAME BIOTC                                   
- @           ON RECORD    4 FOLLOWING EQUALS   KEYWORD                       
-    22 READING RPTGRID 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED MNEMONIC LIMITS           IN DATA                  
- @           FOR KEYWORD RPTGRID  IS IGNORED                                 
-    23 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NO NON-NEIGHBOUR CONNECTIONS IN GLOBAL GRID                     
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           LGR WORKSPACE USED:                                             
- @              72973 INTEGERS,    19130 REALS   (TOTAL   444932 BYTES)      
- @           LGR WORKSPACE ALLOCATED:                                        
- @              72983 INTEGERS,    19131 REALS   (TOTAL   444980 BYTES)      
- @           MINIMUM POSSIBLE RUNSPEC VALUES IN LGR FOR THIS RUN ARE:        
- @           MAXLGR  =    1     MAXCLS  =   4608                             
- @           NOTE: NO. OF CELLS IN ANY LOCAL GRID CANNOT EXCEED MAXCLS       
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           NUMBER OF ACTIVE GLOBAL CELLS IS 400                            
- @           NUMBER OF ACTIVE  LOCAL CELLS IS 4608                           
- @            TOTAL NUMBER OF ACTIVE CELLS IS 5008                           
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           ADDITIONAL     2.196 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @                10666 KBYTES                                               
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @              58553 CHARACTER VARIABLES USED                               
-    24 READING SWFN    
-    25 READING SGFN    
-    26 READING SOF3    
-    27 READING PVTW    
-    28 READING ROCK    
-    29 READING DENSITY 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SURFACE DENSITY OF OIL IN DENSITY TABLE   1                     
- @           IS ZERO OR NEGATIVE (=     0.00000)                             
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           SURFACE DENSITY OF GAS IN DENSITY TABLE   1                     
- @           IS ZERO OR NEGATIVE (=     0.00000)                             
-    30 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    31 READING PR /    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1990):
- @           UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               5
+ Comments               0
+ Warnings               4
  Problems               0
- Errors                12
+ Errors                 4
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

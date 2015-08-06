@@ -468,104 +468,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               366892 BYTES                                                
-    19 READING DIFFMX  
-    20 READING DIFFMY  
-    21 READING DIFFMZ  
-    22 READING EQUALS  
-    23 READING BOX     
-    24 READING NTG     
-    25 READING ENDBOX  
-    26 READING ACTNUM  
-    27 READING RPTGRID 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED MNEMONIC DIFFTX           IN DATA                  
- @           FOR KEYWORD RPTGRID  IS IGNORED                                 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED MNEMONIC DIFFTY           IN DATA                  
- @           FOR KEYWORD RPTGRID  IS IGNORED                                 
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED MNEMONIC DIFFTZ           IN DATA                  
- @           FOR KEYWORD RPTGRID  IS IGNORED                                 
-    28 READING EDIT    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           PERMZ KEYWORD HAS NOT BEEN SPECIFIED FOR THIS                   
- @           2D AREAL MODEL.  PLEASE RE-CHECK DATA INPUT                     
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-    29 READING BOX     
-    30 READING DIFFTX  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD DIFFTX   IN EDIT DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE DIFFTY   KEYWORD                           
- @           40*0.0 /                                                        
-    31 READING DIFFTY  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD DIFFTY   IN EDIT DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE DIFFTZ   KEYWORD                           
- @           40*0.0 /                                                        
-    32 READING DIFFTZ  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD DIFFTZ   IN EDIT DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE ENDBOX   KEYWORD                           
- @           40*0.0 /                                                        
-    33 READING ENDBOX  
-    34 READING PROPS   
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NUMBER OF ACTIVE CELLS IS 437                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ADDITIONAL     0.127 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               920388 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              58549 CHARACTER VARIABLES USED                               
-    35 READING DIFFCGAS
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD DIFFCGAS IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE DIFFCOIL KEYWORD                           
- @           3*1.0 /                                                         
-    36 READING DIFFCOIL
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD DIFFCOIL IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings              10
+ Comments               0
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 7
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

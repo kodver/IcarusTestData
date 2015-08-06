@@ -409,89 +409,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                 1306 KBYTES                                               
-    19 READING DPGRID  
-    20 READING DXV     
-    21 READING DYV     
-    22 READING EQUALS  
-    23 READING NMATOPTS
-    24 READING INIT    
-    25 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED DZ VALUES COPIED FROM LAYER ABOVE                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED PERMX VALUES COPIED FROM LAYER ABOVE                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED PERMY VALUES COPIED FROM LAYER ABOVE                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED PERMZ VALUES COPIED FROM LAYER ABOVE                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED PORO VALUES COPIED FROM LAYER ABOVE                 
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED DZ VALUES FOR FRACTURE CELLS                        
- @           COPIED FROM CORRESPONDING MATRIX CELLS                          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED PERMX VALUES FOR FRACTURE CELLS                     
- @           COPIED FROM CORRESPONDING MATRIX CELLS                          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED PERMY VALUES FOR FRACTURE CELLS                     
- @           COPIED FROM CORRESPONDING MATRIX CELLS                          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED PERMZ VALUES FOR FRACTURE CELLS                     
- @           COPIED FROM CORRESPONDING MATRIX CELLS                          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED POROSITY VALUES FOR FRACTURE CELLS                  
- @           COPIED FROM CORRESPONDING MATRIX CELLS                          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           UNSPECIFIED TOPS VALUES FOR FRACTURE CELLS                      
- @           COPIED FROM CORRESPONDING MATRIX CELLS                          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           NUMBER OF CELLS IN THE Z-DIRECTION (NDIVIZ)                     
- @           MUST BE EVEN FOR A DUAL POROSITY RUN                            
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           700 DUAL POROSITY CONNECTIONS FOUND                             
-
- @--    BUG  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           YWGRID HAS MISCOUNTED ACTIVE CELLS                              
-
- @--    BUG  AT TIME        0.0   DAYS    ( 1-JAN-2005):
- @           YWGRID HAS MISCOUNTED ACTIVE CELLS                              
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF     BUGS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (     1).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               2
+ Comments               0
  Warnings               1
  Problems               0
- Errors                 3
- Bugs                   2
+ Errors                 2
+ Bugs                   0
  Final cpu       0.00 elapsed       0.00

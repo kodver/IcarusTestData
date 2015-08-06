@@ -1396,129 +1396,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               202408 BYTES                                                
-    14 READING ZCORN   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           CHECKING FOR LICENSES                                           
-    15 READING COORD   
-    16 READING EQUALS  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           INVALID GRID ARRAY NAME HEATCR                                  
- @           ON RECORD    5 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
- @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
-    17 READING ROCKPROP
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           SPURIOUS DATA BEFORE ROCKCON  KEYWORD                           
- @              1  50.0     120.0       2500.0     1*            N / Numerica
- @              2  50.0     120.0       2500.0     1*            N / Numerica
- @           /                                                               
-    18 READING ROCKCON 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD ROCKCON  IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           SPURIOUS DATA BEFORE AQUANCON KEYWORD                           
- @              1  1 10  1 10  1  1 'K-' 1* /                                
- @              1  1 10  1 10  3  3 'K+' 1* /                                
- @           /                                                               
-    19 READING AQUANCON
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD AQUANCON IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           SPURIOUS DATA BEFORE ACTNUM   KEYWORD                           
- @              1  6 10 10 10  1  3 J+ /                                     
- @           /                                                               
-    20 READING ACTNUM  
-    21 READING INIT    
-    22 READING CARFIN  
-    23 READING ENDFIN  
-    24 READING RADFIN  
-    25 READING ENDFIN  
-    26 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           TRANSMISSIBILITIES TO BE CALCULATED                             
- @           USING  NEWTRAN                                                  
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           12 NON-NEIGHBOUR CONNECTIONS PRESENT                            
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           INNER RADIUS NOT SPECIFIED FOLLOWING RADFIN                     
- @           IT IS SET EQUAL TO 0.15239  METRES                              
- @           FOR LOCAL GRID LGR2                                             
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           AUTOMATIC RADIAL SIZE CALCULATIONS FOR    2 RADII               
- @           IN REFINEMENT LGR2                                              
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNEQUAL HOST CELL PERMX/PERMY VALUES COPIED                     
- @           TO PERMR/PERMTHT FOR LOCAL RADIAL GRID LGR2                     
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           PORE VOLUMES ADJUSTED FOR OUTER RADIAL BLOCKS                   
- @           IN REFINEMENT LGR2                                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           LGR WORKSPACE USED:                                             
- @               5231 INTEGERS,     1496 REALS   (TOTAL    32892 BYTES)      
- @           LGR WORKSPACE ALLOCATED:                                        
- @               5251 INTEGERS,     1497 REALS   (TOTAL    32980 BYTES)      
- @           MINIMUM POSSIBLE RUNSPEC VALUES IN LGR FOR THIS RUN ARE:        
- @           MAXLGR  =    2     MAXCLS  =     72                             
- @           NOTE: NO. OF CELLS IN ANY LOCAL GRID CANNOT EXCEED MAXCLS       
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           NUMBER OF ACTIVE GLOBAL CELLS IS 277                            
- @           NUMBER OF ACTIVE  LOCAL CELLS IS 81                             
- @            TOTAL NUMBER OF ACTIVE CELLS IS 358                            
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           ADDITIONAL     0.054 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @                 1447 KBYTES                                               
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @              58610 CHARACTER VARIABLES USED                               
-    27 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           SPURIOUS DATA BEFORE MW       KEYWORD                           
- @                   C3     HC4    HC9    HC21   /                           
-    28 READING MW      
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2000):
- @           UNRECOGNISED KEYWORD MW       IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               9
+ Comments               0
+ Warnings               3
  Problems               0
- Errors                12
+ Errors                 5
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

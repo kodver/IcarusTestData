@@ -630,127 +630,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-AUG-2004):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               861852 BYTES                                                
-    16 READING DX      
-    17 READING DY      
-    18 READING DZ      
-    19 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @             1764 VALUES NOT DEFINED IN BOX (  1- 14,  1- 14,  1- 10)      
- @           OF KEYWORD TOPS                                                 
-    20 READING PORO    
-    21 READING PERMX   
-    22 READING COPY    
-    23 READING PERMZ   
-    24 READING BOUNDARY
-    25 READING RPTGRID 
-    26 READING INIT    
-    27 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-1                             **********************************************************************   1
-  DEPTH    AT     0.00   DAYS *                                                                        * ECLIPSE  VERSION 2009.1     
-  REPORT   0     1 AUG 2004   *  RUN                                                                   * RUN AT 16:14 ON 16 JLY 2015 
-                              **************************************************************************
-
- UNITS  METRES         
-
- MINIMUM VALUE =   1411.5  AT (  7,  7,  1)     MAXIMUM VALUE =   1413.2  AT (  7,  7, 10)                                           
-
- (I,  J,  K) I=  7
-
- (*,  7,  1)   1411.5
- (*,  7,  2)   1411.7
- (*,  7,  3)   1411.9
- (*,  7,  4)   1412.0
- (*,  7,  5)   1412.2
- (*,  7,  6)   1412.4
- (*,  7,  7)   1412.6
- (*,  7,  8)   1412.8
- (*,  7,  9)   1413.0
- (*,  7, 10)   1413.2
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           NUMBER OF ACTIVE CELLS IS 1960                                  
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @                 1411 KBYTES                                               
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @              58528 CHARACTER VARIABLES USED                               
-    28 READING CNAMES  
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           SPURIOUS DATA BEFORE ZMFVD    KEYWORD                           
- @             'H2O' 'CO2' 'NACL'  'CACL2' /                                 
-    29 READING ZMFVD   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           UNRECOGNISED KEYWORD ZMFVD    IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           SPURIOUS DATA BEFORE SDREF    KEYWORD                           
- @            1411.4   0.9109 0.0  0.0741     0.015                          
- @            1413.227 0.9109 0.0  0.0741     0.015 /                        
-    30 READING SDREF   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           UNRECOGNISED KEYWORD SDREF    IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           SPURIOUS DATA BEFORE SOLIDMMS KEYWORD                           
- @            3* 2170.0 1* /                                                 
-    31 READING SOLIDMMS
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           UNRECOGNISED KEYWORD SOLIDMMS IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           SPURIOUS DATA BEFORE DIFFCWAT KEYWORD                           
- @              0.0    1.0                                                   
- @              0.1    0.5                                                   
- @              0.8    0.0 /                                                 
-    32 READING DIFFCWAT
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           UNRECOGNISED KEYWORD DIFFCWAT IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           SPURIOUS DATA BEFORE DIFFCGAS KEYWORD                           
- @             0.0001  0.0001  0.0001     0.0001 /                           
-    33 READING DIFFCGAS
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-AUG-2004):
- @           UNRECOGNISED KEYWORD DIFFCGAS IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               7
+ Comments               0
+ Warnings               1
  Problems               0
- Errors                12
+ Errors                 6
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

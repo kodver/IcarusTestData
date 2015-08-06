@@ -655,10 +655,7 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           CHECKING FOR LICENSES                                           
 
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NOT ENOUGH SPACE AVAILABLE FOR CHARACTER VARIABLES              
- @             58525 LOCATIONS NEEDED - ONLY   10000 ARE AVAILABLE           
- @           ( NSUMMX (=  10000) MAY BE SET TOO LARGE IN RUNSPEC             
- @           KEYWORD SMRYDIMS )                                              
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
  Comments               0

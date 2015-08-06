@@ -374,81 +374,13 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
  @           CHECKING FOR LICENSES                                           
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                 7645 KBYTES                                               
-    15 READING EQUALS  
-    16 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           NUMBER OF ACTIVE CELLS IS 18000                                 
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           ADDITIONAL     0.000 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @                17941 KBYTES                                               
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @              58528 CHARACTER VARIABLES USED                               
-    17 READING EOS     
-
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    18 READING PR   /  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD PR   /   IN PROPERTY DATA                  
-    19 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-    20 READING CO2 /   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD CO2 /    IN PROPERTY DATA                  
-    21 READING OMEGAA  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD OMEGAA   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE OMEGAB   KEYWORD                           
- @           0.457 /                                                         
-    22 READING OMEGAB  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD OMEGAB   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           SPURIOUS DATA BEFORE TCRIT    KEYWORD                           
- @           0.077796 /                                                      
-    23 READING TCRIT   
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-2007):
- @           UNRECOGNISED KEYWORD TCRIT    IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE FAILURE: ERROR NUMBER IS -1                             
 
  Error summary 
- Comments               1
- Warnings               4
+ Comments               0
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 5
  Bugs                   0
  Final cpu       0.00 elapsed       0.00

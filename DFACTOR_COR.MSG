@@ -2,48 +2,7 @@
 <message date="1/1/2000" time="0.00000000000000">
  CHECKING FOR LICENSES                                                   
 </message>
-<message date="1/1/2000" time="0.00000000000000">
- THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
-     133752 BYTES                                                        
-</message>
-<warning date="1/1/2000" time="0.00000000000000">
-    243 VALUES NOT DEFINED IN BOX (  1-  9,  1-  9,  1-  4)              
- OF KEYWORD TOPS                                                         
-</warning>
-<message date="1/1/2000" time="0.00000000000000">
- UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                           
- TO TOPS VALUE FOR LAYER ABOVE                                           
-</message>
-<message date="1/1/2000" time="0.00000000000000">
- NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
- BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
- USING  OLDTRAN                                                          
-</message>
-<comment date="1/1/2000" time="0.00000000000000">
- NO NON-NEIGHBOUR CONNECTIONS FOUND                                      
-</comment>
-<message date="1/1/2000" time="0.00000000000000">
- NUMBER OF ACTIVE CELLS IS 324                                           
-</message>
-<message date="1/1/2000" time="0.00000000000000">
- THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
-       3821 KBYTES                                                       
-</message>
-<message date="1/1/2000" time="0.00000000000000">
-    58560 CHARACTER VARIABLES USED                                       
-</message>
-<warning date="1/1/2000" time="0.00000000000000">
- THE BOTTOM HOLE PRESSURE LIMIT FOR WELL IG                              
- HAS BEEN DEFAULTED. THE DEFAULT VALUE IS  100000.   PSIA                
-</warning>
-<warning date="1/1/2000" time="0.00000000000000">
- THE BOTTOM HOLE PRESSURE LIMIT FOR WELL IW                              
- HAS BEEN DEFAULTED. THE DEFAULT VALUE IS  100000.   PSIA                
-</warning>
-<problem date="29/6/2000" time="180.00000000000000">
- SOLUTION  IN WELL IW       NOT CONVERGED AFTER   8 ITERATIONS           
- RESIDUAL ERROR IN OIL, WATER AND GAS FLOWS =                            
-   2.89803E-04  5.35624E-04 -1.13242E-03                                 
- TRY INCREASING  MXWSIT  IN TUNING RECORD 3                              
-</problem>
+<error date="1/1/2000" time="0.00000000000000">
+ LICENSE FAILURE: ERROR NUMBER IS -1                                     
+</error>
 </eclipse>

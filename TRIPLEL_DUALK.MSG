@@ -19,72 +19,7 @@
 <message date="1/1/1990" time="0.00000000000000">
  CHECKING FOR LICENSES                                                   
 </message>
-<message date="1/1/1990" time="0.00000000000000">
- THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
-       2949 KBYTES                                                       
-</message>
-<message date="1/1/1990" time="0.00000000000000">
- UNSPECIFIED NTG VALUES FOR FRACTURE CELLS                               
- COPIED FROM CORRESPONDING MATRIX CELLS                                  
-</message>
-<message date="1/1/1990" time="0.00000000000000">
- MISSING FRACTURE CELL CORNER POINT DEPTHS                               
- COPIED FROM MATRIX CELLS                                                
-</message>
-<message date="1/1/1990" time="0.00000000000000">
- 471 NON-NEIGHBOUR CONNECTIONS PRESENT                                   
-</message>
-<comment date="1/1/1990" time="0.00000000000000">
- 2457 DUAL POROSITY CONNECTIONS FOUND                                    
-</comment>
-<message date="1/1/1990" time="0.00000000000000">
- NUMBER OF ACTIVE CELLS IS 5409                                          
-</message>
-<message date="1/1/1990" time="0.00000000000000">
- ADDITIONAL     1.484 MEGABYTES REQUIRED FOR SIMULATION                  
-</message>
-<message date="1/1/1990" time="0.00000000000000">
- THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
-       9479 KBYTES                                                       
-</message>
-<message date="1/1/1990" time="0.00000000000000">
-    58675 CHARACTER VARIABLES USED                                       
-</message>
 <error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                          
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                          
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                          
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                          
-</error>
-<warning date="1/1/1990" time="0.00000000000000">
- SPURIOUS DATA BEFORE CNAMES   KEYWORD                                   
- 60 14.7 /                                                               
-</warning>
-<error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                          
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD C1       IN PROPERTY DATA                          
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD C3       IN PROPERTY DATA                          
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD C6       IN PROPERTY DATA                          
- Stop limit reached on error      outputs
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- UNRECOGNISED KEYWORD C10      IN PROPERTY DATA                          
-</error>
-<error date="1/1/1990" time="0.00000000000000">
- RUN STOPPED BECAUSE NUMBER OF   ERRORS                                  
- EXCEEDS MAXIMUM PERMITTED VALUE (    10).                               
- SEE MESSAGES KEYWORD                                                    
+ LICENSE FAILURE: ERROR NUMBER IS -1                                     
 </error>
 </eclipse>

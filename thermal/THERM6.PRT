@@ -848,88 +848,16 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
 
  @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
  @           CHECKING FOR LICENSES                                           
-    13 READING GRID    
 
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           CHECKING FOR LICENSES                                           
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @                 3410 KBYTES                                               
-    15 READING TOPS    
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @             8400 VALUES NOT DEFINED IN BOX (  1- 30,  1- 20,  1- 15)      
- @           OF KEYWORD TOPS                                                 
-    16 READING DXV     
-    17 READING DYV     
-    18 READING DZV     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           UNRECOGNISED KEYWORD DZV      IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           SPURIOUS DATA BEFORE EQUALS   KEYWORD                           
- @            15*2.0  /                              z-height = 30 meters    
-    19 READING EQUALS  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           INVALID GRID ARRAY NAME HEATCR                                  
- @           ON RECORD   45 FOLLOWING EQUALS   KEYWORD                       
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           GRID ARRAY THCONR   NOT ALLOWED WITH CURRENT                    
- @           RUNSPEC OPTIONS. SEE KEYWORD TEMP                               
-    20 READING ROCKCON 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           UNRECOGNISED KEYWORD ROCKCON  IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           SPURIOUS DATA BEFORE ROCKPROP KEYWORD                           
- @             1  1 30  1 20  1  1 K- /                   overburden  connect
- @             2  1 30  1 20 15 15 K+ /                   underburden connect
- @           /                                                               
-    21 READING ROCKPROP
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           UNRECOGNISED KEYWORD ROCKPROP IN GRID DATA                      
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           SPURIOUS DATA BEFORE RPTGRID  KEYWORD                           
- @             1 16.0     74.9              1169.0  /     overburden  propert
- @             2 16.0     74.9              1169.0  /     underburden propert
- @           /                                                               
-    22 READING RPTGRID 
-    23 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           INSUFFICIENT DATA TO COMPUTE PORE VOLUMES                       
- @           PORE VOLUMES WILL BE SET TO ZERO                                
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           INSUFFICIENT DATA TO COMPUTE CELL CENTRE DEPTHS                 
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-1996):
- @           INSUFFICIENT DATA TO COMPUTE X TRANSMISSIBILITIES               
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
+ @           LICENSE ERROR  -1 FOR MULTI-SEGMENT WELL OPTION                 
+ @           FEATURE IS INVALID. CHECK YOUR LICENSE FILE AND                 
+ @           THE LICENSE LOG FILE                                            
 
  Error summary 
  Comments               0
- Warnings               6
+ Warnings               2
  Problems               0
- Errors                12
+ Errors                 4
  Bugs                   0
- Final cpu       0.03 elapsed       1.00
+ Final cpu       0.00 elapsed       0.00

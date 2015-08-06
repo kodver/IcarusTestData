@@ -392,94 +392,14 @@ utility  | 17-FEB-2009 08:34:11 | 25-APR-2009 05:40:00 | S:\2009.1_w18
  @           CHECKING FOR LICENSES                                           
 
  @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE KEYWORD START HAS NOT BEEN SPECIFIED IN RUNSPEC             
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ECLIPSE HAS READ IN A 1-DIGIT YEAR. ECLIPSE ONLY                
- @           REQUIRES YEARS TO BE POSITIVE AND DATES TO BE                   
- @           MONOTONICALLY INCREASING, BUT THEIR USE MAY CAUSE               
- @           PROBLEMS FOR OTHER PROGRAMS.                                    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @            ERROR READING FOURTH ARGUMENT OF START: CORRECT FORMAT IS      
- @            HH:MM:SS                                                       
- @                                                                           
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           CHECKING FOR LICENSES                                           
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
- @               163968 BYTES                                                
-    12 READING EQUALS  
-    13 READING PROPS   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNSPECIFIED TOPS VALUES OBTAINED BY ADDING DZ                   
- @           TO TOPS VALUE FOR LAYER ABOVE                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
- @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
- @           USING  OLDTRAN                                                  
-
- @--COMMENT  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           NUMBER OF ACTIVE CELLS IS 400                                   
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           ADDITIONAL     0.105 MEGABYTES REQUIRED FOR SIMULATION          
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
- @               827364 BYTES                                                
-
- @--MESSAGE  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @              58535 CHARACTER VARIABLES USED                               
-    14 READING EOS     
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD EOS      IN PROPERTY DATA                  
-    15 READING PR /    
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PR /     IN PROPERTY DATA                  
-    16 READING PRCORR  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD PRCORR   IN PROPERTY DATA                  
-    17 READING RTEMP   
-    18 READING STCOND  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD STCOND   IN PROPERTY DATA                  
-
- @--WARNING  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           SPURIOUS DATA BEFORE CNAMES   KEYWORD                           
- @           60 14.7 /                                                       
-    19 READING CNAMES  
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD CNAMES   IN PROPERTY DATA                  
-    20 READING C1      
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD C1       IN PROPERTY DATA                  
-    21 READING C3      
-
- @--  ERROR  AT TIME        0.0   DAYS    ( 1-JAN-   0):
- @           UNRECOGNISED KEYWORD C3       IN PROPERTY DATA                  
-
- @--ERROR  RUN STOPPED BECAUSE NUMBER OF   ERRORS
- @         EXCEEDS MAXIMUM PERMITTED VALUE (    10).
- @         SEE MESSAGES KEYWORD.
+ @           LICENSE ERROR  -1 FOR MULTI-SEGMENT WELL OPTION                 
+ @           FEATURE IS INVALID. CHECK YOUR LICENSE FILE AND                 
+ @           THE LICENSE LOG FILE                                            
 
  Error summary 
- Comments               1
- Warnings               5
+ Comments               0
+ Warnings               3
  Problems               0
- Errors                12
+ Errors                 3
  Bugs                   0
  Final cpu       0.00 elapsed       0.00
